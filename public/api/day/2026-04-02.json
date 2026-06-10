@@ -1,0 +1,2546 @@
+{
+  "archive_dates": [
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-04-02T06:31:27.347705+00:00",
+  "model_releases_by_entity": {
+    "other": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.122670+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-48000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-48000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-48000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-48000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-48000"
+        },
+        "published_at": "2026-04-02T01:46:15+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9804653917533037,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780465391753303
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-48000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-48000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.122939+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-46000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-46000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-46000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-46000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-46000"
+        },
+        "published_at": "2026-04-02T01:45:47+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9804336179267608,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.78043361792676
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-46000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-46000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.123165+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-44000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-44000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-44000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-44000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-44000"
+        },
+        "published_at": "2026-04-02T01:45:21+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9804041145812508,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.78040411458125
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-44000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-44000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.123393+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-42000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-42000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-42000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-42000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-42000"
+        },
+        "published_at": "2026-04-02T01:44:59+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9803791509054184,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780379150905418
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-42000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-42000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.123618+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-40000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-40000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-40000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-40000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-40000"
+        },
+        "published_at": "2026-04-02T01:44:36+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9803530531966848,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780353053196684
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-40000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-40000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.123800+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-38000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-38000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-38000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-38000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-38000"
+        },
+        "published_at": "2026-04-02T01:44:15+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9803292254606606,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.78032922546066
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-38000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-38000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.123984+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-36000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-36000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-36000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-36000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-36000"
+        },
+        "published_at": "2026-04-02T01:43:52+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9803031290809431,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780303129080943
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-36000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-36000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.124164+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-34000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-34000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-34000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-34000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-34000"
+        },
+        "published_at": "2026-04-02T01:43:21+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9802679567987349,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780267956798735
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-34000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-34000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.124360+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-32000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-32000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-32000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-32000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-32000"
+        },
+        "published_at": "2026-04-02T01:42:56+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.980239592974232,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780239592974231
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-32000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-32000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.124553+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-30000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-30000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-30000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-30000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-30000"
+        },
+        "published_at": "2026-04-02T01:42:20+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9801987505087487,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780198750508749
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-30000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-30000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.124755+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-28000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-28000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-28000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-28000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-28000"
+        },
+        "published_at": "2026-04-02T01:41:46+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9801601786316757,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780160178631675
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-28000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-28000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.124956+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-26000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-26000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-26000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-26000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-26000"
+        },
+        "published_at": "2026-04-02T01:41:21+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.980131817925709,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780131817925708
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-26000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-26000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.125151+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-24000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-24000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-24000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-24000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-24000"
+        },
+        "published_at": "2026-04-02T01:40:59+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.980106861183268,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780106861183267
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-24000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-24000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.125379+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-22000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-22000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-22000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-22000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-22000"
+        },
+        "published_at": "2026-04-02T01:40:29+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9800728302858501,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.78007283028585
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-22000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-22000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.125556+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-20000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-20000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-20000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-20000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-20000"
+        },
+        "published_at": "2026-04-02T01:40:05+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9800456064186753,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.780045606418675
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-20000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-20000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.125700+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-18000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-18000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-18000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-18000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-18000"
+        },
+        "published_at": "2026-04-02T01:39:42+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9800195175889014,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.7800195175889
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-18000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-18000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.125866+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-16000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-16000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-16000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-16000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-16000"
+        },
+        "published_at": "2026-04-02T01:39:21+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9799956979595469,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779995697959547
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-16000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-16000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126010+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-14000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-14000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-14000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-14000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-14000"
+        },
+        "published_at": "2026-04-02T01:38:51+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9799616709218961,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779961670921896
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-14000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-14000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126161+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-12000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-12000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-12000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-12000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-12000"
+        },
+        "published_at": "2026-04-02T01:38:27+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9799344501424386,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779934450142438
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-12000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-12000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126327+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-10000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-10000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-10000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-10000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-10000"
+        },
+        "published_at": "2026-04-02T01:38:04+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9799083642716465,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779908364271646
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-10000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-10000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126499+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-8000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-8000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-8000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-8000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-8000"
+        },
+        "published_at": "2026-04-02T01:37:42+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9798834132189251,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779883413218926
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-8000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-8000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126654+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-6000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-6000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-6000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-6000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-6000"
+        },
+        "published_at": "2026-04-02T01:37:13+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9798505241655809,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.77985052416558
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-6000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-6000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126820+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-4000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-4000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-4000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-4000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-4000"
+        },
+        "published_at": "2026-04-02T01:36:45+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9798187702649795,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.77981877026498
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-4000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-4000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-04-02T06:28:53.126960+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 0,
+          "likes": 0,
+          "pipeline_tag": "text-generation"
+        },
+        "hf_model_id": "microsoft/dayhoff-170m-ur90-hl-2000",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/Dayhoff-170M-UR90-HL-2000",
+            "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-2000"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/Dayhoff-170M-UR90-HL-2000",
+          "url": "https://huggingface.co/microsoft/Dayhoff-170M-UR90-HL-2000"
+        },
+        "published_at": "2026-04-02T01:36:16+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9797858833813277,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.779785883381328
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/dayhoff-170m-ur90-hl-2000",
+        "summary": "Dayhoff is an Atlas of both protein sequence data and generative language models — a centralized resource that brings together 3.34 billion protein sequences across 1.7 billion clusters of metagenomic and natural protein sequences (GigaRef), 46 million structure-derived synthetic sequences (BackboneRef), and 16 million multiple sequence alignments (OpenProteinSet). These models can natively predict zero-shot mutation effects on fitness, scaffold structural motifs by conditioning on evolutionary or structural context, and perform guided generation of novel proteins within specified families. Learning from metagenomic and structure-based synthetic data from the Dayhoff Atlas increased the cellular expression rates of generated proteins, highlighting the real-world value of expanding the...",
+        "title": "microsoft/Dayhoff-170M-UR90-HL-2000"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-03-14T06:14:13.073800+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 401,
+          "likes": 44,
+          "pipeline_tag": "zero-shot-image-classification"
+        },
+        "hf_model_id": "microsoft/colipri",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-microsoft",
+            "tier": 1,
+            "title": "microsoft/colipri",
+            "url": "https://huggingface.co/microsoft/colipri"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-microsoft",
+          "tier": 1,
+          "title": "microsoft/colipri",
+          "url": "https://huggingface.co/microsoft/colipri"
+        },
+        "published_at": "2026-04-01T14:02:40+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9337113980170527,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.733711398017052
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:microsoft/colipri",
+        "summary": "COLIPRI is a 3D vision&ndash;language transformer model trained to encode chest CT scans and reports. COLIPRI was trained using tens of thousands of chest CT scans and reports, without any annotations, using multiple objectives to learn strong joint representations of 3D images and text. The procedure is described in detail in our manuscript, _Comprehensive language-image pre-training for 3D medical image understanding_ (Wald et al. 2026). The weights shared here correspond to our best-performing model, COLIPRI-CRM. - **Developed by:** Microsoft Health Futures - **Model type:** 3D vision&ndash;language encoder - **License:** MIT COLIPRI is shared for research purposes only. It is **not meant to be used for clinical practice**. The encoders be plugged to other models, or used independently...",
+        "title": "microsoft/colipri"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "arxiv_id": "2604.00842",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:28:53.930871+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+          "url": "https://arxiv.org/abs/2604.00842"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+        "url": "https://arxiv.org/abs/2604.00842"
+      },
+      "published_at": "2026-04-01T12:53:01+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.85,
+        "llm_relevance_score": 23.8,
+        "recency_score": 0.9292061218954162,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 32.92920612189542
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.00842",
+      "summary": "Proactive agents that anticipate user needs and autonomously execute tasks hold great promise as digital assistants, yet the lack of realistic user simulation frameworks hinders their development. Existing approaches model apps as flat tool-calling APIs, failing to capture the stateful and sequential nature of user interaction in digital environments and making realistic user simulation infeasible. We introduce Proactive Agent Research Environment (Pare), a framework for building and evaluating proactive agents in digital environments. Pare models applications as finite state machines with stateful navigation and state-dependent action space for the user simulator, enabling active user simulation. Building on this foundation, we present Pare-Bench, a benchmark of 143 diverse tasks spanning communication, productivity, scheduling, and lifestyle apps, designed to test context observation, goal inference, intervention timing, and multi-app orchestration.",
+      "summary_zh": "能夠預測用戶需求並自主執行任務的 proactive agents 作為 digital assistants 具有巨大的前景，然而缺乏真實的用戶模擬框架阻礙了它們的發展。現有方法將應用程式建模為扁平的 tool-calling APIs，未能捕捉數位環境中用戶互動的 stateful 和 sequential nature，使得真實的用戶模擬不可行。我們引入了 Proactive Agent Research Environment (Pare)，一個用於在數位環境中構建和評估 proactive agents 的框架。Pare 將應用程式建模為具有 stateful navigation 和 state-dependent action space 的 finite state machines，以供用戶模擬器使用，從而實現 active user simulation。在此基礎上，我們提出了 Pare-Bench，一個包含 143 個多樣化任務的基準，涵蓋 communication、productivity、scheduling 和 lifestyle apps，旨在測試 context observation、goal inference、intervention timing 和 multi-app orchestration。",
+      "title": "Proactive Agent Research Environment: Simulating Active Users to Evaluate Proactive Assistants",
+      "title_zh": "主動代理研究環境：模擬活躍用戶以評估主動式助手"
+    },
+    {
+      "arxiv_id": "2604.00913",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:28:53.930504+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
+          "url": "https://arxiv.org/abs/2604.00913"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
+        "url": "https://arxiv.org/abs/2604.00913"
+      },
+      "published_at": "2026-04-01T13:55:28+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8,
+        "llm_relevance_score": 22.400000000000002,
+        "recency_score": 0.9332446590125191,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 31.53324465901252
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.00913",
+      "summary": "2D assembly diagrams are often abstract and hard to follow, creating a need for intelligent assistants that can monitor progress, detect errors, and provide step-by-step guidance. In mixed reality settings, such systems must recognize completed and ongoing steps from the camera feed and align them with the diagram instructions. Vision Language Models (VLMs) show promise for this task, but face a depiction gap because assembly diagrams and video frames share few visual features. To systematically assess this gap, we construct IKEA-Bench, a benchmark of 1,623 questions across 6 task types on 29 IKEA furniture products, and evaluate 19 VLMs (2B-38B) under three alignment strategies. Our key findings: (1) assembly instruction understanding is recoverable via text, but text simultaneously degrades diagram-to-video alignment; (2) architecture family predicts alignment accuracy more strongly than parameter count; (3) video understanding remains a hard bottleneck unaffected by strategy. A three-level mechanistic analysis further reveals that diagrams and video occupy disjoint ViT subspaces, and that adding text shifts models from visual to text-driven reasoning. These results identify visual encoding as the primary target for improving cross-depiction robustness. Project page: https://ryenhails.github.io/IKEA-Bench/",
+      "summary_zh": "二維組裝圖通常抽象且難以遵循，因此需要智慧型助理來監控進度、檢測錯誤並提供逐步指導。在混合實境環境中，此類系統必須從攝影機饋送中識別已完成和正在進行的步驟，並將其與圖表說明對齊。Vision Language Models (VLMs) 在此任務中展現潛力，但由於組裝圖和視訊影格共享的視覺特徵很少，因此面臨「描繪落差」(depiction gap)。為了系統地評估此落差，我們構建了 IKEA-Bench，一個包含 29 種 IKEA 家具產品、6 種任務類型共 1,623 個問題的基準，並在三種對齊策略下評估了 19 個 VLM (2B-38B)。我們的主要發現是：(1) 組裝說明理解可透過文字恢復，但文字同時會降低圖表到視訊的對齊品質；(2) architecture family 比參數數量更能預測對齊準確度；(3) 視訊理解仍然是一個難以克服的瓶頸，不受策略影響。三層次的機械性分析 (mechanistic analysis) 進一步揭示，圖表和視訊佔據不相交的 ViT subspaces，並且添加文字會使模型從視覺驅動的推理轉向文字驅動的推理。這些結果表明視覺編碼 (visual encoding) 是改進跨描繪穩健性 (cross-depiction robustness) 的主要目標。",
+      "title": "Benchmarking and Mechanistic Analysis of Vision-Language Models for Cross-Depiction Assembly Instruction Alignment",
+      "title_zh": "Vision-Language Models 於跨描繪組裝說明對齊的基準測試與機械性分析"
+    },
+    {
+      "arxiv_id": "2604.00590",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:28:53.930219+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+          "url": "https://arxiv.org/abs/2604.00590"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+        "url": "https://arxiv.org/abs/2604.00590"
+      },
+      "published_at": "2026-04-01T07:57:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9103418356614559,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 14.710341835661456
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.00590",
+      "summary": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely UniMixer, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, UniMixing-Lite, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of UniMixer.",
+      "summary_zh": "近年來，推薦模型的 Scaling Laws 受到越來越多的關注，這些定律規範了推薦器性能與參數/FLOPs 之間的關係。目前，推薦模型中實現 Scaling 有三種主流架構，分別是 attention-based、TokenMixer-based 和 factorization-machine-based 方法，它們在設計理念和架構結構上都存在根本性差異。在本文中，我們提出了一種用於推薦系統的統一 Scaling 架構，名為 UniMixer，旨在提高 Scaling 效率並建立一個統一的理論框架，整合主流的 Scaling blocks。透過將基於規則的 TokenMixer 轉換為等效的參數化結構，我們構建了一個廣義的參數化特徵混合模組 (generalized parameterized feature mixing module)，該模組允許在模型訓練期間優化和學習 Token 混合模式。同時，廣義的參數化 Token 混合消除了 TokenMixer 中要求頭部數量等於 Token 數量的限制。此外，我們建立了一個統一的推薦系統 Scaling 模組設計框架，它彌合了 attention-based、TokenMixer-based 和 factorization-machine-based 方法之間的聯繫。為了進一步提升 Scaling 的 ROI (Return on Investment)，我們設計了一個輕量級的 UniMixing 模組，UniMixing-Lite，它進一步壓縮了模型參數和計算成本，同時顯著提高了模型性能。大量的離線和線上實驗驗證了 UniMixer 卓越的 Scaling 能力。",
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "title_zh": "UniMixer：用於推薦系統 Scaling Laws 的統一架構"
+    }
+  ],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Nishant Dhiman"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Nova",
+        "Intermediate (200)",
+        "Retail"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:25:02.696101+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Automating competitive price intelligence with Amazon Nova Act",
+          "url": "https://aws.amazon.com/blogs/machine-learning/automating-competitive-price-intelligence-with-amazon-nova-act"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Automating competitive price intelligence with Amazon Nova Act",
+        "url": "https://aws.amazon.com/blogs/machine-learning/automating-competitive-price-intelligence-with-amazon-nova-act"
+      },
+      "published_at": "2026-04-01T18:57:01+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.952993770591736,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 0.0,
+        "total_score": 9.652993770591735
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:3569825ddb187224",
+      "summary": "This post demonstrates how to build an automated competitive price intelligence system that streamlines manual workflows, supporting teams to make data-driven pricing decisions with real-time market insights.",
+      "title": "Automating competitive price intelligence with Amazon Nova Act"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [
+        "Sustainability",
+        "Google Earth",
+        "AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:25:00.867606+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "google-ai-blog",
+          "tier": 0,
+          "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+          "url": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "google-ai-blog",
+        "tier": 0,
+        "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests.",
+        "url": "https://blog.google/products-and-platforms/products/earth/satellite-imagery-brazilian-deforestation"
+      },
+      "published_at": "2026-04-01T13:30:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.9315956571257267,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 0.0,
+        "total_score": 8.231595657125727
+      },
+      "section": null,
+      "source_name": "Google AI Blog",
+      "story_id": "fallback:d60fc9cc1d496241",
+      "summary": "<img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bfc_keyword_before_after_white_.max-600x600.format-webp_QNQ8psB.webp\" />Google partnered with the Brazilian government on a satellite imagery map to help protect the country’s forests.",
+      "title": "We’re creating a new satellite imagery map to help protect Brazil’s forests."
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "The Keyword Team"
+      ],
+      "categories": [
+        "Search",
+        "Translate",
+        "Google DeepMind",
+        "Developer tools",
+        "Google Workspace",
+        "AI",
+        "Pixel",
+        "Gemini App",
+        "Gemini models",
+        "Fitbit",
+        "Maps",
+        "Health"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:25:00.868034+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "google-ai-blog",
+          "tier": 0,
+          "title": "The latest AI news we announced in March 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "google-ai-blog",
+        "tier": 0,
+        "title": "The latest AI news we announced in March 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026"
+      },
+      "published_at": "2026-04-01T13:00:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.9296568531287904,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 0.0,
+        "total_score": 6.829656853128791
+      },
+      "section": null,
+      "source_name": "Google AI Blog",
+      "story_id": "fallback:4bfdd8c08babed5b",
+      "summary": "March 2026 AI Recap showing new updates",
+      "title": "The latest AI news we announced in March 2026"
+    }
+  ],
+  "run_date": "2026-04-02",
+  "run_id": "33630a53-b728-48f4-a352-4d5c9ad5e84d",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-04-02T06:31:27.278559+00:00",
+    "items_total": 37,
+    "run_id": "33630a53-b728-48f4-a352-4d5c9ad5e84d",
+    "started_at": "2026-04-02T06:24:59.345255+00:00",
+    "stories_total": 37,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Agents",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-agents",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Alignment",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-alignment",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Efficiency",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-efficiency",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Evaluation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-evaluation",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-llm",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Multimodal",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-multimodal",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Reasoning",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-reasoning",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Retrieval",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-retrieval",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Safety",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-api-safety",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-ai",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CL",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-cl",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-cr",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CV",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-cv",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.HC",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-hc",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.IR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-ir",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.LG",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-lg",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.MA",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-ma",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.RO",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-ro",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.SE",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-cs-se",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv stat.ML",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "arxiv-stat-ml",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AWS Machine Learning Blog",
+      "newest_item_date": "2026-04-01T18:57:01+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aws-ml-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "DeepMind Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "deepmind-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 2,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Google AI Blog",
+      "newest_item_date": "2026-04-01T13:30:00+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "google-ai-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face 01.AI (Yi)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-01-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Cohere",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-cohere",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 8,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_daily_papers",
+      "name": "Hugging Face Daily Papers",
+      "newest_item_date": "2026-04-01T17:58:33+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "hf-daily-papers",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face DeepSeek AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-deepseek-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Google",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-google",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Meta Llama",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-meta-llama",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 24,
+      "items_updated": 1,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Microsoft",
+      "newest_item_date": "2026-04-02T01:46:15+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "hf-microsoft",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Mistral AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-mistralai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face OpenAI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-openai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Qwen",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-qwen",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Stability AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-stabilityai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Microsoft Research Blog",
+      "newest_item_date": "2026-04-01T16:00:58+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "microsoft-research-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "NVIDIA AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "nvidia-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "OpenAI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "openai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "papers_with_code",
+      "name": "Papers With Code",
+      "newest_item_date": null,
+      "reason_code": "FETCH_NETWORK_ERROR",
+      "reason_text": "Network error during fetch.",
+      "remediation_hint": "Check network connectivity and DNS resolution.",
+      "source_id": "papers-with-code",
+      "status": "FETCH_FAILED",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Sebastian Raschka Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sebastian-raschka-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": "2604.01220",
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "huggingface"
+      ],
+      "first_seen_at": "2026-04-02T06:28:53.931231+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Universal YOCO for Efficient Depth Scaling",
+          "url": "https://arxiv.org/abs/2604.01220"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Universal YOCO for Efficient Depth Scaling",
+        "url": "https://arxiv.org/abs/2604.01220"
+      },
+      "published_at": "2026-04-01T17:58:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 2.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.9,
+        "llm_relevance_score": 25.2,
+        "recency_score": 0.9491191015818307,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 36.349119101581834
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.01220",
+      "summary": "The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that inflates alongside model depth. We present Universal YOCO (YOCO-U), which combines the YOCO decoder-decoder architecture with recursive computation to achieve a synergistic effect greater than either alone. Built on the YOCO framework, YOCO-U implements a Universal Self-Decoder that performs multiple iterations via parameter sharing, while confining the iterative process to shallow, efficient-attention layers. This combination yields a favorable capability-efficiency tradeoff that neither YOCO nor recursion achieves independently. The YOCO architecture provides a constant global KV cache and linear pre-filling, while partial recursion enhances representational depth with limited overhead. Together, YOCO-U improves token utility and scaling behavior while maintaining efficient inference. Empirical results confirm that YOCO-U remains highly competitive in general and long-context benchmarks, demonstrating that the integration of efficient-attention architectures and recursive computation is a promising direction for scalable LLMs.",
+      "summary_zh": "test-time scaling 的興起顯著提升了 Large Language Models (LLMs) 的推理和代理能力。然而，標準的 Transformer 難以有效地擴展推理時間計算，因為傳統的循環策略存在高計算開銷，且 KV cache 會隨著模型深度而膨脹。我們提出了 Universal YOCO (YOCO-U)，它結合了 YOCO decoder-decoder 架構與 recursive computation，以實現超越單一方法的協同效應。YOCO-U 建立在 YOCO 框架之上，實現了一個 Universal Self-Decoder，通過參數共享執行多次迭代，同時將迭代過程限制在淺層、efficient-attention 層中。這種組合產生了有利的能力-效率權衡，這是 YOCO 和 recursion 都無法單獨實現的。YOCO 架構提供了恆定的 global KV cache 和 linear pre-filling，而 partial recursion 則以有限的開銷增強了 representational depth。總體而言，YOCO-U 提升了 token utility 和 scaling behavior，同時保持了高效的 inference。實證結果證實，YOCO-U 在通用和 long-context benchmarks 中保持高度競爭力，表明 efficient-attention architectures 和 recursive computation 的整合是可擴展 LLMs 的一個有前景的方向。",
+      "title": "Universal YOCO for Efficient Depth Scaling",
+      "title_zh": "Universal YOCO：實現高效深度擴展"
+    },
+    {
+      "arxiv_id": "2604.01193",
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "qwen"
+      ],
+      "first_seen_at": "2026-04-02T06:28:53.931389+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+          "url": "https://arxiv.org/abs/2604.01193"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+        "url": "https://arxiv.org/abs/2604.01193"
+      },
+      "published_at": "2026-04-01T17:39:50+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 2.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.87,
+        "llm_relevance_score": 24.36,
+        "recency_score": 0.9478994330045623,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 35.50789943300456
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.01193",
+      "summary": "Can a large language model (LLM) improve at code generation using only its own raw outputs, without a verifier, a teacher model, or reinforcement learning? We answer in the affirmative with simple self-distillation (SSD): sample solutions from the model with certain temperature and truncation configurations, then fine-tune on those samples with standard supervised fine-tuning. SSD improves Qwen3-30B-Instruct from 42.4% to 55.3% pass@1 on LiveCodeBench v6, with gains concentrating on harder problems, and it generalizes across Qwen and Llama models at 4B, 8B, and 30B scale, including both instruct and thinking variants. To understand why such a simple method can work, we trace these gains to a precision-exploration conflict in LLM decoding and show that SSD reshapes token distributions in a context-dependent way, suppressing distractor tails where precision matters while preserving useful diversity where exploration matters. Taken together, SSD offers a complementary post-training direction for improving LLM code generation.",
+      "summary_zh": "一個大型語言模型 (LLM) 能否僅使用其自身的原始輸出，而無需 verifier、teacher model 或 reinforcement learning，來改進程式碼生成？我們的回答是肯定的，透過 simple self-distillation (SSD)：以特定的 temperature 和 truncation 配置從模型中採樣 solutions，然後使用標準的 supervised fine-tuning 對這些樣本進行 fine-tune。SSD 將 Qwen3-30B-Instruct 在 LiveCodeBench v6 上的 pass@1 從 42.4% 提升到 55.3%，其中增益主要集中在較難的問題上，並且它適用於 4B、8B 和 30B 規模的 Qwen 和 Llama 模型，包括 instruct 和 thinking 變體。為了理解這種簡單方法為何奏效，我們將這些增益追溯到 LLM decoding 中的 precision-exploration 衝突，並展示 SSD 如何以 context-dependent 的方式重塑 token distributions，在 precision 重要的情況下抑制 distractor tails，同時在 exploration 重要的情況下保留有用的 diversity。總而言之，SSD 為改進 LLM 程式碼生成提供了一個互補的 post-training 方向。",
+      "title": "Embarrassingly Simple Self-Distillation Improves Code Generation",
+      "title_zh": "極其簡單的 Self-Distillation 改善了程式碼生成"
+    },
+    {
+      "arxiv_id": "2604.01029",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:28:53.931041+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
+          "url": "https://arxiv.org/abs/2604.01029"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
+        "url": "https://arxiv.org/abs/2604.01029"
+      },
+      "published_at": "2026-04-01T15:39:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.9,
+        "llm_relevance_score": 25.2,
+        "recency_score": 0.9400222130525943,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 34.34002221305259
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.01029",
+      "summary": "Multi-LLM revision pipelines, in which a second model reviews and improves a draft produced by a first, are widely assumed to derive their gains from genuine error correction. We question this assumption with a controlled decomposition experiment that uses four matched conditions to separate second-pass gains into three additive components: re-solving, scaffold, and content. We evaluate this design across two model pairs on three benchmarks spanning knowledge-intensive MCQ and competitive programming. Our results show that the gains of multi-LLM revision are not monolithic, but depend on task structure, draft quality, and the type of draft information. On MCQ tasks, where the answer space is constrained and drafts provide little structural guidance, most gains are consistent with stronger-model re-solving, and directly routing queries to the stronger model can be more effective than revising a weak draft. On code generation tasks, however, two-stage prompting remains useful because even semantically null drafts can provide substantial structural scaffolding, while weak draft content can be harmful. Finally, role-reversed experiments show that strong drafts clearly benefit weak reviewers. Ultimately, our findings demonstrate that the utility of multi-LLM revision is dynamically bottlenecked by task structure and draft quality, necessitating more targeted pipeline designs rather than blanket revision strategies.",
+      "summary_zh": "Multi-LLM revision pipelines，即第二個模型審查並改進第一個模型產生的草稿，通常被認為其增益來自於真正的 error correction。我們透過一項受控的分解實驗來質疑這一假設，該實驗使用四種匹配條件將第二階段增益分解為三個 additive components：re-solving、scaffold 和 content。我們在兩個模型對和三個 benchmarks 上評估了這個設計，涵蓋了知識密集型 MCQ 和 competitive programming。我們的結果顯示，multi-LLM revision 的增益並非單一，而是取決於 task structure、draft quality 和 draft information 的類型。在 MCQ 任務中，由於 answer space 受到限制且草稿提供的結構性指導很少，大部分增益與更強模型的 re-solving 一致，並且直接將查詢路由到更強模型可能比修改一個弱草稿更有效。然而，在程式碼生成任務中，two-stage prompting 仍然有用，因為即使是 semantically null 的草稿也能提供 substantial structural scaffolding，而弱草稿 content 則可能有害。最後，角色互換的實驗顯示，strong drafts 明顯有益於 weak reviewers。最終，我們的發現證明 multi-LLM revision 的效用動態地受到 task structure 和 draft quality 的瓶頸限制，因此需要更具針對性的 pipeline designs，而非一概而論的 revision strategies。",
+      "title": "Revision or Re-Solving? Decomposing Second-Pass Gains in Multi-LLM Pipelines",
+      "title_zh": "修訂還是重新解決？分解 Multi-LLM Pipelines 中第二階段增益"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Lexin Zhou, Xing Xie"
+      ],
+      "categories": [
+        "Research Blog"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:25:02.038258+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "microsoft-research-blog",
+          "tier": 0,
+          "title": "ADeLe: Predicting and explaining AI performance across tasks",
+          "url": "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "microsoft-research-blog",
+        "tier": 0,
+        "title": "ADeLe: Predicting and explaining AI performance across tasks",
+        "url": "https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks"
+      },
+      "published_at": "2026-04-01T16:00:58+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.85,
+        "llm_relevance_score": 23.8,
+        "recency_score": 0.9414136914365842,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 33.241413691436584
+      },
+      "section": null,
+      "source_name": "Microsoft Research Blog",
+      "story_id": "fallback:d874f04a9f301af3",
+      "summary": "<p>AI benchmarks report how large language models (LLMs) perform on specific tasks but provide little insight into their underlying capabilities that drive their performance. They do not explain failures or reliably predict outcomes on new tasks. To address this, Microsoft researchers in collaboration with Princeton University and&#160;Universitat&#160;Politècnica&#160;de València introduce ADeLe (opens in new tab) (AI [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/\">ADeLe: Predicting and explaining AI performance across tasks</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
+      "title": "ADeLe: Predicting and explaining AI performance across tasks"
+    },
+    {
+      "arxiv_id": "2604.01128",
+      "authors": [],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-04-02T06:28:53.930685+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "hf-daily-papers",
+          "tier": 1,
+          "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
+          "url": "https://arxiv.org/abs/2604.01128"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "hf-daily-papers",
+        "tier": 1,
+        "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
+        "url": "https://arxiv.org/abs/2604.01128"
+      },
+      "published_at": "2026-04-01T16:48:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.85,
+        "llm_relevance_score": 23.8,
+        "recency_score": 0.9444979400008001,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 32.9444979400008
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2604.01128",
+      "summary": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still lacking. We introduce Paper Reconstruction Evaluation (PaperRecon), an evaluation framework in which an overview (overview.md) is created from an existing paper, after which an agent generates a full paper based on the overview and minimal additional resources, and the result is subsequently compared against the original paper. PaperRecon disentangles the evaluation of the AI-written papers into two orthogonal dimensions, Presentation and Hallucination, where Presentation is evaluated using a rubric and Hallucination is assessed via agentic evaluation grounded in the original paper source. For evaluation, we introduce PaperWrite-Bench, a benchmark of 51 papers from top-tier venues across diverse domains published after 2025. Our experiments reveal a clear trade-off: while both ClaudeCode and Codex improve with model advances, ClaudeCode achieves higher presentation quality at the cost of more than 10 hallucinations per paper on average, whereas Codex produces fewer hallucinations but lower presentation quality. This work takes a first step toward establishing evaluation frameworks for AI-driven paper writing and improving the understanding of its risks within the research community.",
+      "summary_zh": "本論文引入了第一個系統化的評估框架，用於量化現代 coding agents 撰寫論文的品質和風險。儘管 AI 驅動的論文撰寫日益受到關注，但對 AI 撰寫論文的品質和潛在風險的嚴格評估仍然有限，並且對其可靠性缺乏統一的理解。我們引入了 Paper Reconstruction Evaluation (PaperRecon)，這是一個評估框架，其中首先從現有論文創建一個 overview (overview.md)，然後 agent 根據該 overview 和最少的額外資源生成一篇完整的論文，最後將結果與原始論文進行比較。PaperRecon 將 AI 撰寫論文的評估解耦為兩個正交維度：Presentation 和 Hallucination，其中 Presentation 使用 rubric 進行評估，而 Hallucination 則透過基於原始論文來源的 agentic evaluation 進行評估。為此，我們引入了 PaperWrite-Bench，一個包含 51 篇來自 2025 年之後發表的頂級會議、涵蓋不同領域的論文基準。我們的實驗揭示了一個明顯的權衡：儘管 ClaudeCode 和 Codex 都隨著模型進步而改進，但 ClaudeCode 實現了更高的 presentation quality，代價是平均每篇論文產生超過 10 個 hallucinations，而 Codex 產生的 hallucinations 較少但 presentation quality 較低。這項工作邁出了建立 AI 驅動論文撰寫評估框架並增強研究界對其風險理解的第一步。",
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
+      "title_zh": "論文重建評估：評估 AI 撰寫論文的呈現與幻覺"
+    }
+  ]
+}
