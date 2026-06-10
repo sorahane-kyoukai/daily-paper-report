@@ -1,0 +1,136 @@
+{# Reusable Jinja macros for template components #}
+
+{#
+  Renders a story card with modern styling.
+
+  Args:
+    story: Story object with title, primary_link, published_at, links, etc.
+    show_entities: Whether to display entity tags (default: false)
+    show_arxiv: Whether to display arXiv ID (default: false)
+    rank: Optional rank number for numbered lists
+#}
+{% macro story_card(story, show_entities=false, show_arxiv=false, rank=none) %}
+<li class="story-card">
+    {% if rank %}
+    <span class="story-rank">{{ rank }}</span>
+    {% endif %}
+    <div class="story-title">
+        <a href="{{ story.primary_link.url }}">{{ story.title }}</a>
+    </div>
+    <div class="story-meta">
+        {% if story.published_at %}
+            <span class="story-date">{{ story.published_at.strftime('%Y-%m-%d') }}</span>
+        {% else %}
+            <span class="date-unknown">Date unknown</span>
+        {% endif %}
+        {% if show_entities and story.entities %}
+            <span class="separator">·</span>
+            <div class="story-entities">
+                {% for entity in story.entities %}
+                <span class="entity-tag">{{ entity }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if show_arxiv and story.arxiv_id %}
+            <span class="separator">·</span>
+            <span class="arxiv-id">arXiv:{{ story.arxiv_id }}</span>
+        {% endif %}
+    </div>
+    {% if story.links | length > 1 %}
+    <div class="story-links">
+        {% for link in story.links %}
+        <a href="{{ link.url }}" class="story-link" data-type="{{ link.link_type.value }}" title="{{ link.link_type.value }}">{{ link.link_type.value }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</li>
+{% endmacro %}
+
+{#
+  Renders a story item (alias for backward compatibility).
+#}
+{% macro story_item(story, show_entities=false, show_arxiv=false) %}
+{{ story_card(story, show_entities=show_entities, show_arxiv=show_arxiv) }}
+{% endmacro %}
+
+{#
+  Renders a formatted date with consistent styling.
+
+  Args:
+    date: datetime object or None
+    format: strftime format string (default: '%Y-%m-%d')
+#}
+{% macro format_date(date, format='%Y-%m-%d') %}
+{% if date %}
+<span>{{ date.strftime(format) }}</span>
+{% else %}
+<span class="date-unknown">Date unknown</span>
+{% endif %}
+{% endmacro %}
+
+{#
+  Section descriptions for each content type.
+#}
+{% set section_descriptions = {
+    'top5': 'Curated selection of the most significant AI/ML developments today, combining breakthrough research, major releases, and high-impact announcements.',
+    'papers': 'Latest research papers from arXiv and academic sources, covering machine learning, NLP, computer vision, and AI safety.',
+    'models': 'New model releases and updates from leading AI labs and the open-source community.',
+    'radar': 'Broader AI ecosystem updates including blog posts, tools, datasets, and industry news worth tracking.'
+} %}
+
+{#
+  Renders a section with stories and proper styling.
+  Always shows the section with description, displays empty state when no content.
+
+  Args:
+    title: Section heading text
+    stories: List of story objects
+    section_class: CSS class for section theming (top5, papers, models, radar)
+    icon: Icon character for section header
+    show_entities: Whether to show entity tags
+    show_arxiv: Whether to show arXiv IDs
+    show_rank: Whether to show rank numbers
+    description: Optional custom description (uses default from section_descriptions if not provided)
+#}
+{% macro story_section(title, stories, section_class='', icon='', show_entities=false, show_arxiv=false, show_rank=false, description=none) %}
+<section class="section-{{ section_class }}">
+    <h2>
+        {% if icon %}<span class="section-icon">{{ icon }}</span>{% endif %}
+        {{ title }}
+    </h2>
+    <p class="section-description">{{ description or section_descriptions.get(section_class, '') }}</p>
+    {% if stories %}
+    <ul class="story-list">
+        {% for story in stories %}
+        {{ story_card(story, show_entities=show_entities, show_arxiv=show_arxiv, rank=(loop.index if show_rank else none)) }}
+        {% endfor %}
+    </ul>
+    {% else %}
+    <div class="section-empty">
+        <span class="section-empty-icon">📭</span>
+        <p>No new {{ title | lower }} today. Check back tomorrow!</p>
+    </div>
+    {% endif %}
+</section>
+{% endmacro %}
+
+{#
+  Renders an entity group with its stories.
+
+  Args:
+    entity_id: Entity identifier
+    stories: List of story objects for this entity
+#}
+{% macro entity_group(entity_id, stories) %}
+<div class="entity-group">
+    <div class="entity-header">
+        <span class="entity-icon">🤖</span>
+        <span class="entity-name">{{ entity_id }}</span>
+    </div>
+    <ul class="story-list">
+        {% for story in stories %}
+        {{ story_card(story) }}
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}
