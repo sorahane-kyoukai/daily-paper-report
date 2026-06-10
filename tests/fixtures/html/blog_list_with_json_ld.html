@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Blog with JSON-LD</title>
+</head>
+<body>
+    <main>
+        <article>
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "JSON-LD Article One",
+                "datePublished": "2024-03-10T09:30:00Z",
+                "dateModified": "2024-03-11T10:00:00Z"
+            }
+            </script>
+            <h2><a href="/news/json-ld-one">JSON-LD Article One</a></h2>
+            <p class="description">Description of JSON-LD article one.</p>
+        </article>
+        <article>
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "JSON-LD Article Two",
+                "datePublished": "2024-03-09T08:00:00Z"
+            }
+            </script>
+            <h2><a href="/news/json-ld-two">JSON-LD Article Two</a></h2>
+            <p class="description">Description of JSON-LD article two.</p>
+        </article>
+    </main>
+</body>
+</html>

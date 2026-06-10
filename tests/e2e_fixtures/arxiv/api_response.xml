@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query=cat:cs.LG&amp;start=0&amp;max_results=10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: cs.LG</title>
+  <id>http://arxiv.org/api/cs.LG</id>
+  <updated>2024-01-15T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">3</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12345v1</id>
+    <updated>2024-01-15T18:00:00Z</updated>
+    <published>2024-01-15T18:00:00Z</published>
+    <title>Efficient Fine-Tuning Methods for Large Language Models</title>
+    <summary>We present novel methods for efficient fine-tuning of large language models with reduced memory footprint and faster convergence. Our approach achieves state-of-the-art results on multiple benchmarks.</summary>
+    <author>
+      <name>Alice Smith</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">AI Research Lab</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bob Johnson</name>
+      <arxiv:affiliation xmlns:arxiv="http://arxiv.org/schemas/atom">University of AI</arxiv:affiliation>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">15 pages, 8 figures</arxiv:comment>
+    <link href="http://arxiv.org/abs/2401.12345v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2401.12345v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12346v1</id>
+    <updated>2024-01-14T15:30:00Z</updated>
+    <published>2024-01-14T15:30:00Z</published>
+    <title>Scaling Laws for Neural Machine Translation</title>
+    <summary>This paper investigates scaling laws for neural machine translation models across various language pairs. We find that performance scales predictably with model size and data quantity.</summary>
+    <author>
+      <name>Carol Williams</name>
+    </author>
+    <link href="http://arxiv.org/abs/2401.12346v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2401.12346v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12347v1</id>
+    <updated>2024-01-13T10:00:00Z</updated>
+    <published>2024-01-13T10:00:00Z</published>
+    <title>Vision Transformers for Medical Image Analysis</title>
+    <summary>We adapt vision transformers for medical image analysis tasks including classification, segmentation, and detection. Our models achieve superior performance on standard medical imaging benchmarks.</summary>
+    <author>
+      <name>David Chen</name>
+    </author>
+    <author>
+      <name>Eve Martinez</name>
+    </author>
+    <link href="http://arxiv.org/abs/2401.12347v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2401.12347v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
