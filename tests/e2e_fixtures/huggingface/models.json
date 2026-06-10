@@ -1,0 +1,66 @@
+[
+  {
+    "id": "example-org/gpt-large-v2",
+    "modelId": "example-org/gpt-large-v2",
+    "author": "example-org",
+    "sha": "abc123def456",
+    "lastModified": "2024-01-15T10:30:00.000Z",
+    "private": false,
+    "disabled": false,
+    "gated": false,
+    "pipeline_tag": "text-generation",
+    "tags": ["pytorch", "transformers", "gpt2", "text-generation", "english"],
+    "downloads": 150000,
+    "likes": 1200,
+    "library_name": "transformers",
+    "siblings": [
+      {"rfilename": "config.json"},
+      {"rfilename": "pytorch_model.bin"},
+      {"rfilename": "tokenizer.json"}
+    ],
+    "createdAt": "2024-01-10T08:00:00.000Z"
+  },
+  {
+    "id": "example-org/bert-finetuned-ner",
+    "modelId": "example-org/bert-finetuned-ner",
+    "author": "example-org",
+    "sha": "def456abc789",
+    "lastModified": "2024-01-14T14:20:00.000Z",
+    "private": false,
+    "disabled": false,
+    "gated": false,
+    "pipeline_tag": "token-classification",
+    "tags": ["pytorch", "transformers", "bert", "token-classification", "ner"],
+    "downloads": 50000,
+    "likes": 450,
+    "library_name": "transformers",
+    "siblings": [
+      {"rfilename": "config.json"},
+      {"rfilename": "pytorch_model.bin"},
+      {"rfilename": "tokenizer.json"},
+      {"rfilename": "vocab.txt"}
+    ],
+    "createdAt": "2024-01-05T12:00:00.000Z"
+  },
+  {
+    "id": "example-org/whisper-large-v3",
+    "modelId": "example-org/whisper-large-v3",
+    "author": "example-org",
+    "sha": "ghi789jkl012",
+    "lastModified": "2024-01-13T09:45:00.000Z",
+    "private": false,
+    "disabled": false,
+    "gated": false,
+    "pipeline_tag": "automatic-speech-recognition",
+    "tags": ["pytorch", "transformers", "whisper", "speech-recognition", "multilingual"],
+    "downloads": 200000,
+    "likes": 2500,
+    "library_name": "transformers",
+    "siblings": [
+      {"rfilename": "config.json"},
+      {"rfilename": "pytorch_model.bin"},
+      {"rfilename": "preprocessor_config.json"}
+    ],
+    "createdAt": "2024-01-01T16:30:00.000Z"
+  }
+]

@@ -1,0 +1,211 @@
+[project]
+name = "research-report"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.2.1",
+    "pyyaml>=6.0.2",
+    "click>=8.1.0",
+    "structlog>=24.4.0",
+    "httpx>=0.27.0",
+    "feedparser>=6.0.12",
+    "beautifulsoup4>=4.14.3",
+    "lxml>=6.0.2",
+    "python-dateutil>=2.9.0.post0",
+    "types-python-dateutil>=2.9.0.20251115",
+    "types-beautifulsoup4>=4.12.0.20250516",
+    "defusedxml>=0.7.1",
+    "jinja2>=3.1.0",
+]
+
+[project.optional-dependencies]
+semantic = [
+    "fastembed>=0.4.0",
+    "numpy>=1.26.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=6.0.0",
+    "pytest-asyncio>=0.25.0",
+    "mypy>=1.14.0",
+    "ruff>=0.9.0",
+    "bandit>=1.8.0",
+    "types-PyYAML>=6.0.0",
+]
+
+[project.scripts]
+digest = "src.cli.digest:cli"
+
+# ---------------- Ruff ----------------
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-single-line = false
+lines-after-imports = 2
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+
+[tool.ruff.lint]
+# Enable comprehensive linting rules for high code quality
+select = [
+    "E", # pycodestyle errors ??PEP 8 outright violations (indentation, whitespace, etc.)
+    "W", # pycodestyle warnings ??stylistic issues like excessive line length
+    "F", # Pyflakes ??logical errors (unused imports, undefined names, etc.)
+    "UP", # pyupgrade ??suggest modern Python syntax (f-strings, pathlib, etc.)
+    "B", # flake8-bugbear ??common bugs and design problems
+    "SIM", # flake8-simplify ??propose simpler, more readable constructs
+    "I", # isort ??import grouping and ordering
+    "N", # pep8-naming ??enforce naming conventions
+    "C90", # mccabe ??cyclomatic complexity checks
+    "ARG", # flake8-unused-arguments ??detect unused or redundant arguments
+    "S", # flake8-bandit ??security-oriented code issues
+    "T20", # flake8-print ??forbid stray print/debug statements
+    "RET", # flake8-return ??ensure explicit and consistent return patterns
+    "ICN", # flake8-import-conventions ??enforce import aliasing rules (e.g., `import numpy as np`)
+    "PIE", # flake8-pie ??miscellaneous correctness & readability improvements
+    "PL", # Pylint subset ??broader code-quality checks (convention, error, refactor, warning)
+    "TRY", # tryceratops ??encourage explicit, focused exception handling
+    "FLY", # flynt ??suggest converting old string formatting to f-strings
+    "PERF", # perflint ??flag patterns with measurable performance overhead
+    "ANN" # flake8-annotations ??enforce type annotations for function signatures
+]
+
+ignore = [
+    "UP047",  # Generic function `create_function_with_params` should use type parameters
+
+    "E501",   # line-too-long
+
+    "COM819", # prohibited-trailing-comma
+
+    "TRY003", # raise-vanilla-args (avoid specifying long messages outside the exception class)
+
+    "PERF203", # try-except-in-loop (try-except within a loop incurs performance overhead)
+
+    "ANN204", # missing-return-type-special-method
+    "ANN401", # any-type (dynamically typed expressions (typing.Any) are disallowed)
+
+    "TRY300", # try-consider-else (consider moving statement to else block)
+    "PLC0415", # import-outside-toplevel (allow conditional imports)
+    "S607",   # partial executable path (git is standard system tool)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+    "S101",    # assert allowed in tests
+    "PLR2004", # magic values allowed in tests
+    "ARG001",  # unused function args for fixtures
+    "ARG002",  # unused method args for fixtures
+    "PLR0913", # many args allowed in test helper functions
+]
+"main.py" = [
+    "PLC0415", # import inside function ok for entry point
+]
+"scripts/retranslate.py" = [
+    "C901",    # maintenance CLI has branching-heavy response recovery
+    "PLR0912", # maintenance CLI keeps operational flow in one command
+    "PLR0915", # maintenance CLI keeps operational flow in one command
+    "PLR2004", # CLI progress previews use small display limits/status codes
+    "T201",    # print is intentional CLI output
+]
+"src/collectors/arxiv/api.py" = [
+    "C901",    # arXiv query-window collection has retry/pagination branching
+    "PLR0913", # internal helper keeps pagination parameters explicit
+]
+"src/features/fetch/client.py" = [
+    "PLR0913", # retry helper keeps HTTP execution parameters explicit
+]
+"src/features/llm/factory.py" = [
+    "PLR0913", # provider factory accepts explicit environment overrides
+]
+"src/features/llm/openai_compatible_client.py" = [
+    "PLR0913", # client constructor mirrors provider configuration fields
+]
+"tests/e2e_linker_validation.py" = [
+    "T201",  # print allowed in E2E CLI validation script
+    "S108",  # /tmp is acceptable for test artifacts
+]
+"tests/e2e_generate_test_output.py" = [
+    "E402",  # allow sys.path bootstrap before imports in script
+]
+
+# Configure pydocstyle to use Google docstring convention
+[tool.ruff.lint.pydocstyle]
+convention = "google" # Use Google-style docstrings (Args:, Returns:, Raises:)
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+# ---------------- mypy ----------------
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+plugins = ["pydantic.mypy"]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_any_generics = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+module = ["fastembed", "fastembed.*", "numpy", "numpy.*"]
+ignore_missing_imports = true
+
+# ---------------- pytest ----------------
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+    "--cov=src",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+    "--cov-report=xml",
+    "--disable-warnings",
+]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::RuntimeWarning",
+    "ignore::UserWarning",
+]
+
+# ---------------- bandit ----------------
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "venv", "env", ".env"]
+skips = ["B101", "B601"]
+[tool.bandit.assert_used]
+skips = ["**/test_*.py", "**/tests/**"]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "types-defusedxml>=0.7.0.20250822",
+]

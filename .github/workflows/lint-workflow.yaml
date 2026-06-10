@@ -1,0 +1,84 @@
+# Workflow Linting CI
+# Validates GitHub Actions workflow YAML files using actionlint
+
+name: Lint Workflows
+
+"on":
+  push:
+    paths:
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  actionlint:
+    name: Validate Workflow YAML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run actionlint
+        uses: raven-actions/actionlint@v2
+        with:
+          fail-on-error: true
+
+      - name: Validate required permissions
+        run: |
+          echo "Validating workflow permissions..."
+
+          # Check daily-digest.yaml has required permissions
+          WORKFLOW=".github/workflows/daily-digest.yaml"
+
+          if [ -f "${WORKFLOW}" ]; then
+            echo "Checking ${WORKFLOW}..."
+
+            # Verify contents:write permission
+            if ! grep -q "contents: write" "${WORKFLOW}"; then
+              echo "ERROR: Missing 'contents: write' permission in ${WORKFLOW}"
+              exit 1
+            fi
+
+            # Verify pages:write permission
+            if ! grep -q "pages: write" "${WORKFLOW}"; then
+              echo "ERROR: Missing 'pages: write' permission in ${WORKFLOW}"
+              exit 1
+            fi
+
+            # Verify id-token:write permission
+            if ! grep -q "id-token: write" "${WORKFLOW}"; then
+              echo "ERROR: Missing 'id-token: write' permission in ${WORKFLOW}"
+              exit 1
+            fi
+
+            # Verify concurrency is configured
+            if ! grep -q "concurrency:" "${WORKFLOW}"; then
+              echo "ERROR: Missing concurrency configuration in ${WORKFLOW}"
+              exit 1
+            fi
+
+            # Verify no set -x (could leak secrets)
+            if grep -q "set -x" "${WORKFLOW}"; then
+              echo "ERROR: Found 'set -x' in ${WORKFLOW} - this could leak secrets"
+              exit 1
+            fi
+
+            echo "All permission checks passed for ${WORKFLOW}"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Workflow Lint Results"
+            echo ""
+            echo "| Check | Status |"
+            echo "|-------|--------|"
+            echo "| actionlint | ${{ job.status }} |"
+            echo "| permissions | ${{ job.status }} |"
+          } >> "$GITHUB_STEP_SUMMARY"

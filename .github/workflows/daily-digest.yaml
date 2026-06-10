@@ -1,0 +1,589 @@
+name: Daily Digest
+
+"on":
+  schedule:
+    # Asia/Taipei 14:00 = UTC 06:00
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Date to run (YYYY-MM-DD). Leave blank to use today in Asia/Taipei."
+        required: false
+        type: string
+      deploy_only:
+        description: "Deploy restored state branch archives without rerunning data/LLM processing."
+        required: false
+        type: boolean
+        default: false
+      report_mode:
+        description: "Report generation mode: auto, none, weekly, monthly, or all."
+        required: false
+        type: choice
+        default: auto
+        options:
+          - auto
+          - none
+          - weekly
+          - monthly
+          - all
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest-deploy
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.13"
+  STATE_BRANCH: state
+  STATE_FILE: state.sqlite
+  OUTPUT_DIR: public
+  CONFIG_DIR: tests/fixtures/config
+  TIMEZONE: Asia/Taipei
+
+jobs:
+  digest:
+    name: Run Digest Data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Resolve target date and mode
+        id: validate-date
+        run: |
+          TARGET_DATE="${{ inputs.target_date }}"
+          DEPLOY_ONLY="${{ inputs.deploy_only }}"
+          REPORT_MODE="${{ inputs.report_mode }}"
+          TODAY_LOCAL=$(TZ="${TIMEZONE}" date +%F)
+
+          if [ -z "${TARGET_DATE}" ]; then
+            TARGET_DATE="${TODAY_LOCAL}"
+          fi
+          if [ -z "${REPORT_MODE}" ]; then
+            REPORT_MODE="auto"
+          fi
+
+          if ! [[ "${TARGET_DATE}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::Invalid target_date format: ${TARGET_DATE} (expected YYYY-MM-DD)"
+            exit 1
+          fi
+
+          python3 -c "import datetime,sys; datetime.datetime.strptime(sys.argv[1], '%Y-%m-%d')" "${TARGET_DATE}"
+          if ! [[ "${REPORT_MODE}" =~ ^(auto|none|weekly|monthly|all)$ ]]; then
+            echo "::error::Invalid report_mode: ${REPORT_MODE}"
+            exit 1
+          fi
+
+          LOCAL_WEEKDAY=$(python3 -c "import datetime,sys; print(datetime.date.fromisoformat(sys.argv[1]).isoweekday())" "${TARGET_DATE}")
+          LOCAL_DAY_OF_MONTH=$(python3 -c "import datetime,sys; print(datetime.date.fromisoformat(sys.argv[1]).day)" "${TARGET_DATE}")
+          GENERATE_WEEKLY=false
+          GENERATE_MONTHLY=false
+
+          case "${REPORT_MODE}" in
+            auto)
+              if [ "${LOCAL_WEEKDAY}" = "7" ]; then
+                GENERATE_WEEKLY=true
+              fi
+              if [ "${LOCAL_DAY_OF_MONTH}" = "1" ]; then
+                GENERATE_MONTHLY=true
+              fi
+              ;;
+            weekly)
+              GENERATE_WEEKLY=true
+              ;;
+            monthly)
+              GENERATE_MONTHLY=true
+              ;;
+            all)
+              GENERATE_WEEKLY=true
+              GENERATE_MONTHLY=true
+              ;;
+            none)
+              ;;
+          esac
+
+          if [ "${DEPLOY_ONLY}" = "true" ]; then
+            RUN_MODE="deploy-only"
+            echo "::notice::Deploying restored state archives for ${TARGET_DATE} without rerunning processing."
+          elif [ "${TARGET_DATE}" = "${TODAY_LOCAL}" ]; then
+            RUN_MODE="run"
+            echo "::notice::Running full digest pipeline for ${TARGET_DATE}."
+          else
+            RUN_MODE="backfill"
+            echo "::notice::Running historical backfill for ${TARGET_DATE}."
+          fi
+
+          {
+            echo "target_date=${TARGET_DATE}"
+            echo "today_local=${TODAY_LOCAL}"
+            echo "report_mode=${REPORT_MODE}"
+            echo "generate_weekly_report=${GENERATE_WEEKLY}"
+            echo "generate_monthly_report=${GENERATE_MONTHLY}"
+            echo "run_mode=${RUN_MODE}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 1
+
+      - name: Restore state and archives from state branch
+        id: restore-state
+        run: |
+          mkdir -p "${OUTPUT_DIR}/api" "${OUTPUT_DIR}/api/day" "${OUTPUT_DIR}/day" \
+            "${OUTPUT_DIR}/api/reports/weekly" "${OUTPUT_DIR}/api/reports/monthly" \
+            "${OUTPUT_DIR}/reports/weekly" "${OUTPUT_DIR}/reports/monthly"
+          RUN_MODE="${{ steps.validate-date.outputs.run_mode }}"
+          STATE_RESTORED=false
+
+          if git fetch origin "${STATE_BRANCH}:${STATE_BRANCH}" 2>/dev/null; then
+            echo "state_branch_exists=true" >> "$GITHUB_OUTPUT"
+
+            for FILE in $(git ls-tree -r --name-only "${STATE_BRANCH}" day/ 2>/dev/null || true); do
+              mkdir -p "$(dirname "${OUTPUT_DIR}/${FILE}")"
+              git show "${STATE_BRANCH}:${FILE}" > "${OUTPUT_DIR}/${FILE}" 2>/dev/null || true
+            done
+
+            for FILE in $(git ls-tree -r --name-only "${STATE_BRANCH}" api/day/ 2>/dev/null || true); do
+              mkdir -p "$(dirname "${OUTPUT_DIR}/${FILE}")"
+              git show "${STATE_BRANCH}:${FILE}" > "${OUTPUT_DIR}/${FILE}" 2>/dev/null || true
+            done
+
+            for FILE in $(git ls-tree -r --name-only "${STATE_BRANCH}" api/reports/ 2>/dev/null || true); do
+              mkdir -p "$(dirname "${OUTPUT_DIR}/${FILE}")"
+              git show "${STATE_BRANCH}:${FILE}" > "${OUTPUT_DIR}/${FILE}" 2>/dev/null || true
+            done
+
+            for FILE in $(git ls-tree -r --name-only "${STATE_BRANCH}" reports/ 2>/dev/null || true); do
+              mkdir -p "$(dirname "${OUTPUT_DIR}/${FILE}")"
+              git show "${STATE_BRANCH}:${FILE}" > "${OUTPUT_DIR}/${FILE}" 2>/dev/null || true
+            done
+
+            if git cat-file -e "${STATE_BRANCH}:api/daily.json" 2>/dev/null; then
+              git show "${STATE_BRANCH}:api/daily.json" > "${OUTPUT_DIR}/api/daily.json" 2>/dev/null || true
+            fi
+
+            for FILE in api/llm_scores.json api/translations_zh.json; do
+              if git cat-file -e "${STATE_BRANCH}:${FILE}" 2>/dev/null; then
+                git show "${STATE_BRANCH}:${FILE}" > "${OUTPUT_DIR}/${FILE}" 2>/dev/null || true
+              fi
+            done
+
+            if git show "${STATE_BRANCH}:${STATE_FILE}" > "${STATE_FILE}" 2>/dev/null; then
+              if head -c 15 "${STATE_FILE}" | grep -q "SQLite format 3"; then
+                STATE_RESTORED=true
+              else
+                echo "::error::Restored ${STATE_FILE} is not a SQLite database. Republish ${STATE_BRANCH} without Git LFS pointers."
+                rm -f "${STATE_FILE}"
+              fi
+            fi
+          else
+            echo "state_branch_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "state_restored=${STATE_RESTORED}" >> "$GITHUB_OUTPUT"
+
+          if [ "${STATE_RESTORED}" = "true" ]; then
+            echo "::notice::Restored state snapshot from ${STATE_BRANCH}."
+            exit 0
+          fi
+
+          if [ "${RUN_MODE}" = "run" ]; then
+            echo "::notice::No persisted state snapshot found. Bootstrapping today's digest from empty state."
+            exit 0
+          fi
+
+          echo "::error::State snapshot missing. Historical reruns require ${STATE_FILE} from ${STATE_BRANCH}."
+          exit 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Run today's digest pipeline
+        id: run-digest
+        if: steps.validate-date.outputs.run_mode == 'run'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          OPENREVIEW_TOKEN: ${{ secrets.OPENREVIEW_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_REFRESH_TOKEN: ${{ secrets.GEMINI_REFRESH_TOKEN }}
+          GEMINI_OAUTH_CLIENT_ID: ${{ secrets.GEMINI_OAUTH_CLIENT_ID }}
+          GEMINI_OAUTH_CLIENT_SECRET: ${{ secrets.GEMINI_OAUTH_CLIENT_SECRET }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_REASONING_EFFORT: ${{ secrets.OPENAI_REASONING_EFFORT }}
+          OPENAI_THINKING_TYPE: ${{ secrets.OPENAI_THINKING_TYPE }}
+          OPENAI_MAX_TOKENS: ${{ secrets.OPENAI_MAX_TOKENS }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          uv run python main.py run \
+            --config "${CONFIG_DIR}/sources.yaml" \
+            --entities "${CONFIG_DIR}/entities.yaml" \
+            --topics "${CONFIG_DIR}/topics.yaml" \
+            --state "${STATE_FILE}" \
+            --out "${OUTPUT_DIR}" \
+            --tz "${TIMEZONE}" \
+            --lookback 24 \
+            --json-logs
+
+      - name: Rerun target date from state
+        id: backfill
+        if: steps.validate-date.outputs.run_mode == 'backfill'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_REFRESH_TOKEN: ${{ secrets.GEMINI_REFRESH_TOKEN }}
+          GEMINI_OAUTH_CLIENT_ID: ${{ secrets.GEMINI_OAUTH_CLIENT_ID }}
+          GEMINI_OAUTH_CLIENT_SECRET: ${{ secrets.GEMINI_OAUTH_CLIENT_SECRET }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_REASONING_EFFORT: ${{ secrets.OPENAI_REASONING_EFFORT }}
+          OPENAI_THINKING_TYPE: ${{ secrets.OPENAI_THINKING_TYPE }}
+          OPENAI_MAX_TOKENS: ${{ secrets.OPENAI_MAX_TOKENS }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          TARGET_DATE="${{ steps.validate-date.outputs.target_date }}"
+
+          uv run python main.py backfill \
+            --config "${CONFIG_DIR}/sources.yaml" \
+            --entities "${CONFIG_DIR}/entities.yaml" \
+            --topics "${CONFIG_DIR}/topics.yaml" \
+            --state "${STATE_FILE}" \
+            --out "${OUTPUT_DIR}" \
+            --tz "${TIMEZONE}" \
+            --date "${TARGET_DATE}" \
+            --overwrite-existing \
+            --json-logs
+
+      - name: Generate scheduled reports
+        id: generate-reports
+        if: steps.validate-date.outputs.generate_weekly_report == 'true' || steps.validate-date.outputs.generate_monthly_report == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_REFRESH_TOKEN: ${{ secrets.GEMINI_REFRESH_TOKEN }}
+          GEMINI_OAUTH_CLIENT_ID: ${{ secrets.GEMINI_OAUTH_CLIENT_ID }}
+          GEMINI_OAUTH_CLIENT_SECRET: ${{ secrets.GEMINI_OAUTH_CLIENT_SECRET }}
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_REASONING_EFFORT: ${{ secrets.OPENAI_REASONING_EFFORT }}
+          OPENAI_THINKING_TYPE: ${{ secrets.OPENAI_THINKING_TYPE }}
+          OPENAI_MAX_TOKENS: ${{ secrets.OPENAI_MAX_TOKENS }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          TARGET_DATE="${{ steps.validate-date.outputs.target_date }}"
+
+          if [ "${{ steps.validate-date.outputs.generate_weekly_report }}" = "true" ]; then
+            uv run python main.py report \
+              --type weekly \
+              --out "${OUTPUT_DIR}" \
+              --tz "${TIMEZONE}" \
+              --date "${TARGET_DATE}" \
+              --limit 100 \
+              --archive-lookahead-days 1 \
+              --json-logs
+          fi
+
+          if [ "${{ steps.validate-date.outputs.generate_monthly_report }}" = "true" ]; then
+            uv run python main.py report \
+              --type monthly \
+              --out "${OUTPUT_DIR}" \
+              --tz "${TIMEZONE}" \
+              --date "${TARGET_DATE}" \
+              --previous-month \
+              --limit 100 \
+              --archive-lookahead-days 1 \
+              --json-logs
+          fi
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Build Vue.js frontend
+        run: |
+          cd frontend
+          pnpm install --frozen-lockfile
+          pnpm run build-only
+
+          cp dist/index.html "../${OUTPUT_DIR}/"
+          cp dist/index.html "../${OUTPUT_DIR}/404.html"
+          rm -rf "../${OUTPUT_DIR}/assets"
+          cp -r dist/assets "../${OUTPUT_DIR}/"
+
+          for ROUTE in archive sources status reports; do
+            mkdir -p "../${OUTPUT_DIR}/${ROUTE}"
+            cp dist/index.html "../${OUTPUT_DIR}/${ROUTE}.html"
+            cp dist/index.html "../${OUTPUT_DIR}/${ROUTE}/index.html"
+          done
+
+      - name: Prepare archive output
+        run: |
+          TARGET_DATE="${{ steps.validate-date.outputs.target_date }}"
+          RUN_MODE="${{ steps.validate-date.outputs.run_mode }}"
+          GENERATED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          mkdir -p "${OUTPUT_DIR}/api/day" "${OUTPUT_DIR}/day" \
+            "${OUTPUT_DIR}/reports/weekly" "${OUTPUT_DIR}/reports/monthly"
+
+          if [ ! -f "${STATE_FILE}" ]; then
+            echo "::error::Missing ${STATE_FILE}; cannot publish ${OUTPUT_DIR}/api/state.sqlite"
+            exit 1
+          fi
+          cp "${STATE_FILE}" "${OUTPUT_DIR}/api/state.sqlite"
+
+          if [ ! -f "${OUTPUT_DIR}/api/day/${TARGET_DATE}.json" ]; then
+            if [ "${RUN_MODE}" = "deploy-only" ] && [ -f "${OUTPUT_DIR}/api/daily.json" ]; then
+              echo "::notice::Skipping target-date archive check for deploy-only restore; using existing daily.json."
+            else
+              echo "::error::Missing rerun output: ${OUTPUT_DIR}/api/day/${TARGET_DATE}.json"
+              exit 1
+            fi
+          fi
+
+          if [ ! -f "${OUTPUT_DIR}/api/daily.json" ]; then
+            cp "${OUTPUT_DIR}/api/day/${TARGET_DATE}.json" "${OUTPUT_DIR}/api/daily.json"
+          fi
+
+          DATES=$(find "${OUTPUT_DIR}/api/day" -maxdepth 1 -name "*.json" -printf "%f\n" | sed 's/\.json$//' | sort -r)
+          DATES_JSON=$(echo "${DATES}" | jq -R -s 'split("\n") | map(select(length > 0))')
+
+          jq --argjson dates "${DATES_JSON}" '.archive_dates = $dates' \
+            "${OUTPUT_DIR}/api/daily.json" > "${OUTPUT_DIR}/api/daily.json.tmp"
+          mv "${OUTPUT_DIR}/api/daily.json.tmp" "${OUTPUT_DIR}/api/daily.json"
+
+          if [ ! -f "${OUTPUT_DIR}/api/reports/index.json" ]; then
+            mkdir -p "${OUTPUT_DIR}/api/reports"
+            cat > "${OUTPUT_DIR}/api/reports/index.json" <<EOF
+          {
+            "generated_at": "${GENERATED_AT}",
+            "latest": {
+              "weekly": null,
+              "monthly": null
+            },
+            "weekly": [],
+            "monthly": []
+          }
+          EOF
+          fi
+
+          for JSON_FILE in "${OUTPUT_DIR}/api/day/"*.json; do
+            [ -f "${JSON_FILE}" ] || continue
+            DATE=$(basename "${JSON_FILE}" .json)
+            cp "${OUTPUT_DIR}/index.html" "${OUTPUT_DIR}/day/${DATE}.html"
+          done
+
+          for REPORT_TYPE in weekly monthly; do
+            for JSON_FILE in "${OUTPUT_DIR}/api/reports/${REPORT_TYPE}/"*.json; do
+              [ -f "${JSON_FILE}" ] || continue
+              PERIOD=$(basename "${JSON_FILE}" .json)
+              mkdir -p "${OUTPUT_DIR}/reports/${REPORT_TYPE}"
+              cp "${OUTPUT_DIR}/index.html" "${OUTPUT_DIR}/reports/${REPORT_TYPE}/${PERIOD}.html"
+            done
+          done
+
+      - name: Upload state artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-sqlite
+          path: ${{ env.STATE_FILE }}
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Upload day archives artifact (HTML)
+        uses: actions/upload-artifact@v4
+        with:
+          name: day-archives-html
+          path: ${{ env.OUTPUT_DIR }}/day/
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Upload day archives artifact (JSON)
+        uses: actions/upload-artifact@v4
+        with:
+          name: day-archives-json
+          path: ${{ env.OUTPUT_DIR }}/api/day/
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Upload daily.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-json
+          path: |
+            ${{ env.OUTPUT_DIR }}/api/daily.json
+            ${{ env.OUTPUT_DIR }}/api/llm_scores.json
+            ${{ env.OUTPUT_DIR }}/api/translations_zh.json
+            ${{ env.OUTPUT_DIR }}/api/state.sqlite
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Upload report archives artifact (JSON)
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-archives-json
+          path: ${{ env.OUTPUT_DIR }}/api/reports/
+          retention-days: 1
+          if-no-files-found: ignore
+
+      - name: Upload report archives artifact (HTML)
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-archives-html
+          path: ${{ env.OUTPUT_DIR }}/reports/
+          retention-days: 1
+          if-no-files-found: ignore
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.OUTPUT_DIR }}
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: digest
+    if: success()
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  persist-state:
+    name: Persist State to Branch
+    needs: digest
+    if: success()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download state artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: state-sqlite
+          path: artifacts/
+
+      - name: Download day archives artifact (HTML)
+        uses: actions/download-artifact@v4
+        with:
+          name: day-archives-html
+          path: artifacts/day/
+
+      - name: Download day archives artifact (JSON)
+        uses: actions/download-artifact@v4
+        with:
+          name: day-archives-json
+          path: artifacts/api/day/
+
+      - name: Download daily.json artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: daily-json
+          path: artifacts/api/
+
+      - name: Download report archives artifact (JSON)
+        uses: actions/download-artifact@v4
+        with:
+          name: report-archives-json
+          path: artifacts/api/reports/
+        continue-on-error: true
+
+      - name: Download report archives artifact (HTML)
+        uses: actions/download-artifact@v4
+        with:
+          name: report-archives-html
+          path: artifacts/reports/
+        continue-on-error: true
+
+      - name: Verify artifacts
+        run: |
+          if [ ! -f "artifacts/${STATE_FILE}" ]; then
+            echo "::error::Missing artifacts/${STATE_FILE}"
+            exit 1
+          fi
+
+      - name: Checkout state branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.STATE_BRANCH }}
+          path: state-repo
+          fetch-depth: 1
+        continue-on-error: true
+
+      - name: Initialize state branch if needed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd state-repo
+          CURRENT_BRANCH=$(git branch --show-current 2>/dev/null || echo "")
+
+          if [ "${CURRENT_BRANCH}" != "${STATE_BRANCH}" ]; then
+            cd ..
+            rm -rf state-repo
+            mkdir -p state-repo
+            cd state-repo
+            git init
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+            git checkout --orphan "${STATE_BRANCH}"
+          fi
+
+      - name: Push state and archives
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd state-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f .gitattributes
+
+          mkdir -p day reports api/day api/reports api
+          cp "../artifacts/${STATE_FILE}" "${STATE_FILE}"
+          cp "../artifacts/${STATE_FILE}" api/state.sqlite
+          cp -r ../artifacts/day/* day/ 2>/dev/null || true
+          cp -r ../artifacts/reports/* reports/ 2>/dev/null || true
+          cp -r ../artifacts/api/day/* api/day/ 2>/dev/null || true
+          cp -r ../artifacts/api/reports/* api/reports/ 2>/dev/null || true
+          cp ../artifacts/api/daily.json api/daily.json 2>/dev/null || true
+          cp ../artifacts/api/llm_scores.json api/llm_scores.json 2>/dev/null || true
+          cp ../artifacts/api/translations_zh.json api/translations_zh.json 2>/dev/null || true
+
+          git add -u -- .gitattributes 2>/dev/null || true
+          git add "${STATE_FILE}" day/ reports/ api/
+
+          if git diff --cached --quiet; then
+            echo "No state changes to persist"
+            exit 0
+          fi
+
+          git commit -m "chore(state): rerun day archive [skip ci]"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          git push --force origin "HEAD:refs/heads/${STATE_BRANCH}"

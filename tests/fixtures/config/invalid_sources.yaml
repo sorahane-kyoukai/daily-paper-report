@@ -1,0 +1,41 @@
+# Invalid sources.yaml for testing validation failures
+version: "1.0"
+
+sources:
+  - id: valid-source
+    name: Valid Source
+    url: https://example.com/feed.xml
+    tier: 0
+    method: rss_atom
+    kind: blog
+
+  # Missing required 'url' field
+  - id: missing-url
+    name: Missing URL Source
+    tier: 0
+    method: rss_atom
+    kind: blog
+
+  # Invalid tier value (must be 0, 1, or 2)
+  - id: invalid-tier
+    name: Invalid Tier Source
+    url: https://example.com/feed.xml
+    tier: 5
+    method: rss_atom
+    kind: blog
+
+  # Invalid method value
+  - id: invalid-method
+    name: Invalid Method Source
+    url: https://example.com/feed.xml
+    tier: 0
+    method: invalid_method
+    kind: blog
+
+  # Duplicate ID (same as first source)
+  - id: valid-source
+    name: Duplicate ID Source
+    url: https://example.com/other.xml
+    tier: 1
+    method: rss_atom
+    kind: blog

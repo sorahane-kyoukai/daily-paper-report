@@ -1,0 +1,968 @@
+{
+  "archive_dates": [
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
+    "2026-04-23",
+    "2026-04-22",
+    "2026-04-21",
+    "2026-04-20",
+    "2026-04-19",
+    "2026-04-18",
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
+    "2026-04-14",
+    "2026-04-13",
+    "2026-04-12",
+    "2026-04-11",
+    "2026-04-10",
+    "2026-04-09",
+    "2026-04-08",
+    "2026-04-07",
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-04-27T06:51:57.526885+00:00",
+  "model_releases_by_entity": {},
+  "papers": [],
+  "radar": [],
+  "run_date": "2026-04-27",
+  "run_id": "89efa431-a30e-4895-a23a-24b1b3a2d0f9",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-04-27T06:51:57.441130+00:00",
+    "items_total": 4,
+    "run_id": "89efa431-a30e-4895-a23a-24b1b3a2d0f9",
+    "started_at": "2026-04-27T06:50:53.862282+00:00",
+    "stories_total": 4,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "Anthropic Research Publications",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "anthropic-research-publications",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Agents",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-agents",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Alignment",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-alignment",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Efficiency",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-efficiency",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Evaluation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-evaluation",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Multimodal",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-multimodal",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Reasoning",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-reasoning",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Retrieval",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-retrieval",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Safety",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-safety",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CL",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cl",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cr",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CV",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cv",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.HC",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-hc",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.IR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ir",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.LG",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-lg",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.MA",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ma",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.RO",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ro",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.SE",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-se",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv stat.ML",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-stat-ml",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AWS Machine Learning Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "aws-ml-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "DeepMind Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "deepmind-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Google AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "google-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face 01.AI (Yi)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-01-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Cohere",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-cohere",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_daily_papers",
+      "name": "Hugging Face Daily Papers",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-daily-papers",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 4,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face DeepSeek AI",
+      "newest_item_date": "2026-04-27T06:51:43+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_UPDATED",
+      "reason_text": "Fetch and parse succeeded; items updated.",
+      "remediation_hint": null,
+      "source_id": "hf-deepseek-ai",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Google",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-google",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Meta Llama",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-meta-llama",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Microsoft",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-microsoft",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Mistral AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-mistralai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face OpenAI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-openai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Qwen",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-qwen",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Stability AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-stabilityai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Microsoft Research Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "microsoft-research-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "NVIDIA AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "nvidia-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "OpenAI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "openai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Sebastian Raschka Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sebastian-raschka-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "deepseek"
+      ],
+      "first_seen_at": "2026-04-24T06:38:41.966491+00:00",
+      "github_release_url": null,
+      "hf_metadata": {
+        "downloads": 123431,
+        "likes": 2921,
+        "pipeline_tag": "text-generation"
+      },
+      "hf_model_id": "deepseek-ai/deepseek-v4-pro",
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "huggingface",
+          "source_id": "hf-deepseek-ai",
+          "tier": 1,
+          "title": "deepseek-ai/DeepSeek-V4-Pro",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+        }
+      ],
+      "primary_link": {
+        "link_type": "huggingface",
+        "source_id": "hf-deepseek-ai",
+        "tier": 1,
+        "title": "deepseek-ai/DeepSeek-V4-Pro",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      },
+      "published_at": "2026-04-27T06:51:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9999383396186721,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.799938339618672
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "hf:deepseek-ai/deepseek-v4-pro",
+      "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
+      "title": "deepseek-ai/DeepSeek-V4-Pro"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "deepseek"
+      ],
+      "first_seen_at": "2026-04-24T06:38:41.966812+00:00",
+      "github_release_url": null,
+      "hf_metadata": {
+        "downloads": 45986,
+        "likes": 751,
+        "pipeline_tag": "text-generation"
+      },
+      "hf_model_id": "deepseek-ai/deepseek-v4-flash",
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "huggingface",
+          "source_id": "hf-deepseek-ai",
+          "tier": 1,
+          "title": "deepseek-ai/DeepSeek-V4-Flash",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+        }
+      ],
+      "primary_link": {
+        "link_type": "huggingface",
+        "source_id": "hf-deepseek-ai",
+        "tier": 1,
+        "title": "deepseek-ai/DeepSeek-V4-Flash",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+      },
+      "published_at": "2026-04-27T02:01:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.980057693425166,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.780057693425166
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "hf:deepseek-ai/deepseek-v4-flash",
+      "summary": "Technical Report👁️ We present a preview version of **DeepSeek-V4** series, including two strong Mixture-of-Experts (MoE) language models — **DeepSeek-V4-Pro** with 1.6T parameters (49B activated) and **DeepSeek-V4-Flash** with 284B parameters (13B activated) — both supporting a context length of **one million tokens**. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: 1. **Hybrid Attention Architecture:** We design a hybrid attention mechanism combining Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to dramatically improve long-context efficiency. In the 1M-token context setting, DeepSeek-V4-Pro requires only **27% of single-token inference FLOPs** and **10% of KV cache** compared with DeepSeek-V3.2. 2. **Manifold-Constrained...",
+      "title": "deepseek-ai/DeepSeek-V4-Flash"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "deepseek"
+      ],
+      "first_seen_at": "2026-04-24T06:38:41.967297+00:00",
+      "github_release_url": null,
+      "hf_metadata": {
+        "downloads": 2236,
+        "likes": 164
+      },
+      "hf_model_id": "deepseek-ai/deepseek-v4-flash-base",
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "huggingface",
+          "source_id": "hf-deepseek-ai",
+          "tier": 1,
+          "title": "deepseek-ai/DeepSeek-V4-Flash-Base",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base"
+        }
+      ],
+      "primary_link": {
+        "link_type": "huggingface",
+        "source_id": "hf-deepseek-ai",
+        "tier": 1,
+        "title": "deepseek-ai/DeepSeek-V4-Flash-Base",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base"
+      },
+      "published_at": "2026-04-27T06:51:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.999983476742992,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 10.549983476742991
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "hf:deepseek-ai/deepseek-v4-flash-base",
+      "summary": null,
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Base"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [],
+      "entities": [
+        "deepseek"
+      ],
+      "first_seen_at": "2026-04-24T06:38:41.967084+00:00",
+      "github_release_url": null,
+      "hf_metadata": {
+        "downloads": 1182,
+        "likes": 223
+      },
+      "hf_model_id": "deepseek-ai/deepseek-v4-pro-base",
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "huggingface",
+          "source_id": "hf-deepseek-ai",
+          "tier": 1,
+          "title": "deepseek-ai/DeepSeek-V4-Pro-Base",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base"
+        }
+      ],
+      "primary_link": {
+        "link_type": "huggingface",
+        "source_id": "hf-deepseek-ai",
+        "tier": 1,
+        "title": "deepseek-ai/DeepSeek-V4-Pro-Base",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base"
+      },
+      "published_at": "2026-04-27T06:51:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9999556998099861,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 10.549955699809987
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "hf:deepseek-ai/deepseek-v4-pro-base",
+      "summary": null,
+      "title": "deepseek-ai/DeepSeek-V4-Pro-Base"
+    }
+  ]
+}

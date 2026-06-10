@@ -1,0 +1,178 @@
+name: Reset Site
+
+"on":
+  workflow_dispatch:
+    inputs:
+      confirm_reset:
+        description: 'Type "RESET" to confirm complete data deletion'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: digest-deploy
+  cancel-in-progress: true
+
+env:
+  OUTPUT_DIR: public
+  STATE_BRANCH: state
+
+jobs:
+  validate:
+    name: Validate Reset Request
+    runs-on: ubuntu-latest
+    outputs:
+      confirmed: ${{ steps.check.outputs.confirmed }}
+
+    steps:
+      - name: Check confirmation
+        id: check
+        run: |
+          if [ "${{ inputs.confirm_reset }}" = "RESET" ]; then
+            echo "confirmed=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Reset confirmed."
+          else
+            echo "confirmed=false" >> "$GITHUB_OUTPUT"
+            echo "::error::You must type 'RESET' exactly."
+            exit 1
+          fi
+
+  delete-state:
+    name: Delete State Branch
+    needs: validate
+    if: needs.validate.outputs.confirmed == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delete state branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh api "repos/${{ github.repository }}/branches/${STATE_BRANCH}" > /dev/null 2>&1; then
+            gh api -X DELETE "repos/${{ github.repository }}/git/refs/heads/${STATE_BRANCH}"
+            echo "::notice::Deleted branch ${STATE_BRANCH}."
+          else
+            echo "::notice::Branch ${STATE_BRANCH} does not exist."
+          fi
+
+  deploy-empty:
+    name: Deploy Empty Site
+    needs: [validate, delete-state]
+    if: needs.validate.outputs.confirmed == 'true'
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Build Vue.js frontend
+        run: |
+          cd frontend
+          pnpm install --frozen-lockfile
+          pnpm run build-only
+
+      - name: Prepare empty site payload
+        run: |
+          RUN_ID="reset-${{ github.run_id }}-${{ github.run_attempt }}"
+          GENERATED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          rm -rf "${OUTPUT_DIR}"
+          mkdir -p "${OUTPUT_DIR}/api/day" "${OUTPUT_DIR}/api/reports" "${OUTPUT_DIR}/day"
+
+          cp frontend/dist/index.html "${OUTPUT_DIR}/index.html"
+          cp frontend/dist/index.html "${OUTPUT_DIR}/404.html"
+          cp -r frontend/dist/assets "${OUTPUT_DIR}/assets"
+
+          for ROUTE in archive sources status reports; do
+            mkdir -p "${OUTPUT_DIR}/${ROUTE}"
+            cp frontend/dist/index.html "${OUTPUT_DIR}/${ROUTE}.html"
+            cp frontend/dist/index.html "${OUTPUT_DIR}/${ROUTE}/index.html"
+          done
+
+          cat > "${OUTPUT_DIR}/api/daily.json" <<EOF
+          {
+            "run_id": "${RUN_ID}",
+            "run_date": "",
+            "generated_at": "${GENERATED_AT}",
+            "top5": [],
+            "model_releases_by_entity": {},
+            "papers": [],
+            "radar": [],
+            "sources_status": [],
+            "run_info": {
+              "run_id": "${RUN_ID}",
+              "started_at": "${GENERATED_AT}",
+              "finished_at": "${GENERATED_AT}",
+              "success": true,
+              "error_summary": null,
+              "items_total": 0,
+              "stories_total": 0
+            },
+            "archive_dates": [],
+            "entity_catalog": {}
+          }
+          EOF
+
+          cat > "${OUTPUT_DIR}/api/reports/index.json" <<EOF
+          {
+            "generated_at": "${GENERATED_AT}",
+            "latest": {
+              "weekly": null,
+              "monthly": null
+            },
+            "weekly": [],
+            "monthly": []
+          }
+          EOF
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.OUTPUT_DIR }}
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  report:
+    name: Reset Report
+    needs: [validate, delete-state, deploy-empty]
+    if: always()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate summary
+        run: |
+          {
+            echo "## Site Reset Report"
+            echo ""
+            echo "| Step | Status |"
+            echo "|------|--------|"
+            echo "| Validation | ${{ needs.validate.result }} |"
+            echo "| Delete State Branch | ${{ needs.delete-state.result }} |"
+            echo "| Deploy Empty Site | ${{ needs.deploy-empty.result }} |"
+            echo ""
+            echo "### Next"
+            echo "Run daily-digest workflow with target_date to regenerate one day."
+          } >> "$GITHUB_STEP_SUMMARY"

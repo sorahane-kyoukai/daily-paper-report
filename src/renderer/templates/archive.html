@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Daily Paper Report - Archive{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Archive</h1>
+    <p class="page-meta">Browse past daily digests by date.</p>
+</div>
+
+{% if archive_dates %}
+<section>
+    <h2>
+        <span class="section-icon">📅</span>
+        Available Dates
+    </h2>
+    <nav class="archive-grid" aria-label="Archive dates">
+        {% for date in archive_dates %}
+        <a href="/day/{{ date }}.html" class="archive-item">{{ date }}</a>
+        {% endfor %}
+    </nav>
+</section>
+{% else %}
+<div class="empty-state">
+    <div class="empty-state-icon">📭</div>
+    <p>No archived digests available yet.</p>
+</div>
+{% endif %}
+{% endblock %}
