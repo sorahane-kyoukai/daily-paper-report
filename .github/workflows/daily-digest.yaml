@@ -563,7 +563,7 @@ jobs:
           cd state-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          rm -f .gitattributes
+          rm -f .gitattributes .gitignore
 
           mkdir -p day reports api/day api/reports api
           cp "../artifacts/${STATE_FILE}" "${STATE_FILE}"
@@ -576,7 +576,7 @@ jobs:
           cp ../artifacts/api/llm_scores.json api/llm_scores.json 2>/dev/null || true
           cp ../artifacts/api/translations_zh.json api/translations_zh.json 2>/dev/null || true
 
-          git add -u -- .gitattributes 2>/dev/null || true
+          git add -u -- .gitattributes .gitignore 2>/dev/null || true
           git add "${STATE_FILE}" day/ reports/ api/
 
           if git diff --cached --quiet; then
