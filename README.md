@@ -177,6 +177,20 @@ uv run python main.py run \
 | `render` | Render static pages from test data |
 | `db-stats` | Display state database statistics |
 
+### Static API Outputs
+
+The generated Pages payload exposes both rendered JSON and the full SQLite state:
+
+- `api/daily.json` - latest rendered digest consumed by the Vue frontend.
+- `api/day/YYYY-MM-DD.json` - per-day rendered digest archives.
+- `api/reports/...` - weekly and monthly report JSON.
+- `api/state.sqlite` - complete SQLite state database, including collected items,
+  run metadata, HTTP cache, and each item's raw source payload.
+
+`api/state.sqlite` is intentionally committed and deployed as a normal binary file,
+not Git LFS. GitHub Pages does not serve Git LFS objects as static site files, so
+using LFS here would expose a pointer file instead of the SQLite database.
+
 ## Development
 
 ### Running Tests

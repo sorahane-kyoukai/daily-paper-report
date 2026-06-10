@@ -40,6 +40,19 @@ def assert_prepare_creates_empty_report_index(run_script: str) -> None:
     assert '"monthly": []' in run_script
 
 
+def assert_prepare_publishes_state_sqlite(run_script: str) -> None:
+    """Verify Pages receives the real SQLite state database."""
+    assert 'cp "${STATE_FILE}" "${OUTPUT_DIR}/api/state.sqlite"' in run_script
+
+
+def assert_persist_state_avoids_lfs(run_script: str) -> None:
+    """Verify state branch keeps SQLite as a normal Git blob for Pages restores."""
+    assert "git lfs" not in run_script
+    assert "git-lfs" not in run_script
+    assert "rm -f .gitattributes" in run_script
+    assert 'cp "../artifacts/${STATE_FILE}" api/state.sqlite' in run_script
+
+
 class TestDailyDigestWorkflow:
     """Tests for the daily-digest.yaml workflow."""
 
@@ -228,6 +241,7 @@ class TestDailyDigestWorkflow:
         assert len(prepare_steps) == 1
 
         assert_prepare_creates_empty_report_index(prepare_steps[0].get("run", ""))
+        assert_prepare_publishes_state_sqlite(prepare_steps[0].get("run", ""))
 
     def test_report_artifacts_are_uploaded(self, workflow: dict[str, Any]) -> None:
         """Verify report JSON and SPA route artifacts are persisted."""
@@ -368,6 +382,16 @@ class TestDailyDigestWorkflow:
                     "persist-state should not need OPENREVIEW_TOKEN"
                 )
 
+    def test_persist_state_stores_sqlite_without_lfs(
+        self, workflow: dict[str, Any]
+    ) -> None:
+        """Verify persisted SQLite remains usable by GitHub Pages artifacts."""
+        steps = workflow["jobs"]["persist-state"]["steps"]
+        push_steps = [s for s in steps if s.get("name") == "Push state and archives"]
+        assert len(push_steps) == 1
+
+        assert_persist_state_avoids_lfs(push_steps[0].get("run", ""))
+
 
 class TestResetSiteWorkflow:
     """Tests for the reset-site.yaml workflow."""
@@ -456,6 +480,17 @@ class TestBackfillDateRangeWorkflow:
         assert len(prepare_steps) == 1
 
         assert_prepare_creates_empty_report_index(prepare_steps[0].get("run", ""))
+        assert_prepare_publishes_state_sqlite(prepare_steps[0].get("run", ""))
+
+    def test_persist_state_stores_sqlite_without_lfs(
+        self, workflow: dict[str, Any]
+    ) -> None:
+        """Verify range backfill persists a browser-fetchable SQLite file."""
+        steps = workflow["jobs"]["persist-state"]["steps"]
+        push_steps = [s for s in steps if s.get("name") == "Push state and archives"]
+        assert len(push_steps) == 1
+
+        assert_persist_state_avoids_lfs(push_steps[0].get("run", ""))
 
 
 class TestLintWorkflow:

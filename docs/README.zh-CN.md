@@ -177,6 +177,20 @@ uv run python main.py run \
 | `render` | 从测试数据渲染静态页面 |
 | `db-stats` | 显示状态数据库统计 |
 
+### 静态 API 输出
+
+生成的 GitHub Pages payload 同时提供渲染后的 JSON 和完整 SQLite 状态：
+
+- `api/daily.json` - Vue 前端使用的最新每日摘要。
+- `api/day/YYYY-MM-DD.json` - 每日摘要归档。
+- `api/reports/...` - 周报与月报 JSON。
+- `api/state.sqlite` - 完整 SQLite 状态数据库，包含收集项目、run metadata、
+  HTTP cache，以及每笔 item 的来源原始 payload。
+
+`api/state.sqlite` 会以普通二进制文件提交与部署，不使用 Git LFS。GitHub Pages
+不会把 Git LFS 对象当作静态网站文件服务；若放进 LFS，页面会拿到 pointer
+而不是 SQLite 数据库本体。
+
 ## 开发
 
 ### 运行测试

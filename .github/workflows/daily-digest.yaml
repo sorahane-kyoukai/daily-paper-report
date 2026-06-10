@@ -173,7 +173,12 @@ jobs:
             done
 
             if git show "${STATE_BRANCH}:${STATE_FILE}" > "${STATE_FILE}" 2>/dev/null; then
-              STATE_RESTORED=true
+              if head -c 15 "${STATE_FILE}" | grep -q "SQLite format 3"; then
+                STATE_RESTORED=true
+              else
+                echo "::error::Restored ${STATE_FILE} is not a SQLite database. Republish ${STATE_BRANCH} without Git LFS pointers."
+                rm -f "${STATE_FILE}"
+              fi
             fi
           else
             echo "state_branch_exists=false" >> "$GITHUB_OUTPUT"
@@ -344,6 +349,12 @@ jobs:
           mkdir -p "${OUTPUT_DIR}/api/day" "${OUTPUT_DIR}/day" \
             "${OUTPUT_DIR}/reports/weekly" "${OUTPUT_DIR}/reports/monthly"
 
+          if [ ! -f "${STATE_FILE}" ]; then
+            echo "::error::Missing ${STATE_FILE}; cannot publish ${OUTPUT_DIR}/api/state.sqlite"
+            exit 1
+          fi
+          cp "${STATE_FILE}" "${OUTPUT_DIR}/api/state.sqlite"
+
           if [ ! -f "${OUTPUT_DIR}/api/day/${TARGET_DATE}.json" ]; then
             if [ "${RUN_MODE}" = "deploy-only" ] && [ -f "${OUTPUT_DIR}/api/daily.json" ]; then
               echo "::notice::Skipping target-date archive check for deploy-only restore; using existing daily.json."
@@ -426,6 +437,7 @@ jobs:
             ${{ env.OUTPUT_DIR }}/api/daily.json
             ${{ env.OUTPUT_DIR }}/api/llm_scores.json
             ${{ env.OUTPUT_DIR }}/api/translations_zh.json
+            ${{ env.OUTPUT_DIR }}/api/state.sqlite
           retention-days: 1
           if-no-files-found: error
 
@@ -551,16 +563,11 @@ jobs:
           cd state-repo
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if ! command -v git-lfs >/dev/null 2>&1; then
-            echo "::error::git-lfs is required to persist ${STATE_FILE} with Git LFS."
-            exit 1
-          fi
-          git lfs install --local
-          git lfs track "${STATE_FILE}" "*.sqlite" "*.sqlite3" "*.db"
-
-          cp "../artifacts/${STATE_FILE}" "${STATE_FILE}"
+          rm -f .gitattributes
 
           mkdir -p day reports api/day api/reports api
+          cp "../artifacts/${STATE_FILE}" "${STATE_FILE}"
+          cp "../artifacts/${STATE_FILE}" api/state.sqlite
           cp -r ../artifacts/day/* day/ 2>/dev/null || true
           cp -r ../artifacts/reports/* reports/ 2>/dev/null || true
           cp -r ../artifacts/api/day/* api/day/ 2>/dev/null || true
@@ -569,7 +576,8 @@ jobs:
           cp ../artifacts/api/llm_scores.json api/llm_scores.json 2>/dev/null || true
           cp ../artifacts/api/translations_zh.json api/translations_zh.json 2>/dev/null || true
 
-          git add .gitattributes "${STATE_FILE}" day/ reports/ api/
+          git add -u -- .gitattributes 2>/dev/null || true
+          git add "${STATE_FILE}" day/ reports/ api/
 
           if git diff --cached --quiet; then
             echo "No state changes to persist"

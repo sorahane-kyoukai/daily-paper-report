@@ -177,6 +177,21 @@ uv run python main.py run \
 | `render` | テストデータから静的ページをレンダリング |
 | `db-stats` | 状態データベースの統計を表示 |
 
+### 静的 API 出力
+
+生成される GitHub Pages payload は、レンダリング済み JSON と完全な SQLite
+状態の両方を公開します。
+
+- `api/daily.json` - Vue フロントエンドが使用する最新の日次ダイジェスト。
+- `api/day/YYYY-MM-DD.json` - 日次ダイジェストのアーカイブ。
+- `api/reports/...` - 週次・月次レポート JSON。
+- `api/state.sqlite` - 収集済み item、run metadata、HTTP cache、各 item の
+  元ソース payload を含む完全な SQLite 状態データベース。
+
+`api/state.sqlite` は通常のバイナリファイルとしてコミット・デプロイし、Git LFS
+には入れません。GitHub Pages は Git LFS オブジェクトを静的サイトファイルとして
+配信しないため、LFS に入れると SQLite 本体ではなく pointer が公開されます。
+
 ## 開発
 
 ### テストの実行
