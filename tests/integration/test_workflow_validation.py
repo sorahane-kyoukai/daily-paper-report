@@ -185,6 +185,20 @@ class TestDailyDigestWorkflow:
         assert "--overwrite-existing" in run_script
         assert "main.py run" not in run_script
 
+    def test_daily_run_step_uses_resolved_target_date(
+        self, workflow: dict[str, Any]
+    ) -> None:
+        """Verify normal daily runs render the date resolved by the workflow."""
+        digest_steps = workflow["jobs"]["digest"]["steps"]
+        run_steps = [s for s in digest_steps if s.get("id") == "run-digest"]
+        assert len(run_steps) == 1
+        run_script = run_steps[0].get("run", "")
+
+        assert "main.py run" in run_script
+        assert "TARGET_DATE=" in run_script
+        assert "--date" in run_script
+        assert '"${TARGET_DATE}"' in run_script
+
     def test_report_step_generates_weekly_and_monthly_outputs(
         self, workflow: dict[str, Any]
     ) -> None:

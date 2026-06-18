@@ -403,12 +403,41 @@ def _write_report(output_dir: Path, report: ReportDigest) -> Path:
     return report_path
 
 
+def _load_report_index(index_path: Path) -> ReportIndex:
+    raw_index = json.loads(index_path.read_text())
+    if not isinstance(raw_index, dict):
+        return ReportIndex.model_validate(raw_index)
+
+    for report_type in ("weekly", "monthly"):
+        entries = raw_index.get(report_type, [])
+        if not isinstance(entries, list):
+            continue
+
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+
+            entry.setdefault("report_type", report_type)
+            if "period_id" in entry:
+                entry.setdefault(
+                    "path",
+                    f"api/reports/{report_type}/{entry['period_id']}.json",
+                )
+
+    latest = raw_index.setdefault("latest", {})
+    if isinstance(latest, dict):
+        latest.setdefault("weekly", None)
+        latest.setdefault("monthly", None)
+
+    return ReportIndex.model_validate(raw_index)
+
+
 def _update_report_index(output_dir: Path, report: ReportDigest) -> None:
     index_path = output_dir / "api" / "reports" / "index.json"
     index_path.parent.mkdir(parents=True, exist_ok=True)
 
     if index_path.exists():
-        index = ReportIndex.model_validate(json.loads(index_path.read_text()))
+        index = _load_report_index(index_path)
     else:
         index = ReportIndex(generated_at=datetime.now(UTC).isoformat())
 

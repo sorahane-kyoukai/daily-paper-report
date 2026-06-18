@@ -91,6 +91,7 @@ class RunOptions:
     source_max_items: int | None = None
     retention_days: int = 90
     skip_translation: bool = False
+    target_date: str | None = None
 
 
 def _setup_logging_and_context(
@@ -124,6 +125,7 @@ def _setup_logging_and_context(
         state_path=str(options.state_path),
         output_dir=str(options.output_dir),
         timezone=options.timezone,
+        target_date=options.target_date,
     )
 
     return log  # type: ignore[no-any-return]
@@ -792,6 +794,7 @@ def _run_rendering_phase(  # noqa: PLR0913
         sources_status=sources_status,
         run_info=run_info,
         recent_runs=[run_info],
+        target_date=options.target_date,
     )
 
     if render_result.success:
@@ -1085,6 +1088,13 @@ def cli() -> None:
     help="Number of days to retain archive pages (default: 90).",
 )
 @click.option(
+    "--date",
+    "target_date",
+    type=str,
+    default=None,
+    help="Target archive date to render as YYYY-MM-DD. Defaults to current UTC date.",
+)
+@click.option(
     "--no-translate",
     "skip_translation",
     is_flag=True,
@@ -1104,6 +1114,7 @@ def run(  # noqa: PLR0913
     lookback_hours: int,
     source_max_items: int | None,
     retention_days: int,
+    target_date: str | None,
     skip_translation: bool,
 ) -> None:
     """Run the digest pipeline.
@@ -1114,6 +1125,16 @@ def run(  # noqa: PLR0913
     Use --dry-run to validate configuration without writing any state files.
     This is useful for CI/CD pipelines to validate configs before deployment.
     """
+    if target_date is not None:
+        try:
+            datetime.strptime(target_date, "%Y-%m-%d")
+        except ValueError:
+            click.echo(
+                f"Error: Invalid date format '{target_date}'. Use YYYY-MM-DD.",
+                err=True,
+            )
+            sys.exit(1)
+
     options = RunOptions(
         config_path=config_path,
         entities_path=entities_path,
@@ -1128,6 +1149,7 @@ def run(  # noqa: PLR0913
         source_max_items=source_max_items,
         retention_days=retention_days,
         skip_translation=skip_translation,
+        target_date=target_date,
     )
     _execute_run(options)
 

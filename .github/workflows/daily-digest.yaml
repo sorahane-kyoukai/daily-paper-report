@@ -232,6 +232,8 @@ jobs:
           OPENAI_MAX_TOKENS: ${{ secrets.OPENAI_MAX_TOKENS }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
+          TARGET_DATE="${{ steps.validate-date.outputs.target_date }}"
+
           uv run python main.py run \
             --config "${CONFIG_DIR}/sources.yaml" \
             --entities "${CONFIG_DIR}/entities.yaml" \
@@ -239,6 +241,7 @@ jobs:
             --state "${STATE_FILE}" \
             --out "${OUTPUT_DIR}" \
             --tz "${TIMEZONE}" \
+            --date "${TARGET_DATE}" \
             --lookback 24 \
             --json-logs
 

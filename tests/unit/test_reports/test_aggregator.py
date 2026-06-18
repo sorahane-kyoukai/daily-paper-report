@@ -144,6 +144,58 @@ def test_build_weekly_report_dedupes_and_writes_index(tmp_path: Path) -> None:
     assert index_data["weekly"][0]["title"] == report.title
 
 
+def test_build_weekly_report_updates_legacy_index_without_paths(tmp_path: Path) -> None:
+    index_path = tmp_path / "api" / "reports" / "index.json"
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+    index_path.write_text(
+        json.dumps(
+            {
+                "generated_at": "2026-05-17T00:00:00Z",
+                "latest": {"weekly": "2026-W20", "monthly": None},
+                "weekly": [
+                    {
+                        "period_id": "2026-W20",
+                        "title": "Legacy weekly report",
+                        "summary": "Legacy summary",
+                        "period_start": "2026-05-11",
+                        "period_end": "2026-05-17",
+                        "generated_at": "2026-05-17T00:00:00Z",
+                        "recommendation_count": 1,
+                        "missing_dates": [],
+                    }
+                ],
+                "monthly": [],
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
+    _write_day(
+        tmp_path,
+        "2026-05-18",
+        {
+            "papers": [_story("new-paper", 10, "2026-05-18T08:00:00+00:00")],
+            "top5": [],
+            "radar": [],
+        },
+    )
+
+    report = build_report_from_archives(
+        output_dir=tmp_path,
+        report_type="weekly",
+        target_date=date(2026, 5, 24),
+        timezone="Asia/Taipei",
+    )
+
+    index_data = json.loads(index_path.read_text())
+    legacy_entry = next(
+        entry for entry in index_data["weekly"] if entry["period_id"] == "2026-W20"
+    )
+    assert index_data["latest"]["weekly"] == report.period_id
+    assert legacy_entry["report_type"] == "weekly"
+    assert legacy_entry["path"] == "api/reports/weekly/2026-W20.json"
+
+
 def test_build_monthly_report_filters_to_period(tmp_path: Path) -> None:
     _write_day(
         tmp_path,
