@@ -14,6 +14,7 @@ import yaml
 WORKFLOWS_DIR = Path(__file__).parent.parent.parent / ".github" / "workflows"
 DAILY_DIGEST_WORKFLOW = WORKFLOWS_DIR / "daily-digest.yaml"
 BACKFILL_RANGE_WORKFLOW = WORKFLOWS_DIR / "backfill-date-range.yaml"
+DEPLOY_FROM_STATE_WORKFLOW = WORKFLOWS_DIR / "deploy-from-state.yaml"
 RESET_SITE_WORKFLOW = WORKFLOWS_DIR / "reset-site.yaml"
 LINT_WORKFLOW = WORKFLOWS_DIR / "lint-workflow.yaml"
 
@@ -465,6 +466,92 @@ class TestResetSiteWorkflow:
         assert '"monthly": []' in run_script
 
 
+class TestDeployFromStateWorkflow:
+    """Tests for the deploy-from-state.yaml workflow."""
+
+    @pytest.fixture
+    def workflow(self) -> dict[str, Any]:
+        """Load the state deployment workflow."""
+        if not DEPLOY_FROM_STATE_WORKFLOW.exists():
+            pytest.skip("deploy-from-state.yaml not found")
+        return load_workflow(DEPLOY_FROM_STATE_WORKFLOW)
+
+    def test_workflow_name(self, workflow: dict[str, Any]) -> None:
+        """Verify workflow has a descriptive name."""
+        assert workflow["name"] == "Deploy From State"
+
+    def test_only_workflow_dispatch_trigger(self, workflow: dict[str, Any]) -> None:
+        """Verify refresh deployment is manually triggered."""
+        triggers = workflow["on"]
+        assert set(triggers.keys()) == {"workflow_dispatch"}
+        inputs = triggers["workflow_dispatch"].get("inputs", {})
+        assert inputs["state_ref"].get("default") == "state"
+
+    def test_required_permissions(self, workflow: dict[str, Any]) -> None:
+        """Verify refresh deployment does not need contents write access."""
+        permissions = workflow["permissions"]
+        assert permissions.get("contents") == "read"
+        assert permissions.get("pages") == "write"
+        assert permissions.get("id-token") == "write"
+
+    def test_deploys_without_digest_or_state_persist(
+        self, workflow: dict[str, Any]
+    ) -> None:
+        """Verify refresh deployment cannot rerun LLM or mutate the state branch."""
+        workflow_text = yaml.dump(workflow)
+        assert "main.py run" not in workflow_text
+        assert "main.py backfill" not in workflow_text
+        assert "main.py report" not in workflow_text
+        assert "Persist State" not in workflow_text
+        assert "contents: write" not in workflow_text
+        assert "DEEPSEEK_API_KEY" not in workflow_text
+        assert "OPENAI_API_KEY" not in workflow_text
+
+    def test_restores_state_payload(self, workflow: dict[str, Any]) -> None:
+        """Verify refresh deployment restores archives from the state ref."""
+        steps = workflow["jobs"]["deploy-pages"]["steps"]
+        restore_steps = [
+            s for s in steps if s.get("name") == "Restore state branch payload"
+        ]
+        assert len(restore_steps) == 1
+        run_script = restore_steps[0].get("run", "")
+
+        assert 'git fetch --depth=1 origin "${STATE_REF}"' in run_script
+        assert 'restore_tree "api/day/"' in run_script
+        assert 'restore_tree "api/reports/"' in run_script
+        assert 'restore_file "api/daily.json"' in run_script
+        assert "SQLite format 3" in run_script
+
+    def test_vue_build_replaces_legacy_static_entrypoints(
+        self, workflow: dict[str, Any]
+    ) -> None:
+        """Verify refresh deployment publishes Vue SPA fallbacks."""
+        steps = workflow["jobs"]["deploy-pages"]["steps"]
+        build_steps = [s for s in steps if s.get("name") == "Build Vue.js frontend"]
+        assert len(build_steps) == 1
+
+        assert_vue_build_publishes_spa_route_fallbacks(build_steps[0].get("run", ""))
+
+    def test_prepare_archive_output(self, workflow: dict[str, Any]) -> None:
+        """Verify refresh deployment rebuilds derived Pages route files."""
+        steps = workflow["jobs"]["deploy-pages"]["steps"]
+        prepare_steps = [s for s in steps if s.get("name") == "Prepare archive output"]
+        assert len(prepare_steps) == 1
+        run_script = prepare_steps[0].get("run", "")
+
+        assert_prepare_creates_empty_report_index(run_script)
+        assert_prepare_publishes_state_sqlite(run_script)
+        assert 'for JSON_FILE in "${OUTPUT_DIR}/api/day/"*.json' in run_script
+        assert "for REPORT_TYPE in weekly monthly;" in run_script
+
+    def test_deploy_pages_step_exists(self, workflow: dict[str, Any]) -> None:
+        """Verify workflow uploads and deploys a Pages artifact."""
+        steps = workflow["jobs"]["deploy-pages"]["steps"]
+        uses_values = [str(step.get("uses", "")) for step in steps]
+        assert "actions/upload-pages-artifact@v3" in uses_values
+        assert "actions/deploy-pages@v4" in uses_values
+
+
 class TestBackfillDateRangeWorkflow:
     """Tests for the backfill-date-range.yaml workflow."""
 
@@ -560,6 +647,12 @@ class TestWorkflowFilesExist:
         """Verify reset-site.yaml exists."""
         assert RESET_SITE_WORKFLOW.exists(), (
             f"Workflow not found: {RESET_SITE_WORKFLOW}"
+        )
+
+    def test_deploy_from_state_workflow_exists(self) -> None:
+        """Verify deploy-from-state.yaml exists."""
+        assert DEPLOY_FROM_STATE_WORKFLOW.exists(), (
+            f"Workflow not found: {DEPLOY_FROM_STATE_WORKFLOW}"
         )
 
     def test_lint_workflow_exists(self) -> None:
