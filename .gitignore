@@ -191,6 +191,15 @@ coverage.xml
 .pytest_cache/
 cover/
 
+# Local frontend preview artifacts
+frontend/pnpm-workspace.yaml
+frontend/public/*.html
+frontend/public/archive/
+frontend/public/assets/
+frontend/public/reports/
+frontend/public/sources/
+frontend/public/status/
+
 # Translations
 *.mo
 *.pot
