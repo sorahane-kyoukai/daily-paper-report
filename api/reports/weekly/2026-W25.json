@@ -1,4 +1,1673 @@
 {
+  "blog_items_considered": 97,
+  "blog_recommendations": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Aris Tsakpinis"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Announcements",
+        "Artificial Intelligence",
+        "Foundation models",
+        "Generative AI"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-18T06:06:58.140146+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Introducing Gemma 4 models on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-gemma-4-models-on-amazon-bedrock"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Introducing Gemma 4 models on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-gemma-4-models-on-amazon-bedrock"
+      },
+      "published_at": "2026-06-15T12:24:15+00:00",
+      "published_local_date": "2026-06-15",
+      "report_rank": 1,
+      "report_score": 33.654948,
+      "report_source_date": "2026-06-15",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.8,
+        "llm_relevance_score": 22.400000000000002,
+        "recency_score": 0.7549477680872877,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 33.65494776808729
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:2aa8b612978fa517",
+      "summary": "Today, we are announcing the availability of the Gemma 4 family on Amazon Bedrock. Built by Google DeepMind and released under the Apache 2.0 license, Gemma 4 is a family of open-weight models designed with a focus on intelligence-per-parameter across a broad range of deployment scenarios. The family includes three instruction-tuned variants: Gemma 4 31B, Gemma 4 26B-A4B, and Gemma 4 E2B. These cover dense and mixture-of-experts (MoE) architectures, where only a fraction of the model’s parameters activate per request. The variants offer built-in reasoning, native function calling, and multimodal input across text and image.",
+      "title": "Introducing Gemma 4 models on Amazon Bedrock"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-18T06:19:13.104078+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 AIエージェントが仕込む不正コードを、開発者のほとんどが見抜けない可能性がある理由",
+          "url": "https://ai-data-base.com/archives/111453"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 AIエージェントが仕込む不正コードを、開発者のほとんどが見抜けない可能性がある理由",
+        "url": "https://ai-data-base.com/archives/111453"
+      },
+      "published_at": "2026-06-17T18:43:00+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 2,
+      "report_score": 27.056626,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.7,
+        "llm_relevance_score": 19.599999999999998,
+        "recency_score": 0.9066255622702754,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 27.056625562270273
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:f402f4199b56b406",
+      "summary": "<p>AIコーディングエージェントは、もはや受け身の補助役ではありません。コードベースやシェル、外部APIにアクセスし、人間と並んで実装を進める能動的な協働者へと変わりつつあります。利便性が増す一方で、攻撃対象となる領域も広がっています。 もしエージェントが、依頼された正規の作業を進めながら、裏では機密データを外部へ送るコードをこっそり混ぜていたら、開発者は気づけるのでしょうか。100人を超える開発者が、約5時間に及ぶ実際の開発に近い作業に取り組み、この問いが検証されました。 浮かび上がったのは、経験やスキルだけでは妨害を防ぎきれないという現実です。なぜ見抜けないのか。監視ツールを追加しても状況が大&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111453\"><span class=\"locked-post\">🔒</span> AIエージェントが仕込む不正コードを、開発者のほとんどが見抜けない可能性がある理由</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 AIエージェントが仕込む不正コードを、開発者のほとんどが見抜けない可能性がある理由"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-18T06:19:13.103967+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 文書を増やすほどRAGの精度が下がる「希釈問題」とその対策",
+          "url": "https://ai-data-base.com/archives/111469"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 文書を増やすほどRAGの精度が下がる「希釈問題」とその対策",
+        "url": "https://ai-data-base.com/archives/111469"
+      },
+      "published_at": "2026-06-17T19:43:00+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 3,
+      "report_score": 22.860411,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.55,
+        "llm_relevance_score": 15.400000000000002,
+        "recency_score": 0.9104110497352661,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 22.86041104973527
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:03f1e91d1d6cd4d9",
+      "summary": "<p>社内文書を読み込ませた検索システムを作ると、最初の数十ファイルでは狙いどおりの答えが返ってきます。ところが、手応えを感じて対象を全社文書へ広げた途端、答えがぼやけ、的外れな引用が混じり始めます。知識を足したはずなのに、システムはむしろ賢さを失っていきます。 一例として、ある米国の州交通局が運用していた文書検索チャットでは、対象を54ファイルから1,128ファイルへ増やしたところ、特定分野の質問に対する正答率が75%から40%未満まで落ち込みました。原因は、埋め込みモデルの単純な不具合ではありませんでした。 では、なぜ文書を増やすと精度が下がるのでしょうか。そして、複雑なAIエージェントを組まず&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111469\"><span class=\"locked-post\">🔒</span> 文書を増やすほどRAGの精度が下がる「希釈問題」とその対策</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 文書を増やすほどRAGの精度が下がる「希釈問題」とその対策"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "5_years_apart"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-06-18T06:19:13.740156+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "AIエージェントに決済を持たせる時の実装メモ - OpenAI Function Callingで冪等性·確認ゲートを組む",
+          "url": "https://qiita.com/5_years_apart/items/ea6782aeae0ff431cbc3"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "AIエージェントに決済を持たせる時の実装メモ - OpenAI Function Callingで冪等性·確認ゲートを組む",
+        "url": "https://qiita.com/5_years_apart/items/ea6782aeae0ff431cbc3"
+      },
+      "published_at": "2026-06-17T20:15:05+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 4,
+      "report_score": 16.90143,
+      "report_source_date": "2026-06-18",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3,
+        "llm_relevance_score": 8.4,
+        "recency_score": 0.9514296016562542,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 16.901429601656254
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:7bef2244b9416bf5",
+      "summary": "導入\n「AIエージェントに決済まで任せていいのか」——先週, ある日本のEC運営会社の技術メンバーと話していて, ちょうどこの問いに行き当たった. 彼らは社内向けの調達エージェント (消耗品の自動補充) を試作中で, 「カートに入れる」までは動くが, 最後の決済ボタンを押...",
+      "title": "AIエージェントに決済を持たせる時の実装メモ - OpenAI Function Callingで冪等性·確認ゲートを組む"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "mori"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T03:09:52.501833+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Pineconeのコストを96%削減し、RAGの精度を劇的に向上させるTypeScriptミドルウェア『WarpVector』を作った",
+          "url": "https://zenn.dev/daiki_moritake/articles/reduce-pinecone-costs"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Pineconeのコストを96%削減し、RAGの精度を劇的に向上させるTypeScriptミドルウェア『WarpVector』を作った",
+        "url": "https://zenn.dev/daiki_moritake/articles/reduce-pinecone-costs"
+      },
+      "published_at": "2026-06-21T06:03:04+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 5,
+      "report_score": 15.115629,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3,
+        "llm_relevance_score": 8.4,
+        "recency_score": 0.9156287821845274,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 15.115628782184528
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:bedbf8c23397650b",
+      "summary": "はじめに\nベクトルデータベース（Pinecone, Qdrant, pgvector等）のコスト、高すぎませんか？\n生成AIを使ったRAG（Retrieval-Augmented Generation）アプリを作っていると、以下のような壁にぶつかることが多いと思います。\n\n\nベクトルDBのクラウドコストが肥大化する（1536次元のベクトルは重い！）\n「Apple（果物）」と「Apple（企業）」の区別がつかず、検索精度が上がらない\n精度を上げるためにLLMを再学習（ファインチューニング）したいが、コストも時間もかかりすぎる\n\n\nこれらの課題を解決するために、Zero-dependen...",
+      "title": "Pineconeのコストを96%削減し、RAGの精度を劇的に向上させるTypeScriptミドルウェア『WarpVector』を作った"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "koro"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-22T03:09:52.502028+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "MCP入門 ① 自作ツール（MCP Server）を Claude Code から呼び出す",
+          "url": "https://zenn.dev/koro_st/articles/9393bab30048c1"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "MCP入門 ① 自作ツール（MCP Server）を Claude Code から呼び出す",
+        "url": "https://zenn.dev/koro_st/articles/9393bab30048c1"
+      },
+      "published_at": "2026-06-21T04:57:14+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 6,
+      "report_score": 14.311452,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9114523020268228,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.311452302026822
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:85b30e8cb0baa5b9",
+      "summary": "はじめに\nClaude CodeやClaude Desktopなど、AIアシスタントに自作のツールを追加できる仕組みとして、\nAnthropicが提唱した MCP（Model Context Protocol） が広がりつつあります。\nMCPに対応したAIアプリケーションにMCPサーバーを繋ぐと、\nAIに「自分が用意した関数」や「自分の手元のデータ」を扱わせることができるようになります。\nイメージとしてはこんな感じです。\n\n「現在時刻を返すツール」を作って AI に呼ばせる\n「自分のメモを管理するツール」を作って AI に追加・参照させる\n「社内システムのAPIを叩くツール」を作って...",
+      "title": "MCP入門 ① 自作ツール（MCP Server）を Claude Code から呼び出す"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "gaop2560"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-21T12:56:26.555859+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "grep が強くなる条件 ― Agent 時代の検索設計（RAG 第3回）",
+          "url": "https://qiita.com/gaop2560/items/67de779fc08144fe6b9c"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "grep が強くなる条件 ― Agent 時代の検索設計（RAG 第3回）",
+        "url": "https://qiita.com/gaop2560/items/67de779fc08144fe6b9c"
+      },
+      "published_at": "2026-06-21T12:47:56+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 7,
+      "report_score": 13.741738,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.25,
+        "llm_relevance_score": 7.0,
+        "recency_score": 0.9417376792397141,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 13.741737679239714
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:e4043deae30d494a",
+      "summary": "最先端AIを技術の中身まで読み解く「AIウォッチ」の連載記事です（RAG 全10回・第3回）。初出は本サイトです。全10回の一覧もそちらに。 → https://aiwatch-jp.pages.dev/rag-overview-03\n\n前回は、BM25 とベクトル検...",
+      "title": "grep が強くなる条件 ― Agent 時代の検索設計（RAG 第3回）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "masayasu_t"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-18T06:19:13.858098+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "【ローカルLLMチャットボット開発】第6回 Ollamaを使わずRAGを実装する",
+          "url": "https://qiita.com/masayasu_t/items/f22de3208a314160cadb"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "【ローカルLLMチャットボット開発】第6回 Ollamaを使わずRAGを実装する",
+        "url": "https://qiita.com/masayasu_t/items/f22de3208a314160cadb"
+      },
+      "published_at": "2026-06-17T21:45:57+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 8,
+      "report_score": 12.357452,
+      "report_source_date": "2026-06-18",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9574522807591381,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 12.357452280759137
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:4c460f86a94985e0",
+      "summary": "はじめに\n前回は、ONNX Runtime GenAIを利用して、Ollamaを使わずにローカルLLMを実行しました。\n\nしかし、RAGを実装するには、LLMだけでは不十分です。\n今回は、Embeddingを利用してベクトル検索を実装し、Ollamaを使わないRAGチ...",
+      "title": "【ローカルLLMチャットボット開発】第6回 Ollamaを使わずRAGを実装する"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "yousan"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-18T06:19:13.739900+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "最近Claude Code (Opus 4.8) がツール呼び出しを生の `<invoke>` テキストで吐く問題を調べた（\"tool call could not be parsed\" の正体）",
+          "url": "https://qiita.com/yousan/items/f9e11dd44bf61c7ae74a"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "最近Claude Code (Opus 4.8) がツール呼び出しを生の `<invoke>` テキストで吐く問題を調べた（\"tool call could not be parsed\" の正体）",
+        "url": "https://qiita.com/yousan/items/f9e11dd44bf61c7ae74a"
+      },
+      "published_at": "2026-06-17T22:10:04+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 9,
+      "report_score": 12.109057,
+      "report_source_date": "2026-06-18",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9590571352016712,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 12.10905713520167
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:c7126a5e15b6b06e",
+      "summary": "TL;DR\n最近、こういうエラーがでます。\n\nClaude Code を Opus 4.8 で使っていると、ごく稀に ツール呼び出し（Bash など）が実行されず、… という生のマークアップがそのまま出力されるこ...",
+      "title": "最近Claude Code (Opus 4.8) がツール呼び出しを生の `<invoke>` テキストで吐く問題を調べた（\"tool call could not be parsed\" の正体）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "akira_papa_AI"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-21T12:56:26.815811+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "AIにライブラリ移行を丸投げすると、なぜ静かに事故るのか — 大規模コードマイグレーションを「決定的codemod × LLM × 人間」で仕分ける実践ガイド",
+          "url": "https://qiita.com/akira_papa_AI/items/b8c02f90b38702b223ce"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "AIにライブラリ移行を丸投げすると、なぜ静かに事故るのか — 大規模コードマイグレーションを「決定的codemod × LLM × 人間」で仕分ける実践ガイド",
+        "url": "https://qiita.com/akira_papa_AI/items/b8c02f90b38702b223ce"
+      },
+      "published_at": "2026-06-21T12:45:04+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 10,
+      "report_score": 12.09155,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.941550222342722,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 12.091550222342722
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:6a5537f611b74c65",
+      "summary": "はじめに：作るのは速くなったのに、「作り替える」はなぜ怖いままなのか\n正直に言うと、AIが来てから、新しいコードを書くのはほんとに速くなりました。\nでも、不思議なことに、もうひとつの仕事だけはあんまり楽になってない気がするんです。\nそれが 「移行（マイグレーション）」 。...",
+      "title": "AIにライブラリ移行を丸投げすると、なぜ静かに事故るのか — 大規模コードマイグレーションを「決定的codemod × LLM × 人間」で仕分ける実践ガイド"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Kosti Vasilakakis"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock AgentCore",
+        "Announcements"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-18T17:49:50.260211+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Amazon Bedrock AgentCore harness is now generally available: Go from idea to production-grade agent in minutes",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-is-now-generally-available-go-from-idea-to-production-grade-agent-in-minutes"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Amazon Bedrock AgentCore harness is now generally available: Go from idea to production-grade agent in minutes",
+        "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-is-now-generally-available-go-from-idea-to-production-grade-agent-in-minutes"
+      },
+      "published_at": "2026-06-18T17:32:22+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 11,
+      "report_score": 11.497073,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9970734530002238,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 11.497073453000224
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:e8fa3b84c28cb037",
+      "summary": "Today, Amazon Bedrock AgentCore harness is generally available. Two API calls (CreateHarness to define an agent, and InvokeHarness to run it), and you have an agent running in seconds. The agent runs in its own isolated environment with a filesystem and shell, so it can read files, run commands, and write code safely. It remembers users and conversations across sessions, picks up skills you point it at (including the AWS-curated catalog), browses the web, calls your tools through gateway or MCP, and switches model providers mid-session without losing context. Every step streams back to you in real time and is automatically traced to Amazon CloudWatch. You don’t need to write orchestration code or build a container, unless you want to.",
+      "title": "Amazon Bedrock AgentCore harness is now generally available: Go from idea to production-grade agent in minutes"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Apoorva Chandra"
+      ],
+      "categories": [
+        "Amazon CloudWatch",
+        "Amazon SageMaker",
+        "Announcements",
+        "Intermediate (200)"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-19T16:20:37.057274+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Monitor and debug generative AI inference with SageMaker detailed metrics and Insights dashboard on CloudWatch",
+          "url": "https://aws.amazon.com/blogs/machine-learning/monitor-and-debug-generative-ai-inference-with-sagemaker-detailed-metrics-and-insights-dashboard-on-cloudwatch"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Monitor and debug generative AI inference with SageMaker detailed metrics and Insights dashboard on CloudWatch",
+        "url": "https://aws.amazon.com/blogs/machine-learning/monitor-and-debug-generative-ai-inference-with-sagemaker-detailed-metrics-and-insights-dashboard-on-cloudwatch"
+      },
+      "published_at": "2026-06-18T23:31:58+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 12,
+      "report_score": 11.430751,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9307513338369389,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 11.43075133383694
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:a6ace0af1cd3b1d8",
+      "summary": "Amazon SageMaker AI provides fully managed real-time inference hosting for machine learning models. You deploy a model to a SageMaker endpoint backed by one or more compute instances, and SageMaker handles provisioning and scaling. SageMaker supports multiple endpoint architectures. This post focuses on the two most relevant to generative AI workloads with detailed observability: Single-model endpoints (SME) and Inference component (IC) endpoints.",
+      "title": "Monitor and debug generative AI inference with SageMaker detailed metrics and Insights dashboard on CloudWatch"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Veda Raman"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock AgentCore",
+        "Announcements",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-19T16:20:37.056672+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Introducing Web Search on Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Introducing Web Search on Amazon Bedrock AgentCore",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore"
+      },
+      "published_at": "2026-06-19T14:15:24+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 13,
+      "report_score": 11.23964,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9896404376516935,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 11.239640437651694
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:a49417681ada4007",
+      "summary": "Web Search on Amazon Bedrock AgentCore is now generally available. In this post, we walk through what makes Web Search on Amazon Bedrock AgentCore different, why it matters, and how to wire it in with a few lines of code.",
+      "title": "Introducing Web Search on Amazon Bedrock AgentCore"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "mh-ase111111111"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-21T12:56:26.816390+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "実装はAIが飲み込む時代、データ基盤構築で人は何をする？ AI駆動開発の全体設計図（第1回）",
+          "url": "https://qiita.com/mh-ase111111111/items/2b15429cf961e30fef4b"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "実装はAIが飲み込む時代、データ基盤構築で人は何をする？ AI駆動開発の全体設計図（第1回）",
+        "url": "https://qiita.com/mh-ase111111111/items/2b15429cf961e30fef4b"
+      },
+      "published_at": "2026-06-21T12:13:41+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 14,
+      "report_score": 10.9395,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.9395004439846709,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.93950044398467
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:12b366f34a9bf657",
+      "summary": "はじめに\n私はデータ基盤の運用保守に携わっており、主にバッチ処理まわりの保守や追加開発を担っています。\n最近、AIエージェントが話題ですね。AIにどこまで仕事を任すことができ、人がどのようにかかわっていく未来になるのかを知るためにClaude の Pro プランを使い始め...",
+      "title": "実装はAIが飲み込む時代、データ基盤構築で人は何をする？ AI駆動開発の全体設計図（第1回）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "プロマネ武蔵"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T03:09:52.501456+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "クラウド AI のトークンコストと、『考えるのはローカル、仕上げはクラウド』という使い分け",
+          "url": "https://zenn.dev/exapolicy/articles/d723365dfb6b35"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "クラウド AI のトークンコストと、『考えるのはローカル、仕上げはクラウド』という使い分け",
+        "url": "https://zenn.dev/exapolicy/articles/d723365dfb6b35"
+      },
+      "published_at": "2026-06-21T06:36:55+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 15,
+      "report_score": 10.917784,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.9177836774338406,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.91778367743384
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:0b7e6f33f521396f",
+      "summary": "はじめに\nChatGPT や Claude を業務で使い込むほど、便利さの裏で効いてくるのが トークンコスト です。最近、こんな声をよく聞きます — 「1 トークンあたりの単価は下がっているはずなのに、請求額はむしろ増えている」。\n理由は、使い方が変わったからです。AI が自律的に何度もやり取りを繰り返す「エージェント的」な使い方が広がり、1 つの作業で大量のトークンを消費するようになりました。\nこの記事では、クラウド AI のコストがどう決まるのかを整理したうえで、コストの無駄を減らしつつ機密も守れる発想 — 「考えるのはローカル、仕上げはクラウド」 という使い分け — を紹介しま...",
+      "title": "クラウド AI のトークンコストと、『考えるのはローカル、仕上げはクラウド』という使い分け"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "muryodecode"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-21T12:56:26.816150+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "【魔法の記事】Claude Code ハーネスエンジニアリング 完全ガイド",
+          "url": "https://qiita.com/muryodecode/items/27325f232b602290b8bc"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "【魔法の記事】Claude Code ハーネスエンジニアリング 完全ガイド",
+        "url": "https://qiita.com/muryodecode/items/27325f232b602290b8bc"
+      },
+      "published_at": "2026-06-21T12:27:15+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 16,
+      "report_score": 9.890386,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.9403859922751389,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 9.890385992275139
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:69016563618576f9",
+      "summary": "この記事は「魔法の記事」です。 読者のみなさんのコメントが、AIの多段レビューを経て自動的に本文へ反映されます（不適切・無関係な内容は反映されません）。\n更新はおおよそ 毎日 0:30 / 8:30 / 16:30 ごろ（JST） です。あなたのコメントが、この記事を...",
+      "title": "【魔法の記事】Claude Code ハーネスエンジニアリング 完全ガイド"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "sasgawy"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-21T12:56:26.556186+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "LLMのプロンプト原則",
+          "url": "https://qiita.com/sasgawy/items/af8bd6fe02f5a5ec803d"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "LLMのプロンプト原則",
+        "url": "https://qiita.com/sasgawy/items/af8bd6fe02f5a5ec803d"
+      },
+      "published_at": "2026-06-21T11:58:37+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 17,
+      "report_score": 9.738518,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.25,
+        "llm_relevance_score": 7.0,
+        "recency_score": 0.9385179622229052,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 9.738517962222906
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:1d54b81214155abe",
+      "summary": "LLM用のある程度汎用的なプロンプト（Instructionファイル, Customizationファイル, etc.）をLLM自身に作らせるために、\"プロンプト原則\"として専用のプロンプト（Skill）を作った。\n共通利用される汎用プロンプトの作成用途に作ったが、大半は一...",
+      "title": "LLMのプロンプト原則"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "toshinao"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T03:09:52.501629+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "自作 macOS IME「RomKana」開発記",
+          "url": "https://zenn.dev/toshinao/articles/1cffb713b1c670"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "自作 macOS IME「RomKana」開発記",
+        "url": "https://zenn.dev/toshinao/articles/1cffb713b1c670"
+      },
+      "published_at": "2026-06-21T06:27:23+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 18,
+      "report_score": 9.717176,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.25,
+        "llm_relevance_score": 7.0,
+        "recency_score": 0.917176271732112,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 9.717176271732113
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:92c8b0cda89932d5",
+      "summary": "自作 macOS IME「RomKana」開発記\nローマ字を打つと、文脈を見てかな漢字交じり文に変換してくれる macOS の入力メソッド（IME）を、完全ローカルで自作しました。「変換の賢さは、手元で動くLLMでどこまで上げられるんだろう？」というのが知りたくて、いろいろ測りながら作っていった記録です。最終的には、かな漢字変換に特化したニューラルモデルへ乗り換えました。\n例: AI de nihongo wo henkan suru（空白で区切って打つ）→ AIで日本語を変換する\nきっかけは X のあるポストでした。気になって調べてみたら、ローマ字をLLMでかな漢字に変換する Su...",
+      "title": "自作 macOS IME「RomKana」開発記"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Dan Ferguson"
+      ],
+      "categories": [
+        "Amazon SageMaker AI",
+        "Announcements",
+        "Intermediate (200)"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-18T06:06:58.138711+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Amazon SageMaker AI Async Inference now supports inline request payloads",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-async-inference-now-supports-inline-request-payloads"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Amazon SageMaker AI Async Inference now supports inline request payloads",
+        "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-async-inference-now-supports-inline-request-payloads"
+      },
+      "published_at": "2026-06-17T20:56:36+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 19,
+      "report_score": 9.665076,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9150761735946836,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 2.25,
+        "total_score": 9.665076173594684
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:672b24fce573e001",
+      "summary": "Today, we’re announcing inline payload support for Amazon SageMaker AI Async Inference. Customers can now send inference payloads directly in the request body of the InvokeEndpointAsync API, removing the need to upload input data to Amazon Simple Storage Service (Amazon S3) before each invocation.",
+      "title": "Amazon SageMaker AI Async Inference now supports inline request payloads"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [
+        "llm",
+        "open-weight-models",
+        "architecture",
+        "attention",
+        "long-context",
+        "Deep Learning",
+        "Machine Learning",
+        "AI",
+        "LLM"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-18T17:49:50.637569+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "sebastian-raschka-blog",
+          "tier": 0,
+          "title": "GLM-5.2 and IndexShare for Long-Context Sparse Attention",
+          "url": "https://sebastianraschka.com/blog/2026/glm-5-2-indexshare.html"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "sebastian-raschka-blog",
+        "tier": 0,
+        "title": "GLM-5.2 and IndexShare for Long-Context Sparse Attention",
+        "url": "https://sebastianraschka.com/blog/2026/glm-5-2-indexshare.html"
+      },
+      "published_at": "2026-06-18T09:16:05+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 20,
+      "report_score": 9.463296,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9632955988237321,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 9.463295598823732
+      },
+      "section": null,
+      "source_name": "Sebastian Raschka Blog",
+      "story_id": "fallback:3b93ca17ac45c56f",
+      "summary": "Short note on GLM-5.2, an open-weight GLM update that keeps the GLM-5 sparse MoE backbone and adds IndexShare for cheaper 1M-token DSA inference.",
+      "title": "GLM-5.2 and IndexShare for Long-Context Sparse Attention"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Ebbey Thomas"
+      ],
+      "categories": [
+        "Amazon Quick Suite",
+        "Artificial Intelligence",
+        "Customer Solutions"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-19T16:20:37.057031+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Accelerate campaign workflow with insights from Adobe Marketing Agent for Amazon Quick",
+          "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-campaign-workflow-with-insights-from-adobe-marketing-agent-for-amazon-quick"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Accelerate campaign workflow with insights from Adobe Marketing Agent for Amazon Quick",
+        "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-campaign-workflow-with-insights-from-adobe-marketing-agent-for-amazon-quick"
+      },
+      "published_at": "2026-06-19T14:05:04+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 21,
+      "report_score": 9.238931,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9889305337456599,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 9.238930533745659
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:ffc4c2d9f482d408",
+      "summary": "This post shows how to enable Adobe Marketing Agent for Amazon Quick using a Model Context Protocol (MCP). We walk you through how to configure the integration, authenticate using your Adobe credentials, and get the latest insights in Amazon Quick. The sample workflow returns audience rankings, loyalty segment summaries, journey usage, and conflict recommendations.",
+      "title": "Accelerate campaign workflow with insights from Adobe Marketing Agent for Amazon Quick"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Spencer Martenson"
+      ],
+      "categories": [
+        "Announcements",
+        "Foundational (100)"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-18T06:06:58.139312+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Get back hours every day with autonomous agents in Amazon Quick",
+          "url": "https://aws.amazon.com/blogs/machine-learning/get-back-hours-every-day-with-autonomous-agents-in-amazon-quick"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Get back hours every day with autonomous agents in Amazon Quick",
+        "url": "https://aws.amazon.com/blogs/machine-learning/get-back-hours-every-day-with-autonomous-agents-in-amazon-quick"
+      },
+      "published_at": "2026-06-17T20:35:39+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 22,
+      "report_score": 9.163746,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9137458328211966,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 9.163745832821197
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:e0970e7cfe591110",
+      "summary": "Today, Quick gets even more powerful: new autonomous agents that work continuously&nbsp;on your behalf,&nbsp;an activity feed that helps you prioritize your most important work, and the ability to&nbsp;find insights&nbsp;across every data source your business runs on from a single&nbsp;question.",
+      "title": "Get back hours every day with autonomous agents in Amazon Quick"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-22T03:09:50.890146+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 ChatGPTの使われ方は、3年間でどう変わってきたか",
+          "url": "https://ai-data-base.com/archives/111513"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 ChatGPTの使われ方は、3年間でどう変わってきたか",
+        "url": "https://ai-data-base.com/archives/111513"
+      },
+      "published_at": "2026-06-21T13:34:00+00:00",
+      "published_local_date": "2026-06-21",
+      "report_rank": 23,
+      "report_score": 8.894755,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.9447551918837287,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 8.894755191883728
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:2a917ce0c3bbda3b",
+      "summary": "<p>ChatGPTが登場した直後、人々はそれを「すごい新技術」として語っていました。検索の代わりになるのか。仕事に使えるのか。どんな質問をすればよいのか。最初の関心は、まだ正体のよく分からない道具を試すことに向いていました。 それから3年。ChatGPTは珍しい実験的な技術ではなく、日々の仕事や生活の中に入り込む製品へと変わりました。使い方を尋ねる投稿は減り、代わりに「思ったように動かない」「前と違う」「会話が消えた」といった不満が増えています。ユーザーの関心は、驚きから期待へ、期待から失望やこだわりへと移っていったのです。 この変化は、単なる利用量の増加ではありません。3年分のオンライン上の声を&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111513\"><span class=\"locked-post\">🔒</span> ChatGPTの使われ方は、3年間でどう変わってきたか</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 ChatGPTの使われ方は、3年間でどう変わってきたか"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "YushiYamamoto"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-18T18:14:32.807407+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Claude Fable 5 API移行チェックリスト：拒否処理・Adaptive Thinking常時オン・データ保持30日の実装対応",
+          "url": "https://qiita.com/YushiYamamoto/items/dec0bf1e3c8556de9eb7"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Claude Fable 5 API移行チェックリスト：拒否処理・Adaptive Thinking常時オン・データ保持30日の実装対応",
+        "url": "https://qiita.com/YushiYamamoto/items/dec0bf1e3c8556de9eb7"
+      },
+      "published_at": "2026-06-18T13:50:52+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 24,
+      "report_score": 8.781854,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9818538779515279,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.781853877951526
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:961f3ee401f4b847",
+      "summary": "2026年6月9日、AnthropicはClaude Fable 5（claude-fable-5）をClaude API・Amazon Bedrock・Vertex AI・Microsoft Foundryで一般提供を開始した。1Mトークンコンテキスト・128k出力・$...",
+      "title": "Claude Fable 5 API移行チェックリスト：拒否処理・Adaptive Thinking常時オン・データ保持30日の実装対応"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "kamui-platform"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-18T18:14:33.049316+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code からターミナルだけで、FastAPI アプリをデプロイしてみた",
+          "url": "https://zenn.dev/kamuidash/articles/6a673850634039"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code からターミナルだけで、FastAPI アプリをデプロイしてみた",
+        "url": "https://zenn.dev/kamuidash/articles/6a673850634039"
+      },
+      "published_at": "2026-06-18T10:00:05+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 25,
+      "report_score": 8.766244,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9662435034920308,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.766243503492031
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:5ad27e725332b90c",
+      "summary": "要約\n\nAI エージェント（Claude Code）に「アプリを作って、GitHub に push して、デプロイして」と頼むだけで、ブラウザのダッシュボードを一度も触らずに FastAPI アプリを本番公開できた。\nPaaSのKamuiDash（ https://kamui-platform.com/ja/ ）が提供する MCP サーバーを使いました。create_project / create_app / list_deploy_runs / get_app_logs といった操作を、Claude Code から自然言語で呼び出せる。\n結果、東京リージョンの公開 URL から ...",
+      "title": "Claude Code からターミナルだけで、FastAPI アプリをデプロイしてみた"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "とんのかつ"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-19T16:45:19.873753+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code (Opus 4.8) でツール呼び出しが壊れる現象の原因と対策【Claude Code運用】",
+          "url": "https://zenn.dev/cutlet_of_pork/articles/opus48-tool-call-corruption-fix"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code (Opus 4.8) でツール呼び出しが壊れる現象の原因と対策【Claude Code運用】",
+        "url": "https://zenn.dev/cutlet_of_pork/articles/opus48-tool-call-corruption-fix"
+      },
+      "published_at": "2026-06-19T00:31:57+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 26,
+      "report_score": 8.734636,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9346364733105924,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.734636473310593
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:f513cb2d7adcf996",
+      "summary": "はじめに\nClaude Code を Opus 4.8 で使っていると、突然こんな状態になることがある。\n\n「ファイルを読んでから編集します」と言ったのに何も起きない\nツール呼び出しをすると見るからにおかしいテキストが出て、次のリトライも同じように壊れる\n\n/rewind しても数ターン後にまた再発する\n\nこれは Opus 4.8 固有のシリアライズ回帰バグ（GitHub issue #67307）が原因だ。本記事ではその根本原因・発生条件・回避策を解説する。\nさらに、この問題を調査する過程で「対策ドキュメント自身が問題を悪化させる」という逆説的な罠に気づいた経緯と、Codex クロ...",
+      "title": "Claude Code (Opus 4.8) でツール呼び出しが壊れる現象の原因と対策【Claude Code運用】"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "okkun0524"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-18T18:14:33.051714+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code サブエージェントのネスト機能で .claude/agents/ の定義が効いた話",
+          "url": "https://zenn.dev/genda_jp/articles/16d35ffa464d65"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code サブエージェントのネスト機能で .claude/agents/ の定義が効いた話",
+        "url": "https://zenn.dev/genda_jp/articles/16d35ffa464d65"
+      },
+      "published_at": "2026-06-18T01:37:38+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 27,
+      "report_score": 8.73311,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9331103939562325,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.733110393956231
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:7690712c857404be",
+      "summary": "はじめに\n株式会社GENDA 開発部エンジニアの奥山です。\n先日、Claude Fable 5 公開をきっかけにサブエージェント活用ルールを見直した話を書きました。\nメインセッションは上位モデルのまま、実装や調査は .claude/agents/ 配下のサブエージェント経由で Opus / Sonnet / Haiku に委譲する、という役割ベースのルールです。\nhttps://zenn.dev/genda_jp/articles/b6045575e2e13d\nその記事を公開したのとほぼ同時期、Claude Code v2.1.172 でサブエージェントの ネスト機能(サブエージェン...",
+      "title": "Claude Code サブエージェントのネスト機能で .claude/agents/ の定義が効いた話"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "picnic"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-19T16:45:19.569996+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Claude Code v2.1.183: autoモードの破壊的コマンド自動ブロックと安全性強化",
+          "url": "https://qiita.com/picnic/items/f2a4da4cd2e99718d66f"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Claude Code v2.1.183: autoモードの破壊的コマンド自動ブロックと安全性強化",
+        "url": "https://qiita.com/picnic/items/f2a4da4cd2e99718d66f"
+      },
+      "published_at": "2026-06-19T14:26:39+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 28,
+      "report_score": 8.540414,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9904138963365675,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.540413896336567
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:54ff7cae4a3b08f0",
+      "summary": "はじめに\nClaude Code v2.1.183 がリリースされました。本リリースの最大のトピックは auto モードにおける破壊的コマンドの自動ブロック機能の追加です。これにより、明示的な指示なしに git reset --hard や terraform destr...",
+      "title": "Claude Code v2.1.183: autoモードの破壊的コマンド自動ブロックと安全性強化"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "picnic"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-18T18:14:32.807160+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Claude Code v2.1.181 の新機能・バグ修正まとめ ─ /config 構文と重大バグ修正",
+          "url": "https://qiita.com/picnic/items/5dbedcdd25053ee70eb5"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Claude Code v2.1.181 の新機能・バグ修正まとめ ─ /config 構文と重大バグ修正",
+        "url": "https://qiita.com/picnic/items/5dbedcdd25053ee70eb5"
+      },
+      "published_at": "2026-06-18T14:33:11+00:00",
+      "published_local_date": "2026-06-18",
+      "report_rank": 29,
+      "report_score": 8.534743,
+      "report_source_date": "2026-06-19",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9847434537802079,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.534743453780209
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:8b3825d608af0f1a",
+      "summary": "はじめに\nClaude Code v2.1.181 がリリースされました。本バージョンは単なるマイナーアップデートではなく、日常的な開発作業に直結する重大バグを複数修正した重要リリースです。\n特に注目すべき点は次の3つです。\n\nプロンプトから設定を直接変更できる /con...",
+      "title": "Claude Code v2.1.181 の新機能・バグ修正まとめ ─ /config 構文と重大バグ修正"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ko"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-19T16:45:19.866137+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Opus 4.8が劣化している可能性の検証v2：Fable/Mythos停止後の実効品質劣化を多層的に",
+          "url": "https://zenn.dev/oqamura/articles/85945cef3d7432"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Opus 4.8が劣化している可能性の検証v2：Fable/Mythos停止後の実効品質劣化を多層的に",
+        "url": "https://zenn.dev/oqamura/articles/85945cef3d7432"
+      },
+      "published_at": "2026-06-19T10:43:26+00:00",
+      "published_local_date": "2026-06-19",
+      "report_rank": 30,
+      "report_score": 8.52518,
+      "report_source_date": "2026-06-20",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9751797134100961,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.525179713410097
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:ddb5eb1101beeafa",
+      "summary": "本稿は、昨日公開した記事の改訂版であり、前稿の内容は全てカバーされている。\n\n\n2026年6月中旬以降、Claude Opus 4.8の出力品質が明らかに落ちる場面に遭遇することがある。特に、Claude Codeで、そもそもの言語能力の低下や、過剰な先回りが増えることがある。しかしこれはしばらく経つともとに戻る。\nユーザから見れば、これは一時的なnerfである。\nただし、ここでいうnerfは、「同じモデル名の裏で異なる重みのモデルに黙って差し替えられた」という意味ではない。そこまで言うには証拠が足りない。むしろ、Anthropicの公式文書を見る限り、Claude APIの claud...",
+      "title": "Claude Opus 4.8が劣化している可能性の検証v2：Fable/Mythos停止後の実効品質劣化を多層的に"
+    }
+  ],
+  "blog_stories_considered": 77,
   "covered_dates": [
     "2026-06-15",
     "2026-06-16",
@@ -8,8 +1677,8 @@
     "2026-06-20",
     "2026-06-21"
   ],
-  "generated_at": "2026-06-21T12:56:28.184934+00:00",
-  "items_considered": 408,
+  "generated_at": "2026-06-22T03:52:42.472099+00:00",
+  "items_considered": 409,
   "missing_dates": [],
   "period_end": "2026-06-21",
   "period_id": "2026-W25",
@@ -6268,13 +7937,15 @@
   "report_type": "weekly",
   "selection_policy": {
     "archive_lookahead_days": 1,
+    "blog_limit": 30,
+    "blog_ranking": "score.total_score descending, then publication time descending; blog/article stories, including Japanese AI engineering sources, are pulled from daily top5 and radar",
     "dedupe_keys": [
       "arxiv_id",
       "story_id",
       "primary_link.url"
     ],
     "limit": 100,
-    "metadata_source": "fallback",
+    "metadata_source": "ai",
     "period_source": "target_date and report_type",
     "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
     "source_sections": [
@@ -6290,10 +7961,11 @@
     "api/day/2026-06-18.json",
     "api/day/2026-06-19.json",
     "api/day/2026-06-20.json",
-    "api/day/2026-06-21.json"
+    "api/day/2026-06-21.json",
+    "api/day/2026-06-22.json"
   ],
-  "stories_considered": 396,
-  "summary": "本週整理 100 篇值得看的 AI 論文，重點集中在 AI 方法、自然語言處理、機器學習。涵蓋 7 天資料，資料完整，共從 396 篇候選中篩選。",
+  "stories_considered": 397,
+  "summary": "本週精選論文聚焦 Transformer 理論與分散推論、代理系統的持續演化與安全對齊，並揭露 RLVR 後訓練、SAE 干預恢復與紅隊測試等關鍵挑戰；技術文章補充實務視角，涵蓋代理安全、RAG 性能稀釋及雲端成本最佳化。",
   "timezone": "Asia/Taipei",
-  "title": "2026-W25 AI 論文週報"
+  "title": "AI週報：Transformer理論、代理演化與安全對齊進展"
 }
