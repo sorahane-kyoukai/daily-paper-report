@@ -200,6 +200,11 @@ frontend/public/reports/
 frontend/public/sources/
 frontend/public/status/
 
+# Local pipeline output; GitHub Actions rebuilds and deploys this payload.
+/state.sqlite
+/public/*
+!/public/CNAME
+
 # Translations
 *.mo
 *.pot
@@ -374,6 +379,8 @@ $RECYCLE.BIN/
 
 # Feature development snapshots
 features/*/snapshots/*.json
+features/*/STATE.md
+features/*/E2E_RUN_REPORT.md
 
 # Temporary git rewriting tools
 .rewrite/
