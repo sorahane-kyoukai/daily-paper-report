@@ -16,7 +16,7 @@ MAX_TITLE_CHARS = 34
 MAX_SUMMARY_CHARS = 180
 MIN_SENTENCE_TRUNCATE_CHARS = 50
 
-SYSTEM_INSTRUCTION = """你是專業的 AI 研究編輯。請根據候選論文內容，為週報或月報產生繁體中文標題與快速總結。只輸出 JSON object，不要使用 Markdown。"""
+SYSTEM_INSTRUCTION = """你是專業的 AI 研究編輯。請根據候選論文與技術文章內容，為週報或月報產生繁體中文標題與快速總結。只輸出 JSON object，不要使用 Markdown。"""
 
 
 def generate_report_metadata(
@@ -51,23 +51,28 @@ def _build_prompt(report: ReportDigest) -> str:
         "period_start": report.period_start,
         "period_end": report.period_end,
         "recommendation_count": len(report.recommendations),
+        "blog_recommendation_count": len(report.blog_recommendations),
         "covered_dates": report.covered_dates,
         "missing_date_count": len(report.missing_dates),
         "top_papers": [
             _story_prompt_payload(story)
             for story in report.recommendations[:MAX_PROMPT_STORIES]
         ],
+        "top_blog_articles": [
+            _story_prompt_payload(story)
+            for story in report.blog_recommendations[:MAX_PROMPT_STORIES]
+        ],
     }
 
     return (
-        "請為以下 AI 論文"
+        "請為以下 AI 研究與技術文章"
         f"{'週報' if report.report_type == 'weekly' else '月報'}"
         "產生可直接顯示在網站上的 metadata。\n"
         "規則：\n"
         "- title 必須包含「週報」或「月報」，專業、克制，不要誇張或像廣告。\n"
         f"- title 最多 {MAX_TITLE_CHARS} 個中文字元，避免重複日期。\n"
         f"- summary 用 1 到 2 句快速總結，最多 {MAX_SUMMARY_CHARS} 個中文字元。\n"
-        "- summary 要概括主要研究方向與挑選理由，不要逐篇列舉。\n"
+        "- summary 要概括主要研究方向、值得看的文章脈絡與挑選理由，不要逐篇列舉。\n"
         '- 只回傳 JSON：{"title":"...","summary":"..."}\n\n'
         f"{json.dumps(payload, ensure_ascii=False, indent=2)}"
     )

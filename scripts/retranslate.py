@@ -30,7 +30,7 @@ import httpx
 
 # ── DeepSeek API settings ──────────────────────────────────────────────
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
-DEEPSEEK_MODEL = "deepseek-chat"  # Latest DeepSeek chat model
+DEEPSEEK_MODEL = "deepseek-v4-pro"
 MAX_TOKENS = 8192  # Enough for batch stories x 400 chars Chinese + JSON
 BATCH_SIZE = 5  # Keep small to avoid JSON truncation from token limits
 MIN_REQUEST_INTERVAL = 0.5  # seconds

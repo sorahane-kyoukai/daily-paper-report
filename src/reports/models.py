@@ -34,6 +34,9 @@ class ReportDigest(BaseModel):
     items_considered: Annotated[int, Field(ge=0)] = 0
     stories_considered: Annotated[int, Field(ge=0)] = 0
     recommendations: list[dict[str, Any]] = Field(default_factory=list)
+    blog_items_considered: Annotated[int, Field(ge=0)] = 0
+    blog_stories_considered: Annotated[int, Field(ge=0)] = 0
+    blog_recommendations: list[dict[str, Any]] = Field(default_factory=list)
     selection_policy: dict[str, Any] = Field(default_factory=dict)
 
 
@@ -51,6 +54,7 @@ class ReportIndexEntry(BaseModel):
     generated_at: Annotated[str, Field(min_length=1)]
     path: Annotated[str, Field(min_length=1)]
     recommendation_count: Annotated[int, Field(ge=0)] = 0
+    blog_recommendation_count: Annotated[int, Field(ge=0)] = 0
     missing_dates: list[str] = Field(default_factory=list)
 
 

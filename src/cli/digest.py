@@ -631,12 +631,16 @@ def _create_configured_llm_client(settings: object) -> "LlmClient":
     """Create the configured LLM client from application settings."""
     from src.features.llm.factory import create_llm_client
 
-    openai_api_key = getattr(settings, "openai_api_key", None) or getattr(
-        settings, "deepseek_api_key", None
-    )
     provider = getattr(settings, "llm_provider", None)
     if not provider and getattr(settings, "deepseek_api_key", None):
         provider = "deepseek"
+    normalized_provider = (provider or "").strip().lower().replace("_", "-")
+    deepseek_api_key = getattr(settings, "deepseek_api_key", None)
+    openai_api_key = (
+        deepseek_api_key
+        if normalized_provider == "deepseek" and deepseek_api_key
+        else getattr(settings, "openai_api_key", None) or deepseek_api_key
+    )
 
     return create_llm_client(
         provider=provider,
@@ -1628,11 +1632,13 @@ def report(  # noqa: PLR0913
         "report_generation_complete",
         period_id=digest.period_id,
         recommendations=len(digest.recommendations),
+        blog_recommendations=len(digest.blog_recommendations),
         missing_dates=digest.missing_dates,
     )
     click.echo(
         f"Generated {digest.report_type} report {digest.period_id}: "
-        f"{len(digest.recommendations)} recommendations "
+        f"{len(digest.recommendations)} paper recommendations, "
+        f"{len(digest.blog_recommendations)} blog recommendations "
         f"({len(digest.missing_dates)} missing dates)."
     )
 

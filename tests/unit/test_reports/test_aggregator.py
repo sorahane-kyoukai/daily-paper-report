@@ -51,6 +51,49 @@ def _story(
     }
 
 
+def _blog_story(
+    story_id: str,
+    score: float,
+    published_at: str,
+    *,
+    source_id: str = "zenn-llm-topic",
+    title: str | None = None,
+) -> dict[str, object]:
+    return {
+        "story_id": story_id,
+        "title": title or f"Blog {story_id}",
+        "title_zh": f"文章 {story_id}",
+        "summary": f"Summary for {story_id}",
+        "summary_zh": f"這是 {story_id} 的較長繁體中文摘要。",
+        "published_at": published_at,
+        "authors": [],
+        "categories": ["LLM"],
+        "arxiv_id": None,
+        "primary_link": {
+            "url": f"https://zenn.dev/example/articles/{story_id}",
+            "link_type": "blog",
+            "source_id": source_id,
+            "tier": 0,
+            "title": title or f"Blog {story_id}",
+        },
+        "links": [],
+        "entities": [],
+        "source_name": "Zenn LLM Topic",
+        "scores": {
+            "total_score": score,
+            "tier_score": 5,
+            "kind_score": 3,
+            "topic_score": 1,
+            "recency_score": 1,
+            "entity_score": 0,
+            "citation_score": 0,
+            "cross_source_score": 0,
+            "semantic_score": 0,
+            "llm_relevance_score": 0,
+        },
+    }
+
+
 def _write_day(output_dir: Path, day: str, payload: dict[str, object]) -> None:
     day_dir = output_dir / "api" / "day"
     day_dir.mkdir(parents=True, exist_ok=True)
@@ -121,9 +164,9 @@ def test_build_weekly_report_dedupes_and_writes_index(tmp_path: Path) -> None:
     )
 
     assert report.period_id == "2026-W21"
-    assert report.title == "2026-W21 AI 論文週報"
+    assert report.title == "2026-W21 AI 研究週報"
     assert report.summary is not None
-    assert "2 篇值得看的 AI 論文" in report.summary
+    assert "2 篇 AI 論文" in report.summary
     assert report.covered_dates == ["2026-05-18", "2026-05-19"]
     assert "2026-05-20" in report.missing_dates
     assert report.items_considered == 4
@@ -142,6 +185,67 @@ def test_build_weekly_report_dedupes_and_writes_index(tmp_path: Path) -> None:
     assert index_data["weekly"][0]["summary"] == report.summary
     assert index_data["weekly"][0]["recommendation_count"] == 2
     assert index_data["weekly"][0]["title"] == report.title
+
+
+def test_build_weekly_report_includes_blog_recommendations(
+    tmp_path: Path,
+) -> None:
+    _write_day(
+        tmp_path,
+        "2026-05-18",
+        {
+            "papers": [
+                _story("paper-a", 9, "2026-05-18T08:00:00+00:00"),
+            ],
+            "top5": [
+                _blog_story(
+                    "jp-agent-skill",
+                    15,
+                    "2026-05-18T10:00:00+09:00",
+                    title="SKILL.md1個でエージェントは乗っ取られる",
+                )
+            ],
+            "radar": [
+                _blog_story(
+                    "qiita-rag",
+                    11,
+                    "2026-05-19T09:00:00+09:00",
+                    source_id="qiita-genai-tag",
+                    title="Agentic RAG 実践ガイド",
+                ),
+                _story("paper-from-radar", 99, "2026-05-19T08:00:00+00:00"),
+            ],
+        },
+    )
+
+    report = build_report_from_archives(
+        output_dir=tmp_path,
+        report_type="weekly",
+        target_date=date(2026, 5, 24),
+        timezone="Asia/Taipei",
+        limit=10,
+    )
+
+    assert [story["story_id"] for story in report.recommendations] == [
+        "paper-from-radar",
+        "paper-a",
+    ]
+    assert [story["story_id"] for story in report.blog_recommendations] == [
+        "jp-agent-skill",
+        "qiita-rag",
+    ]
+    assert report.blog_items_considered == 2
+    assert report.blog_stories_considered == 2
+    assert report.blog_recommendations[0]["report_source_section"] == "top5"
+    assert report.blog_recommendations[0]["report_rank"] == 1
+    assert "2 篇值得看的技術文章" in (report.summary or "")
+
+    report_data = json.loads(
+        (tmp_path / "api" / "reports" / "weekly" / "2026-W21.json").read_text()
+    )
+    index_data = json.loads((tmp_path / "api" / "reports" / "index.json").read_text())
+    assert len(report_data["blog_recommendations"]) == 2
+    assert index_data["weekly"][0]["blog_recommendation_count"] == 2
 
 
 def test_build_weekly_report_updates_legacy_index_without_paths(tmp_path: Path) -> None:

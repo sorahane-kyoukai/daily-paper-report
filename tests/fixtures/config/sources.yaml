@@ -17,6 +17,16 @@ sources:
     max_items: 20
     enabled: true
 
+  - id: openai-alignment
+    name: OpenAI Alignment Research Blog
+    url: https://alignment.openai.com/rss.xml
+    tier: 0
+    method: rss_atom
+    kind: blog
+    timezone: America/Los_Angeles
+    max_items: 20
+    enabled: true
+
   - id: anthropic-blog
     name: Anthropic Blog
     url: https://www.anthropic.com/blog/rss.xml

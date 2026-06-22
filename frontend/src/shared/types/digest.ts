@@ -126,6 +126,9 @@ export interface ReportDigest {
   items_considered: number
   stories_considered: number
   recommendations: Story[]
+  blog_items_considered?: number
+  blog_stories_considered?: number
+  blog_recommendations?: Story[]
   selection_policy: Record<string, unknown>
 }
 
@@ -139,6 +142,7 @@ export interface ReportIndexEntry {
   generated_at: string
   path: string
   recommendation_count: number
+  blog_recommendation_count?: number
   missing_dates: string[]
 }
 

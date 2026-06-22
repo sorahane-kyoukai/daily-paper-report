@@ -36,6 +36,7 @@ def test_generate_report_metadata_parses_json_object() -> None:
         metadata.summary == "本週重點集中在推理模型與代理系統，適合快速掌握高分研究。"
     )
     assert "top_papers" in client.prompt
+    assert "top_blog_articles" in client.prompt
 
 
 def test_generate_report_metadata_returns_none_for_invalid_response() -> None:

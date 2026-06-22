@@ -61,18 +61,36 @@
     )
   })
 
-  const filteredRecommendations = computed(() => {
+  const blogRecommendations = computed(() => report.value?.blog_recommendations ?? [])
+
+  const filteredPaperRecommendations = computed(() => {
     const recommendations = report.value?.recommendations ?? []
     const query = searchQuery.value.trim()
     if (!query) return recommendations
     return recommendations.filter((story: Story) => matchesSearch(story, query))
   })
 
+  const filteredBlogRecommendations = computed(() => {
+    const recommendations = blogRecommendations.value
+    const query = searchQuery.value.trim()
+    if (!query) return recommendations
+    return recommendations.filter((story: Story) => matchesSearch(story, query))
+  })
+
+  const filteredReportItemCount = computed(
+    () => filteredPaperRecommendations.value.length + filteredBlogRecommendations.value.length,
+  )
+
+  const reportItemCount = computed(
+    () => (report.value?.recommendations.length ?? 0) + blogRecommendations.value.length,
+  )
+
   const reportStats = computed(() => {
     const current = report.value
     if (!current) return []
     return [
       { label: 'Papers', value: current.recommendations.length.toString(), tone: 'paper' },
+      { label: 'Blogs', value: blogRecommendations.value.length.toString(), tone: 'blog' },
       { label: 'Covered', value: current.covered_dates.length.toString(), tone: 'success' },
       { label: 'Missing', value: current.missing_dates.length.toString(), tone: 'warning' },
       { label: 'Considered', value: current.stories_considered.toString(), tone: 'muted' },
@@ -91,6 +109,13 @@
         label: 'Papers',
         value: all
           .reduce((total, entry) => total + entry.recommendation_count, 0)
+          .toLocaleString('en-US'),
+        detail: 'recommended',
+      },
+      {
+        label: 'Blogs',
+        value: all
+          .reduce((total, entry) => total + (entry.blog_recommendation_count ?? 0), 0)
           .toLocaleString('en-US'),
         detail: 'recommended',
       },
@@ -280,8 +305,8 @@
             v-model="searchQuery"
             name="report-search"
             type="search"
-            placeholder="Search report papers..."
-            aria-label="Search report papers"
+            placeholder="Search report items..."
+            aria-label="Search report items"
             @focus="setFocus(true)"
             @blur="setFocus(false)"
           />
@@ -296,27 +321,66 @@
           </button>
         </div>
         <span class="report-count">
-          {{ filteredRecommendations.length }} / {{ report.recommendations.length }}
+          {{ filteredReportItemCount }} / {{ reportItemCount }}
         </span>
       </section>
 
-      <section class="report-paper-list">
-        <TransitionGroup name="report-list">
-          <StoryCard
-            v-for="(story, index) in filteredRecommendations"
-            :key="story.story_id"
-            :story="story"
-            :rank="story.report_rank ?? index + 1"
-            accent-type="papers"
-            :show-entities="true"
-            :show-categories="true"
-            :show-source="true"
-            :show-authors="true"
-            :show-summary="true"
-            :show-arxiv="true"
-            :style="{ '--idx': index }"
-          />
-        </TransitionGroup>
+      <section v-if="filteredPaperRecommendations.length > 0" class="report-section">
+        <header class="report-section__header">
+          <span>Papers</span>
+          <small>{{ filteredPaperRecommendations.length }} selected</small>
+        </header>
+        <section class="report-paper-list">
+          <TransitionGroup name="report-list">
+            <StoryCard
+              v-for="(story, index) in filteredPaperRecommendations"
+              :key="story.story_id"
+              :story="story"
+              :rank="story.report_rank ?? index + 1"
+              accent-type="papers"
+              :show-entities="true"
+              :show-categories="true"
+              :show-source="true"
+              :show-authors="true"
+              :show-summary="true"
+              :show-arxiv="true"
+              :style="{ '--idx': index }"
+            />
+          </TransitionGroup>
+        </section>
+      </section>
+
+      <section v-if="filteredBlogRecommendations.length > 0" class="report-section">
+        <header class="report-section__header">
+          <span>Blog Articles</span>
+          <small>{{ filteredBlogRecommendations.length }} selected</small>
+        </header>
+        <section class="report-paper-list">
+          <TransitionGroup name="report-list">
+            <StoryCard
+              v-for="(story, index) in filteredBlogRecommendations"
+              :key="story.story_id"
+              :story="story"
+              :rank="story.report_rank ?? index + 1"
+              accent-type="radar"
+              :show-entities="true"
+              :show-categories="true"
+              :show-source="true"
+              :show-authors="false"
+              :show-summary="true"
+              :show-arxiv="false"
+              :style="{ '--idx': index }"
+            />
+          </TransitionGroup>
+        </section>
+      </section>
+
+      <section v-if="reportItemCount > 0 && filteredReportItemCount === 0" class="reports-empty">
+        <span class="reports-status-dot" />
+        <div>
+          <strong>No matching report items</strong>
+          <p>Try a broader search across papers and blog articles.</p>
+        </div>
       </section>
     </main>
 
@@ -344,6 +408,7 @@
           </span>
           <span class="report-entry-foot">
             <small>{{ entry.recommendation_count }} papers</small>
+            <small>{{ entry.blog_recommendation_count ?? 0 }} blogs</small>
             <small v-if="entry.missing_dates.length > 0">
               {{ entry.missing_dates.length }} missing
             </small>
@@ -370,7 +435,9 @@
           <span class="report-row-title">{{ entry.title }}</span>
           <span v-if="entry.summary" class="report-row-summary">{{ entry.summary }}</span>
           <span class="report-row-meta">
-            {{ entry.recommendation_count }} papers · {{ formatGeneratedAt(entry.generated_at) }}
+            {{ entry.recommendation_count }} papers ·
+            {{ entry.blog_recommendation_count ?? 0 }} blogs ·
+            {{ formatGeneratedAt(entry.generated_at) }}
           </span>
         </RouterLink>
       </section>
@@ -671,6 +738,10 @@
     background: var(--color-section-papers);
   }
 
+  .report-stat--blog::after {
+    background: var(--color-section-radar);
+  }
+
   .report-stat--success::after {
     background: var(--color-accent-success);
   }
@@ -792,6 +863,32 @@
     flex-shrink: 0;
     color: var(--color-text-tertiary);
     font-family: var(--font-mono);
+  }
+
+  .report-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .report-section__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-inline: 0.15rem;
+  }
+
+  .report-section__header span {
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .report-section__header small {
+    color: var(--color-text-tertiary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
   }
 
   .report-paper-list {

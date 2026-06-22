@@ -1,4 +1,4 @@
-"""Aggregate saved day archives into weekly and monthly paper reports."""
+"""Aggregate saved day archives into weekly and monthly research reports."""
 
 from __future__ import annotations
 
@@ -24,8 +24,26 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 WEEK_RE = re.compile(r"^(?P<year>\d{4})-W(?P<week>\d{2})$")
 MONTH_RE = re.compile(r"^(?P<year>\d{4})-(?P<month>\d{2})$")
 PAPER_LINK_TYPES = {"arxiv", "paper", "openreview"}
+BLOG_LINK_TYPES = {"article", "blog", "html", "official"}
 REPORT_SECTION_NAMES = ("papers", "top5", "radar")
+BLOG_RECOMMENDATION_LIMIT = 30
 DECEMBER = 12
+JAPANESE_BLOG_SOURCE_IDS = {
+    "abeja-tech-blog-llm",
+    "aidb",
+    "aishift-tech-blog",
+    "elyza-official-blog",
+    "ivry-ai-magazine",
+    "kun432-zenn",
+    "layerx-eng-blog",
+    "llm-jp-blog",
+    "npaka-note",
+    "pfn-tech-blog-llm",
+    "qiita-genai-tag",
+    "qiita-llm-tag",
+    "sakana-ai-blog",
+    "zenn-llm-topic",
+}
 CATEGORY_LABELS = {
     "cs.AI": "AI 方法",
     "cs.CL": "自然語言處理",
@@ -103,9 +121,11 @@ def build_report_from_archives(  # noqa: PLR0913
         day.isoformat() for day in period_dates if day not in archive_files
     ]
 
-    candidates: list[dict[str, Any]] = []
+    paper_candidates: list[dict[str, Any]] = []
+    blog_candidates: list[dict[str, Any]] = []
     source_files: list[str] = []
     items_considered = 0
+    blog_items_considered = 0
 
     for archive_date in scan_dates:
         archive_path = archive_files.get(archive_date)
@@ -116,17 +136,32 @@ def build_report_from_archives(  # noqa: PLR0913
         daily_payload = _load_json_object(archive_path)
         day_candidates = _collect_paper_candidates(daily_payload)
         items_considered += len(day_candidates)
+        day_blog_candidates = _collect_blog_candidates(daily_payload)
+        blog_items_considered += len(day_blog_candidates)
 
         for story in day_candidates:
             story_date = _story_local_date(story, archive_date, local_tz)
             if period.start_date <= story_date <= period.end_date:
                 story["published_local_date"] = story_date.isoformat()
                 story["report_source_date"] = day_text
-                candidates.append(story)
+                paper_candidates.append(story)
 
-    ranked_stories = _rank_unique_stories(candidates, local_tz)
+        for story in day_blog_candidates:
+            story_date = _story_local_date(story, archive_date, local_tz)
+            if period.start_date <= story_date <= period.end_date:
+                story["published_local_date"] = story_date.isoformat()
+                story["report_source_date"] = day_text
+                blog_candidates.append(story)
+
+    ranked_stories = _rank_unique_stories(paper_candidates, local_tz)
     recommendations = ranked_stories[:limit]
     for index, story in enumerate(recommendations, start=1):
+        story["report_rank"] = index
+        story["report_score"] = round(_report_score(story), 6)
+
+    ranked_blog_stories = _rank_unique_stories(blog_candidates, local_tz)
+    blog_recommendations = ranked_blog_stories[: min(limit, BLOG_RECOMMENDATION_LIMIT)]
+    for index, story in enumerate(blog_recommendations, start=1):
         story["report_rank"] = index
         story["report_score"] = round(_report_score(story), 6)
 
@@ -137,9 +172,11 @@ def build_report_from_archives(  # noqa: PLR0913
         summary=_build_summary(
             period=period,
             recommendations=recommendations,
+            blog_recommendations=blog_recommendations,
             covered_dates=covered_dates,
             missing_dates=missing_dates,
             stories_considered=len(ranked_stories),
+            blog_stories_considered=len(ranked_blog_stories),
         ),
         timezone=timezone,
         period_start=period.start_date.isoformat(),
@@ -151,14 +188,23 @@ def build_report_from_archives(  # noqa: PLR0913
         items_considered=items_considered,
         stories_considered=len(ranked_stories),
         recommendations=recommendations,
+        blog_items_considered=blog_items_considered,
+        blog_stories_considered=len(ranked_blog_stories),
+        blog_recommendations=blog_recommendations,
         selection_policy={
             "limit": limit,
+            "blog_limit": min(limit, BLOG_RECOMMENDATION_LIMIT),
             "archive_lookahead_days": archive_lookahead_days,
             "source_sections": list(REPORT_SECTION_NAMES),
             "dedupe_keys": ["arxiv_id", "story_id", "primary_link.url"],
             "ranking": (
                 "score.total_score descending, then publication time descending; "
                 "paper-like stories are pulled from daily papers, top5, and radar"
+            ),
+            "blog_ranking": (
+                "score.total_score descending, then publication time descending; "
+                "blog/article stories, including Japanese AI engineering sources, "
+                "are pulled from daily top5 and radar"
             ),
             "period_source": "explicit period_id"
             if period_id
@@ -257,6 +303,17 @@ def _load_json_object(path: Path) -> dict[str, Any]:
 
 
 def _collect_paper_candidates(daily_payload: dict[str, Any]) -> list[dict[str, Any]]:
+    return _collect_candidates(daily_payload, _is_paper_story)
+
+
+def _collect_blog_candidates(daily_payload: dict[str, Any]) -> list[dict[str, Any]]:
+    return _collect_candidates(daily_payload, _is_blog_story)
+
+
+def _collect_candidates(
+    daily_payload: dict[str, Any],
+    predicate: Callable[[dict[str, Any]], bool],
+) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
 
     for section_name in REPORT_SECTION_NAMES:
@@ -268,7 +325,7 @@ def _collect_paper_candidates(daily_payload: dict[str, Any]) -> list[dict[str, A
             if not isinstance(item, dict):
                 continue
             story = dict(item)
-            if not _is_paper_story(story):
+            if not predicate(story):
                 continue
             story["report_source_section"] = section_name
             candidates.append(story)
@@ -297,6 +354,25 @@ def _is_paper_story(story: dict[str, Any]) -> bool:
         )
 
     return False
+
+
+def _is_blog_story(story: dict[str, Any]) -> bool:
+    if _is_paper_story(story):
+        return False
+
+    primary_link = story.get("primary_link", {})
+    if not isinstance(primary_link, dict):
+        return False
+
+    link_type = str(primary_link.get("link_type", "")).lower()
+    source_id = str(primary_link.get("source_id", "")).lower()
+    source_name = str(story.get("source_name", "")).lower()
+
+    if link_type in BLOG_LINK_TYPES:
+        return True
+    if source_id in JAPANESE_BLOG_SOURCE_IDS:
+        return True
+    return "blog" in source_id or "blog" in source_name
 
 
 def _story_local_date(
@@ -452,6 +528,7 @@ def _update_report_index(output_dir: Path, report: ReportDigest) -> None:
         generated_at=report.generated_at,
         path=report_path,
         recommendation_count=len(report.recommendations),
+        blog_recommendation_count=len(report.blog_recommendations),
         missing_dates=report.missing_dates,
     )
 
@@ -489,17 +566,19 @@ def _update_report_index(output_dir: Path, report: ReportDigest) -> None:
 
 def _build_title(period: PeriodRange) -> str:
     if period.report_type == "weekly":
-        return f"{period.period_id} AI 論文週報"
-    return f"{period.period_id} AI 論文月報"
+        return f"{period.period_id} AI 研究週報"
+    return f"{period.period_id} AI 研究月報"
 
 
 def _build_summary(
     *,
     period: PeriodRange,
     recommendations: list[dict[str, Any]],
+    blog_recommendations: list[dict[str, Any]],
     covered_dates: list[str],
     missing_dates: list[str],
     stories_considered: int,
+    blog_stories_considered: int,
 ) -> str:
     report_label = (
         "本週" if period.report_type == "weekly" else f"{period.period_id} 月"
@@ -510,14 +589,22 @@ def _build_summary(
     else:
         coverage += "，資料完整"
 
-    if not recommendations:
-        return f"{report_label}尚未找到符合條件的論文推薦。{coverage}。"
+    if not recommendations and not blog_recommendations:
+        return f"{report_label}尚未找到符合條件的論文或文章推薦。{coverage}。"
 
     category_text = _top_category_text(recommendations)
     topic_clause = f"，重點集中在 {category_text}" if category_text else ""
+    paper_clause = f"{len(recommendations)} 篇 AI 論文" if recommendations else ""
+    blog_clause = (
+        f"{len(blog_recommendations)} 篇值得看的技術文章"
+        if blog_recommendations
+        else ""
+    )
+    selection_clause = "與".join(part for part in (paper_clause, blog_clause) if part)
+    total_candidates = stories_considered + blog_stories_considered
     return (
-        f"{report_label}整理 {len(recommendations)} 篇值得看的 AI 論文{topic_clause}。"
-        f"{coverage}，共從 {stories_considered} 篇候選中篩選。"
+        f"{report_label}整理 {selection_clause}{topic_clause}。"
+        f"{coverage}，共從 {total_candidates} 篇候選中篩選。"
     )
 
 
