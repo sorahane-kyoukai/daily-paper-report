@@ -4,29 +4,29 @@
 
 - **FEATURE_KEY**: add-yaml-config-contracts
 - **STATUS**: P1_DONE_DEPLOYED
-- **Last Updated**: 2026-05-15T19:53:26.875314+00:00
+- **Last Updated**: 2026-06-10T15:03:43.176197+00:00
 
 ## Run Information
 
-- **Run ID**: 905ee59c-3471-4e37-bb5e-e6e384b090ab
-- **Git Commit**: 372eff07862c
-- **Started At**: 2026-05-15T19:53:26.874889+00:00
+- **Run ID**: 9d062d72-db94-4aa7-9d59-4fefc62f5215
+- **Git Commit**: 82413acaf93f
+- **Started At**: 2026-06-10T15:03:43.167048+00:00
 
 ## Configuration Summary
 
-- **Sources Count**: 46
-- **Enabled Sources**: 39
-- **Entities Count**: 24
-- **Topics Count**: 26
+- **Sources Count**: 63
+- **Enabled Sources**: 56
+- **Entities Count**: 36
+- **Topics Count**: 27
 - **Config Checksum**: [REDACTED]
 
 ## File Checksums
 
 | File | SHA-256 |
 |------|---------|
-| /home/dennysora-wsl/Programming/Python/Daily-Paper-Report/tests/fixtures/config/entities.yaml | [REDACTED] |
-| /home/dennysora-wsl/Programming/Python/Daily-Paper-Report/tests/fixtures/config/sources.yaml | [REDACTED] |
-| /home/dennysora-wsl/Programming/Python/Daily-Paper-Report/tests/fixtures/config/topics.yaml | [REDACTED] |
+| /home/dennysora-dgx/Code/Web/daily-paper-report/tests/fixtures/config/entities.yaml | [REDACTED] |
+| /home/dennysora-dgx/Code/Web/daily-paper-report/tests/fixtures/config/sources.yaml | [REDACTED] |
+| /home/dennysora-dgx/Code/Web/daily-paper-report/tests/fixtures/config/topics.yaml | [REDACTED] |
 
 ## Validation Result
 
@@ -40,6 +40,6 @@
 
 ## Configuration Snapshots
 
-Latest snapshot: 2026-05-15T19:53:26.875314+00:00
+Latest snapshot: 2026-06-10T15:03:43.176197+00:00
 
 
