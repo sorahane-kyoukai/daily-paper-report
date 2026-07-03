@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T14:45:35.558157+00:00",
+  "generated_at": "2026-07-03T14:51:45.634592+00:00",
   "latest": {
     "monthly": "2026-06",
     "weekly": "2026-W26"
@@ -7,19 +7,16 @@
   "monthly": [
     {
       "blog_recommendation_count": 30,
-      "generated_at": "2026-07-01T14:45:35.551218+00:00",
-      "missing_dates": [
-        "2026-06-22",
-        "2026-06-29"
-      ],
+      "generated_at": "2026-07-03T14:51:25.308058+00:00",
+      "missing_dates": [],
       "path": "api/reports/monthly/2026-06.json",
       "period_end": "2026-06-30",
       "period_id": "2026-06",
       "period_start": "2026-06-01",
       "recommendation_count": 100,
       "report_type": "monthly",
-      "summary": "2026-06 月整理 100 篇 AI 論文與30 篇值得看的技術文章，重點集中在 AI 方法、機器學習、自然語言處理。涵蓋 28 天資料，另有 2 天缺資料，共從 1967 篇候選中篩選。",
-      "title": "2026-06 AI 研究月報"
+      "summary": "本月報聚焦智能體自我進化、多智能體協作與世界模擬推理等進展，並從理論層面探討 Transformer 表徵與樣本複雜度，同時透過 AI 代理安全、評估偏差及大規模部署挑戰，描繪技術前沿與實務脈絡。",
+      "title": "AI 研究與技術月報（2026年6月）"
     },
     {
       "blog_recommendation_count": 0,
@@ -51,18 +48,16 @@
   "weekly": [
     {
       "blog_recommendation_count": 30,
-      "generated_at": "2026-06-28T12:25:13.463733+00:00",
-      "missing_dates": [
-        "2026-06-22"
-      ],
+      "generated_at": "2026-07-03T14:48:01.000578+00:00",
+      "missing_dates": [],
       "path": "api/reports/weekly/2026-W26.json",
       "period_end": "2026-06-28",
       "period_id": "2026-W26",
       "period_start": "2026-06-22",
       "recommendation_count": 100,
       "report_type": "weekly",
-      "summary": "本週整理 100 篇 AI 論文與30 篇值得看的技術文章，重點集中在 電腦視覺、AI 方法、機器人。涵蓋 6 天資料，另有 1 天缺資料，共從 339 篇候選中篩選。",
-      "title": "2026-W26 AI 研究週報"
+      "summary": "本週覆蓋開源模型發布（PLaMo 3.0 Prime、Gemma 4、Sakana Fugu 多代理架構）、訓練與推理效能優化（NVIDIA Nemotron 3 Ultra、Blackwell 整合）、知識圖譜 QA 自我修正、擴散模型與影像編輯評估，以及強化學習、代理應用（ContractOps、SRE）等實務進展，篩選論文與技術文章兼顧前沿研究與產業…",
+      "title": "AI研究週報：2026年6月22-28日"
     },
     {
       "blog_recommendation_count": 30,

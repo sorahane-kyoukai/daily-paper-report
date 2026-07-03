@@ -1,6 +1,284 @@
 {
-  "blog_items_considered": 102,
+  "blog_items_considered": 139,
   "blog_recommendations": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Hideaki Imamura"
+      ],
+      "categories": [
+        "Tech",
+        "LLM",
+        "plamo",
+        "機械学習"
+      ],
+      "entities": [
+        "preferred-networks"
+      ],
+      "first_seen_at": "2026-06-22T19:23:24.201376+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "pfn-tech-blog-llm",
+          "tier": 0,
+          "title": "PLaMo 3.0 Primeをリリースしました",
+          "url": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "pfn-tech-blog-llm",
+        "tier": 0,
+        "title": "PLaMo 3.0 Primeをリリースしました",
+        "url": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release"
+      },
+      "published_at": "2026-06-22T01:50:48+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 1,
+      "report_score": 21.766535,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.4,
+        "llm_relevance_score": 11.200000000000001,
+        "recency_score": 0.3165350036949618,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 21.766535003694962
+      },
+      "section": null,
+      "source_name": "Preferred Networks Tech Blog (LLM)",
+      "story_id": "fallback:a24b721e2857b1cc",
+      "summary": "<p>はじめに みなさん、こんにちは。PLaMo事後学習チームの今村です。我々は本日、国産生成AI基盤モデルPLaMo™︎の新たなフラグシップモデルPLaMo 3.0 Primeをリリースしました。PLaMo 3.0 Prim [&#8230;]</p>\n<p>投稿 <a href=\"https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release/\" rel=\"nofollow\">PLaMo 3.0 Primeをリリースしました</a> は <a href=\"https://tech.preferred.jp/ja\" rel=\"nofollow\">Preferred Networks Tech Blog</a> に最初に表示されました。</p>",
+      "title": "PLaMo 3.0 Primeをリリースしました"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "中村 啓｜LLMエンジニア"
+      ],
+      "categories": [],
+      "entities": [
+        "sakana-ai"
+      ],
+      "first_seen_at": "2026-06-22T19:23:34.746186+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化",
+          "url": "https://zenn.dev/hironakamura_ai/articles/22c54ab7490ea3"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化",
+        "url": "https://zenn.dev/hironakamura_ai/articles/22c54ab7490ea3"
+      },
+      "published_at": "2026-06-22T12:17:19+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 2,
+      "report_score": 19.330611,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4,
+        "llm_relevance_score": 11.200000000000001,
+        "recency_score": 0.33061082670788494,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.330610826707886
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:8c27969d846356c8",
+      "summary": "Sakana AI が「Fugu」を出した。触る前にドキュメントとベンチを読んだ感想を先に言っておくと、これは「賢い新モデル」ではなく「賢い束ね方を1モデルの皮で包んだ」プロダクトだ。OpenAI 互換の API を1本叩くと、裏では複数のモデルがチームを組んで答えを返してくる。呼ぶ側からは普通の1モデルにしか見えない。\n最初に押さえたいのは、面白さの在りかだ。「複数モデルを合議させる」こと自体は新しくない。Mixture-of-Agents もアンサンブルも前からある。Fugu が一歩踏み込んでいるのは2点で、ひとつは束ね方を人手のワークフローではなく学習で獲得していること、もうひとつ...",
+      "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Kawamura"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.747338+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "日本語LLM事後学習データセットの構築方法の整理",
+          "url": "https://zenn.dev/podtech/articles/c61d9ec6810264"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "日本語LLM事後学習データセットの構築方法の整理",
+        "url": "https://zenn.dev/podtech/articles/c61d9ec6810264"
+      },
+      "published_at": "2026-06-22T09:37:11+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 3,
+      "report_score": 17.076955,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4,
+        "llm_relevance_score": 11.200000000000001,
+        "recency_score": 0.32695467840539943,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 17.0769546784054
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4c33d6c1f45108e8",
+      "summary": "はじめに\nこんにちは，Podtechの河村です。\n事後学習はLLMの学習においてその名の通り事前学習の後に行う学習で，答え方を学習する段階です。\n事前学習データは質よりも量が重要であったのに対し，事後学習データは量よりも質が重要です。\nこの記事では特に日本語LLMの学習時の事後学習データセットの構築に注目し，データの質を高めるためにどのようなアプローチがあるのか，各事例でどのような工夫を行っているのかを紹介します。\n\n 事後学習とは\nLLMの学習は大きく事前学習と事後学習に分かれます。\nざっくりいうと事前学習は基礎知識を学習する段階で，事後学習は答え方を学習する段階です。\n※ 事前学...",
+      "title": "日本語LLM事後学習データセットの構築方法の整理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "村瀬 雅俊"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-22T19:23:34.745230+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動",
+          "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-claude-code-opus-pattern"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動",
+        "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-claude-code-opus-pattern"
+      },
+      "published_at": "2026-06-22T14:40:47+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 4,
+      "report_score": 16.533921,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3,
+        "llm_relevance_score": 8.4,
+        "recency_score": 0.33392115307699055,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 16.53392115307699
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:735d067b514f6884",
+      "summary": "はじめに\n「Opusをサブエージェントとして呼べばいいか」——そう思って構成を考えたら、思ったより性能が出ない構造になることに気づいた。\nこの記事では、Claude Codeのマルチエージェント構成でOpusの性能を引き出せない理由と、設計と実装を別セッション・別モデルに分離して解決するパターンを紹介する。\n結論から言うと、オーケストレーターと実装者のモデルを一致させることが鍵だった。\n\n オーケストレーターがボトルネックになる仕組み\nClaude Codeでマルチエージェントを組むとき、こういう構成を考えやすい。\nコンシェルジュ（Sonnet）\n  ↓ Agent(model=\"o...",
+      "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "kamome_susume"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-22T19:23:34.681038+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude CodeでOpenAPI（Swagger）の作り方｜手順とプロンプト例を徹底解説",
+          "url": "https://qiita.com/kamome_susume/items/d92b8a65a771e863a50f"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude CodeでOpenAPI（Swagger）の作り方｜手順とプロンプト例を徹底解説",
+        "url": "https://qiita.com/kamome_susume/items/d92b8a65a771e863a50f"
+      },
+      "published_at": "2026-06-22T14:48:04+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 5,
+      "report_score": 13.48409,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.334090088786754,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 13.484090088786754
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:66d799cba1154932",
+      "summary": "API開発のたびに「OpenAPI（Swagger）の定義書、また手で書かなきゃ……」とため息をついていませんか？エンドポイントが増えるほどyamlの記述量も膨らみ、コードとの整合性を保つのも一苦労です。この記事では、Claude Codeを使ってOpenAPI定義を効率的...",
+      "title": "Claude CodeでOpenAPI（Swagger）の作り方｜手順とプロンプト例を徹底解説"
+    },
     {
       "arxiv_id": null,
       "authors": [
@@ -38,7 +316,7 @@
       },
       "published_at": "2026-06-25T16:41:47+00:00",
       "published_local_date": "2026-06-26",
-      "report_rank": 1,
+      "report_rank": 6,
       "report_score": 13.415095,
       "report_source_date": "2026-06-26",
       "report_source_section": "top5",
@@ -60,6 +338,167 @@
       "story_id": "fallback:6224418a6c325747",
       "summary": "This post shows you how to configure training jobs on Amazon SageMaker AI to get the most out of Blackwell’s architecture on AWS. You learn how to select batch sizes and sequence lengths that take advantage of Blackwell’s expanded memory, choose the right precision format for your model size (1B to 64B parameters), and apply activation checkpointing strategically. By the end, you have a practical framework for tuning your training configuration and launching distributed training jobs on P6-B200 instances.",
       "title": "Optimize model training on Amazon SageMaker AI with NVIDIA Blackwell"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ShintaroAmaike"
+      ],
+      "categories": [],
+      "entities": [
+        "sakana-ai"
+      ],
+      "first_seen_at": "2026-06-22T19:23:34.748072+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Sakana AI「Fugu」正式リリース——マルチエージェントを1本のAPIとして届ける新プロダクト",
+          "url": "https://zenn.dev/acntechjp/articles/c0ffbdf3d5c5d4"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Sakana AI「Fugu」正式リリース——マルチエージェントを1本のAPIとして届ける新プロダクト",
+        "url": "https://zenn.dev/acntechjp/articles/c0ffbdf3d5c5d4"
+      },
+      "published_at": "2026-06-22T07:36:20+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 7,
+      "report_score": 12.074222,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.32422223852586485,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 12.074222238525865
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1488bc3cc2aea253",
+      "summary": "この記事について\n約2年前、Sakana AIが公開していた自然言語モデルを使って、商品名のクレンジングタスクを試した記事を書きました。\nhttps://zenn.dev/shintaroamaike/articles/fbfd7c0284c01a\n当時はまだ「面白いアプローチをする研究系スタートアップ」という印象でしたが、2026年6月22日に正式リリースされた「Sakana Fugu」を見ると、その成長ぶりに驚かされます。\n研究から商用プロダクトへ、そして「AIの使い方そのものを変えよう」というビジョンを持った会社に変貌していました。本記事では、公式情報をもとにFuguがどんなモ...",
+      "title": "Sakana AI「Fugu」正式リリース——マルチエージェントを1本のAPIとして届ける新プロダクト"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "shoebill-dev27"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.748512+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIエージェント時代のSRE — 監視・評価・自律運用設計",
+          "url": "https://zenn.dev/shoebill_dev27/books/ai-agent-sre-ops"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIエージェント時代のSRE — 監視・評価・自律運用設計",
+        "url": "https://zenn.dev/shoebill_dev27/books/ai-agent-sre-ops"
+      },
+      "published_at": "2026-06-22T07:01:49+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 8,
+      "report_score": 11.723446,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.3234460114983301,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.72344601149833
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:69ea6079b1c844ec",
+      "summary": "AIエージェントを「動かす」から「運用する」へ。タスク成功率やレイテンシをSLI/SLOに落とし、hallucination率を測り、Evalsで退行を止め、コストを監視し、ツール呼び出しの監査ログから可観測性を得て、人間の承認フローを設計し、multi-agent障害をポストモーテムにつなぐ。SREの実務をエージェント運用に翻訳した実践書。すべてのコード例は標準ライブラリのみで、ビルド時に実行検証している。",
+      "title": "AIエージェント時代のSRE — 監視・評価・自律運用設計"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ローカルAIラボ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.749459+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Gemma 4をRTX 4070 12GBで実測した：12B/E4B/26BとQwen3/Phi-4を同一テストで比較",
+          "url": "https://zenn.dev/localai_lab/articles/87184a5e7e8837"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Gemma 4をRTX 4070 12GBで実測した：12B/E4B/26BとQwen3/Phi-4を同一テストで比較",
+        "url": "https://zenn.dev/localai_lab/articles/87184a5e7e8837"
+      },
+      "published_at": "2026-06-22T03:13:30+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 9,
+      "report_score": 11.718358,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.3183581119014021,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.718358111901402
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:50d224cbfa31a8bb",
+      "summary": "Gemma 4が公開され、Ollamaでも12B・E4B・26Bを手元で試せるようになりました。\nそこで今回は、RTX 4070（VRAM 12GB）上で以下の5モデルを同じ条件で動かし、速度・VRAM・正解性を実測しました。\n\nGemma 4 12B\nGemma 4 E4B\nQwen3 14B\nPhi-4-mini\nGemma 4 26B MoE\n\n検証課題は、以前クラウドモデルのClaude Opus 4.8 / Fable 5に投げたものと同じです。SemVer実装、ベイズ推定、画像読取を、同じ採点基準で比較しました。\n元記事はこちらです。この記事にも主要なグラフと検証スクリーンシ...",
+      "title": "Gemma 4をRTX 4070 12GBで実測した：12B/E4B/26BとQwen3/Phi-4を同一テストで比較"
     },
     {
       "arxiv_id": null,
@@ -99,7 +538,7 @@
       },
       "published_at": "2026-06-22T16:28:46+00:00",
       "published_local_date": "2026-06-23",
-      "report_rank": 2,
+      "report_rank": 10,
       "report_score": 11.487932,
       "report_source_date": "2026-06-23",
       "report_source_section": "top5",
@@ -121,6 +560,165 @@
       "story_id": "fallback:32d35135fbeba165",
       "summary": "In this post, we walk you through how to deploy ComfyUI workflows on Amazon SageMaker AI processing jobs to generate hundreds of high-quality images in a single batch. You learn how to set up the infrastructure using AWS Cloud Development Kit (AWS CDK), configure GPU-accelerated processing, and automate image generation at scale. You can then adapt this solution to your ComfyUI workflows specific to your needs. We will guide you through a practical, step-by-step process to automate ComfyUI workflows to generate hundreds of high-quality images in a single batch empowering you to scale your creative pipeline.",
       "title": "Running ComfyUI workflows on Amazon SageMaker AI processing jobs"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "村瀬 雅俊"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.745473+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Mastraを触る前に整理した概念マップ——TypeScriptでLLMをif-elseの代わりに使う",
+          "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-mastra-pre-study"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Mastraを触る前に整理した概念マップ——TypeScriptでLLMをif-elseの代わりに使う",
+        "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-mastra-pre-study"
+      },
+      "published_at": "2026-06-22T13:33:46+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 11,
+      "report_score": 11.482371,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.33237071628819254,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 11.482370716288193
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:03adeee1030a1644",
+      "summary": "はじめに\n「LLMをプロダクトに組み込みたいけど、どのフレームワークを選べばいいのか分からない」——そう感じたことはないだろうか。\nこの記事では、TypeScript製AIエージェントフレームワーク Mastra について調べた内容を整理する。まだ実際には触っていない。近く自分のプロダクト（EchoMask）への実戦投入を検討しており、その前に概念を頭に入れておくための事前学習メモだ。\n結論を先出しすると、Mastraは「LLMに対話的に頼む道具」ではなく、**「LLMをコードの一部として組み込む枠組み」**だった。この違いを理解するだけで、どこで使うべきかが見えてくる。\n\n Mas...",
+      "title": "Mastraを触る前に整理した概念マップ——TypeScriptでLLMをif-elseの代わりに使う"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Kinotex.lab"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.745932+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "スマホだけでAI脳になる！ 未経験でもAIと作るローカルLLM ～カメラ連携とデバッグ編～",
+          "url": "https://zenn.dev/kinotex/articles/c2c0001122dfaa"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "スマホだけでAI脳になる！ 未経験でもAIと作るローカルLLM ～カメラ連携とデバッグ編～",
+        "url": "https://zenn.dev/kinotex/articles/c2c0001122dfaa"
+      },
+      "published_at": "2026-06-22T13:14:07+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 12,
+      "report_score": 11.481917,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.33191747805925503,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 11.481917478059255
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1b3f9d9b953fceb0",
+      "summary": "!\n📝 前回の記事は以下のリンクからどうぞ！\n\nhttps://zenn.dev/kinotex/articles/1d3698cc50a870\n\n はじめに\n前回は、LiteRT-LMエンジンのアーキテクチャから、テキスト・画像・音声入力に対応した基本的なチャット機能を構築するプロセスを学びました。\n今回、さらに高度な 「カメラ映像のリアルタイムビデオ解析（連続推論）ループ」 の設計思想と、その実装過程で初心者を襲った「スレッド制御違反」「魔のネイティブクラッシュ（SIGSEGV）」といった泥臭いバグを、AIペアプロアシスタントとともにどう分析し、どのようにスレッド・ライフサイクル設計...",
+      "title": "スマホだけでAI脳になる！ 未経験でもAIと作るローカルLLM ～カメラ連携とデバッグ編～"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "SatoshiImai"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.748744+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "ContractOps：契約オペレーションのためのサーバーレス・マルチエージェント基盤",
+          "url": "https://zenn.dev/finatext/articles/c064796889cae8"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "ContractOps：契約オペレーションのためのサーバーレス・マルチエージェント基盤",
+        "url": "https://zenn.dev/finatext/articles/c064796889cae8"
+      },
+      "published_at": "2026-06-22T05:32:22+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 13,
+      "report_score": 11.471443,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.32144305519531785,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 11.47144305519532
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4eaf0e2c745d7e55",
+      "summary": "By Satoshi Imai; Finatext Ltd.\n何を支えるために作り，それをAWS上でどう実装し，その過程でたどり着いた設計思想は何だったのか.\nこの記事はContractOps: A Serverless Multi-Agent System for Contract Operationsの公式日本語訳です．\n\n\n 契約は「生き物」である\n契約というと，一度締結したらファイルに綴じて終わり，という静的なイメージを持たれがちです．しかし実務における契約は，もっと動的でナマモノです．覚書で内容が変わり，期限が動き，新しいメンバーがプロジェクトに加わってキャッチアップが必要にな...",
+      "title": "ContractOps：契約オペレーションのためのサーバーレス・マルチエージェント基盤"
     },
     {
       "arxiv_id": null,
@@ -158,7 +756,7 @@
       },
       "published_at": "2026-06-25T16:40:13+00:00",
       "published_local_date": "2026-06-26",
-      "report_rank": 3,
+      "report_rank": 14,
       "report_score": 11.414996,
       "report_source_date": "2026-06-26",
       "report_source_section": "top5",
@@ -220,7 +818,7 @@
       },
       "published_at": "2026-06-25T16:38:12+00:00",
       "published_local_date": "2026-06-26",
-      "report_rank": 4,
+      "report_rank": 15,
       "report_score": 11.414868,
       "report_source_date": "2026-06-26",
       "report_source_section": "radar",
@@ -273,7 +871,7 @@
       },
       "published_at": "2026-06-24T16:30:01+00:00",
       "published_local_date": "2026-06-25",
-      "report_rank": 5,
+      "report_rank": 16,
       "report_score": 11.414088,
       "report_source_date": "2026-06-25",
       "report_source_section": "top5",
@@ -334,7 +932,7 @@
       },
       "published_at": "2026-06-23T16:39:34+00:00",
       "published_local_date": "2026-06-24",
-      "report_rank": 6,
+      "report_rank": 17,
       "report_score": 11.41358,
       "report_source_date": "2026-06-24",
       "report_source_section": "top5",
@@ -395,7 +993,7 @@
       },
       "published_at": "2026-06-23T15:43:59+00:00",
       "published_local_date": "2026-06-23",
-      "report_rank": 7,
+      "report_rank": 18,
       "report_score": 11.41006,
       "report_source_date": "2026-06-24",
       "report_source_section": "top5",
@@ -453,7 +1051,7 @@
       },
       "published_at": "2026-06-22T17:53:40+00:00",
       "published_local_date": "2026-06-23",
-      "report_rank": 8,
+      "report_rank": 19,
       "report_score": 11.243774,
       "report_source_date": "2026-06-23",
       "report_source_section": "top5",
@@ -479,18 +1077,13 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Hideaki Imamura"
+        "t.toda"
       ],
-      "categories": [
-        "Tech",
-        "LLM",
-        "plamo",
-        "機械学習"
-      ],
+      "categories": [],
       "entities": [
-        "preferred-networks"
+        "ai-shift"
       ],
-      "first_seen_at": "2026-06-22T19:23:24.201376+00:00",
+      "first_seen_at": "2026-06-22T19:23:30.339560+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -498,43 +1091,43 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "pfn-tech-blog-llm",
-          "tier": 0,
-          "title": "PLaMo 3.0 Primeをリリースしました",
-          "url": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release"
+          "source_id": "aishift-tech-blog",
+          "tier": 1,
+          "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する",
+          "url": "https://zenn.dev/aishift/articles/e80212909921b4"
         }
       ],
       "primary_link": {
         "link_type": "blog",
-        "source_id": "pfn-tech-blog-llm",
-        "tier": 0,
-        "title": "PLaMo 3.0 Primeをリリースしました",
-        "url": "https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release"
+        "source_id": "aishift-tech-blog",
+        "tier": 1,
+        "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する",
+        "url": "https://zenn.dev/aishift/articles/e80212909921b4"
       },
-      "published_at": "2026-06-22T01:50:48+00:00",
+      "published_at": "2026-06-22T00:31:37+00:00",
       "published_local_date": "2026-06-22",
-      "report_rank": 9,
-      "report_score": 11.179497,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "top5",
+      "report_rank": 20,
+      "report_score": 11.214799,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 1.5,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9294974472167784,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.31479920435209413,
         "semantic_score": 0.0,
-        "tier_score": 3.0,
-        "topic_score": 3.75,
-        "total_score": 11.179497447216779
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 11.214799204352095
       },
       "section": null,
-      "source_name": "Preferred Networks Tech Blog (LLM)",
-      "story_id": "fallback:a24b721e2857b1cc",
-      "summary": "<p>はじめに みなさん、こんにちは。PLaMo事後学習チームの今村です。我々は本日、国産生成AI基盤モデルPLaMo™︎の新たなフラグシップモデルPLaMo 3.0 Primeをリリースしました。PLaMo 3.0 Prim [&#8230;]</p>\n<p>投稿 <a href=\"https://tech.preferred.jp/ja/blog/plamo-3-0-prime-release/\" rel=\"nofollow\">PLaMo 3.0 Primeをリリースしました</a> は <a href=\"https://tech.preferred.jp/ja\" rel=\"nofollow\">Preferred Networks Tech Blog</a> に最初に表示されました。</p>",
-      "title": "PLaMo 3.0 Primeをリリースしました"
+      "source_name": "AI Shift Tech Blog (Zenn)",
+      "story_id": "fallback:ad12042867d3e4e1",
+      "summary": "こんにちは\nAIチームの戸田です\nAI Shift主催のLocal LLM Meetupの第２回を開催することとなりました。\nhttps://cyberagent.connpass.com/event/397378/\nLocal LLM を開発の相棒として使ってみる個人参加型ハッカソンという形式です。\n過去の記事でも何度かLocal LLMを触ってきましたが、今回は「読む」だけでなく「各自の手で動かす」会になります。\nhttps://zenn.dev/aishift/articles/5b048ff347fd7b\nhttps://zenn.dev/aishift/articles/5a5...",
+      "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する"
     },
     {
       "arxiv_id": null,
@@ -581,7 +1174,7 @@
       },
       "published_at": "2026-06-25T16:35:07+00:00",
       "published_local_date": "2026-06-26",
-      "report_rank": 10,
+      "report_rank": 21,
       "report_score": 11.164672,
       "report_source_date": "2026-06-26",
       "report_source_section": "radar",
@@ -607,13 +1200,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "t.toda"
+        "12ban"
       ],
       "categories": [],
-      "entities": [
-        "ai-shift"
-      ],
-      "first_seen_at": "2026-06-22T19:23:30.339560+00:00",
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.745703+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -621,43 +1212,204 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "aishift-tech-blog",
-          "tier": 1,
-          "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する",
-          "url": "https://zenn.dev/aishift/articles/e80212909921b4"
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "脅威インテリジェンス×LLMで「使える」脆弱性管理CIを作る — SBOMからKEV優先度付け、AIトリアージまで",
+          "url": "https://zenn.dev/12ban/articles/2026-06-22-vuln-triage-ci"
         }
       ],
       "primary_link": {
         "link_type": "blog",
-        "source_id": "aishift-tech-blog",
-        "tier": 1,
-        "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する",
-        "url": "https://zenn.dev/aishift/articles/e80212909921b4"
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "脅威インテリジェンス×LLMで「使える」脆弱性管理CIを作る — SBOMからKEV優先度付け、AIトリアージまで",
+        "url": "https://zenn.dev/12ban/articles/2026-06-22-vuln-triage-ci"
       },
-      "published_at": "2026-06-22T00:31:37+00:00",
+      "published_at": "2026-06-22T13:17:12+00:00",
       "published_local_date": "2026-06-22",
-      "report_rank": 11,
-      "report_score": 10.4244,
-      "report_source_date": "2026-06-23",
+      "report_rank": 22,
+      "report_score": 10.731989,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.3319885559619313,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.0,
+        "total_score": 10.731988555961932
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:e64c837156eda627",
+      "summary": "脆弱性スキャンの結果をそのまま並べても、数が多すぎて誰も見ません。そこに「実際に攻撃されているか」という脅威インテリジェンス（KEV・EPSS）で優先度を付け、さらにLLMで一次トリアージまで回すと、ようやく現場で使えるCIになります。本稿では、SBOM生成 → スキャン → 脅威インテリジェンスでの優先度付け → AIトリアージ → PRコメント、という流れをGitHub Actionsの無料枠で組み、実際に動かしてみます。コマンドと出力はすべて手元で実行・確認済みで、サンプル一式はそのままcloneして使えます。\n\nサンプル一式\nhttps://github.com/samurai...",
+      "title": "脅威インテリジェンス×LLMで「使える」脆弱性管理CIを作る — SBOMからKEV優先度付け、AIトリアージまで"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "amu_lab"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-22T19:23:34.747124+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "【2026年最新】Claude Codeトークン削減ツール完全整理 — rtk・headroom・lean-ctx・h5iの使い分け",
+          "url": "https://zenn.dev/amu_lab/articles/claude-code-token-tools-guide-2026"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "【2026年最新】Claude Codeトークン削減ツール完全整理 — rtk・headroom・lean-ctx・h5iの使い分け",
+        "url": "https://zenn.dev/amu_lab/articles/claude-code-token-tools-guide-2026"
+      },
+      "published_at": "2026-06-22T09:54:47+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 23,
+      "report_score": 10.677355,
+      "report_source_date": "2026-06-22",
       "report_source_section": "radar",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 2.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.924400314074338,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.32735453398541753,
         "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 4.0,
-        "total_score": 10.424400314074338
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 10.677354533985417
       },
       "section": null,
-      "source_name": "AI Shift Tech Blog (Zenn)",
-      "story_id": "fallback:ad12042867d3e4e1",
-      "summary": "こんにちは\nAIチームの戸田です\nAI Shift主催のLocal LLM Meetupの第２回を開催することとなりました。\nhttps://cyberagent.connpass.com/event/397378/\nLocal LLM を開発の相棒として使ってみる個人参加型ハッカソンという形式です。\n過去の記事でも何度かLocal LLMを触ってきましたが、今回は「読む」だけでなく「各自の手で動かす」会になります。\nhttps://zenn.dev/aishift/articles/5b048ff347fd7b\nhttps://zenn.dev/aishift/articles/5a5...",
-      "title": "AI Shift Local LLM Meetup #2 に向けて、Macで動くLocal LLM開発環境を準備する"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c86175cb8d96061f",
+      "summary": "この記事で分かること\nClaude Code のトークン代に怯えて「削減ツール」を探すと、いま日本語圏でもこの4つが必ず出てきます。\n\n\nrtk（Rust Token Killer）\n\nheadroom（44.3k⭐、Netflixのエンジニア発）\nlean-ctx\nh5i\n\nそして全部が「最大90〜99%削減」と謳っています。ここで多くの人がこう詰まります。\n\n「で、結局どれを入れればいいの？ 全部？ どれか1つ？ 重複しない？」\n\n結論を先に言うと、この4つは競合していません。圧縮する“レイヤー”が違うので、正しくは「積層（layer）」して使います。 rtk と headroo...",
+      "title": "【2026年最新】Claude Codeトークン削減ツール完全整理 — rtk・headroom・lean-ctx・h5iの使い分け"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "noprogllama"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.746878+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIの手順書を、問題集でテストしてみた。Waza風evalをCodexで回す話",
+          "url": "https://zenn.dev/noprogllama/articles/4f1a53c1e9b779"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIの手順書を、問題集でテストしてみた。Waza風evalをCodexで回す話",
+        "url": "https://zenn.dev/noprogllama/articles/4f1a53c1e9b779"
+      },
+      "published_at": "2026-06-22T10:00:09+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 24,
+      "report_score": 10.327477,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.3274765569071923,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.327476556907193
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:2e4b5ee6f14de00d",
+      "summary": "どうも、AIエンジニアの@noprogllamaです。\nAI（人工知能, Artificial Intelligence）Agent Skillは、AIエージェントに渡す再利用用の手順書です。\nたとえば、毎晩「今日見る記事を選んで、残タスクも見て、明日に回すものを決めて」とAIに頼むとします。毎回それを口で説明するのは面倒なので、先に手順書としてまとめておく。これがSkillです。\n手順書は、直すと良くなることがあります。\nでも、直したつもりで別の場所が壊れることもあります。あるあるですよね。\nそこで今回は、AI用の問題集を作りました。\nやったことは、以下の通り。\n\nAIに渡す問題を作...",
+      "title": "AIの手順書を、問題集でテストしてみた。Waza風evalをCodexで回す話"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "methylone"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-22T19:23:34.748288+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "弱いモデルのための足場が、賢いモデルの檻になる話",
+          "url": "https://zenn.dev/methylone/articles/899fd30c93f55a"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "弱いモデルのための足場が、賢いモデルの檻になる話",
+        "url": "https://zenn.dev/methylone/articles/899fd30c93f55a"
+      },
+      "published_at": "2026-06-22T07:11:16+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 25,
+      "report_score": 10.323658,
+      "report_source_date": "2026-06-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.3236583426069007,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.323658342606901
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:457c70d77984f6db",
+      "summary": "この話は、ウルトラマラソンのトレーニング用に作った Intervals.icu × Stryd の MCP サーバ開発から出た話で、LLMに練習計画のレビューをさせていた。\nhttps://github.com/methylone/Intervals-MCP-Server-with-STRYD\n計画は順調に進んでいるか。オーバートレーニングの兆候はないか。安静時心拍、HRV、直近の運動量、主観疲労などを見ながら、次の練習をどう調整するか。そういう判断を、トレーニング理論と日々のデータから推論できないかと思った。\n最初は、判断をかなり if-then ルールに寄せていた。\n「安静時心拍が6...",
+      "title": "弱いモデルのための足場が、賢いモデルの檻になる話"
     },
     {
       "arxiv_id": null,
@@ -694,7 +1446,7 @@
       },
       "published_at": "2026-06-22T16:32:15+00:00",
       "published_local_date": "2026-06-23",
-      "report_rank": 12,
+      "report_rank": 26,
       "report_score": 9.488171,
       "report_source_date": "2026-06-23",
       "report_source_section": "radar",
@@ -753,7 +1505,7 @@
       },
       "published_at": "2026-06-24T18:20:27+00:00",
       "published_local_date": "2026-06-25",
-      "report_rank": 13,
+      "report_rank": 27,
       "report_score": 9.421125,
       "report_source_date": "2026-06-25",
       "report_source_section": "top5",
@@ -809,7 +1561,7 @@
       },
       "published_at": "2026-06-26T14:38:01+00:00",
       "published_local_date": "2026-06-26",
-      "report_rank": 14,
+      "report_rank": 28,
       "report_score": 9.416019,
       "report_source_date": "2026-06-27",
       "report_source_section": "top5",
@@ -866,7 +1618,7 @@
       },
       "published_at": "2026-06-24T16:56:24+00:00",
       "published_local_date": "2026-06-25",
-      "report_rank": 15,
+      "report_rank": 29,
       "report_score": 9.415764,
       "report_source_date": "2026-06-25",
       "report_source_section": "radar",
@@ -891,16 +1643,10 @@
     },
     {
       "arxiv_id": null,
-      "authors": [
-        "Renuka Kumar"
-      ],
-      "categories": [
-        "Advanced (300)",
-        "Amazon Bedrock AgentCore",
-        "Technical How-to"
-      ],
+      "authors": [],
+      "categories": [],
       "entities": [],
-      "first_seen_at": "2026-06-26T13:34:41.590644+00:00",
+      "first_seen_at": "2026-06-22T19:23:34.028476+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -908,817 +1654,48 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "aws-ml-blog",
-          "tier": 0,
-          "title": "Retrofit, don’t rebuild: Agentic overlays for transforming legacy enterprise services",
-          "url": "https://aws.amazon.com/blogs/machine-learning/retrofit-dont-rebuild-agentic-overlays-for-transforming-legacy-enterprise-services"
+          "source_id": "npaka-note",
+          "tier": 2,
+          "title": "stackchan-mcp を試す",
+          "url": "https://note.com/npaka/n/n9d82cc8d5fd2"
         }
       ],
       "primary_link": {
         "link_type": "blog",
-        "source_id": "aws-ml-blog",
-        "tier": 0,
-        "title": "Retrofit, don’t rebuild: Agentic overlays for transforming legacy enterprise services",
-        "url": "https://aws.amazon.com/blogs/machine-learning/retrofit-dont-rebuild-agentic-overlays-for-transforming-legacy-enterprise-services"
+        "source_id": "npaka-note",
+        "tier": 2,
+        "title": "stackchan-mcp を試す",
+        "url": "https://note.com/npaka/n/n9d82cc8d5fd2"
       },
-      "published_at": "2026-06-25T17:55:10+00:00",
-      "published_local_date": "2026-06-26",
-      "report_rank": 16,
-      "report_score": 9.169771,
-      "report_source_date": "2026-06-26",
+      "published_at": "2026-06-22T00:32:43+00:00",
+      "published_local_date": "2026-06-22",
+      "report_rank": 30,
+      "report_score": 9.364823,
+      "report_source_date": "2026-06-22",
       "report_source_section": "radar",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 1.5,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9197707510072459,
-        "semantic_score": 0.0,
-        "tier_score": 3.0,
-        "topic_score": 3.75,
-        "total_score": 9.169770751007245
-      },
-      "section": null,
-      "source_name": "AWS Machine Learning Blog",
-      "story_id": "fallback:ff375c70bb28deac",
-      "summary": "In this technical collaboration between AWS and the authors, we present a pragmatic solution: agentic overlays. Agentic overlays are thin wrapper layers that transform traditional REST-based services into agents capable of participating in A2A interactions. They also expose REST APIs as tools compatible with the Model Context Protocol (MCP). Together, they let enterprises add A2A capabilities to existing REST services without rewriting business logic, without duplicating code, and without running parallel infrastructures. This reduces agent sprawl in the infrastructure by reusing existing services as agents. We provide reference architectures and sample code that show how to build agentic overlays.",
-      "title": "Retrofit, don’t rebuild: Agentic overlays for transforming legacy enterprise services"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "yurukusa"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.680789+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "worktreeで隔離したはずが、編集が全部mainに着地していた——Claude Codeの静かなデータ消失(起票#70069)",
-          "url": "https://qiita.com/yurukusa/items/105542b22c84422aebef"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "worktreeで隔離したはずが、編集が全部mainに着地していた——Claude Codeの静かなデータ消失(起票#70069)",
-        "url": "https://qiita.com/yurukusa/items/105542b22c84422aebef"
-      },
-      "published_at": "2026-06-22T16:28:54+00:00",
-      "published_local_date": "2026-06-23",
-      "report_rank": 17,
-      "report_score": 8.787941,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.987941245062813,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.787941245062813
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:1052fa601929498f",
-      "summary": "git worktreeは、本流(main)を汚さずに別ブランチの作業を物理的に分けるための仕組みだ。並行して機能開発を進める人や、AIエージェントに作業を任せる人ほど「worktreeに隔離しておけば本流は安全」と考える。claude -w &lt;名前&gt; でworktreeの...",
-      "title": "worktreeで隔離したはずが、編集が全部mainに着地していた——Claude Codeの静かなデータ消失(起票#70069)"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "picnic"
-      ],
-      "categories": [],
-      "entities": [
-        "deepmind"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.443929+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "Google Gemini Interactions API が正式GA——統一インターフェースで最新モデルに接続する方法",
-          "url": "https://qiita.com/picnic/items/bb10af76b534d9fc5965"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "Google Gemini Interactions API が正式GA——統一インターフェースで最新モデルに接続する方法",
-        "url": "https://qiita.com/picnic/items/bb10af76b534d9fc5965"
-      },
-      "published_at": "2026-06-22T16:25:42+00:00",
-      "published_local_date": "2026-06-23",
-      "report_rank": 18,
-      "report_score": 8.787722,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9877217269557144,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.787721726955715
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:e00056e8a181517b",
-      "summary": "はじめに\n2026年6月22日、Google は Gemini Interactions API の一般提供（GA: Generally Available）を正式に発表しました。\nこれまでベータ版・パブリックプレビューとして提供されていたこの API が正式版となり、G...",
-      "title": "Google Gemini Interactions API が正式GA——統一インターフェースで最新モデルに接続する方法"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "picnic"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.444189+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策",
-          "url": "https://qiita.com/picnic/items/64d12430e8946cc6d677"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策",
-        "url": "https://qiita.com/picnic/items/64d12430e8946cc6d677"
-      },
-      "published_at": "2026-06-22T16:24:39+00:00",
-      "published_local_date": "2026-06-23",
-      "report_rank": 19,
-      "report_score": 8.78765,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.987649708205506,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.787649708205507
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:0f23404079c2c9c0",
-      "summary": "はじめに\n2026年6月22日、Anthropic の Claude API において、主要モデルが広範囲にわたってエラー率の上昇を経験するインシデントが発生しました。Opus 4.8 / 4.7 / 4.6、Sonnet 4.6、Haiku 4.5 という現在アクティブ...",
-      "title": "Claude API 主要モデル広範囲エラー障害の詳細と本番運用対策"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "村瀬 雅俊"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.745230+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動",
-          "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-claude-code-opus-pattern"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動",
-        "url": "https://zenn.dev/muramasa0228/articles/2026-06-22-claude-code-opus-pattern"
-      },
-      "published_at": "2026-06-22T14:40:47+00:00",
-      "published_local_date": "2026-06-22",
-      "report_rank": 20,
-      "report_score": 8.780551,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9805514579229646,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.780551457922964
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:735d067b514f6884",
-      "summary": "はじめに\n「Opusをサブエージェントとして呼べばいいか」——そう思って構成を考えたら、思ったより性能が出ない構造になることに気づいた。\nこの記事では、Claude Codeのマルチエージェント構成でOpusの性能を引き出せない理由と、設計と実装を別セッション・別モデルに分離して解決するパターンを紹介する。\n結論から言うと、オーケストレーターと実装者のモデルを一致させることが鍵だった。\n\n オーケストレーターがボトルネックになる仕組み\nClaude Codeでマルチエージェントを組むとき、こういう構成を考えやすい。\nコンシェルジュ（Sonnet）\n  ↓ Agent(model=\"o...",
-      "title": "Claude Code でOpusを使い切る——設計はSonnet、実装はプロジェクト直起動"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "中村 啓｜LLMエンジニア"
-      ],
-      "categories": [],
-      "entities": [
-        "sakana-ai"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.746186+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化",
-          "url": "https://zenn.dev/hironakamura_ai/articles/22c54ab7490ea3"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化",
-        "url": "https://zenn.dev/hironakamura_ai/articles/22c54ab7490ea3"
-      },
-      "published_at": "2026-06-22T12:17:19+00:00",
-      "published_local_date": "2026-06-22",
-      "report_rank": 21,
-      "report_score": 8.770831,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9708307639282392,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.770830763928238
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:8c27969d846356c8",
-      "summary": "Sakana AI が「Fugu」を出した。触る前にドキュメントとベンチを読んだ感想を先に言っておくと、これは「賢い新モデル」ではなく「賢い束ね方を1モデルの皮で包んだ」プロダクトだ。OpenAI 互換の API を1本叩くと、裏では複数のモデルがチームを組んで答えを返してくる。呼ぶ側からは普通の1モデルにしか見えない。\n最初に押さえたいのは、面白さの在りかだ。「複数モデルを合議させる」こと自体は新しくない。Mixture-of-Agents もアンサンブルも前からある。Fugu が一歩踏み込んでいるのは2点で、ひとつは束ね方を人手のワークフローではなく学習で獲得していること、もうひとつ...",
-      "title": "Sakana Fugu を読み解く：マルチエージェントを「1つのモデル」として出す設計と、叩く側に効く3つの変化"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "itsuya"
-      ],
-      "categories": [],
-      "entities": [
-        "openai"
-      ],
-      "first_seen_at": "2026-06-22T19:23:34.747797+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "ChatGPT/LLMによる自然言語処理入門 を読んだ実務エンジニアの正直レビュー — どこが効いてどこは古いか",
-          "url": "https://zenn.dev/itsuya/articles/book-8e0da227e226f7"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "ChatGPT/LLMによる自然言語処理入門 を読んだ実務エンジニアの正直レビュー — どこが効いてどこは古いか",
-        "url": "https://zenn.dev/itsuya/articles/book-8e0da227e226f7"
-      },
-      "published_at": "2026-06-22T08:27:54+00:00",
-      "published_local_date": "2026-06-22",
-      "report_rank": 22,
-      "report_score": 8.755486,
-      "report_source_date": "2026-06-23",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.95548632303413,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.75548632303413
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:0d5bf654b1367e6a",
-      "summary": "この本のざっくり要約\n『ChatGPT/LLMによる自然言語処理入門』は、従来のBERT/RNN系NLPの基礎から、ChatGPT APIを活用した実装までを一冊で繋ぐことを意図した入門書だ。Python実装を軸に、テキスト分類・要約・対話システム構築といった実用ユースケースを扱っており、NLP初学者が「動くものを作る」ところまで到達することを主目的としている。\n\n\n 章ごとのポイント(5章ぶん)\n\n NLPの基礎とトークナイズ\nテキストを数値表現に変換するまでの流れ——形態素解析、BPEトークナイズ、埋め込みベクトルの概念——を丁寧に解説している。MeCabやsentencepie...",
-      "title": "ChatGPT/LLMによる自然言語処理入門 を読んだ実務エンジニアの正直レビュー — どこが効いてどこは古いか"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ichikawa"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-28T12:25:10.454968+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Claude Memoryに全部入れたら破綻した──AIの知識にもアーキテクチャが必要だった",
-          "url": "https://zenn.dev/ichikawa_y/articles/knowledge-layer-audit"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude Memoryに全部入れたら破綻した──AIの知識にもアーキテクチャが必要だった",
-        "url": "https://zenn.dev/ichikawa_y/articles/knowledge-layer-audit"
-      },
-      "published_at": "2026-06-27T15:31:42+00:00",
-      "published_local_date": "2026-06-27",
-      "report_rank": 23,
-      "report_score": 8.716632,
-      "report_source_date": "2026-06-28",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9166317567976168,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.716631756797616
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:d810a3aa391301e2",
-      "summary": "はじめに\nClaude Memory が使えるようになったとき、迷わず全部入れました。プロジェクトの設計判断、ツールの癖、コーディング規約、運用ルール、「次回は確認しよう」という教訓――思いついたものをすべて memory/ へ書き込みました。\n数週間後、破綻しました。\n問題は Memory ではありませんでした。知識のライフサイクルを設計していなかったのです。Memory という「ストレージ」を持っただけで、そこへの置き方・整理の仕方・棚卸しの仕組みを何も考えていませんでした。\nこの問題を解決するために、知識アーキテクチャを設計しました。最終的に、Policy / Knowledg...",
-      "title": "Claude Memoryに全部入れたら破綻した──AIの知識にもアーキテクチャが必要だった"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "T.Fujiba"
-      ],
-      "categories": [],
-      "entities": [
-        "aws"
-      ],
-      "first_seen_at": "2026-06-28T12:25:10.455448+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Bedrock/LLM向けPDF最適化〜サイズ制限と画像・フォント問題の解決法〜",
-          "url": "https://zenn.dev/fujiba/articles/optimize-pdf-for-llm-rag"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Bedrock/LLM向けPDF最適化〜サイズ制限と画像・フォント問題の解決法〜",
-        "url": "https://zenn.dev/fujiba/articles/optimize-pdf-for-llm-rag"
-      },
-      "published_at": "2026-06-27T15:13:12+00:00",
-      "published_local_date": "2026-06-27",
-      "report_rank": 24,
-      "report_score": 8.715455,
-      "report_source_date": "2026-06-28",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9154548957417084,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.715454895741708
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:1348b027c5d7055d",
-      "summary": "はじめに\nAmazon BedrockやAnthropic API（Claude 3.5 Sonnetなど）を用いて「長文PDFの要約」やRAGシステムを構築する際、しばしば課題となるのが「PDFのファイルサイズ制限」と「パース時の予期せぬエラー」である。\n最近のClaudeモデルには強力なPDF直接読み込み（Visual Analysis）機能が備わっているが、APIの仕様上、以下のような厳格な制限が設けられている。\n\nAmazon Bedrock: 1ドキュメントあたり最大4.5MBなど\nAnthropic API: 1リクエストあたり最大32MB、最大100ページまで\n\nそのた...",
-      "title": "Bedrock/LLM向けPDF最適化〜サイズ制限と画像・フォント問題の解決法〜"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "シロさん | snowwshiro中の人"
-      ],
-      "categories": [],
-      "entities": [
-        "sakana-ai"
-      ],
-      "first_seen_at": "2026-06-28T12:25:10.455712+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Sakana FuguをCodex CLIから触ってみた",
-          "url": "https://zenn.dev/snowwshiro/articles/sakana-fugu-first-look"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Sakana FuguをCodex CLIから触ってみた",
-        "url": "https://zenn.dev/snowwshiro/articles/sakana-fugu-first-look"
-      },
-      "published_at": "2026-06-27T14:08:33+00:00",
-      "published_local_date": "2026-06-27",
-      "report_rank": 25,
-      "report_score": 8.711354,
-      "report_source_date": "2026-06-28",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9113540970262463,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.711354097026245
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:bff3ce302889d9b4",
-      "summary": "はじめに\nSakana AI から Sakana Fugu が出ていたので、Codex CLI から既存リポジトリの調査・課題抽出・改修実装の流れで触ってみました。\n今回は API を直接叩いたのではなく、公式のインストールコマンドで環境構築して codex-fugu から使いました。導入はかなりスムーズでした。\nこの記事は 2026-06-27 時点の公式情報をもとにしています。価格、モデル名、提供地域などは変わる可能性があるので、利用前に公式ページを確認してください。\n\n Sakana Fuguとは\nSakana Fugu は、Sakana AI が提供するマルチエージェント型の...",
-      "title": "Sakana FuguをCodex CLIから触ってみた"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "suwa-sh / 諏訪真一"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-25T14:03:31.163591+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Claude Code の指示をどこに書くか — 7つの指示面とコンテキスト負債の設計",
-          "url": "https://zenn.dev/suwash/articles/claude-code-steering-surfaces_20260622"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude Code の指示をどこに書くか — 7つの指示面とコンテキスト負債の設計",
-        "url": "https://zenn.dev/suwash/articles/claude-code-steering-surfaces_20260622"
-      },
-      "published_at": "2026-06-24T15:00:00+00:00",
-      "published_local_date": "2026-06-24",
-      "report_rank": 26,
-      "report_score": 8.708392,
-      "report_source_date": "2026-06-25",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9083915579611744,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.708391557961175
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:8148746e029b2982",
-      "summary": "Claude Code には、AI の挙動を制御する手段が 7 つあります。CLAUDE.md・Rules・Skills・Subagents・Hooks・Output styles・System prompt 追加です。これらに加えて memory・plugins・managed settings も挙動を左右します。\n問題は「どの指示をどこに書くか」です。置き場を誤ると、性能より先に運用が壊れます。たとえば手順をすべて CLAUDE.md に書くと、関係ない作業でも毎回ロードされ、コンテキストを浪費します。長いセッションでは圧縮 (compaction) によって指示が失われ、Clau...",
-      "title": "Claude Code の指示をどこに書くか — 7つの指示面とコンテキスト負債の設計"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "SHu"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-28T12:25:10.455931+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "LLM（Claude API）をROS2に統合してロボットを自然言語で制御する",
-          "url": "https://zenn.dev/yamamoshu/articles/llm-ros2-integration"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LLM（Claude API）をROS2に統合してロボットを自然言語で制御する",
-        "url": "https://zenn.dev/yamamoshu/articles/llm-ros2-integration"
-      },
-      "published_at": "2026-06-27T12:47:50+00:00",
-      "published_local_date": "2026-06-27",
-      "report_rank": 27,
-      "report_score": 8.70626,
-      "report_source_date": "2026-06-28",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.906259952469755,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.706259952469754
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:3377aa64d64cc6b6",
-      "summary": "「前に進んで」「左に曲がって止まれ」といった自然言語でロボットを操作する。Claude APIのFunction Callingを使うと、これが意外と簡単に実装できます。\n\n\n アーキテクチャ\nユーザー発話\n    ↓\nClaude API（Function Calling）\n    ↓ move_robot(linear_x, angular_z)\nROS2 Node\n    ↓ /cmd_vel\nロボット\n\n\n Function Calling の定義\nTOOLS = [\n    {\n        \"name\": \"move_robot\",\n        \"description...",
-      "title": "LLM（Claude API）をROS2に統合してロボットを自然言語で制御する"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "similarmetal"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-23T16:36:43.579693+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "音声生成AIで日本語ポッドキャストを自動生成して配信してみた（Claude × ElevenLabs × Suno）",
-          "url": "https://qiita.com/similarmetal/items/31ddee2e8b82fa3a152d"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "音声生成AIで日本語ポッドキャストを自動生成して配信してみた（Claude × ElevenLabs × Suno）",
-        "url": "https://qiita.com/similarmetal/items/31ddee2e8b82fa3a152d"
-      },
-      "published_at": "2026-06-23T14:42:32+00:00",
-      "published_local_date": "2026-06-23",
-      "report_rank": 28,
-      "report_score": 8.706185,
-      "report_source_date": "2026-06-24",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9061847102046937,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.706184710204694
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:c538f7d210a8e969",
-      "summary": "TL;DR\n\n台本生成から音声合成・BGM・配信まで、ほぼ全工程を生成AIで回す日本語ポッドキャストのパイプラインを組んだ\n音声は ElevenLabs の Text to Dialogue API で2人の掛け合いを生成\n今日ついに第1話の音声をAIで生成し、初めてポッ...",
-      "title": "音声生成AIで日本語ポッドキャストを自動生成して配信してみた（Claude × ElevenLabs × Suno）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "nakayama_acari"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-06-28T12:25:10.456444+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Claude Code .claude/agents/ の設計実践 — 19体のエージェントをMarkdownで管理する方法",
-          "url": "https://zenn.dev/nakayama_acari/articles/claude-code-agents-design"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude Code .claude/agents/ の設計実践 — 19体のエージェントをMarkdownで管理する方法",
-        "url": "https://zenn.dev/nakayama_acari/articles/claude-code-agents-design"
-      },
-      "published_at": "2026-06-27T12:04:04+00:00",
-      "published_local_date": "2026-06-27",
-      "report_rank": 29,
-      "report_score": 8.70351,
-      "report_source_date": "2026-06-28",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9035096912279205,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.703509691227922
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:4c6a98e115ddac97",
-      "summary": "19本のMarkdownが会社を動かしている\n/root/ai-sales-company/.claude/agents/ に Markdown ファイルが 19 本ある。薬の自動販売機の営業、印刷サービスの営業、りんご贈答品の企画、競合調査、株価分析、副業収益化。この 19 体が深夜にスケジューラから起動されて、今日もどこかで動いている。\nファイル一覧がこれだ。\n$ ls .claude/agents/\naccea.md       audit.md        bvsync_intel.md  ceo.md\ndesigner.md    fukugyo.md      glob...",
-      "title": "Claude Code .claude/agents/ の設計実践 — 19体のエージェントをMarkdownで管理する方法"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "picnic"
-      ],
-      "categories": [],
-      "entities": [
-        "openai"
-      ],
-      "first_seen_at": "2026-06-25T14:03:30.817582+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "OpenAI Codexが永続クラウド環境を獲得——Ona買収でエンタープライズAIエージェントが本格化",
-          "url": "https://qiita.com/picnic/items/d76294a4e582783f5d2b"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "OpenAI Codexが永続クラウド環境を獲得——Ona買収でエンタープライズAIエージェントが本格化",
-        "url": "https://qiita.com/picnic/items/d76294a4e582783f5d2b"
-      },
-      "published_at": "2026-06-25T13:52:02+00:00",
-      "published_local_date": "2026-06-25",
-      "report_rank": 30,
-      "report_score": 8.549201,
-      "report_source_date": "2026-06-25",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9992006501435051,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.314823252432029,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 8.549200650143504
+        "total_score": 9.364823252432029
       },
       "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:7a1d04bfb24b9275",
-      "summary": "はじめに\n2026年6月25日、OpenAIは立て続けに2つの重要な発表を行った。1つはAIエージェントが職場に与える影響を分析した研究論文の公開、もう1つはスタートアップ「Ona」の買収計画だ。\n特に注目すべきはOna買収である。これによりCodexがセキュアで永続的（...",
-      "title": "OpenAI Codexが永続クラウド環境を獲得——Ona買収でエンタープライズAIエージェントが本格化"
+      "source_name": "npaka (note) - Japanese LLM Curation",
+      "story_id": "fallback:74b6480db4fdee36",
+      "summary": "<p id=\"3665565a-dcee-4aba-b8f7-468b4bece206\" name=\"3665565a-dcee-4aba-b8f7-468b4bece206\">「stackchan-mcp」を試してみたのでまとめました。</p><figure id=\"037a10fd-eeed-40d7-8755-270daa1ef5ba\" name=\"037a10fd-eeed-40d7-8755-270daa1ef5ba\"><blockquote><p id=\"a054edad-a375-40ad-a950-fa3bd1ea1089\" name=\"a054edad-a375-40ad-a950-fa3bd1ea1089\"><strong>・stackchan-mcp v0.12.0</strong></p></blockquote>\n<figcaption></figcaption></figure><br /><a href=\"https://note.com/npaka/n/n9d82cc8d5fd2\">続きをみる</a>",
+      "title": "stackchan-mcp を試す"
     }
   ],
-  "blog_stories_considered": 98,
+  "blog_stories_considered": 107,
   "covered_dates": [
+    "2026-06-22",
     "2026-06-23",
     "2026-06-24",
     "2026-06-25",
@@ -1726,11 +1703,9 @@
     "2026-06-27",
     "2026-06-28"
   ],
-  "generated_at": "2026-06-28T12:25:13.463733+00:00",
-  "items_considered": 245,
-  "missing_dates": [
-    "2026-06-22"
-  ],
+  "generated_at": "2026-07-03T14:48:01.000578+00:00",
+  "items_considered": 329,
+  "missing_dates": [],
   "period_end": "2026-06-28",
   "period_id": "2026-W26",
   "period_start": "2026-06-22",
@@ -7850,7 +7825,7 @@
       "primary_link.url"
     ],
     "limit": 100,
-    "metadata_source": "fallback",
+    "metadata_source": "ai",
     "period_source": "target_date and report_type",
     "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
     "source_sections": [
@@ -7860,15 +7835,17 @@
     ]
   },
   "source_files": [
+    "api/day/2026-06-22.json",
     "api/day/2026-06-23.json",
     "api/day/2026-06-24.json",
     "api/day/2026-06-25.json",
     "api/day/2026-06-26.json",
     "api/day/2026-06-27.json",
-    "api/day/2026-06-28.json"
+    "api/day/2026-06-28.json",
+    "api/day/2026-06-29.json"
   ],
   "stories_considered": 241,
-  "summary": "本週整理 100 篇 AI 論文與30 篇值得看的技術文章，重點集中在 電腦視覺、AI 方法、機器人。涵蓋 6 天資料，另有 1 天缺資料，共從 339 篇候選中篩選。",
+  "summary": "本週覆蓋開源模型發布（PLaMo 3.0 Prime、Gemma 4、Sakana Fugu 多代理架構）、訓練與推理效能優化（NVIDIA Nemotron 3 Ultra、Blackwell 整合）、知識圖譜 QA 自我修正、擴散模型與影像編輯評估，以及強化學習、代理應用（ContractOps、SRE）等實務進展，篩選論文與技術文章兼顧前沿研究與產業…",
   "timezone": "Asia/Taipei",
-  "title": "2026-W26 AI 研究週報"
+  "title": "AI研究週報：2026年6月22-28日"
 }
