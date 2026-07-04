@@ -17,6 +17,7 @@ BACKFILL_RANGE_WORKFLOW = WORKFLOWS_DIR / "backfill-date-range.yaml"
 DEPLOY_FROM_STATE_WORKFLOW = WORKFLOWS_DIR / "deploy-from-state.yaml"
 RESET_SITE_WORKFLOW = WORKFLOWS_DIR / "reset-site.yaml"
 LINT_WORKFLOW = WORKFLOWS_DIR / "lint-workflow.yaml"
+LOCAL_DEEPSEEK_SCRIPT = WORKFLOWS_DIR.parent.parent / "scripts" / "run-local-deepseek.sh"
 
 
 def load_workflow(path: Path) -> dict[str, Any]:
@@ -52,6 +53,14 @@ def assert_persist_state_avoids_lfs(run_script: str) -> None:
     assert "git-lfs" not in run_script
     assert "rm -f .gitattributes" in run_script
     assert 'cp "../artifacts/${STATE_FILE}" api/state.sqlite' in run_script
+
+
+def test_local_deepseek_backfill_refreshes_latest_payload() -> None:
+    """Verify latest daily payload is refreshed when backfilling the latest date."""
+    script_text = LOCAL_DEEPSEEK_SCRIPT.read_text()
+
+    assert "target_date >= current_date" in script_text
+    assert 'cp "${OUTPUT_DIR}/api/day/${TARGET_DATE}.json" "${OUTPUT_DIR}/api/daily.json"' in script_text
 
 
 class TestDailyDigestWorkflow:

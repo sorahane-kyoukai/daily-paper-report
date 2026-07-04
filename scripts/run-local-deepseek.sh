@@ -433,7 +433,35 @@ prepare_archive_output() {
     die "Missing ${OUTPUT_DIR}/api/day/${TARGET_DATE}.json after ${RUN_MODE}."
   fi
 
-  if [ ! -f "${OUTPUT_DIR}/api/daily.json" ]; then
+  update_daily="$(
+    python3 - "${TARGET_DATE}" "${OUTPUT_DIR}/api/daily.json" <<'PY'
+from __future__ import annotations
+
+import json
+import sys
+from datetime import date
+from pathlib import Path
+
+target_date = date.fromisoformat(sys.argv[1])
+daily_path = Path(sys.argv[2])
+
+if not daily_path.exists():
+    print("yes")
+    raise SystemExit
+
+try:
+    current_date = date.fromisoformat(
+        str(json.loads(daily_path.read_text()).get("run_date", ""))
+    )
+except (ValueError, json.JSONDecodeError):
+    print("yes")
+    raise SystemExit
+
+print("yes" if target_date >= current_date else "no")
+PY
+  )"
+
+  if [ "${update_daily}" = "yes" ]; then
     cp "${OUTPUT_DIR}/api/day/${TARGET_DATE}.json" "${OUTPUT_DIR}/api/daily.json"
   fi
 
