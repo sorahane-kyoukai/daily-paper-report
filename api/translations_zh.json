@@ -40546,5 +40546,173 @@
     "title_zh": "穩定的自調製 Quantum Fast-Weight Programmers 與有界記憶閘",
     "summary_zh": "Quantum Fast-Weight Programmers (QFWPs) 透過動態編程的變分電路參數儲存時間資訊，而非依賴非線性循環隱藏狀態，為量子序列建模開闢了實用途徑。Self-Modulating QFWP 進一步改進此框架，利用依賴輸入的門控機制同時處理新的快速權重更新和累積的快速權重狀態，但其中無界的舊狀態乘數在長序列場景下可能導致訓練發散。為了解決這個問題，本文提出一種有界舊狀態調製規則，有效約束舊狀態的影響，從而穩定訓練過程並防止發散。這項技術實現了穩定的自調製量子序列建模，對於處理量子長期依賴性任務具有顯著意義。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:87e7b197662c07dc": {
+    "story_id": "fallback:87e7b197662c07dc",
+    "title_zh": "AISI的test-time compute應用：以多預算角度建立AI代理評估",
+    "summary_zh": "AISI在2026年7月2日發表的〈More compute, more capability〉文章，揭示了代理評估的盲點：僅依單一得分判斷模型能力是危險的。論點是模型能力應以token預算的曲線呈現，而非固定分數。作者回顧自身評測日誌時發現，許多在1M tokens失敗的執行，若允許消耗10M tokens便能透過重試和驗證成功，僅是調整了停止時機。因此主張應以多種預算門檻衡量代理表現，因為計算量增加可能解鎖隱藏能力，提醒不應過早放棄看似失敗的模型，這對安全測試與基準對比提供了更細緻的視角。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:6dd80624c8b3166e": {
+    "story_id": "fallback:6dd80624c8b3166e",
+    "title_zh": "Claude Code行為改變時，如何診斷成因",
+    "summary_zh": "Claude Code幾乎每日更新且模型不斷迭代，讓使用者常感「昨天還好好的，今天就不對勁」。本文作者指出，當遭遇行為變化，首先該懷疑的不是模型或工具本身，而是自己維護的harness（如CLAUDE.md、memory、lessons.md等）已堆積過時或衝突的指示。解決之道是定期清理這些檔案，並將「記錄」與「規則」分開：記錄僅供參考，規則直接影響行動，且規則應只寫入結論。透過這樣的診斷順序，可避免誤判，讓自定義的輔助持續有效。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:409a8b4d0f3402ed": {
+    "story_id": "fallback:409a8b4d0f3402ed",
+    "title_zh": "利用Claude Code的子代理降低Dispatcher的token消耗",
+    "summary_zh": "在Claude Code多代理架構中，當多個Worker並行工作時，司令塔Dispatcher的token消耗往往成為瓶頸。作者運用自製的squad環境，發現若由Dispatcher兼任任務指示書撰寫與儀表板更新，在Fable的5小時限制內幾乎全軍覆沒。因此將這兩項工作卸載至子代理，讓Dispatcher專注於調度，大幅降低了token負載。這不僅讓所有代理能在時間限制內完成工作，也提高了整體任務成功率，說明了合理分配次級任務能有效突破通訊瓶頸，是實作多代理系統時值得參考的策略。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:articles/2026070": {
+    "story_id": "arxiv:articles/2026070",
+    "title_zh": "不需訓練代理的世界模型：Qwen-AgentWorld讓代理更強大",
+    "summary_zh": "阿里巴巴Qwen團隊公開的Qwen-AgentWorld提出了一種繞過代理直接訓練的思路：不訓練代理如何行動，而是訓練世界模型去預測環境反應。該模型專注學習「下一個狀態」，例如終端機指令的回傳、API呼叫的JSON回應或點擊後的DOM變化。在七項基準測試中，這個未經行動訓練的模型竟能驅動代理達到優異表現，因為它提供了精準的模擬環境。這意味著強化學習中最耗費資源的與環境互動部分，可被獨立的世界模型取代，大幅簡化代理訓練流程，為資源有限的研究者提供了一條新捷徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0fd26d04d1c0149c": {
+    "story_id": "fallback:0fd26d04d1c0149c",
+    "title_zh": "LoRA與QLoRA圖解說明",
+    "summary_zh": "隨著2026年AI系統建構趨勢走向RAG與Fine-tuning的混合模式，LoRA及QLoRA作為微調的核心技術，重要性日益凸顯。本文以圖解方式深入淺出地解析這兩種方法的運作機制，並特別針對LoRA能在CPU上執行的原理加以說明，釐清CPU與GPU的適用場景差異。作者強調RAG確保系統當下的事實正確性，而微調則賦予明日的一致性，兩者相輔相成。掌握這些技術細節，能幫助開發者在資源成本與模型效能間取得更精準的平衡，對部署大量客製化模型尤其關鍵。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a95545f37e96bcbb": {
+    "story_id": "fallback:a95545f37e96bcbb",
+    "title_zh": "RAG 管線中的時間序列污染：上下文注入漂移的機制與對策",
+    "summary_zh": "許多工程師在 AI 系統維運時，會遇到特定維護時段回答品質驟降或行為僵硬的現象。本文指出這並非單純的硬體故障，而是 RAG 管線對時序資訊處理不當所導致的邏輯缺陷，稱為「上下文注入漂移」。文中深入分析其形成機制，並提出診斷與修補的對策，幫助團隊減少生產環境中難以複現的古怪行為，提升 RAG 應用的穩定性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:dc0e5c1a4c2bb5b0": {
+    "story_id": "fallback:dc0e5c1a4c2bb5b0",
+    "title_zh": "將 Claude Fable 5 蒸餾至 9B 模型？在 4GB VRAM 上運行 100 萬 Token 的超長文本推理模型「Qwythos-9B」",
+    "summary_zh": "2026 年 6 月，Empero AI 推出的 Qwythos-9B 號稱能將 Claude Fable 5 的能力蒸餾到 9B 參數，並支援最高 100 萬 Token 的上下文，且僅需 4GB VRAM 即可在本地執行。這項開源 LLM 的突破意味著消費級顯卡也能駕馭超長文本推理，大幅降低門檻，可望在程式碼理解、長文獻分析等場景中取代雲端大模型，值得開發者關注其實際表現與限制。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b110ee27787395d9": {
+    "story_id": "fallback:b110ee27787395d9",
+    "title_zh": "當相同提示詞卻讓答案品質飄忽不定時，該補足的是前提而非指令",
+    "summary_zh": "LLM 輸出品質不一致的最大原因並非模型隨機性，而是提示詞中隱含的未言明前提。作者實驗發現，明確指定讀者對象、數值約束與輸出格式這三項最能穩定結果，而精心設計的角色提示幾乎無效。然而若試圖一次說清所有前提，指令就會過長而難以維護；現實作法應是每一版只新增一個變數，逐步收斂。這項洞察來自大量日常使用經驗，為 Prompt 工程提供了一條可操作的最佳實踐。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:f83b83e706ccd80d": {
+    "story_id": "fallback:f83b83e706ccd80d",
+    "title_zh": "讓 AI 處理故障，卻自己捏造一場不存在的駭客攻擊而陷入混亂的故事",
+    "summary_zh": "一次 Web 服務宕機事件中，作者將整個故障排除流程交給 AI 編碼代理，本以為只是簡單的例行診斷，沒想到代理竟自行編造出一次駭客攻擊，隨後邏輯崩潰無法收場。前半段它展現出高效的排查能力，後半卻暴露出嚴重的幻覺與自主失控風險。這個案例生動說明了現階段 AI 代理在缺少人類監管下處理複雜系統事件時的危險性，提醒必須謹慎設計權限、監控與回退機制，以免虛構的故障演變為真實災難。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:67f81da8f5d6c596": {
+    "story_id": "fallback:67f81da8f5d6c596",
+    "title_zh": "用 Fable5 製作深海作品集，再把日誌交給 Opus 4.8 稽核的故事",
+    "summary_zh": "本文示範了一套「用另一個模型稽核 AI 會話日誌」的作法。作者使用 Claude 的 Fable5 模型生成一個 Three.js 深海體驗頁，隨滾動從海面潛入 6000 公尺深，並記錄完整的互動過程。接著將這些日誌餵給 Opus 4.8 進行審計，以客觀評估 Fable5 的行為邏輯與創意表現。此方法可推廣為 AI 輸出品質保障的輔助手段，讓創作過程中的人類能夠聚焦在關鍵決策點，同時利用二手模型抓出潛在的幻覺或偏誤，值得內容生成領域的開發者參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:9f10cf7238d40dd6": {
+    "story_id": "fallback:9f10cf7238d40dd6",
+    "title_zh": "將政府採購數據以$0.02賣給AI Agent — 讓個人API支援x402並實現在Base主網上的實際支付",
+    "summary_zh": "本文記錄將政府採購變更檢測API改造為x402相容，讓AI Agent直接支付USDC在Base主網完成交易的實作過程。x402是Coinbase提出的機器對機器支付協定，伺服器以402狀態碼返回付款條件，Agent錢包透過EIP-3009進行免授權簽章與支付。作者從回應402到鏈上結算的完整流程，無需人類申請或批准，展示了個人開發者如何將API貨幣化以服務AI經濟。這降低了資料存取門檻，並可能開啟自動化資料交易的新應用場景。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:807f5692e138f031": {
+    "story_id": "fallback:807f5692e138f031",
+    "title_zh": "【全文免費】生成AI「15大領域全地圖」成書 ─ 將Claude Fable 5的知識榨取至極限的寫作",
+    "summary_zh": "作者將生成AI的15個主要領域整理成一本免費電子書，公開於Zenn，旨在解決業界資訊過載與工具選擇的困惑。書中運用Claude Fable 5的知識極限來撰寫內容，提供結構化的地圖，幫助讀者快速掌握各領域的重點與實用工具。這項工作展示了大型語言模型如何被引導產出具有教育價值的長篇內容，並為在快速變動的AI領域中的從業者提供了穩定的參考座標。對於希望有效應用生成AI於工作或創作的人來說，這是一本實用的導航手冊。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ea142fffc07b9717": {
+    "story_id": "fallback:ea142fffc07b9717",
+    "title_zh": "使用Ollama和LM Studio實現「機密留在手邊」 — 本地LLM實務入門",
+    "summary_zh": "本文以實作導向介紹如何使用Ollama或LM Studio在本地PC運行LLM，確保機密業務資料不外洩。除了最小配置設定，作者還親自驗證數據不會傳輸到外部，教導如何在日常工作中劃出安全的界線。對於無法將敏感資訊送往雲端服務的行業，此方法提供了一個兼顧隱私與生成AI便利性的務實方案。透過逐步操作，讀者可以親手架設並驗證，立即應用到實務中，是本地LLM入門的實用指南。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:28274f51e67db211": {
+    "story_id": "fallback:28274f51e67db211",
+    "title_zh": "AI編碼從「補全」邁向「自動化」",
+    "summary_zh": "本文探討AI編碼從程式碼補全進化到完全自動化的趨勢，開發者不再只是請AI寫代碼，而是直接將任務委託給AI代理。隨著Kimi K2.7整合進GitHub Copilot，以及Claude Code借助Omnigent實現多代理並行處理，開發者的日常工作模式正被悄然改寫。作者批評單純的建議式補全已達極限，造成「補全疲勞」，現在真正的自動化已然來臨。這轉變重新定義了開發者的角色，預示著未來編碼將更多是管理自主代理而非手動編寫，值得所有軟體從業者關注。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:105929d21fc38fa9": {
+    "story_id": "fallback:105929d21fc38fa9",
+    "title_zh": "在使用本地LLM進行編碼前，有些話想先說",
+    "summary_zh": "作者根據親身經驗，分享使用本地LLM進行程式開發時的關鍵實戰建議。內容包括將任務拆分為小塊、每個子任務後立即壓縮對話上下文、避免使用Mixture-of-Experts (MoE)模型、出現錯誤時切換會話，以及強調人類必須徹底理解安全問題並給予明確指示。這些要訣直面本地模型與雲端AI的差異，提供了一條提高生產力且避免常見陷阱的捷徑。對於希望有效運用本地LLM同時保持控制權與安全性的開發者來說，這是一份直白而實用的備忘錄。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:662b5bd5c19973fc": {
+    "story_id": "fallback:662b5bd5c19973fc",
+    "title_zh": "【上】「AI 部長」を作りたい！—— 將我的腦內全部放入 Obsidian",
+    "summary_zh": "作者身兼三個性質迥異的學生社團部長，管理近百名成員，為了應對龐大的日常活動與專案規劃負擔，萌生了讓 Claude 讀取個人知識庫的想法。本文描述他如何將腦中的記憶與決策邏輯系統性地記錄於 Obsidian，並計畫結合一 LLM 打造能分擔管理事務的「AI 部長」。此作法試圖以個人知識管理為基礎，降低多任務領導者的認知負荷，對結合筆記工具與大型語言模型的輔助決策應用具有參考價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:3443a7a9d6a00a3b": {
+    "story_id": "fallback:3443a7a9d6a00a3b",
+    "title_zh": "何謂將「模糊需求 → 明確課題」—— clarify_to_mvp 的動機與先行研究整理",
+    "summary_zh": "本文定位在創意萌芽與可驗證課題之間的轉化階段，針對使用者往往只能表達曖昧需求的實務困境，提出 clarify_to_mvp 對話系統的設計動機。該系統旨在將模糊的「想做什麼」轉譯為具備背景、缺口與成功條件的可執行課題，填補從問題發現到 MVP 實作之間的方法斷層。作者同時整理相關先行研究在業界的位置，論證將需求引出並形式化為可驗證目標的重要性，為後續實現對話式需求澄清工具奠定基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a57b2bd563ecc03f": {
+    "story_id": "fallback:a57b2bd563ecc03f",
+    "title_zh": "試用 GitHub Spec Kit 的 `/speckit.converge`：能否檢測實作偏差並轉為改修任務",
+    "summary_zh": "本文探索 GitHub Spec Kit 中 `/speckit.converge` 指令的實用性，測試其在軟體規格逐步落地到程式碼的過程中，自動識別實作與規格之間的差異，並將這些偏差結構化為具體的改修任務。作者透過實際操作，展示如何利用該命令將程式碼的現狀對齊原定計畫，以降低開發反覆修正的成本。這項工作對 AI 輔助軟體開發流程中的品質保證與規格連續性維持有明顯的啟發意義。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4bc17aca313a507d": {
+    "story_id": "fallback:4bc17aca313a507d",
+    "title_zh": "「10 萬行程式碼」到底數了什麼？AI 時代的 LOC 調查",
+    "summary_zh": "因應非工程師短期內宣稱「寫了 10 萬行程式碼」的現象，作者重新檢視程式碼行數（LOC）在生成式 AI 輔助開發下的計量意涵。文章區分人工原創、AI 生成與樣板程式碼等不同來源，並探討當大量程式碼由模型自動補全時，傳統生產力指標的有效性。透過對 AI 編碼工具如 Claude Code 與 Cursor 的實際觀察，作者反思 LOC 作為個人貢獻度量的局限性，為解讀 AI 世代開發效能提供更謹慎的觀點。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:78dfa5e3e2fdf14f": {
+    "story_id": "fallback:78dfa5e3e2fdf14f",
+    "title_zh": "Google DeepMind 與 A24 宣布史無前例的研究合作",
+    "summary_zh": "Google DeepMind 與知名獨立電影公司 A24 公開了一項前所未有的研究夥伴關係，預計將 AI 技術引入電影敘事、創意生成或製作流程的前沿領域。此合作可能結合深度學習模型與專業影視經驗，探索內容創作的新邊界，並觸及藝術表達與人工智慧融合的敏感議題。外界預期雙方將共同發展具顛覆性的工具或方法，為未來影視產業的智能化轉型提供實驗性基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:d4c197f7ca1b549e": {
+    "story_id": "fallback:d4c197f7ca1b549e",
+    "title_zh": "AI Samurai 的生成式 AI 工具大全：全 15 領域地圖與選用指南",
+    "summary_zh": "本書涵蓋生成式 AI 的 15 大主要領域，包括雲端基礎模型、本地 LLM、編碼代理、通用代理、簡報生成、圖像生成、影片生成、音樂生成、語音、音效、研究與搜尋、會議記錄、翻譯、3D 生成以及新興領域。作者以 2026 年 7 月時點整理各領域的勢力版圖與代表性工具，提供從用途、預算、風險三軸自行選擇工具的判斷框架。書中還深入討論免費額度的隱藏限制、商用授權陷阱、訂閱制與 API 的取捨，以及著作權、資料主權與服務終止風險的應對策略。由札幌 AI 社群「札幌厲害 AI 會」主辦者岸本悠佑（AI Samurai）親身實測所有領域後撰寫，重點不在操作步驟，而是構築不受時代變遷影響的選型思維。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:8edbd1608858e9ef": {
+    "story_id": "fallback:8edbd1608858e9ef",
+    "title_zh": "AI 突然在中途變笨的真相：上下文腐化（context rot）── 讓長任務全程保持聰明的對話設計",
+    "summary_zh": "許多人在與 AI 長時間協作（如寫程式或撰寫長文）時，會發現 AI 在初期表現優異，卻在進行約三十分鐘後突然給出荒謬回答或邏輯崩壞。這並非使用者操作失誤或模型故障，而是「上下文腐化（context rot）」所致——對話歷史不斷累積造成注意力分散與資訊衝突。本文剖析此現象的發生機制，並提出一套實用的會話設計方法，透過分段、摘要、重置上下文等策略，讓 AI 在漫長作業中保持一致的推理品質，避免中途失智。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b51067cc8afdfc3b": {
+    "story_id": "fallback:b51067cc8afdfc3b",
+    "title_zh": "從 CLI 嘗試 AWS Bedrock 入門：先記住這些指令就夠了",
+    "summary_zh": "初次接觸 AWS Bedrock 時，許多人困擾於如何在投入 API 開發前快速試驗各種基礎模型。本文示範如何透過 AWS CLI 直接執行 Bedrock 指令，無需開啟主控台即可查詢可用模型、測試模型行為並驗證參數效果。內容假設讀者已備妥 AWS CLI 環境，省略安裝與初始設定步驟，並點出以往需手動啟用模型權限的舊有流程已簡化。重點放在幾個最常用的指令，幫助讀者以最低門檻輕鬆體驗 Bedrock 服務，加速後續實作評估。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a78bb846387e53a5": {
+    "story_id": "fallback:a78bb846387e53a5",
+    "title_zh": "使用 AI 音軌分離進行音樂分析的工作流程筆記",
+    "summary_zh": "在音樂製作或影片編輯中，參考既有樂曲時，只聽最終混音很難判斷哪些聲部形塑了歌曲的氛圍。本文介紹以 AI 音軌分離（stem separation）技術，將完整混音拆解為人聲、鼓組、貝斯、吉他、鋼琴等獨立聲部，逐一分析其頻率、動態與編排特徵。此方法能幫助創作者具體化「好聽」的理由，建立一套可重複的解析工作流程，從而提升自身作品的編曲決策與混音品質。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:deepseek-ai/deepseek-v4-flash-dspark": {
+    "story_id": "hf:deepseek-ai/deepseek-v4-flash-dspark",
+    "title_zh": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
+    "summary_zh": "本技術報告澄清 DeepSeek-V4-Flash-DSpark 並非新模型，而是同一個 checkpoint 加掛額外的推測解碼（speculative decoding）模組。同時預覽 DeepSeek-V4 系列中兩個強大的混合專家（MoE）語言模型：DeepSeek-V4-Pro 具備 1.6 兆參數（49B 活化參數）、DeepSeek-V4-Flash 具備 2840 億參數（13B 活化參數），兩者皆支援百萬 token 的上下文長度。架構核心升級包括設計了結合壓縮稀疏注意力的混合同架構，以提升長序列處理效率。相關推論範例已置於 inference 資料夾，完整細節請參考 DeepSpec 專案。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:deepseek-ai/deepseek-v4-pro-dspark": {
+    "story_id": "hf:deepseek-ai/deepseek-v4-pro-dspark",
+    "title_zh": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
+    "summary_zh": "本技術報告提出 DeepSeek-V4 系列的預覽版本，包含兩個強大的 Mixture-of-Experts (MoE) 語言模型：總參數 1.6T（活化 49B）的 DeepSeek-V4-Pro 與 284B（活化 13B）的 DeepSeek-V4-Flash，兩者皆支援高達一百萬 token 的上下文長度。模型引入了混合注意力機制，結合 Compressed Sparse Attention 等架構改進，旨在提升長序列處理效率。DeepSeek-V4-Pro-DSpark 並非全新模型，而是同一個 checkpoint 附加 speculative decoding 模組的版本，並於 inference 資料夾提供最小推論範例。此設計讓原有的強大能力得以結合推論加速，對大規模部署深具實用意義。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:microsoft/gelab-zero-4b-preview-sico-evolution": {
+    "story_id": "hf:microsoft/gelab-zero-4b-preview-sico-evolution",
+    "title_zh": "microsoft/GELab-Zero-4B-preview-Sico-Evolution",
+    "summary_zh": "本模型為 4B 參數的 GUI 代理，基於開源 GELab-Zero-4B-preview 在 Microsoft Edge 與 Copilot 的 UI 操作軌跡上進行 LoRA 微調，為 Sico 開源平台的首個公開發布。Sico 平台旨在透過真實工作流程讓 AI 代理人與人類操作者共同進化，並提供通用的 GUI 模型進化管線。該管線以迭代方式逐輪提升代理在實際任務的成功率，並可遷移至任意 GUI 應用，使模型在特定任務上從初始的 39.8% 大幅提升至 82.9%。此成果展現了透過資料驅動進化來持續強化代理能力的可行性，為人機協作系統的演進提供新路徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:mistralai/leanstral-1.5-119b-a6b": {
+    "story_id": "hf:mistralai/leanstral-1.5-119b-a6b",
+    "title_zh": "mistralai/Leanstral-1.5-119B-A6B",
+    "summary_zh": "Leanstral 1.5 是一款開源的程式碼代理模型，專為 Lean 4 證明助手設計，能處理如 perfectoid spaces 等複雜數學物件及 Rust 片段規格。此模型屬於 Mistral Small 4 家族，採用 MoE 架構，擁有 128 位專家、每 token 活化 4 位，總參數 119B 而推論時僅活化 6.5B，並支援 256k token 上下文長度與文字、圖像雙模態輸入。相較於先前版本，Leanstral 在多項指標上展現更佳的效能與成本效益，為形式化數學與軟體驗證提供了一個高性價比的開源替代方案，可望降低高階證明輔助工具的進入門檻。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
