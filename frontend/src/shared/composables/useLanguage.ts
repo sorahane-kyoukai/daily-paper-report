@@ -2,8 +2,9 @@
  * Composable for managing locale state between English and Traditional Chinese.
  *
  * Persists the selected locale to localStorage so the preference
- * survives page reloads. Falls back to English when no translation
- * data is available.
+ * survives page reloads. Defaults to Traditional Chinese for new
+ * visitors while individual cards fall back to source text when a
+ * story has not been translated yet.
  */
 
 import { computed, ref, watchEffect } from 'vue'
@@ -16,7 +17,7 @@ const stored = (
   typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null
 ) as Locale | null
 
-const locale = ref<Locale>(stored === 'zh-TW' ? 'zh-TW' : 'en')
+const locale = ref<Locale>(stored === 'en' ? 'en' : 'zh-TW')
 
 watchEffect(() => {
   if (typeof window !== 'undefined') {

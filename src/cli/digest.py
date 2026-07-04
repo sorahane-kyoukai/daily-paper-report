@@ -460,35 +460,21 @@ def _run_llm_phase(
 def _collect_ranker_story_dicts(
     ranker_result: "RankerResult",
 ) -> list[dict[str, object]]:
-    """Collect deduplicated paper-story dicts from ranker output sections.
-
-    Only paper-like stories are translated to reduce LLM cost:
-    - items in `papers` section
-    - top/radar/model stories that are paper-like (arXiv/paper/openreview)
+    """Collect deduplicated story dicts from user-visible ranker sections.
 
     Args:
         ranker_result: Result from ranking phase.
 
     Returns:
-        Deduplicated list of paper-story dicts.
+        Deduplicated list of story dicts.
     """
     from itertools import chain
 
-    from src.features.config.schemas.base import LinkType
     from src.linker.models import Story
 
     model_release_stories: list[Story] = list(
         chain.from_iterable(ranker_result.output.model_releases_by_entity.values())
     )
-
-    def _is_paper_story(story: Story) -> bool:
-        if story.arxiv_id:
-            return True
-        return story.primary_link.link_type in {
-            LinkType.ARXIV,
-            LinkType.PAPER,
-            LinkType.OPENREVIEW,
-        }
 
     candidate_stories = [
         *ranker_result.output.top5,
@@ -496,11 +482,10 @@ def _collect_ranker_story_dicts(
         *ranker_result.output.radar,
         *model_release_stories,
     ]
-    all_stories = [story for story in candidate_stories if _is_paper_story(story)]
 
     seen: set[str] = set()
     unique: list[dict[str, object]] = []
-    for story in all_stories:
+    for story in candidate_stories:
         if story.story_id not in seen:
             seen.add(story.story_id)
             unique.append(story.to_json_dict())
