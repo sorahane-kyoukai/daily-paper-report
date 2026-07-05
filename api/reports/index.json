@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-03T14:51:45.634592+00:00",
+  "generated_at": "2026-07-05T12:33:55.355621+00:00",
   "latest": {
     "monthly": "2026-06",
-    "weekly": "2026-W26"
+    "weekly": "2026-W27"
   },
   "monthly": [
     {
@@ -46,6 +46,19 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 30,
+      "generated_at": "2026-07-05T12:33:10.261698+00:00",
+      "missing_dates": [],
+      "path": "api/reports/weekly/2026-W27.json",
+      "period_end": "2026-07-05",
+      "period_id": "2026-W27",
+      "period_start": "2026-06-29",
+      "recommendation_count": 100,
+      "report_type": "weekly",
+      "summary": "本期週報聚焦大型語言模型對齊、代理行為與推理效率等關鍵方向。論文涵蓋測試時偏好對齊、多代理社會結構與忠誠、分散式攻擊與安全防護、以及Transformer貝氏詮釋與自我蒸餾等理論突破；技術文章則提供Claude實戰、代理故障診斷、自癒RAG與上下文污染治理等落地經驗。挑選這些內容以呈現從基礎對齊到穩健部署的全域進展，供研究與工程團隊參考。",
+      "title": "AI 研究週報：LLM 對齊、代理行為與推理效率進展"
+    },
     {
       "blog_recommendation_count": 30,
       "generated_at": "2026-07-03T14:48:01.000578+00:00",
