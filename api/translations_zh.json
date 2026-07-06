@@ -40870,5 +40870,161 @@
     "title_zh": "將AI當作下屬後，自製知識UI便不再需要的故事",
     "summary_zh": "作者長期構思一款名為velt的個人知識介面，將Obsidian筆記以Masonry方式鋪陳於二維空間，並支援縮放、滑動與連結懸浮預覽關聯筆記的流暢操作。隨著大型語言模型（LLM）的進展，此概念終於實作成功，然而實際使用體驗卻未達預期的舒適與效率。作者深入分析後發現，現代LLM本身已能提供更直覺的互動，自建複雜UI反而增加認知負擔，偏離了高效知識工作的初衷。最終他決定收起velt構想回歸Obsidian，並反思在AI能力快速演進的時代，自己打造工具的意義是否已被重新定義，或許順應AI的輔助力量才是更務實的選擇。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:5b152865d5b7b5f6": {
+    "story_id": "fallback:5b152865d5b7b5f6",
+    "title_zh": "從 function calling 的最小實作看清 AI 代理的失敗邊界",
+    "summary_zh": "本文透過 function calling 的最小實作，揭示 AI 代理從「展示能動」到「可交付使用」之間存在巨大鴻溝，而最常出現破壞的位置集中於四處。核心發現是，傳遞給模型的 JSON Schema 實際上就是提示詞，若能在設計階段就仔細收斂 description 與 enum，可在實作前消滅近半數的錯誤。然而 Schema 只能防範格式違規，無法阻擋模型產出「看似合理卻錯誤」的參數，這需要開發者在邊界設計中把關。作者更強調，與其在 prompt 中寫「危險操作請先確認」，不如將人工確認邏輯直接寫在程式分支裡，這樣更能確保安全性。此研究提醒我們，即使 function calling 看似簡便，仍需搭配嚴謹的工程實踐才能真正可靠。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:3a14da7dd445b7f9": {
+    "story_id": "fallback:3a14da7dd445b7f9",
+    "title_zh": "DASH：透過回答漂移偵測「過度思考」、解決 GRPO 的過度推理問題、在 AIME25 提升 +5.4%",
+    "summary_zh": "為了解決推理模型「過度思考」而浪費 token 的問題，DASH 提出一種新的信用分配方式：以中間回答的正誤作為檢查點，將生成軌跡切分為多個區段，並賦予每個區段不同的 Advantage。在 AIME25 基準上，DASH 相較於 GRPO 提升了 5.4 個百分點，與 Nemotron-4B 基線相比也有 4.7 個百分點的增益。標準 GRPO 會對整個錯誤軌跡給予一致懲罰，DASH 卻能精確定位錯誤發生的位置，讓對正確答案有貢獻的部分仍可獲得獎勵。這項技術讓「推理長度」與「推理品質」不再脫鉤，對需要長鏈思考的數學與程式任務極具價值，也為 RL 在語言模型中的信用分配提供了更精細的設計方向。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:items/5572380": {
+    "story_id": "arxiv:items/5572380",
+    "title_zh": "GLM-5.2 對決 Claude Fable 5：差異不僅來自推理能力，更取決於輸出預算",
+    "summary_zh": "這項比較並非為了分出誰絕對領先，而是透過實際 API 呼叫觀察到一個關鍵現象：當 GLM-5.2 獲得較大的輸出預算時，其在數學與物理推理上的正確率明顯回升。相對的，Claude 在預算受限下表現較為穩定，但這也突顯出輸出預算對大型語言模型推理性能的重大影響。文章強調，評測模型時不能只看推理能力本身，還需考慮分配給生成過程的計算資源，因為足夠的輸出步驟能讓模型「想得更清楚」。這對 API 設計與成本控管有務實意義，提醒使用者在效能與費用之間權衡時，適當的輸出長度上限可能是釋放推理潛力的關鍵。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0652349e002ecdd1": {
+    "story_id": "fallback:0652349e002ecdd1",
+    "title_zh": "在 Amazon SageMaker HyperPod 上為 Amazon Nova 部署多回合強化學習基礎設施",
+    "summary_zh": "本文展示如何利用 Amazon SageMaker HyperPod 與 Amazon Nova Forge 建置一個兩階段的多回合強化學習基礎設施。部署完成後，會形成一套事件驅動的管線，只要將訓練資料上傳至 Amazon S3，就會自動觸發訓練任務。文中以教導模型玩 Wordle 遊戲為示範，完整呈現多回合 RL 的訓練流程，此架構可作為讀者自身 RL 任務的模板。這項方案大幅降低了反覆互動式強化學習實驗的門檻，透過 AWS 全託管服務簡化了運維與擴展的複雜度，讓開發者能專注於獎勵設計與策略迭代，適合對話系統、遊戲 AI 等需長期狀態追蹤的場景。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:842528e1c741315e": {
+    "story_id": "fallback:842528e1c741315e",
+    "title_zh": "Claude Code 差點執行了「你從未說過的指令」——長對話脈絡壓縮後引發的虛構內容",
+    "summary_zh": "一名用戶在使用 Claude Code 進行長時間對話後，發現畫面中突然出現一項從未要求過的任務：在地圖右下角添加一個巨大的速度計。用戶驚詫地質問：「我沒有說過這個事實，這是什麼？」調查顯示，這很可能是因為長時間互動導致的上下文壓縮，模型在摘要或捨棄歷史資訊時產生了捏造（hallucination），甚至將內部推測當成使用者的明確指示。此事凸顯了長期對話狀態管理的潛在風險，模型為了節省 token 而丟失脈絡後，可能錯亂地執行虛構任務。開發者應警惕此類行為，除了在關鍵操作前加入確認分支，也可考慮限制會話長度、固定摘要策略或引入外部記憶，以確保 AI 代理的可信賴性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:be2092cca240a932": {
+    "story_id": "fallback:be2092cca240a932",
+    "title_zh": "你知道 Claude Code 内置技能会一击消耗约 30% 的上下文吗？（附停用方法）",
+    "summary_zh": "Claude Code 預設內建一個技能，單次觸發即可消耗約 30 萬 tokens，對於上下文窗口為 1M tokens 的主流模型（如 Sonnet 5 等），等於一次就用掉近三成的容量。本文復現了這個觸發情境，並提供兩種關閉方式：一是官方設定，另一是未在正式文件中揭露的環境變數。實測環境為 Claude Code v2.1.201 搭配 Sonnet 5，作者也提醒相關數值可能隨版本或環境變動，值得長期關注。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:147a93c86a272a7f": {
+    "story_id": "fallback:147a93c86a272a7f",
+    "title_zh": "最小實現的 RAG 實作範例，以及它如何靜靜地壞掉",
+    "summary_zh": "常見的 RAG 教學多依賴框架，導致內部機理被隱藏，難以察覺故障點。本文以約 80 行的程式碼手工構建最簡 RAG，目的是讓讀者透徹理解檢索與生成等元件的實際分工。作者在實作過程中發現，RAG 系統可能以難以察覺的方式失效，例如檢索品質下降或生成落空的靜默損壞，而這正是許多人忽略的風險。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:42d800a95d1b49d5": {
+    "story_id": "fallback:42d800a95d1b49d5",
+    "title_zh": "在 Azure VM 使用 vLLM 搭建高速 LLM 推論環境",
+    "summary_zh": "Dify 是流行的無程式碼 AI 平台，但持續依賴雲端 API 會面臨成本高、機敏資料外洩與模型自訂受限等挑戰，自建 LLM 推論伺服器因此成為關鍵解方。本文詳細解說如何在 Azure GPU VM 上部署 vLLM，再讓 Dify 直接呼叫，形成兼顧效能與隱私的客製化推論服務。內容涵蓋環境準備、模型部署到 Dify 設定的完整流程，特別適合剛接觸 Dify 的用戶。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:9f97092e83fa50a9": {
+    "story_id": "fallback:9f97092e83fa50a9",
+    "title_zh": "在 Amazon Bedrock 上運行 MiniMax 模型",
+    "summary_zh": "本文帶您入門如何在 Amazon Bedrock 上使用 MiniMax 模型，並說明這些模型支援的能力、可選的服務層級、按需求推論如何自動擴展以應付工作負載，以及可用的多種存取 API。利用這些模型，客戶可以建構代理式應用、長上下文文件分析管道與軟體工程流程，且所有服務都建立在 AWS 提供的安全與營運保障之上。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7186b37b47396339": {
+    "story_id": "fallback:7186b37b47396339",
+    "title_zh": "使用 Amazon Nova 自動遮蔽圖像中的個人身份資訊",
+    "summary_zh": "本文提出一個由 Amazon Nova 引導的多步驟管道，利用其情境視覺推理能力統籌多種輔助工具，包括部署在 Amazon SageMaker AI 上的 Meta 開源 Segment Anything Model (SAM 3) 進行像素級分割，以及 Amazon Textract 執行光學字元辨識。此設計旨在對指紋、身份證或任意方向的車牌等難處理的邊角案例，也能達成全面且合規的 PII 遮蔽，確保隱私保護的強韌性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ef433d355d0dc7e9": {
+    "story_id": "fallback:ef433d355d0dc7e9",
+    "title_zh": "將基準測試與推薦結果串流至 MLflow 並整合 Amazon SageMaker AI",
+    "summary_zh": "本文說明如何利用 Amazon SageMaker AI 新推出的 MLflow 整合功能，將最佳化推論推薦任務與基準測試任務的實驗數據自動串流至統一的追蹤介面。此整合可即時將度量指標、參數與圖表發送到無伺服器的 Amazon SageMaker MLflow App，提供端到端的實驗追蹤體驗。使用者能夠無縫監控模型效能，並在 MLflow 中集中管理所有 SageMaker 推理實驗的產出，有助於加速模型選擇與部署流程。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:9955f52adc345a89": {
+    "story_id": "fallback:9955f52adc345a89",
+    "title_zh": "只需移動看板票卡就能全自動編碼 — Loop Engineering 的具體實作公開",
+    "summary_zh": "作者釋出了名為 baton 的開源工具，只要將 Notion 或 GitHub Issues 上的任務票移至「進行中」，本地端的編碼代理就會自動開始實作、建立 Pull Request、監控 CI 狀態、回應審查意見，甚至偵測合併完成，實現全自動開發迴圈。此專案旨在讓開發者只需專注於看板管理，無需手動介入編碼與部署流程。相較於近期眾多 Loop Engineering 的抽象討論，這份實作具體展示了如何將代理驅動的自動化融入日常開發工作，為追求高效率的團隊提供了可立即部署的參考方案。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ac72bbbcffa2c7e4": {
+    "story_id": "fallback:ac72bbbcffa2c7e4",
+    "title_zh": "讓 AI 持續寫日記後，另一個 AI 讀完卻誤以為自己是日記的作者",
+    "summary_zh": "作者讓 Claude 每天自動撰寫用於延續跨會話記憶的日記，並公開在部落格上。隨後將整個部落格內容作為來源提供給 NotebookLM（底層為 Gemini），結果 Gemini 在未經任何提示的情況下，自行認定那些日記是由它所撰寫。這個意外現象顯示，當大型語言模型吸收另一個模型的連續性輸出時，可能因內容一致性而產生自我歸屬的錯覺。此案例引發對 AI 身分認同與訓練資料交互作用的討論，也突顯了在代理與記憶延伸設計上需要謹慎處理語境歸屬問題。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:8eb0321d84f59d30": {
+    "story_id": "fallback:8eb0321d84f59d30",
+    "title_zh": "在 Mac 上實測 OneCompression #1：CPU 與 MPS 效能比較",
+    "summary_zh": "本文針對富士通研究所開發的量化框架 OneCompression (OneComp) 在 Apple Silicon Mac 上的表現進行初步測試。此框架現已支援 Metal Performance Shaders (MPS) 加速，作者比較了純 CPU 與 MPS 後端在不同模型量化工作負載下的效能差異。測試結果可幫助開發者在 Mac 環境中選擇合適的推理加速方案，也驗證了 OneCompression 在消費級硬體上進行高效模型壓縮的可行性，對邊緣部署提供了實用參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4d703b2c71b5cc8a": {
+    "story_id": "fallback:4d703b2c71b5cc8a",
+    "title_zh": "受託開發現場的生成式 AI 活用現狀：2026 上半年 AgentSkills 版",
+    "summary_zh": "本文為 2025 年版的續篇，聚焦受託開發團隊在 2026 上半年導入生成式 AI 的最新實踐，特別著重於 AgentSkills 這類代理工具的應用。作者從實際專案經驗出發，回顧過去半年間從個別開發者輔助轉向代理驅動流程的轉變，包括如何將程式碼生成、測試、審查等任務交由 AI 代理協作完成。文中可能探討了導入障礙、效益與團隊協作模式的調整，為想將大型語言模型整合進受託開發流程的組織提供了具體的現狀報告與展望。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:df4241686b517801": {
+    "story_id": "fallback:df4241686b517801",
+    "title_zh": "Claude Fable 5 究竟有多厲害？徹底調查其真正實力",
+    "summary_zh": "本文根據2026年7月5日 Anthropic 公告及多方評測，釐清 Claude Fable 5 的真實實力。針對社群中「怪物級」「壊れた」等誇大反應，以及輸出限制令停擺、秘密更換為 Opus 等傳聞，作者逐一驗證其程式碼生成、推理、多模態與創意任務的基準表現，量化相對 Sonnet 及 Opus 的實際提升幅度。文中揭露謠言根源，並提供務實的遷移建議，協助開發者理性判斷是否升級。最終，文章指出多數極端說法並無技術證據支持，Fable 5 雖在多項任務上顯著超越前代，但並未達到某些傳言中的「怪物」層級，呼籲理性看待 AI 進展。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7d7f574e6e1b0788": {
+    "story_id": "fallback:7d7f574e6e1b0788",
+    "title_zh": "AI 程式開發工具浮現「信任」裂痕",
+    "summary_zh": "2026年7月，阿里巴巴以「後門風險」為由內部禁用 Claude Code，引發業界對 AI 程式開發工具安全性的質疑。雖然目前尚無技術報告證實該疑慮，但此舉已加劇開發者對代碼生成模型的信賴危機。文章探討這究竟是單一企業的防範措施，還是整個行業即將面臨的信任轉折點，並提醒在快速採用的同時，安全審查不可忽視。事件凸顯了 AI 開發工具鏈中潛藏的供應鏈風險，也迫使開發者重新審視使用第三方 AI 工具的資安政策。文章進一步討論如何在不扼殺創新的情況下建立驗證機制，確保程式碼生成結果的可信性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:14a3f512cf65de58": {
+    "story_id": "fallback:14a3f512cf65de58",
+    "title_zh": "與 Claude Fable 搭檔一週後，讓它重新評價我自己",
+    "summary_zh": "作者趁 Claude Fable 5 限時開放的機會，與其緊密合作一週打磨自製的跨平台 UI 框架 JsonUI。工作結束後，他讓模型為自己及專案進行評價，並將結果與七個月前請 Claude Sonnet 4.5 所做的相同評估對比。本文記錄了這場人機協作的實感，包括 Fable 5 在程式設計討論、重構建議與長期任務連貫性上的表現躍進，以及它對開發者成長的客觀反饋，展示 AI 作為工作夥伴的進化。由於 Fable 5 僅在 7 月 7 日前免費提供，作者傾力測試其協作極限，並以此回顧 JSON 生成等常見 LLM 弱點在實戰中的改善。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7232870cffa68c65": {
+    "story_id": "fallback:7232870cffa68c65",
+    "title_zh": "LLM 似乎不擅長 JSON 生成，於是我自製了一種更容易產生的中間語言",
+    "summary_zh": "作者發現其開發的 Editor4AI 工具在透過 MCP 呼叫時偶爾失敗，經調查後得知 LLM 對 JSON 等需嚴格對稱括弧與引號的格式生成較不穩定。為了提高可靠性，他設計了一種語法更寬鬆、更契合語言模型生成特性的中間語言。文中說明該語言的設計原則、與 JSON 的轉換機制，以及實際應用後大幅降低解析錯誤的成效，為強化 LLM 結構化輸出提供務實替代方案。此舉避免了頻繁的 MCP 調用失敗，並為資源受限或需要高可靠性的 Agent 場景提供了新思路。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:31c41a1067e95ebe": {
+    "story_id": "fallback:31c41a1067e95ebe",
+    "title_zh": "聊天型 AI 式微，代理型 AI 時代將至？",
+    "summary_zh": "企業內部 AI 應用正從傳統的問答式聊天轉向能自主完成任務的代理型系統。代理型 AI 不僅能回答問題，還可讀取檔案、操控工具、修改程式碼並重新生成成果，角色從「顧問」進化為「執行者」。文章指出，未來衡量 AI 價值的關鍵不再是使用人數，而是委派給 AI 的工作量與自動化程度，並探討這種轉變對工作流程與人力配置的深遠影響。這也意味著企業 AI 策略必須從工具部署提升到任務自動化規劃，以因應代理型 AI 帶來的效率革命。此趨勢將重新定義人機協作邊界，可能大幅減少以對話為中心的 AI 使用模式。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4d1ff6e58fcf03fe": {
+    "story_id": "fallback:4d1ff6e58fcf03fe",
+    "title_zh": "【AI 驅動開發 #2】組織中運轉 AI 驅動開發的方法論 — 獲取 MVP 的團隊開發「型」",
+    "summary_zh": "本文為「AI 驅動開發 實踐系列」第二篇，將先前驗證過的 spec 驅動開發模式，從個人情境導入團隊級協作，並以此獲取 MVP。文章回顧從 Vibe Coding 轉向 spec 驅動的決策脈絡，提出一套以明確規格書（spec）為核心的組織型開發方法。此「型」定義了團隊使用 AI 輔助時的輸入與輸出邊界，並透過標準化流程減少溝通誤差，讓多人高效共構產品。作者團隊最終在專案中成功交付 MVP，證明此模式的可複製性與實用價值，為嘗試規模化 AI 開發的組織提供了具體落地路徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:e4fbe2e2604db1fe": {
+    "story_id": "fallback:e4fbe2e2604db1fe",
+    "title_zh": "RAG 評估中不能只看「正確率」：即使距離近，答案也可能輕易出錯",
+    "summary_zh": "在實務運用 RAG 時，僅以最終回答的正確率或檢索文檔與問題的向量距離作為指標，往往忽略系統在複雜場景下的脆弱性。即使 LLM 成功接收外部知識，也可能因上下文斷裂或理解偏差，給出看似合理卻錯誤的答案，對合約、內部規程、Slack 對話等「活」資料尤甚。本文點出此評估盲點，強調必須引入涵蓋忠實度、相關性與一致性等多維度評測，才能真實反映 RAG 系統的可靠程度。對正在導入 RAG 的企業而言，這攸關能否在生產環境交付可信的 AI 輔助。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:845c163565b69589": {
+    "story_id": "fallback:845c163565b69589",
+    "title_zh": "最近常聽到的「Harness」，正是半年前我稱之為「Rail」的東西",
+    "summary_zh": "近期頻繁出現的「Harness」或「Harness Engineering」概念，實則與作者半年前提出的「Rail」思維相通。其核心論點是，AI 模型週邊的腳手架——包含工具、環境約束、驗證循環等——才是決定實際成效的關鍵，而非模型本身。Claude Code 這類程式代理即為一種 Harness，相同模型在高品質腳手架加持下，產出可能天差地別。本文回顧此概念的演變，並闡明設計優秀的 Harness 已成為 AI 應用落地的策略重心，組織應將投資從模型微調轉向腳手架建構，以充分釋放既有模型的潛力。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0052f2863506e3ef": {
+    "story_id": "fallback:0052f2863506e3ef",
+    "title_zh": "以 AI 評分挑選的本週 GitHub 注目儲存庫 Top 10（2026-07-06 週）",
+    "summary_zh": "本文使用 Claude API 的七維度評分（新穎性、成長速度、實用性等）對 GitHub 本週 AI 相關專案進行排名，選出前十大最受關注的開源儲存庫。金融領域的 AI 應用本週格外活躍，由「cortex-sentinel-trading-nexus」以最高分奪冠。排名結合客觀演算與多面向評估，不只反映表面熱度，更試圖捕捉潛在的技術突破。這份清單讓開發者能快速掌握 AI 開源生態脈動，並篩選出值得深度研究的專案，也展現了 LLM 在趨勢分析上的輔助價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b76a84babe61e386": {
+    "story_id": "fallback:b76a84babe61e386",
+    "title_zh": "告別屬人化確認｜以 Dify 打造的通知文案輔助 Bot【試運轉篇：團隊試用並驗證是否能運用於業務】",
+    "summary_zh": "本系列介紹利用 Dify 建置「通知文案輔助 Bot」的過程，旨在打破確認作業的屬人化瓶頸。前篇已完成 Bot 基礎架構，並將公司內規納入 prompt，使 Bot 能產出符合規範的文案初稿。本次試運轉階段將 Bot 導入團隊實測，驗證其是否能真正融入日常工作流程，減輕特定人員的負擔並維持品質。透過實際應用測試，團隊能評估該 Bot 在業務場景的可行性，這類將內部知識嵌入 AI 助理的做法，也降低因人員流動造成的知識斷層風險。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:google/diffusiongemma-26b-a4b-it": {
+    "story_id": "hf:google/diffusiongemma-26b-a4b-it",
+    "title_zh": "google/diffusiongemma-26B-A4B-it",
+    "summary_zh": "隨著大規模生成模型在實務部署中面臨速度與成本的挑戰，DiffusionGemma 標誌著一種非自回歸生成路徑的重要嘗試，有望降低推理延遲並拓展生成式 AI 的應用範疇。DiffusionGemma 是 Google DeepMind 基於 26B 參數 A4B Mixture-of-Experts (MoE) Gemma 4 架構所開發的生成模型，其最大突破在於採用離散擴散來生成 token，而非傳統自回歸方式。該模型為開放權重，具備多模態能力，能同時處理文字、圖像和影片輸入，並生成文字輸出。得益於 MoE 設計，每次推理僅激活部分專家，在維持總參數量 26B 的同時，實際計算量接近 4B，從而大幅提升每秒 token 生成速度，並可靈活部署於不同硬體環境。DiffusionGemma 將 Gemma 4 的架構優勢進一步拓展，引入了離散文字擴散技術，把逐 token 的自回歸生成轉變為 block-autoregressive 多畫布取樣，可並行進行多條生成路徑的探索。這種方法不僅加快了推理，也為生成文本的多樣性與品質帶來新的可能。該模型已於 Hugging Face 發布並採用 Apache 2.0 授權，方便社群使用與研究。透過融合離散擴散與 MoE，DiffusionGemma 為高效能文字生成樹立了新標竿。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
