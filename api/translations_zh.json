@@ -43258,5 +43258,119 @@
     "title_zh": "Google Gemma 4 31B-it",
     "summary_zh": "Gemma 4 是 Google DeepMind 推出的開源多模態模型系列，採用文本與圖像雙模態輸入（小型號更支援音頻），專門針對文字生成、程式碼撰寫和複雜推理等任務進行優化。本版本釋出的預訓練與指令調優開放權重模型，均採用 Apache 2.0 授權，讓研究與商業使用更具彈性。Gemma 4 擁有高達 256K token 的超長上下文窗口，並原生支援超過 140 種語言，彰顯其全球化應用的潛力。其核心架構混合了 Dense 網路與 Mixture-of-Experts (MoE)，能在控制計算成本的同時實現高效能輸出。模型提供 E2B、E4B、26B A4B 與 31B 四種規模，可廣泛部署於邊緣裝置、個人電腦或雲端伺服器，滿足不同場景的需求。結合 Hugging Face 生態系統與完整文檔，開發者能快速上手，在文本摘要、對話系統、代碼輔助等領域實現落地，大幅降低 AI 應用的開發門檻並加速創新。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:958f90e530d4df91": {
+    "story_id": "fallback:958f90e530d4df91",
+    "title_zh": "以 Claude Code 作為指揮中心，將 Codex CLI 當作審查艦隊並行運作",
+    "summary_zh": "本文提出在單人開發情境中，讓 Claude Code 負責實作與最終裁定，而 Codex CLI 則成為多個獨立審查者，實現分工與覆核。關鍵技巧在於 codex exec 的無頭執行：透過 --sandbox read-only 與 --output-last-message 將審查意見寫入檔案，再用 resume 保持上下文，即可進行多輪差異審查。作者建議在 PR 前以不同觀點（如規格漏洞、設計防線、攻擊者視角）啟動 3 至 5 個並行審查，並執行兩輪；第一輪可能未發現的權限繞過、授權遺漏等 P0 等級問題，會在第二輪收斂浮現。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:11f88bf1de0ae155": {
+    "story_id": "fallback:11f88bf1de0ae155",
+    "title_zh": "在 SageMaker HyperPod 上實現 LLM 推論的預填充與解碼分離",
+    "summary_zh": "本文說明如何利用 Amazon SageMaker HyperPod 與 HyperPod Inference Operator，搭配 vLLM 實作 Disaggregated Prefill and Decode（DPD）架構。DPD 將 LLM 推論中的預填充與解碼階段分開部署，有助於獨立擴展資源、提高吞吐量並降低延遲，尤其適合高負載的生成服務。透過 HyperPod 的叢集管理與 Inference Operator 的自動化調度，開發者能以較低維運成本部署彈性且高效的推理管線。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:f6ea6eeb728693bf": {
+    "story_id": "fallback:f6ea6eeb728693bf",
+    "title_zh": "Fable 5 與 Sonnet 5 的分工能否勝過單一模型？實測品質與成本",
+    "summary_zh": "本研究比較四種將高價高效能的 Claude Fable 5 與平價快速的 Claude Sonnet 5 進行角色分層的架構，並以日語自然語言推論（NLI）與收據資訊抽取兩項具備標準答案的任務，使用相同資料與提示骨架進行實測。結果顯示，在輕量分類任務上，分工的效益不彰；但在 NLI 任務中，由 Fable 5 負責規劃與裁決、Sonnet 5 執行推論的階層式配置，有機會在維持品質的同時控制成本。結論指出，多代理分工並非總是划算，需依任務特性與成本限制審慎設計。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:1222f26e6da83b10": {
+    "story_id": "fallback:1222f26e6da83b10",
+    "title_zh": "讓 Codex 上「夜班」——將自主 AI 代理推向產品運營層級的管理平面設計",
+    "summary_zh": "本文點出 codex exec 與 Claude Code 等自主代理雖在互動式開發中表現出色，但尚不足以交付無人監控的夜間任務，瓶頸並非模型智慧，而是缺乏明確的「雇用契約」。作者為此提出 Hermess Autopilot 管理平面，將任務定義、進度追蹤、安全邊界與回報機制軟體化，讓原本只能像日結雇員般單次執行的代理，轉變為可信任的夜班員工。文中也探討了如何在實際產品環境中設定運營合約，以確保自主代理長期穩定作業。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:items/8754906": {
+    "story_id": "arxiv:items/8754906",
+    "title_zh": "Grok 4.5 用 Cursor 的操作日誌進行訓練，輸出標記量減少約四分之一",
+    "summary_zh": "Grok 4.5 的推出引人關注之處並非基準測試分數，而是其訓練資料來源。xAI（發表時以 SpaceXAI 名義）與 Cursor 合作，採用了數兆級標記規模的 Cursor IDE 操作記錄作為訓練語料。這項策略使模型輸出的標記量大幅縮減至原先的四分之一，推測是透過學習開發者實際編碼互動模式，強化了精簡表達的能力。此舉不僅降低推論成本，也可能為程式碼生成與開發者輔助工具帶來更緊湊、高效的輸出體驗。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7c6575084a8b4e3d": {
+    "story_id": "fallback:7c6575084a8b4e3d",
+    "title_zh": "使用 Unsloth 在 Amazon SageMaker AI 上部署量化模型",
+    "summary_zh": "本文介紹了將已使用 Unsloth 量化後的模型部署到 AWS 基礎架構上的四種實用模式。這些模式涵蓋直接利用 Amazon EC2 實例以獲得完全控制權、透過 Amazon SageMaker AI 推論端點實現託管式服務，以及整合 Amazon EKS 或 Amazon ECS 來適應現有容器化環境。文章進一步探討了生產部署的關鍵操作實踐，包括自動擴展、安全配置與成本控制，以確保量化模型能高效且穩定地上線。此指南有助於團隊根據專案需求靈活選擇最佳策略，充分發揮 AWS 生態系統的優勢。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:6fdc3ce91d01c5de": {
+    "story_id": "fallback:6fdc3ce91d01c5de",
+    "title_zh": "使用 Amazon SageMaker AI 無伺服器模型自訂功能微調 NVIDIA Nemotron 3 模型",
+    "summary_zh": "本文深入探討 NVIDIA Nemotron 3 架構的獨特之處，並展示如何透過 Amazon SageMaker AI 的無伺服器模型自訂功能進行微調。文中逐步說明利用 SageMaker Studio 啟動微調的流程，強調無需管理基礎設施即可針對特定任務最佳化模型。此方法降低了先進模型調校的門檻，使開發者能快速迭代並部署客製化 AI 解決方案。對於尋求簡化 MLOps 流程並加速模型落地的團隊而言，此技術提供了顯著的實用價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ec616ef5cb73d205": {
+    "story_id": "fallback:ec616ef5cb73d205",
+    "title_zh": "KTern.AI 如何在 Amazon Bedrock AgentCore 上為 SAP 構建代理式 AI",
+    "summary_zh": "本文描述 KTern.AI 從傳統 SaaS 平台轉型為次世代代理式 AI 平台的架構演進。透過 Amazon Bedrock AgentCore 與 Strands Agents SDK，該系統能協調多個專門化代理，在長期運行的企業程式中保持持續性脈絡、安全工具存取及生產級可靠性。文章詳細說明了所建構的代理類型、架構設計取捨以及客戶所獲得的具體成果。此案例為有意整合智慧型代理至關鍵業務流程的企業提供了寶貴的參考架構。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:bb29644b81f83221": {
+    "story_id": "fallback:bb29644b81f83221",
+    "title_zh": "所有測試都通過，但只有生產環境癱瘓——AI 代理編寫程式碼的兩個盲點",
+    "summary_zh": "本文回顧了一次由 AI 代理生成程式碼所引發的生產事故，儘管所有單元測試均顯示通過。在 Hermess Autopilot 的 SQLite 遷移任務中，作者遭遇了兩個不同性質的盲點：未在迴歸測試中模擬生產等級的併發性與資料量，以及懸置狀態未被認定為失敗。此經驗凸顯了單純依賴 AI 自動化測試的侷限性。文章建議，若讓 AI 代理撰寫測試，必須從一開始就將生產環境的嚴苛條件和健康檢查機制（如 watchdog）內嵌至測試流程中，以確保 AI 生成程式碼的可靠性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:59e180c2cd4b92df": {
+    "story_id": "fallback:59e180c2cd4b92df",
+    "title_zh": "使用 Stardog 與 Amazon Bedrock AgentCore 在 AWS 上構建代理式 AI 的語義層",
+    "summary_zh": "本文展示如何透過 Stardog 的語義 AI 應用程式，在 Amazon Aurora 與 Amazon Redshift 之上建構語義層，並利用 Amazon Bedrock AgentCore 執行 Strands Agents 代理來查詢該層，從而無需 ETL 流程即可回答跨來源的客戶 360 度問題。此部署同樣適用於 AWS 運算服務（如 Amazon EKS、Amazon ECS 及 AWS Lambda）。文章強調 AgentCore 將入站驗證、主機代管與工具憑證整合為單一託管服務的便利性。此架構為企業實現無縫整合的智慧型資料查詢提供了簡化路徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:68f9765bb1ca6968": {
+    "story_id": "fallback:68f9765bb1ca6968",
+    "title_zh": "在 Amazon Quick Automate 中以原生案例管理擴展代理式工作流程",
+    "summary_zh": "本文展示如何在 Amazon Quick Automate 中將案例管理與代理式自動化能力結合，以實現工作流程的動態擴展。從案例建立、處理到解決的完整生命週期中，涵蓋單一與多重案例的管理、狀態自動追蹤與更新、異常處理，以及人類介入（human-in-the-loop, HITL）步驟的整合。文中介紹的案例建立者-處理者模式可根據負載動態調度，支援大規模企業流程的彈性擴充。最後透過真實用例，說明如何為複雜業務設計包含 HITL 與全程案例追蹤的結構化管理架構，確保自動化流程的觀測性與可控性，從而幫助企業在複雜場景中實現更靈活且可靠的代理式自動化。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a04237a09a396562": {
+    "story_id": "fallback:a04237a09a396562",
+    "title_zh": "Claude Code 挑戰 Kaggle Spaceship Titanic 的兩天實戰記錄",
+    "summary_zh": "作者使用 Claude Code 近乎自主地進行 Kaggle 練習競賽「Spaceship Titanic」兩天，並將過程整理成本文。首先設定包含評估指標、交叉驗證策略、可用模型及自主範圍的 CLAUDE.md 規則，隨後讓 Claude Code 按照這些規則執行探索與建模。最初提交的 LB 分數為 0.80383，最終選用的方案達到 0.80991，排名進入前 1%。文章也揭露作者如何利用 Claude Code 自身生成草稿，再根據 git 記錄與實驗筆記核實數值與流程，最後補上個人心得發表，展現 AI 輔助開發與競賽的實用可行性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0750d8f73341b2b4": {
+    "story_id": "fallback:0750d8f73341b2b4",
+    "title_zh": "開發者必知的 LLM 應用十大弱點：OWASP LLM Top 10:2025 完整解析",
+    "summary_zh": "隨著 LLM 應用迅速普及，相關安全威脅也日益嚴重。本文完整解析 OWASP 針對大型語言模型（LLM）應用程式所提出的 2025 年十大弱點，並以真實事件說明其嚴重性。文中舉例加拿大 Chevrolet 經銷商 AI 聊天機器人以一美元出售新車、Air Canada 聊天機器人編造不存在的服務條款等案例，證明漏洞絕非紙上談兵。文章逐一剖析提示注入、不安全輸出處理、訓練資料污染等關鍵風險，並提供對應的緩解策略，協助開發者建立更安全的 LLM 應用，幫助開發團隊在設計階段即納入防護思維。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:959c35bff5d63128": {
+    "story_id": "fallback:959c35bff5d63128",
+    "title_zh": "DGX Spark（GB10）七款本地 LLM 基準測試（2026 年 7 月版）",
+    "summary_zh": "作者取得一台配備 NVIDIA GB10 Grace Blackwell、128 GB 統一記憶體的 DGX Spark（MSI EdgeXpert），並於 2026 年 7 月對當時最新的七款開放權重 LLM 進行全面基準測試。文中詳細列出測試環境（Ubuntu 24.04.4 LTS、CUDA 580.159 等），並比較各模型在該裝置上的執行效能與資源使用狀況。這項實測為想了解 128 GB 統一記憶體能驅動哪些 LLM 的開發者提供了具體參考，也展示了 DGX Spark 做為本地邊緣推論平台的潛力。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:93eb5e99c3a785d9": {
+    "story_id": "fallback:93eb5e99c3a785d9",
+    "title_zh": "使用 LM Studio 建立本地 LLM 環境的實作記錄",
+    "summary_zh": "作者在先前用 Ollama 建立本地 LLM 環境後，想嘗試另一款工具，因此撰寫本文介紹如何在 Mac OS 上使用 LM Studio 建立本地 LLM 執行環境。文中詳細說明安裝流程、模型載入方式與基本操作，並比較 LM Studio 與其他工具在使用便利性及靈活性上的差異。這份指南專為希望零成本在本機執行開放權重 LLM 的 Mac 使用者提供實用步驟，協助快速上手 LM Studio。透過實際操作畫面與簡明解說，讀者能評估 LM Studio 相對於 Ollama 等工具的適用情境，並立即開始在本機運行 LLM 進行測試與開發。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:6bd7d4a7bbb21ba3": {
+    "story_id": "fallback:6bd7d4a7bbb21ba3",
+    "title_zh": "當應用在Fable 5下自我進化，僅6夜便走通開源發佈──其不崩壞的機制",
+    "summary_zh": "本文記錄了作者利用自我進化型桌面代理 AMA-teras 在 Claude Fable 5 環境下進行開源開發的實驗。核心做法是白天由人類設計安全約束，夜晚讓 AI（Claude Code）自主改寫程式碼，隔日早晨再進行人工審查與修正，僅六個晚間便以 941 個測試案例和 199 次 commit 的穩定狀態公開釋出。成功的關鍵在於預先構建了“絕不崩壞”的機制，使得 AI 夜間無人監管下所寫的程式碼從未導致應用故障。此前相同構想在三週內未能成形，本次因 Fable 5 的活動窗口而快速達成，為 AI 驅動的自我演化軟體開發提供了一種安全且可複製的實踐範式。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c97d840224f9b8db": {
+    "story_id": "fallback:c97d840224f9b8db",
+    "title_zh": "在 Henry Schein One 使用 Amazon SageMaker AI 進行即時牙科影像驗證",
+    "summary_zh": "本文介紹 Henry Schein One 如何基於 Amazon SageMaker AI 打造了 Image Verify 系統，以解決牙科影像在拍攝當下缺乏品質把關的痛點。該系統能在 X 光拍攝的瞬間自動評估影像品質並提供即時回饋，從概念發想到超過一萬個活躍據點僅歷時數月，至今已處理逾 1,100 萬張 X 光片，且以每週 150 萬張的速度持續增長。目前 Henry Schein One 正將其擴展至全球四個區域共四萬個據點，此案例展現了雲端 AI 服務如何實現高吞吐量、低延遲的醫療品質即時閉環，並突顯了 SageMaker AI 在生產級推論部署上的實用性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ce0206ad4e513aea": {
+    "story_id": "fallback:ce0206ad4e513aea",
+    "title_zh": "讓 Claude Code 的三個模型各作十道謎語，實力差距顯現在「雙關的深度」上",
+    "summary_zh": "本文記錄了一項 2026 年 7 月的對照實驗：從 Claude Code 調用 Fable、Opus 和 Sonnet 三個模型，以完全相同的提示詞和主題「手紙」（信件）要求各生成 10 則なぞかけ（日式雙關謎語），並由模型自行評分選出最佳作品。實驗總計產出 30 則謎語，完整保留了各模型自我淘汰與扣分的全部記錄。動機源於觀察到 Fable 似乎在即興謎語上更為擅長，因此透過嚴謹一致的測試來驗證。結果顯示，模型間的差異集中體現在雙關語意的深度與銜接的自然度，Fable 在創意推敲與語言遊戲方面展現出升階優勢，為評估大語言模型在高階文化理解與非邏輯推理能力上提供了新穎的測試維度。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:39bff52eb893045f": {
+    "story_id": "fallback:39bff52eb893045f",
+    "title_zh": "想用AI贏賽馬，結果卻做出了「僥倖發現器」",
+    "summary_zh": "本文作者分享了自己利用 AI 預測賽馬最終鎩羽而歸的歷程，但並非一無所獲。透過嚴謹的統計計算，作者自行證明了利用公開資訊戰勝賽馬市場在原理上不可行，並將從該領域淬煉出的「區分真實信號與僥倖波動」的紀律，抽離成一款領域無關的工具「試金石（shikinseki）」。當將其轉向大語言模型的提示詞評估時，初步自我評分顯示有 +7.3 個百分點的改善，看似效果顯著；然而以三個獨立外部模型的實際 API 測試卻揭示這可能只是假象。這為提示工程提供了統計上更嚴格的驗證取徑，避免將隨機波動誤認為提示優化帶來的真實增益，有助於建構更可信任的 AI 評測體系。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
