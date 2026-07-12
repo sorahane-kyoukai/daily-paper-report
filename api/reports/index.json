@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-05T12:33:55.355621+00:00",
+  "generated_at": "2026-07-12T08:56:28.252972+00:00",
   "latest": {
     "monthly": "2026-06",
-    "weekly": "2026-W27"
+    "weekly": "2026-W28"
   },
   "monthly": [
     {
@@ -46,6 +46,22 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 30,
+      "generated_at": "2026-07-12T08:56:01.723147+00:00",
+      "missing_dates": [
+        "2026-07-06",
+        "2026-07-09"
+      ],
+      "path": "api/reports/weekly/2026-W28.json",
+      "period_end": "2026-07-12",
+      "period_id": "2026-W28",
+      "period_start": "2026-07-06",
+      "recommendation_count": 100,
+      "report_type": "weekly",
+      "summary": "本期週報聚焦AI代理在長時程任務中的自主能力，核心研究涉及強化學習驅動的上下文壓縮、動態推理資源分配與遞歸自我改進，並探討推理模型的蒸餾瓶頸、驗證擴展與安全審計。技術實務方面則從工具設計權衡、成本控制到使用者模擬器偏差，提供了兼顧理論與落地的重要洞見。",
+      "title": "週報：代理強化學習與自我進化前沿"
+    },
     {
       "blog_recommendation_count": 30,
       "generated_at": "2026-07-05T12:33:10.261698+00:00",
