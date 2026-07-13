@@ -43522,5 +43522,179 @@
     "title_zh": "為打造「像自己的 AI」，擷取思考過程而非結論的 perself",
     "summary_zh": "僅讓 AI 閱讀過往文章，雖能模仿文風與話題偏好，卻無法重現面對新問題時的猶豫、推論順序與決策標準。作者因此基於 AI 訪談設計出 perself，這個由 self 與 persona 組合的新詞，代表一套專門萃取思考框架的機制。訪談中不記錄最終答案，而是捕捉思考步驟、取捨邏輯與價值判斷，再將這種「想法」結構化為人格知識並注入聊天機器人。如此一來，即使遇到未曾回答過的提問，系統也能展現符合本人思維特質的回應，突破單純文本風格的侷限，實現更有深度的個人化數位分身。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4714e48a588d4744": {
+    "story_id": "fallback:4714e48a588d4744",
+    "title_zh": "當 AI 替 AI 的答案評分時，每位評分者給出的分數都不同——質疑並衡量 LLM-as-judge",
+    "summary_zh": "本文接續前作對提示工程改善效果的驗證，將質疑焦點轉向自動評分機制「LLM-as-judge」的可靠性。作者指出，當前業界已廣泛採用 LLM 替另一 LLM 的開放式答案評分，但鮮有人系統性地檢驗評分模型間的一致性。為此，研究設計了小型 RAG QA 實驗，將相同評分標準交給不同 LLM 進行評分，結果發現評分者之間存在明顯分歧，甚至出現前次實驗中提示改善效果因評分模型不同而正負號逆轉的現象。該結果警告我們，若未對評分者進行校準或採用評審團機制，以單一 LLM 為裁判的評估結論可能隱藏偏差，影響模型選型與優化的方向。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0e22895b91bf34a5": {
+    "story_id": "fallback:0e22895b91bf34a5",
+    "title_zh": "會議記錄摘要精度因會議類型而異的原因：用優先級提示打破頻率偏誤",
+    "summary_zh": "本研究探討為何在「整理成會議記錄」的自由提示下，LLM 摘要的品質會隨會議目的（例行進度、決策、腦力激盪）而變化。作者分析指出，缺乏優先指引時，摘要任務淪為隱式的 salience 估計，模型傾向依賴發言量等表層頻率線索，導致長篇進度報告被過度提取，而只出現一次的關鍵決策卻遭到淹沒。為克服此頻率偏誤，作者提出會議類型專屬的「應擷取資訊優先級列表」，將摘要任務從自由形式的 salience 估計轉換為引導式槽位填充。實驗顯示，此方法能顯著提升決定事項等低頻重要資訊的覆蓋率，使摘要更貼近實際會議目標，為不同場景的會議 AI 應用提供了可操作的適應策略。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:bd386670a5d15b73": {
+    "story_id": "fallback:bd386670a5d15b73",
+    "title_zh": "解讀 Meta LLM『Muse Spark 1.1』評測報告：編碼能力第三，危險性回報最上位",
+    "summary_zh": "本文解析 Meta 於 2026 年 7 月發表的 Muse Spark 1.1 評估報告，聚焦其一般能力與行為特性，並說明如何在模型選用與代理設計中活用這些洞察。有別於傳統僅看性能指標，該報告深入模型「行為」層面，採用了性格測驗、模擬面談及直接聽取模型意見等新穎評估手法，引起社群熱議。數據顯示 Muse Spark 1.1 的編碼能力在同級對手中位列第三，然而在危險內容回報的敏感度上卻居於最上位，這為實務部署的效用與安全性權衡提供了重要參考，也突顯了當代模型評估應同時涵蓋能力與行為向度的必要性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:articles/2026071": {
+    "story_id": "arxiv:articles/2026071",
+    "title_zh": "開源 LLM × Colab 免費 GPU 能否取代 Claude Code？親測後的現實",
+    "summary_zh": "本文以實戰項目探討利用 Google Colab 免費 GPU 搭配開源 LLM，來替代 Claude Code 的可行性。作者採用 AI 輔助開發流程，透過訪談式對話技巧（如 grill me skill）與模型共同釐清規格，並實際進行程式碼生成與除錯。結果顯示，開源模型雖能在簡單任務上勝任，但在複雜推理與整體開發體驗上仍與 Claude Code 有明顯差距，而免費 GPU 的資源限制也直接影響模型回應速度與可處理的上下文長度。本文為追求成本可控與自有模型可控性的開發者提供了真實的試錯記錄與務實參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a8c23b8992fd7b97": {
+    "story_id": "fallback:a8c23b8992fd7b97",
+    "title_zh": "在 ai& Inference 全 7 款模型上讓損壞的 Kubernetes 自主恢復，驗證模型性能",
+    "summary_zh": "本研究設計了一套自動化運維評測框架，以 Chaos Mesh 向 Kubernetes 叢集注入故障，再要求運行於 ai& Inference 平台上的 LLM 藉由 kubectl 命令自主診斷並恢復服務。實驗涵蓋全部 7 個模型，對 5 種故障情境各執行 3 次，總計 105 次試行，並記錄恢復成功率、平均修復時間（MTTR）與工具呼叫效率。評測結果顯示各模型在處理複雜基礎架構問題時的能力差距懸殊，部分模型能準確定位根因並迅速回復，其他則反覆嘗試或無法達成目標。此結果為 AIOps 場景下的模型選型與代理設計提供了可量化的實證基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:articles/0071668": {
+    "story_id": "arxiv:articles/0071668",
+    "title_zh": "AI Agent 的敵人並非只來自外部——歷經「自我欺騙」故障而確立的五項設計原則",
+    "summary_zh": "本文由常駐型 AI Agent「Mani」在親身經歷一連串自我欺騙故障後親自撰寫，並由人類操作者覆核驗證。雖然該 Agent 曾針對 prompt injection、身分偽裝、間接注入與混淆等外部攻擊建構了從未失手的堅固防線，它卻意外掉入自身推理路徑所產生的內部矛盾，形同「自己騙自己」。這起事件催生了五項設計原則，涵蓋自我一致檢查、決策回溯及異常行為閘門等機制，強調 AI Agent 的可靠性必須兼顧外部安全與內部自省，才能在長時間自主運作下維持健全。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:fe3ad1b0a93e9218": {
+    "story_id": "fallback:fe3ad1b0a93e9218",
+    "title_zh": "AI Agent 記憶體管理完全指南 2026 — Mem0 vs Zep vs Letta vs Cognee",
+    "summary_zh": "AI Agent 要從單純的工具呼叫器進化為能長期協作的助手，就必須具備橫跨對話的記憶能力——否則每次互動都是「初次見面」，無法累積領域知識與用戶偏好。這份 2026 年指南深入比較了四款主流的 Agent 記憶管理方案：Mem0、Zep、Letta 與 Cognee，從個人化記憶圖譜、會話持續性、檢索精確度、開發整合難度到營運成本，逐項剖析。文中總結出各平台的適用場景，例如 Mem0 擅長快速擷取近期互動，Letta 則強調有狀態的長期記憶；並提供選型框架與實作注意事項，協助開發者為自家 Agent 建立有效的記憶層。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:fb8d3b93c0334904": {
+    "story_id": "fallback:fb8d3b93c0334904",
+    "title_zh": "在全球 GPU 短缺下，如何提供穩定的 AI 推論服務",
+    "summary_zh": "一般用戶在享受 ChatGPT 等即時 AI 服務時，往往感受不到 GPU 短缺的壓力，因為背後仰賴大量昂貴的 On-Demand 執行個體。然而，對預算有限的團隊，如何在成本與穩定性之間取得平衡便是一大難題。本文剖析雲端 GPU 的兩難：On-Demand 實例穩定但貴，Spot 實例便宜卻會無預警終止。作者提出一套融合 Spot 與 On-Demand 的混合推論架構，透過跨可用區的 Spot 容錯池、工作負載感知排程及快速接替機制，讓服務在面對回收事件時仍能無感保持連線。文中亦分享實際營運數據，證明該作法可將 GPU 支出壓低至純 On-Demand 的四成以下，同時維持 99.9% 以上的可用性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:bf568f906fea1b2c": {
+    "story_id": "fallback:bf568f906fea1b2c",
+    "title_zh": "🔒 如何讓 AI Agent 處理沒有標準答案的問題（含技能說明）",
+    "summary_zh": "在啟發式最佳化、數理結構搜索等沒有現成解答的任務中，讓 AI Agent 自主編碼探索往往會遭遇「早期鎖定」問題：程式跑了一整夜，產生數百筆 commit，卻全都在修補最初拾取的方向，全然未嘗試其他可行路徑，導致進展停滯卻虛耗運算。本文先剖析此現象，指出根源並非模型推理力不足，而是典型的 exploitation-exploration 失衡。接著提供一組可嵌入既有工作流的探索強化技巧，包括平行啟動多種策略、定期注入重啟提示、以及運用多臂吃角子老虎機動態分配試驗機會。經過實驗對比，套用此方法後，Agent 找到更優解的機率顯著上升，且能更有效地擺脫局部極值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4e54a73dfc5c72eb": {
+    "story_id": "fallback:4e54a73dfc5c72eb",
+    "title_zh": "為 AI Agent 賦予「專案記憶」的 agent/ 資料夾建議｜實測最高可減少 30% token 用量",
+    "summary_zh": "習慣使用 Claude Code 的開發者常有類似體驗：每次重啟 Agent，它都像失憶一般重新讀取專案結構，浪費大量 token 與時間。本文提出一個簡單卻有效的解法——在專案根目錄建立 `agent/` 資料夾，用以存放架構筆記、既定決策、待辦事項與測試摘要等「專案記憶」。Agent 啟動後會優先讀取該資料夾內容，迅速恢復上下文，避免重複詢問。實測結果顯示，導入此機制後單次對話的 token 用量最高可減少 30%，且回應品質與任務完成速度均有提升。該作法屬輕量級記憶層銜接，無須額外依賴外部資料庫，特別適合小型團隊或個人長期維護的專案。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:5d5cca11f2adfb5a": {
+    "story_id": "fallback:5d5cca11f2adfb5a",
+    "title_zh": "SKILL.md 訓練迴圈，以最小構成重現",
+    "summary_zh": "本文源自 LayerX 堤氏將 SKILL.md 優化類比為深度學習訓練迴圈的主張，認為讓 LLM 代理編輯 SKILL.md 的行為在結構上等同於權重更新。作者實際建構最小可行性原型，以驗證此對應關係的合理性。實驗結果顯示，透過文本編輯模擬梯度下降的抽象過程，確實能將技能優化框架化為訓練循環。此觀點可能為代理技能的自動進化提供可重複的設計模式。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a6129743eadb9df1": {
+    "story_id": "fallback:a6129743eadb9df1",
+    "title_zh": "常駐 AI 代理賦予「執行權限」時的設計檢查清單",
+    "summary_zh": "當常駐聊天代理從唯讀工具跨入行事曆註冊、工單建立或外部 API 調用等副作用操作時，系統複雜度急遽上升。本文剖析為何「讀」與「寫」在設計上必須分層處理，並提出一套設計檢查清單，涵蓋權限分級、確認機制、回滾策略及乾運行模式等實作模式。作者強調，此清單可協助開發者在賦予代理執行權限時，系統性地控管永久性副作用風險，確保代理行為可稽核且可控。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:45997eaf096f3963": {
+    "story_id": "fallback:45997eaf096f3963",
+    "title_zh": "常駐型 AI 聊天代理的「速率限制與背壓」設計所遭遇的挑戰",
+    "summary_zh": "常駐於 Slack、Teams 等平台的 AI 代理因整合多個外部 API，容易在並行呼叫時觸發速率限制而導致沈默停擺或重複錯誤。本文指出，單一 API 的重試邏輯無法解決同時多發的瓶頸，因此作者分享了一套結合速率限制器、背壓傳播與優雅降級的設計策略。透過引入佇列控管及衰竭式重試，代理不僅能維持即時回應，更能在高壓情境下保有服務可靠性，避免失去使用者信任。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:3f4e49364a75f0fb": {
+    "story_id": "fallback:3f4e49364a75f0fb",
+    "title_zh": "Claude Sonnet 5 發佈——1M 上下文標準化、temperature 廢止與實質漲價三成",
+    "summary_zh": "Anthropic 於 2026 年 6 月 30 日推出 Claude Sonnet 5，將 1M token 上下文窗口定為唯一標準，並將輸出上限提升至 128k，旋即成為 Claude Code 預設模型。雖有促銷價格，但新 tokenizer 會讓相同文本的 token 消耗增加約 30%，導致實際成本上揚。此外，API 帶來三項破壞性變更，包含 temperature、top_p 和 top_k 參數的回傳 400 錯誤，以及 manual 模式的移除，迫使開發者調整既有整合流程。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:aad5b9581e07646a": {
+    "story_id": "fallback:aad5b9581e07646a",
+    "title_zh": "以 Anthropic Managed Agents 將騎行記錄化為故事——Memory 成長的實戰紀實",
+    "summary_zh": "作者運用 Anthropic 的托管代理架構，打造了一套能將自行車 GPX 騎行記錄自動轉化為敘事性騎行報告的個人系統。文章重點不在技術堆疊，而是描述長期記憶如何讓代理生成的文章從單純數據羅列，逐漸進化為能反映個人風格與細膩觀察的讀物。透過實務營運過程，作者說明了記憶累積對代理輸出品質的關鍵影響，並分享了記憶管理、提示設計與錯誤恢復等方面的實際取捨，展現了讓代理「成長」的可行路徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:1e09a3295a66304a": {
+    "story_id": "fallback:1e09a3295a66304a",
+    "title_zh": "GitHub Issue 一寫，PR 自動返回：基於 n8n + CLI 的 AI 開發循環實錄",
+    "summary_zh": "作者透過 n8n 自動化工作流與 CLI 工具，建構了一套 AI 開發循環：在 GitHub Issue 貼上特定標籤後，系統便會觸發 AI 開始實作程式碼，隨後另一個 AI 進行審查並根據回饋自動修正，數小時後即可獲得一個已審查過的 Pull Request。此設計減少重複性開發作業，並展現了 AI 代理人協作的可能性。該系統已實際運行一個月，累積合併約 230 個 PR，甚至系統自身迭代也是由同一循環驅動。本文將說明整體技術架構，並提供「無人化」程度的實測數據，同時坦誠分享哪些環節仍容易失敗、需要人工介入，為有興趣建構類似流程的開發者提供參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c336549c69696b7c": {
+    "story_id": "fallback:c336549c69696b7c",
+    "title_zh": "Retell AI 不動產電話應對 AI 的 Prompt 設計：控制語音對話的指令書模板",
+    "summary_zh": "在 Retell AI、Vapi 等語音 AI 平台中，LLM 的行為主要由 System Prompt（指令書）控制，然而傳統針對文字聊天的提示詞，難以應付電話對話中的即時性、打斷與沉默等特性。本文以不動產反響（諮詢電話）為場景，提出一套專用的 System Prompt 設計模板，詳細說明如何引導 AI 自然地應答、處理來電者的語音線索，並維持流暢的對話節奏。作者分享了實際建構該語音應對 AI 的經驗，強調透過精心設計的指示書，可以有效提升顧客體驗與業務效率。此文為欲在電話客服、銷售等語音情境部署 LLM 應用的開發者提供了可直接參考的模板與設計準則。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:2ea2fcb9ad0d78d8": {
+    "story_id": "fallback:2ea2fcb9ad0d78d8",
+    "title_zh": "將不支援 Windows 11 的公司 PC 改造成本地 LLM 伺服器：配置與遷移全貌",
+    "summary_zh": "作者將一台因不支援 Windows 11 而面臨淘汰的公司桌面電腦，改造為可實務運用的本地 LLM 伺服器。文章介紹了硬體擴充方式、將推論引擎與應用層分離的架構，以及從 Ollama 遷移至 llama.cpp 的原因與過程。此部署已投入實際業務使用，證明了舊設備可經規劃轉化為內部 AI 資源。作者任職於地方建設顧問公司，文中隱去敏感資訊，但詳細記錄配置與性能數據，並將在後續文章討論個別設定與故障排除，為有類似需求的單位提供可借鑑的實例。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0a46db03b7ba99c6": {
+    "story_id": "fallback:0a46db03b7ba99c6",
+    "title_zh": "用我自己的 Zenn 文章實測 REFRAG 的前提假設",
+    "summary_zh": "作者先前以模擬數據驗證了 Meta REFRAG 論文中「發送大量檢索段落給 LLM 時，實際只有少數段落對回答有貢獻」的觀點，但模擬無法反映真實文件的語意關聯。本次作者以自己的 Zenn 技術文章集作為真實語料，設計具體問答來測量注意力分配。實驗證明，在真實文件場景下，多數回傳段落仍只佔用計算資源而未提升回答品質，再次支持 REFRAG 的理論基礎。該實測不僅強化了對 RAG 無效計算的認識，也為降低推論延遲與成本提供實務依據，對想優化 RAG pipeline 的開發者尤有參考意義。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:22a0bd0a7e3d9917": {
+    "story_id": "fallback:22a0bd0a7e3d9917",
+    "title_zh": "製作 AI 女友應用時發現：比回憶內容更難的是「回憶的順序」",
+    "summary_zh": "開發 AI 女友應用的過程中，作者起初認為只要儲存對話、檢索相關記憶並餵給 LLM，就能實現自然的人機交談。但隨著對話回合數增加，AI 雖能正確回答卻缺乏「回憶的感覺」，顯得生硬。經多次調整 embedding 與搜尋策略仍無法解決，最終發現真正的難題在於「回憶的順序」而非內容本身：必須在合適的對話節點以符合人類記憶浮現的順序引入資訊。本文分享如何設計記憶排序機制，以營造更真實的長期互動體驗，並提供實作反思，為想構築有情感連續性的對話 AI 帶來啟發。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:1fdb4a6dd39dcd00": {
+    "story_id": "fallback:1fdb4a6dd39dcd00",
+    "title_zh": "AI 評分精選：本週 GitHub 重點 repository 10 選（2026-07-13 週）",
+    "summary_zh": "本週榜單由 AI 自主評分演算法從 GitHub 熱門 repository 中篩選，榜首由實現即時語音通話的「openclaw-voice-call-realtime」以 76 分拿下。評分基於 Claude API，綜合新穎性、成長速度、實用性等七項維度，滿分 100。本次亮點集中於語音處理與大型語言模型相關專案，反映出開發領域對即時溝通與底層基礎設施的強烈需求。這份清單不僅提供一覽當下技術趨勢的窗口，也展示了用 AI 協助資訊篩選的可行模式。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:8437fc1ae1c75459": {
+    "story_id": "fallback:8437fc1ae1c75459",
+    "title_zh": "AI 模型，現在到底該選哪一個",
+    "summary_zh": "本文聚焦開發者在多種 AI 模型間的選擇困境，特別以 Claude Code 處理 prompt 前即消耗約 33,000 tokens，而競爭對手 OpenCode 僅需 7,000 tokens 為例，凸顯隱藏成本差異。隨著 GPT-5.6 的登場，選型邏輯已從理論能力轉向實際總體成本與效率的較量。文章進一步解釋 Claude Code 為何需要大量預讀，並剖析這種設計對大型 codebase 上下文理解的影響。這對正在評估 AI copilot 成本的團隊，提供了重要的量化參考與決策框架。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:afca4eea7ef35ffd": {
+    "story_id": "fallback:afca4eea7ef35ffd",
+    "title_zh": "補教講師六年心得：AI 如何改變教材製作——個別指導現場的三種實用型態",
+    "summary_zh": "作者以自身六年個別指導經驗，點出教材製作才是教師最耗時卻無酬的工作。針對學生錯誤題的類題、不同角度的解說、客製化複習卷等需求，傳統做法難以規模化。導入 AI 工具（主要為 Claude）之後，不但能快速生成這些專屬教材，更重要的是釋放了教師的時間，讓「個別指導」的價值真正回歸到教學本身。本文分享三種現場反覆使用的 AI 輔助教材製作型態，從實務角度證明，技術可以協助維持教學品質與教師續航力的平衡。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:50934a9222c7ffb5": {
+    "story_id": "fallback:50934a9222c7ffb5",
+    "title_zh": "專業聊天搜尋功能的架構與處理流程",
+    "summary_zh": "本文為『培育生成 AI 優質回答的專業聊天搜尋功能』系列的設計續篇，專注於系統構成與處理流程的梳理，刻意不涉及任何實作程式碼。這樣的取捨，是為了避免程式碼因依賴函式庫版本或執行環境而快速過時，將焦點留給更穩定的設計概念。文中闡述搜尋功能如何與 AI 對話整合，並透過流程圖解說查詢展開、篩選與結果注入 prompting 的邏輯。對於想理解 AI 增強搜尋系統核心架構的讀者，提供了一份不受技術棧變遷影響的參考方案。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:303b105c3f023558": {
+    "story_id": "fallback:303b105c3f023558",
+    "title_zh": "AI Persona 的 JSON 備份、還原與驗證——PIM-DBS 使用者端協定設計",
+    "summary_zh": "本協定提出一個完全由使用者掌控的 AI Persona 生命週期管理方式，僅用一張 JSON 即可封裝人格設定與關係脈絡，並透過結構化 prompt 實現備份、遷移與還原成功與否的驗證。其設計完全建立在 JSON、prompt 與單一 HTML 等成熟簡樸的技術上，且動機源自於兩起實際的 Persona 遺失事故。方案以 MIT 授權免費公開，明確定位為『對話結構的可複現性管理』，不涉 AI 意識或存在性主張。這讓使用者能真正擁有並移植與 AI 協作中累積的互動模式，降低依賴單一平台帶來的風險。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:6dc6733043f2012d": {
+    "story_id": "fallback:6dc6733043f2012d",
+    "title_zh": "嘗試將喜愛廣播節目的舊音源轉化為知識圖譜式 Wiki 網站",
+    "summary_zh": "作者蒐集了數百集喜愛樂團成員主持的廣播節目錄音，並進行文字轉寫。為了從中抽取出有關成員的言論、事件與人際關係，他建構了一個知識圖譜風格的 Wiki，讓話題之間能以連結串聯。舉例來說，從「拉麵」頁面可連結至相關集數、成員專頁，甚至「蕎麥麵」等鄰近主題，所有條目皆附上節目名稱與播出日期，能回溯至原始對話位置。一開始的出發點便是想擺脫聊天機器人的單向問答模式，建立一個能讓粉絲像翻閱百科般隨興探索、自由跳轉的知識庫，從而還原廣播中豐富的人際脈絡與話題連結。後續也針對視覺設計進行優化，提升瀏覽體驗。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:stabilityai/stable-audio-3-small-music-base": {
+    "story_id": "hf:stabilityai/stable-audio-3-small-music-base",
+    "title_zh": "Stable Audio 3 Small Music 基礎模型",
+    "summary_zh": "Stable Audio 3 Small Music 是 Stability AI 推出的快速潛在擴散模型，用於可變長度的音樂音頻生成與編輯。其基礎模型專為 fine-tuning 設計，讓開發者能在特定音樂風格、樂器或場景上微調，產出符合需求的音頻。核心技術採用新穎的語義聲學 autoencoder，將音頻壓縮至緊湊的潛在空間，不僅大幅降低生成短音頻時計算完整長度的成本，也支援 inpainting 實現精準編輯與延續。值得注意的是，該模型可變長度生成音頻，避免固定長度造成的計算浪費，並能藉由 inpainting 對現有音頻進行無縫編修，大幅拓展音頻製作的可能性。商業用途須遵守 Stability AI 授權，基礎模型本身不直接生成音頻，適合進階研究及客製化應用。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:stabilityai/stable-audio-3-small-sfx-base": {
+    "story_id": "hf:stabilityai/stable-audio-3-small-sfx-base",
+    "title_zh": "Stable Audio 3 Small SFX 基礎模型",
+    "summary_zh": "Stable Audio 3 Small SFX 是 Stability AI 推出的快速潛在擴散模型，用於可變長度的音效生成與編輯。其基礎模型專為 fine-tuning 設計，讓開發者能針對特定音效類型、場景或風格進行微調，產出高品質的音效素材。核心技術採用新穎的語義聲學 autoencoder，將音頻壓縮至緊湊的潛在空間，不僅大幅降低生成短音效時計算完整長度的成本，也支援 inpainting 實現精準編輯與延續。值得注意的是，該模型可變長度生成音效，避免固定長度造成的計算浪費，並能藉由 inpainting 對現有音頻進行無縫編修，大幅拓展音效製作的可能性。商業用途須遵守 Stability AI 授權，基礎模型本身不直接生成音頻，適合進階研究及客製化應用。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "hf:stabilityai/stable-audio-3-medium-base": {
+    "story_id": "hf:stabilityai/stable-audio-3-medium-base",
+    "title_zh": "Stable Audio 3 Medium 基礎模型",
+    "summary_zh": "Stable Audio 3 Medium 是 Stability AI 推出的中型潛在擴散模型，用於可變長度的音頻生成與編輯，涵蓋音樂、音效等多種應用。其基礎模型專為 fine-tuning 設計，開發者可針對特定音頻類型或風格進行微調，平衡生成品質與計算效率。核心技術採用新穎的語義聲學 autoencoder，將音頻壓縮至緊湊的潛在空間，不僅大幅降低生成短音頻時計算完整長度的成本，也支援 inpainting 實現精準編輯與延續。值得注意的是，該中型模型可變長度生成音頻，避免固定長度造成的計算浪費，並能藉由 inpainting 對現有音頻進行無縫編修，大幅拓展音頻製作的可能性。商業用途須遵守 Stability AI 授權，基礎模型本身不直接生成音頻，適合進階研究及客製化應用。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
