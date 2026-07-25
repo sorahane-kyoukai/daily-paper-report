@@ -48340,5 +48340,161 @@
     "title_zh": "微軟 Aurora 基礎模型",
     "summary_zh": "本倉庫釋出微軟開發的地球系統基礎模型 Aurora 之多版本權重，供學術與應用研究使用。Aurora 模型以大規模地球觀測數據進行預訓練，能夠融合大氣、海洋、陸地等多源異質資料，建構統一的時空表徵，並支援全球天氣預報、氣候模擬與極端事件辨識等多種下游任務。相關研究已發表於《Nature》，展示此基礎模型在跨越天氣至氣候尺度模擬上的強健泛化能力，為地球科學領域帶來整合且高效的框架。該成果有望推動極端天氣預警、氣候變遷預測等關鍵應用的發展，並透過開放權重促進跨學科合作。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:9684fd767908c3ae": {
+    "story_id": "fallback:9684fd767908c3ae",
+    "title_zh": "日文 token 減少，英文增加 38% — Claude 新 tokenizer 實測",
+    "summary_zh": "Anthropic 近期更新了 Claude 的 tokenizer，但並未詳細說明語言間的影響。實測發現，相較於 Claude Opus 4.7 之前版本，新 tokenizer 在處理日文時 token 數量明顯下降，英文文本卻可能增加最多 38%，整體變動幅度約在 1 至 1.35 倍之間。這項差異對 API 成本與長文處理流程有直接衝擊，開發者在估算用量時不能僅依過去經驗換算。該結果也反映出多語言 tokenizer 在壓縮效率上的取捨，值得在使用 Claude 系列模型時重新評估每種語言的經濟性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:e9e5d3bae440c8cf": {
+    "story_id": "fallback:e9e5d3bae440c8cf",
+    "title_zh": "在 Core ML 上以 128K 上下文執行 Gemma 4 12B",
+    "summary_zh": "本文記錄了將 Gemma 4 12B 模型完整部署於 Apple Silicon Mac 上的技術實作。作者在單一個 6.7 GB 的 Core ML bundle 中同時封裝了 32K 與 128K 兩種上下文長度的函式，可由 Hugging Face 直接下載執行。過程中於 Core ML 框架之上實現了 ring buffer KV 快取、zero‑copy 模式升階與 lossless speculative decoding，並以位元等級的一致性驗證確保推論精確度。在 M4 Max GPU 上使用 int4 精度解碼 32K 模式時，可達到每秒 11 個 token 的生成速度，為長文本本機運行提供了實用範本。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:06705abd216ce595": {
+    "story_id": "fallback:06705abd216ce595",
+    "title_zh": "使用 OpenAI Agents SDK 時應先確立權限設計的 7 個陷阱",
+    "summary_zh": "本文從 2026 年 AI／LLM 領域的趨勢切入，指出價值已從單一模型轉向如何整合與驅動 AI agent。針對 OpenAI Agents SDK 實作，作者歸納了七個常見的權限設計失誤，強調若未先建立嚴謹的權限邊界，將直接導致安全漏洞與不可預期的 agent 行為。文中引用了 OpenAI 及 Hugging Face 的相關報導，說明現階段應立即強化的安全對策，並建議將 Python 工具鏈全面遷移至 uv 以提升相依性管理與執行效率，為 agent 生產化部署打下更穩固的基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:f2cb82d36fce96f0": {
+    "story_id": "fallback:f2cb82d36fce96f0",
+    "title_zh": "從任務別 LLM 比較看「主力」模型更換的原因：評估軸的直交性",
+    "summary_zh": "作者透過實驗驗證，將同一模型用於不同任務時，若沿用原有的評估標準，效能可能顯著衰退。原因在於各任務（如週報摘要、郵件起草、提案架構）所需的最佳化維度（事實忠實度、文體自然度、結構完整性）之間相關性極低，幾乎彼此正交，導致在一個維度上表現最好的模型難以同時滿足另一任務。重新為每個任務定義專屬評估軸並重複三天的自動化評估後，模型排名發生了明顯反轉。這項發現挑戰了「固定單一主力模型」的常見作法，對多任務場景下的模型選擇策略具有重要參考價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7bcea603c9fdb03e": {
+    "story_id": "fallback:7bcea603c9fdb03e",
+    "title_zh": "在 AWS 上推出 Claude Opus 5：Anthropic 最強大的 Opus 模型",
+    "summary_zh": "Claude Opus 5 是 Anthropic 迄今能力最強的 Opus 系列模型，現已透過 Amazon Bedrock 提供服務。本文除了介紹 Opus 5 在推理與複雜任務表現上的全面升級，還特別針對 AI 工程師提供了將模型整合至 agentic 系統的實用指南，涵蓋工具使用、多步規劃與生產推論負載的最佳化。藉由 AWS 基礎設施的規模化與安全性，團隊可更快速地把 Claude Opus 5 部署到實際業務流程，充分發揮其高階認知能力。更詳細的實作說明可參考 Claude Platform on AWS 的官方文件。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:articles/2026072": {
+    "story_id": "arxiv:articles/2026072",
+    "title_zh": "從原始 jsonl 追蹤 Opus 4.8 的 thinking-only silent end_turn 行為",
+    "summary_zh": "作者在開發親子共用學校選擇地圖服務「manabi-map」時，意外觀察到 Opus 4.8 模型的 thinking-only silent end_turn 訊號。本文透過分析模型輸出的原始 jsonl 日誌，釐清該行為的觸發條件與序列模式。這項發現有助於理解大型語言模型在純思考模式下如何自主結束回合，並為相關應用的互動設計提供實證參考。目前服務已完成東日本 20 都道縣共 2,591 校，並正擴展至西日本 27 府縣。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:813533f905931f60": {
+    "story_id": "fallback:813533f905931f60",
+    "title_zh": "在 Amazon Bedrock 上開始使用 OpenAI GPT-5.6 Sol、Terra 與 Luna",
+    "summary_zh": "OpenAI GPT-5.6 Sol、Terra 與 Luna 模型現已正式在 Amazon Bedrock 上線。使用者可透過 bedrock-mantle 端點的 Responses API 執行推論，並利用提示快取降低運算成本。本文也介紹如何整合 OpenAI Codex 編碼代理，以及規劃配額與擴展策略。這些功能讓開發者能更方便地將最新 GPT-5.6 系列模型結合雲端基礎設施，平衡效能與費用。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:91eb04066e28ad3c": {
+    "story_id": "fallback:91eb04066e28ad3c",
+    "title_zh": "vLLM Neuron 插件 v0.21 更新詳解",
+    "summary_zh": "vLLM Neuron 插件 v0.21.0.1.0.0 於 2026 年 7 月以公開測試版發布，針對 AWS Trainium 推論堆疊進行重大架構調整。此版本移除了對專屬分散式訓練框架 NxD Inference 的依賴，改為以插件形式整合上游 vLLM，並將儲存庫歸入 vllm-project 官方組織。新架構將模型實作內嵌於插件中，未來則計畫以原生 PyTorch 基礎進行替換，此舉可望提升相容性與維護效率，是 Trainium 生態系的重要里程碑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c2e19298c9b765ac": {
+    "story_id": "fallback:c2e19298c9b765ac",
+    "title_zh": "本地 LLM study1-b：試跑 Hugging Face 原版 Gemma 4",
+    "summary_zh": "本文延續 study1 系列，直接載入 Hugging Face 上的 Gemma 4 原始權重，而非使用 Ollama 發行版。因應 Google 於 2026 年 7 月發表的改善（如 FA4 注意力機制與聊天模板修正）尚未被 Ollama 採用，作者透過 transformers 庫進行應用，並重現 study1 的四項任務比較。此研究展示了直接使用原版模型的優勢，並突顯及時跟進上游更新的重要性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c296ca42c00026bb": {
+    "story_id": "fallback:c296ca42c00026bb",
+    "title_zh": "LLM 安全掃描無需花費 — 以 15 分鐘批次設計運用 OpenAI Moderation",
+    "summary_zh": "檢查大型語言模型輸出是否含有有害內容，不一定需要付費的安全 SaaS 服務。OpenAI Moderation API 完全免費使用，本文提出一個 15 分鐘批次處理的設計方案，能有效率地進行初步篩檢。此方法簡潔且低成本，適合多種 LLM 應用場景的一次性安全掃描，大幅降低了部署安全防護的門檻，也節省了開發團隊的預算。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:d66971197595cb22": {
+    "story_id": "fallback:d66971197595cb22",
+    "title_zh": "AI 不再重複錯誤的開發環境 — Claude Code Skills × 迴圈工程（整體架構）",
+    "summary_zh": "許多開發者在使用 AI 編碼代理時，常遭遇模型重複違反專案規範，例如無視日期處理應採用 dayjs、按鈕缺乏雙重提交防護、或是介面色彩直接寫死而不用設計 Token。儘管模型本身能力出色，卻因無法記憶先前指正而屢犯相同錯誤。本文介紹一套基於 Claude Code Skills 與迴圈工程所打造的開發環境，能結構化記錄每一次的審查回饋，並在後續生成過程中自動套用這些規則，使 AI 代理真正「學到教訓」，實現零重複錯誤的自我演進。該方法不僅降低開發者來回溝通的成本，也讓程式碼品質逐步累積，對於長期維護的專案有顯著助益。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:55b2411e4aa8ee35": {
+    "story_id": "fallback:55b2411e4aa8ee35",
+    "title_zh": "從一張設計書到實作、審查、PR — 用 Claude Code 打造 Orchestrator Skill",
+    "summary_zh": "本文為「自我學習的開發環境」系列第二篇，延續前一篇不讓 AI 重複犯錯的整體架構，進一步展示如何基於 Claude Code 建構一個 Orchestrator Skill，實現從單一設計藍圖到完整實作、自動化程式碼審查與 Pull Request 的一條龍流程。作者詳述將設計書中的意圖轉換為開發任務、驅動 AI 代理產生程式碼，並搭配迴圈工程讓審查意見可持續累積與再利用。如此不僅大幅縮短設計到交付的週期，也讓團隊得以在高度自動化的環境中維持一致的程式碼品質與規範，對於敏捷開發具有極高的實用價值。整套工作流程的設計兼顧可重複性與擴展性，為 AI 輔助軟體工程提供了一個務實的範例。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:45acfc6c8cf6d43c": {
+    "story_id": "fallback:45acfc6c8cf6d43c",
+    "title_zh": "在 ChatGPT Desktop 上試用 Blender MCP",
+    "summary_zh": "文章首先介紹 Blender MCP 的安裝與設定步驟，包括在本地啟動 MCP 伺服器並將其註冊到 ChatGPT Desktop。接著，作者透過一系列具體指令，如「建立一個立方體並設定其材質為玻璃」、「添加一盞聚光燈並調整強度」，展示了 ChatGPT 即時控制 Blender 的能力。實測結果顯示，即使不熟悉 Blender 複雜介面的使用者，也能透過對話式指令迅速產出 3D 場景，大幅縮短從概念到視覺化的時間。此外，作者也探討了這種 MCP 架構在跨工具自動化中的應用前景，為 AI 驅動的數位內容創作提供了新的想像空間。文章並提及可能遭遇的權限與穩定性問題，以及如何透過 MCP 的標準化設計，讓不同 AI 模型與工具都能無縫接軌。這不僅為個人創作者開闢了嶄新的生產力途徑，也預示著未來軟體開發與內容生產將更緊密地與 AI 對話式介面整合。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:fa7e6838c33a4b70": {
+    "story_id": "fallback:fa7e6838c33a4b70",
+    "title_zh": "讓生成 AI 製作課金系統，卻發現相同漏洞被複製三次的案例",
+    "summary_zh": "作者構建了一個利用 Gemini 自動生成迷你 SaaS 應用的管道，只需一行想法即可在 1-2 分鐘內生成帶 Stripe 支付的單 HTML 應用。然而，在課金判定邏輯中，相同的安全漏洞（固定主密鑰）竟然在三個獨立生成的應用中重複出現，並且因提示寫法不當而模板化複製。文章詳細分析了該漏洞的成因與傳播機制，並反思了提示工程在程式碼安全性上的潛在風險，警示開發者在自動化生成管線中需格外注意安全審查。並建議在提示中加入安全約束與測試案例，以防止類似問題重演。作者也分享了修復後的安全檢查流程，讓生成程式碼更具魯棒性。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:5ca19308531d0db5": {
+    "story_id": "fallback:5ca19308531d0db5",
+    "title_zh": "使用 Dify × Gemini 3.6 Flash × GitHub API 在一小時內構建「使用者心理推測與行為預測 Agent」的故事",
+    "summary_zh": "本文示範如何在一小時內，透過結合 Dify 的無碼編排、Gemini 3.6 Flash 的高速推理與 GitHub API，打造一個能從用戶發言中推測心理狀態並預測行為的 Agent。作者首先點出 AI Native 開發因環境建置複雜而容易令人卻步，遂以低門檻的 Dify 工作流為基底，串接 Gemini 模型分析 GitHub 上的使用者互動足跡，從中提取意圖與情緒線索。實作證明，這種輕量整合不僅大幅縮短開發週期，也讓非技術背景者能快速構建具業務洞察力的預測模組，為客戶服務、行銷策略等領域提供了嶄新的資料驅動路徑。此外，文章也討論了如何調整 Dify 工作流的 Prompt 以提升推論準確度，並分享了實際測試的結果截圖。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:35a24fd7e29b357a": {
+    "story_id": "fallback:35a24fd7e29b357a",
+    "title_zh": "新增 llm-jp-4-kappa-32b-a3b-v0.1 (#695)",
+    "summary_zh": "本次更新將 Third Intelligence 基於 LLM-jp-4 32B-A3B (thinking) 進行事後學習的 Thinking 模型新增至 Scratch 學習模型／通用區域。由於其基礎為國產 Scratch 學習模型，故與 llm-jp-3-3.7b-instruct-EZO、Way-PLaMo-3-8b-chat 等模型同屬一個分區。模型卡未記載訓練文本，團隊從技術部落格提取了 SFT 及 GRPO 使用的資料集資訊。此模型僅供研究目的公開，不適合商業利用，並已加入相關腳註。該提交關閉了 Issue #690。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:7fbeb0154414ff35": {
+    "story_id": "fallback:7fbeb0154414ff35",
+    "title_zh": "在 AWS 上為銀行業打造可解釋的次佳產品推薦系統",
+    "summary_zh": "本文介紹一個專為銀行業設計的次佳產品推薦系統架構，採用 Amazon SageMaker AI 與 PyTorch 實作，關鍵是具備可解釋性，以符合金融監管要求。核心為多塔神經網路搭配可學習注意力機制，能為每位客戶產生精準推薦，同時透透明其決策依據。這種可解釋推薦有助於銀行在遵循法規的前提下提升客戶體驗與交叉銷售成功率，對強調合規的產業特別重要。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:dd6368dbe8176e44": {
+    "story_id": "fallback:dd6368dbe8176e44",
+    "title_zh": "追蹤超越人類，但到不了隔壁房間：Anthropic 用 129 美元無人機測試 15 個模型的「Project Pilot」內幕",
+    "summary_zh": "Anthropic 的 Frontier Red Team 在 2026 年 7 月 24 日公開的「Project Pilot」實驗顯示，消費級無人機的臉部追蹤能力已超越由人類團隊設計的演算法，但這架售價 129 美元的小型無人機卻無法自行移動到隔壁房間。這項結論凸顯 AI 在單一視覺任務上的卓越表現與在真實世界空間導航上的嚴重不足，反映出自主系統從實驗室到現實環境仍存在巨大落差，也為 AI 安全性研究提供了重要參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:5266beda532f95b8": {
+    "story_id": "fallback:5266beda532f95b8",
+    "title_zh": "以為有 AI 代理就能輕鬆寫技術書，結果還是行不通",
+    "summary_zh": "作者在 2026 年 5 月 2 日出版了《Agentic Coding 生成AI時代のシステム開発入門》一書，初衷是整理生成式 AI 與系統開發的系統性知識，解決網路資訊零碎、初學者不知從何學起 AI 代理用法的難題。過程中作者曾試圖讓 AI 代理大量輔助撰寫，卻發現內容品質、邏輯連貫性與面向初學者的深度仍需大量人工校正，顯示當前 AI 在長篇專業寫作上仍有明顯限制。此經驗也提醒，即使技術工具快速演進，人類的規劃與把關角色仍不可或缺。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:5b02dec883f3ab16": {
+    "story_id": "fallback:5b02dec883f3ab16",
+    "title_zh": "【超入門】Attention 究竟是什麼？整理它與 MLP、Transformer、LLM 的關係",
+    "summary_zh": "本文針對對 Attention 概念感到模糊的讀者，用入門角度解釋 Attention 機制並非單純等同於 ChatGPT 這類 AI，而是深度學習中的一種運算元件。作者比較了 Attention 與 MLP（多層感知器）在本質上的差異，並釐清 Attention 如何作為 Transformer 的核心組件，進而支撐如 GPT 系列等大型語言模型。這篇整理幫助初學者建立 Attention 的系統性認知，消除常見混淆，為理解現代 LLM 的內部運作打下基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:a0e822711152315e": {
+    "story_id": "fallback:a0e822711152315e",
+    "title_zh": "自我標籤與學習演算法──以多數決產生偽正確答案，並用 GRPO/ADPO 更新權重【從提示解讀 AI 代理人 #11】",
+    "summary_zh": "本文為連載系列第 11 回，聚焦於實際開源 AI 代理人的學習迴路。作者從原始碼與提示切入，解釋如何利用多個代理人投票產生自我標籤的偽正確答案，再透過 GRPO 與 ADPO 等策略梯度方法更新模型權重。文章承接前章對動機與共演化報酬設計的討論，正式拆解學習迴路本身的運作。此內容適合希望理解如何從零建構具備自我改善能力的 AI 代理人系統的讀者。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:fc32b98a431cf3ce": {
+    "story_id": "fallback:fc32b98a431cf3ce",
+    "title_zh": "讓 Sakura 的 AI Engine 們討論「如何炒熱氣氛」，結論卻變成了「要做什麼請由人類決定」",
+    "summary_zh": "作者開發了「超 AI 議事錄」工具，讓多個 AI 自己開會並生成會議記錄，反轉了傳統由人類開會、AI 記錄的模式。針對 Sakura 的 AI Engine 行銷活動進行三輪討論，前兩輪僅用 Sakura 模型時得出保守的具體開發計畫，第三輪引入外部四家廠商且降低推理投入後，卻迸出「作為 AI 壽命的請求」、「反向幻覺實驗」等較前衛的點子。然而過度發散也讓議長 AI 難以統合成單一結論。此實驗凸顯了引導 AI 腦力激盪時，收斂與多樣性之間的取捨難題。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:337731465def2a50": {
+    "story_id": "fallback:337731465def2a50",
+    "title_zh": "在創造 200 個平行世界之前，你有測量骰子的偏差嗎？──溫度的多樣性與血統的多樣性",
+    "summary_zh": "近來流行讓 AI 角色扮演辯論數百次，然後採納最常勝出的論點，這種類似蒙地卡羅方法的應用正透過影片與 LLM 委員會產品迅速擴散。作者肯定此做法的合理性，但指出存在一個結構性破洞：若未謹慎控制取樣溫度與模型血統（基地模型來源），大量重複的平行辯論可能只是重複同樣的偏差，而非真正探索多元觀點。作者以三週實驗記錄為憑，分享實際掉入該陷阱的經驗，呼籲在依賴「多數決勝論」之前，先確認隨機性與多樣性的本質。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:0e46bb3032d6e8b4": {
+    "story_id": "fallback:0e46bb3032d6e8b4",
+    "title_zh": "新增 Weblab-MedLLM 系列模型 (#694)",
+    "summary_zh": "本次合併請求將東京大學松尾・岩澤研究室透過 NEDO 專案公開的四款醫療專用模型納入列表，包含 GLM-4.7（355B-A32B）、Qwen3-235B（Instruct／Thinking）以及 gpt-oss-120b，按參數規模降序排列。這些模型屬於以日語對海外基底模型進行持續事前訓練的領域特化類型，因此被歸入對應區塊。更新同時補充了基底架構的原論文 GLM-4.5，並加入不建議直接用於臨床診療的註腳，強調現階段僅供研究參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:139b6b2b9e8c1337": {
+    "story_id": "fallback:139b6b2b9e8c1337",
+    "title_zh": "在 Claude Desktop 上試用 Blender MCP",
+    "summary_zh": "作者記錄了在 Claude Desktop 環境中透過 Blender MCP 連結 Blender 3D 建模軟體的經驗。藉由自然語言下達指令，便能操作場景物件，展現了將大型語言模型整合進創作工作流程的可行性。文章提供具體設定步驟與初步測試心得，對於想探索以對話式介面輔助 3D 設計的開發者具有一定參考價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:10ce64e5650a993b": {
+    "story_id": "fallback:10ce64e5650a993b",
+    "title_zh": "向Claude君抱怨後，它會幫你定期執行麻煩的任務！",
+    "summary_zh": "每天早上都要檢查新聞，但老實說，這真的很累人。打開新聞應用程式，從大量文章中挑選感興趣的內容，點進去後往往比想像中長，時間效率極差，每天重複下來浪費不少光陰。我一直在想，如果能在五分鐘內快速掌握當日重點，那就太理想了。於是我向Claude君抱怨這件事，沒想到它竟然主動幫我定期執行這項麻煩的任務——自動摘要新聞，省下我每天早上的時間。這個故事展示了如何借助AI助手將日常瑣事自動化，讓生活更從容。這種用人與AI對話就能解決生活中小問題的方式，不僅省時，也帶來了小小的樂趣，證明了即使是非技術背景的日常困擾，也能透過簡單的設定獲得智慧化解方。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
