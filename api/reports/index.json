@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-19T08:57:27.927372+00:00",
+  "generated_at": "2026-07-26T09:07:25.890717+00:00",
   "latest": {
     "monthly": "2026-06",
-    "weekly": "2026-W29"
+    "weekly": "2026-W30"
   },
   "monthly": [
     {
@@ -46,6 +46,21 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 30,
+      "generated_at": "2026-07-26T09:07:03.488816+00:00",
+      "missing_dates": [
+        "2026-07-22"
+      ],
+      "path": "api/reports/weekly/2026-W30.json",
+      "period_end": "2026-07-26",
+      "period_id": "2026-W30",
+      "period_start": "2026-07-20",
+      "recommendation_count": 100,
+      "report_type": "weekly",
+      "summary": "本週精選論文深入剖析Transformer內部機制、新興生物安全風險與對齊偏誤，並提出從推理強化、模型合併到MoE服務系統的解決方案；技術文章則聚焦代理安全、流程設計與自主部署，展現從理論到實務的雙重進展。",
+      "title": "AI研究與技術週報：模型機制、安全對齊與推理增強"
+    },
     {
       "blog_recommendation_count": 30,
       "generated_at": "2026-07-19T08:57:13.116477+00:00",
