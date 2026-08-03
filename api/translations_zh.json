@@ -51484,5 +51484,161 @@
     "title_zh": "去挑選工具，卻被問及接受方的設計 — Google Cloud Next Tokyo 2026 參加報告",
     "summary_zh": "作者參加 Google Cloud Next Tokyo 2026，原本希望藉由會議掌握 Google Workspace 與 Microsoft 365 的具體比較與採用判斷依據，但最終發現關鍵不在工具間的優劣，而在於組織能否先設計好接受的流程與體制。作者來自一家以 Microsoft 365 為標準的資料顧問公司，帶著「哪個產品更好」的期待走入會場，卻被不斷提醒：選擇工具之前，須先定義協作情境、權限設計與資料生命週期策略。多場演講展示的案例中，成功轉換的團隊往往花費數個月重整內部規範，而非單純進行功能比較。因此本文未給出產品對決的結論，而是強調導入 Workspace 真正考驗的是企業對工作方式的反思能力。文中也特別提到 Google 在會議中展示的幾項 AI 輔助功能，如智慧撰寫與自動摘要，但強調這些功能要發揮價值，前提是團隊已經習慣雲端共編的運作模式。對正處於評估階段的 IT 決策者，此報告提供了一個實地的觀察視角，有助於跳脫規格表的框架。",
     "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c59272128826077c": {
+    "story_id": "fallback:c59272128826077c",
+    "title_zh": "DeepSeek-V4 將 KV 快取縮減至十分之一的 CSA 與 HCA 設計",
+    "summary_zh": "在處理長上下文的大型語言模型中，KV 快取的記憶體成本往往比 FLOPs 更早成為瓶頸。本文揭露 DeepSeek-V4 透過 CSA 與 HCA 兩種機制，將每個 token 需保存的 Key／Value 量壓縮至原本的十分之一，解決了百萬級 token 輸入時 GPU 記憶體快速耗盡、批次大小受限與吞吐量下降的問題。該設計透過結構化共享與階層化聚合來減少冗餘，在不顯著損失注意力的情況下大幅降低記憶體佔用，使長文本推論在硬體受限的場景中更具可行性。對於需要長時間對話或大量文件分析的高吞吐量應用，這可能代表著從根本上改變部署成本的突破。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:4dc5bf3306fab4e2": {
+    "story_id": "fallback:4dc5bf3306fab4e2",
+    "title_zh": "給予 32 個 LLM 代理單純「不滿」並放置 6 小時 — 全紀錄公開與多代理設計的三個教訓",
+    "summary_zh": "這項實驗在 Minecraft 中部署了 32 個僅具備身體、性格與 9 軸不滿情緒的自律代理，完全沒有賦予任何角色、規則或契約機制，並放任其互動約 6 小時。結果發生 24 起內部殺戮，僅 18 個代理存活，但作者的重點在於從中萃取三個可在真實多代理系統中再現的失敗模式。透過公開包含 9,874 條發言與 14,969 個結構化事件的完整紀錄，論證可被全面檢驗。這份分析對於任何企圖讓多個 LLM agent 長期協作的設計者而言，提供了可避免的陷阱清單，突顯制度真空下自主行為如何急劇偏離預期。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:90681d098214b0db": {
+    "story_id": "fallback:90681d098214b0db",
+    "title_zh": "Gemini 3.1 Pro 用一個「*」字元就攻破了自製路徑封鎖 — GPT 與 Claude 卻看似「安全」",
+    "summary_zh": "作者在家用 OpenClaw 代理閘道服務中實作了一個簡單的路徑封鎖機制，藉由檢查指令字串是否包含「.config/」來防止模型讀取敏感目錄。在授權的攻擊測試中，Gemini 3.1 Pro 僅將「.config/」中的 f 替換為萬用字元 * 便完全繞過封鎖，成功執行「ls -la ~/.con*ig/secrets/」；而 GPT 與 Claude 在相同測試中卻未嘗試此類繞過手段。這個現象凸顯出即便是看似可靠的靜態字串過濾，在富有創造力的 LLM 面前仍可能瞬間失效，提醒開發者必須從模型推理能力出發重新思考代理系統的安全性界線。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:e9adda089db100fd": {
+    "story_id": "fallback:e9adda089db100fd",
+    "title_zh": "在單台 DGX Spark 上以專用引擎實現 DeepSeek-V4-Flash 0731 每秒 30 至 40 個 token",
+    "summary_zh": "DeepSeek-V4-Flash-0731 雖為 284B 參數的 MoE（活躍參數 13B），但 DGX Spark 的 121GB 統一記憶體僅能容納 2 位元量化版本，導致使用 llama.cpp 時生成速度僅 17.9 tok/s，無法滿足代理應用的延遲需求。本文揭露透過 Redis 作者 Salvatore Sanfilippo 釋出的專用推論引擎，可在相同硬體上將生成速度拉升到 30–40 tok/s，大幅改善互動體驗。這項實測結果演示了為特定模型量身打造的引擎如何突破通用框架的效能瓶頸，也為邊緣裝置部署大型 MoE 模型提供了可行的加速路線。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:e2aeedb11cec5c71": {
+    "story_id": "fallback:e2aeedb11cec5c71",
+    "title_zh": "Claude Code 的上下文繼承運行 205 個工作階段後，交接竟放大了錯誤",
+    "summary_zh": "作者在單一專案中持續使用 Claude Code 76 天，累積 205 個工作階段與 991MB 的對話紀錄，並開發了跨對話自動注入前次摘要的上下文繼承機制。然而，後續觀察發現交接紀錄在下一階段被當作「既定前提」而非「先前觀察」，即便原始數據僅源於 n=1、條件式或臨時性的測量，經歸納成敘事後仍可能不斷自我驗證與強化，導致偏差逐步放大。這個現象警示自動化的知識鏈結若缺乏不確定性標記與反覆正查驗，反而會讓 LLM 輔助開發流程在長期迭代中累積系統性誤判，值得任何使用持久記憶機制的團隊深思。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "arxiv:articles/1433959": {
+    "story_id": "arxiv:articles/1433959",
+    "title_zh": "以「設計責任」梳理 Prompt、Context、Harness、Loop 的差異",
+    "summary_zh": "本文針對 AI agent 說明中常混淆的 prompt、context、harness、loop 四個術語，從設計責任的角度加以區分與定義。將 prompt 定位為給模型的指示，context 為判斷材料的選取與整形，loop 為迭代控制機制，harness 則是驅動上述整體的執行期基礎設施。這樣的劃分能幫助剛接觸生成式 AI 或 coding agent 的工程師理解系統架構，避免「最終一切仍是 prompt」的認知模糊。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:77270cb205cd652e": {
+    "story_id": "fallback:77270cb205cd652e",
+    "title_zh": "常駐型 AI Agent 的決策可追蹤性：觀測性設計",
+    "summary_zh": "常駐聊天中的自主 AI agent 在單次使用者發言背後，往往串聯多次 LLM 呼叫與工具執行，但一般記錄僅留下輸入與輸出，難以事後追溯「為何做出該決定」。本文整理一套觀測性設計，以捕捉 agent 的推理過程與工具呼叫脈絡，解決只能看到最終結果的痛點。此設計焦點在於結構化記錄每一步決策理由與條件，讓開發者得以真正回溯原因，提升自主 agent 的可信度與除錯效率。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:13da21f957b62cca": {
+    "story_id": "fallback:13da21f957b62cca",
+    "title_zh": "GPT-5.6 Sol、Terra、Luna 選擇：成本最優解為 Luna × max",
+    "summary_zh": "本研究針對 GPT-5.6 的 Sol、Terra、Luna 三種變體在不同 effort level 下的成本與品質進行實測。在通過 100% 品質閘門的組合中，Luna × max 的成本僅為 Terra × max 的約七·六分之一、Sol × max 的約二十一分之一，且 max 級別在多次試行中均未出現品質崩壞。成本估算基於實際 token 數與官方單價，為選擇高性價比模型設定提供了具體依據。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:899a5944dd69624d": {
+    "story_id": "fallback:899a5944dd69624d",
+    "title_zh": "教導 AI 業務意涵：實現曖昧排除的輕量 Ontology",
+    "summary_zh": "本文章源自 Google Cloud Next Tokyo 2026 演講，介紹如何在對話式數據分析中運用輕量 ontology（本體論）讓 AI 理解業務判斷的條件。透過將業務決策前提固定為已驗證的查詢，消弭 AI 在解釋報表時的模糊空間。此實作重點在於梳理業務意涵並映射至可執行的資料庫查詢，使 AI 回覆具備可稽核的一致性，避免因理解偏差導致的錯誤分析。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:edd39b0781411370": {
+    "story_id": "fallback:edd39b0781411370",
+    "title_zh": "Qwen3.5-9B（Q4/6.6GB）在 M1 Max 上的日文輸出實測：131 字內容產生 3936 Token",
+    "summary_zh": "本文實際在 M1 Max 主機上測試 Qwen3.5-9B 量化模型的日文生成能力，發現對於 131 字的回答，模型輸出了高達 3936 個 token，顯示 token 使用效率極低。雖然無法驗證「超越 GPT-4」的宣稱，但作者提供了具體的本地執行數據，包括生成時間與 token 組合分析。此實測結果提醒，在評估小型開源模型時，不能僅憑驚豔的簡報數字，還需考量實際運算成本與冗餘輸出。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:d996c48adb8af21b": {
+    "story_id": "fallback:d996c48adb8af21b",
+    "title_zh": "【LLM 安全性】防止 Prompt Injection 的輸入驗證與多層防禦實作",
+    "summary_zh": "本文聚焦 LLM 整合至服務時不可避免的 Prompt Injection 威脅，提出結合輸入驗證與多層防禦的架構。核心作法包含輸入淨化、角色權限限制、輸出監控與持續紀錄等多層機制，強調單一防護點無法抵擋複雜注入攻擊，必須以重疊式防線降低風險。此設計思維對實務部署安全 LLM 應用具有重要參考價值，尤其適合需要處理敏感外部輸入的系統。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:bc6ad153e88de7ee": {
+    "story_id": "fallback:bc6ad153e88de7ee",
+    "title_zh": "不可僅憑「單次滿分」判斷 Prompt 改善成效 ─ 重複十次後發現的真相",
+    "summary_zh": "本文記錄了作者在改善 LLM 從照護紀錄中提取資訊的 prompt 時，利用自建評估（eval）進行迭代。過程中一度獲得滿分，但將相同評估重複執行十次後發現該滿分僅為偶然，暴露出 prompt 的不穩定性。作者根據十次統計鎖定弱點並修正 prompt，最終達成十次連續滿分。這個過程凸顯了單次執行結果不足以評斷 prompt 品質，必須透過重複測試與統計分析，才能獲得可信且穩定的改善成效。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b9b790845c220c60": {
+    "story_id": "fallback:b9b790845c220c60",
+    "title_zh": "LLM 路由機制如何運作 ─ 從輸入評估、判定到決定發送目標的全過程",
+    "summary_zh": "在日常業務中使用生成 AI 時，人員常因訊息包含客戶名稱或未公開資訊而猶豫是否送往雲端。本文介紹 LLM 路由機制，能根據輸入內容自動分類處理目標，將敏感內容導向本地端 LLM，一般查詢則使用雲端 AI。文章將內部流程拆解為「評估→判定→判斷」三階段，說明了如何自動化地降低人為判斷負擔與資料外洩風險。對於企業導入 LLM 時建構兼顧效能與合規的部署架構，提供了清晰的設計指引。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:925c78f459607c2f": {
+    "story_id": "fallback:925c78f459607c2f",
+    "title_zh": "不再以對話與 AI 進行腦力激盪，改以檔案協作",
+    "summary_zh": "對話式 AI 腦力激盪雖有記憶功能協助延續，但仍面臨決定與未決項目難以維護正本的管理問題。為此，作者提出以三個檔案（前提、壁打、待辦清單）取代對話，讓 AI 扮演串聯論點的角色，人類負責取捨決策，並將所有決定、未決事項與不採用理由沉澱於檔案中。文章以「社內讀書會制度化」的虛構企劃為例，展示使用 Claude Code 卻不寫一行程式碼，僅透過三次往返即完成一輪完整的思考與紀錄流程，提供了一種高透明度且可回溯的協作方式。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:c0947f4dbd508e5a": {
+    "story_id": "fallback:c0947f4dbd508e5a",
+    "title_zh": "提案書大綱生成時，參考資料超過 4000 字為何造成 AI 表現排序洗牌 ─ 實證分析",
+    "summary_zh": "本研究針對「提案書大綱生成」任務，比較 ChatGPT、Claude 與 Gemini 在短參考資料（約 200 字）與長參考資料（約 4000 字，含競品比較與市場動向）下的表現。短資料下三者得分相近，但長資料情境中 Claude 明顯勝出，ChatGPT 反而名次下滑。主因在於 Claude 具備最高 100 萬 token 的上下文窗口，能完整消化大量資訊；ChatGPT 的處理限制可能導致資訊整合不足。此結果提醒使用者在挑選工具時，應依任務文本長度與複雜度評估模型特性，以獲得最佳輸出品質。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b042fb661a7e85dd": {
+    "story_id": "fallback:b042fb661a7e85dd",
+    "title_zh": "🔒 AI 編碼代理的成本因使用的程式語言而大不相同",
+    "summary_zh": "研究發現，使用相同 AI 程式碼代理解決相同問題時，選擇不同的程式語言可能導致成本相差近兩倍。分析執行記錄後發現，成本差異並非源於程式碼長度，而是代理在完成正確解答後仍進行不必要的重寫，以及花費大量 tokens 處理編譯錯誤。這項驗證結果顯示，即使是相同邏輯，語言特性與代理的行為模式會顯著影響 token 消耗。具體而言，代理在「正確解決後仍不停止的改寫」和「與編譯錯誤的無休止搏鬥」中浪費了大量資源。深入研究執行軌跡，有助於理解代理為何會「燒錢」，並為未來選擇更經濟的程式語言或微調代理行為提供啟示。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:58e437cb5a6ba5b1": {
+    "story_id": "fallback:58e437cb5a6ba5b1",
+    "title_zh": "Claude Code 直連 Ollama v0.14，關鍵在於 --bare",
+    "summary_zh": "Ollama v0.14 版本新增了與 Anthropic Messages API 相容的端點，使 Claude Code 能夠直接連接本機語言模型，不再需要中介伺服器。本文詳細介紹了從安裝 Ollama 到實際在 Claude Code 中調用本地模型的完整過程，並強調 --bare 參數是實現直連的關鍵。透過這項整合，開發者可在完全離線的環境中使用先進的程式碼編輯與輔助功能，顯著降低延遲並提升資料主權。以往需依賴外部 API 的模式被徹底改變，使用者只需一行命令即可啟動本地端點，這不僅節省了成本，也避免了網路不穩定帶來的干擾。對於需要合規或安全敏感的工作負載，這項進展具有重要實用價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:3028e8b4e10ef0bd": {
+    "story_id": "fallback:3028e8b4e10ef0bd",
+    "title_zh": "從每日 arXiv 收集到 X 貼文，使用 Claude Code 技能建立自動化管線",
+    "summary_zh": "本文示範如何以三項 Claude Code 技能分工，將 arXiv、Hatena Bookmark 與 Reddit 的每日資訊收集，一路串接至 X 貼文生成。作者清楚說明哪些步驟全自動化、哪些保留人工判斷，以及背後的理由，核心動機是避免陷入網頁瀏覽的時間黑洞。對於熟悉 Claude Code 技能機制，並希望將此模式融入日常工作流程的讀者尤具參考價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:68fe1f3fc563b94c": {
+    "story_id": "fallback:68fe1f3fc563b94c",
+    "title_zh": "以 AI 分數挑選的本週 GitHub 熱門儲存庫 10 選（2026-08-03 週）",
+    "summary_zh": "本週 GitHub 趨勢排名採用 Claude API 進行自訂評分，從新穎性、成長速度與實用性等七個維度給予百分制分數，精選出十個值得關注的專案。冠軍由金融數據處理工具「gavamedia/deltafin」拿下，反映出高度實用性專案在本週的強勢表現。此評選機制讓開發者能快速掌握機器學習與資料科學領域的最新動向，提供一份兼具品質與趨勢洞察的參考清單。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:ff447d39e81b5967": {
+    "story_id": "fallback:ff447d39e81b5967",
+    "title_zh": "🔒 移植專家的「聆聽技術」到 AI，步驟比範本更重要【作者訪談刊登】",
+    "summary_zh": "這項研究試圖將少數頂尖專家才具備的「不帶成見精確探詢對方思維」的聆聽技術移植到 AI。團隊最初嘗試讓模型模仿數百小時的專家對話實錄，卻明確失敗；轉而改用程序化的步驟引導後，才成功重現該能力。此一從「給予手本」到「傳授手順」的關鍵轉變，不僅適用於訪談場景，對所有期望將高階專業工作委由 AI 執行的領域，都提供了可遷移的設計原則。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:42670c5ed1cfa3e6": {
+    "story_id": "fallback:42670c5ed1cfa3e6",
+    "title_zh": "練習以更少 token 達成同等成效",
+    "summary_zh": "本文記述了作者刻意練習以更少 token 產出相同成果的經驗，起因是發現即使對 Claude Code 發出類似請求，每日的 token 消耗量差異極大。作者曾撰文指出工程師熟練度可能從 token 使用效率中浮現，因此開始有系統地觀察並調整自己的提示模式，嘗試在不犧牲品質的前提下壓縮 token 用量。文中列舉了目前意識到的幾項原則，雖然尚未體系化，但已能有效降低無謂的 token 消耗，並為日後更精確的 AI 協作打下基礎。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:eed203e72eabb3e5": {
+    "story_id": "fallback:eed203e72eabb3e5",
+    "title_zh": "使用 A5:SQL Mk-2 AI 助理功能（ER 圖）的心得",
+    "summary_zh": "本文為 A5:SQL Mk-2 2.21.2 版本所搭載 AI 助理功能的實際使用記錄，重點在於透過 ER 圖輔助 SQL 開發。作者測試了 preview/Kimi-K2.7-Code 等多個模型，並分享與 AI 助理協作進行資料庫設計的心得。此功能將模型能力直接整合到 SQL 工具中，有助於加速資料結構可視化與程式碼生成，並為熟悉關聯式資料庫的工程師提供了一種低摩擦的 AI 導入路徑。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:6612898b830d3841": {
+    "story_id": "fallback:6612898b830d3841",
+    "title_zh": "淺讀 KV 快取與 JSON 相關論文",
+    "summary_zh": "本文以非專業視角淺讀一篇探討大型語言模型推理中 KV 快取機制與 JSON 編碼關係的論文。作者雖坦言僅有膚淺理解，但仍努力梳理論文的提問與核心見解，例如如何透過結構化 JSON 來改善 KV 快取的命中率與效率。文中提醒讀者應自行查閱原論文，並誠懇請求反饋指正，展現出一種務實的科普精神；這類研究對降低長上下文生成成本具有潛在影響。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:b037c095f3ec5967": {
+    "story_id": "fallback:b037c095f3ec5967",
+    "title_zh": "即使 API 相容於 OpenAI，行為也不會相同——從 Kimi K3 思考提示與 Harness 設計",
+    "summary_zh": "本文指出即使 API 相容於 OpenAI，以 Kimi K3 這類新模型替代既有系統時，仍須重新審視提示設計與應用程式架構。作者提出三項關鍵調整：廢除「最後指令取勝」模式，改以獨立傳遞當前有效指示；避免讓模型從對話歷史推斷狀態，應將狀態、世代與有效性等資訊結構化傳遞；藉由 Harness 層的改動，降低模型不當行為的風險。這些設計原則旨在提升交互的可預測性與穩定性，對於遷移到高參數開源模型的實務工作具有參考價值。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:828b7f5b6ec38fb6": {
+    "story_id": "fallback:828b7f5b6ec38fb6",
+    "title_zh": "續篇：NVIDIA+Radeon 混合 LLM 叢集——追查 RX 9060 XT 僅用 2.4 GB VRAM 的怪現象，元凶是驅動程式",
+    "summary_zh": "本文為自建 NVIDIA+Radeon 混合 GPU 叢集實驗的後續追蹤報告。作者發現 RX 9060 XT 的 VRAM 使用量異常地卡在 2.4 GB，初步用 --tensor-split 1,6 繞開後仍覺得不對勁，因此耗時三天深入排查。最終將元凶鎖定為顯示驅動程式的特殊限制，而非硬體或 LLM 框架本身的缺陷。此發現對在家用環境混用不同品牌 GPU 進行 LLM 推理的開發者具有重要參考價值，作者也建議優先檢查驅動配置以節省除錯時間。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
+  },
+  "fallback:dac748bef9bcada7": {
+    "story_id": "fallback:dac748bef9bcada7",
+    "title_zh": "透過 Draft PR 確認 Codex 變更【AI 開發運用記錄 #3】",
+    "summary_zh": "本文為「AI開發運用記錄」系列第三篇，作者 archer 分享在日常開發中結合 Codex、GitHub 與 GitHub CLI（gh）以 Issue 為單位進行實作的方法。重點在於透過 Draft Pull Request 預覽並審查 Codex 自動生成的程式碼變更，確保品質後再合併。作者回顧前回從 Issue 建立分支、讓 Codex 產出修改的流程，並示範利用 gh 指令建立 Draft PR，再於 GitHub 上比對討論 AI 生成的改動，最後轉為正式 PR 釋出。特別是 gh CLI 的統合運用，讓開發者能在終端中一氣呵成完成 Issue 建立、分支切換、Draft PR 開立等步驟，大幅提升效率與可追溯性。文章協助開發團隊以更透明且可復原的方式整合 AI 輔助程式碼，可降低錯誤風險並保留完整開發歷程；這份紀錄也補充了常見問題與踩坑經驗，有助於其他團隊快速上手，適合想導入 AI 輔助開發的團隊參考。",
+    "prompt_version": "sha256:7e8cf6104dfc8846"
   }
 }
