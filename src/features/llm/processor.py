@@ -31,7 +31,7 @@ MAX_BATCH_SIZE = 1
 DEFAULT_CONCURRENCY = 1
 MAX_CONCURRENCY = 8
 _NEUTRAL_SCORE = 0.5
-_MAX_MISSING_ID_RETRIES = 2
+_MAX_SINGLE_RETRIES = 2
 
 
 def _resolve_batch_size() -> int:
@@ -265,7 +265,7 @@ class LlmRelevanceProcessor:
             batch=batch,
             batch_idx=batch_idx,
             attempt=attempt,
-            recoverable=len(batch) > 1,
+            recoverable=len(batch) > 1 or attempt < _MAX_SINGLE_RETRIES,
         )
         self._merge_phase_result(result, attempt_result)
 
@@ -275,9 +275,9 @@ class LlmRelevanceProcessor:
 
         if len(missing) == 1:
             story = missing[0]
-            if not attempt_result.errors and attempt < _MAX_MISSING_ID_RETRIES:
+            if attempt < _MAX_SINGLE_RETRIES:
                 self._log.warning(
-                    "llm_story_missing_id_retry",
+                    "llm_story_retry",
                     batch=batch_idx,
                     attempt=attempt + 1,
                     story_id=story.story_id,

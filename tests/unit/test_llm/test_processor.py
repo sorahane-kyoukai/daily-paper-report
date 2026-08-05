@@ -169,6 +169,7 @@ class TestEvaluateStories:
         assert result.scores["fail-1"] == pytest.approx(0.5)
         assert len(result.errors) == 1
         assert "API error" in result.errors[0]
+        assert mock_client.generate_content.call_count == 3
 
     def test_graceful_degradation_on_parse_error(self) -> None:
         """Should assign neutral scores when response is not valid JSON."""
@@ -181,11 +182,14 @@ class TestEvaluateStories:
 
         assert result.scores["parse-fail"] == pytest.approx(0.5)
         assert len(result.errors) == 1
+        assert mock_client.generate_content.call_count == 3
 
     def test_one_failed_paper_does_not_flatten_other_scores(self) -> None:
         """Independent requests isolate a malformed paper response."""
         mock_client = MagicMock()
         mock_client.generate_content.side_effect = [
+            "not valid json at all",
+            "not valid json at all",
             "not valid json at all",
             json.dumps([{"id": "s1", "score": 0.7, "rationale": "ok", "topics": []}]),
             json.dumps([{"id": "s2", "score": 0.6, "rationale": "ok", "topics": []}]),
@@ -198,7 +202,7 @@ class TestEvaluateStories:
 
         assert result.stories_evaluated == 4
         assert len(result.errors) == 1
-        assert result.api_calls_made == 4
+        assert result.api_calls_made == 6
         assert result.scores["s0"] == pytest.approx(0.5)
         assert result.scores["s3"] == pytest.approx(0.9)
 
