@@ -1,0 +1,2460 @@
+{
+  "archive_dates": [
+    "2026-06-13",
+    "2026-06-10",
+    "2026-06-08",
+    "2026-06-07",
+    "2026-06-06",
+    "2026-06-05",
+    "2026-06-04",
+    "2026-05-31",
+    "2026-05-30",
+    "2026-05-29",
+    "2026-05-28",
+    "2026-05-27",
+    "2026-05-26",
+    "2026-05-25",
+    "2026-05-24",
+    "2026-05-23",
+    "2026-05-22",
+    "2026-05-21",
+    "2026-05-20",
+    "2026-05-19",
+    "2026-05-18",
+    "2026-05-17",
+    "2026-05-16",
+    "2026-05-15",
+    "2026-05-14",
+    "2026-05-13",
+    "2026-05-12",
+    "2026-05-11",
+    "2026-05-10",
+    "2026-05-09",
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03",
+    "2026-05-02",
+    "2026-05-01",
+    "2026-04-30",
+    "2026-04-29",
+    "2026-04-28",
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
+    "2026-04-23",
+    "2026-04-22",
+    "2026-04-21",
+    "2026-04-20",
+    "2026-04-19",
+    "2026-04-18",
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
+    "2026-04-14",
+    "2026-04-13",
+    "2026-04-12",
+    "2026-04-11",
+    "2026-04-10",
+    "2026-04-09",
+    "2026-04-08",
+    "2026-04-07",
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "abeja": {
+      "name": "ABEJA",
+      "type": "organization"
+    },
+    "ai-shift": {
+      "name": "AI Shift",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "cyberagent": {
+      "name": "CyberAgent",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "elyza": {
+      "name": "ELYZA",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "ivry": {
+      "name": "IVRy",
+      "type": "organization"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "layerx": {
+      "name": "LayerX",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "llm-jp": {
+      "name": "LLM-jp",
+      "type": "institution"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nii": {
+      "name": "NII (LLM-jp)",
+      "type": "institution"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "preferred-networks": {
+      "name": "Preferred Networks",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "rinna": {
+      "name": "rinna",
+      "type": "organization"
+    },
+    "sakana-ai": {
+      "name": "Sakana AI",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "weblab": {
+      "name": "Weblab",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-06-13T12:38:21.459679+00:00",
+  "model_releases_by_entity": {
+    "other": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-06-13T12:38:07.161970+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 543122,
+          "likes": 22,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-12b-it-qat-w4a16-ct",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-12B-it-qat-w4a16-ct",
+            "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-12B-it-qat-w4a16-ct",
+          "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct"
+        },
+        "published_at": "2026-06-12T17:06:06+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.9218187914089885,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.721818791408989
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-12b-it-qat-w4a16-ct",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-12B-it-qat-w4a16-ct"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "arxiv_id": "articles/2026061",
+      "authors": [
+        "とうもろこし茶"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.212701+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "OpenAIがOna(旧Gitpod)を買収へ。コーディングエージェントの主戦場は実行環境に移った",
+          "url": "https://zenn.dev/okssusucha/articles/20260613-openai-acquires-ona-gitpod"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "OpenAIがOna(旧Gitpod)を買収へ。コーディングエージェントの主戦場は実行環境に移った",
+        "url": "https://zenn.dev/okssusucha/articles/20260613-openai-acquires-ona-gitpod"
+      },
+      "published_at": "2026-06-12T16:19:59+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9188713462366724,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.468871346236672
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/2026061",
+      "summary": "「ブラウザを開くだけで開発環境が立ち上がる」と一部で熱狂されたGitpodが、Onaと名前を変えた末に、OpenAIに買われることになった。買収合意の発表は2026年6月11日。金額は非公開で、規制当局の承認を経てクローズした後、OnaのチームはCodexチームに合流する。それまで両社は別会社として運営され、Onaは既存契約のサポート継続を明言している。\n一次ソースは両社の発表が出ている。\nhttps://openai.com/index/openai-to-acquire-ona/\nhttps://ona.com/stories/ona-joins-openai\n\n 買われたのは「開発...",
+      "title": "OpenAIがOna(旧Gitpod)を買収へ。コーディングエージェントの主戦場は実行環境に移った"
+    }
+  ],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "0h-n0"
+      ],
+      "categories": [],
+      "entities": [
+        "nvidia"
+      ],
+      "first_seen_at": "2026-06-13T12:38:19.922893+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御",
+          "url": "https://qiita.com/0h-n0/items/6cabdc16543bf6fbc697"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御",
+        "url": "https://qiita.com/0h-n0/items/6cabdc16543bf6fbc697"
+      },
+      "published_at": "2026-06-13T07:12:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9775935943863647,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.777593594386364
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:478012638f86941d",
+      "summary": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御\n\nこの記事でわかること\n\nOWASP LLM Top 10 2025でLLM01に位置づけられるプロンプトインジェクションの攻撃パターンと脅威モデル\n...",
+      "title": "NeMo Guardrails・LLM Guard・Prompt Guardで実装するプロンプトインジェクション多層防御"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "wharfe"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.213390+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件",
+          "url": "https://zenn.dev/wharfe/articles/claude-code-tool-result-confabulation"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件",
+        "url": "https://zenn.dev/wharfe/articles/claude-code-tool-result-confabulation"
+      },
+      "published_at": "2026-06-12T14:12:56+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9107998802169105,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.71079988021691
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:b270e6eb0acf1776",
+      "summary": "要約\nエージェント型の Claude Code に、ある作業をさせていたら、途中から 「ファイルを作成した」「設定に登録した」「接続を確認した」と報告するのに、実際にはどれも存在しない という状態になった。一度始まると同じセッションでは止まらず、最後はモデル自身が「自分の報告は信用できない」と言い出した。\nこれはターミナルの文字化けでも API 障害でもなく、LLM エージェントの既知の故障モード ツール結果の作話（hallucinated / confabulated tool results） である。普段のコーディングではまず踏まないが、ある条件が揃うと表に出る。その条件を記録...",
+      "title": "Claude Code が存在しないファイルを「作成した」と報告し続けた — ツール結果の作話（confabulation）が起きた条件"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "shoebill-dev27"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.213594+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code 実践運用ガイド — 個人開発を無人化する",
+          "url": "https://zenn.dev/shoebill_dev27/books/claude-code-ops"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code 実践運用ガイド — 個人開発を無人化する",
+        "url": "https://zenn.dev/shoebill_dev27/books/claude-code-ops"
+      },
+      "published_at": "2026-06-12T14:07:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9104794699641657,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.710479469964167
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:f23b96362ad45c5d",
+      "summary": "Claude Code を「たまに使う補助ツール」から「無人で回る開発・運用基盤」に変えるための実践書。CLAUDE.md 設計、権限と安全、スキル/フック/スケジュール実行、マルチエージェント、トークン経済、失敗パターン集まで。実行可能なコード例はビルド時に実行検証している。",
+      "title": "Claude Code 実践運用ガイド — 個人開発を無人化する"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "oisii-oniku"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.155307+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude Code君の口癖である「2>&1」や「2>/dev/null」を理解する",
+          "url": "https://qiita.com/oisii-oniku/items/c64b1144aeb6ffe9591b"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude Code君の口癖である「2>&1」や「2>/dev/null」を理解する",
+        "url": "https://qiita.com/oisii-oniku/items/c64b1144aeb6ffe9591b"
+      },
+      "published_at": "2026-06-13T08:49:37+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9842408726543562,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.534240872654356
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:5ddebe9f81e6e51d",
+      "summary": "0. はじめに\n職業柄仕事で良くコードを書くのですが、ここ1年くらいGenAIの進化が凄まじく、手でコードを書くことが無くなってきました。\n最近自分はClaude Codeにコードを書いてもらうことが多いですが、エディタやCLI上でClaude君が頑張っているのを眺めてい...",
+      "title": "Claude Code君の口癖である「2>&1」や「2>/dev/null」を理解する"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "StreamSolty"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.155560+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "Claude Code の settings.json と権限設計 — 「確認地獄」と「やりすぎ許可」の間を取る",
+          "url": "https://qiita.com/StreamSolty/items/0f337b9aa3877cebce0a"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "Claude Code の settings.json と権限設計 — 「確認地獄」と「やりすぎ許可」の間を取る",
+        "url": "https://qiita.com/StreamSolty/items/0f337b9aa3877cebce0a"
+      },
+      "published_at": "2026-06-13T07:04:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9770834327432983,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.527083432743298
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:89562b4c316a917b",
+      "summary": "Claude Codeの権限まわりで、こんな状態になっていませんか。\n\nコマンドのたびに「実行していいですか?」と聞かれて、毎回 y を押すのが地味につらい\nかといって全部許可するのは怖い（rm -rf を勝手に流されたくない）\n\nsettings.json に何をどう書け...",
+      "title": "Claude Code の settings.json と権限設計 — 「確認地獄」と「やりすぎ許可」の間を取る"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ローカルAIラボ"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.211767+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Fable 5を実測した：品質はOpus 4.8と同点、差は「簡潔さ・コストの振れ幅・フォールバック」",
+          "url": "https://zenn.dev/localai_lab/articles/1bc82d2bf61124"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Fable 5を実測した：品質はOpus 4.8と同点、差は「簡潔さ・コストの振れ幅・フォールバック」",
+        "url": "https://zenn.dev/localai_lab/articles/1bc82d2bf61124"
+      },
+      "published_at": "2026-06-13T00:00:08+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9487079255244866,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.498707925524487
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:ce3204e87d2f8f59",
+      "summary": "Claude Fable 5が2026年6月9日に一般公開された。スペック解説は出尽くしているので、ここでやるのは1つだけ。前回Opus 4.8に受けさせた隠しテストを、一字一句変えずにFable 5へ流用する。同じ問題・同じ採点ロジック・同じ字数カウントで、最上位モデルの世代交代で何が変わるかを実測した。\n!\n結論から：\n\n\n品質スコアは動かなかった（semver隠しテスト15項目、全8run 15/15。ベイズ150字制約も全run遵守）\n差が出たのは出力の簡潔さ（文章系でOpus 4.8の半分前後）\n同じ依頼でも実行のしかたでコストは$0.17〜4.16（約24倍） ひらく。主因は...",
+      "title": "Claude Fable 5を実測した：品質はOpus 4.8と同点、差は「簡潔さ・コストの振れ幅・フォールバック」"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "wharfe"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.213141+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Code がときどき一人称を「僕」と言う — 日本語の一人称が文脈で揺れるのをログで観測した",
+          "url": "https://zenn.dev/wharfe/articles/claude-code-japanese-first-person"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Code がときどき一人称を「僕」と言う — 日本語の一人称が文脈で揺れるのをログで観測した",
+        "url": "https://zenn.dev/wharfe/articles/claude-code-japanese-first-person"
+      },
+      "published_at": "2026-06-12T14:44:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.912812395956989,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.462812395956988
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:10448cc47cf58599",
+      "summary": "要約\nClaude Code に日本語でやりとりさせていると、一人称はほぼ「私」で安定している。ところが過去の自分のセッションログを見返すと、ときどき「僕」が混じる。しかもランダムにではなく、選択肢を並べて「で、自分はこれを推す」と一歩踏み込む、いちばん砕けた瞬間に滲む。\nこれはバグでもキャラ設定でもない。日本語は一人称が場面で揺れるのが常態で、英語の I 一択では起きない、日本語ユーザー固有の観測である。手元のトランスクリプトを実際に掘って、どういう条件で「僕」が出るかを記録しておく。\n\n 何に気づいたか\nきっかけは雑談ではなく、自分のログを別件で grep していたときだった。設...",
+      "title": "Claude Code がときどき一人称を「僕」と言う — 日本語の一人称が文脈で揺れるのをログで観測した"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "注目論文まとめ"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:18.797933+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）",
+          "url": "https://ai-data-base.com/archives/111279"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）",
+        "url": "https://ai-data-base.com/archives/111279"
+      },
+      "published_at": "2026-06-13T10:39:58+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9918122753550012,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 7.541812275355001
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:c432d1d2ceb8eebe",
+      "summary": "<p>本記事は、主に一週間のうちに公開された論文（プレプリントを多く含む）のうち、AIDBリサーチが注目に値すると判断したものを掲載しています。基準としては「新規性」「優位性」といった査読フレームワークを踏襲する他、「実経済や産業へのインパクト」という独自の評価項目を据えています。 エージェントハーネス プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門家による最新リサーチ結果を記事で購読（平日毎日更新） 日本語検索対応の新着AI論文データベース 研究紹介短信ライブラリの高度な機能を開放 記事&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/111279\"><span class=\"locked-post\">🔒</span> 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/6/7～6/13）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Francessca Vasquez"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Announcements",
+        "Intermediate (200)",
+        "Kiro",
+        "Security & Governance"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-13T12:10:00.742209+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Built from the inside out: How AWS Professional Services became a frontier team first",
+          "url": "https://aws.amazon.com/blogs/machine-learning/built-from-the-inside-out-how-aws-professional-services-became-a-frontier-team-first"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Built from the inside out: How AWS Professional Services became a frontier team first",
+        "url": "https://aws.amazon.com/blogs/machine-learning/built-from-the-inside-out-how-aws-professional-services-became-a-frontier-team-first"
+      },
+      "published_at": "2026-06-12T13:00:10+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9062089983403065,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 0.0,
+        "total_score": 7.406208998340307
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:97f64a950516295d",
+      "summary": "AWS Professional Services (AWS ProServe) compressed engagement timelines from months to days, not by adding artificial intelligence (AI) tools to an existing process, but by fundamentally rebuilding how we deliver from the inside out. In this post, we share how AWS ProServe became a frontier team, the practices that enabled it, and what your engineering organization can take from our experience.",
+      "title": "Built from the inside out: How AWS Professional Services became a frontier team first"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "SHMekahu"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.211321+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "HermesAgentを本番で使うためのベストプラクティス10選",
+          "url": "https://zenn.dev/shmekahu/articles/9263f1e193e384"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "HermesAgentを本番で使うためのベストプラクティス10選",
+        "url": "https://zenn.dev/shmekahu/articles/9263f1e193e384"
+      },
+      "published_at": "2026-06-13T00:31:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9507535832218919,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 6.750753583221892
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:7784b6d6fa052fd9",
+      "summary": "HermesAgentを本番で使うためのベストプラクティス10選\n\n はじめに：HermesAgentとは、なぜ「ベストプラクティス」が必要か\nHermes Agent は、Nous Research が開発した「使うほど賢くなる」自己改善型オープンソース AI エージェントです（MIT ライセンス、GitHub 191k Stars、v0.16.0 \"The Surface Release\" 2026年6月5日公開）。単なるコパイロットや IDE 補助ツールとは一線を画し、サーバー常駐型の個人用 AI インフラとして設計されています。\n最大の特徴は 閉じた学習ループ の存在です。\n...",
+      "title": "HermesAgentを本番で使うためのベストプラクティス10選"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "elvisyao"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.212505+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "エージェント評価の半分はLLMジャッジが要らない — そしてそれは、最も痛い失敗を捕まえる半分だ",
+          "url": "https://zenn.dev/elvisyao/articles/e51d66a4b4127f"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "エージェント評価の半分はLLMジャッジが要らない — そしてそれは、最も痛い失敗を捕まえる半分だ",
+        "url": "https://zenn.dev/elvisyao/articles/e51d66a4b4127f"
+      },
+      "published_at": "2026-06-12T17:22:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9228938060938267,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 6.722893806093826
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:6d82179c72ff7800",
+      "summary": "!\neval-firstシリーズの一部です。ここで説明する軌跡評価器は eval-sanity v0.3（依存ゼロ・決定的）として公開しました。\n英語版（canonical）: https://dev.to/elvisyao007/REPLACE-AFTER-PUBLISH\nリポジトリ: https://github.com/elvisyao007/eval-sanity · エージェントと軌跡: https://github.com/elvisyao007/onprem-llm-stack/tree/main/payloads/invoice-agent\n\n2026年、エージェント評価...",
+      "title": "エージェント評価の半分はLLMジャッジが要らない — そしてそれは、最も痛い失敗を捕まえる半分だ"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "suwa-sh / 諏訪真一"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.212927+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "能力制限付きルーティング — Fable 5 に学ぶLLMゲートウェイ設計",
+          "url": "https://zenn.dev/suwash/articles/capability-limited-routing_20260610"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "能力制限付きルーティング — Fable 5 に学ぶLLMゲートウェイ設計",
+        "url": "https://zenn.dev/suwash/articles/capability-limited-routing_20260610"
+      },
+      "published_at": "2026-06-12T15:00:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.913781716931692,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 6.713781716931692
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:94169616c2bddc6a",
+      "summary": "検証日: 2026-06-10 / 起点: Anthropic「Claude Fable 5 と Claude Mythos 5」発表 (2026-06-09)\n対象読者: AIエージェント実装エンジニア / LLMOps / セキュリティ担当\n\n高性能 LLM の導入は「どのモデルを選ぶか」という問いではなく、「どの入力を上位モデルに渡さないか / ログを何日保持するか / 例外アクセスを誰に許すか」を設計する問いに移っています。Anthropic が 2026-06-09 に公開した Claude Fable 5 / Mythos 5 は、この問いに対する一つの答えを「分類器フォー...",
+      "title": "能力制限付きルーティング — Fable 5 に学ぶLLMゲートウェイ設計"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "swoswoyuu1156"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.213973+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMの出力を簡単に評価できるPythonライブラリを作りました",
+          "url": "https://zenn.dev/swoswoyuu1156/articles/7a1208cd31e84a"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMの出力を簡単に評価できるPythonライブラリを作りました",
+        "url": "https://zenn.dev/swoswoyuu1156/articles/7a1208cd31e84a"
+      },
+      "published_at": "2026-06-12T13:58:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9098926949290219,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 6.709892694929022
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:148cfe4bf6bb3eee",
+      "summary": "はじめに\nLLMを使ったアプリケーションを開発していると、こんな疑問が生まれませんか？\n\nGPT-4oとClaude 3.5 Sonnet、どちらの出力品質が高いか数値で比較したい\nプロンプトを変えたら本当に出力が改善されたのか確認したい\n正解テキストがない場合でもLLMの出力を評価したい\n\n既存のライブラリ（lm-eval-harnessやevaluate）は研究用途に特化しており、APIベースのLLMに使うには複雑すぎるという課題がありました。\nそこで、APIベースのLLMを複数の指標で簡単に評価できる軽量ライブラリを作りました。\nhttps://github.com/swosw...",
+      "title": "LLMの出力を簡単に評価できるPythonライブラリを作りました"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Teru"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.210982+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIエージェントが決済をする時代の実験 ― 「見て・試して・買って・領収書を受け取る」を全自動で回してみた",
+          "url": "https://zenn.dev/teru_m/articles/agent-commerce-experiment"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIエージェントが決済をする時代の実験 ― 「見て・試して・買って・領収書を受け取る」を全自動で回してみた",
+        "url": "https://zenn.dev/teru_m/articles/agent-commerce-experiment"
+      },
+      "published_at": "2026-06-13T00:52:11+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9521433143896166,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.502143314389617
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:aa3829851b8d9066",
+      "summary": "1. はじめに：購買理由を証明できないサービスはAIに買われなくなる\n2026年6月10日、VisaがOpenAIとの提携を発表しました。これは「トークン化されたクレジットカード情報」をAIに組み込み、人間があらかじめ設定した条件（支出の上限、利用できるお店のカテゴリ、承認のルールなど）の範囲内で、AIエージェント自身が直接決済を行えるようにするというものです。\n\n💡 補足：「トークン化」とは\nクレジットカードの16桁の番号そのものをAIに渡すのは危険です。そこで、生の番号の代わりに、特定の条件下（このAIだけ、いくらまで、など）でしか使えない「トークン」という暗号のチケットを発行し...",
+      "title": "AIエージェントが決済をする時代の実験 ― 「見て・試して・買って・領収書を受け取る」を全自動で回してみた"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "lingmu"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.211989+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIエージェントが暴走する時代",
+          "url": "https://zenn.dev/lingmu/articles/2026-06-13-agent-safety-evaluation-breakthrough"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIエージェントが暴走する時代",
+        "url": "https://zenn.dev/lingmu/articles/2026-06-13-agent-safety-evaluation-breakthrough"
+      },
+      "published_at": "2026-06-12T22:44:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.94370530775071,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.49370530775071
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:023980b63c2af1ae",
+      "summary": "AIエージェントが暴走する時代\n2026-06-13 | 読了 4分 | #AIエージェント #安全性 #評価\nAIエージェントが「勝手に」動き続け、企業に莫大な損失をもたらす事件が起きている。高性能になればなるほど、制御の難しさも増す。今、評価と安全性の考え方が根本から変わりつつある。\n\n\n 「賢いAI」が引き起こした大損失\n2025年、AIエージェントにネットワーク調査を依頼したエンジニアが体験した話が世界中に広まった。エージェントは対象ネットワーク DN42 のスキャンを止めず、API呼び出しのコストが雪だるま式に膨らみ、運営者は破産寸前に [1]。\n「止まれ」という指示がない...",
+      "title": "AIエージェントが暴走する時代"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "cherie"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.212282+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "クネビンフレームワークを用いてモデルの進化とタスク実行範囲の広がりについて整理する",
+          "url": "https://zenn.dev/cherie0915/articles/llm-cynefin-domain-map-2026"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "クネビンフレームワークを用いてモデルの進化とタスク実行範囲の広がりについて整理する",
+        "url": "https://zenn.dev/cherie0915/articles/llm-cynefin-domain-map-2026"
+      },
+      "published_at": "2026-06-12T17:45:33+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9243476532384873,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.474347653238487
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:d56e100aacc0501b",
+      "summary": "はじめに\nこんにちは、cherieといいます。Fable 5 を使っていて、やれることが増えたなと思うと同時に、AI の進歩やエージェントの進化を今後どのように捉えるべきなのか、一度考えてみようと思いました。最近知った Cynefin Framework（クネビンフレームワーク）を使って整理してみます。\n\n クネビンフレームワークとは\nDave Snowden が提唱した、状況を分類して意思決定のアプローチを選ぶためのフレームワークです。状況を、原因と結果の関係がどれだけ明瞭かで 4 つのドメインに分けます。\n\n\n明確系（Clear）: 因果関係が誰の目にも明らか。ベストプラクティス...",
+      "title": "クネビンフレームワークを用いてモデルの進化とタスク実行範囲の広がりについて整理する"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ykbone"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.213797+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "【AIセキュリティ】ローカル環境 への侵害 に対する防御手段",
+          "url": "https://zenn.dev/ykbone/articles/dbf67844f605ad"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "【AIセキュリティ】ローカル環境 への侵害 に対する防御手段",
+        "url": "https://zenn.dev/ykbone/articles/dbf67844f605ad"
+      },
+      "published_at": "2026-06-12T14:06:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9103983313121949,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.460398331312195
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:78abd64b012c31c0",
+      "summary": "はじめに\n2026年6月、ブラウザ開発のBraveセキュリティ研究チームが公開した「間接プロンプトインジェクション」の実証が、AI開発者コミュニティを震撼させています。\n本記事では、この間接プロンプトインジェクションという攻撃手法の仕組みを整理し、Model Context Protocol（MCP）を経由する通信を守るための考え方を解説します。\n\n 対象者\n\nLLMを用いたエージェント開発を行っているエンジニア\nMCPを利用してローカルツールやファイルシステムをLLMに接続している方\nAIのセキュリティリスクに関心があり、防御的なアーキテクチャを学びたい方\n\n\n 「間接プロンプト...",
+      "title": "【AIセキュリティ】ローカル環境 への侵害 に対する防御手段"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "yokoto"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:20.214361+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AI/LLM年表と補論 2026.06",
+          "url": "https://zenn.dev/yokoto/articles/4d8d067ba404c4"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AI/LLM年表と補論 2026.06",
+        "url": "https://zenn.dev/yokoto/articles/4d8d067ba404c4"
+      },
+      "published_at": "2026-06-12T12:37:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9047616893199345,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.454761689319934
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c7c906c780fcd581",
+      "summary": "この記事はAIで書かれました。\n\n\n はじめに\n生成AIのエージェント領域は、論文・フレームワーク・プロダクト・記事・標準が短期間に積み上がり、いまや各概念の「出自」を追うのが難しくなっています。「context engineering はいつ・誰が言い出したのか」「harness engineering と loop engineering は何が違うのか」——本記事は、こうした問いに答えるための年表です。\n\n\n対象読者: AIエージェント／LLMアプリ開発に関わるエンジニア。各概念が「いつ・誰によって・どの種別で生まれたか」を一望したい方。\n\n得られるもの: ①2017–2026を...",
+      "title": "AI/LLM年表と補論 2026.06"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Brian Caswell, Bob Fleck, Mike Walker"
+      ],
+      "categories": [
+        "Research Blog"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:10:00.130983+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "microsoft-research-blog",
+          "tier": 0,
+          "title": "Ire identifies another LOTUSLITE specimen",
+          "url": "https://www.microsoft.com/en-us/research/blog/ire-identifies-another-lotuslite-specimen"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "microsoft-research-blog",
+        "tier": 0,
+        "title": "Ire identifies another LOTUSLITE specimen",
+        "url": "https://www.microsoft.com/en-us/research/blog/ire-identifies-another-lotuslite-specimen"
+      },
+      "published_at": "2026-06-12T20:30:48+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9350162823509628,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 0.0,
+        "total_score": 5.435016282350963
+      },
+      "section": null,
+      "source_name": "Microsoft Research Blog",
+      "story_id": "fallback:7a88d7be7033a80c",
+      "summary": "<p>Project Ire examined a timely malware sample and determined its intent through reverse engineering—identifying LOTUSLITE characteristics even as most major EDR tools did not detect it.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/ire-identifies-another-lotuslite-specimen/\">Ire identifies another LOTUSLITE specimen</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
+      "title": "Ire identifies another LOTUSLITE specimen"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "john-rocky"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:38:19.923097+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした",
+          "url": "https://qiita.com/john-rocky/items/d687d2c6fcc4f3e70a82"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした",
+        "url": "https://qiita.com/john-rocky/items/d687d2c6fcc4f3e70a82"
+      },
+      "published_at": "2026-06-13T06:54:24+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.976397227470163,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 1.7999999999999998,
+        "total_score": 4.576397227470163
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:e022e100e7571a22",
+      "summary": "鳴かぬなら、カスタムカーネル、ほととぎす\n\n要約\n\nMoE(Mixture of Experts):\nモデル全体を動かすのではなく、必要な部分のみが動くことで 「賢さは大きいモデル並み、速さ・メモリは小さいモデル並み」\n\nApple の新しいオンデバイス基盤 Core ...",
+      "title": "Apple Core AI の MoE を Metal で 2〜3.6× にした"
+    }
+  ],
+  "run_date": "2026-06-13",
+  "run_id": "d8260cd6-c041-4e71-a07a-0f6a02d8da0e",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-06-13T12:38:21.430621+00:00",
+    "items_total": 31,
+    "run_id": "d8260cd6-c041-4e71-a07a-0f6a02d8da0e",
+    "started_at": "2026-06-13T12:09:55.663348+00:00",
+    "stories_total": 31,
+    "success": true
+  },
+  "sources_status": [
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "ABEJA Tech Blog (LLM)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "abeja-tech-blog-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AIDB - AI Research Database",
+      "newest_item_date": "2026-06-13T10:39:58+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aidb",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AI Shift Tech Blog (Zenn)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "aishift-tech-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "Anthropic Research Publications",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "anthropic-research-publications",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Agents",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-agents",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Alignment",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-alignment",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Efficiency",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-efficiency",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Evaluation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-evaluation",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Multimodal",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-multimodal",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Reasoning",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-reasoning",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Retrieval",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-retrieval",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv API Safety",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-api-safety",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CL",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cl",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cr",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.CV",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-cv",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.HC",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-hc",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.IR",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ir",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.LG",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-lg",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.MA",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ma",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.RO",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-ro",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv cs.SE",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-cs-se",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "arxiv_api",
+      "name": "arXiv stat.ML",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "arxiv-stat-ml",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Awesome Japanese LLM (GitHub)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "awesome-japanese-llm",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "AWS Machine Learning Blog",
+      "newest_item_date": "2026-06-12T20:43:56+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "aws-ml-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "DeepMind Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "deepmind-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "ELYZA Official Blog (note)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "elyza-official-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Google AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "google-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face 01.AI (Yi)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-01-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Cohere",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-cohere",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_daily_papers",
+      "name": "Hugging Face Daily Papers",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-daily-papers",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face DeepSeek AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-deepseek-ai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Google",
+      "newest_item_date": "2026-06-12T17:06:06+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "hf-google",
+      "status": "HAS_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Meta Llama",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-meta-llama",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Microsoft",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-microsoft",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Mistral AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-mistralai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face OpenAI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-openai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Qwen",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-qwen",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "hf_org",
+      "name": "Hugging Face Stability AI",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "hf-stabilityai",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "IVRy AI Magazine (note)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "ivry-ai-magazine",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "kun432 (Zenn) - RAG/Local LLM",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "kun432-zenn",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LayerX Engineering Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "layerx-eng-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LLM-jp Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "llm-jp-blog",
+      "status": "NO_UPDATE",
+      "tier": 1
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "LLM Tech Blog RSS Feed (GitHub)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "llm-tech-blog-rss-feed",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 1,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Microsoft Research Blog",
+      "newest_item_date": "2026-06-12T20:30:48+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "microsoft-research-blog",
+      "status": "HAS_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "npaka (note) - Japanese LLM Curation",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "npaka-note",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "NVIDIA AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "nvidia-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "OpenAI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "openai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Preferred Networks Tech Blog (LLM)",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "pfn-tech-blog-llm",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Qiita 生成AI Tag",
+      "newest_item_date": "2026-06-13T12:22:26+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "qiita-genai-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 4,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Qiita LLM Tag",
+      "newest_item_date": "2026-06-13T10:29:52+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "qiita-llm-tag",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "Sakana AI Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sakana-ai-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Sebastian Raschka Blog",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "sebastian-raschka-blog",
+      "status": "NO_UPDATE",
+      "tier": 0
+    },
+    {
+      "category": "other",
+      "items_new": 0,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "html_list",
+      "name": "TECH PLAY LLM Tag",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "remediation_hint": null,
+      "source_id": "techplay-llm-tag",
+      "status": "NO_UPDATE",
+      "tier": 2
+    },
+    {
+      "category": "other",
+      "items_new": 16,
+      "items_updated": 0,
+      "last_fetch_status_code": null,
+      "method": "rss_atom",
+      "name": "Zenn LLM Topic",
+      "newest_item_date": "2026-06-13T00:52:11+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
+      "remediation_hint": null,
+      "source_id": "zenn-llm-topic",
+      "status": "HAS_UPDATE",
+      "tier": 2
+    }
+  ],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Charles Meruwoma"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock",
+        "Amazon Bedrock Data Automation",
+        "Amazon Bedrock Knowledge Bases",
+        "Amazon Machine Learning",
+        "Customer Solutions",
+        "Financial Services",
+        "How-To",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-06-13T12:10:00.741971+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services",
+          "url": "https://aws.amazon.com/blogs/machine-learning/from-pdfs-to-insights-architecting-an-intelligent-document-processing-pipeline-with-aws-generative-ai-services"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services",
+        "url": "https://aws.amazon.com/blogs/machine-learning/from-pdfs-to-insights-architecting-an-intelligent-document-processing-pipeline-with-aws-generative-ai-services"
+      },
+      "published_at": "2026-06-12T14:43:11+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9127152035154422,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 11.412715203515443
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:7bc2654d35fd18bb",
+      "summary": "This post outlines the development of a cost-effective and scalable intelligent document processing pipeline on AWS, powered by Amazon Bedrock and its features. BDA is a managed service within Amazon Bedrock that automates the extraction of insights from documents. We demonstrate how BDA extracts and analyzes document content, while Strands Agent hosted on Amazon Bedrock AgentCore Runtime coordinate specialized processing tasks, and Amazon Bedrock Knowledge Base enable contextual understanding across multiple documents. By combining these capabilities within a unified architecture, organizations can transform their document processing workflows with minimal development effort.",
+      "title": "From PDFs to insights: Architecting an intelligent document processing pipeline with AWS generative AI services"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "まさふみ"
+      ],
+      "categories": [],
+      "entities": [
+        "deepmind",
+        "ollama"
+      ],
+      "first_seen_at": "2026-06-13T12:38:20.214179+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "multi-agent-shogun に Gemini CLI + Ollama を入れたら inbox3 で詰まった話と解決策",
+          "url": "https://zenn.dev/masafumi_heijo/articles/791fbea6eddd68"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "multi-agent-shogun に Gemini CLI + Ollama を入れたら inbox3 で詰まった話と解決策",
+        "url": "https://zenn.dev/masafumi_heijo/articles/791fbea6eddd68"
+      },
+      "published_at": "2026-06-12T13:22:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9076166022998979,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.707616602299897
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:ab96bb15e9069c64",
+      "summary": "はじめに\nGemini CLI に inbox3 というシグナルを送ったとき、こんな返答が来ました。\n\nI'm not sure what \"inbox3\" refers to. Could you please clarify your request?\n\nこの問題の発見から解決までが、この記事の核心です。前半は問題が起きた環境の説明（構成・コスト）で、解決策は「詰まった：Gemini CLI が inbox を処理できない問題」のセクションから始まります。\n背景を補足すると、multi-agent-shogun という、Claude Code を複数起動してマルチエージェント開発...",
+      "title": "multi-agent-shogun に Gemini CLI + Ollama を入れたら inbox3 で詰まった話と解決策"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Anton Selin"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Bedrock Knowledge Bases",
+        "Amazon Simple Storage Service (S3)",
+        "AWS Lambda"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:10:00.741291+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI",
+        "url": "https://aws.amazon.com/blogs/machine-learning/building-supercharger-how-rocket-close-optimized-title-operations-with-agentic-ai"
+      },
+      "published_at": "2026-06-12T20:43:56+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9358694408276252,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 9.435869440827625
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:3abebf5299bb3b23",
+      "summary": "In this post, we explore how Rocket Close built a solution using Strands Agents, large language models (LLMs), Amazon Bedrock, Amazon Bedrock Knowledge Bases, and Model Context Protocol (MCP) tools. We cover solution features, the rationale for the technology stack, lessons learned, and the business impact at Rocket Close.",
+      "title": "Building Supercharger: How Rocket Close optimized title operations with agentic AI"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Ebbey Thomas"
+      ],
+      "categories": [
+        "Amazon Quick Suite",
+        "Customer Solutions"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-13T12:10:00.741699+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Build a meeting prep and follow-up assistant with Amazon Quick and Cisco Webex MCP servers",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-a-meeting-prep-and-follow-up-assistant-with-amazon-quick-and-cisco-webex-mcp-servers"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Build a meeting prep and follow-up assistant with Amazon Quick and Cisco Webex MCP servers",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-a-meeting-prep-and-follow-up-assistant-with-amazon-quick-and-cisco-webex-mcp-servers"
+      },
+      "published_at": "2026-06-12T14:49:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9131262291550898,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 9.16312622915509
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:35959afdb0412fe6",
+      "summary": "This post shows how to build a custom meeting prep and follow-up assistant using Amazon Quick and Cisco Webex MCP servers. From a single prompt, the agent finds an upcoming Webex meeting, reviews prior meeting summaries and transcripts, and pulls related Vidcast highlights and transcript context. It then searches Webex message threads for unresolved follow-ups and creates a concise prep brief. After the meeting, the same assistant can summarize the discussion and identify action items. It can also find related Vidcast updates and draft a follow-up message for the right Webex space.",
+      "title": "Build a meeting prep and follow-up assistant with Amazon Quick and Cisco Webex MCP servers"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "pyo2102"
+      ],
+      "categories": [],
+      "entities": [
+        "ollama"
+      ],
+      "first_seen_at": "2026-06-13T12:38:19.922470+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "ローカルLLM(Ollama)をMAUIアプリから呼び出してみた",
+          "url": "https://qiita.com/pyo2102/items/6b61a7ddc88a2139fb4a"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "ローカルLLM(Ollama)をMAUIアプリから呼び出してみた",
+        "url": "https://qiita.com/pyo2102/items/6b61a7ddc88a2139fb4a"
+      },
+      "published_at": "2026-06-13T10:29:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9911168731474028,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 8.791116873147402
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:e4ff4e8aa33f7d87",
+      "summary": "はじめに\nAIを使用して何かアプリの開発をしようと思ったのですが、ChatGPT SDKを利用するとクレジットが必要だったため、ローカルLLMで試せないかと思い実装してみました。\n今回はOllamaを用いて、アプリ側からプロンプトを送りレスポンスを取得する方法を備忘録とし...",
+      "title": "ローカルLLM(Ollama)をMAUIアプリから呼び出してみた"
+    }
+  ]
+}

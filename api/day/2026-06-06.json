@@ -1,0 +1,3145 @@
+{
+  "archive_dates": [
+    "2026-06-08",
+    "2026-06-07",
+    "2026-06-06",
+    "2026-05-31",
+    "2026-05-30",
+    "2026-05-29",
+    "2026-05-28",
+    "2026-05-27",
+    "2026-05-26",
+    "2026-05-25",
+    "2026-05-24",
+    "2026-05-23",
+    "2026-05-22",
+    "2026-05-21",
+    "2026-05-20",
+    "2026-05-19",
+    "2026-05-18",
+    "2026-05-17",
+    "2026-05-16",
+    "2026-05-15",
+    "2026-05-14",
+    "2026-05-13",
+    "2026-05-12",
+    "2026-05-11",
+    "2026-05-10",
+    "2026-05-09",
+    "2026-05-08",
+    "2026-05-07",
+    "2026-05-06",
+    "2026-05-05",
+    "2026-05-04",
+    "2026-05-03",
+    "2026-05-02",
+    "2026-05-01",
+    "2026-04-30",
+    "2026-04-29",
+    "2026-04-28",
+    "2026-04-27",
+    "2026-04-26",
+    "2026-04-25",
+    "2026-04-24",
+    "2026-04-23",
+    "2026-04-22",
+    "2026-04-21",
+    "2026-04-20",
+    "2026-04-19",
+    "2026-04-18",
+    "2026-04-17",
+    "2026-04-16",
+    "2026-04-15",
+    "2026-04-14",
+    "2026-04-13",
+    "2026-04-12",
+    "2026-04-11",
+    "2026-04-10",
+    "2026-04-09",
+    "2026-04-08",
+    "2026-04-07",
+    "2026-04-06",
+    "2026-04-05",
+    "2026-04-04",
+    "2026-04-03",
+    "2026-04-02",
+    "2026-04-01",
+    "2026-03-31",
+    "2026-03-30",
+    "2026-03-29",
+    "2026-03-28",
+    "2026-03-27",
+    "2026-03-26",
+    "2026-03-25",
+    "2026-03-24",
+    "2026-03-23",
+    "2026-03-22",
+    "2026-03-21",
+    "2026-03-20",
+    "2026-03-19",
+    "2026-03-18",
+    "2026-03-17",
+    "2026-03-16",
+    "2026-03-15",
+    "2026-03-14",
+    "2026-03-13",
+    "2026-03-12",
+    "2026-03-11",
+    "2026-03-10",
+    "2026-03-09",
+    "2026-03-08",
+    "2026-03-07",
+    "2026-03-06",
+    "2026-03-05",
+    "2026-03-04",
+    "2026-03-03"
+  ],
+  "entity_catalog": {
+    "01-ai": {
+      "name": "01.AI",
+      "type": "organization"
+    },
+    "abeja": {
+      "name": "ABEJA",
+      "type": "organization"
+    },
+    "ai-shift": {
+      "name": "AI Shift",
+      "type": "organization"
+    },
+    "andrej-karpathy": {
+      "name": "Andrej Karpathy",
+      "type": "researcher"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "type": "organization"
+    },
+    "aws": {
+      "name": "AWS",
+      "type": "organization"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "type": "organization"
+    },
+    "cyberagent": {
+      "name": "CyberAgent",
+      "type": "organization"
+    },
+    "deepmind": {
+      "name": "DeepMind",
+      "type": "organization"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "type": "organization"
+    },
+    "elyza": {
+      "name": "ELYZA",
+      "type": "organization"
+    },
+    "geoffrey-hinton": {
+      "name": "Geoffrey Hinton",
+      "type": "researcher"
+    },
+    "google-research": {
+      "name": "Google Research",
+      "type": "institution"
+    },
+    "huggingface": {
+      "name": "Hugging Face",
+      "type": "organization"
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "type": "researcher"
+    },
+    "ivry": {
+      "name": "IVRy",
+      "type": "organization"
+    },
+    "langchain": {
+      "name": "LangChain",
+      "type": "organization"
+    },
+    "layerx": {
+      "name": "LayerX",
+      "type": "organization"
+    },
+    "llama-cpp": {
+      "name": "llama.cpp",
+      "type": "organization"
+    },
+    "llm-jp": {
+      "name": "LLM-jp",
+      "type": "institution"
+    },
+    "meta-ai": {
+      "name": "Meta AI",
+      "type": "institution"
+    },
+    "microsoft-research": {
+      "name": "Microsoft Research",
+      "type": "institution"
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "type": "organization"
+    },
+    "nii": {
+      "name": "NII (LLM-jp)",
+      "type": "institution"
+    },
+    "nvidia": {
+      "name": "NVIDIA",
+      "type": "organization"
+    },
+    "ollama": {
+      "name": "Ollama",
+      "type": "organization"
+    },
+    "openai": {
+      "name": "OpenAI",
+      "type": "organization"
+    },
+    "preferred-networks": {
+      "name": "Preferred Networks",
+      "type": "organization"
+    },
+    "qwen": {
+      "name": "Qwen",
+      "type": "organization"
+    },
+    "rinna": {
+      "name": "rinna",
+      "type": "organization"
+    },
+    "sakana-ai": {
+      "name": "Sakana AI",
+      "type": "organization"
+    },
+    "stability-ai": {
+      "name": "Stability AI",
+      "type": "organization"
+    },
+    "vllm": {
+      "name": "vLLM",
+      "type": "organization"
+    },
+    "weblab": {
+      "name": "Weblab",
+      "type": "organization"
+    },
+    "yann-lecun": {
+      "name": "Yann LeCun",
+      "type": "researcher"
+    },
+    "yoshua-bengio": {
+      "name": "Yoshua Bengio",
+      "type": "researcher"
+    }
+  },
+  "generated_at": "2026-06-08T15:23:38.642385+00:00",
+  "model_releases_by_entity": {
+    "huggingface": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [
+          "huggingface"
+        ],
+        "first_seen_at": "2026-06-08T14:59:59.061591+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 373,
+          "likes": 11,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-e4b-it-qat-mobile-transformers",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-E4B-it-qat-mobile-transformers",
+            "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-transformers"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-E4B-it-qat-mobile-transformers",
+          "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-transformers"
+        },
+        "published_at": "2026-06-05T20:32:13+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 2.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.7569432169309609,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 10.55694321693096
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-e4b-it-qat-mobile-transformers",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-E4B-it-qat-mobile-transformers"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [
+          "huggingface"
+        ],
+        "first_seen_at": "2026-06-08T14:59:59.061908+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 1002,
+          "likes": 18,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-e2b-it-qat-mobile-transformers",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-E2B-it-qat-mobile-transformers",
+            "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-E2B-it-qat-mobile-transformers",
+          "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers"
+        },
+        "published_at": "2026-06-05T20:31:18+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 2.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.7568950334218514,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 10.556895033421851
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-e2b-it-qat-mobile-transformers",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-E2B-it-qat-mobile-transformers"
+      }
+    ],
+    "llama-cpp": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [
+          "llama-cpp"
+        ],
+        "first_seen_at": "2026-06-08T14:59:59.060360+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 12750,
+          "likes": 27,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-e4b-it-qat-q4_0-gguf",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-E4B-it-qat-q4_0-gguf",
+            "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-E4B-it-qat-q4_0-gguf",
+          "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf"
+        },
+        "published_at": "2026-06-06T15:57:01+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 2.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.8207159990606557,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 10.620715999060655
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-e4b-it-qat-q4_0-gguf",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-E4B-it-qat-q4_0-gguf"
+      }
+    ],
+    "other": [
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-06-08T14:59:59.060990+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 1035,
+          "likes": 10,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-e4b-it-qat-mobile-ct",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-E4B-it-qat-mobile-ct",
+            "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-ct"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-E4B-it-qat-mobile-ct",
+          "url": "https://huggingface.co/google/gemma-4-E4B-it-qat-mobile-ct"
+        },
+        "published_at": "2026-06-05T20:34:27+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.7570606223210379,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.557060622321037
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-e4b-it-qat-mobile-ct",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-E4B-it-qat-mobile-ct"
+      },
+      {
+        "arxiv_id": null,
+        "authors": [],
+        "categories": [],
+        "entities": [],
+        "first_seen_at": "2026-06-08T14:59:59.061274+00:00",
+        "github_release_url": null,
+        "hf_metadata": {
+          "downloads": 1116,
+          "likes": 10,
+          "pipeline_tag": "any-to-any"
+        },
+        "hf_model_id": "google/gemma-4-e2b-it-qat-mobile-ct",
+        "item_count": 1,
+        "links": [
+          {
+            "link_type": "huggingface",
+            "source_id": "hf-google",
+            "tier": 1,
+            "title": "google/gemma-4-E2B-it-qat-mobile-ct",
+            "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-ct"
+          }
+        ],
+        "primary_link": {
+          "link_type": "huggingface",
+          "source_id": "hf-google",
+          "tier": 1,
+          "title": "google/gemma-4-E2B-it-qat-mobile-ct",
+          "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-ct"
+        },
+        "published_at": "2026-06-05T20:33:30+00:00",
+        "scores": {
+          "citation_score": 0.0,
+          "cross_source_score": 0.0,
+          "entity_score": 0.0,
+          "kind_score": 1.8,
+          "llm_raw_score": 0.0,
+          "llm_relevance_score": 0.0,
+          "recency_score": 0.7570106789968806,
+          "semantic_score": 0.0,
+          "tier_score": 2.0,
+          "topic_score": 4.0,
+          "total_score": 8.55701067899688
+        },
+        "section": null,
+        "source_name": null,
+        "story_id": "hf:google/gemma-4-e2b-it-qat-mobile-ct",
+        "summary": "Hugging Face | Launch Blog | Documentation License: Apache 2.0 | Authors: Google DeepMind > This model card is for the new versions of the Gemma 4 family optimized with Quantization-Aware Training (QAT), which allows preserving similar quality to bfloat16 while dramatically reducing the memory requirements to load the model. > Four versions of the QAT checkpoints are available: > * **Unquantized QAT checkpoints** (Q4_0): Half-precision weights extracted from the QAT pipeline, ideal for custom downstream compilation and research. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B, and their drafter models. > * **GGUF** (Q4_0): Ready-to-deploy formats for broad ecosystem compatibility. Available for Gemma 4 E2B, E4B, 12B, 26B A4B, and 31B. > * **Mobile-optimized** (wNa8o8): A custom...",
+        "title": "google/gemma-4-E2B-it-qat-mobile-ct"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "arxiv_id": "2606.07489",
+      "authors": [
+        "Jeremy Yang",
+        "Kate Zyskowski",
+        "Noah Yonack",
+        "Jerry Ma"
+      ],
+      "categories": [
+        "cs.AI",
+        "econ.GN"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.772695+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+          "url": "https://arxiv.org/abs/2606.07489"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+        "url": "https://arxiv.org/abs/2606.07489"
+      },
+      "published_at": "2026-06-05T17:45:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.72,
+        "llm_relevance_score": 20.16,
+        "recency_score": 0.7482380008616611,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.10823800086166
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07489",
+      "summary": "Frontier AI systems are bridging the gap between intelligence and utility by shifting from conversational assistants to autonomous agents that execute tasks end to end. Using production data from Perplexity's Search and Computer products, we study this transition by examining how AI agents accelerate and reshape knowledge work. Three key empirical findings emerge. First, using sessions with near-identical initial query pairs as natural experiments for the same underlying task attempted with both",
+      "summary_zh": "前沿 AI 系統正從對話式助手轉變為端到端執行任務的自主代理，彌合了智慧與實用性之間的差距。本文利用 Perplexity 的 Search 與 Computer 產品的生產數據，研究 AI 代理如何加速並重塑知識工作。三項關鍵的實證發現包括：透過將近乎相同的初始查詢對視為針對同一底層任務的自然實驗，作者觀察到工作流程與效率的顯著變化。這項研究為 AI 對高階認知工作的影響提供了量化證據，對組織如何評估和部署自主代理有重要啟示。",
+      "title": "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+      "title_zh": "AI 代理如何重塑知識工作：自主性、效率與範疇"
+    },
+    {
+      "arxiv_id": "2606.07448",
+      "authors": [
+        "Romain Robbes",
+        "Théo Matricon",
+        "Thomas Degueule",
+        "Andre Hora",
+        "Stefano Zacchiroli"
+      ],
+      "categories": [
+        "cs.SE"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:44:15.890048+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-se",
+          "tier": 1,
+          "title": "Agentic Very Much! Adoption of Coding Agent in New GitHub Projects",
+          "url": "https://arxiv.org/abs/2606.07448"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-se",
+        "tier": 1,
+        "title": "Agentic Very Much! Adoption of Coding Agent in New GitHub Projects",
+        "url": "https://arxiv.org/abs/2606.07448"
+      },
+      "published_at": "2026-06-05T16:51:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.72,
+        "llm_relevance_score": 20.16,
+        "recency_score": 0.745425284088427,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.105425284088426
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07448",
+      "summary": "In previous work, we investigated the adoption of coding agents in GitHub projects, finding that it was very significant. This study follows this line of work, but analyses new projects, that were created after the previous study. In this new sample, we find that the adoption of coding agents is more than twice as high. We also find that the adoption is significantly more intensive, as the proportion of AI-assisted commits is sensibly higher, despite strong signs that we do not detect all of it.",
+      "summary_zh": "延續先前對 GitHub 專案中 coding agent 採用情況的研究，本文轉而分析在前期研究之後建立的全新專案。在新的樣本中，研究發現 coding agent 的採用率是之前的兩倍以上，且採用強度顯著更高，表現在 AI 輔助提交的比例明顯上升，儘管存在強烈跡象顯示並非所有此類提交都被完全偵測到。這一結果凸顯了 AI 模型在軟體開發中自主編寫程式碼的角色正以指數級速度增長，對開源生態與團隊協作模式產生深遠影響。",
+      "title": "Agentic Very Much! Adoption of Coding Agent in New GitHub Projects",
+      "title_zh": "代理化程度非常之高！在全新 GitHub 專案中對 Coding Agent 的採用"
+    },
+    {
+      "arxiv_id": "2606.07441",
+      "authors": [
+        "Daniel Vennemeyer",
+        "Phan Anh Duong",
+        "Meryl Ye",
+        "Ruihong Huang",
+        "Tianyu Jiang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:35.765109+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "Sycophantic Praise: Evaluating Excessive Praise in Language Models",
+          "url": "https://arxiv.org/abs/2606.07441"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "Sycophantic Praise: Evaluating Excessive Praise in Language Models",
+        "url": "https://arxiv.org/abs/2606.07441"
+      },
+      "published_at": "2026-06-05T16:38:45+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.72,
+        "llm_relevance_score": 20.16,
+        "recency_score": 0.7447698742230965,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.104769874223095
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07441",
+      "summary": "Sycophancy in language models is typically studied as excessive agreement or validation, while explicit praise and flattery have received comparatively little attention. We argue that sycophantic praise is a distinct alignment problem that cannot be reliably measured using current methods. We introduce a parameterized framework that measures whether praise is excessive relative to contribution quality and expected user ability. We show that our framework substantially outperforms generic LLM jud",
+      "summary_zh": "語言模型中的 sycophancy（奉承行為）通常被視為過度的附和或肯定，而明確的讚美與恭維則較少受到關注。本文論證 sycophantic praise 是一個獨特的對齊問題，無法用現有方法可靠衡量。作者提出一個參數化框架，用於評估讚美是否相對於貢獻品質與預期用戶能力而言過度。結果顯示，該框架在偵測過度讚美方面顯著優於通用的 LLM 評判標準。這項工作有助於研究者在模型對齊中識別並緩解迎合性回饋，從而提升 AI 系統的忠實度與可靠性。",
+      "title": "Sycophantic Praise: Evaluating Excessive Praise in Language Models",
+      "title_zh": "奉承式讚美：評估語言模型中的過度讚美現象"
+    },
+    {
+      "arxiv_id": "2606.07500",
+      "authors": [
+        "Fatema Siddika",
+        "Md Anwar Hossen",
+        "Tanwi Mallick",
+        "Ali Jannesari"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.772110+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
+          "url": "https://arxiv.org/abs/2606.07500"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
+        "url": "https://arxiv.org/abs/2606.07500"
+      },
+      "published_at": "2026-06-05T17:53:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.7,
+        "llm_relevance_score": 19.599999999999998,
+        "recency_score": 0.7486650686818359,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 27.548665068681835
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07500",
+      "summary": "Continual learning in Large Language Models (LLMs) is hindered by the plasticity-stability dilemma, where acquiring new capabilities often leads to catastrophic forgetting of previous knowledge. Existing methods typically treat parameters uniformly, failing to distinguish between specific task knowledge and shared capabilities. We introduce Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA), a framework that resolves the plasticity-stability conflict through adaptive sparse su",
+      "summary_zh": "大型語言模型（LLMs）中的持續學習受到可塑性-穩定性困境的阻礙，即習得新能力常導致對舊知識的災難性遺忘。現有方法通常統一處理所有參數，未能區分特定任務知識與共享能力。本文引入 Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA) 架構，透過自適應稀疏子空間選擇與專家共享機制來解決該衝突。SETA 使模型在學習新任務時能保留關鍵舊知識，同時有效擴展至新領域，為 LLMs 的持續學習提供了一種高效且可擴展的解決方案。",
+      "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
+      "title_zh": "基於稀疏子空間到專家共享的任務無關持續學習"
+    },
+    {
+      "arxiv_id": "2606.07422",
+      "authors": [
+        "Yang Zhang",
+        "Xiao Fei",
+        "Amr Mohamed",
+        "Sarah Almeida Carneiro",
+        "Mersin Konomi",
+        "Mingmeng Geng",
+        "Ahmed Asaad",
+        "Guokan Shang",
+        "Michalis Vazirgiannis"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.775333+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "The Masked Advantage: Uncovering Local-Language Access to Cultural Knowledge in LLMs",
+          "url": "https://arxiv.org/abs/2606.07422"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "The Masked Advantage: Uncovering Local-Language Access to Cultural Knowledge in LLMs",
+        "url": "https://arxiv.org/abs/2606.07422"
+      },
+      "published_at": "2026-06-05T16:16:59+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.65,
+        "llm_relevance_score": 18.2,
+        "recency_score": 0.7436449498075512,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 26.143644949807552
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07422",
+      "summary": "Large language models are increasingly used to answer culturally grounded questions across languages, yet it remains unclear whether local cultural knowledge is better accessed through English or the local language. Existing evaluations face two key limitations: many rely on parallel template-based questions that may not reflect how cultural knowledge naturally appears, and raw accuracy conflates general language proficiency with language-conditioned knowledge access. We address these issues wit",
+      "summary_zh": "大型語言模型越來越多地被用於回答跨語言的、與文化背景相關的問題，但關於本地文化知識是透過英語還是當地語言更容易被存取，仍不明確。現有評估存在兩項關鍵限制：許多依賴於平行模板式問題，未能反映文化知識的自然呈現方式；而原始準確率混淆了通用語言能力與語言條件下的知識存取。本文透過遮罩與評估設計解決這些問題，證明特定文化知識更有效地從當地語言中檢索，而非僅透過英語。此發現對開發包容性 AI 系統具有重要意義，能更好地服務多元語言社群。",
+      "title": "The Masked Advantage: Uncovering Local-Language Access to Cultural Knowledge in LLMs",
+      "title_zh": "遮罩的優勢：揭示語言模型透過地方語言獲取文化知識的途徑"
+    },
+    {
+      "arxiv_id": "2606.07462",
+      "authors": [
+        "Jiayu Wang",
+        "Weijiang Lv",
+        "Bowen Fu",
+        "Jing Fu",
+        "Jiayi Song",
+        "Lingyu Zhang",
+        "Lanxuan Xue",
+        "Luodi Chen",
+        "Zepeng Xin",
+        "Kaiyu Li",
+        "Xiangyong Cao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.774083+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+          "url": "https://arxiv.org/abs/2606.07462"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+        "url": "https://arxiv.org/abs/2606.07462"
+      },
+      "published_at": "2026-06-05T17:13:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.6,
+        "llm_relevance_score": 16.8,
+        "recency_score": 0.74657450360503,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 24.746574503605032
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07462",
+      "summary": "As foundation models advance and agent scaffolding becomes increasingly sophisticated, agents have demonstrated remarkable proficiency in complex, long-horizon coding tasks and even autonomous experiment execution. Despite their evolution from research assistants into autonomous research agents, these systems still exhibit significant limitations in field sensitivity, research ethics, and nuanced scientific judgment. Consequently, frontier agents remain unable to fully replace human researchers.",
+      "summary_zh": "隨著基礎模型進步與 agent 框架日益成熟，這些系統在複雜、長程的程式碼任務乃至自主執行實驗方面展現出驚人能力。儘管它們已從研究助手演進為自主式研究 agent，但在領域敏感度、研究倫理及細膩的科學判斷上仍存在顯著侷限。因此，前沿 agent 仍無法完全取代人類研究者，凸顯了開發更全面評估基準的重要性。",
+      "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+      "title_zh": "扮演真正的研究者：評估前沿 LLM 與 Agent 框架在研究生命週期中表現的基準套件"
+    },
+    {
+      "arxiv_id": "2606.07479",
+      "authors": [
+        "Sercan Karakaş",
+        "Yusuf Şimşek"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.772884+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Supervision versus Demonstration-Based In-Context Learning for Multiword Expression Classification",
+          "url": "https://arxiv.org/abs/2606.07479"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Supervision versus Demonstration-Based In-Context Learning for Multiword Expression Classification",
+        "url": "https://arxiv.org/abs/2606.07479"
+      },
+      "published_at": "2026-06-05T17:34:07+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.55,
+        "llm_relevance_score": 15.400000000000002,
+        "recency_score": 0.7476389575746806,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.45,
+        "total_score": 22.797638957574684
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07479",
+      "summary": "Turkish idiomatic light verb constructions (LVCs) are challenging for multiword expression processing because they often share the same surface form as fully literal verb-object combinations while functioning as a single, partially idiomatic predicate. We frame Turkish LVC detection as a binary classification task (literal meaning vs. idiomatic meaning) and evaluate on a manually created controlled set (N=147) with matched negatives: out-of-domain random sentences and in-domain literal controls ",
+      "summary_zh": "土耳其語成語輕動詞結構（LVC）因常與完全字面義的動詞-賓語組合共享相同表層形式，同時又作為單一、部分成語化的謂語運作，對多詞表達處理構成挑戰。本文將土耳其語 LVC 檢測框架為二元分類任務（字面義 vs. 成語義），並在人工創建的受控資料集（N=147）上進行評估，該資料集包含領域外的隨機句子與領域內的字面對照組作為匹配負樣本。",
+      "title": "Supervision versus Demonstration-Based In-Context Learning for Multiword Expression Classification",
+      "title_zh": "基於監督與示範的上下文學習在多詞表達分類中的比較"
+    },
+    {
+      "arxiv_id": "2606.07486",
+      "authors": [
+        "Ziyang Xiong",
+        "He Zong",
+        "Zhiyuan Xue",
+        "Manxi Wu"
+      ],
+      "categories": [
+        "eess.SY"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:53:05.599198+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-api-agents",
+          "tier": 1,
+          "title": "OPENPATH: A Supervisor--Specialist Agent System for Personalized, Accessible, and Multi-stop Urban Trip Planning",
+          "url": "https://arxiv.org/abs/2606.07486"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-api-agents",
+        "tier": 1,
+        "title": "OPENPATH: A Supervisor--Specialist Agent System for Personalized, Accessible, and Multi-stop Urban Trip Planning",
+        "url": "https://arxiv.org/abs/2606.07486"
+      },
+      "published_at": "2026-06-05T17:40:54+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.45,
+        "llm_relevance_score": 12.6,
+        "recency_score": 0.7479912269461179,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 21.547991226946117
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07486",
+      "summary": "Urban trip-planning systems are commonly optimized for travel time and cost, but they offer limited support for the heterogeneous needs that real travelers bring, such as personalized preferences, multi-stop itinerary construction, and end-to-end wheelchair accessibility. We present openpaths, a supervisor-specialist multi-agent system that handles all of these tasks within a single architecture. openpaths adopts a deliberate division of labor: LLM agents parse natural-language input, classify r",
+      "summary_zh": "城市行程規劃系統通常以旅行時間與成本為最佳化目標，但對真實旅客的多樣化需求（如個人化偏好、多點路線建構及端到端輪椅無障礙性）支援有限。本文提出 openpaths，一個管理者-專家多 agent 系統，可在單一架構內處理所有這些任務。該系統採用明確分工：LLM agent 解析自然語言輸入、分類需求，並協調專家 agent 生成最佳路線，從而提升個人化與包容性。",
+      "title": "OPENPATH: A Supervisor--Specialist Agent System for Personalized, Accessible, and Multi-stop Urban Trip Planning",
+      "title_zh": "OPENPATH：用於個人化、無障礙與多點城市行程規劃的管理者-專家 Agent 系統"
+    },
+    {
+      "arxiv_id": "2606.07451",
+      "authors": [
+        "Sweta Mahajan",
+        "Sukrut Rao",
+        "Jiahao Xie",
+        "Alexander Koller",
+        "Bernt Schiele"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.774577+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment",
+          "url": "https://arxiv.org/abs/2606.07451"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment",
+        "url": "https://arxiv.org/abs/2606.07451"
+      },
+      "published_at": "2026-06-05T16:54:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.3,
+        "llm_relevance_score": 8.4,
+        "recency_score": 0.7455935414204524,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 16.345593541420453
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07451",
+      "summary": "Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we us",
+      "summary_zh": "Vision-language 模型如 CLIP 因共享的圖像-文本嵌入空間而對多樣任務極具價值，但圖像與文本嵌入常對齊不良，影響下游表現。近來研究指出此問題源於資訊不平衡：圖像包含的資訊遠多於其文字說明。本文提出 TEVI 框架，以文字說明作為保留圖像嵌入中哪些訊號的指引，具體採用稀疏自編碼器進行條件式編輯。此方法有助於減少多餘資訊干擾，提升跨模態對齊品質與下游任務準確率。",
+      "title": "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment",
+      "title_zh": "TEVI：基於稀疏自編碼器的文本條件式視覺表徵編輯以改善視覺語言對齊"
+    },
+    {
+      "arxiv_id": "2606.07496",
+      "authors": [
+        "Ming Sun",
+        "Kun Yuan"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.914518+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Accelerated Decentralized Stochastic Gradient Descent for Strongly Convex Optimization",
+          "url": "https://arxiv.org/abs/2606.07496"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Accelerated Decentralized Stochastic Gradient Descent for Strongly Convex Optimization",
+        "url": "https://arxiv.org/abs/2606.07496"
+      },
+      "published_at": "2026-06-05T17:51:11+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.25,
+        "llm_relevance_score": 7.0,
+        "recency_score": 0.7485255734893058,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 14.948525573489306
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07496",
+      "summary": "Decentralized stochastic optimization is a fundamental paradigm for large-scale learning over networks, where agents communicate only with their neighbors and no central coordinator is required. For strongly convex problems, communication efficiency is mainly determined by the condition number \\(κ=L/μ\\) and the network spectral gap \\(1-β\\). Although deterministic decentralized methods can simultaneously achieve accelerated \\(\\sqrtκ\\) and \\(1/\\sqrt{1-β}\\) dependences, no existing stochastic metho",
+      "summary_zh": "去中心化隨機最佳化是大規模網路學習的基本範式，其中各 agent 僅與鄰居通訊，無需中央協調者。對於強凸問題，通訊效率主要由條件數 κ=L/μ 與網路頻譜間隙 1-β 決定。儘管確定性去中心化方法可同時實現加速的 √κ 與 1/√(1-β) 相依性，但現有隨機方法尚未達成此雙重加速。本文提出加速去中心化隨機梯度下降法，首次在強凸設定下實現理論上的最優收斂速率，對提升分散式學習系統的通訊效率具有關鍵意義。",
+      "title": "Accelerated Decentralized Stochastic Gradient Descent for Strongly Convex Optimization",
+      "title_zh": "用於強凸最佳化的加速去中心化隨機梯度下降法"
+    },
+    {
+      "arxiv_id": "2606.07473",
+      "authors": [
+        "Georgii Aparin",
+        "Vadim Popov",
+        "Tasnima Sadekova",
+        "Assel Yermekova"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.773632+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Whisper Hallucination Detection and Mitigation via Hidden Representation Steering and Sparse AutoEncoders",
+          "url": "https://arxiv.org/abs/2606.07473"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Whisper Hallucination Detection and Mitigation via Hidden Representation Steering and Sparse AutoEncoders",
+        "url": "https://arxiv.org/abs/2606.07473"
+      },
+      "published_at": "2026-06-05T17:26:23+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.7472375555576536,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 13.547237555557654
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07473",
+      "summary": "Whisper, a widely adopted ASR model, is known to suffer from hallucinations - coherent transcriptions generated for non-speech audio entirely disconnected from the input. We investigate whether hallucinations can be detected and mitigated through Whisper's internal representations. We extract audio encoder activations and evaluate two representation spaces: raw Whisper activations and Sparse AutoEncoder (SAE) latents. We show that both spaces encode linearly separable hallucination-related infor",
+      "summary_zh": "本研究探討 Whisper 自動語音辨識模型中的幻覺問題，即模型在無語音輸入時產生連貫但與輸入完全脫節的轉錄內容。作者透過分析 Whisper 的內部表徵來偵測此類幻覺：他們提取音訊編碼器的激活值，並評估兩種表徵空間——原始 Whisper 激活值與稀疏自動編碼器潛在變量。實驗結果顯示，這兩個空間均能編碼線性可分的幻覺相關資訊，為後續緩解策略提供了可解釋的基礎。此方法對於提升 ASR 系統在實際應用中的可靠性具有重要意義。",
+      "title": "Whisper Hallucination Detection and Mitigation via Hidden Representation Steering and Sparse AutoEncoders",
+      "title_zh": "Whisper 幻覺偵測與緩解：透過隱藏表徵導引與稀疏自動編碼器"
+    },
+    {
+      "arxiv_id": "2606.07495",
+      "authors": [
+        "Jin Guo",
+        "Roy Y. He",
+        "Jean-Michel Morel"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.914856+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Second-Order Path Kernel Interpolation Formulas in Machine Learning",
+          "url": "https://arxiv.org/abs/2606.07495"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Second-Order Path Kernel Interpolation Formulas in Machine Learning",
+        "url": "https://arxiv.org/abs/2606.07495"
+      },
+      "published_at": "2026-06-05T17:49:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.7484285486852267,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.45,
+        "total_score": 12.998428548685228
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07495",
+      "summary": "Understanding how training data shape neural network predictions is a central problem in modern learning theory. In 2020, Pedro Domingos proposed an interpolation formula valid for every model learned by deterministic gradient descent. It expresses the model's prediction as an integral, along the optimization path, of a data-dependent kernel that aligns the model's gradients at the test and training data. Such a first-order characterization remains valid for models trained with batch-based stoch",
+      "summary_zh": "本文致力於理解訓練資料如何影響神經網路的預測，這是現代學習理論的核心問題之一。作者繼承並擴展了 Pedro Domingos 提出的路徑核內插公式：原本一階公式將模型預測表達為沿著最佳化路徑的核函數積分，僅適用於確定性梯度下降。本研究將其推廣至帶有批次隨機性及動量等二階資訊的訓練過程，提出了更通用的二階內插框架。該成果不僅深化了對深度學習泛化機制的理論認識，也有望指導資料選擇與模型除錯等實務應用。",
+      "title": "Second-Order Path Kernel Interpolation Formulas in Machine Learning",
+      "title_zh": "機器學習中的二階路徑核內插公式"
+    },
+    {
+      "arxiv_id": "2606.07506",
+      "authors": [
+        "Tuba Girgin",
+        "Jose Castelblanco",
+        "Gabriel Rodriguez",
+        "Emre Girgin",
+        "Cagri Kilic"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:43:44.987901+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ro",
+          "tier": 1,
+          "title": "Affordance-Based Hierarchical Reinforcement Learning for Quadruped Pedipulation",
+          "url": "https://arxiv.org/abs/2606.07506"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ro",
+        "tier": 1,
+        "title": "Affordance-Based Hierarchical Reinforcement Learning for Quadruped Pedipulation",
+        "url": "https://arxiv.org/abs/2606.07506"
+      },
+      "published_at": "2026-06-05T17:56:42+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7488123899591205,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.14881238995912
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07506",
+      "summary": "The object manipulation capabilities of quadruped robots is an open research challenge. While previous studies have focused on low-level policy learning, task execution still relies on expert-designed high-level trajectories. Autonomous selection of both an affordable interaction point on the target object and an affordable robot base pose removes the need for pre-designed trajectories. This study proposes a three-level hierarchical reinforcement learning (RL) framework that utilizes pose afford",
+      "summary_zh": "四足機器人的物體操控能力仍是一項開放性研究挑戰。過去的方法通常仰賴專家設計的高層軌跡，而本研究提出三層分層強化學習框架，使機器人能夠自主選擇目標物體上的可操控交互點以及自身地盤姿態。透過 affordance 的引入，該方法消除了預設計軌跡的需求，並在模擬環境中驗證了其有效性。此項成果將推動四足機器人在非結構化環境中的自主操作能力，降低對人工先驗知識的依賴。",
+      "title": "Affordance-Based Hierarchical Reinforcement Learning for Quadruped Pedipulation",
+      "title_zh": "基於功能可負擔性的四足機器人分層強化學習操控方法"
+    },
+    {
+      "arxiv_id": "2606.07491",
+      "authors": [
+        "Jamie J. Alnasir"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.772452+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Twelve quick tips for designing AI-driven HPC workflows",
+          "url": "https://arxiv.org/abs/2606.07491"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Twelve quick tips for designing AI-driven HPC workflows",
+        "url": "https://arxiv.org/abs/2606.07491"
+      },
+      "published_at": "2026-06-05T17:46:32+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7482839011283166,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.148283901128316
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07491",
+      "summary": "High-performance computing (HPC) clusters remain the backbone of large-scale scientific computation, traditionally executing deterministic, linear pipelines optimised for predictable performance. However, the pervasive integration of artificial intelligence (AI) and foundation models into scientific research has introduced a fundamentally new computational paradigm. AI-driven workflows are characteristically iterative, data-driven, and probabilistic, introducing unique challenges regarding data ",
+      "summary_zh": "高效能計算叢集傳統上執行確定性、線性且表現可預測的管線，但人工智慧與基礎模型的廣泛整合帶來了全新的計算典範。AI 驅動的工作流程具有迭代、資料驅動與機率性的特點，對資料管理、資源排程與錯誤處理等環節提出了獨特挑戰。本文以實務為導向，提出十二項設計準則，涵蓋工作流程結構、資源配置與效能調校等面向。這些指引對於科學計算社群建構可靠且可擴展的 AI-HPC 混合系統具有直接參考價值。",
+      "title": "Twelve quick tips for designing AI-driven HPC workflows",
+      "title_zh": "設計 AI 驅動高效能計算工作流程的十二個實用訣竅"
+    },
+    {
+      "arxiv_id": "2606.07488",
+      "authors": [
+        "Ryan Missel",
+        "Xiajun Jiang",
+        "Linwei Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.915615+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "CoMetaPNS: Continually Meta-learning Personalized Neural Surrogates for Cardiac Electrophysiology Simulations",
+          "url": "https://arxiv.org/abs/2606.07488"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "CoMetaPNS: Continually Meta-learning Personalized Neural Surrogates for Cardiac Electrophysiology Simulations",
+        "url": "https://arxiv.org/abs/2606.07488"
+      },
+      "published_at": "2026-06-05T17:44:42+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7481886395662483,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.14818863956625
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07488",
+      "summary": "Personalized virtual heart simulations face challenges in model personalization and computational cost. While neural surrogates offer state-of-the-art solutions, they typically address either efficient personalization or training generalizable models. Recent work reframes this by learning the process of personalizing a surrogate using limited subject-specific context data, through few-shot generative modeling with set-conditioned surrogates and meta-learned amortized inference. These methods, ho",
+      "summary_zh": "個人化虛擬心臟模擬面臨模型個人化與計算成本的雙重挑戰。現有神經代理模型通常只能解決高效個人化或通用模型訓練其中之一。本研究提出結合元學習與持續學習的框架：透過少量特定受試者的上下文資料，以 few-shot 生成建模與元學習平攤推理來學習個人化代理模型的過程。該方法在保持模擬精度的同時顯著降低了適應新受試者的成本，為臨床可部署的個人化心臟建模提供了可行方向。",
+      "title": "CoMetaPNS: Continually Meta-learning Personalized Neural Surrogates for Cardiac Electrophysiology Simulations",
+      "title_zh": "CoMetaPNS：持續元學習個人化神經代理模型於心臟電生理模擬"
+    },
+    {
+      "arxiv_id": "2606.07487",
+      "authors": [
+        "Lukas Seier",
+        "Brandon Kaplowitz",
+        "Sebastian Towers",
+        "Richard Bailey",
+        "Jakob Foerster"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.GT",
+        "cs.SI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:43:13.523060+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ma",
+          "tier": 1,
+          "title": "Modelling Opinion Dynamics at Scale with Deep MARL",
+          "url": "https://arxiv.org/abs/2606.07487"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ma",
+        "tier": 1,
+        "title": "Modelling Opinion Dynamics at Scale with Deep MARL",
+        "url": "https://arxiv.org/abs/2606.07487"
+      },
+      "published_at": "2026-06-05T17:42:24+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7480691467571778,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.148069146757178
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07487",
+      "summary": "Modelling opinion dynamics typically relies on hand-crafted local interaction rules to study emergent macroscopic phenomena such as consensus and polarisation. In contrast, multi-agent reinforcement learning (MARL) enables agents to learn such behaviours directly by optimising simple rewards. To explore the potential of MARL for opinion dynamics, we introduce a GPU-accelerated consensus and truth-finding game that scales to populations of up to 1000 agents, comparable to many real-world social s",
+      "summary_zh": "傳統意見動態建模仰賴手工設計的局部交互規則來研究共識、極化等宏觀現象。本文引入多智能體強化學習（MARL），讓智能體通過優化簡單獎勵直接學習此類行為。作者提出一個 GPU 加速的共識與真理發現遊戲，可擴展至多達 1000 個智能體，規模可比真實社群，展示了 MARL 在社會科學模擬中的潛力。",
+      "title": "Modelling Opinion Dynamics at Scale with Deep MARL",
+      "title_zh": "使用深度 MARL 進行大規模意見動態建模"
+    },
+    {
+      "arxiv_id": "2606.07464",
+      "authors": [
+        "Zhixuan Liang",
+        "Yuxiao Chen",
+        "Yurong You",
+        "Peter Karkus",
+        "Wenhao Ding",
+        "Boyi Li",
+        "Alexander Popov",
+        "Yan Wang",
+        "Maximilian Igl",
+        "Yiming Li",
+        "Danfei Xu",
+        "Nikolai Smolyanskiy",
+        "Boris Ivanovic",
+        "Ping Luo",
+        "Marco Pavone"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.773916+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
+          "url": "https://arxiv.org/abs/2606.07464"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
+        "url": "https://arxiv.org/abs/2606.07464"
+      },
+      "published_at": "2026-06-05T17:16:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.746717092211836,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.146717092211837
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07464",
+      "summary": "Monolithic vision-action models represent an emerging paradigm in autonomous driving. However, this architecture produces token sequences that quickly exceed real-time computational budgets when encoding extended temporal context for complex interactions. While approaches like linear transformers and external memory try to make the context lightweight, token compression is most compatible with the architecture as it requires no backbone modifications. Yet existing compression adopts rule-based h",
+      "summary_zh": "單一視覺動作模型是自動駕駛的新興典範，但其 token 序列在編碼長時間上下文時會迅速超出即時計算預算。作者提出一種 token 壓縮方法，兼容現有架構無需修改主幹，並具備規劃對齊特性，能在長上下文自動駕駛場景中有效降低運算負擔且不損害性能。",
+      "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
+      "title_zh": "面向長上下文自動駕駛的規劃對齊 Token 壓縮"
+    },
+    {
+      "arxiv_id": "2606.07457",
+      "authors": [
+        "Lorenzo Longarini",
+        "Alessandro Rongoni",
+        "Simone Silenzi",
+        "Emanuele Frontoni",
+        "Riccardo Rosati"
+      ],
+      "categories": [
+        "cs.LG",
+        "eess.SP",
+        "stat.ML"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.916169+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Time series Foundation Models based on Physics-Informed Synthetic Histories for Cold-Start Photovoltaic Forecasting",
+          "url": "https://arxiv.org/abs/2606.07457"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Time series Foundation Models based on Physics-Informed Synthetic Histories for Cold-Start Photovoltaic Forecasting",
+        "url": "https://arxiv.org/abs/2606.07457"
+      },
+      "published_at": "2026-06-05T17:05:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7461451739410927,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.146145173941093
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07457",
+      "summary": "At commissioning time, Photovoltaic (PV) operators must forecast production before target-site observations are available, limiting the direct use of standard supervised forecasters. This cold-start setting is addressed with a zero-shot pipeline that generates a synthetic production history from plant metadata and meteorological covariates, enabling time-series foundation models (TSFMs) to forecast through inference-time conditioning. Five TSFMs are benchmarked against classical baselines under ",
+      "summary_zh": "光伏電站在運轉初期缺乏目標站點觀測資料，無法直接使用監督式預測器。本文提出零樣本流程，利用電廠元數據與氣象協變數生成合成歷史發電量，使時間序列基礎模型（TSFMs）能夠透過推論時條件化進行預測。結果顯示五種 TSFMs 在冷啟動設定下優於傳統基準模型，展現基礎模型在能源領域的應用價值。",
+      "title": "Time series Foundation Models based on Physics-Informed Synthetic Histories for Cold-Start Photovoltaic Forecasting",
+      "title_zh": "基於物理資訊合成歷史的時間序列基礎模型應用於冷啟動光電預測"
+    },
+    {
+      "arxiv_id": "2606.07431",
+      "authors": [
+        "Pietro Bonazzi",
+        "Julian Moosmann",
+        "Ahmet Celik",
+        "Philipp Mayer",
+        "Michele Magno"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:39:06.008955+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cv",
+          "tier": 1,
+          "title": "OpenGlass: Open-Source Smart Glasses for On-Device Event-Based Gesture Recognition",
+          "url": "https://arxiv.org/abs/2606.07431"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cv",
+        "tier": 1,
+        "title": "OpenGlass: Open-Source Smart Glasses for On-Device Event-Based Gesture Recognition",
+        "url": "https://arxiv.org/abs/2606.07431"
+      },
+      "published_at": "2026-06-05T16:27:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7441641331643893,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.14416413316439
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07431",
+      "summary": "Smart eyewear enables unobtrusive, context-aware interaction through multimodal sensors and on-device intelligence, but is severely limited by power, memory, and compute constraints in a compact form factor. Open-hardware platforms supporting event-based vision and embedded ML at this scale are rare. This work introduces an open-source smart glasses platform for rapid prototyping of novel sensors and algorithms. Its modular design uses a flexible FPC interposer to support both event-based and fr",
+      "summary_zh": "智慧眼鏡可透過多模態感測器與裝置端智能支援低干擾的上下文感知互動，但受到電源、記憶體與運算能力的嚴格限制。本文提出一個開源智慧眼鏡平台，採用模組化設計與靈活之 FPC 中介層，支援事件式與幀式視覺感測，並能快速原型化新興感測器與演算法，降低先進穿戴式裝置的開發門檻。",
+      "title": "OpenGlass: Open-Source Smart Glasses for On-Device Event-Based Gesture Recognition",
+      "title_zh": "OpenGlass：開源智慧眼鏡實現裝置端事件式手勢辨識"
+    },
+    {
+      "arxiv_id": "2606.07424",
+      "authors": [
+        "Ankit Sinha",
+        "Nitish Sontakke",
+        "Dennis Hong",
+        "Yusuke Tanaka",
+        "Sehoon Ha"
+      ],
+      "categories": [
+        "cs.RO"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:43:44.988649+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ro",
+          "tier": 1,
+          "title": "Rapid co-design of Buoyancy-assisted robots for Challenging Locomotion using Gaussian Evolutionary Specialists",
+          "url": "https://arxiv.org/abs/2606.07424"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ro",
+        "tier": 1,
+        "title": "Rapid co-design of Buoyancy-assisted robots for Challenging Locomotion using Gaussian Evolutionary Specialists",
+        "url": "https://arxiv.org/abs/2606.07424"
+      },
+      "published_at": "2026-06-05T16:18:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7437103658977832,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 12.143710365897784
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07424",
+      "summary": "Designing high-performance legged robots requires jointly optimizing morphology and control. Model-free Reinforcement Learning (RL) offers an alternative to model-predictive control for developing robust controllers without explicitly specifying robot dynamics. Thus, we have seen theuse of RL to train controllers and evaluate designs for robot morphology optimization. While RL has shown success inlocomotion, using it in the co-design inner loop is expensive due to repeated policy training. Unive",
+      "summary_zh": "高效能足式機器人設計需同步優化形態與控制。無模型強化學習可訓練穩健控制器並評估設計，但將其用於協同設計的內迴圈需反覆訓練策略而耗費高昂。本文提出高斯進化專家方法，在協同設計中加速策略評估，並應用於浮力輔助機器人，能在具挑戰性運動任務中有效探索形態與控制的最佳組合。",
+      "title": "Rapid co-design of Buoyancy-assisted robots for Challenging Locomotion using Gaussian Evolutionary Specialists",
+      "title_zh": "使用高斯進化專家快速協同設計浮力輔助機器人實現挑戰性運動"
+    },
+    {
+      "arxiv_id": "2606.07492",
+      "authors": [
+        "Ekaterina Grishina",
+        "Stepan Kuznetsov",
+        "Askar Tsyganov",
+        "Ilya Ivanov",
+        "Daria Korovaitceva",
+        "Margarita Rusanova",
+        "Uliana Parkina",
+        "Alexander Derevyagin",
+        "Evgeny Frolov",
+        "Sergey Samsonov",
+        "Anton Lysenko"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.915415+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies",
+          "url": "https://arxiv.org/abs/2606.07492"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies",
+        "url": "https://arxiv.org/abs/2606.07492"
+      },
+      "published_at": "2026-06-05T17:46:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7482873654136557,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.9000000000000004,
+        "total_score": 12.048287365413657
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07492",
+      "summary": "The ranking of recommendation algorithms is a challenging problem since model performance is sensitive to dataset characteristics such as sparsity, sequential structure, and scale. This drives a demand for a proper methodology for fair comparison between algorithms. Naive aggregation of performance metrics (e.g., averaging NDCG over benchmarks) can yield misleading rankings, undermining practical selection. To address this problem, we introduce a novel, data-driven ranking methodology based on B",
+      "summary_zh": "推薦演算法的排名是一項挑戰性問題，因為模型效能對資料集特徵(如稀疏度、序列結構和規模)非常敏感，這促使需要一套正規方法論來公平比較演算法。作者指出，簡單地對效能指標(如平均 NDCG)進行聚合可能會產生誤導性的排名，影響實務上的模型選擇。為了解決此問題，本文引入了一種新穎的資料驅動排名方法，基於 Bradley-Terry 模型來對不同演算法進行配對比較，並透過資料集分類法來捕捉環境影響。此方法旨在提供更穩健且可解釋的排名結果，幫助研究人員在真實應用中做出更好的選擇。",
+      "title": "Bradley-Terry Rankings for Recommender Systems Across Dataset Taxonomies",
+      "title_zh": "基於 Bradley-Terry 排名的推薦系統跨資料集分類法比較"
+    },
+    {
+      "arxiv_id": "2606.07498",
+      "authors": [
+        "Patrick Kage",
+        "Trevor Hedges",
+        "N. Siddharth",
+        "Pavlos Andreadis"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:39:06.008387+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cv",
+          "tier": 1,
+          "title": "Implicit Data Synthesis for Contrastive Unsupervised Data Augmentation",
+          "url": "https://arxiv.org/abs/2606.07498"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cv",
+        "tier": 1,
+        "title": "Implicit Data Synthesis for Contrastive Unsupervised Data Augmentation",
+        "url": "https://arxiv.org/abs/2606.07498"
+      },
+      "published_at": "2026-06-05T17:52:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.7485758234204333,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 1.6500000000000001,
+        "total_score": 11.198575823420434
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07498",
+      "summary": "Scientific observations generate large quantities of unlabeled data which is laborious to hand-label, making unsupervised learning techniques valuable for processing datasets. Among these approaches, contrastive learning provides a convenient mechanism for extracting structural representations from unannotated datasets. For natural imagery, the general approach is to use a variety of data-space augmentation methods in order to generate synthetic samples; however, for scientific observations data",
+      "summary_zh": "科學觀測產生大量未標記資料，人工標註耗時費力，因此非監督學習技術對處理此類資料集極具價值。在這些方法中，contrastive learning 提供了一種從未標註資料集中提取結構化表徵的便利機制。對於自然影像，常見做法是使用各種資料空間的擴增方法生成合成樣本；然而，對於科學觀測資料，作者發現傳統擴增方法難以直接應用。為了解決這一瓶頸，本文提出了一種隱式資料合成方法，在不依賴於顯式資料轉換的前提下生成對比樣本，從而增強表徵學習的效果。此方法有望顯著提升非監督學習在科學資料上的適用性與效能。",
+      "title": "Implicit Data Synthesis for Contrastive Unsupervised Data Augmentation",
+      "title_zh": "用於對比式非監督資料擴增的隱式資料合成"
+    },
+    {
+      "arxiv_id": "2606.07476",
+      "authors": [
+        "Wending Heng",
+        "Mingming Zhang",
+        "Glen Cooper",
+        "Zhenhong Li"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.RO",
+        "eess.SP"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:43:44.988323+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ro",
+          "tier": 1,
+          "title": "Physiologically Constrained Musculoskeletal Neural Network for Multi-DoF Joint Kinematics Estimation from Partially Observed sEMG",
+          "url": "https://arxiv.org/abs/2606.07476"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ro",
+        "tier": 1,
+        "title": "Physiologically Constrained Musculoskeletal Neural Network for Multi-DoF Joint Kinematics Estimation from Partially Observed sEMG",
+        "url": "https://arxiv.org/abs/2606.07476"
+      },
+      "published_at": "2026-06-05T17:30:16+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7474390947112427,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.747439094711243
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07476",
+      "summary": "This paper investigates multi-degrees of freedom (DoF) joint kinematics estimation under partially observed surface electromyography (sEMG), where only a subset of task-relevant muscles can be measured due to anatomical inaccessibility or sensor constraints. A novel musculoskeletal neural network (MSK-NN) is proposed to estimate multi-DoF joint angles while simultaneously inferring activations for both measured and unmeasured muscles. MSK-NN consists of a CNN-based muscle activation estimator an",
+      "summary_zh": "本文探討在部分觀測的表面肌電圖(sEMG)情境下進行多自由度(DoF)關節運動學估計的問題，即僅能測量到部分與任務相關的肌肉訊號。為此，作者提出了一種新穎的骨骼肌肉神經網路(MSK-NN)，可同時估計多個關節角度，並推斷已測量與未測量肌肉的激活程度。MSK-NN 的核心包含一個基於 CNN 的肌肉激活估計器，並結合了生理學約束，以確保估計結果符合肌肉骨骼系統的實際運作機制。這項工作為肌電控制義肢等應用提供了更實用且穩健的解決方案，緩解了感測器限制所帶來的挑戰。",
+      "title": "Physiologically Constrained Musculoskeletal Neural Network for Multi-DoF Joint Kinematics Estimation from Partially Observed sEMG",
+      "title_zh": "基於生理約束的神經網路：從不完全觀測 sEMG 估計多自由度關節運動學"
+    },
+    {
+      "arxiv_id": "2606.07474",
+      "authors": [
+        "Mohammadreza Sadeghi",
+        "Sareh Soleimani",
+        "Zihan Wang",
+        "Narges Armanfard"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.915914+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Unsupervised Continual Clustering via Forward-Backward Knowledge Distillation",
+          "url": "https://arxiv.org/abs/2606.07474"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Unsupervised Continual Clustering via Forward-Backward Knowledge Distillation",
+        "url": "https://arxiv.org/abs/2606.07474"
+      },
+      "published_at": "2026-06-05T17:28:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7473378858533383,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.747337885853339
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07474",
+      "summary": "Unsupervised Continual Learning (UCL) aims to enable neural networks to learn sequential tasks without labels or access to past data. A major challenge in this setting is Catastrophic Forgetting, where models forget previously learned tasks upon learning new ones. This challenge is amplified in UCL due to the absence of labels to guide learning and memory retention. Existing mitigation strategies, such as knowledge distillation and replay buffers, often raise memory and privacy concerns. Moreove",
+      "summary_zh": "非監督持續學習旨在使神經網路能夠在沒有標籤或舊資料存取權限的情況下學習連續任務。此設定中的主要挑戰是災難性遺忘，即模型在學習新任務時會忘記先前學到的任務，而在非監督環境中由於缺乏標籤引導，此問題更加嚴峻。現有的緩解策略如知識蒸餾和重播緩衝區，往往會引發記憶體和隱私方面的擔憂。為了解決這些限制，本文提出了一種無需重播緩衝區的持續聚類方法，透過前向-後向知識蒸餾來維持已學習表徵的穩定性。此方法能在保護資料隱私的同時，有效緩解遺忘問題，為非監督持續學習提供更實用且安全的替代方案。",
+      "title": "Unsupervised Continual Clustering via Forward-Backward Knowledge Distillation",
+      "title_zh": "透過前向-後向知識蒸餾實現非監督持續聚類"
+    },
+    {
+      "arxiv_id": "2606.07470",
+      "authors": [
+        "Mohamed Khalil Kiri",
+        "Ivan De Oliveira Nunes",
+        "Aurélien Francillon",
+        "Norrathep Rattanavipanon"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:48:55.392628+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cr",
+          "tier": 1,
+          "title": "Verifiable and Confidential DNN Inference on Low-End Edge Devices",
+          "url": "https://arxiv.org/abs/2606.07470"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cr",
+        "tier": 1,
+        "title": "Verifiable and Confidential DNN Inference on Low-End Edge Devices",
+        "url": "https://arxiv.org/abs/2606.07470"
+      },
+      "published_at": "2026-06-05T17:23:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7470957322599301,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.74709573225993
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07470",
+      "summary": "Deploying deep neural network (DNN) inference on low-end edge devices raises two key challenges: protecting model confidentiality against a potentially compromised edge system and enabling verifiable inference without incurring prohibitive overhead. Existing approaches either house partial models and inference software within trusted execution environments (TEEs), resulting in high cost and an application-dependent trusted computing base (TCB), or execute in untrusted environments, providing lit",
+      "summary_zh": "在低端邊緣裝置上部署深度神經網路推論面臨兩大關鍵挑戰：針對可能受損的邊緣系統保護模型機密性，以及在不過度增加開銷的情況下實現可驗證的推論。現有方法要麼將部分模型和推論軟體置於可信執行環境中，導致高成本且應用依賴於可信計算基；要麼在不安全環境中執行，提供極少的機密性或可驗證性保障。為此，本文提出了一種新穎的方案，在無需完整可信執行環境的前提下，結合輕量級密碼學技術和分層驗證機制，同時確保模型參數的保密性和推論結果的正確性。這項工作為資源受限的邊緣設備提供了一個實用且可擴展的解決方案，有助於安全地部署 DNN 推論服務。",
+      "title": "Verifiable and Confidential DNN Inference on Low-End Edge Devices",
+      "title_zh": "低端邊緣裝置上的可驗證且機密的深度神經網路推論"
+    },
+    {
+      "arxiv_id": "2606.07463",
+      "authors": [
+        "Julian Withöft",
+        "Werner John",
+        "Emre Ecik",
+        "Ralf Brüning",
+        "Jürgen Götze"
+      ],
+      "categories": [
+        "eess.SP",
+        "cs.CE",
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.916099+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates",
+          "url": "https://arxiv.org/abs/2606.07463"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates",
+        "url": "https://arxiv.org/abs/2606.07463"
+      },
+      "published_at": "2026-06-05T17:13:44+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7465814163639187,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.746581416363918
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07463",
+      "summary": "Pre-layout design space exploration (DSE) for high-speed signal integrity (SI) analysis is often limited by the computational cost of simulations and iterative optimization algorithms within modern electronic design automation (EDA) workflows. While machine learning surrogate models accelerate the simulation step, optimizing designs still requires utilizing iterative black-box search methods. This iterative nature scales poorly, making multi-corner sweeps computationally expensive. As a solution",
+      "summary_zh": "在現代電子設計自動化(EDA)流程中，針對高速訊號完整性(SI)分析的佈局前設計空間探索(DSE)，常受限於模擬與迭代最佳化演算法的高計算成本。雖然機器學習替代模型能加速模擬步驟，但最佳化設計仍需依賴迭代式的黑箱搜尋方法，其擴展性不佳，使得多角點掃描的計算變得昂貴。為了解決這個問題，本文提出了一種可微分的替代模型，結合攤銷神經優化(amortized neural optimization)策略，以實現更高效且可擴展的設計空間探索。",
+      "title": "Amortized Neural Optimization for Pre-Layout Signal Integrity Design Space Exploration using Differentiable Surrogates",
+      "title_zh": "利用可微分替代模型進行佈局前訊號完整性設計空間探索的攤銷神經優化"
+    },
+    {
+      "arxiv_id": "2606.07439",
+      "authors": [
+        "Steven Davis",
+        "Likai Pei",
+        "Jianbo Liu",
+        "Zephan M. Enciso",
+        "Boyang Cheng",
+        "Xueji Zhao",
+        "Danny Z. Chen",
+        "Ningyuan Cao"
+      ],
+      "categories": [
+        "cs.AR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:59:16.773481+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-api-efficiency",
+          "tier": 1,
+          "title": "A 65 nm Multi-Modal Bayesian Inference Engine with 16.3 fJ/Sample Calibration-Free GRNG for Risk-Aware At-Home Skin Lesion Screening",
+          "url": "https://arxiv.org/abs/2606.07439"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-api-efficiency",
+        "tier": 1,
+        "title": "A 65 nm Multi-Modal Bayesian Inference Engine with 16.3 fJ/Sample Calibration-Free GRNG for Risk-Aware At-Home Skin Lesion Screening",
+        "url": "https://arxiv.org/abs/2606.07439"
+      },
+      "published_at": "2026-06-05T16:38:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7447328090521661,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.744732809052167
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07439",
+      "summary": "We present a 65-nm risk-aware multimodal Bayesian inference engine for privacy-preserving, fully on-device skin lesion screening under uncontrolled at-home conditions. The proposed compute-in-memory architecture performs in-word Mixture-of-Gaussian sampling, improving uncertainty modeling beyond conventional unimodal Bayesian neural networks. This added probabilistic expressiveness increases equal-risk operating coverage by 1.4x, improves robustness to user-data perturbations by >1.5x, enhances ",
+      "summary_zh": "本文提出了一個採用 65 nm 製程、具風險感知能力的多模態貝氏推論引擎，專為在不受控的居家環境中進行隱私保護、完全在裝置上的皮膚病變篩檢而設計。其提出的記憶體內計算架構能執行字級混合高斯(Mixture-of-Gaussian)取樣，在不確定性建模上超越傳統的單模態貝氏神經網路。這種增強的機率表達能力使等風險操作覆蓋率提升了1.4倍，並將對使用者資料擾動的穩健性改善超過1.5倍，對於實現可靠的自助式醫療診斷具有重要意義。",
+      "title": "A 65 nm Multi-Modal Bayesian Inference Engine with 16.3 fJ/Sample Calibration-Free GRNG for Risk-Aware At-Home Skin Lesion Screening",
+      "title_zh": "採用 65 nm 製程之多模態貝氏推論引擎：具 16.3 fJ/樣本免校準 GRNG 用於居家風險感知皮膚病變篩檢"
+    },
+    {
+      "arxiv_id": "2606.07435",
+      "authors": [
+        "Rishabh Jain",
+        "Naomi Harte"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:35.765180+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "The Lipreading Gap: Do VSR Models Perceive Visual Speech Like Human Lipreaders?",
+          "url": "https://arxiv.org/abs/2606.07435"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "The Lipreading Gap: Do VSR Models Perceive Visual Speech Like Human Lipreaders?",
+        "url": "https://arxiv.org/abs/2606.07435"
+      },
+      "published_at": "2026-06-05T16:33:30+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.744498393031552,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 10.744498393031552
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07435",
+      "summary": "Visual speech recognition (VSR) models now surpass human lipreaders on benchmarks, but do such gains establish human-like visual speech perception? To explore this, we compare three VSR systems with human baselines on the MaFI word-level lipreading dataset using word, character, phoneme, and viseme-level metrics. Although models achieve higher overall accuracy, they succeed and fail on different words than humans. A text-only n-gram baseline given only a few initial phonemes rivals human lipread",
+      "summary_zh": "視覺語音辨識(VSR)模型在基準測試中已超越人類唇讀者，但這些性能提升是否意味著模型具備了類人感知能力？為此，本研究在 MaFI 字級唇讀資料集上，透過詞彙、字符、音素和視位層級的指標，比較了三種 VSR 系統與人類基準的表現。結果顯示，雖然模型總體準確率更高，但它們成功和失敗的詞彙與人類不同。特別值得注意的是，僅給定少數初始音素的純文字 n-gram 基準模型，其表現已可與人類唇讀者匹敵，這凸顯了當前 VSR 模型在感知模式上的根本差異。",
+      "title": "The Lipreading Gap: Do VSR Models Perceive Visual Speech Like Human Lipreaders?",
+      "title_zh": "唇讀差距：視覺語音辨識模型是否像人類唇讀者一樣感知視覺語音？"
+    },
+    {
+      "arxiv_id": "2606.07503",
+      "authors": [
+        "Johannes Theodoridis",
+        "Johannes Maucher",
+        "Andreas Schilling"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:39:06.008313+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cv",
+          "tier": 1,
+          "title": "Differences in Detection: Explainability Where it Matters",
+          "url": "https://arxiv.org/abs/2606.07503"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cv",
+        "tier": 1,
+        "title": "Differences in Detection: Explainability Where it Matters",
+        "url": "https://arxiv.org/abs/2606.07503"
+      },
+      "published_at": "2026-06-05T17:54:58+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7487222605589666,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.9000000000000004,
+        "total_score": 10.648722260558968
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07503",
+      "summary": "We propose Differences in Detection (DnD), an intuitive method to compare two object detection models. Based on the same matching algorithm, it complements the standard metrics of mean Average Precision ($mAP$) and TIDE error analysis with the ability to compare two models directly. More specifically, we calculate the intersection of ground truth labels that are recognized by both models, followed by the corresponding difference sets and the complement set of ground truth labels that are missed ",
+      "summary_zh": "我們提出了一種名為「檢測差異」(DnD)的直觀方法，用於比較兩個目標檢測模型。該方法基於相同的匹配演算法，透過計算兩模型共同識別的標註真值交集，以及各自的差異集合與未被識別的互補集合，來補充標準的平均精確度(mAP)和 TIDE 錯誤分析指標。DnD 提供了直接比較兩個模型的能力，使研究人員能更清晰地理解模型在特定物件或場景上的優劣差異，從而進行有針對性的改進。",
+      "title": "Differences in Detection: Explainability Where it Matters",
+      "title_zh": "檢測差異：在關鍵處進行可解釋性分析"
+    },
+    {
+      "arxiv_id": "2606.07481",
+      "authors": [
+        "Chris R. Jung",
+        "Markus Dörr",
+        "Natalie Jüngling",
+        "Jennifer Niessner",
+        "Adam T. Müller",
+        "Nicolaj C. Stache"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.915787+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Drifting Models for Surrogate Flow Modeling",
+          "url": "https://arxiv.org/abs/2606.07481"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Drifting Models for Surrogate Flow Modeling",
+        "url": "https://arxiv.org/abs/2606.07481"
+      },
+      "published_at": "2026-06-05T17:35:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7476926095174584,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 2.25,
+        "total_score": 10.39769260951746
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07481",
+      "summary": "While Computational Fluid Dynamics (CFD) provides high-fidelity flow fields for optimizing indoor environments, its computational cost limits rapid exploration. To solve this problem generative surrogates offer better distribution modeling than deterministic networks, but iterative sampling is slow. To enable high-quality, single-pass generation, we adapt the novel generative drifting framework to fluid mechanics. We introduce a conditional architecture that performs drifting in a learned VAE la",
+      "summary_zh": "計算流體力學(CFD)能為最佳化室內環境提供高保真度的流場，但其計算成本限制了快速探索。為解決此問題，生成式替代模型比確定性網路能更好地建模分佈，但其迭代取樣速度慢。為實現高品質的單次生成，本文將新穎的生成式漂移框架適應用於流體力學，引入了一種在學習到的 VAE 潛在空間中進行漂移的條件式架構。此方法有望在保持生成品質的同時，顯著加速流場的生成過程，為即時模擬與設計探索開闢了新路徑。",
+      "title": "Drifting Models for Surrogate Flow Modeling",
+      "title_zh": "用於替代流場建模的漂移模型"
+    },
+    {
+      "arxiv_id": "2606.07417",
+      "authors": [
+        "Antonio Agresti",
+        "Fabian Germ",
+        "Mark Veraar"
+      ],
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:54:37.734856+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-api-multimodal",
+          "tier": 1,
+          "title": "An optimal local theory for reaction-diffusion equations driven by non-trace-class noise",
+          "url": "https://arxiv.org/abs/2606.07417"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-api-multimodal",
+        "tier": 1,
+        "title": "An optimal local theory for reaction-diffusion equations driven by non-trace-class noise",
+        "url": "https://arxiv.org/abs/2606.07417"
+      },
+      "published_at": "2026-06-05T16:10:51+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.74332827958756,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 10.093328279587562
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07417",
+      "summary": "We study local well-posedness for a class of stochastic reaction-diffusion equations driven by multiplicative, possibly colored, noise. The interaction between rough stochastic forcing and polynomial nonlinearities naturally leads to solutions with low spatial regularity, making the treatment of the nonlinear terms delicate. Our main contribution is a general local existence and uniqueness theory for SPDEs with rough noise and highly irregular initial data. The framework also yields new results ",
+      "summary_zh": "本文針對一類由乘法性、可能為 colored noise 驅動的隨機反應擴散方程，研究其局部適定性問題。粗糙隨機驅動與多項式非線性之間的交互作用，使得解具有較低的空間正則性，從而增加非線性項處理的難度。作者的主要貢獻是為具有粗糙噪聲與高度不規則初始資料的 SPDEs 建立了一個通用的局部存在唯一性理論，該框架同時也產生了新的結果，對理解隨機偏微分方程的適定性有重要意義。",
+      "title": "An optimal local theory for reaction-diffusion equations driven by non-trace-class noise",
+      "title_zh": "由非跡類噪聲驅動的反應擴散方程的最優局部理論"
+    },
+    {
+      "arxiv_id": "2606.07426",
+      "authors": [
+        "Hanqiao Yu",
+        "Shusen Yang",
+        "Xuebin Ren",
+        "Cong Zhao"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.916312+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Discovering Multiscale Deep Formulas in Complex Systems via Neural-Guided Lambda Calculus",
+          "url": "https://arxiv.org/abs/2606.07426"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Discovering Multiscale Deep Formulas in Complex Systems via Neural-Guided Lambda Calculus",
+        "url": "https://arxiv.org/abs/2606.07426"
+      },
+      "published_at": "2026-06-05T16:21:12+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.7438627388367977,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.44999999999999996,
+        "total_score": 9.9938627388368
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07426",
+      "summary": "A fundamental problem in science is identifying underlying patterns of complex systems in the form of concise mathematical formulas. Current Artificial Intelligence (AI)-based methods have shown strong performance in single-scale systems, yet remain limited in identifying scale-specific formulas in multiscale complex systems. We present Deflex, an end-to-end AI method to automatically extract multiscale formulas with potentially different forms, including invariants and distributions, from compl",
+      "summary_zh": "辨識複雜系統中簡潔數學公式的潛在模式是科學的基本問題之一。現有的 AI 方法雖在單尺度系統表現良好，但在多尺度複雜系統中辨識尺度特定公式卻有限制。本文提出 Deflex，一個端到端 AI 方法，能夠自動從複雜的資料中提取具有不同形式（包括不變量與分佈）的多尺度公式，從而推進了對多尺度系統理解的自動化。",
+      "title": "Discovering Multiscale Deep Formulas in Complex Systems via Neural-Guided Lambda Calculus",
+      "title_zh": "透過神經引導的 Lambda Calculus 發現複雜系統中的多尺度深度公式"
+    },
+    {
+      "arxiv_id": "2606.07444",
+      "authors": [
+        "Maxime Jonard",
+        "Thomas Larqué",
+        "Dan-Esli Bouyou Bouyou",
+        "Tigran Mansuryan",
+        "Alessandro Tonello",
+        "C. Sandt",
+        "Jean-René Duclère",
+        "Julie Cornette",
+        "Yago Arosa",
+        "Marc Fabert",
+        "Claire Lefort",
+        "Vincent Couderc",
+        "Maggy Colas"
+      ],
+      "categories": [
+        "physics.optics"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:54:37.732485+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-api-multimodal",
+          "tier": 1,
+          "title": "Optical Poling Reveals Hidden Molecular Restructuring in Multimode Fibers, Unlocking Ultra-Efficient Third-Order Nonlinearities",
+          "url": "https://arxiv.org/abs/2606.07444"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-api-multimodal",
+        "tier": 1,
+        "title": "Optical Poling Reveals Hidden Molecular Restructuring in Multimode Fibers, Unlocking Ultra-Efficient Third-Order Nonlinearities",
+        "url": "https://arxiv.org/abs/2606.07444"
+      },
+      "published_at": "2026-06-05T16:46:01+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 1.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.7451458020130581,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 1.9500000000000002,
+        "total_score": 8.295145802013058
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07444",
+      "summary": "Optical poling is a well-established technique for inducing χ^{(2)} nonlinearity, yet its impact on silica's molecular structure remains unexplored. Here, we report the first direct observation of molecular restructuring in large-core graded-index multimode fibers (MMFs) induced by optical poling, transforming the silica tetrahedral ring network. Through coherent light beating, this process converts large rings of more than four SiO_4 tetrahedra into smaller ones, altering both linear and nonlin",
+      "summary_zh": "光極化是一種誘導 χ^{(2)} 非線性效應的成熟技術，但其對矽土分子結構的影響以往未被探索。本文首次直接觀測到大芯徑漸變折射率多模光纖中由光極化誘發的分子重構，該過程將超過四個 SiO_4 四面體的大環轉變為較小的環，改變了線性與非線性光學特性。這項發現為實現超高效率的三階非線性光學應用提供了新的可能性，有助於發展新型光子器件。",
+      "title": "Optical Poling Reveals Hidden Molecular Restructuring in Multimode Fibers, Unlocking Ultra-Efficient Third-Order Nonlinearities",
+      "title_zh": "光極化揭示多模光纖中隱藏的分子重構，開啟超高效率三階非線性"
+    },
+    {
+      "arxiv_id": "2606.07419",
+      "authors": [
+        "Tony Danjun Wang",
+        "Tolga Birdal",
+        "Nassir Navab"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:39:06.009035+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cv",
+          "tier": 1,
+          "title": "DisPOSE: Projected Polystochastic Diffusion for Self-Supervised Multi-View 3D Human Pose Estimation",
+          "url": "https://arxiv.org/abs/2606.07419"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cv",
+        "tier": 1,
+        "title": "DisPOSE: Projected Polystochastic Diffusion for Self-Supervised Multi-View 3D Human Pose Estimation",
+        "url": "https://arxiv.org/abs/2606.07419"
+      },
+      "published_at": "2026-06-05T16:14:39+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7435244615453209,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 8.143524461545322
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07419",
+      "summary": "Recovering 3D human poses for multiple individuals from different camera views is a fundamental bottleneck for analyzing interacting behaviors. Existing self-supervised approaches leverage synthetic catalogues of 3D poses; however, this leads to poor generalization in real-world scenarios due to distribution shifts. We therefore introduce DisPOSE, a self-supervised framework that approximates the inherently discrete multi-view person-assignment problem as a generative diffusion process over the ",
+      "summary_zh": "從不同攝影機視角恢復多人的 3D 人體姿態，是分析互動行為的關鍵瓶頸。現有的自監督方法依賴於合成的 3D 姿態目錄，但在真實場景中因分佈偏移而泛化能力差。本文提出 DisPOSE，一個自監督框架，將本質上離散的多視角人物分配問題近似為一個生成擴散過程，從而改善了對真實世界中互動行為的 3D 姿態估計。",
+      "title": "DisPOSE: Projected Polystochastic Diffusion for Self-Supervised Multi-View 3D Human Pose Estimation",
+      "title_zh": "DisPOSE：基於投影多隨機擴散的自監督多視角 3D 人體姿態估計"
+    },
+    {
+      "arxiv_id": "2606.07437",
+      "authors": [
+        "Chaitanya Shinde",
+        "Hadi Hajieghrary",
+        "Paul Schmitt",
+        "Adam Shoemaker",
+        "Bodo Seifert",
+        "Steve Kenner"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.SE",
+        "eess.SY"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.774830+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Re-imagining ISO 26262 in the Age of Autonomous Vehicles: Enhancing Controllability through Transferability and Predictability",
+          "url": "https://arxiv.org/abs/2606.07437"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Re-imagining ISO 26262 in the Age of Autonomous Vehicles: Enhancing Controllability through Transferability and Predictability",
+        "url": "https://arxiv.org/abs/2606.07437"
+      },
+      "published_at": "2026-06-05T16:35:58+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7446259337721932,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 1.2000000000000002,
+        "total_score": 7.944625933772194
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07437",
+      "summary": "The ISO 26262 standard defines functional safety for road vehicles through risk assessments based on Severity, Exposure, and Controllability, grounded in a human-driven vehicle paradigm. In the context of autonomous vehicles (AVs), the absence of a human driver necessitates revisiting these principles. This paper decomposes the Controllability placeholder into two auditable evidence dimensions of ISO 26262 by introducing two measurable sub-concepts: Transferability and Predictability. Transferab",
+      "summary_zh": "ISO 26262 標準根據嚴重度、暴露度與可控性進行風險評估，以保障道路車輛的功能安全，但其基礎是人類駕駛的車輛範式。在自動駕駛車輛的情境下，由於缺乏人類駕駛員，必須重新審視這些原則。本文將可控性這個佔位符分解為兩個可審計的證據維度：可轉移性與可預測性，為自動駕駛系統的安全性評估提供了更具操作性的方法。",
+      "title": "Re-imagining ISO 26262 in the Age of Autonomous Vehicles: Enhancing Controllability through Transferability and Predictability",
+      "title_zh": "自動駕駛時代下重新審視 ISO 26262：透過可轉移性與可預測性增強可控性"
+    },
+    {
+      "arxiv_id": "2606.07475",
+      "authors": [
+        "Takuto Takahashi",
+        "Itsuki Nakayama",
+        "Takahiro Mitani",
+        "Ryosuke Kikuchi",
+        "Yuya Sasaki",
+        "Makoto Onizuka"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.773384+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "Graph Neural Network leveraging Higher-order Class Label Connectivity for Heterophilous Graphs",
+          "url": "https://arxiv.org/abs/2606.07475"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "Graph Neural Network leveraging Higher-order Class Label Connectivity for Heterophilous Graphs",
+        "url": "https://arxiv.org/abs/2606.07475"
+      },
+      "published_at": "2026-06-05T17:28:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7473378858533383,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.75,
+        "total_score": 7.497337885853339
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07475",
+      "summary": "Node classification in graph neural networks (GNNs) has been widely applied in various fields of graph analysis. GNNs achieve high-accuracy node classification in homophilous graphs, where nodes with the same class label tend to be connected. However, their performance remains limited in heterophilous graphs, where nodes with different class labels are more likely to be connected. In particular, current GNNs derived from graph convolutional networks cannot capture higher-order class label connec",
+      "summary_zh": "本文探討圖神經網路在異質圖（heterophilous graphs）中節點分類的挑戰，其中相連節點傾向於具有不同類別標籤。作者指出現有的圖卷積網路（Graph Convolutional Networks, GCNs）無法捕捉高階類別標籤連通性，為此提出了新型架構，專門利用高階連接模式來改善異質圖上的節點分類準確率。此方法預期能突破傳統GNNs在異質環境中的性能限制，並拓展圖分析應用的範疇。",
+      "title": "Graph Neural Network leveraging Higher-order Class Label Connectivity for Heterophilous Graphs",
+      "title_zh": "利用高階類別標籤連通性的圖神經網路於異質圖"
+    },
+    {
+      "arxiv_id": "2606.07443",
+      "authors": [
+        "Elena Ghazi",
+        "Jawad Nasser",
+        "Flavio Calmon",
+        "Ibrahim Issa"
+      ],
+      "categories": [
+        "cs.IT",
+        "cs.CR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:48:55.393066+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cr",
+          "tier": 1,
+          "title": "Sort, Partition, Randomize: Optimal Binary Hypothesis Testing under Local Differential Privacy",
+          "url": "https://arxiv.org/abs/2606.07443"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cr",
+        "tier": 1,
+        "title": "Sort, Partition, Randomize: Optimal Binary Hypothesis Testing under Local Differential Privacy",
+        "url": "https://arxiv.org/abs/2606.07443"
+      },
+      "published_at": "2026-06-05T16:41:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7449129803302117,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 6.744912980330213
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07443",
+      "summary": "We study optimal design of $\\varepsilon$-locally differentially private mechanisms for binary hypothesis testing. Each observation is drawn from one of two known distributions $P_0,P_1$ on a finite alphabet of size $k$, privatized by a mechanism $Q$, and then used to infer which distribution generated the data. We measure testing utility using an $f$-divergence, including total variation, KL, and hockey-stick divergences, between the two induced output distributions. Previous work established st",
+      "summary_zh": "本論文研究在ε-本地差分隱私框架下，針對二元假設檢定問題的最優機制設計。每個觀測值來自有限字母集上的兩個已知分佈P0或P1，經由機制Q隱私化後用於推斷來源分佈。作者使用f-散度（包括總變差、KL散度與hockey-stick散度）來衡量兩個誘導輸出分佈之間的檢定效用。此工作為隱私保護下的統計推斷提供了系統性的最優化方法，對理論與實務應用具有重要性。",
+      "title": "Sort, Partition, Randomize: Optimal Binary Hypothesis Testing under Local Differential Privacy",
+      "title_zh": "排序、分區、隨機化：在地差分隱私下的最優二元假設檢定"
+    },
+    {
+      "arxiv_id": "2606.07420",
+      "authors": [
+        "Rui Li",
+        "Wenrui Diao",
+        "Debin Gao"
+      ],
+      "categories": [
+        "cs.CR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:48:55.393170+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cr",
+          "tier": 1,
+          "title": "Lost in Migration: Exposing Android Framework Vulnerabilities in Parallel Java-Kotlin Implementations",
+          "url": "https://arxiv.org/abs/2606.07420"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cr",
+        "tier": 1,
+        "title": "Lost in Migration: Exposing Android Framework Vulnerabilities in Parallel Java-Kotlin Implementations",
+        "url": "https://arxiv.org/abs/2606.07420"
+      },
+      "published_at": "2026-06-05T16:15:03+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7435451152894423,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 6.743545115289443
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07420",
+      "summary": "Android has adopted Kotlin alongside Java across apps and core system components. During this shift, we observe parallel implementations in the Android Open Source Project (AOSP) where the same component is implemented in both Java and Kotlin. In principle, their functional purposes are identical. In practice, subtle semantic divergences can appear. Such divergences are not vulnerabilities by themselves, but they provide useful clues that may reveal flaws in surrounding enforcement logic. To the",
+      "summary_zh": "Android 在應用程式與核心系統元件中逐漸採用 Kotlin 與 Java 並行。本文觀察到 Android 開源專案中出現平行實作——同一元件同時以 Java 和 Kotlin 實作，雖然功能目的相同，但實際中存在微妙的語意差異。這些差異本身並非漏洞，但可提供線索以揭露周邊強制邏輯中的缺陷。此研究有助於在語言遷移過程中檢測並修復潛在的安全弱點。",
+      "title": "Lost in Migration: Exposing Android Framework Vulnerabilities in Parallel Java-Kotlin Implementations",
+      "title_zh": "遷移中的遺失：揭露 Android 框架在平行 Java-Kotlin 實作中的漏洞"
+    },
+    {
+      "arxiv_id": "2606.07449",
+      "authors": [
+        "Artem Angelchev-Shiryaev",
+        "Pavel E. Aleshin",
+        "Anton S. Shiriaev",
+        "Pavel A. Shamanaev",
+        "Leonid B. Freidovich"
+      ],
+      "categories": [
+        "eess.SY",
+        "cs.RO"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:43:44.988504+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ro",
+          "tier": 1,
+          "title": "On orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model",
+          "url": "https://arxiv.org/abs/2606.07449"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ro",
+        "tier": 1,
+        "title": "On orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model",
+        "url": "https://arxiv.org/abs/2606.07449"
+      },
+      "published_at": "2026-06-05T16:51:55+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.7454511673601509,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 1.2000000000000002,
+        "total_score": 5.145451167360151
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07449",
+      "summary": "This paper addresses orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model within a transverse-linearization framework. We show that the corresponding transverse linearization is unstable and not stabilizable by linear state feedback. Therefore, the standard linearization-based approach to orbital stabilization cannot be applied directly. The main contribution is a set of explicit and verifiable conditions that characterize when a controller design ",
+      "summary_zh": "本文針對 Dubins 車輛模型的動態延伸，在橫向線性化框架下研究圓形運動基元的軌道穩定化問題。作者證明對應的橫向線性化是不穩定的，且無法透過線性狀態反饋進行穩定，因此標準的線性化方法無法直接應用。該論文的主要貢獻在於提供了一組明確且可驗證的條件，用以描述何時控制器設計可行。此結果對非線性控制理論中的軌道穩定具有重要意義。",
+      "title": "On orbital stabilization of a circular motion primitive for a dynamic extension of the Dubins car model",
+      "title_zh": "Dubins 車輛模型動態延伸中圓形運動基元的軌道穩定化"
+    }
+  ],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "注目論文まとめ"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T15:00:12.303722+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）",
+          "url": "https://ai-data-base.com/archives/110889"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）",
+        "url": "https://ai-data-base.com/archives/110889"
+      },
+      "published_at": "2026-06-06T01:19:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.7721692403298227,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 10.122169240329823
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:c2e265ed1397d4db",
+      "summary": "<p>本記事は、主に一週間のうちに公開された論文（プレプリントを多く含む）のうち、AIDBリサーチが注目に値すると判断したものを掲載しています。基準としては「新規性」「優位性」といった査読フレームワークを踏襲する他、「実経済や産業へのインパクト」という独自の評価項目を据えています。 エージェント基盤・ハーネス・実行環境 プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 研究紹介短信ライブラリの基本機能 プレミアム会員の特典 全過去記事の無制限閲覧 専門家による最新リサーチ結果を記事で購読（平日毎日更新） 日本語検索対応の新着AI論文データベース 研究紹介短信ライブラリの高度な&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/110889\"><span class=\"locked-post\">🔒</span> 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 今週の注目AI論文リスト（論文公開日2026/5/31～6/6）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T15:00:12.303376+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 AIによる人員削減は、なぜ企業自身の利益まで削るのか",
+          "url": "https://ai-data-base.com/archives/110589"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 AIによる人員削減は、なぜ企業自身の利益まで削るのか",
+        "url": "https://ai-data-base.com/archives/110589"
+      },
+      "published_at": "2026-06-06T09:07:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.05,
+        "llm_relevance_score": 1.4000000000000001,
+        "recency_score": 0.7976769965039405,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 4.997676996503941
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:e93c1acf6e3483ec",
+      "summary": "<p>AIを理由にした人員削減のニュースを、以前よりずっと頻繁に見かけるようになりました。業界も職種も一つに限られません。削減を発表する経営者の中には、「近いうちに、ほとんどの企業が同じ判断をするはずだ」と語る人もいます。 ただ、ここで素朴な疑問が出てきます。職を失った人は、同時にどこかの企業の顧客でもあります。賃金が消えれば、その人の購買力も弱まり、企業が頼りにしている需要も少しずつ削られていきます。すべての企業が人をAIに置き換えた先にあるのは、極端に言えば「生産性は高いのに、買う人がいない」世界かもしれません。 もしその崖が見えているなら、先を読める企業ほど慎重になるのではないか。そう考えたく&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/110589\"><span class=\"locked-post\">🔒</span> AIによる人員削減は、なぜ企業自身の利益まで削るのか</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "title": "🔒 AIによる人員削減は、なぜ企業自身の利益まで削るのか"
+    }
+  ],
+  "run_date": "2026-06-06",
+  "run_id": "ef7f6072-3879-46ea-a430-e5d875f92595",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-06-06T16:00:00+00:00",
+    "items_total": 54,
+    "run_id": "ef7f6072-3879-46ea-a430-e5d875f92595-2026-06-06",
+    "started_at": "2026-06-05T16:00:00+00:00",
+    "stories_total": 54,
+    "success": true
+  },
+  "sources_status": [],
+  "top5": [
+    {
+      "arxiv_id": "2606.07512",
+      "authors": [
+        "Cong Chen",
+        "Guo Gan",
+        "Kaixiang Ji",
+        "ChaoYang Zhang",
+        "Zhen Yang",
+        "Guangming Yao",
+        "Hao Chen",
+        "Jingdong Chen",
+        "Yi Yuan",
+        "Chunhua Shen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "entities": [
+        "01-ai"
+      ],
+      "first_seen_at": "2026-06-08T14:37:33.771896+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
+          "url": "https://arxiv.org/abs/2606.07512"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
+        "url": "https://arxiv.org/abs/2606.07512"
+      },
+      "published_at": "2026-06-05T17:59:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.82,
+        "llm_relevance_score": 22.959999999999997,
+        "recency_score": 0.7489502049197186,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 32.90895020491972
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07512",
+      "summary": "Current Vision-Language Models struggle with hours-long videos because processing full-length visual sequences induces prohibitive token explosion and attention dilution. To overcome this, we introduce MemDreamer to decouple perception and reasoning, shifting long-video understanding into an agentic exploration process. As a plug-and-play framework, it incrementally streams videos to construct a Hierarchical Graph Memory, a top-down three-tier architecture for semantic abstraction, anchored by a",
+      "summary_zh": "當前 Vision-Language Models (視覺語言模型) 在處理長達數小時的影片時，常因處理完整視覺序列而面臨爆炸性的 token 消耗與注意力稀釋問題。為了解決此困境，本文提出 MemDreamer 框架，將感知與推理過程解耦，把長影片理解轉化為一種代理導向的探索過程。作為一個即插即用的架構，它能夠增量式地串流處理影片，並建構出一個以語義抽象為核心的「階層式圖記憶」(Hierarchical Graph Memory)，此為一種自上而下的三層架構，旨在提升長時間視覺序列的模態理解效能與可解釋性。",
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
+      "title_zh": "MemDreamer：透過階層式圖記憶與代理檢索機制，將感知與推理解耦以實現長影片理解"
+    },
+    {
+      "arxiv_id": "2606.07513",
+      "authors": [
+        "Xintao Wang",
+        "Sirui Zheng",
+        "Hongqiu Wu",
+        "Weiyuan Li",
+        "Jen-tse Huang",
+        "Minghao Zhu",
+        "Can Zu",
+        "Qi Deng",
+        "Jiawei Wang",
+        "Qianyu He",
+        "Heng Wang",
+        "Xiaojian Wu",
+        "Yunzhe Tao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:35.764359+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cl",
+          "tier": 1,
+          "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+          "url": "https://arxiv.org/abs/2606.07513"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cl",
+        "tier": 1,
+        "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+        "url": "https://arxiv.org/abs/2606.07513"
+      },
+      "published_at": "2026-06-05T17:59:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.85,
+        "llm_relevance_score": 23.8,
+        "recency_score": 0.7489588733750328,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 31.748958873375035
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07513",
+      "summary": "Humans learn from social life. Simulating this process with LLM-powered agents represents a promising research direction, raising a natural question: whether LLMs can learn from such simulated social experience to better understand and replicate human behavior. However, prior agent society simulations typically operate at the scale of days, limiting the depth of social interactions and long-term growth. In this paper, we study long-term life simulation and LLM learning in agent societies, with t",
+      "summary_zh": "人類從社會生活中學習，而利用基於大型語言模型 (LLM) 的代理來模擬此過程，代表了一個極具前景的研究方向。這自然引發一個關鍵問題：LLM 是否能從這類模擬的社會經驗中學習，以更深入地理解與複製人類行為？然而，過去的代理社會模擬通常僅持續數天，限制了社會互動的深度與個體的長期成長。本文專注於研究代理社會中的長期生活模擬與 LLM 學習，旨在透過持續數月以上的虛擬社會實驗，探索 LLM 能否在複雜的動態環境中發展出更逼真、具適應性的行為模式，從而推進通用人工智慧 (AGI) 的社會性進化。",
+      "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+      "title_zh": "Agentopia：代理社會中的長期生活模擬與學習"
+    },
+    {
+      "arxiv_id": "2606.07414",
+      "authors": [
+        "Simon Schug"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.NE"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:38:04.916450+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-lg",
+          "tier": 1,
+          "title": "Sparsely gated tiny linear experts",
+          "url": "https://arxiv.org/abs/2606.07414"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-lg",
+        "tier": 1,
+        "title": "Sparsely gated tiny linear experts",
+        "url": "https://arxiv.org/abs/2606.07414"
+      },
+      "published_at": "2026-06-05T16:06:47+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.8,
+        "llm_relevance_score": 22.400000000000002,
+        "recency_score": 0.7431183878141597,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 30.34311838781416
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07414",
+      "summary": "Sparsity allows scaling model parameters without proportionally increasing computational cost. While mixture of experts (MoE) models are made increasingly sparse, individual experts typically remain large and dense. Here, we demonstrate that further increasing sparsity by shrinking each expert to consist of a single neuron and selecting a tiny fraction of many available neurons can improve compute efficiency and interpretability. Counterintuitively, the key to achieving both is removing the nonl",
+      "summary_zh": "稀疏性技術允許在不按比例增加計算成本的情況下擴展模型參數。雖然 Mixture of Experts (MoE) 模型已變得越來越稀疏，但每個專家單元本身通常仍維持較大的規模與稠密結構。本論文展示了一種進一步提升稀疏性的方法：將每個專家壓縮至僅包含單一神經元，並從大量可用神經元中選取極小的一部分。此設計出乎意料地改善了計算效率與可解釋性。關鍵在於，要同時達成這兩個目標，必須移除專家內的非線性激活函數，使模型在極度稀疏的結構下仍能做出有效且易於剖析的決策。",
+      "title": "Sparsely gated tiny linear experts",
+      "title_zh": "稀疏門控微型線性專家 (Sparsely gated tiny linear experts)"
+    },
+    {
+      "arxiv_id": "2606.07515",
+      "authors": [
+        "Luca Avena",
+        "Gianmarco Bet",
+        "Bernardo Busoni"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC",
+        "math.PR"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-06-08T14:37:33.771278+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-ai",
+          "tier": 1,
+          "title": "How reliable are LLMs when it comes to playing dice?",
+          "url": "https://arxiv.org/abs/2606.07515"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-ai",
+        "tier": 1,
+        "title": "How reliable are LLMs when it comes to playing dice?",
+        "url": "https://arxiv.org/abs/2606.07515"
+      },
+      "published_at": "2026-06-05T17:59:42+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.75,
+        "llm_relevance_score": 21.0,
+        "recency_score": 0.7489684087917594,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.94896840879176
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07515",
+      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuiti",
+      "summary_zh": "本文透過一個受控的基準測試研究，探討大型語言模型在離散機率問題上的推理能力。研究團隊建構了兩個資料集，分別包含標準練習題與能觸發直覺性捷思推理的反直覺問題，並對 8 個最先進的模型進行了評估，每個模型均在有無 Chain-of-Thought 提示的情境下進行測試。結果顯示，模型在標準問題上的平均準確率高達 0.96，但在反直覺問題上僅有 0.59，突顯出 LLM 儘管在常規任務中表現優異，一旦面臨偏離直覺的機率情境，其可靠度便會大幅下降，這對於其在風險敏感領域的應用提出了重要警示。",
+      "title": "How reliable are LLMs when it comes to playing dice?",
+      "title_zh": "LLM 在玩骰子時有多可靠？"
+    },
+    {
+      "arxiv_id": "2606.07436",
+      "authors": [
+        "Haoyuan Li",
+        "Zhengdong Hu",
+        "Jun Wang",
+        "Hehe Fan",
+        "Yi Yang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "entities": [
+        "01-ai"
+      ],
+      "first_seen_at": "2026-06-08T14:39:06.008710+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "arxiv",
+          "source_id": "arxiv-cs-cv",
+          "tier": 1,
+          "title": "Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning",
+          "url": "https://arxiv.org/abs/2606.07436"
+        }
+      ],
+      "primary_link": {
+        "link_type": "arxiv",
+        "source_id": "arxiv-cs-cv",
+        "tier": 1,
+        "title": "Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning",
+        "url": "https://arxiv.org/abs/2606.07436"
+      },
+      "published_at": "2026-06-05T16:33:44+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.2,
+        "llm_raw_score": 0.65,
+        "llm_relevance_score": 18.2,
+        "recency_score": 0.7445104567606589,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 28.144510456760656
+      },
+      "section": null,
+      "source_name": null,
+      "story_id": "arxiv:2606.07436",
+      "summary": "This paper explores agentic 3D spatial understanding, i.e., MLLM agents performing 3D reasoning through tool use. Existing methods often misuse tools and exhibit biased tool preferences under 3D scenarios, leaving the agentic paradigm with only marginal gains over non-agentic strategies. We reveal that 3D spatial reasoning tasks are heterogeneous across scenes, while these agents apply a uniform tool-use strategy to all scenes rather than selecting tools according to the specific scene and task.",
+      "summary_zh": "本文探討了代理式的 3D 空間理解，即多模態大型語言模型 (MLLM) 代理透過工具使用來執行 3D 推理。現有方法在處理 3D 場景時，經常誤用工具，並展現出偏頗的工具偏好，導致代理範式相較於非代理策略僅有微小的性能提升。本研究揭示，3D 空間推理任務具有跨場景的異質性，然而當前的代理卻對所有場景採用統一的工具使用策略，未能根據特定場景與任務選擇合適的工具。為了解決此問題，作者提出了 Skill-3D，旨在讓代理能夠動態演化出場景感知的技能，從而顯著提升其在複雜 3D 環境中進行空間推理的精準度與適應性。",
+      "title": "Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning",
+      "title_zh": "Skill-3D：為具身 3D 空間推理演化場景感知技能"
+    }
+  ]
+}
