@@ -244,6 +244,19 @@ class TestTranslationProcessor:
 
         assert result["story-a"].title_zh == "\u7ffb\u8b6f"
 
+    def test_namespace_prefix_omission_maps_to_story_id(self, tmp_path: Path) -> None:
+        response = _make_llm_response(
+            [{"id": "abc123", "title_zh": "\u7ffb\u8b6f", "summary_zh": ""}]
+        )
+        processor, client = self._make_processor(tmp_path, [response])
+
+        result = processor.translate(
+            [_make_story("fallback:abc123", "First")]
+        )
+
+        assert result["fallback:abc123"].title_zh == "\u7ffb\u8b6f"
+        assert client.generate_content.call_count == 1
+
     def test_missing_title_zh_skipped(self, tmp_path: Path) -> None:
         response = _make_llm_response(
             [{"id": "s1", "title_zh": "", "summary_zh": "\u6458\u8981"}]

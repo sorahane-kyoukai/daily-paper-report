@@ -436,7 +436,7 @@ class LlmRelevanceProcessor:
             if not isinstance(entry, dict):
                 continue
 
-            story_id = str(entry.get("id", ""))
+            story_id = _resolve_story_id(str(entry.get("id", "")), valid_ids)
             if story_id not in valid_ids:
                 continue
 
@@ -536,6 +536,19 @@ def _clamp_score(value: object) -> float:
     except (TypeError, ValueError):
         return _NEUTRAL_SCORE
     return max(0.0, min(1.0, score))
+
+
+def _resolve_story_id(raw_id: str, valid_ids: set[str]) -> str:
+    """Recover a uniquely identifiable story ID if the model drops its prefix."""
+    story_id = raw_id.strip().strip("[]")
+    if story_id in valid_ids:
+        return story_id
+    suffix_matches = [
+        candidate
+        for candidate in valid_ids
+        if candidate.rsplit(":", 1)[-1] == story_id
+    ]
+    return suffix_matches[0] if len(suffix_matches) == 1 else story_id
 
 
 _COMPONENT_WEIGHTS = {

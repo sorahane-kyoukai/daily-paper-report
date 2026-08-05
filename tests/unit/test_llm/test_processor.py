@@ -273,3 +273,15 @@ class TestEvaluateStories:
 
         assert result.scores["test-1"] == pytest.approx(0.8)
         assert mock_client.generate_content.call_count == 2
+
+    def test_recovers_id_when_namespace_prefix_is_omitted(self) -> None:
+        mock_client = MagicMock()
+        mock_client.generate_content.return_value = json.dumps(
+            {"papers": [{"id": "abc123", "score": 0.8, "rationale": "ok", "topics": []}]}
+        )
+
+        story = _make_story(story_id="fallback:abc123")
+        result = _make_processor(mock_client).evaluate_stories([story])
+
+        assert result.scores["fallback:abc123"] == pytest.approx(0.8)
+        assert mock_client.generate_content.call_count == 1

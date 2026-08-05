@@ -392,15 +392,22 @@ def _resolve_story_id(
 ) -> str:
     """Resolve provider-returned id to a story_id.
 
-    Some OpenAI-compatible providers follow the prompt's numbered list and
-    return "1", "2", ... despite being asked to copy the bracketed story_id.
-    Treat those as 1-based indexes within the current batch.
+    DeepSeek may follow the prompt's numbered list or omit a namespace prefix.
+    Accept only unambiguous recovery within the current batch.
     """
     story_id = raw_id.strip()
     if story_id.startswith("[") and story_id.endswith("]"):
         story_id = story_id[1:-1].strip()
     if story_id in valid_ids:
         return story_id
+
+    suffix_matches = [
+        candidate
+        for candidate in valid_ids
+        if candidate.rsplit(":", 1)[-1] == story_id
+    ]
+    if len(suffix_matches) == 1:
+        return suffix_matches[0]
 
     if story_id.isdigit():
         index = int(story_id) - 1
