@@ -1,1 +1,0 @@
-"""Research Report digest system."""
