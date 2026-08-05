@@ -11,3 +11,8 @@
 
 完整開發、部署與操作命令請參考 [README](../README.md)，復原程序請參考
 [RESET-GUIDE](RESET-GUIDE.md)。
+
+若 SSH 帳號無法免密碼執行 sudo，可將專案與預先建置的 `frontend/dist`
+放在 `~/daily-paper-report`，再執行 `scripts/install-nano-user.sh`。此模式使用
+使用者 crontab 與 uv 管理的 Python 3.13；dispatcher 每 30 分鐘喚醒一次，
+但只會在上述精確 UTC 時間啟動任務。

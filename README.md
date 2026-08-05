@@ -59,6 +59,12 @@ sudo systemctl start daily-paper-report@daily.service
 journalctl -u daily-paper-report@daily.service -f
 ```
 
+If the SSH account cannot run passwordless sudo, place the checkout and a
+prebuilt `frontend/dist` under `~/daily-paper-report`, then run
+`scripts/install-nano-user.sh`. This rootless mode uses user cron and a
+uv-managed Python 3.13. Its dispatcher wakes every 30 minutes but starts work
+only at the exact UTC times below.
+
 Timers use UTC and a shared six-hour lock:
 
 - Daily: every day at 00:00

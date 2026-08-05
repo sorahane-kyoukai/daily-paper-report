@@ -9,12 +9,13 @@ REMOTE_URL="${REMOTE_URL:-git@github.com:sorahane-kyoukai/daily-paper-report.git
 STATE_BRANCH="${STATE_BRANCH:-state}"
 STATE_FILE="${DATA_DIR}/state.sqlite"
 DEPLOY_KEY="${DEPLOY_KEY:-/etc/daily-paper-report/github_deploy_key}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 if test -f "${DEPLOY_KEY}"; then
   export GIT_SSH_COMMAND="ssh -i ${DEPLOY_KEY} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
 fi
 
 test -f "${STATE_FILE}" || { echo "Missing ${STATE_FILE}" >&2; exit 1; }
-python3 - "${STATE_FILE}" <<'PY'
+"${PYTHON_BIN}" - "${STATE_FILE}" <<'PY'
 import sqlite3
 import sys
 db = sqlite3.connect(sys.argv[1])
@@ -27,7 +28,7 @@ PY
 TEMP_DIR="$(mktemp -d)"
 cleanup() { rm -rf -- "${TEMP_DIR}"; }
 trap cleanup EXIT
-git -C "${TEMP_DIR}" init --initial-branch="${STATE_BRANCH}" >/dev/null
+git -C "${TEMP_DIR}" init >/dev/null
 git -C "${TEMP_DIR}" remote add origin "${REMOTE_URL}"
 if git -C "${TEMP_DIR}" fetch --depth=1 origin "${STATE_BRANCH}" >/dev/null 2>&1; then
   git -C "${TEMP_DIR}" checkout -B "${STATE_BRANCH}" FETCH_HEAD >/dev/null

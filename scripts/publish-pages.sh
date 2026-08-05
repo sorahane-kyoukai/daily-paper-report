@@ -8,11 +8,12 @@ REMOTE_URL="${REMOTE_URL:-git@github.com:sorahane-kyoukai/daily-paper-report.git
 PAGES_BRANCH="${PAGES_BRANCH:-gh-pages}"
 DOMAIN="${PAGES_DOMAIN:-paper.sorahane-kyoukai.org}"
 DEPLOY_KEY="${DEPLOY_KEY:-/etc/daily-paper-report/github_deploy_key}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 if test -f "${DEPLOY_KEY}"; then
   export GIT_SSH_COMMAND="ssh -i ${DEPLOY_KEY} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
 fi
 
-python3 - "${PUBLIC_DIR}" <<'PY'
+"${PYTHON_BIN}" - "${PUBLIC_DIR}" <<'PY'
 import json
 import sys
 from pathlib import Path
@@ -32,7 +33,7 @@ TEMP_DIR="$(mktemp -d)"
 cleanup() { rm -rf -- "${TEMP_DIR}"; }
 trap cleanup EXIT
 
-git -C "${TEMP_DIR}" init --initial-branch="${PAGES_BRANCH}" >/dev/null
+git -C "${TEMP_DIR}" init >/dev/null
 git -C "${TEMP_DIR}" remote add origin "${REMOTE_URL}"
 if git -C "${TEMP_DIR}" fetch --depth=1 origin "${PAGES_BRANCH}" >/dev/null 2>&1; then
   git -C "${TEMP_DIR}" checkout -B "${PAGES_BRANCH}" FETCH_HEAD >/dev/null
