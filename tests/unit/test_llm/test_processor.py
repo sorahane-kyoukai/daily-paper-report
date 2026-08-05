@@ -254,3 +254,22 @@ class TestEvaluateStories:
 
         assert result.scores["s0"] == pytest.approx(0.9)
         assert result.scores["s1"] == pytest.approx(0.5)
+
+    def test_retries_transient_missing_story_id(self) -> None:
+        """A valid JSON response that omits its requested ID is retried."""
+        mock_client = MagicMock()
+        mock_client.generate_content.side_effect = [
+            json.dumps({"papers": []}),
+            json.dumps(
+                {
+                    "papers": [
+                        {"id": "test-1", "score": 0.8, "rationale": "ok", "topics": []}
+                    ]
+                }
+            ),
+        ]
+
+        result = _make_processor(mock_client).evaluate_stories([_make_story()])
+
+        assert result.scores["test-1"] == pytest.approx(0.8)
+        assert mock_client.generate_content.call_count == 2

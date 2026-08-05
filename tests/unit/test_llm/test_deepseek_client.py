@@ -34,7 +34,7 @@ def test_request_is_v4_flash_json_mode(mock_post: MagicMock) -> None:
     body = mock_post.call_args.kwargs["json"]
     assert body["model"] == "deepseek-v4-flash"
     assert body["response_format"] == {"type": "json_object"}
-    assert "thinking" not in body
+    assert body["thinking"] == {"type": "disabled"}
     assert CONTEXT_LIMIT_TOKENS == 1_000_000
     assert client.last_usage.prompt_cache_hit_tokens == 80
 

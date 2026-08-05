@@ -75,6 +75,7 @@ class DeepSeekClient:
         body: dict[str, object] = {
             "model": self.model,
             "messages": messages,
+            "thinking": {"type": "disabled"},
             "stream": False,
             "max_tokens": self._max_tokens,
             "response_format": {"type": "json_object"},
