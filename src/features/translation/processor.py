@@ -32,6 +32,7 @@ DEFAULT_BATCH_SIZE = 1
 BATCH_SIZE = DEFAULT_BATCH_SIZE
 MAX_BATCH_SIZE = 1
 _MAX_BATCH_RETRIES = 1
+_MAX_SINGLE_RETRIES = 2
 _MAX_RAW_RESPONSE_LOG_LEN = 300
 
 
@@ -210,6 +211,18 @@ class TranslationProcessor:
 
         if len(missing) == 1:
             story = missing[0]
+            if attempt < _MAX_SINGLE_RETRIES:
+                self._log.warning(
+                    "translation_story_retry",
+                    batch=batch_idx,
+                    attempt=attempt + 1,
+                    story_id=str(story.get("story_id", "")),
+                )
+                return translated + self._process_batch_adaptive(
+                    missing,
+                    batch_idx,
+                    attempt + 1,
+                )
             self._log.warning(
                 "translation_story_failed",
                 batch=batch_idx,

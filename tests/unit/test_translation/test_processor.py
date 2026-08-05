@@ -181,6 +181,8 @@ class TestTranslationProcessor:
     def test_api_error_isolated_per_paper(self, tmp_path: Path) -> None:
         responses: list[object] = [
             LlmApiError("Empty content"),
+            LlmApiError("Empty content"),
+            LlmApiError("Empty content"),
             _make_llm_response([{"id": "s1", "title_zh": "\u7ffb\u8b6f1", "summary_zh": ""}]),
             _make_llm_response([{"id": "s2", "title_zh": "\u7ffb\u8b6f2", "summary_zh": ""}]),
             _make_llm_response([{"id": "s3", "title_zh": "\u7ffb\u8b6f3", "summary_zh": ""}]),
@@ -192,15 +194,18 @@ class TestTranslationProcessor:
         result = processor.translate(stories)
 
         assert len(result) == 3
-        assert client.generate_content.call_count == 4
+        assert client.generate_content.call_count == 6
 
     def test_parse_error_skips_batch(self, tmp_path: Path) -> None:
-        processor, client = self._make_processor(tmp_path, ["not json at all"])
+        processor, client = self._make_processor(
+            tmp_path, ["not json at all"] * 3
+        )
 
         stories = [_make_story("s1", "Title")]
         result = processor.translate(stories)
 
         assert "s1" not in result
+        assert client.generate_content.call_count == 3
 
     def test_invalid_story_id_ignored(self, tmp_path: Path) -> None:
         response = _make_llm_response(
@@ -261,12 +266,13 @@ class TestTranslationProcessor:
         response = _make_llm_response(
             [{"id": "s1", "title_zh": "", "summary_zh": "\u6458\u8981"}]
         )
-        processor, client = self._make_processor(tmp_path, [response])
+        processor, client = self._make_processor(tmp_path, [response] * 3)
 
         stories = [_make_story("s1", "Title")]
         result = processor.translate(stories)
 
         assert "s1" not in result
+        assert client.generate_content.call_count == 3
 
     def test_markdown_fenced_response(self, tmp_path: Path) -> None:
         inner = json.dumps([{"id": "s1", "title_zh": "\u6e2c\u8a66", "summary_zh": ""}])
