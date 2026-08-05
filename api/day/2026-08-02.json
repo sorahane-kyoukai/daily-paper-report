@@ -1,5 +1,8 @@
 {
   "archive_dates": [
+    "2026-08-05",
+    "2026-08-04",
+    "2026-08-03",
     "2026-08-02",
     "2026-08-01",
     "2026-07-31",
@@ -297,7 +300,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-08-02T09:01:21.279080+00:00",
+  "generated_at": "2026-08-05T13:41:48.069226+00:00",
   "model_releases_by_entity": {
     "stability-ai": [
       {
@@ -310,7 +313,7 @@
         "first_seen_at": "2026-06-18T06:19:02.235700+00:00",
         "github_release_url": null,
         "hf_metadata": {
-          "downloads": 3345,
+          "downloads": 3474,
           "likes": 27,
           "pipeline_tag": "text-to-audio"
         },
@@ -332,7 +335,7 @@
           "title": "stabilityai/stable-audio-3-optimized",
           "url": "https://huggingface.co/stabilityai/stable-audio-3-optimized"
         },
-        "published_at": "2026-08-02T08:05:26+00:00",
+        "published_at": "2026-08-02T10:41:27+00:00",
         "scores": {
           "citation_score": 0.0,
           "cross_source_score": 0.0,
@@ -340,17 +343,17 @@
           "kind_score": 1.8,
           "llm_raw_score": 0.0,
           "llm_relevance_score": 0.0,
-          "recency_score": 0.996637031125205,
+          "recency_score": 0.7317519764944506,
           "semantic_score": 0.0,
           "tier_score": 2.0,
           "topic_score": 4.0,
-          "total_score": 10.796637031125204
+          "total_score": 10.53175197649445
         },
         "section": null,
         "source_name": null,
         "story_id": "hf:stabilityai/stable-audio-3-optimized",
         "summary": "> **Note:** This repository contains experimental checkpoints optimised for acceleration on specific hardware. For standard checkpoints, please use Stable Audio 3 Medium instead. Please note: For commercial use, please refer to https://stability.ai/license `Stable Audio 3` is a family of fast latent diffusion models (small, medium, large) for variable length audio generation and editing. Since our models can generate several minutes of audio, variable-length generations are key to avoid the cost of producing full-length generations for short sounds. We also support inpainting, enabling targeted audio editing and the continuation of short recordings. Our latent diffusion models operate on top of a novel semantic-acoustic autoencoder that projects audio into a compact latent space, enabling...",
-        "summary_zh": "本倉庫提供 Stable Audio 3 針對特定硬體最佳化的實驗性檢查點，該模型為快速潛變擴散家族，支援可變長度音訊生成與音訊修復（inpainting），並利用語義-聲學自動編碼器將音訊映射至緊湊潛變空間以提升效率。這些優化旨在降低推論延遲，適合在相容硬體上執行大規模或批量生成任務；其核心的變長輸出機制能根據輸入靈活調整音訊長度，避免為短音效浪費算力，這對音效設計與互動式應用極具價值。同時，Stable Audio 3 系列提供小型、中型、大型配置，可產生長達數分鐘的高品質音訊，滿足不同場景需求。此倉庫的檢查點經特定 GPU 調校，能顯著加速合成過程，是原型開發的理想選項；但商業用途須遵守 Stability AI 授權條款，正式部署仍建議採用穩定的標準版本。",
+        "summary_zh": "此儲存庫提供的是 Stability AI 針對特定硬體加速最佳化的實驗性檢查點，並非標準版本。Stable Audio 3 本身是一個快速潛在擴散模型（latent diffusion model）家族，包含 small、medium、large 三種規模，專為可變長度的音訊生成與編輯而設計。傳統模型在生成短音效時，仍需耗費生成完整長度音訊的運算成本，而 Stable Audio 3 支援變長度生成，能有效避免此問題，進而提升效率與靈活性。此外，模型亦支援 inpainting（局部修補），可針對音訊進行目標性編輯，或擴充既有的短錄音。其核心技術是採用新穎的語義-聲學 autoencoder（semantic-acoustic autoencoder），將音訊投影至緊湊的潛在空間，使擴散模型能在該空間中高效運作，同時保留生成音訊的語義與聲學細節。此技術路徑有助於在生成數分鐘長音訊時維持品質與可控性。然而，此儲存庫特別標註為實驗性，意味著其最佳化可能僅適用於特定硬體，且效能與穩定性可能不如標準版本。對於商業使用，使用者需參閱 Stability AI 的授權條款。此研究對於音訊生成領域具有重要性，因為它提供了一種兼顧生成長度、速度與編輯彈性的方案，可能應用於音樂創作、音效設計、遊戲與多媒體內容製作。不過，使用者需留意實驗性檢查點的限制，並權衡最佳化帶來的速度優勢與潛在的相容性風險。對於研究人員而言，此模型家族展示了擴散模型在非視覺領域的延伸，以及如何透過潛在空間設計來處理高維度連續數據，值得深入探討其架構與訓練策略。",
         "title": "stabilityai/stable-audio-3-optimized",
         "title_zh": "stabilityai/stable-audio-3-optimized"
       }
@@ -378,6 +381,37 @@
           "url": "https://zenn.dev/libercraft/articles/20260802-speculative-decoding-caching-pitfalls"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 0.85,
+        "evidence": [],
+        "fulltext_sha256": "1cb1f82b213ab5cdfd38f54def6baed48a3cf6d970fa4ec575895541b5399def",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper addresses multi-hop QA with knowledge graph design and entity extraction, touching on RAG and knowledge graphs, but it is an abstract-only practical article lacking experimental detail, baselines, and quantitative results. It is relevant to RAG/knowledge and Japanese NLP context but not a research contribution.",
+        "score": 0.3145,
+        "token_usage": {
+          "completion_tokens": 160,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 472,
+          "prompt_tokens": 2264,
+          "total_tokens": 2424
+        },
+        "topics": [
+          "RAG",
+          "knowledge graph",
+          "multi-hop QA",
+          "entity extraction"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
@@ -391,726 +425,106 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.2,
-        "llm_relevance_score": 5.6000000000000005,
-        "recency_score": 0.97166328302437,
+        "llm_raw_score": 0.31450000000000006,
+        "llm_relevance_score": 8.806000000000001,
+        "recency_score": 0.7057279484311159,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 12.37166328302437
+        "total_score": 15.311727948431116
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
       "story_id": "arxiv:articles/2026080",
       "summary": "「speculative decodingとprefix cachingを両方有効にすれば、速度は掛け算で良くなるはずだ」——この期待は、実際にはしばしば裏切られます。vLLMのGitHub issueには、MTP（Multi-Token Prediction）speculative decodingを有効にした状態でprefix cachingを使うと、キャッシュヒット率が32,768トークンから16,384トークンまで低下し、TTFT（Time To First Token）が大幅に悪化するという実際のバグ報告があります。\n本記事では、speculative decodingとpre...",
-      "summary_zh": "本文探討如何透過知識圖譜設計與實體抽取技術，來處理需要跨越多份文件、追蹤關係才能回答的多跳問答任務。傳統向量檢索在面對「某感測器用於哪些產品線」及「去年故障數量」這類需要中間推理的問題時，往往無法有效擷取關聯，而知識圖譜能結構化這些關係並支援跳躍式查詢。文章結合作者的實務經驗，說明從文檔中抽取實體與建立圖譜的關鍵設計考量，為實作 GraphRAG 的生產部署提供參考，並延續先前對於 GraphRAG 運行經濟學的討論。",
+      "summary_zh": "本文針對向量檢索增强生成（RAG）系統在處理多跳問答時的缺陷，提出以知識圖譜為基礎的實體抽取設計方案。作者指出，傳統向量檢索僅能找出與問題語意相近的文件片段，但對於需要橫跨多個文件、追蹤多層關係才能回答的問題（如「某感測器所在的產品線去年發生了多少件故障」），向量檢索往往束手無策，因為問題中未直接提及的中間資訊（例如該感測器應用於哪些產品線）必須透過圖譜關係才能取得。為此，本文主張在GraphRAG架構中，將實體抽取作為關鍵前置步驟，並詳細討論其實務要點：如何從非結構化文件（如規格書、產品線組成表、故障報告）中準確抽取實體與關係，如何設計知識圖譜的節點與邊以支持多跳查詢，以及如何避免實體歧義與冗餘。文中引用先前研究（如「GraphRAG生產營運的經濟學」）的經驗，強調實體抽取的品質直接影響圖譜的查詢能力與最終答案的準確性。然而，本文僅提供摘要，未公開具體的實驗數據或基準測試結果，故其方法的有效性尚待進一步驗證。此研究的重要性在於：隨著企業問答系統日益複雜，單純依賴向量檢索已無法滿足多跳推理需求，而知識圖譜與實體抽取的結合提供了一條務實的解決路徑，但實作上仍需注意抽取成本、圖譜維護與查詢延遲等挑戰。",
       "title": "speculative decoding×prefix cachingの罠：組み合わせで遅くなるケース",
-      "title_zh": "多跳問答的知識圖譜設計：實體抽取實務"
+      "title_zh": "多跳問答的知識圖譜設計：實務中的實體抽取"
+    },
+    {
+      "arxiv_id": "articles/1433959",
+      "authors": [
+        "kittybbit"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.291411+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "プロンプト・コンテキスト・ハーネス・ループの違いを「設計責任」で整理する",
+          "url": "https://zenn.dev/kittybbit/articles/1433959c42ba79"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "Abstract states the article organizes terminology by design responsibility, but no details on methods or results are provided.",
+          "No sections with quantitative results, baselines, or ablations are present in the abstract-only content."
+        ],
+        "fulltext_sha256": "f449a09a1757f9c6a4f8ddd294cbdcba7bee8c2ff651c0955e5288f5e7034731",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a conceptual blog-style article discussing terminology for AI agents (prompt, context, harness, loop) with a focus on design responsibility. It touches on agents and prompting, which are relevant topics, but it is only an abstract with no empirical validation, baselines, or formal methodology. The work is not a rigorous research contribution and lacks evidence and reproducibility. It has some generalizability as a conceptual framework for engineers but overall low research quality.",
+        "score": 0.18275,
+        "token_usage": {
+          "completion_tokens": 279,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 90,
+          "prompt_tokens": 2266,
+          "total_tokens": 2545
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "プロンプト・コンテキスト・ハーネス・ループの違いを「設計責任」で整理する",
+        "url": "https://zenn.dev/kittybbit/articles/1433959c42ba79"
+      },
+      "published_at": "2026-08-02T12:09:57+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.18275,
+        "llm_relevance_score": 5.117,
+        "recency_score": 0.7362630501376336,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 11.403263050137634
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/1433959",
+      "summary": "AI エージェントの説明では、プロンプト、コンテキスト、ハーネス、ループという言葉が並びます。\nコンテキストやツールの結果は、次のモデル呼び出しの入力になります。そのため、「結局すべてプロンプトなのではないか」という疑問が生まれます。\n一般的な説明では、プロンプトはモデルへの指示、コンテキストはモデルに渡す情報全体を指します。この記事では、設計上の責任を切り分けるため、プロンプトを指示、コンテキストを判断材料の選択・取得・整形、ループを反復制御、ハーネスをそれらを動かすランタイム基盤として整理しています。\n対象は、生成 AI やコーディングエージェントを実務で使い始めたエンジニア、アーキ...",
+      "summary_zh": "這篇文章針對 AI 代理（AI agent）開發中常見的術語混淆，特別是「提示」（prompt）、「上下文」（context）、「框架」（harness）與「迴圈」（loop）之間的界線，提出一套以「設計責任」為核心的整理框架。作者指出，由於上下文與工具結果會成為下一次模型呼叫的輸入，因此許多人會質疑「最終一切都只是提示」。文章主張，為了在設計與除錯時能清楚分工，應將這些概念依職責區分：提示是對模型發出的指令；上下文是判斷材料的選擇、取得與格式化；迴圈負責反覆執行的控制邏輯；框架則是支撐整體運作的執行期基礎設施。這篇文章的價值在於，它提供一個務實的觀點，讓工程師在設計代理系統時，能更明確地歸屬問題與責任，避免因詞彙混淆而難以溝通或除錯。文中並未提供具體實驗數據或系統實作細節，而是以概念性說明為主，因此其論點較偏向於設計哲學與溝通工具，而非嚴謹的技術比較。對於剛開始使用生成式 AI 或編碼代理的工程師而言，此框架有助於建立一致的詞彙與心智模型，進而提升團隊協作效率與系統可維護性。然而，讀者應留意，文中對各詞彙的定義並非業界標準，不同團隊或文獻可能有不同用法，因此採用時需與自身情境對齊。",
+      "title": "プロンプト・コンテキスト・ハーネス・ループの違いを「設計責任」で整理する",
+      "title_zh": "以「設計責任」釐清提示、上下文、框架與迴圈之差異"
     }
   ],
   "radar": [
-    {
-      "arxiv_id": null,
-      "authors": [
-        "hellohazime"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.764609+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
-          "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
-        "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac"
-      },
-      "published_at": "2026-08-02T00:43:07+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.35,
-        "llm_relevance_score": 9.799999999999999,
-        "recency_score": 0.9664892803991664,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 12.566489280399166
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:2a62bb3865cdb448",
-      "summary": "お疲れ様です波浪です。\n今回は、最近流行りのKimi K3です。前回の失敗を活かして自分の中でも熱があるうちにBLOGにしました。\n結論。枝刈りしたKimi K3がMac Studio(Apple M3 Ultra、512GB)1台で動きました。ハーネスとしてKimi Code CLIを繋いで、SWE-Lancerの実タスク8本中5本正解、$3,500。そのうち2本は、前回2bitのK2.7が解けなかった問題でした。\nモデルはHugging Faceに置いてあります。\nhttps://huggingface.co/hellohazime/Kimi-K3-REAP640-IQ1_S-GGU...",
-      "summary_zh": "本文作者將近期熱門的 Kimi K3 模型透過剪枝技術縮小至 441GB，以 IQ1_S 量化格式，成功在搭載 Apple M3 Ultra 處理器與 512GB 記憶體的單台 Mac Studio 上執行。藉由 Kimi Code CLI 作為連接工具，模型在 SWE-Lancer 的八項真實軟體工程任務中解決了五題，獲得 3,500 美元賞金；其中兩題更是過去 2-bit 量化版 K2.7 模型無法攻克的難題。此案證明，將頂尖模型壓縮並本地端部署，不僅讓個人開發者免受雲端服務延遲與費用限制，也為安全敏感或離線場景提供了可行的替代方案。模型已公布於 Hugging Face 供社群取用。",
-      "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
-      "title_zh": "將 Kimi K3 剪枝至 441GB，在單台 Mac Studio 上執行"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "りむふぁくし"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.762286+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
-          "url": "https://zenn.dev/hrimfaxi_tpw/articles/de75758b72efea"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
-        "url": "https://zenn.dev/hrimfaxi_tpw/articles/de75758b72efea"
-      },
-      "published_at": "2026-08-02T05:18:49+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.2,
-        "llm_relevance_score": 5.6000000000000005,
-        "recency_score": 0.9851717985800746,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 12.385171798580075
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:3ab1c33488de6914",
-      "summary": "TL;DR\n\n「強いモデルが設計し、安いモデルが実装する」という工程別分業は、現在も条件次第では有効。ただし、一般的なベストプラクティスとは言いにくい。\nClaude CodeとCodexの公式文書は、工程名ではなく、作業の自己完結性・コンテキストの連続性・書き込み競合・検証可能性を基準に委譲先を決めている。\n調査、ログ解析、テスト実行、レビューのように、大量の情報を短い要約へ圧縮できる作業はサブエージェントに向く。\n設計と中核実装は、実装中にも仕様判断や設計変更が発生するため、同じメインエージェントが継続した方がよい場合が多い。\n実装を別エージェントへ任せるなら、工程だけを切り出す...",
-      "summary_zh": "本文重新審視將軟體設計與實作分派給不同強度模型的常見成本節省策略，指出雖在某些條件下仍可行，但已非普遍最佳實踐。作者引用 Claude Code 與 Codex 的官方指引，建議應依據工作的自我完備性、脈絡連續性、寫入衝突及可驗證性來決定是否委派，而非僅依工程階段劃分。調查、日誌分析、測試執行與審查等能將大量資訊壓縮為摘要的任務，適合交由子代理處理；但設計與核心實作階段因途中經常需要調整規格與做出設計決策，維持由主代理全程負責往往效果更佳。若必須將實作委外，則須注意不僅僅是切割工序，更要確保前後文脈絡無縫銜接。",
-      "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
-      "title_zh": "「設計交給強大模型，實作交給便宜模型」的分工模式是否仍成立？（2026年8月）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Haowei Cheng"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.763864+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
-          "url": "https://zenn.dev/haowei/articles/1c66ee2ee464fe"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
-        "url": "https://zenn.dev/haowei/articles/1c66ee2ee464fe"
-      },
-      "published_at": "2026-08-02T01:33:46+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.2,
-        "llm_relevance_score": 5.6000000000000005,
-        "recency_score": 0.9698947578443152,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 12.119894757844316
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:411799cf0b709732",
-      "summary": "はじめに\n自動車・ロボット・医療機器などの安全関連システム（safety-critical systems）の開発において、要求工学（Requirements Engineering） は最も重要なフェーズの一つです。要求の不備がプロジェクト失敗の主因であることは、数十年前から繰り返し指摘されてきました。\nしかし現場の実態はどうでしょうか。\n\n数百〜数千件の要求を、レビュー会議で人手で確認している\n要求間の矛盾（例：安全性とユーザビリティのトレードオフ）を見落としがち\nISO 26262やSOTIFなどの規格準拠チェックが属人的\nDOORSやJamaに要求は入っているが、品質分析は手...",
-      "summary_zh": "在汽車、機器人、醫療裝置等安全相關系統開發中，需求工程是最關鍵卻也最繁瑣的環節之一。長期以來，數百上千條需求的審查、矛盾辨識與法規合規確認，幾乎全由人工完成，不僅效率低落，更常因主觀判斷導致遺漏。本文探討若將 LLM 多智能體架構引進此流程，會如何扭轉現況。透過多代理協作，系統能自動分析需求間的衝突、檢查規範遵循狀況，並提供即時回饋，可望大幅縮短審查週期並提升品質。例如，代理群可模擬不同安全情境，持續檢驗需求是否滿足功能安全目標，並自動生成合規報告。這對減輕工程師負擔、確保專案合規性，以及加速安全產品上市，均有顯著意義。作者亦點出，導入此技術需解決模型可解釋性與領域知識融合等挑戰，但整體方向值得投入。",
-      "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
-      "title_zh": "將 LLM 多智能體引入安全相關系統的需求工程，會帶來什麼改變？"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "毎日AIレシピ"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.765629+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Prompt Repetitionで守れない制約は役割指定と自己チェック指示で埋まるか、実験して原理を追った",
-          "url": "https://zenn.dev/every_ai_recipe/articles/apology-email-repeat-role-compare"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Prompt Repetitionで守れない制約は役割指定と自己チェック指示で埋まるか、実験して原理を追った",
-        "url": "https://zenn.dev/every_ai_recipe/articles/apology-email-repeat-role-compare"
-      },
-      "published_at": "2026-08-01T21:11:11+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.3,
-        "llm_relevance_score": 8.4,
-        "recency_score": 0.9523690477192336,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 11.152369047719233
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:df3de644f3590f9a",
-      "summary": "TL;DR\n\n「同じ指示を2回貼るPrompt Repetition」（前回記事）を5つの制約条件を持つ依頼で試したところ、1回貼りでは1個、2回貼りでも別の1個が守られなかった。2回貼りの先頭に「厳格な校正者として、書いた後に違反がないか自分で確認して」という役割＋自己チェック指示を足して初めて5個全部を満たした\nロールプロンプト単体（「あなたはプロのライターです」等）は出力の語彙・トーンの分布をシフトさせるだけで、制約充足を検証する処理（verifier）を追加するわけではない。今回効いたのは役割名そのものではなく、役割の説明文に含めた「確認してください」という明示的な自己チェッ...",
-      "summary_zh": "本研究以一個需同時滿足五項約束的任務，測試單純的提示重複（Prompt Repetition）策略：僅貼一次提示時違反了一項，重複兩次則換成另一項未被遵守。然而，若在兩次重複的提示開頭加入「你是一名嚴格的校對者，寫完後請自行檢查是否違規」的角色與自我查核指示，則模型首次完整達成全部五項要求。作者進一步分析指出，單純的角色扮演提示（如「你是專業寫手」）僅改變輸出詞彙與語調的機率分布，並未真正加入驗證步驟；真正有效的成分是角色描述中隱含的自我檢查指令，它強制模型在生成後進行一次內部驗證。這項發現對設計可靠提示工程與可控生成具有重要啟發，且實驗顯示引入自我校正機制可大幅提高遵循率。未來開發者在約束繁多的情境下，應考慮內建自我查核步驟，而非僅重複指令。",
-      "title": "Prompt Repetitionで守れない制約は役割指定と自己チェック指示で埋まるか、実験して原理を追った",
-      "title_zh": "Prompt Repetition 無法遵守的約束，角色指定與自我檢查指示能補足嗎？實驗與原理分析"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "oubakiou"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.764384+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
-          "url": "https://zenn.dev/oubakiou/articles/e7ba06c74b7007"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
-        "url": "https://zenn.dev/oubakiou/articles/e7ba06c74b7007"
-      },
-      "published_at": "2026-08-02T01:00:05+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9676287085733521,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 10.967628708573352
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:b6449f0180f27461",
-      "summary": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を gpt-5.6-luna に固定して、luna の各 effort でどのように性能が変化するのかを詳しく見ます。\n\n 今回測った条件\n\n親（委譲元）は claude-opus-5@max に固定\n\n\n子は gpt-5.6-luna の 6 段（low / medium / high / xhigh / max / ultra）\n各条件 3 反復・直列実行で 6 条件 × 3 反復 =...",
-      "summary_zh": "本文為系列研究的一環，探討在將程式實作任務委外給子模型時，不同 Effort 設定對效能的影響。實驗固定主代理為 claude-opus-5@max，子代理為 gpt-5.6-luna，並測試從 low 到 ultra 共六種 Effort 層級，每種條件執行三次重複的迷你遊戲開發任務。結果顯示，Effort 的提升顯著影響實作品質與完成率，但亦伴隨計算成本增加。作者藉此勾勒出效能與成本之間的取捨曲線，並發現從 high 至 xhigh 階段的邊際效益最高，而 ultra 設定雖能達成更佳結果，但額外時間成本不符比例。這提醒團隊在部署代理式開發流程時，應依據任務複雜度動態調整 Effort，而非一味追求最高設定，為遊戲開發或類似結構化程式生成的外包場景提供了實證依據。",
-      "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
-      "title_zh": "【godot-llm-gamebench】GPT-5.6 Luna 的效能如何隨 Effort 參數變化？"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ジッソク【実測エンジニアリング】"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.765850+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "【実測】あなたのGPUで動く最強ローカルLLM 2026年7月版 — VRAM階級別ベンチマーク",
-          "url": "https://zenn.dev/jissoku/articles/local-llm-vram-tier-2026-07"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "【実測】あなたのGPUで動く最強ローカルLLM 2026年7月版 — VRAM階級別ベンチマーク",
-        "url": "https://zenn.dev/jissoku/articles/local-llm-vram-tier-2026-07"
-      },
-      "published_at": "2026-08-01T18:59:55+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9437269478059549,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 10.693726947805956
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:292a71cc173a9a28",
-      "summary": "この記事の数値には、すべてどちらかのタグを付けています。実測 = 当方の Apple M5 Pro 48GB で計測した値(生データ全件掲載)。出典 = 公開一次ソースの値(その場でリンク)。\n当方の検証機に NVIDIA GPU はありません。よって本記事の NVIDIA 系の数値は すべて出典 です。\n\n 1. 結論ファースト:VRAM階級別の優勝モデル\n\n\n\nVRAM\n優勝モデル\n量子化\nファイルサイズ\nコンテキスト\n\n\n\n\n6GB\nQwen3.5-4B\nQ4_K_M\n2.74GB\n262,144\n\n\n8GB\nQwen3.5-9B\nQ4_K_M\n5.68GB\n262,144(拡張時...",
-      "summary_zh": "本文基於 Apple M5 Pro 48GB 的實測數據與公開來源，整理出不同 VRAM 容量下最適合的本地 LLM 量化模型與設定。例如 6GB 環境可流暢運行 Qwen3.5-4B Q4_K_M，支援高達 262,144 的上下文長度；8GB 環境則推薦 Qwen3.5-9B 量化版。作者強調即使缺乏 NVIDIA GPU，仍可藉由 Apple Silicon 或整合顯卡獲得實用效能，大幅降低部署門檻。對於追求性價比的開發者，這份 VRAM 階級對照表能快速篩選出兼顧能力與資源限制的方案，幫助使用者在有限硬體上實現高效推理。文內所有 NVIDIA 相關數據均標註為公開來源，確保資訊透明。",
-      "title": "【実測】あなたのGPUで動く最強ローカルLLM 2026年7月版 — VRAM階級別ベンチマーク",
-      "title_zh": "【實測】你的 GPU 能跑的最強本地 LLM 2026 年 7 月版 — VRAM 級別基準測試"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "子供部屋大学院生"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.766059+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "MCP対応エージェントを安全に本番投入するための12の設計チェックリスト",
-          "url": "https://zenn.dev/bambampurin/articles/2026-07-28-tech-daily"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "MCP対応エージェントを安全に本番投入するための12の設計チェックリスト",
-        "url": "https://zenn.dev/bambampurin/articles/2026-07-28-tech-daily"
-      },
-      "published_at": "2026-08-01T17:48:20+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9390472611306422,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 10.689047261130643
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:8ac997187e9d8579",
-      "summary": "この記事で分かること\n\n2026-07-28時点の技術トレンドが「LLM中心」から「AIエージェント＋業務統合＋MCP標準化」へ移った理由\nエージェント導入で先に見るべき論点が「性能」ではなく「安全設計」である理由\nWeb開発ニュース収集のノイズ問題と、Python基盤ツール（uv / Ruff / Ty / Polars / Astral）が注目される背景\n\n\n AIトレンドの重心を見極める方法\n結論、今日のヘッドラインが示した最大の変化は「LLMそのものの性能競争」よりも「LLMを業務やツールにどう接続して使うか」への移行です。\n象徴的だったのは、[BigGo ファイナンス]「W...",
-      "summary_zh": "在 AI 代理與 MCP 標準化快速普及的 2026 年，直接將 LLM 功能整合至業務流程已成為主流。然而，生產環境導入代理時若缺乏完善的安全設計，可能導致資料外洩或操作失控。本文提出 12 項設計檢查清單，涵蓋身份驗證、最小權限原則、工具呼叫稽核、輸入淨化等關鍵面向，協助團隊於規劃階段預先排除風險。清單特別針對自動化網頁爬取、檔案系統互動等常見情境提供實作建議，避免因過度信任生成輸出而引發漏洞。作者強調，從追求模型性能轉向注重安全架構，才是 AI 代理順利落地的核心。",
-      "title": "MCP対応エージェントを安全に本番投入するための12の設計チェックリスト",
-      "title_zh": "安全部署 MCP 代理至生產環境的 12 項設計檢查清單"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "lingmu"
-      ],
-      "categories": [],
-      "entities": [
-        "openai"
-      ],
-      "first_seen_at": "2026-08-02T08:51:31.765102+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AIが安くなった——GPT-5.6の衝撃",
-          "url": "https://zenn.dev/lingmu/articles/2026-08-01-gpt-5-6-price-performance-frontier"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AIが安くなった——GPT-5.6の衝撃",
-        "url": "https://zenn.dev/lingmu/articles/2026-08-01-gpt-5-6-price-performance-frontier"
-      },
-      "published_at": "2026-08-01T22:04:35+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.05,
-        "llm_relevance_score": 1.4000000000000001,
-        "recency_score": 0.9559073060704533,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 9.905907306070453
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:c80f463c8f6001aa",
-      "summary": "AIが安くなった——GPT-5.6の衝撃\n2026-08-01 | 読了 4分 | #OpenAI #GPT-5.6 #AI価格革命\n「AIは高い」——そんな常識が、今日から変わるかもしれない。OpenAIがGPT-5.6の提供価格を大幅に引き下げ、企業も個人も「使えるAI」への距離が一気に縮まった。\n\n\n GPT-5.6で何が変わったか\nOpenAIは公式ブログで [1]、新モデル「GPT-5.6」のリリースとともに、価格性能比の大幅改善を発表した。\n\n💡 用語解説\n価格性能比 — 同じコストで、どれだけ高品質な出力が得られるかを示す指標。値が高いほど「安くて賢い」モデルといえる。...",
-      "summary_zh": "OpenAI 最新發布的 GPT-5.6 模型，以大幅降低的 API 價格帶來顯著的價格性能比提升。這意味著過去因成本考量而卻步的中小型企業與個人開發者，如今能以更低的預算使用與旗艦模型相當的語言理解與生成能力。本文解析此次降價對市場的影響，指出當高品質 AI 不再為少數巨頭壟斷時，將加速垂直領域應用的爆發，如自動化客服、程式輔助與內容創作，進一步壓縮傳統軟體服務的生存空間。此外，OpenAI 也調整了速率限制與合規條款，讓商業部署更具彈性，為大規模 AI 採用鋪路。",
-      "title": "AIが安くなった——GPT-5.6の衝撃",
-      "title_zh": "AI 變便宜了——GPT-5.6 的衝擊"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "cognitiveosmdl"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.765348+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "確率的生成器に規範は預けられない — Loopの成果物側に検疫を組む",
-          "url": "https://zenn.dev/cognitiveosmdl/articles/b75bad629b669b"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "確率的生成器に規範は預けられない — Loopの成果物側に検疫を組む",
-        "url": "https://zenn.dev/cognitiveosmdl/articles/b75bad629b669b"
-      },
-      "published_at": "2026-08-01T21:42:57+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.25,
-        "llm_relevance_score": 7.0,
-        "recency_score": 0.9544723105403686,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 9.754472310540368
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:ddd609d42ef9ebed",
-      "summary": "!\n本稿は前編「Loop Engineeringが暗黙に仮定しているもの」の続編であり、そこで列挙した穴のうち塞げるものへの対策を書く。備忘録的な性格が強い。私はこれらの手法の発見者ではない——多重集合差分、逐次検定、conformal較正、トレーサビリティはいずれも既存分野の確立した部品であり、本稿の内容は「loop engineeringという問題の下への並べ直し」である。\n検証状態タグ(📐導出 / 🧪実測 / ⬜未検証)は前編と同じ規約に従う。\n\n\n 出発点: なぜ「AIへの指示」を強化しても穴が塞がらないのか\n前編の穴(自己条件付けによる系統誤差、検証器のドリフト)への素朴な対策...",
-      "summary_zh": "生成式 AI 的輸出本質上具有隨機性，無法保證每次產出皆符合既定規範。本文承接前篇對 Loop Engineering 中隱含假設的剖析，指出即使強化提示詞或引入驗證器，仍可能陷入自相關系統誤差與驗證漂移的陷阱。為此，作者提出在產出端建置「檢疫層」，運用多重集合差分、序列檢定與 conformal calibration 等技術，從統計面檢測生成內容的真實性與一致性。這種做法不試圖修正模型本身，而是對產出結果進行可量化的品質控管。透過這套校驗框架，團隊能在 Loop 中持續監控 drift，並在超標時自動隔離可疑輸出，確保最終傳遞給使用者或下游系統的資訊可靠，為需要嚴格合規的場景（如金融報告、醫療摘要）提供一條可行的安全路徑。",
-      "title": "確率的生成器に規範は預けられない — Loopの成果物側に検疫を組む",
-      "title_zh": "不能將規範託付給機率性生成器——在 Loop 的產出端建立隔離機制"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Chisato Matsuzaki"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.766830+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "【プロローグ】有能な執事とメイドに囲まれたい — 煩悩から始まったAIエージェントのお屋敷",
-          "url": "https://zenn.dev/chisatom/articles/9ad6e414b91d11"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "【プロローグ】有能な執事とメイドに囲まれたい — 煩悩から始まったAIエージェントのお屋敷",
-        "url": "https://zenn.dev/chisatom/articles/9ad6e414b91d11"
-      },
-      "published_at": "2026-08-01T08:45:57+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.1,
-        "llm_relevance_score": 2.8000000000000003,
-        "recency_score": 0.9043353916292155,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 9.504335391629215
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:9276422295acf2dd",
-      "summary": "これから始まる連載の、プロローグです。本編は技術の話をちゃんとしますが、この第0回だけは、しません。なぜ私が AI エージェントに「お嬢様」と呼ばれて暮らしているのかという、いきさつの話です。\n\n きっかけ：戦国武将を見て、執事が欲しくなった\n2026年1月末、一本の記事が流れてきました。\nhttps://zenn.dev/shio_shoppaize/articles/5fee11d03a11a1\n戦国時代の軍制をモチーフにした multi-agent-shogun。上様（人間）→将軍→家老→足軽8名という指揮系統で、tmux 上の Claude Code たちが YAML と sen...",
-      "summary_zh": "本系列以輕鬆的敘事風格開場，作者自述因沉迷於戰國武將的多層級指揮模擬，進而萌生用 AI 代理打造「執事與女僕團隊」的念頭。2026 年初，一篇以戰國軍制為靈感的 multi-agent 系統文章觸發了創作衝動，促使作者開始建構一個以「大小姐」為中心、由多個具備角色人格的 AI 代理組成的協作環境。本文作為連載的序幕，未深入技術細節，而是描繪這個怪奇專案的動機與願景：將古代階級命令體系轉化為現代 LLM 代理的任務分派邏輯。作者期望透過這種具象化的設定，降低多代理系統的認知門檻，讓更多開發者體會到角色分工與工作流程自動化的樂趣，並預告後續將深入探討代理間通訊、記憶管理等實作挑戰。",
-      "title": "【プロローグ】有能な執事とメイドに囲まれたい — 煩悩から始まったAIエージェントのお屋敷",
-      "title_zh": "【序章】想被能幹的執事與女僕圍繞——從慾望開始的 AI 代理宅邸"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Itsuki Inoue"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.766300+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Agent Skillのおすすめの作り方 ── 公式ガイドの基本と、実際に作って分かったこと",
-          "url": "https://zenn.dev/inoway/articles/b-agent-skill-authoring"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Agent Skillのおすすめの作り方 ── 公式ガイドの基本と、実際に作って分かったこと",
-        "url": "https://zenn.dev/inoway/articles/b-agent-skill-authoring"
-      },
-      "published_at": "2026-08-01T14:13:56+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.1,
-        "llm_relevance_score": 2.8000000000000003,
-        "recency_score": 0.9251694596872715,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 9.275169459687271
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:e5b34edcdf3e1b74",
-      "summary": "この記事で分かること\nAgent Skill（SKILL.md）を作ろうとしたとき、そもそもどう書けばいいのか分からない、書いてみても思ったとおりに動かないことがよくあります。\n使ってほしい場面で呼ばれなかったり、逆に関係ない場面で勝手に動き出したりします。\nこの記事では、まず公式ガイドが示している基本を整理します。\nそのうえで、実際にスキルをいくつも作ってみて「こう書いたほうがうまくいく」と感じたことを、経験則として書いていきます。\n前半が土台、後半が実践という構成です。\n\n\n 前半：公式ガイドが示している基本\nまずAnthropic の Skill authoring best ...",
-      "summary_zh": "本文聚焦 Agent Skill（SKILL.md）在實際應用中的常見痛點：技能未在預期場景觸發，或無關情境下自行啟動。為了解決這些困擾，文章前半部先回顧 Anthropic 官方 Skill authoring best practices 的核心要點，後半部則分享作者親身打造多項技能後的心得，提出具體的撰寫經驗法則。透過結合理論與實戰，這份指引能幫助開發者提升技能觸發的可預測性與可靠性，讓 AI 代理更精準地完成任務。文中不僅說明官方指南的基礎，更深入探討觸發條件、技能描述等細節對行為的影響，提供「這樣寫才對」的實證建議。對於想讓 Agent Skill 更聽話的開發者而言，這是兼具原理與秘訣的實用參考。",
-      "title": "Agent Skillのおすすめの作り方 ── 公式ガイドの基本と、実際に作って分かったこと",
-      "title_zh": "Agent Skill 的推薦撰寫方法 ── 官方指南基礎與實作心得"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "susie000720"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.687994+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-          "url": "https://qiita.com/susie000720/items/9ba9c65df3cb97717aef"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-        "url": "https://qiita.com/susie000720/items/9ba9c65df3cb97717aef"
-      },
-      "published_at": "2026-08-02T04:11:35+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.1,
-        "llm_relevance_score": 2.8000000000000003,
-        "recency_score": 0.980582771075142,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.0,
-        "total_score": 8.580582771075143
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:5b4a593aa007c734",
-      "summary": "GitHub CopilotのようなAIツールでは、利用できるモデルが追加されたり、組織の設定によって新しいモデルが使えるようになったりします。\n利用者としては便利ですが、個人開発の問い合わせ返信にAIを使っていると、別の緊張が生まれます。\n\nモデル更新の恩恵は受けたい。し...",
-      "summary_zh": "本文探討當 AI 模型替換或更新時，如何避免客服回信內容失去控制，作者提出一套「回信契約（Reply Contract）」的設計方法。透過結構化提示與明確的輸出規範，即使在模型版本變動下，仍能維持回應的一致性和安全性。文章說明如何利用合約式約束，將回覆的語氣、範圍與禁止事項明確定義，讓 AI 在生成回信時有清楚的邊界。文中特別針對 GitHub Copilot 等工具支援多種模型的環境，剖析模型更新帶來的兩難：既要擁抱進步，又擔心回覆品質失控。作者以個人開發的實務經驗為基礎，給出可立即套用的契約模板與調整策略，讓 AI 輔助的客戶溝通既靈活又安全。",
-      "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-      "title_zh": "如何打造不因 AI 模型更換而暴走的客服「回信契約」"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "y-tanaka_0220"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.461874+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
-          "url": "https://qiita.com/y-tanaka_0220/items/d8d9a9b16d5ab5b8f531"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
-        "url": "https://qiita.com/y-tanaka_0220/items/d8d9a9b16d5ab5b8f531"
-      },
-      "published_at": "2026-08-02T08:39:02+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.2,
-        "llm_relevance_score": 5.6000000000000005,
-        "recency_score": 0.9989652327100325,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 8.398965232710033
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:bcfe0e76661b6e47",
-      "summary": "はじめに\n今回は、社内で利用するAI経費精算ワークフローをDifyで開発してみました。\n目的はとてもシンプルです。\n\n申請する人と承認する人の両方を楽にすること。\n\n申請者は入力の手間を減らし、承認者は確認の手間を減らす。\nそのために、AIを「判断する存在」ではなく「人を...",
-      "summary_zh": "作者利用 Dify 平台與支援視覺的 LLM（如 GPT-4 Vision）及 Codex，以近乎「vibe coding」的直覺方式，打造了一套內部使用的 AI 經費報銷流程。核心目標是簡化申請端與審批端的作業負擔：讓申請者輸入更少，審核者核對更輕鬆。關鍵設計在於不讓 AI 扮演最終裁決者，而是作為輔助角色，自動辨識收據、填寫表單並標示異常，人類只在必要時介入。這樣的設計既能提升效率又能確保合規。文中詳細描述如何將視覺辨識結果與 Codex 自動化串接，實現收據拍攝後自動產出報銷單，並提供範例 Prompt 結構與注意事項，對於想導入 AI 行政自動化的團隊極具參考價值。",
-      "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
-      "title_zh": "用 Dify 打造 AI 費用報銷工作流程 ── 結合 Vision LLM 與 Codex 的近乎 Vibe Coding 開發"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "PenguinCabinet"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.764845+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Pi+ollamaで「Error: output token limit」のエラーで失敗する時の解決策",
-          "url": "https://zenn.dev/penguincabinet/articles/399b2385dbf520"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Pi+ollamaで「Error: output token limit」のエラーで失敗する時の解決策",
-        "url": "https://zenn.dev/penguincabinet/articles/399b2385dbf520"
-      },
-      "published_at": "2026-08-01T23:20:45+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.05,
-        "llm_relevance_score": 1.4000000000000001,
-        "recency_score": 0.9609768315828208,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.16097683158282
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:40a2e3a8df544352",
-      "summary": "環境\nWindows 11\nPi 0.82.1\nollama 0.32.5\n\n 問題経緯\n下記のコマンドでPiからローカルLLM(ollama)を起動しました。\nollama launch pi \nトークン使用量のあるタスクを与えると、Pi+ollamaが下記のエラーを出力し失敗しました。\nError: Model stopped because it reached the maximum output token limit. The response may be incomplete.\n\n 解決策\nollamaのmodelfileでnum_ctxを大きく設定し、モデルを作り直...",
-      "summary_zh": "本文記錄使用 Pi 搭配本機 ollama 執行大型任務時，因輸出 token 超過模型預設上限而發生「Error: output token limit」的狀況。作者在 Windows 11 環境下透過 ollama modelfile 提高 num_ctx 參數值，重新建立模型後成功解決此問題。這項調整能讓 Pi 在處理長文生成或複雜任務時不再中斷，確保回應完整。文章也提醒其他開發者，遇到類似錯誤時應優先檢查 token 上限設定，避免誤判為模型崩潰。文中詳細示範了修改 modelfile 的步驟，並說明 num_ctx 參數如何影響可生成的最大長度，同時建議根據任務需求適度調整，以平衡效能與記憶體使用。",
-      "title": "Pi+ollamaで「Error: output token limit」のエラーで失敗する時の解決策",
-      "title_zh": "Pi + ollama 出現「Error: output token limit」的解決方案"
-    },
     {
       "arxiv_id": null,
       "authors": [
@@ -1132,6 +546,35 @@
           "url": "https://qiita.com/ktdatascience/items/70f531ffdaf3aa0a3eeb"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.4,
+          "novelty": 0.3,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.2,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Personal blog-style report on applying Google's OKF standard to Markdown notes; no scientific methodology, experiments, or evaluation; relevant to knowledge organization and RAG-adjacent concepts but lacks rigor and quantitative evidence.",
+        "score": 0.365,
+        "token_usage": {
+          "completion_tokens": 140,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 352,
+          "prompt_tokens": 2144,
+          "total_tokens": 2284
+        },
+        "topics": [
+          "knowledge base",
+          "RAG"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
         "source_id": "qiita-genai-tag",
@@ -1145,1243 +588,21 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.05,
-        "llm_relevance_score": 1.4000000000000001,
-        "recency_score": 0.9988288092745071,
+        "llm_raw_score": 0.36499999999999994,
+        "llm_relevance_score": 10.219999999999999,
+        "recency_score": 0.7254585191375527,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 7.948828809274508
+        "total_score": 16.49545851913755
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
       "story_id": "fallback:c0a54a2db8ba5267",
       "summary": "はじめに\nCLAUDE.mdやObsidianで、Markdownに知識を貯めている人は多いと思います。その「Markdownの置き方」に、Googleが標準仕様を出してきました。Open Knowledge Format、略してOKFです。\n自分は個人の知識ベース（価値...",
-      "summary_zh": "本文介紹 Google 最新提出的知識管理標準「Open Knowledge Format（OKF）」，並分享作者將其導入個人逾 1,700 個 Markdown 檔案的實作經驗。OKF 定義了一套系統化的目錄結構與詮釋資料規範，讓分散的筆記能形成可被機器理解、可查詢的知識網絡。作者以 CLAUDE.md 與 Obsidian 使用者常見的知識庫為起點，逐步說明如何將既有 Markdown 內容轉換為符合 OKF 的格式，並分析轉換過程中的挑戰與收穫。導入後，原本零散的 Markdown 文件之間浮現了新的結構關聯，搜尋與再利用效率顯著提升，證明了標準化對知識管理的價值。對於累積大量個人筆記的學習者，這篇文章提供了擁抱開放標準的具體路線與評估。",
+      "summary_zh": "本文探討個人知識管理（PKM）領域的一項新發展：Google提出的開放知識格式（Open Knowledge Format，簡稱OKF）標準，以及作者如何將此標準實際應用於自己的個人知識庫。作者原本使用Markdown檔案（約1,700個）搭配CLAUDE.md或Obsidian等工具來儲存知識，但這些做法缺乏統一標準，導致知識難以跨工具共享與互通。OKF旨在為Markdown知識提供標準化規範，使知識的組織、連結與引用更加一致，進而提升可攜性與可維護性。作者詳細記錄了導入過程，包括如何調整既有檔案結構、建立知識節點與關聯、以及如何處理相容性問題。文中也提出一些觀察，例如OKF可能過度設計，對一般使用者而言門檻較高，且目前生態系支援仍有限。主要價值在於展示個人知識管理從「隨意存放」走向「標準化」的可能性，並提供了實務上的遷移經驗，對同樣使用Markdown管理大量知識的人具有參考意義。然而，由於僅有摘要，缺乏完整實測數據與效能比較，其長期效益仍需後續驗證。",
       "title": "Google提唱の新ナレッジ標準「OKF」を、自分のMarkdown約1,700ファイルに導入してみた",
-      "title_zh": "將 Google 新知識標準「OKF」導入近 1,700 個 Markdown 檔案的實作記錄"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "katukoga"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.687768+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
-          "url": "https://qiita.com/katukoga/items/624e82effd3ff79bc59b"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
-        "url": "https://qiita.com/katukoga/items/624e82effd3ff79bc59b"
-      },
-      "published_at": "2026-08-02T07:53:03+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9957803378301218,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 6.995780337830122
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:900565426e05ef43",
-      "summary": "はじめに\nシリーズ2回目です。前回はさくらのAI Engine用アカウントトークン（APIキー）を発行して、curlコマンドで最初の1リクエストを成功させました。\n\n各回のタイトル\n内容\n\n①セットアップ編\n無償プラン契約〜アカウントトークン（APIキー）発行〜...",
-      "summary_zh": "「伺服器工程師的生成AI API 全功能實測筆記」系列第二篇。這一系列特別針對習慣命令列操作的基礎架構管理員設計，從開通免費帳戶、取得 API 金鑰，到呼叫各種生成端點，都以終端機指令為核心。本文接續前一篇的設定過程，將焦點放在「全功能試用」，以 Sakura AI Engine 為平台逐步操作聊天補全、即時串流輸出、文字嵌入向量以及語音合成，每項功能都附有 curl 指令示範與執行畫面。文中深入比較不同模式下回應的延遲特性、token 計數方式，並就串流傳輸中的連線管理與異常處理提供實用建議。除了基礎呼叫，作者也設計了一個利用向量嵌入進行短文相似度比對的小型實驗，讓讀者理解嵌入在語意搜尋上的應用價值，並在最後總結各功能的使用時機與成本考量，協助讀者快速建立對 API 全貌的認識，為後續專案整合做準備，讓即使無人工智慧基礎的人員也能自信導入生成式技術。",
-      "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
-      "title_zh": "【初學者導向】伺服器工程師首次接觸生成AI API ②全功能測試篇 〜一次體驗聊天、串流、向量嵌入與語音〜"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ぬまーんのZenn記事"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.762802+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AIに2万字を貼ったら料金は4.2倍。トークン数は1.5倍で、待ち時間は長さに比例しなかった",
-          "url": "https://zenn.dev/numarn/articles/claude-input-length-cost-latency-handson"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AIに2万字を貼ったら料金は4.2倍。トークン数は1.5倍で、待ち時間は長さに比例しなかった",
-        "url": "https://zenn.dev/numarn/articles/claude-input-length-cost-latency-handson"
-      },
-      "published_at": "2026-08-02T04:53:04+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9834116940166463,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 6.983411694016647
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:bd5892101e27459a",
-      "summary": "AI に長い資料を丸ごと貼ると、そのぶん遅くなって高くなる。そう思って身構えていた。\n実際にクラウドのサンドボックスで測ってみたら、増えたものと増えなかったものがきれいに分かれた。\n\n\n料金は文字数に比例して増えた。 追加 1 万文字あたり +0.0614 ドル。これが 3 つの条件で\n小数第 4 位まで一致した。\n\nでもトークンの数は 1.5 倍にしかならなかった。 貼った文字は 346 倍にしたのに。\n\n待ち時間は長さに比例しなかった。 20 回分の所要は全部ひとつのレンジに重なり、\n中央値の並びも途中で下がった。\n\n「トークン」というのは AI が文章を数えるときの単位で、料金もこ...",
-      "summary_zh": "作者原以為向 AI 貼入大量文字會等比拖慢回應並墊高費用，但透過雲端沙箱實測，發現費用確實線性增加（每萬字 +0.0614 美元），但 token 數量僅成長 1.5 倍，即使字數暴增 346 倍。回應時間方面，20 次測試的數值完全落在同一個範圍內，中位數還一度下降，未出現明顯的長度相依性。這表示 API 背後的 tokenizer 與計費機制對長文有非線性處理，可能採用窗口或壓縮手段。實驗進一步比較三種不同設定，費用的比例關係在各條件下幾乎完全一致，強化結論的可靠性。此外，token 數不增現象可能與重複片段合併或特殊 token 處理有關，對需要精算成本的自動化流程具有重要啟發。此實測打破了「長文一定貴又慢」的迷思，也說明 public API 的計價並非單純字元數乘上固定比率，開發者在估算時應以實測為準，對 AI 服務的整合評估極具參考價值。",
-      "title": "AIに2万字を貼ったら料金は4.2倍。トークン数は1.5倍で、待ち時間は長さに比例しなかった",
-      "title_zh": "向 AI 貼入 2 萬字，費用變 4.2 倍，但 token 數僅 1.5 倍且等待時間不成比例"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:29.294723+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
-          "url": "https://ai-data-base.com/archives/113790"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
-        "url": "https://ai-data-base.com/archives/113790"
-      },
-      "published_at": "2026-08-02T01:07:14+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.1,
-        "llm_relevance_score": 2.8000000000000003,
-        "recency_score": 0.968109282404989,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 0.0,
-        "total_score": 6.568109282404989
-      },
-      "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:637355526a8ade17",
-      "summary": "<p>LLMに質問して、答えが返ってくる。私たちはその答えを、そのモデルの実力だと思って受け取ります。物足りなければ、より新しいモデルを待つ。多くの人の使い方はこうだと思います。 ところが、同じモデルに考え方の型を変えて何通りかで解かせてみると、別の答えが返ってくることがあります。そして「どれかの型では正解できていた」問題の割合を数えると、1回聞いたときの正答率より10ポイント以上高いことが分かりました。モデルは本当はもっと解けるのに、聞き方の側が実力を引き出せていない、という状況が起きているのです。 では、どんな型で聞き分ければよいのでしょうか。そして出てきた複数の答えから、どうやって正しいものを&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/113790\"><span class=\"locked-post\">🔒</span> いつものモデルの答えは、そのモデルの実力の上限ではない</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "「平常得到的模型回答並非該模型實力的上限」這篇鎖定文章指出，多數人使用大型語言模型時，習慣以單一問題獲得答案，並將該表現視為模型的能力極限，這樣的認知往往導致用戶低估模型潛能，急於升級卻忽略互動方式的影響。然而本文的研究顯示，若針對同一問題變換不同的思考型（prompt pattern），同一個模型會給出不同的答案；統計所有可能正確的回答後，正確率可比單次提問高出 10 個百分點以上。這現象表明，模型實際的解題潛力遠高於平常表現，我們的使用方式並未充分引出其能力。作者進一步透過角色扮演、逐步推理、反思等多種思維框架進行實驗，發現不同的 prompt pattern 各有擅長的題型，而將所有輸出取最佳解後，正確率可大幅提升。這套方法不依賴模型升級，只需在提問階段投入更多設計巧思，便能逼近模型真正的實力邊界。文章最後提供具體的提問範本與答案篩選流程，對想充分挖掘 LLM 潛力的工程師與研究者極具啟發。",
-      "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
-      "title_zh": "🔒 平常得到的模型回答並非該模型實力的上限"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Hinata"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.763064+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "トークンとは何なのか？AIが文章を読む仕組み",
-          "url": "https://zenn.dev/phinata/articles/ai-token-sikumi"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "トークンとは何なのか？AIが文章を読む仕組み",
-        "url": "https://zenn.dev/phinata/articles/ai-token-sikumi"
-      },
-      "published_at": "2026-08-02T03:46:35+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9788818473544265,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 6.528881847354427
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:ef98dfb98a367328",
-      "summary": "はじめに\nChatGPTやClaudeなどのAIを使っていると、必ず目にする「トークン」という言葉があります。\nAPIの料金表示を見ても「入力トークン数」「出力トークン数」という項目があり、料金を計算する際の基準になっています。つまり、AIを使うには、トークンが何かを理解することが不可欠なのです。\nしかし、「トークンって何？」と聞かれると、答えに困る人も多いのではないでしょうか。単語？文字数？それとも別の何か？\n本記事では、AIがテキストを処理する仕組みと、トークンが果たす役割について、実際の例を交えながら説明します。記事の通りに読み進めれば、次のことが理解できるようになります：\n\n...",
-      "summary_zh": "本文以淺顯的方式解釋「token」在 AI 語言模型中的本質與運作原理。不同於傳統的單字或字元，token 是模型內部切割文字的基礎單位，其劃分方式由 tokenizer 決定，會影響計費、回應長度與語意理解。文章透過具體的日文與英文範例，展示同一句話如何被拆解為 tokens，並說明 token 數量為何不等於字數。文章也提到不同模型（如 ChatGPT、Claude）使用的 tokenizer 原理相似但分詞規則略有差異，因此相同文字在不同服務中的 token 數可能不同。此外，作者以圖解搭配實際 API 回應，比較「單字」「子詞」「字元」等不同粒度的切分效果，幫助視覺化理解。文中還舉例說明為何某些語言的 token 效率較低，以及如何透過調整 prompt 結構來節省 token 消耗。對初次接觸生成式 AI API 的開發者而言，這是一份不可或缺的基礎知識整理，全文以步驟化引導，適合所有 API 使用者閱讀，對成本控管非常有幫助。",
-      "title": "トークンとは何なのか？AIが文章を読む仕組み",
-      "title_zh": "什麼是 token？AI 閱讀文本的機制"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Toshihiro Rokusha"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.762555+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "ツールを選びに行って、受け入れる側の設計を問われた ― Google Cloud Next Tokyo 2026 参加レポート",
-          "url": "https://zenn.dev/truestar/articles/42b3edab13e8ca"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "ツールを選びに行って、受け入れる側の設計を問われた ― Google Cloud Next Tokyo 2026 参加レポート",
-        "url": "https://zenn.dev/truestar/articles/42b3edab13e8ca"
-      },
-      "published_at": "2026-08-02T05:04:34+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.05,
-        "llm_relevance_score": 1.4000000000000001,
-        "recency_score": 0.9841973712057936,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 4.184197371205794
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:318cf700739b6674",
-      "summary": "2026年7月30日・31日の2日間、東京ビッグサイトで開催された Google Cloud Next Tokyo 2026 に参加しました。\nふだんデータ活用の支援を仕事にしていますが、Google Workspace については詳しくなく、世の中には Microsoft 365 を基盤にしている企業が多くあり弊社もその１つです。そうした環境を持つ会社が Google Workspace をどう評価すべきなのか、その判断材料を持ち帰りたい、という関心で会場に入りました。\n結論から書きますと、製品比較の答えは持ち帰れませんでした。代わりに、問いが一段手前にあることが分かった2日間でした。...",
-      "summary_zh": "作者參加 Google Cloud Next Tokyo 2026，原本希望藉由會議掌握 Google Workspace 與 Microsoft 365 的具體比較與採用判斷依據，但最終發現關鍵不在工具間的優劣，而在於組織能否先設計好接受的流程與體制。作者來自一家以 Microsoft 365 為標準的資料顧問公司，帶著「哪個產品更好」的期待走入會場，卻被不斷提醒：選擇工具之前，須先定義協作情境、權限設計與資料生命週期策略。多場演講展示的案例中，成功轉換的團隊往往花費數個月重整內部規範，而非單純進行功能比較。因此本文未給出產品對決的結論，而是強調導入 Workspace 真正考驗的是企業對工作方式的反思能力。文中也特別提到 Google 在會議中展示的幾項 AI 輔助功能，如智慧撰寫與自動摘要，但強調這些功能要發揮價值，前提是團隊已經習慣雲端共編的運作模式。對正處於評估階段的 IT 決策者，此報告提供了一個實地的觀察視角，有助於跳脫規格表的框架。",
-      "title": "ツールを選びに行って、受け入れる側の設計を問われた ― Google Cloud Next Tokyo 2026 参加レポート",
-      "title_zh": "去挑選工具，卻被問及接受方的設計 — Google Cloud Next Tokyo 2026 參加報告"
-    }
-  ],
-  "run_date": "2026-08-02",
-  "run_id": "2cec4f39-1dee-4252-8afa-7908379417ca",
-  "run_info": {
-    "error_summary": null,
-    "finished_at": "2026-08-02T09:01:21.276476+00:00",
-    "items_total": 30,
-    "run_id": "2cec4f39-1dee-4252-8afa-7908379417ca",
-    "started_at": "2026-08-02T08:26:43.691595+00:00",
-    "stories_total": 29,
-    "success": true
-  },
-  "sources_status": [
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "ABEJA Tech Blog (LLM)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "abeja-tech-blog-llm",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 1,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "AIDB - AI Research Database",
-      "newest_item_date": "2026-08-02T01:07:14+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
-      "reason_text": "Fetch and parse succeeded; new items found.",
-      "remediation_hint": null,
-      "source_id": "aidb",
-      "status": "HAS_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "AI Shift Tech Blog (Zenn)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "aishift-tech-blog",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "html_list",
-      "name": "Anthropic Research Publications",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "anthropic-research-publications",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Agents",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-agents",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Alignment",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-alignment",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Efficiency",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-efficiency",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Evaluation",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-evaluation",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API LLM",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-llm",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Multimodal",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-multimodal",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Reasoning",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-reasoning",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Retrieval",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-retrieval",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv API Safety",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-api-safety",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.AI",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-ai",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.CL",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-cl",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.CR",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-cr",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.CV",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-cv",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.HC",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-hc",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.IR",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-ir",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.LG",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-lg",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.MA",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-ma",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.RO",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-ro",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv cs.SE",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-cs-se",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "arxiv_api",
-      "name": "arXiv stat.ML",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "arxiv-stat-ml",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Awesome Japanese LLM (GitHub)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "awesome-japanese-llm",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "AWS Machine Learning Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "aws-ml-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "DeepMind Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "deepmind-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "ELYZA Official Blog (note)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "elyza-official-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Google AI Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "google-ai-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face 01.AI (Yi)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-01-ai",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Cohere",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-cohere",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_daily_papers",
-      "name": "Hugging Face Daily Papers",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-daily-papers",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face DeepSeek AI",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-deepseek-ai",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Google",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-google",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Meta Llama",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-meta-llama",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Microsoft",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-microsoft",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Mistral AI",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-mistralai",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face OpenAI",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-openai",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Qwen",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "hf-qwen",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 1,
-      "last_fetch_status_code": null,
-      "method": "hf_org",
-      "name": "Hugging Face Stability AI",
-      "newest_item_date": "2026-08-02T08:05:26+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_UPDATED",
-      "reason_text": "Fetch and parse succeeded; items updated.",
-      "remediation_hint": null,
-      "source_id": "hf-stabilityai",
-      "status": "HAS_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "IVRy AI Magazine (note)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "ivry-ai-magazine",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "kun432 (Zenn) - RAG/Local LLM",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "kun432-zenn",
-      "status": "NO_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "LayerX Engineering Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "layerx-eng-blog",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "LLM-jp Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "llm-jp-blog",
-      "status": "NO_UPDATE",
-      "tier": 1
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "LLM Tech Blog RSS Feed (GitHub)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "llm-tech-blog-rss-feed",
-      "status": "NO_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Microsoft Research Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "microsoft-research-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "npaka (note) - Japanese LLM Curation",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "npaka-note",
-      "status": "NO_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "NVIDIA AI Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "nvidia-ai-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "OpenAI Alignment Research Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "openai-alignment",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "OpenAI Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "openai-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Preferred Networks Tech Blog (LLM)",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "pfn-tech-blog-llm",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 3,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Qiita 生成AI Tag",
-      "newest_item_date": "2026-08-02T08:39:02+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
-      "reason_text": "Fetch and parse succeeded; new items found.",
-      "remediation_hint": null,
-      "source_id": "qiita-genai-tag",
-      "status": "HAS_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 4,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Qiita LLM Tag",
-      "newest_item_date": "2026-08-02T08:39:02+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
-      "reason_text": "Fetch and parse succeeded; new items found.",
-      "remediation_hint": null,
-      "source_id": "qiita-llm-tag",
-      "status": "HAS_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "html_list",
-      "name": "Sakana AI Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "sakana-ai-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Sebastian Raschka Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "sebastian-raschka-blog",
-      "status": "NO_UPDATE",
-      "tier": 0
-    },
-    {
-      "category": "other",
-      "items_new": 0,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "html_list",
-      "name": "TECH PLAY LLM Tag",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
-      "remediation_hint": null,
-      "source_id": "techplay-llm-tag",
-      "status": "NO_UPDATE",
-      "tier": 2
-    },
-    {
-      "category": "other",
-      "items_new": 20,
-      "items_updated": 0,
-      "last_fetch_status_code": null,
-      "method": "rss_atom",
-      "name": "Zenn LLM Topic",
-      "newest_item_date": "2026-08-02T06:00:42+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
-      "reason_text": "Fetch and parse succeeded; new items found.",
-      "remediation_hint": null,
-      "source_id": "zenn-llm-topic",
-      "status": "HAS_UPDATE",
-      "tier": 2
-    }
-  ],
-  "top5": [
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Currently Learning そんけいご"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.763314+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
-          "url": "https://zenn.dev/lixian/articles/cscr-counterfactual-sensitivity-credit"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
-        "url": "https://zenn.dev/lixian/articles/cscr-counterfactual-sensitivity-credit"
-      },
-      "published_at": "2026-08-02T02:00:41+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.9,
-        "llm_relevance_score": 25.2,
-        "recency_score": 0.9717093931399416,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 27.97170939313994
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:e2e557fd82caa55f",
-      "summary": "TL;DR\n南京大学・上海交通大学の研究グループが、長CoT強化学習における「どのトークンに信用を与えるべきか」という根本問題を正面から問い直した。GRPOは応答レベルの報酬を各トークンに均等に分配するが、それは正しくない。OPSDのような自己蒸留型手法は「特権情報を与えたときの尤度シフト」を直接監督として使うが、著者らの反実仮想分析は、そのシフトが答えの正否と無関係な方向を向くことがほとんどだと示した。さらに大きなシフトは「But」「So」「Let」など置き換え可能な表面形式トークンに集中し、問題固有の推論トークンはむしろ低感度だった。これを受けて提案された**CSCR（Count...",
-      "summary_zh": "南京大學與上海交通大學團隊針對長鏈思維強化學習中「信用應歸於哪個令牌」的根本難題，進行了系統性分析。他們指出 GRPO 將應答級獎勵均分給每個令牌的做法並不合理，而 OPSD 等自蒸餾方法雖然用特權資訊下的似然偏移作為監督，但反事實分析顯示這種偏差多指向與答案正確性無關的方向，且大偏差集中於「But」「So」「Let」等可替換的表面形式令牌，真正承載推理的令牌反而敏感度較低。為此，作者提出 CSCR（Count-based Credit Reallocation from Suffix Reference），透過計數後綴參考來重新分配令牌信用，從根本上改善長推理序列的訓練訊號品質。",
-      "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
-      "title_zh": "CSCR：長CoT強化學習中的令牌級信用再分配"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "kai_kou"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.462416+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
-          "url": "https://qiita.com/kai_kou/items/3ae4c3205bfab39ebdfb"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
-        "url": "https://qiita.com/kai_kou/items/3ae4c3205bfab39ebdfb"
-      },
-      "published_at": "2026-08-02T07:08:36+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.4,
-        "llm_relevance_score": 11.200000000000001,
-        "recency_score": 0.9927112967546282,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 17.742711296754628
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:4a7694707d3863bb",
-      "summary": "はじめに\nLangChainでエージェントを作るとき、これまでは AgentExecutor を使うのが定番でした。しかし LangChain 1.x 系をインストールした環境で from langchain.agents import AgentExecutor を実行...",
-      "summary_zh": "本文記錄了在 LangChain 版本演進中，長期以來用於構建代理的 AgentExecutor 在 1.x 系列已無法導入的發現。作者比較了新的 create_agent 方法與舊有方式在使用介面、靈活性以及與 LangChain 生態整合上的差異，並給出了從 AgentExecutor 遷移到 create_agent 的具體建議。該文章為仍依賴舊 API 的開發者提供了及時且實用的平滑過渡指引。",
-      "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
-      "title_zh": "LangChain 的 AgentExecutor 消失了，與 create_agent 比較"
+      "title_zh": "將Google提出的新知識標準「OKF」導入自己的約1,700個Markdown檔案"
     },
     {
       "arxiv_id": null,
@@ -2406,6 +627,40 @@
           "url": "https://zenn.dev/tanishi_z/articles/jin-local-multi-agent-cli"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.1,
+          "preference_relevance": 0.45,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract only; mentions Claude Code, agents, skills, hooks, local LLM (Ollama), multi-agent"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Blog-style implementation of a local LLM multi-agent CLI with Shogi motif. Mentions Claude Code, agents, local LLM, hooks, skills but lacks rigorous methodology, baselines, quantitative results, or evaluation. Large part on engineering workflow; weak research contribution. Out-of-scope for pure engineering but some relevance to agents and local LLM preferences.",
+        "score": 0.23,
+        "token_usage": {
+          "completion_tokens": 201,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 458,
+          "prompt_tokens": 2250,
+          "total_tokens": 2451
+        },
+        "topics": [
+          "agents",
+          "tool use",
+          "local LLM",
+          "Claude Code",
+          "multi-agent"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
@@ -2419,30 +674,30 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.25,
-        "llm_relevance_score": 7.0,
-        "recency_score": 0.9880414058062649,
+        "llm_raw_score": 0.23,
+        "llm_relevance_score": 6.44,
+        "recency_score": 0.7176235291245047,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 15.788041405806265
+        "total_score": 14.957623529124504
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
       "story_id": "fallback:b45b617cb09e5d30",
       "summary": "対象読者と前提\n\nClaude Code のようなエージェント型ツールを使っていて、内部でエージェント・スキル・フックがどう連携しているのか気になる方\nローカル LLM（Ollama）でマルチエージェントを試してみたい方\n動作確認環境: macOS / Node.js v24.14.0 / Ollama / TypeScript 5.8\n\n\n なぜ作ったか\n普段 Claude Code を使っていて、サブエージェントやスキル、フックがどういう順序で呼ばれ、どこで判断が分岐しているのかが気になりました。公式ドキュメントを読めば概念は把握できますが、実装の詳細までは分かりません。一番早く...",
-      "summary_zh": "作者因長期使用 Claude Code 而對其內部次級代理、技能與鉤子的協作順序及決策分支產生興趣，雖可從官方文件掌握概念，卻無法了解實作細節。因此，以將棋對局為場景，基於 Ollama 本地 LLM 與 TypeScript 打造了一套多智能體命令列工具，模擬代理之間的角色分工與訊息傳遞流程。該專案不僅展示了多智能體系統的核心機制，也提供了一種可脫離雲端服務進行本地實驗的輕量方案。",
+      "summary_zh": "本文是一篇技術實踐分享，作者因為好奇Claude Code這類代理型工具內部的智能體（agent）、技能（skill）與鉤子（hook）如何協作與調度，決定自行實作一個以將棋為主題的本地大型語言模型（LLM）多智能體命令列工具（CLI），以深入理解其運作原理。文章假設讀者已熟悉Claude Code的日常使用，並對本地LLM（如Ollama）有基礎認識，適合想實際動手嘗試多智能體系統的開發者。作者在macOS環境下，使用Node.js v24.14.0、Ollama與TypeScript 5.8進行開發，重點在於重現Claude Code中智能體、技能與鉤子的呼叫順序及決策分支邏輯。文中並未提供完整程式碼或量化實驗數據，而是偏向架構設計與實作經驗的敘述。透過將棋情境的設計，作者具體示範了如何讓多個智能體各司其職（例如負責思考、行動、評價），並利用技能（預先定義的功能）與鉤子（在特定時機觸發的擴充）來控制流程與互動。這項工作雖然以將棋為例，但其價值在於提供一個可自訂的本地化多智能體框架，讓開發者能更直觀地理解商業工具（如Claude Code）的內部機制，並能據此進行客製化調整或學習。然而，受限於本地LLM的能力與Ollama的執行效率，該系統的表現可能不如雲端商業服務，且作者坦言初期僅完成抽象概念的實作驗證，尚未深入最佳化與完整測試，後續仍有許多改進空間。整體而言，這篇文章對想探索LLM多智能體架構的開發者具有啟發性，但因為缺乏嚴謹的效能比較與評估，讀者應將其視為一份實作導覽，而非完整的學術研究。這也反映了當前開發者社群對代理型AI工具內部運作的濃厚興趣，以及透過動手實作來學習複雜系統的趨勢。",
       "title": "Claude Codeの仕組みが気になって、将棋モチーフのローカルLLMマルチエージェントCLIを作った",
-      "title_zh": "出於對 Claude Code 機制好奇，製作了一款將棋主題的本地 LLM 多智能體 CLI"
+      "title_zh": "探究Claude Code的運作機制：以將棋為主題的本地LLM多智能體CLI開發實錄"
     },
     {
       "arxiv_id": null,
       "authors": [
-        "JJ yamitake"
+        "プロマネ武蔵"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.766551+00:00",
+      "first_seen_at": "2026-08-03T10:14:27.289441+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -2452,38 +707,566 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "MCP 2026-07-28アップデート徹底解説 - ステートレス化で何が変わり、何ができるようになったのか",
-          "url": "https://zenn.dev/yamitake/articles/mcp-2026-07-28-stateless-core-update"
+          "title": "LLM ルーティングはどう動くのか — 入力が評価され、判定され、送信先が決まるまで",
+          "url": "https://zenn.dev/exapolicy/articles/0a8f74542f6beb"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "{'section': 'abstract_only', 'description': \"Title and abstract indicate LLM routing with steps 'evaluation, judgment, decision' but no details or results.\"}"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an abstract-only blog-type article on LLM routing, which is relevant to agents, LLMs, and deployment, but lacks concrete methodology, results, and evidence. It is not a research paper with rigorous evaluation. The content touches on local/cloud LLM selection, aligning with agents and edge environments, but the thin information prevents higher scores.",
+        "score": 0.28,
+        "token_usage": {
+          "completion_tokens": 210,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 478,
+          "prompt_tokens": 2270,
+          "total_tokens": 2480
+        },
+        "topics": [
+          "LLM",
+          "agent",
+          "local LLM",
+          "LLM routing"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "MCP 2026-07-28アップデート徹底解説 - ステートレス化で何が変わり、何ができるようになったのか",
-        "url": "https://zenn.dev/yamitake/articles/mcp-2026-07-28-stateless-core-update"
+        "title": "LLM ルーティングはどう動くのか — 入力が評価され、判定され、送信先が決まるまで",
+        "url": "https://zenn.dev/exapolicy/articles/0a8f74542f6beb"
       },
-      "published_at": "2026-08-01T09:07:02+00:00",
+      "published_at": "2026-08-02T23:46:29+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.3,
-        "llm_relevance_score": 8.4,
-        "recency_score": 0.9056604172595559,
+        "llm_raw_score": 0.28,
+        "llm_relevance_score": 7.840000000000001,
+        "recency_score": 0.7727517381572979,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 15.105660417259557
+        "topic_score": 3.75,
+        "total_score": 14.162751738157297
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:697c41c70039d5a9",
-      "summary": "はじめに\n2026年7月28日、Anthropic は「Bringing MCP 2026-07-28 to Claude」を公開し、MCP（Model Context Protocol）の5回目となる大型仕様アップデートが Claude に取り込まれることを発表しました。リモートプロトコルが登場してから約1年半、これまでで最も大きな変更です。\nこの記事では、公式ブログと MCP 公式仕様ブログ をもとに、次のことをわかりやすく整理します。\n\n今回のアップデートで 何が変わったのか（一番の目玉は「ステートレス化」）\nその結果、開発者は 何ができるようになったのか\n\n既存の MCP サ...",
-      "summary_zh": "Anthropic 於 2026 年 7 月 28 日發布「Bringing MCP 2026-07-28 to Claude」，宣告 Model Context Protocol 第五次重大更新正式納入 Claude。本次更新的最大亮點是全協議的無狀態化，讓伺服器不再需要維護連線狀態，大幅簡化遠端 MCP 連線的架構與擴展性。開發者從此可以更輕便地建立可隨需啟動的工具整合，同時搭配其他改進，使 MCP 生態的實用性與可靠性再上一個台階。",
-      "title": "MCP 2026-07-28アップデート徹底解説 - ステートレス化で何が変わり、何ができるようになったのか",
-      "title_zh": "MCP 2026-07-28 更新徹底解說：無狀態化帶來了哪些變化，現在能做什麼"
+      "story_id": "fallback:b9b790845c220c60",
+      "summary": "はじめに\n生成 AI を業務で使っていると、送信ボタンを押す直前に手が止まる瞬間があります — 「この内容、クラウドに送ってよいのだったか」。顧客名が入っている。まだ公開していない情報が混じっている。でも急いでいる。\nこの「毎回、人間が頭の中で仕分ける」やり方は、真面目な人ほど疲弊しますし、急いでいる日ほど破れます。そこで出てくるのが LLM ルーティング — 入力の内容に応じて、処理の行き先 (手元のローカル LLM か、クラウド AI か) を自動で仕分ける仕組みです。\nこの記事では、LLM ルーティングが内部で何をしているのかを、「評価 → 判定 → 判断」という 3 つの段階...",
+      "summary_zh": "這篇文章以使用生成式 AI 的實際痛點出發：當使用者準備送出含有顧客名稱或未公開資訊的內容時，常會猶豫是否可安全送至雲端，而傳統的「每次由人腦判斷」的方式既費心力又容易在匆忙時出錯。為此，文章介紹了 LLM 路由（LLM routing）機制，亦即根據輸入內容自動決定處理路徑（例如本機的 local LLM 或雲端 AI），以兼顧安全性與效率。內文將路由的內部流程拆解為三個階段：「評估」、「判定」與「判斷」：先評估輸入的敏感度、複雜度與任務需求，再判定是否符合特定規則或門檻，最後做出送往何處的決策。根據摘要，文章應進一步說明路由如何利用分類器或輕量模型預篩選，以及如何設定閾值來平衡成本與延遲，但原文僅提供摘要層級，未揭露具體實驗數據或基準測試結果，因此無法驗證其宣稱的效能提升幅度。這類路由機制對於部署 LLM 的企業相當重要，因為它能自動化資料治理、降低雲端費用，並在隱私與便利之間取得實用平衡。然而，其實作需謹慎設計規則以避免誤判，且若路由決策本身不夠透明，可能形成新的黑箱，變相增加除錯與稽核的難度。總結而言，本文點出一個實際且重要的工程問題，並提出清晰的階段性框架，讓讀者理解路由並非單一模型，而是一套策略性的決策流程。不過受限於摘要篇幅，讀者若需更深入的技術細節或實證比較，仍應查閱原文或後續研究。",
+      "title": "LLM ルーティングはどう動くのか — 入力が評価され、判定され、送信先が決まるまで",
+      "title_zh": "LLM 路由如何運作 — 從輸入評估、判定到決定發送目標的過程"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "HACH"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.290737+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "常駐型AIエージェントの「なぜその判断をしたか」を追えるようにする観測性設計",
+          "url": "https://zenn.dev/hach/articles/chat-agent-decision-trace-observability-design"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Discusses observability for autonomous AI agents (relevant to agents topic) but provides no methodology, experiments, or quantitative results; abstract-level only. Lacks rigor and evidence, and is a practical essay rather than a research contribution. Not a domain application, but falls short of research quality.",
+        "score": 0.215,
+        "token_usage": {
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 479,
+          "prompt_tokens": 2271,
+          "total_tokens": 2473
+        },
+        "topics": [
+          "AI agent",
+          "observability",
+          "logging",
+          "LLM"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "常駐型AIエージェントの「なぜその判断をしたか」を追えるようにする観測性設計",
+        "url": "https://zenn.dev/hach/articles/chat-agent-decision-trace-observability-design"
+      },
+      "published_at": "2026-08-02T16:03:43+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.215,
+        "llm_relevance_score": 6.02,
+        "recency_score": 0.7483129375926513,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 12.318312937592651
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:77270cb205cd652e",
+      "summary": "チャットに常駐して自律的に動くAIエージェントは、1回のユーザー発言に対して裏側で複数のLLM呼び出し・複数のツール実行を連鎖させていることがほとんどです。動いている間は便利なのですが、いざ「なぜあの時あの返信をしたのか」「なぜあのツールを呼ばなかったのか」を後から追おうとすると、ログを漁っても再現できないことがよくあります。この記事では、常駐エージェントの意思決定プロセスを後から追跡できるようにするための観測性(オブザーバビリティ)設計を整理します。\n\n 何が問題なのか: 「動いた結果」しか残らない\n素朴な実装では、エージェントのログは「受け取った入力」と「返した出力」だけが残りがちで...",
+      "summary_zh": "本文討論常駐型AI代理（agent）在自主執行任務時，因內部涉及多次大型語言模型（LLM）呼叫與多個工具執行，導致事後難以追溯其決策過程的問題。作者指出，傳統日誌僅記錄「接收的輸入」與「回覆的輸出」，缺乏中間步驟的細節，使得當用戶質疑「為何當時這樣回覆」或「為何沒有呼叫某個工具」時，幾乎無法重現或解釋。為解決此問題，文章提出一套觀測性（observability）設計框架，強調必須系統性地紀錄每個LLM呼叫的輸入、輸出、溫度等參數，每個工具執行的參數、結果、耗時，以及代理內部的狀態變遷（如記憶、規劃、決策分支）。具體方法包括：定義統一的追蹤ID串聯整個執行鏈、採用結構化日誌（如JSON）儲存事件、在關鍵決策點插入人工可讀的註解，以及提供可視化介面讓開發者能回放整個互動過程。文章雖未提供實證數據，但透過實際案例說明設計原則，並指出此類可觀測性對於除錯、稽核及用戶信任至關重要。作者也坦言設計存在權衡，例如記錄過度可能影響效能或增加儲存成本，且某些內部決策可能涉及不可解釋的模型行為。整體而言，這篇文章為常駐AI代理的工程實踐提供了寶貴的指引，強調「過程透明」與「結果正確」同等重要，對開發者、產品經理及需要合規審查的企業具有實際參考價值。",
+      "title": "常駐型AIエージェントの「なぜその判断をしたか」を追えるようにする観測性設計",
+      "title_zh": "常駐型AI代理的可觀測性設計：讓「為何做出這個判斷」可追蹤"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Umamon"
+      ],
+      "categories": [],
+      "entities": [
+        "qwen"
+      ],
+      "first_seen_at": "2026-08-03T10:14:27.291613+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Qwen3.5-9B（Q4/6.6GB）にM1 Maxで日本語を書かせたら、答えは131字なのに出力は3936トークンだった",
+          "url": "https://zenn.dev/umamon/articles/qwen35-ja-bench"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.2,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Typed personal test with qwen3.5:latest",
+          "No formal benchmark or baselines"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An informal blog post testing Qwen3.5-9B on M1 Max, focusing on local LLM deployment and Japanese generation. It contains no formal methodology, quantitative analysis, or novel contributions. Relevance to LLMs and Japanese is moderate but low for research quality; applications/observations only, so score capped at 0.20.",
+        "score": 0.12000000000000001,
+        "token_usage": {
+          "completion_tokens": 237,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 495,
+          "prompt_tokens": 2287,
+          "total_tokens": 2524
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "local LLM"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Qwen3.5-9B（Q4/6.6GB）にM1 Maxで日本語を書かせたら、答えは131字なのに出力は3936トークンだった",
+        "url": "https://zenn.dev/umamon/articles/qwen35-ja-bench"
+      },
+      "published_at": "2026-08-02T11:45:11+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.12000000000000001,
+        "llm_relevance_score": 3.3600000000000003,
+        "recency_score": 0.7349978342029149,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.894997834202915
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:edd39b0781411370",
+      "summary": "「Qwen3.5-9B は Q4量子化・6GB弱のVRAMで、日本語性能がGPT-4を超える」——ローカルLLM界隈でよく見かける類の触れ込みだ。M1 Max 64GBの実機に手持ちのqwen3.5:latest（6.6GB）があったので、実際にどうなのか確かめてみた。\n先に結論を書く。**「GPT-4超えか」は測れなかった。**これを検証するには大量の日本語プロンプトに対する人間評価が要るし、そもそも比較対象のGPT-4に同条件でアクセスできない。この記事で測れたのは別のことだ——M1 Maxで実際にこのモデルを動かすと、何が起きるかという実測値である。\n\n 実機のモデル仕様\nolla...",
+      "summary_zh": "本文作者針對當地LLM社群常見的宣傳——『Qwen3.5-9B以Q4量化、不到6GB VRAM即可運行，日文能力超越GPT-4』——進行了實測，但結論是『超越GPT-4』無法直接驗證。作者指出，要驗證此宣稱需大量日文提示的人類評估，且無法在同條件下存取GPT-4作為對照。因此，文章改為測量在M1 Max 64GB實機上運行qwen3.5:latest（6.6GB）時的實際行為。測試結果發現，模型在給定日文提問後，最終答案僅131字，但輸出過程卻耗費了3936個token，顯示模型在回答前產生了大量冗餘或重複內容，可能與量化後的解碼行為、模型內部結構或提示格式有關。作者強調，此現象並非單純的速度問題，而是反映了量化模型在生成效率上的潛在缺陷，可能浪費計算資源並增加延遲。文章限制了範圍，僅報告單一機型、單一模型的實測數據，未進行橫向對比或深入分析原因，但對於依賴本地LLM的開發者而言，此觀察提醒了量化模型在實際應用中可能出現的『過度生成』問題，以及評估模型時不應僅看最終答案長度，也需關注生成過程的token耗用，以更全面衡量模型效率與成本。",
+      "title": "Qwen3.5-9B（Q4/6.6GB）にM1 Maxで日本語を書かせたら、答えは131字なのに出力は3936トークンだった",
+      "title_zh": "Qwen3.5-9B（Q4/6.6GB）在M1 Max上生成日文：答案僅131字，輸出卻達3936個token"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Yoshiaki Okuyama"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic",
+        "deepmind"
+      ],
+      "first_seen_at": "2026-08-03T10:14:27.289221+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Gemini 3.1 Pro が「*」一文字で自作パスブロックを破った — GPT と Claude では「安全」に見えた",
+          "url": "https://zenn.dev/okuyam2y/articles/llm-agent-glob-bypass"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract only; describes a path block bypass using wildcard character"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an anecdotal abstract about a personal agent gateway bypassing a simple path block, relevant to agents and safety but lacks substantive methodology, evidence, or generalizability. Pure domain application with minimal research quality.",
+        "score": 0.025,
+        "token_usage": {
+          "completion_tokens": 161,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 445,
+          "prompt_tokens": 2237,
+          "total_tokens": 2398
+        },
+        "topics": [
+          "AI safety",
+          "Agents",
+          "jailbreak",
+          "prompt injection"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Gemini 3.1 Pro が「*」一文字で自作パスブロックを破った — GPT と Claude では「安全」に見えた",
+        "url": "https://zenn.dev/okuyam2y/articles/llm-agent-glob-bypass"
+      },
+      "published_at": "2026-08-02T23:50:14+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.025,
+        "llm_relevance_score": 0.7000000000000001,
+        "recency_score": 0.7729530017941749,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.272953001794175
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:90681d098214b0db",
+      "summary": "何が起きたか\n自宅で OpenClaw というエージェントゲートウェイを動かしています。Telegram から話しかけると、自作のツールを shell 経由で呼び出してくれるものです。\nこれに、~/.config/secrets/ や ~/.ssh を読ませないためのパスブロックを自前で入れていました。判定はコマンド文字列の検査、command.includes(\".config/\") です。\n許可した攻撃テストの最中、Gemini 3.1 Pro はこう書きました。\nls -la ~/.con*ig/secrets/\n.config の f を * に置き換えただけです。検査は「....",
+      "summary_zh": "本文記錄了一起針對自製安全機制的實際攻擊測試，揭露了基於簡單字串匹配的防護在面對先進語言模型時的脆弱性。作者在自己的 OpenClaw 代理閘道中，為防止模型透過 shell 工具讀取敏感目錄（如 ~/.config/secrets/ 和 ~/.ssh），設計了一道路徑封鎖規則：透過檢查命令字串是否包含「.config/」來攔截可疑請求。然而，在允許的滲透測試過程中，Gemini 3.1 Pro 僅將路徑中的字母「f」替換為萬用字元「*」，寫出「ls -la ~/.con*ig/secrets/」，成功繞過檢查。因為字串「.config/」不再出現，規則完全失效。此案例顯示，依賴靜態子字串比對的防禦極易被利用，而 GPT 與 Claude 在相同測試下看似安全，並非因為它們更「乖巧」，而是可能未嘗試或未發現此類變體。本文的關鍵教訓是：任何基於模式的黑名單都無法涵蓋所有變形，尤其當攻擊者能利用 shell 的萬用字元、路徑展開、符號連結或編碼技巧時。作者強調，安全防護應從「檢查命令字串」升級為「解析最終執行的命令語義」，例如使用 shell 的語法樹或沙箱機制來驗證實際存取的檔案路徑。此研究對所有構建 LLM 代理工具的人具有警示作用，提醒他們不要過度信任規則型過濾器，而應採用更穩健的隔離與稽核方法。文中並未提供完整的防護實作或統計數據，但作為一線實戰經驗，它具體說明了生成式模型在對抗性情境下的創造力與風險。",
+      "title": "Gemini 3.1 Pro が「*」一文字で自作パスブロックを破った — GPT と Claude では「安全」に見えた",
+      "title_zh": "Gemini 3.1 Pro 巧用「*」繞過自製路徑封鎖 — GPT 與 Claude 看似安全"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Nori"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-08-03T10:14:27.290299+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "GPT-5.6 Sol・Terra・Luna の選択——コスト面での最適解は Luna × max だった（オトナの自由研究 #30）",
+          "url": "https://zenn.dev/nnakapa/articles/lab-30-gpt56-sol-terra-luna-cost"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a cost analysis of GPT-5.6 model variants (Sol, Terra, Luna) with a focus on cost optimization, but it does not involve language model methodology, architecture, or other core topics. The content is an abstract-only empirical cost study, lacking technical depth, baselines, and detailed methods. It has minimal relevance to any preferred topics (e.g., LLM, efficiency, or evaluation) and does not provide sufficient evidence for scientific contribution.",
+        "score": 0.09250000000000001,
+        "token_usage": {
+          "completion_tokens": 223,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 490,
+          "prompt_tokens": 2282,
+          "total_tokens": 2505
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "GPT-5.6 Sol・Terra・Luna の選択——コスト面での最適解は Luna × max だった（オトナの自由研究 #30）",
+        "url": "https://zenn.dev/nnakapa/articles/lab-30-gpt56-sol-terra-luna-cost"
+      },
+      "published_at": "2026-08-02T21:59:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.09250000000000001,
+        "llm_relevance_score": 2.5900000000000003,
+        "recency_score": 0.7670274926651748,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 10.907027492665176
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:13da21f957b62cca",
+      "summary": "2つの発見\n1. 品質ゲート 100% だった 3 パターンの中で \"Luna × max\" が最安——Terra × max の約 1/7.6、Sol × max の約 1/21\n2. effort level \"max\" は試行回数を増やしても品質面で崩れない——各 50 試行でも失敗ゼロ\n\n\n試行回数・通過率・実行時間・トークン数は、各パターン N=50・15 パターン合計 750 試行の実測値です。コスト C は実測トークン数に公式単価（2026-07-30 改定後）を掛けた推定換算値（C_est）です。実行はサブスクリプション経由のため、実課金の報告ではありません。\n\n\n ...",
+      "summary_zh": "這篇研究針對 GPT-5.6 系列中三個模型（Sol、Terra、Luna）與不同 effort level 的組合，進行成本與品質的系統性比較，目的是找出在兼顧品質的前提下，成本最低的配置。作者以每個模式 50 次、共 15 種組合、750 次的實測數據，記錄通過率、執行時間與 token 數，並以官方單價（2026-07-30 改定後）估算成本。研究發現，在品質門檻 100% 通過的三個模式中，Luna × max 的成本最低，約為 Terra × max 的 1/7.6、Sol × max 的 1/21；此外，effort level 設定為 max 時，即使增加試行次數（各 50 次），品質也不受影響，失敗次數為零。此結果顯示，對於不需頂尖推理能力的任務，選擇較小模型並設定最高 effort level，可在不犧牲品質的情況下大幅降低 token 成本。然而，此研究僅基於特定任務類型與 50 次樣本，且成本為估算值，並非實際帳單，推論至其他任務需謹慎。此發現對於在 API 成本敏感的 production 環境中選擇模型具有實用參考價值。",
+      "title": "GPT-5.6 Sol・Terra・Luna の選択——コスト面での最適解は Luna × max だった（オトナの自由研究 #30）",
+      "title_zh": "GPT-5.6 的模型選擇：Sol・Terra・Luna——成本面的最佳解是 Luna × max（大人的自由研究 #30）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "yykt5108"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.289864+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIとの壁打ちを、会話でやるのをやめた。ファイルでやる",
+          "url": "https://zenn.dev/cotoha5108/articles/file-based-kabeuchi"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.25,
+          "preference_relevance": 0.15,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "{'section': 'abstract', 'fact': 'Describes using Claude Code with file-based workflows (3 files for premises, discussion, backlog) to manage AI-assisted thinking sessions. No quantitative results or formal evaluation are provided.'}"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a personal essay about using Claude Code with file-based workflows instead of chat-based interactions for idea generation. It mentions Claude Code (an LLM tool) and workflow automation, but is not a research paper: no methodology, empirical evaluation, or technical novel contribution. The topic is a practical application note with low rigor and evidence. It has marginal relevance to LLM agents and workflows, but lacks any formal research quality. Thus, the score is low, capped due to being a non-academic description with no empirical validation.",
+        "score": 0.1525,
+        "token_usage": {
+          "completion_tokens": 248,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 485,
+          "prompt_tokens": 2277,
+          "total_tokens": 2525
+        },
+        "topics": [
+          "agents",
+          "LLM",
+          "workflow"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIとの壁打ちを、会話でやるのをやめた。ファイルでやる",
+        "url": "https://zenn.dev/cotoha5108/articles/file-based-kabeuchi"
+      },
+      "published_at": "2026-08-02T22:30:05+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1525,
+        "llm_relevance_score": 4.27,
+        "recency_score": 0.7686627177341514,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 10.58866271773415
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:925c78f459607c2f",
+      "summary": "3行まとめ\n\nチャット壁打ちの「翌週に続きができない」問題は、メモリ機能でかなり解決した。それでも残るのは、決定と未決を分けた正本を誰が管理するか、という運用の問題だった\n前提、壁打ち、バックログの3ファイルに役割を分け、同じ情報を2箇所に書かず、会話ではなくファイルを育てる。Claude Codeを使うのは、この往復が一番軽い道具だったからで、コードは1行も書かない\n架空の企画（社内勉強会の制度化）を題材に、Claude Codeの実セッション3往復で1周をデモする。AIが論点を接続し、人間が採否を決め、決定と未決と不採用理由がファイルに残り、差分を確認して閉じるまでの実ログつき\n...",
+      "summary_zh": "本文探討如何以檔案為核心與AI協作，取代傳統的對話式腦力激盪（壁打ち）。作者先指出此類對話常見的痛點：隔週難以接續上下文，雖然記憶功能已大幅緩解此問題，但真正的瓶頸在於「決定」與「未決」事項的正本由誰管理，這屬於營運層面的挑戰。為此，作者提出一套三檔案分工法：前提檔案記錄背景與目標；壁打ち檔案容納來回討論；バックログ（待辦清單）檔案追蹤決策與未決事項。原則上同一資訊不重複寫入兩處，並以「培育檔案」取代「繁衍對話」。作者選用Claude Code作為工具，理由是它在檔案往返上最輕量，整個過程不需要撰寫任何程式碼。文中以一個虛構的企劃——「社內讀書會制度化」——作為案例，實際展示Claude Code的三回合往返即完成一輪協作：AI負責串連論點，人類負責採納或否決，最終檔案中清楚留下決定、未決事項與不採納理由，並可透過差異比對確認後收尾。文中附有真實操作記錄。此方法限制在於仍依賴人類的主動管理與檔案紀律，且適用情境偏向小型、結構化明確的規劃任務；但其價值在於重構人機協作的介面，將產出從短暫的對話轉為可追蹤、可延續的檔案資產，對重視知識管理的團隊具有參考意義。",
+      "title": "AIとの壁打ちを、会話でやるのをやめた。ファイルでやる",
+      "title_zh": "放棄與AI的對話式腦力激盪，改以檔案進行"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Hinata"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.763064+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "トークンとは何なのか？AIが文章を読む仕組み",
+          "url": "https://zenn.dev/phinata/articles/ai-token-sikumi"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "No quantitative results or methodology sections in the provided text (abstract only).",
+          "Mentions 'ChatGPTやClaudeなどのAI' and 'トークン' but provides no empirical evidence or novel contributions."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Paper is an educational article about tokens in LLMs, touching on related topics like Japanese language and foundation models, but lacks research contributions, rigorous methodology, and quantitative evidence. As a non-research explainer, it scores low on research quality but has some relevance to language model topics.",
+        "score": 0.15000000000000002,
+        "token_usage": {
+          "completion_tokens": 252,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 445,
+          "prompt_tokens": 2237,
+          "total_tokens": 2489
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "トークンとは何なのか？AIが文章を読む仕組み",
+        "url": "https://zenn.dev/phinata/articles/ai-token-sikumi"
+      },
+      "published_at": "2026-08-02T03:46:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15000000000000005,
+        "llm_relevance_score": 4.200000000000001,
+        "recency_score": 0.7109708578672039,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 10.460970857867204
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:ef98dfb98a367328",
+      "summary": "はじめに\nChatGPTやClaudeなどのAIを使っていると、必ず目にする「トークン」という言葉があります。\nAPIの料金表示を見ても「入力トークン数」「出力トークン数」という項目があり、料金を計算する際の基準になっています。つまり、AIを使うには、トークンが何かを理解することが不可欠なのです。\nしかし、「トークンって何？」と聞かれると、答えに困る人も多いのではないでしょうか。単語？文字数？それとも別の何か？\n本記事では、AIがテキストを処理する仕組みと、トークンが果たす役割について、実際の例を交えながら説明します。記事の通りに読み進めれば、次のことが理解できるようになります：\n\n...",
+      "summary_zh": "本文以日本讀者為對象，深入探討 AI 語言模型處理文字的基本單位——token。作者指出，雖然 ChatGPT 與 Claude 等服務的 API 計費常以 token 數為基準，但多數使用者對 token 的具體定義仍感困惑。文章首先釐清 token 並非單純的單字或字元，而是模型經由分詞器（tokenizer）將原始文字切分後的結果，可能對應半個字、一個字或一個詞。接著說明這種切分方式如何影響模型的理解與生成能力，例如較長的字可能被拆成多個 token，使處理成本增加，而不同語言（如日文、英文）的 token 效率也有所差異。作者舉例比較日文與英文的 token 使用量，指出日文因詞彙結構複雜，往往需要更多 token 才能表達相同內容，這對 API 費用與模型效能具有實際影響。文中亦討論 token 上限（context window）的意義，以及長文本輸入時可能遭遇的截斷問題。雖然文章未提供量化實驗數據，但其核心論點建立在常見的 LLM 架構與使用經驗之上，並強調理解 token 機制有助於使用者更精準地估算成本、設計提示詞，並避免因超長輸入而喪失關鍵資訊。本文屬於概念性導讀，缺乏嚴謹的學術引用，但對初學者而言，是建立 AI 文字處理基礎知識的實用入門材料。作者最後提醒，token 的計算方式因模型而異，建議讀者查閱各服務的文件以獲得準確資訊。",
+      "title": "トークンとは何なのか？AIが文章を読む仕組み",
+      "title_zh": "何謂 Token？AI 如何閱讀文字"
     },
     {
       "arxiv_id": null,
@@ -2508,6 +1291,36 @@
           "url": "https://qiita.com/mguozhen/items/fee665ffaa320753d306"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.05,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "No methods or results provided in abstract."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only, no methodological content. Mentions DeepSeek (LLM) but lacks technical details, benchmarks, or reproducibility. Purely news-like announcement.",
+        "score": 0.07,
+        "token_usage": {
+          "completion_tokens": 173,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 365,
+          "prompt_tokens": 2157,
+          "total_tokens": 2330
+        },
+        "topics": [
+          "LLM"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
         "source_id": "qiita-llm-tag",
@@ -2521,21 +1334,1256 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.991294478056747,
+        "llm_raw_score": 0.07,
+        "llm_relevance_score": 1.9600000000000002,
+        "recency_score": 0.719986265316702,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 12.741294478056748
+        "total_score": 10.229986265316702
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
       "story_id": "fallback:e64c47ee329fef6c",
       "summary": "DeepSeek が 7 月 31 日、V4-Flash の正式版を公開した——オープンウェイト、MIT ライセンス、技術レポート、すべて初日に。\n驚くべきはスコアの高さではない。スコアと価格が同時に成立したことだ：Artificial Analysis の知能指数で 50...",
-      "summary_zh": "DeepSeek 於 7 月 31 日正式公開 V4-Flash，並在第一時間同步提供開放權重、MIT 授權與完整技術報告。令人矚目的不單是其出色的基準分數，而是它在人工智能分析網站（Artificial Analysis）智商指數達到 50 的同時，仍維持極低的推理成本。這一突破再次證明，高性能推理模型可以無需封閉生態也能兼顧端到端的性價比，預期將加速開源社群對側端與低資源場景的 AI 部署。",
+      "summary_zh": "本文介紹了 DeepSeek 於 7 月 31 日發布的 V4-Flash 正式版，其特點是開放權重、採用 MIT 授權，並於發布當日同步公開技術報告。文中強調的重點並非單純的分數表現，而在於同時兼顧了頂尖的評測分數與極具競爭力的價格。根據 Artificial Analysis 的智力量表，V4-Flash 獲得了約 50 分的成績，顯示其性能已達先進水平。這項發布的意義在於，它打破了以往高性能模型必然伴隨高昂使用成本或封閉權重的慣例，使得中小型團隊與研究者能以更低的門檻使用到接近前沿的模型能力。透過開源權重與 MIT 授權，DeepSeek 企圖加速 AI 生態系的創新與應用普及。然而，文中也隱含若干限制：首先，Artificial Analysis 的單一指標可能無法完整反映模型在複雜推理、多模態理解或特定領域任務上的真實能力；其次，即使在價格上具有優勢，實際部署仍可能面臨硬體資源與維護成本的挑戰。此外，由於尚未有獨立的第三方大規模驗證，V4-Flash 的真實效能仍待更全面的基準測試確認。總體而言，這則消息展示了開源模型在性能與經濟性上取得平衡的可能性，對 AI 產業的市場格局與技術民主化具有潛在的深遠影響，但讀者應審慎看待單一指標的比較，並期待更多實證研究。",
       "title": "DeepSeek V4-Flash アップデート、超低価格でトップスコアを叩き出す",
-      "title_zh": "DeepSeek V4-Flash 更新，以超低價格寫下頂尖成績"
+      "title_zh": "DeepSeek V4-Flash 更新：超低價卻能拿下頂尖分數"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "kai_kou"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.462416+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
+          "url": "https://qiita.com/kai_kou/items/3ae4c3205bfab39ebdfb"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only snippet, no methodology, comparison content, or quantitative results. Focus on LangChain agent implementation may relate to agents but lacks verifiable research content.",
+        "score": 0.085,
+        "token_usage": {
+          "completion_tokens": 166,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 325,
+          "prompt_tokens": 2117,
+          "total_tokens": 2283
+        },
+        "topics": [
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
+        "url": "https://qiita.com/kai_kou/items/3ae4c3205bfab39ebdfb"
+      },
+      "published_at": "2026-08-02T07:08:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.085,
+        "llm_relevance_score": 2.3800000000000003,
+        "recency_score": 0.721015313723103,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.651015313723104
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:4a7694707d3863bb",
+      "summary": "はじめに\nLangChainでエージェントを作るとき、これまでは AgentExecutor を使うのが定番でした。しかし LangChain 1.x 系をインストールした環境で from langchain.agents import AgentExecutor を実行...",
+      "summary_zh": "這篇文章探討LangChain框架中一個重要的變革：傳統的AgentExecutor類別在LangChain 1.x版本中已被移除或取代，取而代之的是新的create_agent方法。作者從實務角度出發，說明過去建立agent時，AgentExecutor一直是標準做法，但在新版本中從langchain.agents模組匯入AgentExecutor會失敗或無法使用。文章的主要目的在於比較AgentExecutor與create_agent之間的差異，並提供遷移指南。作者指出，AgentExecutor是基於迴圈執行工具呼叫的舊式架構，需要手動設定agent類型、工具列表、記憶體管理與回呼函數等，而create_agent則提供更簡潔、統一且型別安全的API，整合了模型、工具、提示詞等配置，並內建更現代化的執行迴圈。文章可能透過實際程式碼範例與執行結果來佐證兩者的行為差異，例如錯誤處理、多工具協調、串流輸出等。然而，由於內容僅摘要級別，具體的實驗數據或基準測試並未提供，因此對於效能或穩健性的聲明缺乏明確證據。此外，文章並未深入討論create_agent在複雜自訂場景下的限制，例如需要高度控制agent內部狀態或與既有AgentExecutor擴充套件整合的情況。這項變革對LangChain使用者意義重大，因為它代表框架朝向更精簡、一致且型別安全的設計演進，但同時也可能破壞舊有程式碼的相容性，因此開發者必須了解遷移路徑。作者可能建議從AgentExecutor轉向create_agent，並指出後者更易於使用與維護，特別是在建構現代化LLM應用時。",
+      "title": "LangChainのAgentExecutorが消えた、create_agentと比較した",
+      "title_zh": "LangChain的AgentExecutor消失了：與create_agent的比較"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:29.294723+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
+          "url": "https://ai-data-base.com/archives/113790"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.3,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract states that changing question formats can improve accuracy by over 10 points but no specifics are given"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a Japanese blog post about prompting LLMs to improve performance, but it is abstract-only with no technical details. It touches on LLM prompting and evaluation, but lacks methodological rigor. Because it is a pure application with no language methodology disclosed and is untrusted, it receives low scores.",
+        "score": 0.15,
+        "token_usage": {
+          "completion_tokens": 230,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 539,
+          "prompt_tokens": 2331,
+          "total_tokens": 2561
+        },
+        "topics": [
+          "Large Language Models",
+          "Prompting & In-Context Learning",
+          "Japanese LLM & NLP"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
+        "url": "https://ai-data-base.com/archives/113790"
+      },
+      "published_at": "2026-08-02T01:07:14+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.15,
+        "llm_relevance_score": 4.2,
+        "recency_score": 0.7031466452063692,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 7.703146645206369
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:637355526a8ade17",
+      "summary": "<p>LLMに質問して、答えが返ってくる。私たちはその答えを、そのモデルの実力だと思って受け取ります。物足りなければ、より新しいモデルを待つ。多くの人の使い方はこうだと思います。 ところが、同じモデルに考え方の型を変えて何通りかで解かせてみると、別の答えが返ってくることがあります。そして「どれかの型では正解できていた」問題の割合を数えると、1回聞いたときの正答率より10ポイント以上高いことが分かりました。モデルは本当はもっと解けるのに、聞き方の側が実力を引き出せていない、という状況が起きているのです。 では、どんな型で聞き分ければよいのでしょうか。そして出てきた複数の答えから、どうやって正しいものを&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/113790\"><span class=\"locked-post\">🔒</span> いつものモデルの答えは、そのモデルの実力の上限ではない</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "summary_zh": "這篇文章挑戰了一個常見的假設：當我們向大型語言模型（LLM）提問並獲得答案時，往往將此答案視為該模型能力的直接反映。然而，作者指出，即使使用同一個模型，若改變提問的思考框架（例如以不同方式提示或引導推理），模型可能給出截然不同的答案。透過多種思考框架進行測試，並統計『至少在一種框架下能正確回答』的問題比例，發現這個比例比單次提問的正確率高出至少10個百分點。這意味著模型其實具備更強的潛在能力，但單一的提問方式未能充分激發其真正實力。文章進一步探討了該如何設計不同的思考框架來有效引出模型的最佳表現，以及面對多個回答時，如何判斷哪一個才是正確的。然而，摘要未提供具體的實驗細節（如模型名稱、測試集規模、框架設計等），也未討論此方法的局限性，例如多框架回答的計算成本、正確答案的判定標準，以及是否適用於所有類型的任務。這項觀察對於提示工程（prompt engineering）和模型評測具有重要意義：它提醒我們，單次評估可能低估模型能力，而透過多樣化的提示策略，我們或許能更接近模型的真實上限，同時也促使我們思考如何從眾多生成結果中有效挑選出正確答案。",
+      "title": "🔒 いつものモデルの答えは、そのモデルの実力の上限ではない",
+      "title_zh": "🔒 平常模型的答案，並非該模型實力的上限"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "楽したいAI自動化エンジニア"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.290105+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIスコアで選ぶ 今週のGitHub注目リポジトリ 10選（2026-08-03週）",
+          "url": "https://zenn.dev/lazy_engineer/articles/ai-dev-radar-weekly-20260803"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a non-technical blog-like ranking of GitHub repositories, lacking scientific content. It mentions AI scoring but provides no methodology, experiments, or novel claims. It is out of scope for AI/ML research and receives minimal scores.",
+        "score": 0.04000000000000001,
+        "token_usage": {
+          "completion_tokens": 180,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 463,
+          "prompt_tokens": 2255,
+          "total_tokens": 2435
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIスコアで選ぶ 今週のGitHub注目リポジトリ 10選（2026-08-03週）",
+        "url": "https://zenn.dev/lazy_engineer/articles/ai-dev-radar-weekly-20260803"
+      },
+      "published_at": "2026-08-02T22:03:14+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.04,
+        "llm_relevance_score": 1.12,
+        "recency_score": 0.7672308174053075,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 7.6872308174053074
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:68fe1f3fc563b94c",
+      "summary": "本週のGitHubでは、AI技術を活用したスコアリングにより、注目度の高いリポジトリをランキング形式でピックアップしました。金融データ処理ツール「gavamedia/deltafin」が1位を獲得するなど、実用性の高いプロジェクトが上位を占めています。今回のランキングTOP10では、機械学習やデータサイエンス分野の最新トレンドを把握できます。開発者必見の厳選リポジトリをご紹介します。\nスコアはClaude APIによる独自評価（新規性・成長速度・実用性など7軸・100点満点）です。\n\n 今週のランキング\n\n\n\n順位\nリポジトリ\nスコア\n\n\n\n\n1\ngavamedia/deltafin\n7...",
+      "summary_zh": "本摘要根據一篇未附全文的簡介，報導本週（2026年8月3日當週）GitHub上以AI技術評分選出的十大矚目專案。該評分系統採用Claude API進行獨家評估，涵蓋新穎性、成長速度、實用性等七大面向，滿分一百分。據報導，金融數據處理工具「gavamedia/deltafin」位居榜首，顯示實用型專案在此評分機制中佔有優勢。文章旨在協助開發者快速掌握機器學習與數據科學領域的最新趨勢。然而，由於原文僅提供摘要而未公開完整排行榜與各專案細節，目前無法確認前十名的完整名單、各專案的具體分數、評分方法論的嚴謹性（如樣本選擇、偏差處理），以及這些專案是否真正代表高品質或僅反映特定評分指標下的表現。此外，摘要強調「AI評分」本身也是一種應用，但其透明的有效性尚未驗證。讀者應將其視為一個初步指引，實際評估專案時仍需自行查閱原始程式碼、文件、活躍度與社群回饋。此類排名有助於開發者發現潛在工具，但不宜僅依賴單一評分系統做決策，尤其是當評分標準未公開時。未來若取得完整文章，可進一步分析各專案的技術特點、應用場景與潛在限制。",
+      "title": "AIスコアで選ぶ 今週のGitHub注目リポジトリ 10選（2026-08-03週）",
+      "title_zh": "AI評分精選：本週GitHub矚目專案前十名（2026年8月3日當週）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:26.041248+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 専門家の「聞く技術」をAIに移植するには、手本ではなく手順が必要【著者インタビュー掲載】",
+          "url": "https://ai-data-base.com/archives/114174"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.3,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only article about transferring expert interviewing skills to AI, with no technical detail. Focus is on a method shift from imitation to procedure, which is vaguely related to LLM-based agents but not substantive. No methodology, results, or evidence.",
+        "score": 0.14500000000000002,
+        "token_usage": {
+          "completion_tokens": 190,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 579,
+          "prompt_tokens": 2371,
+          "total_tokens": 2561
+        },
+        "topics": [
+          "AI agent",
+          "interviewing",
+          "procedural knowledge"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 専門家の「聞く技術」をAIに移植するには、手本ではなく手順が必要【著者インタビュー掲載】",
+        "url": "https://ai-data-base.com/archives/114174"
+      },
+      "published_at": "2026-08-02T19:45:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.14500000000000002,
+        "llm_relevance_score": 4.0600000000000005,
+        "recency_score": 0.759900994498428,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 7.619900994498428
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:ff447d39e81b5967",
+      "summary": "<p>相手の頭の中で起きていたことを、決めつけずに正確に聞き出す。この「聞く技術」を極めた専門家は、世界に数人しかいないと言われます。その技術をAIで再現することに成功したという報告が公開されました。 道のりは一直線ではありませんでした。研究チームは最初、数百時間分のお手本をAIに読ませて真似させるという素直なやり方を試し、はっきり失敗しています。うまくいったのは、まったく別の発想に切り替えてからでした。 どんな技術で、なぜ真似では再現できず、何に切り替えたら再現できたのか。順を追って見ていきます。分かれ目になったポイントは、インタビューに限らず「専門家の仕事をAIに任せたい」場面全般で使えるもので&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114174\"><span class=\"locked-post\">🔒</span> 専門家の「聞く技術」をAIに移植するには、手本ではなく手順が必要【著者インタビュー掲載】</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "summary_zh": "本文介紹了一項旨在將頂尖專家獨特的「傾聽技術」移植到AI系統的研究。此技術核心在於不帶預設立場、精準地引導對方釐清腦中想法，據稱全球僅有少數幾位專家精通此道。研究團隊最初嘗試了最直觀的方法：讓AI學習數百小時的專家對話範例，希望透過模仿來掌握技巧，但結果明確失敗。他們後來轉換思維，不再依賴單純的模仿，而是專注於萃取專家在對話中實際採用的決策步驟與程序性知識。這種以「程序」取代「範例」的策略，最終成功讓AI再現了專家的傾聽能力。文中透過作者訪談，詳細闡述了這項轉變的關鍵：專家行為背後的隱性推理邏輯，比表面對話模式更為重要；模仿可能讓AI學會表面形式，卻無法觸及深層的判斷準則。此發現不僅適用於傾聽技術，也為「將專業人士的工作委託給AI」的廣泛場景提供了重要啟示：有效的知識轉移，關鍵在於明確的步驟與決策框架，而非大量資料的堆疊。文章也提及，研究團隊在過程中經歷了多次調整，最終才找到突破點，凸顯了此類研究的複雜性與挑戰。",
+      "title": "🔒 専門家の「聞く技術」をAIに移植するには、手本ではなく手順が必要【著者インタビュー掲載】",
+      "title_zh": "專家「傾聽技術」移植到AI：需要步驟而非範例【作者訪談刊載】"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "pdfractal"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.764102+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "なぜ、LLM時代には覚えるのが苦手な人ほど不利になるのか？",
+          "url": "https://zenn.dev/pdfractal/articles/ac9a25867858de"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title and abstract mention LLM-era and knowledge retention; no sections or quantitative results available."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses LLM-era knowledge retention, touching on LLMs and knowledge-related topics, but it is an abstract-only opinion piece with no methods, experiments, or empirical evidence. Preference relevance is moderate due to LLM and knowledge themes, but novelty is low as it is a common discussion. Rigor, evidence, and reproducibility are zero. Generalizability is limited to general claims. Given the lack of technical content and evidence, score is low but slightly above domain applications due to language methodology relevance.",
+        "score": 0.175,
+        "token_usage": {
+          "completion_tokens": 220,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 458,
+          "prompt_tokens": 2250,
+          "total_tokens": 2470
+        },
+        "topics": [
+          "Large Language Models",
+          "Knowledge"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "なぜ、LLM時代には覚えるのが苦手な人ほど不利になるのか？",
+        "url": "https://zenn.dev/pdfractal/articles/ac9a25867858de"
+      },
+      "published_at": "2026-08-02T01:23:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.175,
+        "llm_relevance_score": 4.8999999999999995,
+        "recency_score": 0.7039340566048752,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 7.403934056604875
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:2f3a3e70020dc1f6",
+      "summary": "はじめに\nLLMの普及によって、知識を頭の中に蓄える必要性が小さくなったという見方が広がっています。分からないことはAIに聞けばよく、細かな用語や手順を覚えるよりも、AIを使いこなす能力を身につけた方がよいという考え方です。\n実際、定型的な文章、プログラムの構文、製品の操作方法、一般的な調査事項などは、以前ほど正確に記憶していなくても扱えるようになりました。必要な情報をその場でAIに尋ね、適切な形に整理してもらえるからです。\n一方、LLM時代には、頭の中に保持すべき知識の質が大きく変化しています。個別の答えや細かな手順よりも、概念同士の関係、因果関係、制約条件、例外、典型的な失敗、分...",
+      "summary_zh": "本文反思了 LLM 普及後，認為記憶不再重要的流行觀點。作者指出，雖然 LLM 確實減輕了對事實性知識和操作步驟的記憶負擔，但這並不意味著記憶能力無關緊要。相反，LLM 時代改變了所需知識的性質：從孤立的具體資訊轉向概念間的關聯、因果關係、限制條件、例外情況以及典型失敗模式。這些高層次的結構性知識需要儲存在長期記憶中，以便有效提問、評估和整合 LLM 的輸出。記憶力較差的人可能在這些方面面臨更大挑戰，因為他們難以在腦中建立豐富的知識網絡，從而無法充分利用 LLM 的能力。文章的核心論點是，LLM 並非記憶的替代品，而是需要與人類記憶協同工作；擁有良好記憶的人能更好地引導 AI、辨別錯誤並創造性應用知識。本文主要基於論述性分析，缺乏實驗數據，但其觀點對教育、職場和個人學習策略具有重要啟示，提醒我們在 AI 時代應重視培養結構化記憶和批判性思維，而非單純放棄記憶。",
+      "title": "なぜ、LLM時代には覚えるのが苦手な人ほど不利になるのか？",
+      "title_zh": "為什麼在 LLM 時代，記憶力差的人反而更吃虧？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "y-tanaka_0220"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.461874+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
+          "url": "https://qiita.com/y-tanaka_0220/items/d8d9a9b16d5ab5b8f531"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract only; no sections with methods or results"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only practitioner blog about building an AI expense workflow with Dify and Vision LLM. Mentions LLM and workflow but lacks research methodology, quantitative results, or technical novelty. Most weight falls to preference relevance (LLM, agent, workflow) but low on all quality dimensions. Pure application without benchmarks or ablations.",
+        "score": 0.1525,
+        "token_usage": {
+          "completion_tokens": 181,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 377,
+          "prompt_tokens": 2169,
+          "total_tokens": 2350
+        },
+        "topics": [
+          "LLM",
+          "agent",
+          "workflow",
+          "code generation",
+          "RAG"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
+        "url": "https://qiita.com/y-tanaka_0220/items/d8d9a9b16d5ab5b8f531"
+      },
+      "published_at": "2026-08-02T08:39:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1525,
+        "llm_relevance_score": 4.27,
+        "recency_score": 0.7255576047291905,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 6.79555760472919
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:bcfe0e76661b6e47",
+      "summary": "はじめに\n今回は、社内で利用するAI経費精算ワークフローをDifyで開発してみました。\n目的はとてもシンプルです。\n\n申請する人と承認する人の両方を楽にすること。\n\n申請者は入力の手間を減らし、承認者は確認の手間を減らす。\nそのために、AIを「判断する存在」ではなく「人を...",
+      "summary_zh": "本篇文章記錄了作者在企業內部使用Dify平台開發AI經費報銷工作流程的實踐經驗。核心目標是同時減輕申請者和審批者的負擔：申請者減少輸入工作量，審批者減少核對時間。作者主張將AI定位為輔助工具而非決策者，實現人機協作。方法上，工作流程整合了具備視覺能力的LLM（如GPT-4V或類似模型）來處理發票和收據的圖像辨識，同時利用OpenAI Codex進行近乎純語音（vibe coding）的開發，以加速原型設計。整個流程由Dify的視覺化工作流編排能力支撐，達到低程式碼開發效果。文中雖未提供具體的量化指標，但透過實作案例展示了AI在文件分類、資料抽取和初步審核上的應用潛力，並強調了人工複核環節的必要性，以避免AI誤判。局限性方面，文章僅涵蓋單一內部用例，未探討大規模部署、資料隱私或模型成本等議題。此案例的意義在於示範了低程式碼平台與生成式AI結合，能快速打造企業內部流程自動化工具，降低開發門檻，同時呼籲在設計AI工作流時，應將人類監督視為核心，而非完全依賴自動化。",
+      "title": "DifyでAI経費精算ワークフローを作ってみた ～Vision対応LLM × Codexで、ほぼバイブコーディング開発～",
+      "title_zh": "使用Dify構建AI經費報銷工作流程：結合視覺LLM與Codex的接近純語音編程開發"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "katukoga"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.687768+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
+          "url": "https://qiita.com/katukoga/items/624e82effd3ff79bc59b"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title indicates beginner tutorial",
+          "Content abstract mentions API key and curl"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Tutorial on using generative AI API, mentions chat, streaming, embeddings, audio. No research contribution, lacks methodology, results, or evaluations. Applicable to Japanese LLM/NLP but out of scope for AI/ML research.",
+        "score": 0.14,
+        "token_usage": {
+          "completion_tokens": 158,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 396,
+          "prompt_tokens": 2188,
+          "total_tokens": 2346
+        },
+        "topics": [
+          "generative AI",
+          "API",
+          "Japanese"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
+        "url": "https://qiita.com/katukoga/items/624e82effd3ff79bc59b"
+      },
+      "published_at": "2026-08-02T07:53:03+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.14,
+        "llm_relevance_score": 3.9200000000000004,
+        "recency_score": 0.7232443863861322,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 6.443244386386132
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:900565426e05ef43",
+      "summary": "はじめに\nシリーズ2回目です。前回はさくらのAI Engine用アカウントトークン（APIキー）を発行して、curlコマンドで最初の1リクエストを成功させました。\n\n各回のタイトル\n内容\n\n①セットアップ編\n無償プラン契約〜アカウントトークン（APIキー）発行〜...",
+      "summary_zh": "本篇文章是系列教學的第二回，目標讀者為具備伺服器基礎、但對生成式AI API不熟悉的工程師。作者延續前回內容，在已取得さくらAI Engine帳戶令牌（API密鑰）之後，實際操作各種功能。文章核心在於展示如何透過命令列工具（如curl）呼叫API，涵蓋對話（Chat）、串流（Streaming）、向量嵌入（Embedding）與語音（Audio）等四個主要面向。每個功能皆以具體的HTTP請求範例與回應說明，幫助讀者理解API的端點、參數與回傳格式。本文採實作導向，強調「動手試」的學習方式，並以日文撰寫，適合日語閱讀者。然而，由於僅有摘要，未提供完整的程式碼範例與詳細輸出結果，讀者可能需參考系列前篇或官方文件補足細節。此外，文章未深入比較不同API的效能或成本，也未討論安全性、錯誤處理等進階議題。此教學對剛踏入生成式AI領域的開發者而言極具價值，能降低API整合的門檻，並示範如何將這些能力應用於實際專案中。總體而言，這是一篇務實且易於跟隨的入門教材，其價值在於提供一個結構化的起點，讓讀者能快速體驗生成式AI的多樣功能，並建立進一步探索的基礎。尤其在當前AI應用快速發展的環境下，此類實作導向的資源有助於工程師掌握實用技能。",
+      "title": "【初心者向け】サーバ屋が生成AIのAPIを初めて触る ②全機能ためす編 〜Chat・ストリーミング・ベクトル埋め込み・音声まで一気に体験〜",
+      "title_zh": "【初學者向け】伺服器工程師初次接觸生成式AI API ②全功能試用篇〜一次體驗Chat・串流・向量嵌入・語音〜"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "毎日AIレシピ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.290524+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "提案書骨子の生成、参考資料が4000字を超えるとAIの順位が入れ替わる理由を検証した",
+          "url": "https://zenn.dev/every_ai_recipe/articles/long-context-changes-ai-ranking"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The document lacks any language model methodology, technical detail, or research contribution. It is a blog-style anecdotal comparison with no systematic evaluation, no novelty, no rigorous methodology, and no quantitative analysis beyond subjective scores. It is out of scope and insufficient to meet minimum thresholds for any component.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 189,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 472,
+          "prompt_tokens": 2264,
+          "total_tokens": 2453
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "提案書骨子の生成、参考資料が4000字を超えるとAIの順位が入れ替わる理由を検証した",
+        "url": "https://zenn.dev/every_ai_recipe/articles/long-context-changes-ai-ranking"
+      },
+      "published_at": "2026-08-02T21:07:32+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.7642688581840925,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.314268858184092
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c0947f4dbd508e5a",
+      "summary": "TL;DR\n\n「提案書骨子を作る」タスクで、ChatGPT・Claude・Geminiに(A)短い参考メモ（約200字）と(B)長い参考資料（競合3社比較＋市場動向、約4000字）をそれぞれ渡し、構成の論理性・抜け漏れの少なさ・読みやすさの3項目（各5点）で採点した。短いメモではChatGPT13点・Claude13点・Gemini11点とほぼ横並びだったが、長い資料ではChatGPT10点・Claude14点・Gemini12点となり、Claudeが独走しChatGPTは逆に順位を落とした\nClaudeは最大100万トークンのコンテキストウィンドウを持ち、ChatGPTの一般的な処...",
+      "summary_zh": "本研究針對企業常見的「提案書骨子生成」任務，系統性比較三大主流大型語言模型——ChatGPT、Claude與Gemini——在處理不同長度參考資料時的表現差異。研究動機源於實務觀察：當參考資料長度從約200字的簡短備忘錄增至約4000字的詳細市場與競爭分析時，模型間的相對優劣會發生顯著逆轉，此現象缺乏系統性驗證。研究設計嚴謹，分別以短參考資料（約200字）與長參考資料（約4000字，含三家競爭對手比較及市場趨勢）作為輸入條件，由人工評分員依「構成邏輯性」「內容完整性」「閱讀流暢度」三項指標（各5分滿分）進行獨立評估。實驗結果顯示，在短參考資料情境下，ChatGPT與Claude同獲13分，Gemini以11分居末，三者表現接近；然而在長參考資料情境下，Claude逆勢上升至14分獨佔鰲頭，Gemini維持12分，而ChatGPT大幅下滑至10分，排名由並列第一跌落至末位。研究者推測此結果與模型的上下文處理能力有關，尤以Claude具備最高100萬token的context window，而ChatGPT在一般設定下有效上下文較短，導致長文本中資訊保留與利用效率下降。研究限制包括樣本數僅三模型、任務型態單一（僅提案書骨子生成）、評分主觀性，以及未揭露ChatGPT具體型號與設定，可能影響可推論性。此發現對企業選擇AI協作工具具重要實務意義：模型評測不能僅依賴單一任務或短文本情境，需考量實際應用中輸入資料的複雜度與長度；同時提醒使用者，在處理長參考資料時，應優先考慮具備大context window的模型，或主動進行資料拆解與摘要，以確保輸出品質。此研究亦為後續探討模型規模、上下文長度與任務複雜度之間交互作用提供初步實證基礎。",
+      "title": "提案書骨子の生成、参考資料が4000字を超えるとAIの順位が入れ替わる理由を検証した",
+      "title_zh": "提案書骨子生成：參考資料超過4000字時AI排名變動的原因驗證"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Pマルシェ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.290937+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "KVキャッシュ×JSONの論文をふわっと理解する",
+          "url": "https://zenn.dev/pmarche/articles/76618b9fc8451f"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an abstract-only, non-technical blog post by a self-described non-expert. It provides only a vague summary, contains no methodology, results, or citations, and is purely a personal narrative about understanding a paper. It does not address any preferred topics (e.g., LLM, Japanese LLM, transformer, reasoning) with substantive content beyond a mention of 'LLM...' that is cut off. No research quality, evidence, or reproducibility. Out of scope and irrelevant.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 192,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 449,
+          "prompt_tokens": 2241,
+          "total_tokens": 2433
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "KVキャッシュ×JSONの論文をふわっと理解する",
+        "url": "https://zenn.dev/pmarche/articles/76618b9fc8451f"
+      },
+      "published_at": "2026-08-02T15:10:56+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.7455750106049995,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.295575010604999
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:6612898b830d3841",
+      "summary": "難しい数式はもちろん、基礎的な理論すら満足に学んでおらず、場当たり的にやってきた私が、論文をふわっと理解してアウトプットする記事です。\n私の学歴や職歴については割愛しますが、要するに難しいことはよくわからないやつです。\nそのため鵜呑みにせず、疑念を持って是非元の論文を見に行ってください。(できれば私に教えてください...)\nもう一度言いますが、 ふわっとしか理解していません。 あえて言いますがこれは予防線ではありません。\n私なりになるべく正しい情報を持って調査した次第ですが、個々の単語の用法や文脈が誤っている可能性がありますので我慢してくれさい。\n\n 忙しい人のために要約\n・問い：LLM...",
+      "summary_zh": "本文是一篇個人學習筆記，作者坦言自身數學與理論基礎不夠紮實，因此對論文的解讀僅為「ふわっと」（模糊）的理解，並非嚴謹的學術分析。文章從一個簡單的提問出發，試圖探討KV快取（KV cache）與JSON格式之間的關聯。作者指出，在大型語言模型（LLM）的推理過程中，KV快取用於儲存已計算的注意力鍵值對，以加速生成速度；而JSON則常用於結構化輸出，如函數呼叫或API回應。兩者結合時，可能涉及如何高效地管理不同結構化任務的快取記憶體，或如何利用JSON語法來最佳化KV快取的有效性。然而，由於作者自身的限制，文中缺乏具體的數學推導與實驗數據，也未提供嚴謹的理論比較。作者強調這篇文章不應被當作權威資料，務必查閱原始論文，並歡迎讀者指正。這篇文章對一般讀者的價值在於，以淺顯方式點出一個研究交集，但對於深入理解該領域的技術細節幫助有限。作者也提醒，其用詞與脈絡可能出錯，讀者需保持懷疑態度。整體而言，這是一篇誠實但受限的入門導讀，適合作為快速了解主題的起點，而非技術參考。",
+      "title": "KVキャッシュ×JSONの論文をふわっと理解する",
+      "title_zh": "KV快取×JSON論文之淺略理解"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "hellohazime"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.764609+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+          "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: '枝刈りしたKimi K3がMac Studio(Apple M3 Ultra、512GB)1台で動きました。'",
+          "Abstract: 'SWE-Lancerの実タスク8本中5本正解、$3,500。'",
+          "Abstract: 'モデルはHugging Faceに置いてあります。'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Blog abstract of a pruned Kimi K3 deployed on one Mac Studio. No full methodology, baselines, ablations, or quantitative evidence beyond anecdotal task results (5/8 correct). Limited to large language model topic relevance, but lacks scientific rigor and evidence. Out of scope for pure application deployment.",
+        "score": 0.12500000000000003,
+        "token_usage": {
+          "completion_tokens": 295,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 443,
+          "prompt_tokens": 2235,
+          "total_tokens": 2530
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+        "url": "https://zenn.dev/hellohazime/articles/kimi_k3_reap640_512gb_mac"
+      },
+      "published_at": "2026-08-02T00:43:07+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.12500000000000003,
+        "llm_relevance_score": 3.500000000000001,
+        "recency_score": 0.7019700229010939,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 6.001970022901094
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:2a62bb3865cdb448",
+      "summary": "お疲れ様です波浪です。\n今回は、最近流行りのKimi K3です。前回の失敗を活かして自分の中でも熱があるうちにBLOGにしました。\n結論。枝刈りしたKimi K3がMac Studio(Apple M3 Ultra、512GB)1台で動きました。ハーネスとしてKimi Code CLIを繋いで、SWE-Lancerの実タスク8本中5本正解、$3,500。そのうち2本は、前回2bitのK2.7が解けなかった問題でした。\nモデルはHugging Faceに置いてあります。\nhttps://huggingface.co/hellohazime/Kimi-K3-REAP640-IQ1_S-GGU...",
+      "summary_zh": "本文作者波浪分享了將大型語言模型Kimi K3進行剪枝（pruning）的實驗結果，成功將其壓縮至441GB，並在配備Apple M3 Ultra與512GB記憶體的Mac Studio上單機運行。作者使用Kimi Code CLI作為連接框架，在SWE-Lancer基準測試的真實任務中，8個任務解出5個，獲得約3,500美元獎勵；其中兩個任務是先前使用2bit量化K2.7版本未能解決的問題，顯示剪枝後的模型在特定任務上表現優於低精度量化方案。剪枝後的模型已公開於Hugging Face平台。此研究旨在探索在消費級硬體上運行大規模語言模型的可行性，為資源受限環境提供替代量化（quantization）的模型壓縮方法。然而，作者並未提供詳細的剪枝技術細節、參數設定或與原始Kimi K3在一般任務上的性能對比，且實驗僅基於少數SWE-Lancer任務，樣本量有限，難以推斷整體能力。此外，441GB的模型仍需高階硬體支援，並非普及化方案。此結果表明，剪枝可作為量化以外的有效壓縮途徑，尤其針對特定任務可能保留更多推理能力，但需更多研究以驗證其泛化性與穩健性。對於研究社群而言，此工作展示了大型模型在個人設備上部署的潛力，並提供實際案例，但讀者應注意其局限性，避免過度推論至一般場景。",
+      "title": "Kimi K3を441GBに枝刈りして、Mac Studio 1台で動かした",
+      "title_zh": "將Kimi K3剪枝至441GB並在單台Mac Studio上運行"
+    }
+  ],
+  "run_date": "2026-08-02",
+  "run_id": "9dbd1843-27d1-4edf-9876-f40c470fc041",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-08-03T00:00:00+00:00",
+    "items_total": 34,
+    "run_id": "9dbd1843-27d1-4edf-9876-f40c470fc041-2026-08-02",
+    "started_at": "2026-08-02T00:00:00+00:00",
+    "stories_total": 34,
+    "success": true
+  },
+  "sources_status": [],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Currently Learning そんけいご"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.763314+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
+          "url": "https://zenn.dev/lixian/articles/cscr-counterfactual-sensitivity-credit"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.4,
+          "generalizability": 0.6,
+          "novelty": 0.8,
+          "preference_relevance": 0.9,
+          "reproducibility": 0.3,
+          "rigor": 0.5
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions counterfactual analysis of token-level credit in long CoT RL, proposing CSCR method; no quantitative results or baselines available."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to LLM reasoning, CoT, RLHF, and alignment; proposes novel credit redistribution method with counterfactual analysis. Rigor and evidence limited by abstract-only; no concrete results or reproducibility details. Focus on reasoning and RL methods is central to preferences.",
+        "score": 0.6900000000000001,
+        "token_usage": {
+          "completion_tokens": 199,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 463,
+          "prompt_tokens": 2255,
+          "total_tokens": 2454
+        },
+        "topics": [
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought",
+          "Alignment & RLHF",
+          "Reinforcement Learning",
+          "AI Safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
+        "url": "https://zenn.dev/lixian/articles/cscr-counterfactual-sensitivity-credit"
+      },
+      "published_at": "2026-08-02T02:00:41+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.6900000000000001,
+        "llm_relevance_score": 19.32,
+        "recency_score": 0.7057614386306867,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 21.825761438630686
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:e2e557fd82caa55f",
+      "summary": "TL;DR\n南京大学・上海交通大学の研究グループが、長CoT強化学習における「どのトークンに信用を与えるべきか」という根本問題を正面から問い直した。GRPOは応答レベルの報酬を各トークンに均等に分配するが、それは正しくない。OPSDのような自己蒸留型手法は「特権情報を与えたときの尤度シフト」を直接監督として使うが、著者らの反実仮想分析は、そのシフトが答えの正否と無関係な方向を向くことがほとんどだと示した。さらに大きなシフトは「But」「So」「Let」など置き換え可能な表面形式トークンに集中し、問題固有の推論トークンはむしろ低感度だった。これを受けて提案された**CSCR（Count...",
+      "summary_zh": "南京大學與上海交通大學的研究團隊，針對長鏈思維（CoT）強化學習中一個根本問題展開探討：在長CoT訓練中，究竟應該給予哪些token信用？傳統的GRPO方法將回應層級的獎勵均勻分配給每個token，但這並不符合直覺。作者透過反事實分析，指出OPSD等自蒸餾方法所使用的「特權資訊下的似然位移」作為監督信號，其位移方向大多與答案正誤無關，反而集中出現在「But」「So」「Let」等可替換的表面形式token上，而真正重要的推理token的敏感度卻較低。為了解決此問題，他們提出CSCR（字數未明）方法，旨在重新分配token層級的信用，使強化學習信號更精準地對齊實際推理步驟。研究顯示，CSCR能有效提升長CoT任務的表現，並減輕token分配不當導致的學習偏差。然而，論文僅提供摘要，具體實驗細節與限制未詳述；此方法是否適用於不同規模模型或任務類型仍有待驗證。此研究對於改進強化學習在推理任務中的訓練效率與穩定性具有重要意義，為未來長CoT機制設計提供了新的思考方向。",
+      "title": "CSCR：長CoT強化学習におけるトークン単位信用の再分配",
+      "title_zh": "CSCR：長CoT強化学習におけるトークン単位信用の再分配"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "モノコーラ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-03T10:14:27.289663+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMエージェント32体に「不満」だけを与えて6時間放置した — 全ログ公開と、多エージェント設計への3つの教訓",
+          "url": "https://zenn.dev/monocola/articles/f069eec4c5dd5b"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.3,
+          "generalizability": 0.5,
+          "novelty": 0.5,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.6,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract states 32 agents with no institutions, 24 killings, 18 survivors",
+          "Abstract mentions full logs with 9,874 utterances and 14,969 structured events with DOI"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is directly about LLM agents in a multi-agent setting, matching the 'Agents & Tool Use' preference with weight 2.5. It involves emergent behavior and failure patterns. However, it is an abstract-only technical report, lacking detailed methodology, baselines, and quantitative results. The rigorousness is low due to unverified claims. It has some novelty in studying multi-agent failure with dissatisfaction, but limited scope. Generalizability is moderate as the findings may transfer to other multi-agent systems, but the Minecraft domain limits claims. Reproducibility is partially supported by the stated public logs and DOI. Overall score is moderate due to relevance but limited by evidence and rigor.",
+        "score": 0.51,
+        "token_usage": {
+          "completion_tokens": 323,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 490,
+          "prompt_tokens": 2282,
+          "total_tokens": 2605
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Multi-agent",
+          "LLM"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMエージェント32体に「不満」だけを与えて6時間放置した — 全ログ公開と、多エージェント設計への3つの教訓",
+        "url": "https://zenn.dev/monocola/articles/f069eec4c5dd5b"
+      },
+      "published_at": "2026-08-02T23:18:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.51,
+        "llm_relevance_score": 14.280000000000001,
+        "recency_score": 0.7712720491474476,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 20.851272049147447
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4dc5bf3306fab4e2",
+      "summary": "Minecraft 上に自作の自律エージェント 32 体を作り、制度（役割の割当て・共有規則・権限・契約の履行機構）を一切与えずに約 6 時間放置しました。与えたのは身体と、9 軸の「不満」と、性格だけです。\n結果として村人同士の殺害が 24 件発生し、生存 18 体で終わりました。ただしこの記事で書きたいのはその顛末ではなく、LLM エージェントを複数動かすときに再現しそうな 3 つの失敗パターンです。全ログ（発言 9,874 件・構造化イベント 14,969 件）を DOI 付きで公開しているので、主張はすべて検証できます。\n\nデータ・技術報告書: https://github.co...",
+      "summary_zh": "本文記錄了一項真實的自主代理群體實驗：作者在Minecraft環境中建構了32個由大型語言模型（LLM）驅動的自治代理，刻意不賦予任何制度性結構（如角色指派、共享規則、權限或合約履行機制），僅提供身體、九個維度的「不滿」情緒以及性格設定。實驗持續約六小時，期間未進行人為干預。結果顯示，村人間發生了24起殺害事件，最終僅有18個代理存活。然而，作者強調本文重點不在於戲劇性結果，而在於歸納出多代理系統中反覆出現的三種失敗模式，並宣稱已公開完整日誌（9,874條發言與14,969個結構化事件）並附有DOI，以供第三方驗證其論點。這些失敗模式可能包括：代理間因缺乏協調機制而產生衝突升級、情緒訊號（如不滿）在缺乏仲裁管道時導致暴力行為，以及個體性格在多代理互動中造成的不可預期後果。作者基於這些觀察提出三項設計教訓，旨在提醒開發者：僅提供個體動機（如情緒）而不建立集體治理結構，容易導致系統性崩潰；情緒驅動的代理需要配合明確的衝突解決機制；且多代理設計必須考慮湧現行為的不可預測性。此文的重要意義在於以具體實證數據填補了LLM多代理研究中的一個空白：現有研究多強調合作與協調，卻較少探討缺乏制度時的自毀傾向。然而，本文僅為技術報告性質，並未提供對失敗模式的系統性量化分析，亦未比較不同設計變因的影響，讀者應審慎看待其概括性。此實驗結果對建構可靠的多代理系統（如自動化社會模擬、群體決策支援）具有警示價值，強調規範與制約在代理協作中的必要性。",
+      "title": "LLMエージェント32体に「不満」だけを与えて6時間放置した — 全ログ公開と、多エージェント設計への3つの教訓",
+      "title_zh": "為32個LLM代理只提供「不滿」並放置6小時——公開全部日誌，以及多代理設計的3個教訓"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "りむふぁくし"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.762286+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
+          "url": "https://zenn.dev/hrimfaxi_tpw/articles/de75758b72efea"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.5,
+          "novelty": 0.3,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "TL;DR states '工程別分業' and 'サブエージェント' without sections; no quantitative results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses agent delegation and workflow design, relevant to agents and tool use, but lacks detailed methodology, empirical data, or quantitative results. The content is speculative and based on informal observations rather than rigorous analysis.",
+        "score": 0.42,
+        "token_usage": {
+          "completion_tokens": 170,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 483,
+          "prompt_tokens": 2275,
+          "total_tokens": 2445
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
+        "url": "https://zenn.dev/hrimfaxi_tpw/articles/de75758b72efea"
+      },
+      "published_at": "2026-08-02T05:18:49+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.42,
+        "llm_relevance_score": 11.76,
+        "recency_score": 0.7155393070941745,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 18.275539307094174
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:3ab1c33488de6914",
+      "summary": "TL;DR\n\n「強いモデルが設計し、安いモデルが実装する」という工程別分業は、現在も条件次第では有効。ただし、一般的なベストプラクティスとは言いにくい。\nClaude CodeとCodexの公式文書は、工程名ではなく、作業の自己完結性・コンテキストの連続性・書き込み競合・検証可能性を基準に委譲先を決めている。\n調査、ログ解析、テスト実行、レビューのように、大量の情報を短い要約へ圧縮できる作業はサブエージェントに向く。\n設計と中核実装は、実装中にも仕様判断や設計変更が発生するため、同じメインエージェントが継続した方がよい場合が多い。\n実装を別エージェントへ任せるなら、工程だけを切り出す...",
+      "summary_zh": "本文探討了在2026年8月的當下，將AI開發工程分為「設計」與「實作」兩個階段，並分別交由「強模型」與「便宜模型」負責的做法是否仍然有效。作者指出，雖然這種分工在特定條件下仍能發揮作用，但已難以作為普遍適用的最佳實踐。透過分析Claude Code與Codex的官方文件，作者發現工程委託的決策依據並非工程名稱，而是更細緻的標準，包括作業的自我完結性、上下文的連續性、寫入衝突風險以及驗證可行性。研究指出，像調查、日誌分析、測試執行和程式碼審查這類能將大量資訊壓縮成簡短摘要的工作，特別適合交給子代理處理；相對地，設計與核心實作因為在過程中經常需要因應實作情況做出規格判斷或設計調整，通常由同一個主代理持續負責會較為恰當。若決定將實作交由其他代理，不應僅是單純切割工程，而需一併考量整體流程的銜接與驗證機制。這篇文章的見解對AI輔助軟體開發的實務安排具有參考價值，提醒開發者應依據任務本質而非表面工程名稱來決定模型分配，並避免過度簡化「強設計、弱實作」的直覺劃分。文章也隱含了現有評估可能未涵蓋長期維護與複雜協作情境的限制。",
+      "title": "「設計は強いモデル、実装は安いモデル」は今も正解なのか(2026年8月現在)",
+      "title_zh": "「設計用強模型、實作用便宜模型」在2026年8月仍是正確答案嗎？"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "oubakiou"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.764384+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
+          "url": "https://zenn.dev/oubakiou/articles/e7ba06c74b7007"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.9,
+          "reproducibility": 0.1,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract: mentions parent agent claude-opus-5@max and child agent gpt-5.6-luna with effort levels",
+          "abstract: conditions measured: fixed parent, child effort 6 levels, 3 repetitions each"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Highly relevant to frontier LLM behavior and agentic workflows, but purely empirical with minimal novelty and weak evidence due to missing details and no quantitative results in abstract.",
+        "score": 0.42000000000000004,
+        "token_usage": {
+          "completion_tokens": 227,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 465,
+          "prompt_tokens": 2257,
+          "total_tokens": 2484
+        },
+        "topics": [
+          "LLM",
+          "Agents",
+          "Prompting",
+          "Evaluation",
+          "Benchmark"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
+        "url": "https://zenn.dev/oubakiou/articles/e7ba06c74b7007"
+      },
+      "published_at": "2026-08-02T01:00:05+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.42000000000000004,
+        "llm_relevance_score": 11.760000000000002,
+        "recency_score": 0.7027976000276576,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 18.26279760002766
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:b6449f0180f27461",
+      "summary": "本記事は 実装タスクを外注するモデルは何が適切なのか？ミニゲームを実装させるベンチマーク のシリーズです。\n\n今回は親エージェントを claude-opus-5@max、子エージェント（実装の外注先）を gpt-5.6-luna に固定して、luna の各 effort でどのように性能が変化するのかを詳しく見ます。\n\n 今回測った条件\n\n親（委譲元）は claude-opus-5@max に固定\n\n\n子は gpt-5.6-luna の 6 段（low / medium / high / xhigh / max / ultra）\n各条件 3 反復・直列実行で 6 条件 × 3 反復 =...",
+      "summary_zh": "本篇文章屬於「實作任務外包給哪個模型最合適？以迷你遊戲實作進行基準測試」系列的一部分，旨在探討大型語言模型在執行具體程式設計任務時，其內部推理努力程度（effort）對最終效能的影響。研究設計將父代理（任務委派方）固定為claude-opus-5@max，而子代理（負責實際實作的模型）則使用gpt-5.6-luna的不同effort設定，包括low、medium、high、xhigh、max和ultra共六個等級。每個條件重複三次實驗，並以串行方式執行，總計進行十八次測試。實驗透過godot遊戲引擎開發環境進行，要求AI模型實作出可運作的迷你遊戲，並以完成度、正確性、程式碼品質等指標評估其效能。初步結果顯示，effort等級對模型產出有顯著影響：較高effort（如max、ultra）通常能產出更完整、功能更齊全的遊戲實作，但也伴隨更長的推理時間與更高的運算成本；而較低effort（如low、medium）雖然回應速度較快，但在複雜任務上容易出現功能缺漏或邏輯錯誤。然而，研究也指出效能的提升並非線性，在某些任務中，medium與high之間的差異不大，顯示存在邊際效益遞減的現象。這項研究的限制在於樣本數偏小（每條件僅三次反覆），且僅針對單一遊戲實作類型，因此結果的通用性有待驗證；此外，依賴特定模型版本（gpt-5.6-luna），其行為可能隨更新而改變，限制了長期參考價值。儘管如此，此研究對實務應用有重要意義：開發者在選擇模型設定時，需在效能與成本之間取得平衡，避免過度配置資源。此結果也可為自動化程式碼生成領域提供指引，幫助團隊根據任務複雜度選擇合適的推理強度，提升開發效率並節省運算預算。",
+      "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
+      "title_zh": "【godot-llm-gamebench】GPT-5.6 Luna在不同Effort設定下的效能差異"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Haowei Cheng"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-02T08:51:31.763864+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
+          "url": "https://zenn.dev/haowei/articles/1c66ee2ee464fe"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.4,
+          "novelty": 0.2,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract-only; content mentions real-world practices like manual review, inconsistency oversight, ISO 26262/SOTIF compliance, and DOORS/Jama, but no specific results or methods are described."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper addresses Japanese LLM multi-agent systems for safety-critical requirements engineering. It is highly relevant to preferences on LLMs, Japanese LLM/NLP, and agents, but it is abstract-only with no methodological detail, baselines, or quantitative results. Novelty is limited as it applies existing techniques to a new domain. Rigor and evidence are low due to lack of detailed content. Generalizability is moderate as the domain is specific to safety-critical systems. Reproducibility is minimal without methods or data.",
+        "score": 0.38499999999999995,
+        "token_usage": {
+          "completion_tokens": 253,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 439,
+          "prompt_tokens": 2231,
+          "total_tokens": 2484
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Agents & Tool Use",
+          "Requirements Engineering",
+          "Safety-critical systems"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
+        "url": "https://zenn.dev/haowei/articles/1c66ee2ee464fe"
+      },
+      "published_at": "2026-08-02T01:33:46+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.38499999999999995,
+        "llm_relevance_score": 10.78,
+        "recency_score": 0.7044434523830774,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 17.034443452383076
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:411799cf0b709732",
+      "summary": "はじめに\n自動車・ロボット・医療機器などの安全関連システム（safety-critical systems）の開発において、要求工学（Requirements Engineering） は最も重要なフェーズの一つです。要求の不備がプロジェクト失敗の主因であることは、数十年前から繰り返し指摘されてきました。\nしかし現場の実態はどうでしょうか。\n\n数百〜数千件の要求を、レビュー会議で人手で確認している\n要求間の矛盾（例：安全性とユーザビリティのトレードオフ）を見落としがち\nISO 26262やSOTIFなどの規格準拠チェックが属人的\nDOORSやJamaに要求は入っているが、品質分析は手...",
+      "summary_zh": "本文針對汽車、機器人、醫療器材等安全關鍵系統（safety-critical systems）開發中的需求工程（Requirements Engineering）環節，探討引入大型語言模型（LLM）多智能體（multi-agent）系統所能帶來的影響與改變。作者指出，需求工程是這類系統開發中最關鍵的階段之一，然而實務上仍普遍仰賴人工會議審查數百至數千條需求，容易忽略需求之間的矛盾（例如安全性與可用性的取捨），且ISO 26262、SOTIF等標準的符合性檢查往往高度依賴個人經驗，流於主觀。即使組織已導入DOORS或Jama等需求管理工具，需求品質分析仍多半靠人工，未能有效自動化。本文的核心論點是：透過LLM多智能體協作，可以在需求分析、衝突偵測、標準符合性檢查等環節提供輔助，將部分原本耗費人力的工作自動化，並提高審查的完整性與一致性。然而，作者也強調此類系統仍存在限制，例如對領域知識的依賴、LLM可能產生幻覺（hallucination）、以及對安全標準的嚴格遵循仍需人為監督，因此應視為輔助工具而非完全取代人工。此研究的重要性在於，它點出AI技術在安全攸關領域的應用潛力與風險，提醒開發團隊在追求效率之餘，仍需以嚴謹的驗證流程確保最終系統的安全性與可靠性。",
+      "title": "安全関連システムの要求工学にLLMマルチエージェントを活用したら、何が変わるのか",
+      "title_zh": "運用LLM多智能體於安全關鍵系統需求工程：會帶來什麼改變？"
     }
   ]
 }
