@@ -41,7 +41,8 @@ case "${MODE}" in
   *) echo "Usage: $0 daily|weekly|monthly" >&2; exit 2 ;;
 esac
 
-docker compose run --rm --entrypoint sh digest -c 'cp -R /opt/frontend-dist/. /public/'
+docker compose run --rm --entrypoint sh digest -c \
+  'cp /opt/frontend-dist/index.html /public/index.html && mkdir -p /public/assets && cp -R /opt/frontend-dist/assets/. /public/assets/'
 python3 "${ROOT_DIR}/scripts/prepare-public.py" "${PUBLIC_DIR}"
 python3 "${ROOT_DIR}/scripts/backup-state.py" \
   "${DATA_DIR}/state.sqlite" "${DATA_DIR%/data}/backups"

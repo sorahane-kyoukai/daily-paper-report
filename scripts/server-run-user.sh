@@ -40,7 +40,9 @@ case "${MODE}" in
   *) echo "Usage: $0 daily|weekly|monthly" >&2; exit 2 ;;
 esac
 
-cp -R "${ROOT_DIR}/frontend-dist/." "${PUBLIC_DIR}/"
+cp "${ROOT_DIR}/frontend-dist/index.html" "${PUBLIC_DIR}/index.html"
+mkdir -p "${PUBLIC_DIR}/assets"
+cp -R "${ROOT_DIR}/frontend-dist/assets/." "${PUBLIC_DIR}/assets/"
 "${PYTHON_BIN}" scripts/prepare-public.py "${PUBLIC_DIR}"
 "${PYTHON_BIN}" scripts/backup-state.py \
   "${DATA_DIR}/state.sqlite" "${ROOT_DIR}/backups"

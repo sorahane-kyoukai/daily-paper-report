@@ -5,6 +5,7 @@ COPY frontend/package.json frontend/pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY frontend/ ./
 RUN pnpm run build-only
+RUN rm -rf /build/frontend/dist/api
 
 FROM ghcr.io/astral-sh/uv:0.8.15 AS uv
 
