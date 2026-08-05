@@ -300,92 +300,10 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-08-05T15:26:53.740158+00:00",
+  "generated_at": "2026-08-05T15:36:40.902704+00:00",
   "model_releases_by_entity": {},
   "papers": [],
   "radar": [
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Nihonbashi AI Lab"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.619278+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
-          "url": "https://zenn.dev/nihonbashi/articles/llm-time-estimate-human-hours"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.15,
-          "reproducibility": 0.1,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "{'section': 'abstract', 'fact': 'Discusses coding agents providing time estimates and observed faster execution, but no specific measurements or data provided.'}"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper discusses AI agents and their time estimates, relevant to agents and tool use, but is a blog-style article with only an abstract. It lacks quantitative measurements, clear methodology, and formal evaluation. The topic is speculative and not a rigorous research contribution. Evidence is anecdotal. Reproducibility is low.",
-        "score": 0.185,
-        "token_usage": {
-          "completion_tokens": 187,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 480,
-          "prompt_tokens": 2272,
-          "total_tokens": 2459
-        },
-        "topics": [
-          "AI agent",
-          "coding agent",
-          "time estimation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
-        "url": "https://zenn.dev/nihonbashi/articles/llm-time-estimate-human-hours"
-      },
-      "published_at": "2026-08-05T05:40:15+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.185,
-        "llm_relevance_score": 5.18,
-        "recency_score": 0.9602246119005411,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 11.69022461190054
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:2aa5e406472bf121",
-      "summary": "はじめに\nコーディングエージェントに作業を頼むと、着手前に見積もりが返ってくることがあります。「フェーズ1に2〜3日、フェーズ2に1〜2日、合計で5〜8日」。そして実際に走らせると、1時間で終わる。\nこの現象について、ネット上には体験談が大量にあります。一方で「なぜそうなるのか」を、測定された事実だけで説明した日本語の記事はあまり見かけません。推測と実測が混ざったまま流通しているのが現状です。\nこの記事では、公開されている研究・提供者の検証・一次報告を整理して、次の3点をはっきりさせます。\n\n何が実際に測定されていて、何がまだ推測なのか\n効果が数字で確認されている対策は何か（3つし...",
-      "summary_zh": "本文探討使用AI編程代理時常見的現象：代理在著手前給出估計，例如「第一階段2～3天，第二階段1～2天，合計5～8天」，但實際運行卻僅需1小時。作者指出，網路上雖有大量經驗談，但缺乏以測量事實為基礎的日文說明，導致推測與實測混雜流傳。文章旨在整理公開研究、提供者驗證與一次報告，釐清三點：何為實際測量結果、何為推測；哪些對策有數字證實有效（文中提及三項，但具體內容未在摘要中詳述）；並以此為基礎，確立討論基準。方法上，作者不採用臆測，而是聚焦於可驗證的數據與實證來源，試圖將主觀感受與客觀指標分離。主要證據包括公開的基準測試結果與業界報告，但文章僅提供摘要，未列出具體數字或研究名稱，因此讀者需參閱原始文獻以獲得完整數據。局限性在於，可用數據可能受限於特定環境或代理版本，且估計偏差可能因任務類型而異，故結論未必適用於所有情境。然而，此討論對AI開發者與使用者具有重要意義：若未區分代理內部時間估計與實際牆鐘時間，可能誤導專案規劃與資源分配。透過強調「已測量的事實」，本文試圖建立更嚴謹的評估框架，減少對代理輸出時間的過度信任，並推動更透明的效能報告。此類探究有助於改善人機協作中的期望管理，具有實際應用價值。",
-      "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
-      "title_zh": "AI代理的「需要兩週」究竟是指誰的兩週？——羅列已測量的事實"
-    },
     {
       "arxiv_id": null,
       "authors": [
@@ -411,32 +329,33 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.0,
-          "novelty": 0.02,
-          "preference_relevance": 0.18,
-          "reproducibility": 0.05,
-          "rigor": 0.05
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Title indicates practical verification of Claude Code version, content status abstract only"
+          "Abstract only"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper discusses Claude Code CLI, touching tool use/agents (Claude Code) and local LLM/agent development but is a narrow product-specific verification with only abstract, lacking methodological rigor, novelty, and generalizability. Pure domain application with limited language methodology, marginal to preferences.",
-        "score": 0.0925,
+        "rationale": "Abstract-only practical blog on Claude Code version checking; no methodology, no Transformer/LLM research content beyond tool use; out of scope for ML research.",
+        "score": 0.1,
         "token_usage": {
-          "completion_tokens": 168,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 370,
+          "completion_tokens": 133,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 114,
           "prompt_tokens": 2162,
-          "total_tokens": 2330
+          "total_tokens": 2295
         },
         "topics": [
-          "Agents & Tool Use"
+          "Claude Code",
+          "CLI"
         ]
       },
       "primary_link": {
@@ -452,13 +371,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.0925,
-        "llm_relevance_score": 2.59,
-        "recency_score": 0.9662638211929672,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.9654625502263252,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 11.106263821192968
+        "total_score": 11.315462550226325
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -467,251 +386,6 @@
       "summary_zh": "本文針對 Claude Code 的版本更新進行實機驗證，特別關注 v2.1.222 所宣稱的兩個新旗標（flags）。作者以日常使用雲端執行環境或無頭模式 CLI 的開發者為對象，指出發行說明中所標榜的新功能，實際上在兩個版本前就已存在，因此容易誤導使用者對版本演進的理解。文中透過直接操作 CLI 的方式，比較不同版本間的行為差異，確認這兩個旗標在較早版本中已有對應功能，僅是官方文檔在後續版本才補上說明，造成「新功能」的錯覺。這項發現提醒開發者在依賴發行說明進行版本升級或功能採用時，應以實際測試為依據，而非僅信任說明文字。作者也建議使用者可透過執行 `claude --version` 與比對歷史變更記錄來驗證功能是否真正新增。本文的價值在於提供一個實務上的驗證方法，協助開發者避免因版本標記不一致而誤判功能可用性，進而在自動化流程或 CI/CD 環境中做出更正確的版本選擇。然而，文章內容僅依據單一版本的觀察，可能無法涵蓋所有平台的差異，且未提供其他大量數據支持，屬於實務經驗分享而非全面的官方對比報告。無論如何，對於依賴 Claude Code 進行自動化工作的團隊而言，這篇驗證過程具有參考意義，能降低因版本認知落差而導致的工具錯誤使用風險。",
       "title": "Claude Code v2.1.222実機検証、新フラグ2つは2バージョン前の機能だった",
       "title_zh": "Claude Code v2.1.222 實機驗證、兩個新旗標其實是兩版本前的功能"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "nd3"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.619548+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
-          "url": "https://zenn.dev/nd3/articles/text-to-sql-eval-3layers"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.2,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions building a tool to convert Japanese questions to SQL; content status is abstract only; no quantitative results or methodology details."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog post about building a Japanese Text-to-SQL tool. Touches LLM and Japanese NLP but lacks technical depth, no evaluation details, and is a practical application with minimal novel research contribution. Out of scope due to lack of rigorous methodology.",
-        "score": 0.14,
-        "token_usage": {
-          "completion_tokens": 183,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 473,
-          "prompt_tokens": 2265,
-          "total_tokens": 2448
-        },
-        "topics": [
-          "Text-to-SQL",
-          "Japanese NLP",
-          "LLM application"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
-        "url": "https://zenn.dev/nd3/articles/text-to-sql-eval-3layers"
-      },
-      "published_at": "2026-08-05T04:47:40+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.14,
-        "llm_relevance_score": 3.9200000000000004,
-        "recency_score": 0.9567246303387362,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 10.676724630338736
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:4f95427b4b4aace9",
-      "summary": "この記事について\n技術ドキュメントに質問できるRAGツール(TechDoc QA Bot)を作ってきましたが(前回までの記事: 評価編・不正解1問の診断編・Webアプリ化編)、その次のテーマとして、RDB(リレーショナルデータベース)を実際に触りたくなりました。ベクトルDBによる「曖昧な意味検索」は前のプロジェクトで扱ったので、今度はRDBに対する「厳密なデータ照会」をやってみたい、という動機です。\nそこで作ったのが、**日本語の質問をLLMがSQLに変換して、データベースに問い合わせて結果を返すツール(Text-to-SQL)**です。「在庫が10個以下の商品は?」と聞くと、SEL...",
-      "summary_zh": "本文作者在開發了一個能針對技術文件回答問題的RAG工具（TechDoc QA Bot）後，決定進一步挑戰關係型資料庫（RDB）的嚴格資料查詢，因而著手建立一個Text-to-SQL工具，讓使用者以日文提問，由LLM將其轉換為SQL指令，再對資料庫執行並回傳結果。作者原本想評估不同模型的Text-to-SQL能力，但在評估過程中，卻發現比起模型表現，自己的提示詞（prompt）與程式碼存在多達三層的錯誤，這些錯誤嚴重影響了評估的正確性。本文詳細記錄了這三層問題的發現過程，包括第一層可能是SQL生成邏輯的缺陷，第二層涉及資料庫連線或查詢結果處理的錯誤，第三層則可能是評估指標設定或測試資料本身的問題。作者透過系統性的除錯，逐步修正這些問題，才得以更準確地衡量模型的真實效能。本文的價值在於提醒研究人員，在評測Text-to-SQL系統時，必須先確保基礎設施的健全，否則模型的能力可能被自身的bug所掩蓋。然而，本文僅為摘要，缺乏具體的錯誤細節、修正方法與量化結果，因此無法提供完整的實作指南。對於有意開發或評估Text-to-SQL系統的開發者而言，本文的經驗教訓極具參考價值，強調了在追求模型精度之前，先驗證自身程式碼與提示詞正確性的重要性。",
-      "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
-      "title_zh": "評估Text-to-SQL精度時，先於模型發現的三層自身提示詞與程式碼錯誤"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:20.791498+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
-          "url": "https://ai-data-base.com/archives/114251"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.05,
-          "rigor": 0.05
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is about adding procedural 'skills' to AI agents, losing abilities, and measuring trade-offs. While it touches on agents (relevance 2.5), the abstract-only content lacks methodological detail, quantitative results, and verifiable claims. The content is a blog post, not a rigorous research paper. The observed phenomenon (average improvement vs. individual regressions) has some novelty, but without details on methods, baselines, or reproducibility, scores are low. No specific topics beyond general AI agents are strongly supported.",
-        "score": 0.0825,
-        "token_usage": {
-          "completion_tokens": 239,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 579,
-          "prompt_tokens": 2371,
-          "total_tokens": 2610
-        },
-        "topics": [
-          "AI agents"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
-        "url": "https://ai-data-base.com/archives/114251"
-      },
-      "published_at": "2026-08-05T06:40:11+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0825,
-        "llm_relevance_score": 2.31,
-        "recency_score": 0.9642294306199255,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 3.75,
-        "total_score": 9.824229430619926
-      },
-      "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:51d62b28e9f50368",
-      "summary": "<p>AIエージェントに「スキル」と呼ばれる手順書を追加する運用が一般的になってきました。業務のやり方をあらかじめ文書化して渡しておくと、エージェントの成績が平均的に向上すると報告されてきたためです。 ところが、その平均値の内訳を調べた検証から、見過ごせない事実が報告されました。スキルを追加したせいで、これまで解けていた問題が解けなくなるケースが大量に発生していたのです。 新たに解けるようになった問題と、解けなくなった問題。この差し引きを数千回の実行で数え上げると、何が見えてくるのでしょうか。スキルを導入したり自作したりしている方に直結する内容です。 プレミアム会員限定コンテンツです 無料会員でもで&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114251\"><span class=\"locked-post\">🔒</span> AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "本文報導了一項針對AI代理（AI agent）的實證研究，聚焦於爲代理添加「技能」（即預先撰寫的任務執行步驟文件）所帶來的影響。過去的研究普遍顯示，提供此類技能文件能平均提升代理的任務表現，因此成爲實務上常見的做法。然而，本研究進一步剖析了平均表現背後的分佈，發現一個令人擔憂的現象：在加入技能後，部分原本代理能成功解決的問題反而變得無法解決，且此類案例數量相當可觀。研究團隊透過數千次的執行實驗，詳細統計了因新增技能而「新解決」與「新失敗」的任務數量，並比較其差異。結果顯示，雖然技能確實能幫助代理應對某些新情境，但也可能干擾其原有的決策邏輯，導致性能在特定任務上顯著退化。作者指出，這突顯了技能設計的雙面性：不當的技能內容或過度僵化的步驟，可能限制了代理的靈活性，尤其在面對與技能描述略有出入的情況時，更容易觸發錯誤。研究也提醒，僅依賴平均分數評估代理效能是危險的，需進一步分析個別任務的變化。儘管本文提供的證據來自特定實驗設定，仍對實務上如何設計與部署技能有重要參考價值，尤其對於自行編寫技能的使用者而言，應重視技能可能引入的偏見及其對魯棒性的影響。",
-      "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
-      "title_zh": "爲AI代理添加技能可能導致本可解決的問題反而無法解決【含作者評論】"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "satoshiakiyama"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.618809+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-          "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.2,
-          "novelty": 0.3,
-          "preference_relevance": 0.2,
-          "reproducibility": 0.3,
-          "rigor": 0.3
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Section: Abstract; '14Bが4Bに負けた' and '全セル事前登録、評価基準は実験前に凍結' imply systematic evaluation and pre-registration.",
-          "Section: Abstract; 'QLoRA r16 / lr 2e-4 / 2エポック' provides training recipe details."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper focuses on LLM distillation and evaluation, relevant to LLMs and evaluation, but it is abstract-only with limited evidence. The design is systematic but lacks detailed results. The finding that 14B underperforms 4B is interesting but not fully supported. Reproducibility is partially addressed via pre-registration. Generalizability is limited to the specific setup.",
-        "score": 0.23500000000000001,
-        "token_usage": {
-          "completion_tokens": 293,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 499,
-          "prompt_tokens": 2291,
-          "total_tokens": 2584
-        },
-        "topics": [
-          "LLM distillation",
-          "evaluation",
-          "knowledge distillation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-        "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
-      },
-      "published_at": "2026-08-05T07:25:28+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.23500000000000001,
-        "llm_relevance_score": 6.58,
-        "recency_score": 0.9672663923249404,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 9.34726639232494
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:e76932b536e62aeb",
-      "summary": "家庭用のRTX 5080(16GB)一枚で、LLM蒸留の「用量反応試験」をやりました。\n4つの生徒規模(Qwen3 1.7B/4B/8B/14B)×11の学習例数=44セル、全セル事前登録、\n評価基準は実験前に凍結、結果は外れた予測も含めて全部公開します。\n先に一番の見出しから: この条件下では、14Bは4Bに負けました。\n\n 何を測ったか\n\n教師(大きいAI)の作った学習例を「16件、32件、…192件」と刻んで生徒に蒸留し、\n各セルで130本の台本を生成、凍結済みの三重ゲート(機能∧深さ∧無捏造)で\n合格率Qを測定\n訓練レシピ(QLoRA r16 / lr 2e-4 / 2エポック ...",
-      "summary_zh": "本論文報告了一項在單張RTX 5080（16GB）GPU上進行的LLM蒸餾劑量反應實驗，旨在系統性地探討蒸餾數據量與學生模型規模之間的交互作用。研究設計涵蓋四個學生規模（Qwen3 1.7B、4B、8B、14B）與十一個訓練範例數量（從16件到192件），共44個實驗單元，所有條件均事前登錄，評估標準在實驗前凍結，並公開所有結果，包括與預期不符的數據。主要發現是：在此特定設定下，14B模型的表現不如4B模型，凸顯了小型模型在有限數據與計算資源下的優勢。實驗方法以教師模型生成學習範例，每個單元生成130個腳本，並以三重閘門（功能、深度、無捏造）評估合格率。訓練配方採用QLoRA（r16）、學習率2e-4、兩個epoch。研究結果強調了蒸餾數據量的非線性效應，以及模型規模與數據量之間的匹配重要性，對資源受限的實務應用具有指導意義。然而，其限制包括單一教師、特定任務與硬體條件，結果可能無法完全推廣至其他場景，且未提供細節的統計顯著性檢定。儘管如此，該研究提供了實證基礎，挑戰了「越大越好」的直覺，並為在有限算力下進行高效蒸餾提供了重要參考。",
-      "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-      "title_zh": "14B輸給4B——在單張16GB GPU上進行的蒸餾劑量反應完整記錄"
     },
     {
       "arxiv_id": null,
@@ -738,29 +412,37 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.0,
+          "evidence_strength": 0.05,
           "generalizability": 0.1,
           "novelty": 0.1,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
+          "preference_relevance": 0.05,
+          "reproducibility": 0.05,
+          "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "abstract only",
+          "no methodology section",
+          "no quantitative results"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Personal blog-style post on generating development logs with Claude Code; abstract-only contains no technical methodology, no verifiable evidence, no experiments, and no relevance to core research preferences.",
-        "score": 0.025,
+        "rationale": "Casual blog post about using Claude Code to auto-generate development logs. Not a research paper, no technical methodology, no experiments, no quantitative results. Marginal relevance to coding agents but content is subjective anecdote with abstract only. Domain application without rigorous methods.",
+        "score": 0.07,
         "token_usage": {
-          "completion_tokens": 167,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 365,
+          "completion_tokens": 169,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 109,
           "prompt_tokens": 2157,
-          "total_tokens": 2324
+          "total_tokens": 2326
         },
-        "topics": []
+        "topics": [
+          "code generation",
+          "agent",
+          "Japanese LLM"
+        ]
       },
       "primary_link": {
         "link_type": "blog",
@@ -775,13 +457,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.025,
-        "llm_relevance_score": 0.7000000000000001,
-        "recency_score": 0.953534235685135,
+        "llm_raw_score": 0.07,
+        "llm_relevance_score": 1.9600000000000002,
+        "recency_score": 0.9527435206837077,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 9.203534235685133
+        "total_score": 10.46274352068371
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
@@ -790,84 +472,6 @@
       "summary_zh": "這篇文章探討個人開發者在回顧工作時常遇到的「上週到底做了什麼」的困擾，並提出一套利用 Claude Code 自動生成開發日誌的實用方法。作者指出，傳統的 Git 提交訊息（如「fix: typo」或「chore: update deps」）過於瑣碎且缺乏脈絡，難以快速重建一週的開發全貌。為了解決這個問題，作者設計了自動化流程：透過 Claude Code 讀取一定時間範圍內的提交紀錄與相關檔案變更，並依據預先定義的模板，將原始紀錄整理成結構化的日誌摘要，包含功能變更、問題修復、依賴更新等分類。文中強調，這種做法不僅節省了手動整理的時間，更重要的是能捕捉到開發過程中的決策脈絡與思維轉折，讓回顧更具價值。作者也分享了實際使用的觀察，指出生成結果通常具有良好的一致性，且能自然銜接前後文，但在處理大型重構或涉及多個 commit 的複雜議題時，偶爾需要人工補充細節。此外，文章提醒使用者應先確認 Claude Code 的權限設定，避免自動化過程誤觸敏感檔案。整體而言，這套方法為個人開發者提供了一個低門檻、高效率的開發記錄解決方案，讓「上週做了什麼」不再是難題，也為團隊協作中的知識留存提供了參考。",
       "title": "Claude Codeで開発ログを自動生成してみたら、めちゃくちゃ便利だった話",
       "title_zh": "用 Claude Code 自動生成開發日誌，意外超好用的經驗分享"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "mnoda"
-      ],
-      "categories": [],
-      "entities": [
-        "openai"
-      ],
-      "first_seen_at": "2026-08-05T09:03:21.557496+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
-          "url": "https://qiita.com/mnoda/items/49340b76042d1b991ecb"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "This is a casual note about ChatGPT usage limits in Japanese, not a research paper. It lacks methodological content, experimental validation, or novel contributions. It is a user-facing documentation snippet with no relevance to AI/ML research preferences.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 139,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 343,
-          "prompt_tokens": 2135,
-          "total_tokens": 2274
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
-        "url": "https://qiita.com/mnoda/items/49340b76042d1b991ecb"
-      },
-      "published_at": "2026-08-05T06:14:50+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9625334782891353,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 8.762533478289136
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:afdd1dd6b691d20d",
-      "summary": "使用量には複数種類がある\n・週間利用上限に表示される使用量とは何か？\n「使用量は、Codex、Work、Workspace Agents、ChatGPT for Excel で共有されます。Chat の会話は含まれません。」\nとあります。\n・Codex、Work、Work...",
-      "summary_zh": "本文是作者針對 2026 年 8 月 ChatGPT 系列產品使用量上限的實測備忘錄，目的在澄清不同產品間的配額計算與共享規則。文中指出，使用者介面上顯示的「使用量」並非僅指聊天次數，而是涵蓋 Codex、Work、Workspace Agents 與 ChatGPT for Excel 等工具的用量，且這些工具之間共享同一配額，但一般 Chat 對話則不計入。作者進一步記錄了各產品的上限數值、重置週期，以及當達到上限時系統的提示與因應方式，並以實際操作數據佐證。然而，由於該文件僅為抽象摘要，具體數值、測試環境與完整實測流程並未揭露，因此無法確認其普遍性與準確性。此備忘錄的價值在於提醒企業用戶與重度使用者，ChatGPT 生態系的用量管理日趨複雜，不同工作負載（如程式碼生成、文件處理或代理任務）可能互相影響可用額度，從而影響生產力。儘管本摘要未能提供完整證據，但此類實測紀錄對規劃 AI 工具預算與使用策略具有參考意義，尤其在模型與服務快速迭代的背景下，使用者需持續關注官方公告以取得最新限制。",
-      "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
-      "title_zh": "ChatGPT 聊天／工作／Codex 使用量上限備忘錄（2026 年 8 月現況）"
     },
     {
       "arxiv_id": null,
@@ -892,31 +496,33 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.0,
+          "evidence_strength": 0.1,
           "generalizability": 0.1,
           "novelty": 0.1,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.0,
-          "rigor": 0.0
+          "preference_relevance": 0.15,
+          "reproducibility": 0.1,
+          "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "Abstract mentions LLM-Wiki for searching design discussions"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a blog post about using LLM-Wiki for design system discussions. It is a domain application (design system) with no explicit LLM methodology, no quantitative results, no baselines, and only abstract available. Strictly out of scope for language model research.",
-        "score": 0.065,
+        "rationale": "Blog post about applying LLM-based wiki for design system discussion retrieval; lacks technical methodology, evaluation, and quantitative results. Marginal relevance to LLM/NLP, retrieval, and documentation; not a research paper.",
+        "score": 0.12,
         "token_usage": {
-          "completion_tokens": 195,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 448,
+          "completion_tokens": 148,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 64,
           "prompt_tokens": 2240,
-          "total_tokens": 2435
+          "total_tokens": 2388
         },
         "topics": [
-          "design system",
-          "LLM-Wiki"
+          "LLM",
+          "Japanese"
         ]
       },
       "primary_link": {
@@ -932,13 +538,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.065,
-        "llm_relevance_score": 1.82,
-        "recency_score": 0.9496079092263784,
+        "llm_raw_score": 0.12,
+        "llm_relevance_score": 3.36,
+        "recency_score": 0.9488204501177291,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 8.569607909226377
+        "total_score": 10.10882045011773
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -947,894 +553,6 @@
       "summary_zh": "本文為 CYBOZU SUMMER BLOG FES '26 的技術分享，作者所屬的 kDS（kintone Design System）團隊，長期在 kintone、Slack、GitHub、Confluence 等多個平台累積設計相關討論。然而，資訊分散且持續增長，導致過去決策的查找高度依賴成員記憶，形成效率瓶頸與知識流失風險。為解決此問題，團隊導入 LLM-Wiki，將散落各地的討論整合至單一知識庫，並提供具證據來源的檢索功能。文章中說明導入後的具體效益，包括加速決策回溯、降低尋找歷史脈絡的時間成本，以及提升團隊對設計變更的信任度；同時也分享團隊在實際營運此系統時的策略，例如如何確保內容品質、維持更新、以及設計 prompt 以獲得準確且可追溯的答案。作者強調，LLM-Wiki 並非取代設計師的判斷，而是作為輔助工具，協助團隊在快速變動的 AI 時代中，將隱性知識轉化為可查詢的資產。然而，文中未提供量化數據（如減少搜尋時間的百分比），也未討論 LLM 可能產生的幻覺或偏誤對決策的影響，屬於經驗分享而非嚴謹研究。此案例對其他設計系統團隊具有參考價值，展示如何運用生成式 AI 整合分散知識，建立可持續的組織記憶，並強調在設計領域中「人機協作」的重要性，即 AI 負責檢索與整理，人類負責判斷與決策。",
       "title": "散らばった議論を LLM-Wiki でフル活用する AI 時代のデザインシステムのカタチ",
       "title_zh": "以 LLM-Wiki 活用散落討論：AI 時代的設計系統型態"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "quotidia"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.557769+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
-          "url": "https://qiita.com/quotidia/items/ea1b35795cbfaf0451e2"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.05,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "News commentary on OpenAI halting scam accounts; no methodology or research contribution, no technical detail. Mentions ChatGPT but is not a research paper. Out of scope for AI/ML research evaluation.",
-        "score": 0.045000000000000005,
-        "token_usage": {
-          "completion_tokens": 169,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 381,
-          "prompt_tokens": 2173,
-          "total_tokens": 2342
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
-        "url": "https://qiita.com/quotidia/items/ea1b35795cbfaf0451e2"
-      },
-      "published_at": "2026-08-05T04:10:51+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.045000000000000005,
-        "llm_relevance_score": 1.2600000000000002,
-        "recency_score": 0.954281684360938,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 7.764281684360938
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:8c316cadcddddf02",
-      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nOpenAIは2026年7月31日(金)、投資・ロマンス・ギャンブル・法執行機関なりすましの4種類の詐欺にChatGPTを使っていた、カンボジア拠点とみられる詐欺組織のアカウント網を停止したと...",
-      "summary_zh": "本文基於 OpenAI 於 2026 年 7 月 31 日發布的官方報告，整理其取締柬埔寨詐騙集團的細節。這些集團利用 ChatGPT 進行投資、戀愛、賭博及假冒執法機關等四類詐騙，OpenAI 已停止相關帳號網絡。文章以原始資料為依據，梳理出位於波貝（Poipet）的據點、三階段詐騙手法，以及人口販運的指標。此舉顯示大型語言模型（LLM）可能被濫用於跨國詐騙，同時也凸顯 AI 公司在打擊不法使用上扮演的角色，以及技術防護與執法合作的重要性。然而，原始報告可能受限於 OpenAI 的內部視角，未能完整揭露集團規模或受害者人數，且報告中的數據未經獨立驗證，讀者應審慎解讀。這項行動對 AI 安全治理具有指標意義，也提醒各界需持續關注生成式 AI 的雙面性。",
-      "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
-      "title_zh": "OpenAI 打擊柬埔寨詐騙集團：從原始資料梳理運作模式與人口販運跡象"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "gen740"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.624078+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "人間は文章を書くな。論理を書け。",
-          "url": "https://zenn.dev/genf740/articles/3b2c9702-a775-8128-b6fc-ed7d5ce82914"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.05,
-          "novelty": 0.1,
-          "preference_relevance": 0.05,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a non-technical opinion piece about writing with ChatGPT, not a research paper. It has minimal relevance to any preferred topic (only tangential to LLM use), no methodology, evidence, or reproducibility. Domain application and lack of language methodology place it well below 0.20.",
-        "score": 0.04000000000000001,
-        "token_usage": {
-          "completion_tokens": 149,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 450,
-          "prompt_tokens": 2242,
-          "total_tokens": 2391
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "人間は文章を書くな。論理を書け。",
-        "url": "https://zenn.dev/genf740/articles/3b2c9702-a775-8128-b6fc-ed7d5ce82914"
-      },
-      "published_at": "2026-08-05T00:01:31+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.04,
-        "llm_relevance_score": 1.12,
-        "recency_score": 0.9379006998253089,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 7.607900699825309
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:f52bac1c97845b7c",
-      "summary": "!\nこの記事は ChatGPT をインタビュアーとして執筆しています。この記事のすべての文章が、ChatGPT によって生成されたものです。\n\n\n TL;DR\n申請書やレポートでは、人間が一文ずつ書くことより、結論と論理構造を決めることの方が重要だ。\n初稿は AI に任せ、浮いた時間を推敲、一次資料の確認、論理の検証に使えばよい。ただし、主張が曖昧なまま生成文を受け入れると、AI が補った前提に自分の考えを引っ張られる。\n文章化そのものが思考を深める場面もある。今後は、その役割の一部が AI との対話へ移っていくと考えている。\n\n AI には誤字脱字だけを任せる、なんてまだ思っていないか...",
-      "summary_zh": "本文以ChatGPT作為訪談者撰寫，探討在撰寫申請書和報告時，人類應專注於決定結論與邏輯結構，而非逐字書寫。文章主張初稿可交由AI生成，將節省的時間用於推敲、核對原始資料和驗證邏輯。然而，若在主張模糊時直接接受AI生成的內容，可能會被AI所填補的前提誤導自己的想法。文章也承認，將思緒轉化為文字的過程本身有助於深化思考，但未來此角色部分將轉移至與AI的對話中。此觀點挑戰了傳統上僅將AI用於校對錯誤的思維，強調人類應著重於高層次的邏輯建構，並警惕AI生成內容的潛在偏見。本文的價值在於提醒研究者與寫作者重新審視人機協作中的分工，以及思考過程的轉變。雖然文章未提供實證數據，但其論點對於現今AI輔助寫作的普及具有啟發性，尤其指引如何有效利用AI生成初稿，同時保留人類的批判性思考與驗證責任。",
-      "title": "人間は文章を書くな。論理を書け。",
-      "title_zh": "人類不該寫文章，而該寫邏輯。"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:20.791894+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
-          "url": "https://ai-data-base.com/archives/114272"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "No section or page: abstract only, no technical details"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog post; no technical details or methodology. Topic (AI tutoring/helping behavior) tangentially touches agents and safety but lacks LLM-specific content. No evidence, baselines, or results. Out of scope as pure application with no language methodology detail.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 166,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 611,
-          "prompt_tokens": 2403,
-          "total_tokens": 2569
-        },
-        "topics": [
-          "AI tutoring",
-          "agent behavior"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
-        "url": "https://ai-data-base.com/archives/114272"
-      },
-      "published_at": "2026-08-05T02:17:14+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9467819830931571,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 3.75,
-        "total_score": 7.496781983093157
-      },
-      "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:1f9e4d670681c89e",
-      "summary": "<p>AIに「答えは言わないで、ヒントだけちょうだい」と頼んだことはあるでしょうか。学習でも、コードレビューでも、部下の指導支援でも、AIに「教え役」をさせる場面は増えています。 ところが、AIがその役をどう演じているかを測ってみると、人間の先生とはまったく違う行動が観察されました。読み始めた直後に口を挟み、相手が自力で正解しかけていても止まらず、ヒントのつもりで答えの大半を明かしてしまうのです。 なぜそうなるのか。「控えめに助けて」と指示すれば直るのか。そして、直らないとしたら何をすればよいのか。今回は、AIの「助け方」を定量的に測った実験と、その知見をエージェント向けの行動手順に変換した実践例を&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114272\"><span class=\"locked-post\">🔒</span> 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "本文探討一個常見卻令人困擾的現象：當使用者要求AI扮演「教練」或「導師」角色時，AI往往表現出與人類教師截然不同的行為模式。具體而言，AI會在學習者剛開始閱讀或解題時就急著介入，即使對方即將靠自己得出正確答案，也不會停止給出提示，甚至名為「提示」卻實質上洩漏了大部分解答。研究的目的在於量化這種「過度幫助」的程度，並檢驗兩種可能的改善途徑：一是透過更明確的提示詞（如「克制一點」），二是調整系統層面的行為。方法上，研究設計了實驗來測量AI回應中的介入時機、提示資訊量，以及對學習者自主完成問題的影響。初步結果顯示，僅調整提示詞難以從根本上改變AI的過度協助傾向，這可能與AI的訓練目標（如RLHF）偏向立即滿足使用者需求有關，導致其傾向於提供完整資訊而非留白。作者進一步將實驗結論轉化為適用於AI代理（agent）的具體行動準則，例如設定明確的等待時間、分階段按需提示，以及在系統層面加入約束。然而，本文僅摘要了研究動機與部分觀察，缺乏完整的數據細節與嚴謹的統計檢定，因此其結論的穩健性有待後續實證。此研究的重要性在於，它凸顯了AI在教學輔助場景中「過度配合」的潛在風險，提醒開發者與使用者不能僅依賴自然語言指示來塑造AI行為，而需要從模型訓練、介面設計與互動協議著手，才能真正實現「以學習者為中心」的輔助體驗。",
-      "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
-      "title_zh": "🔒 對過度搶先幫忙的AI說「讓我自己慢慢來」：僅靠提示詞不足夠"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ハク（Haku）"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.619058+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
-          "url": "https://zenn.dev/kiritani_r/articles/50227b4711aaa5"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.1,
-          "preference_relevance": 0.2,
-          "reproducibility": 0.0,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is an abstract-only opinion piece discussing integration of SeedRealtime (a multimodal AI) into video editing, focusing on conversational naturalness versus edit decision handoff. It lacks technical methodology, experimental evaluation, and research contributions. It tangentially relates to LLM/agents/multimodal but is not a rigorous study.",
-        "score": 0.14500000000000002,
-        "token_usage": {
-          "completion_tokens": 208,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 463,
-          "prompt_tokens": 2255,
-          "total_tokens": 2463
-        },
-        "topics": [
-          "multimodal",
-          "video",
-          "agents"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
-        "url": "https://zenn.dev/kiritani_r/articles/50227b4711aaa5"
-      },
-      "published_at": "2026-08-05T07:09:52+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.14500000000000002,
-        "llm_relevance_score": 4.0600000000000005,
-        "recency_score": 0.9662190877923043,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 6.826219087792305
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:3fb44b086cad6aa6",
-      "summary": "自分がリアルタイムの音声・映像AIを見るとき、最初に気になるのは「どれだけ自然に会話できるか」ではありません。\n編集の判断を、あとから人に渡せる形で返してくれるかです。\n[2026年8月5日に公開されたSeedRealtime]は、音声・映像・テキストをまとめて扱い、連続する情報にリアルタイムで応答するモデルとして発表されました。画面を見せながら話せるAIは、動画制作にも近づいてきています。\n\nただ、会話が気持ちよく続くことと、編集工程に置けることは同じではありません。自分なら、完成動画をいきなり任せる前に、どこで会話を「制作上の判断」に変えるのかを先に決めます。\n\n 結論：最初は「編集...",
-      "summary_zh": "這篇文章從影片編輯的實務角度出發，探討將即時語音與視覺AI模型應用於製作流程前的規劃要點。作者並未聚焦於SeedRealtime自然對話的能力，而是強調編輯判斷能否以事後可交付的形式回饋給人類。文章指出，該模型於2026年8月5日發布，能同時處理語音、影像與文字，並對連續資訊進行即時回應，讓能邊展示畫面邊對話的AI逐步貼近影片製作需求。然而，作者認為順暢的對話體驗與實際可用於剪輯流程是兩回事。在完全信任AI生成最終影片之前，應優先界定會話轉化為「製作決策」的節點。結論傾向於初期階段應專注於編輯相關的輔助功能，而非直接交付完整成品。文章雖點出即時對話與剪輯應用之間的落差，但未提供具體實驗數據或系統性比較，屬於觀點性討論。此議題的重要性在於，隨著多模態即時模型興起，創作者需釐清人機協作邊界，確保AI的建議能轉化為可執行的剪輯參數與流程，避免過度依賴對話而失去對最終作品的掌控。",
-      "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
-      "title_zh": "將SeedRealtime引入影片剪輯前，比對話更需先決定的關鍵事項"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "edom18"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.623547+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "GPT-Live の記事を解説してみる",
-          "url": "https://zenn.dev/edom18/articles/gpt-live-memo"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is a personal blog-style commentary in Japanese on OpenAI's GPT-Live, not a research paper. No methodology, experiments, or quantifiable results. Topics like speech/audio and LLM are mentioned but the content is anecdotal and lacks any scientific contribution, making it out of scope with negligible research quality.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 155,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 437,
-          "prompt_tokens": 2229,
-          "total_tokens": 2384
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "GPT-Live の記事を解説してみる",
-        "url": "https://zenn.dev/edom18/articles/gpt-live-memo"
-      },
-      "published_at": "2026-08-05T01:08:34+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9422779829125271,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 6.492277982912527
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:9989e85aa580bfd5",
-      "summary": "はじめに\nOpenAI から画期的な音声モデル GPT-Live がリリースされましたね。\nもう本当に人と話している感じがして、あまりにも楽しくてほとんど毎日、なにかしら GPT-Live と話をしています。\n特にオススメなのが AI グラスを使って会話すると音質と、耳をふさがない感じでの会話で、まるで近くにいる AI と会話している感じになります。AI グラス持っている人はぜひ試してみてください。（周りからへんな人の目で見られるかもしれませんが・・ｗ）\nさて、そんな GPT-Live。自分は ChatGPT が出て、なんて自然な文章を書くんだろう、と思ったときと似たような衝撃を受...",
-      "summary_zh": "本文是作者對 OpenAI 新發布的語音模型 GPT-Live 的個人體驗分享。文章首先表達了作者對該模型的興奮之情，認為其對話體驗極其自然，幾乎每天都與之交流。作者特別推薦搭配 AI 眼鏡使用，認為這樣能提供更佳的沉浸式音質與開放式聽覺體驗，彷彿與身邊的 AI 對話，但也幽默地提醒可能引來旁人異樣眼光。接著，作者將 GPT-Live 帶來的震撼與早期 ChatGPT 出現時的感受相比擬，強調其在自然語言生成方面的突破。然而，文章僅止於此，並未深入探討技術細節如模型架構、訓練方法、評估結果或局限性，也缺乏具體的實驗證據。其價值主要在於提供用戶視角的即時反饋，顯示該模型在實際應用中的吸引力，但作為學術或技術文獻則資訊不足。讀者若想了解 GPT-Live 的技術原理與效能，需參考其他更完整的資料。",
-      "title": "GPT-Live の記事を解説してみる",
-      "title_zh": "解說 GPT-Live 的文章"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "flat-face"
-      ],
-      "categories": [
-        "Cloud Composer"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:14.814616+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "abeja-tech-blog-llm",
-          "tier": 1,
-          "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
-          "url": "https://tech-blog.abeja.asia/entry/managed-airflow-recovery-202608"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.01,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Japanese-language operations report on Cloud Composer Redis OOM; no LLM/NLP/Transformer/reasoning content, no methodology, no results, no evidence, and only abstract available.",
-        "score": 0.004,
-        "token_usage": {
-          "completion_tokens": 166,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 455,
-          "prompt_tokens": 2247,
-          "total_tokens": 2413
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "abeja-tech-blog-llm",
-        "tier": 1,
-        "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
-        "url": "https://tech-blog.abeja.asia/entry/managed-airflow-recovery-202608"
-      },
-      "published_at": "2026-08-05T05:44:02+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.004,
-        "llm_relevance_score": 0.112,
-        "recency_score": 0.9604769262793945,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 0.0,
-        "total_score": 4.5724769262793945
-      },
-      "section": null,
-      "source_name": "ABEJA Tech Blog (LLM)",
-      "story_id": "fallback:650b8783de11cd66",
-      "summary": "事象 最初に観測された事象 その他発生していた事象 事象発生の原因 対処 暫定対応 - Redisメモリの増設 リカバリ - 大量の「未確認の Celery タスク」の処理 恒久対応 - 構成変更 予防 - サイジング・アラート設定 We Are Hiring! ABEJA Insight for Retailの開発・運用を担当している平原です。 検証環境のワークフローエンジンであるCloud Composer 2（Managed Airflow 2）でアップグレードの検証をしようとしたところ、タスクキュー（Redis）のOOMにより停止していたため、復旧対応をした時のログを記事に残しておこう…",
-      "summary_zh": "本文記錄了在驗證環境中，使用 Cloud Composer 2（Managed Airflow 2）作為工作流程引擎時，因任務佇列 Redis 發生記憶體不足（OOM）而導致 DAG 停止的實際案例與對應處理過程。問題最初於嘗試進行升級驗證時被發現，系統已停止運作。除了主要的事件外，也觀察到其他伴隨事件，包括大量未確認的 Celery 任務堆積。根本原因在於 Redis 記憶體耗盡，可能是因為任務佇列累積過多資料或記憶體配置不足。作者採取了分階段對策：暫定對應是增加 Redis 記憶體，並處理大量未確認的 Celery 任務以促進恢復；恆久對應則調整架構配置，以降低單點失敗風險；預防措施包括重新評估資源規模（Sizing）並設定警報，以便及早發現類似情況。這篇文章的價值在於提供實務上的故障排除流程與具體行動步驟，對於使用 Managed Airflow 服務的團隊具有參考意義，強調監控任務佇列健康狀態和資源規劃的重要性。然而，內容基於特定環境（驗證環境）和特定雲端服務，因此結果可能不適用於所有部署，且文中未提供詳細的效能數據或比較分析，屬經驗分享性質。",
-      "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
-      "title_zh": "驗證環境中 Cloud Composer 2（Managed Airflow 2）因 Redis 記憶體不足（OOM）導致 DAG 停止的處理記錄"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "lyr"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.299553+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "あなたがボトルネックです",
-          "url": "https://qiita.com/lyr/items/0fd3ee70b4f4d4f979aa"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Content is a brief blog excerpt about building measurement harnesses, unrelated to AI/ML research and lacks technical substance.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 155,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 348,
-          "prompt_tokens": 2140,
-          "total_tokens": 2295
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "あなたがボトルネックです",
-        "url": "https://qiita.com/lyr/items/0fd3ee70b4f4d4f979aa"
-      },
-      "published_at": "2026-08-05T07:01:21+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.965647800783458,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 2.765647800783458
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:16ebff2beb87702e",
-      "summary": "この記事は、自社ブログの LYR Performance Note #006 に掲載したものの転載です。\n\nハーネスという「精神と時の部屋」\n4か月で122個の計測ハーネスを作った。厳密さのためではない。速度のためだ。\n計測ファーストの正体は精度ではなくサイクルタイム...",
-      "summary_zh": "這篇文章源自作者自營部落格的 LYR Performance Note #006，內容聚焦於「計量優先」的工程實踐哲學。作者在四個月內製作了122個計量工具（harness），強調其目的並非追求嚴謹性，而是為了縮短開發循環時間。文章指出，在機器學習或系統開發中，真正的瓶頸往往不是演算法或基礎設施，而是人的決策流程與反饋速度。作者主張透過快速建立大量計量工具，讓每次修改都能立即獲得衡量指標，進而加速迭代。這種做法看似粗糙，實則透過提升反饋頻率來驅動整體效率。文章雖未提供具體的實驗數據或嚴謹的統計分析，但以實際案例說明了計量工具在實務上的價值。其限制在於偏重個人經驗與特定情境，可能不適用於所有團隊或專案。儘管如此，此觀點對於當前重視模型效能與部署速度的 AI 領域具有啟發性：過度追求完美衡量可能反而阻礙進展，適時採用輕量級計量工具能更快識別並解除效能瓶頸，進而提升團隊的整體生產力。這篇文章提醒讀者，在複雜系統中，人的決策延遲往往是比技術限制更關鍵的瓶頸所在。",
-      "title": "あなたがボトルネックです",
-      "title_zh": "你就是瓶頸"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "KeEem"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.619983+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
-          "url": "https://zenn.dev/uixhero_jp/articles/zenn-ai-usable-designsystem"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is abstract only and out of scope: it is a non-technical industry blog post about design systems for AI, lacking methodology, evaluation, and relevance to LLM research. Contains no rigorous experiments or quantitative results, and does not address core AI/ML topics.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 182,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 471,
-          "prompt_tokens": 2263,
-          "total_tokens": 2445
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
-        "url": "https://zenn.dev/uixhero_jp/articles/zenn-ai-usable-designsystem"
-      },
-      "published_at": "2026-08-05T01:46:57+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.9447929839910301,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 2.7447929839910303
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:28622329a11d555e",
-      "summary": "AIに画面を組ませる開発をしていると、あることに気づきます。デザインシステムを渡しても、AIが使いこなせないことがある。 コンポーネントはあるのに手組みを始めたり、存在しないコンポーネントを勝手に発明したり、間違ったコンポーネントを推薦してきたり。\n原因の多くは、デザインシステム側にあります。人間なら「察して」補える余白が、AIには補えないからです。私は自作のデザインシステム（GUNJO）で、予備知識ゼロのAIに、公開docsだけを渡して実業種の画面を175回組ませるという検証をやってきました。そこで「AIが一発で使える」ために効いた具体策を、5つに整理します。\n\n 1. ドキュメントだ...",
-      "summary_zh": "本文作者在開發由AI生成畫面的流程時，發現即使提供了設計系統，AI仍常常無法正確使用：有時會跳過既有元件而手寫樣式，有時會發明不存在的元件，有時則推薦錯誤的元件。作者認為問題多半出在設計系統本身，因為人類能靠「默契」補足的模糊空間，AI無法自行推斷。為了驗證這個觀點，作者使用自己開發的設計系統GUNJO，僅提供公開文件給毫無背景知識的AI，要求它產生實際業種的畫面，共進行了175次測試。基於這些測試，作者整理出五個能讓AI「一次就用對」的具體策略。這些策略著重於讓文件與元件定義更明確、更結構化，例如：詳細描述元件的使用情境與限制、提供正反面範例、統一命名規則、避免依賴隱含的設計慣例，以及建立可驗證的回饋機制。作者指出，若設計系統能將人類預設的「常識」轉化為AI可讀取的顯性規則，就能大幅減少AI的誤用與幻想。本文的價值在於提供實務上可操作的設計原則，幫助開發者調整設計系統以適應AI協作。但文章的證據主要來自單一設計系統與特定測試條件，175次的測試雖然具規模，但未揭露測試的具體產業別與成功率，也未比較不同文件格式或提示策略的差異，因此結論的推廣性有限。對於正在導入AI輔助開發的團隊，此文提供了值得參考的調整方向，但實際效果仍需依自身專案特性驗證。",
-      "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
-      "title_zh": "讓AI一次就能用對設計系統的5個具體策略——GUNJO的實作經驗"
-    }
-  ],
-  "run_date": "2026-08-05",
-  "run_id": "33ce2c3f-7c27-47d2-bb5d-98430fac330d",
-  "run_info": {
-    "error_summary": null,
-    "finished_at": "2026-08-06T00:00:00+00:00",
-    "items_total": 21,
-    "run_id": "33ce2c3f-7c27-47d2-bb5d-98430fac330d-2026-08-05",
-    "started_at": "2026-08-05T00:00:00+00:00",
-    "stories_total": 21,
-    "success": true
-  },
-  "sources_status": [],
-  "top5": [
-    {
-      "arxiv_id": null,
-      "authors": [
-        "y034112"
-      ],
-      "categories": [
-        "マルチモーダル",
-        "センサー",
-        "LLM"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:14.815001+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "abeja-tech-blog-llm",
-          "tier": 1,
-          "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-          "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.4,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions SensorLLM and HAR from motion sensors"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is a blog-style technical report on applying SensorLLM for human activity recognition from motion sensors. It mentions LLM and multimodal but focuses on sensor data, which is an application domain. Only abstract available, no methods, baselines, or quantitative results. Limited relevance to core LLM topics; Japanese language present but not a core NLP focus. Scores low due to lack of evidence and rigor.",
-        "score": 0.24500000000000002,
-        "token_usage": {
-          "completion_tokens": 197,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 489,
-          "prompt_tokens": 2281,
-          "total_tokens": 2478
-        },
-        "topics": [
-          "LLM",
-          "multimodal",
-          "sensor",
-          "HAR"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "abeja-tech-blog-llm",
-        "tier": 1,
-        "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-        "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
-      },
-      "published_at": "2026-08-05T04:58:09+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.24500000000000002,
-        "llm_relevance_score": 6.86,
-        "recency_score": 0.957421388320542,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 4.0,
-        "total_score": 15.317421388320543
-      },
-      "section": null,
-      "source_name": "ABEJA Tech Blog (LLM)",
-      "story_id": "fallback:bfc13703b7a3d145",
-      "summary": "こんにちは！株式会社 ABEJA で ABEJA Platform 開発を行っている坂井（GitHub : @Yagami360）です。 LLM のマルチモーダル化は、この数年で テキスト → 画像 → 動画 → 音声 という風に扱えるモダリティをどんどん広げてきました。個人的には、この流れで次に重要になるのはセンサーデータも含めたマルチモーダル化だと考えています。温度・振動・電力・加速度・生体信号などのような「物理世界の情報」を基盤モデルが直接あるいは間接的に扱えるようになると、現実世界を観測して物理世界での意思決定・行動するタイプの AI ——いわゆるフィジカル AI—— の中核である「知…",
-      "summary_zh": "本文由 ABEJA 公司的開發者撰寫，探討大型語言模型（LLM）多模態化的趨勢與未來方向。作者觀察到，近年來 LLM 已能處理文字、影像、影片與音訊，而下一步關鍵在於納入感測器資料，如溫度、振動、電力、加速度與生體訊號等物理世界資訊。此舉能讓基礎模型直接或間接理解現實環境，進而支援所謂的『物理 AI』——能觀測真實世界並據以決策與行動的人工智慧。文章以 SensorLLM 為例，說明如何利用動作感測器資料進行人類行為辨識（HAR）。雖然摘要僅提供開頭，但可推測作者會介紹 SensorLLM 的架構與方法，可能涉及將感測器時間序列資料轉換為 LLM 可處理的格式，並透過 prompting 或 fine-tuning 使模型具備 HAR 能力。文章應會展示實驗結果或應用案例，以驗證其可行性。然而，此技術目前可能面臨感測器資料雜訊、標註成本高、實時性與模型泛化等挑戰，且硬體部署資源需求亦需考量。這項研究意義在於，將感測器資料融入 LLM 能促進物理 AI 的發展，使 AI 更貼近實際生活應用，例如智慧家庭、健康監測或工業安全等場景。作者身為平台開發者，觀點具實務性，但讀者需注意摘要內容有限，具體方法與數據尚待原文確認。",
-      "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-      "title_zh": "感測器 ｘ LLM 的多模態化：使用 SensorLLM 從動作感測器進行人類行為辨識（HAR）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "daishir0"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.620171+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-          "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.5,
-          "reproducibility": 0.1,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "abstract_only",
-          "No formal methodology or baselines mentioned"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a blog-style comparison of local LLMs on M2 Ultra, which is relevant to local LLM deployment but focuses on hardware performance rather than novel research. It provides hands-on benchmarking but lacks methodological rigor, baselines, and formal evaluation. The relevance to LLM and Japanese LLM topics is moderate, but the paper is not a scientific contribution, and generalizability is limited to specific hardware. The content is mostly practical, with no theoretical novelty or strong evidence.",
-        "score": 0.315,
-        "token_usage": {
-          "completion_tokens": 218,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 471,
-          "prompt_tokens": 2263,
-          "total_tokens": 2481
-        },
-        "topics": [
-          "ローカルLLM",
-          "LLM",
-          "Local LLM",
-          "ベンチマーク",
-          "M2 Ultra"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-        "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
-      },
-      "published_at": "2026-08-05T01:46:35+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.315,
-        "llm_relevance_score": 8.82,
-        "recency_score": 0.9447689270685526,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.314768927068553
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:a13af770e0c92a15",
-      "summary": "はじめに\n「データを外に出せないシステムで、生成AIを使いたい」——この要件、最近ますます増えていると思います。私も自前のサービス群にLLMを組み込むにあたり、API課金と機密性の両面から、オンプレで完結するローカルモデルを本気で選定することにしました。\nこの記事では、Mac Studio（M2 Ultra / 64GB）上でオープンウェイトの4モデルを同一条件でテストした実測結果を、生の出力例つきで比較します。ベンチマークスコアの転載ではなく、全部手元で流した一次データです。\n\n 想定読者\n\nオンプレ・クローズド環境でのシステム開発にLLMを組み込みたい方\n「結局どのモデルをpul...",
-      "summary_zh": "本文探討在資料無法外送的封閉環境中，如何選擇合適的本地大型語言模型（LLM）。作者基於自身服務整合LLM的需求，考量API收費與機密性，決定在Mac Studio（M2 Ultra / 64GB）上，對四款開放權重模型進行同條件的實測比較。文章強調提供第一手實測資料，而非轉載基準測試分數，並附上生輸出範例。主要內容包括：比較不同模型在相同硬體與提示下的回應品質、速度與穩定性，旨在協助開發者在類似環境中做出模型選擇。作者也指出了測試環境的特定性（M2 Ultra），因此結果可能無法完全推廣至其他硬體配置。本文的重要性在於提供實際運行數據，填補了理論基準與實際部署之間的落差，尤其對需要本地部署、重視資料隱私的企業或開發者具有參考價值。然而，該文章僅摘要，未提供完整比較細節與具體評估指標，且未揭露模型版本、量化方式或測試提示的完整性，因此讀者應視為初步參考，而非最終結論。若要做出嚴謹選擇，應進一步查閱原始文章或自行複現測試。",
-      "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-      "title_zh": "封閉環境可用的本地LLM實測比較：四款模型在M2 Ultra上的真實表現"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "wkn"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.623876+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
-          "url": "https://zenn.dev/canly/articles/3ebef2d4f7e3d4"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.35,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Title and abstract mention CS inquiry support agent and avoiding sending personal information to LLM; no technical details or results."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a business-oriented case study on building a CS support agent without sending personal information to an LLM. It touches on agent and workflow design, but provides only an abstract with no technical details, experiments, or evaluations. It lacks novelty, rigor, and evidence. Domain application with limited language methodology, but relevant to agents and Japanese LLM usage, so score capped at 0.24.",
-        "score": 0.22499999999999998,
-        "token_usage": {
-          "completion_tokens": 254,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 488,
-          "prompt_tokens": 2280,
-          "total_tokens": 2534
-        },
-        "topics": [
-          "Agents & Tool Use",
-          "Japanese LLM & NLP"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
-        "url": "https://zenn.dev/canly/articles/3ebef2d4f7e3d4"
-      },
-      "published_at": "2026-08-05T01:00:05+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.22499999999999995,
-        "llm_relevance_score": 6.299999999999999,
-        "recency_score": 0.9417230312409592,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 13.041723031240958
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:9ecc07c4141e349d",
-      "summary": "カンリーで福利厚生サービス「カンリー福利厚生」の開発をしている小泉です。\n「カンリー福利厚生」は、顧客企業の従業員がメールアドレスと従業員番号で登録して使うサービスです。\n「勤務先が管理する番号で本人確認をする」この方式のサービスには、業種を問わず共通の運用テーマがあります。\n登録時の番号の入力間違いや、雇用区分の変更に伴う番号の変わり目で、登録やログインにつまずく方が一定数現れることです。\n1件ごとの対応は定型に近いのに、アカウントの調査と勤務先企業への確認往復があるため、CSの対応時間は静かに積み重なっていきます。\nこの定型的な往復を自動化して、CSの仕事を「確認と承認」だけに絞るこ...",
-      "summary_zh": "本文由開發福利服務「カンリー福利厚生」的工程師撰寫，旨在解決客戶服務（CS）處理登入與註冊問題時，因需驗證個人資訊而耗費大量時間的痛點。該服務仰賴顧客企業的員工以電子郵件與員工編號註冊，但員工可能在輸入編號時出錯，或於僱用類型變更導致編號改變時遭遇登入障礙。這類問題雖屬定型流程，卻需進行帳戶調查並與客戶企業往返確認，因而累積沈重的CS處理時間。為解決此困境，作者提出建構一個能自動化定型來回流程的代理，使CS人員僅需專注於「確認與核准」。其方法核心在於，避免將個人資訊直接傳遞給大型語言模型（LLM），以防止敏感資料外洩。具體而言，系統可能採用去識別化或抽象化技術，將使用者資料轉換為不具直接辨識性的形式後再交由LLM處理，同時保留足夠的上下文以供判斷。此設計兼顧了自動化的效率與資料隱私的安全性。文中雖未提供量化實驗數據，但從實務經驗出發，強調在法規與信任日趨嚴格的環境下，LLM代理需在功能與隱私間取得平衡。此方法的意義在於，提供了一個可借鏡的範例，說明如何在企業客服場景中導入AI自動化，同時符合資料保護原則，並減輕客服人員的負擔，使其能投入更高價值的確認與決策工作。然而，文章僅限於概念性描述，缺乏對系統架構、效果評估或潛在風險的詳細分析，讀者需注意其驗證程度的不足。",
-      "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
-      "title_zh": "在不向LLM傳遞個人資訊的前提下，建構客戶服務（CS）諮詢對應代理"
     },
     {
       "arxiv_id": null,
@@ -1861,12 +579,12 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.05,
-          "novelty": 0.05,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.05,
-          "rigor": 0.05
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
         },
         "confidence": 1.0,
         "evidence": [],
@@ -1874,19 +592,16 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only content on Claude Code customization features. Touches agent tooling and LLM application but is a blog post listing features without evaluation, methods, or evidence. Lacks research contribution, quantitative results, and rigorous analysis. Primarily descriptive and tool-specific.",
-        "score": 0.15,
+        "rationale": "Abstract only, non-technical overview of Claude Code customization features; no research methodology, experiments, or contributions; no evidence of relevance to LLM research, Japanese NLP, or any core topic; content is a casual blog-style description without rigorous evaluation or novelty.",
+        "score": 0.0,
         "token_usage": {
-          "completion_tokens": 156,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 370,
+          "completion_tokens": 147,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 114,
           "prompt_tokens": 2162,
-          "total_tokens": 2318
+          "total_tokens": 2309
         },
-        "topics": [
-          "Agents & Tool Use",
-          "LLM"
-        ]
+        "topics": []
       },
       "primary_link": {
         "link_type": "blog",
@@ -1901,13 +616,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.15,
-        "llm_relevance_score": 4.2,
-        "recency_score": 0.9715141999506008,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9707085751253438,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 12.971514199950601
+        "total_score": 8.770708575125344
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -1943,7 +658,7 @@
           "evidence_strength": 0.1,
           "generalizability": 0.2,
           "novelty": 0.1,
-          "preference_relevance": 0.5,
+          "preference_relevance": 0.15,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
@@ -1953,17 +668,17 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract only, practical blog-style on using LangSmith for prompt evaluation and latency debugging; touches LLM applications but lacks technical depth, novelty, and evidence; out-of-scope for research standards, low scores across rigor and evidence.",
-        "score": 0.27,
+        "rationale": "Abstract only mentions using LangSmith for prompt evaluation and latency debugging in LLM applications; lacks technical depth and empirical evidence. Out of scope for core AI/ML methodologies, limited novelty and rigor.",
+        "score": 0.13,
         "token_usage": {
-          "completion_tokens": 154,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 365,
+          "completion_tokens": 188,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 109,
           "prompt_tokens": 2157,
-          "total_tokens": 2311
+          "total_tokens": 2345
         },
         "topics": [
-          "LLM application",
+          "LLM",
           "prompt evaluation",
           "latency debugging"
         ]
@@ -1981,13 +696,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.27,
-        "llm_relevance_score": 7.5600000000000005,
-        "recency_score": 0.9639660891038228,
+        "llm_raw_score": 0.13,
+        "llm_relevance_score": 3.64,
+        "recency_score": 0.9631667235236516,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 2.25,
-        "total_score": 12.573966089103823
+        "total_score": 8.653166723523652
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -1996,6 +711,1297 @@
       "summary_zh": "本文介紹了在大型語言模型應用程式開發過程中，如何利用 LangSmith 平台進行提示詞（Prompt）的評估與延遲（Latency）的除錯。文章首先指出，在 LLM 應用程式中，提示詞的微調（Prompt Engineering）是影響輸出品質的關鍵因素，但同時也需要關注系統的回應速度與效能，因此需要一個整合性的工具來同時監控與優化這兩個面向。文中以 NKKTech Global 技術團隊的實務經驗為基礎，詳細說明了 LangSmith 的功能，包括追蹤（Tracing）每次 API 呼叫的詳細資訊、紀錄輸入與輸出、計算延遲時間，以及建立評估資料集來自動化測試不同的提示詞版本。透過這些功能，開發者可以比較不同提示詞在回應品質與速度上的表現，並進一步找出效能瓶頸，例如是模型推理時間過長，或是外部工具呼叫的延遲。文中也討論了如何設定評估指標（如正確性、相關性）以及如何視覺化檢視除錯結果。然而，受限於摘要內容，文章並未提供具體的實驗數據或比較基準，也未深入探討 LangSmith 的侷限性，例如對於非常複雜或非標準的應用架構可能支援有限。儘管如此，這篇文章的價值在於提供了一個實用的方法論，強調了在 LLM 應用開發中，除了追求模型輸出品質外，也必須重視系統效能，並以系統化的方式進行評估與除錯。對於開發者而言，這是一個值得參考的實務指南。",
       "title": "LangSmithを活用した、LLMアプリケーションのプロンプト評価とレイテンシ（遅延）のデバッグ手法",
       "title_zh": "利用 LangSmith 進行 LLM 應用程式的提示詞評估與延遲除錯方法"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:20.791498+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
+          "url": "https://ai-data-base.com/archives/114251"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; lacks technical content, methods, or evidence. Topic touches AI agents and skills but no concrete LLM methodology. Not a rigorous scientific paper.",
+        "score": 0.04000000000000001,
+        "token_usage": {
+          "completion_tokens": 174,
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 67,
+          "prompt_tokens": 2371,
+          "total_tokens": 2545
+        },
+        "topics": [
+          "AI agent",
+          "skills",
+          "performance evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
+        "url": "https://ai-data-base.com/archives/114251"
+      },
+      "published_at": "2026-08-05T06:40:11+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.04,
+        "llm_relevance_score": 1.12,
+        "recency_score": 0.9634298466647034,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 8.633429846664704
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:51d62b28e9f50368",
+      "summary": "<p>AIエージェントに「スキル」と呼ばれる手順書を追加する運用が一般的になってきました。業務のやり方をあらかじめ文書化して渡しておくと、エージェントの成績が平均的に向上すると報告されてきたためです。 ところが、その平均値の内訳を調べた検証から、見過ごせない事実が報告されました。スキルを追加したせいで、これまで解けていた問題が解けなくなるケースが大量に発生していたのです。 新たに解けるようになった問題と、解けなくなった問題。この差し引きを数千回の実行で数え上げると、何が見えてくるのでしょうか。スキルを導入したり自作したりしている方に直結する内容です。 プレミアム会員限定コンテンツです 無料会員でもで&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114251\"><span class=\"locked-post\">🔒</span> AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "summary_zh": "本文報導了一項針對AI代理（AI agent）的實證研究，聚焦於爲代理添加「技能」（即預先撰寫的任務執行步驟文件）所帶來的影響。過去的研究普遍顯示，提供此類技能文件能平均提升代理的任務表現，因此成爲實務上常見的做法。然而，本研究進一步剖析了平均表現背後的分佈，發現一個令人擔憂的現象：在加入技能後，部分原本代理能成功解決的問題反而變得無法解決，且此類案例數量相當可觀。研究團隊透過數千次的執行實驗，詳細統計了因新增技能而「新解決」與「新失敗」的任務數量，並比較其差異。結果顯示，雖然技能確實能幫助代理應對某些新情境，但也可能干擾其原有的決策邏輯，導致性能在特定任務上顯著退化。作者指出，這突顯了技能設計的雙面性：不當的技能內容或過度僵化的步驟，可能限制了代理的靈活性，尤其在面對與技能描述略有出入的情況時，更容易觸發錯誤。研究也提醒，僅依賴平均分數評估代理效能是危險的，需進一步分析個別任務的變化。儘管本文提供的證據來自特定實驗設定，仍對實務上如何設計與部署技能有重要參考價值，尤其對於自行編寫技能的使用者而言，應重視技能可能引入的偏見及其對魯棒性的影響。",
+      "title": "🔒 AIエージェントにスキルを足すと「出来るものも出来なくなる」ことがある【著者コメント掲載】",
+      "title_zh": "爲AI代理添加技能可能導致本可解決的問題反而無法解決【含作者評論】"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Nihonbashi AI Lab"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.619278+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
+          "url": "https://zenn.dev/nihonbashi/articles/llm-time-estimate-human-hours"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an opinion piece discussing coding agent time estimates with anecdotal evidence; it lacks empirical measurement, rigorous methods, and reproducibility, and is not a research contribution. It touches on agents and coding but with minimal depth.",
+        "score": 0.065,
+        "token_usage": {
+          "completion_tokens": 178,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 96,
+          "prompt_tokens": 2272,
+          "total_tokens": 2450
+        },
+        "topics": [
+          "agents",
+          "coding"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
+        "url": "https://zenn.dev/nihonbashi/articles/llm-time-estimate-human-hours"
+      },
+      "published_at": "2026-08-05T05:40:15+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.065,
+        "llm_relevance_score": 1.82,
+        "recency_score": 0.9594283489275354,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.329428348927536
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:2aa5e406472bf121",
+      "summary": "はじめに\nコーディングエージェントに作業を頼むと、着手前に見積もりが返ってくることがあります。「フェーズ1に2〜3日、フェーズ2に1〜2日、合計で5〜8日」。そして実際に走らせると、1時間で終わる。\nこの現象について、ネット上には体験談が大量にあります。一方で「なぜそうなるのか」を、測定された事実だけで説明した日本語の記事はあまり見かけません。推測と実測が混ざったまま流通しているのが現状です。\nこの記事では、公開されている研究・提供者の検証・一次報告を整理して、次の3点をはっきりさせます。\n\n何が実際に測定されていて、何がまだ推測なのか\n効果が数字で確認されている対策は何か（3つし...",
+      "summary_zh": "本文探討使用AI編程代理時常見的現象：代理在著手前給出估計，例如「第一階段2～3天，第二階段1～2天，合計5～8天」，但實際運行卻僅需1小時。作者指出，網路上雖有大量經驗談，但缺乏以測量事實為基礎的日文說明，導致推測與實測混雜流傳。文章旨在整理公開研究、提供者驗證與一次報告，釐清三點：何為實際測量結果、何為推測；哪些對策有數字證實有效（文中提及三項，但具體內容未在摘要中詳述）；並以此為基礎，確立討論基準。方法上，作者不採用臆測，而是聚焦於可驗證的數據與實證來源，試圖將主觀感受與客觀指標分離。主要證據包括公開的基準測試結果與業界報告，但文章僅提供摘要，未列出具體數字或研究名稱，因此讀者需參閱原始文獻以獲得完整數據。局限性在於，可用數據可能受限於特定環境或代理版本，且估計偏差可能因任務類型而異，故結論未必適用於所有情境。然而，此討論對AI開發者與使用者具有重要意義：若未區分代理內部時間估計與實際牆鐘時間，可能誤導專案規劃與資源分配。透過強調「已測量的事實」，本文試圖建立更嚴謹的評估框架，減少對代理輸出時間的過度信任，並推動更透明的效能報告。此類探究有助於改善人機協作中的期望管理，具有實際應用價值。",
+      "title": "AI エージェントの「2週間かかります」は、誰の2週間なのか ― 測定されている事実を並べる",
+      "title_zh": "AI代理的「需要兩週」究竟是指誰的兩週？——羅列已測量的事實"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "quotidia"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.557769+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
+          "url": "https://qiita.com/quotidia/items/ea1b35795cbfaf0451e2"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.0,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "News commentary on OpenAI disrupting a Cambodia-based scam network using ChatGPT. No LLM methodology, benchmarks, or technical contribution; only abstract mentions scam types. Fails both relevance (scam organization stopping is tangential to AI safety, not core LLM research) and quality (no rigor, evidence, or reproducibility). Pure domain application with no language methodology, capped at 0.20. Score reflects minimal novelty and generalizability but near-zero technical merit.",
+        "score": 0.060000000000000005,
+        "token_usage": {
+          "completion_tokens": 181,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 125,
+          "prompt_tokens": 2173,
+          "total_tokens": 2354
+        },
+        "topics": [
+          "AI safety"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
+        "url": "https://qiita.com/quotidia/items/ea1b35795cbfaf0451e2"
+      },
+      "published_at": "2026-08-05T04:10:51+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.060000000000000005,
+        "llm_relevance_score": 1.6800000000000002,
+        "recency_score": 0.9534903495402546,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 8.183490349540255
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:8c316cadcddddf02",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nOpenAIは2026年7月31日(金)、投資・ロマンス・ギャンブル・法執行機関なりすましの4種類の詐欺にChatGPTを使っていた、カンボジア拠点とみられる詐欺組織のアカウント網を停止したと...",
+      "summary_zh": "本文基於 OpenAI 於 2026 年 7 月 31 日發布的官方報告，整理其取締柬埔寨詐騙集團的細節。這些集團利用 ChatGPT 進行投資、戀愛、賭博及假冒執法機關等四類詐騙，OpenAI 已停止相關帳號網絡。文章以原始資料為依據，梳理出位於波貝（Poipet）的據點、三階段詐騙手法，以及人口販運的指標。此舉顯示大型語言模型（LLM）可能被濫用於跨國詐騙，同時也凸顯 AI 公司在打擊不法使用上扮演的角色，以及技術防護與執法合作的重要性。然而，原始報告可能受限於 OpenAI 的內部視角，未能完整揭露集團規模或受害者人數，且報告中的數據未經獨立驗證，讀者應審慎解讀。這項行動對 AI 安全治理具有指標意義，也提醒各界需持續關注生成式 AI 的雙面性。",
+      "title": "OpenAIのカンボジア詐欺組織停止報告を一次資料から整理。ポイペト拠点・手口3段階・人身売買の指標",
+      "title_zh": "OpenAI 打擊柬埔寨詐騙集團：從原始資料梳理運作模式與人口販運跡象"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "gen740"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.624078+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "人間は文章を書くな。論理を書け。",
+          "url": "https://zenn.dev/genf740/articles/3b2c9702-a775-8128-b6fc-ed7d5ce82914"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Essay on writing style, not a research paper. No methodology, experiments, or technical content. Mentions AI/ChatGPT only as interview tool, no NLP/LLM technical contribution. Out of scope for AI/ML research; purely opinion piece.",
+        "score": 0.04000000000000001,
+        "token_usage": {
+          "completion_tokens": 142,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 66,
+          "prompt_tokens": 2242,
+          "total_tokens": 2384
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "人間は文章を書くな。論理を書け。",
+        "url": "https://zenn.dev/genf740/articles/3b2c9702-a775-8128-b6fc-ed7d5ce82914"
+      },
+      "published_at": "2026-08-05T00:01:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.04,
+        "llm_relevance_score": 1.12,
+        "recency_score": 0.9371229488799869,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 7.6071229488799865
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:f52bac1c97845b7c",
+      "summary": "!\nこの記事は ChatGPT をインタビュアーとして執筆しています。この記事のすべての文章が、ChatGPT によって生成されたものです。\n\n\n TL;DR\n申請書やレポートでは、人間が一文ずつ書くことより、結論と論理構造を決めることの方が重要だ。\n初稿は AI に任せ、浮いた時間を推敲、一次資料の確認、論理の検証に使えばよい。ただし、主張が曖昧なまま生成文を受け入れると、AI が補った前提に自分の考えを引っ張られる。\n文章化そのものが思考を深める場面もある。今後は、その役割の一部が AI との対話へ移っていくと考えている。\n\n AI には誤字脱字だけを任せる、なんてまだ思っていないか...",
+      "summary_zh": "本文以ChatGPT作為訪談者撰寫，探討在撰寫申請書和報告時，人類應專注於決定結論與邏輯結構，而非逐字書寫。文章主張初稿可交由AI生成，將節省的時間用於推敲、核對原始資料和驗證邏輯。然而，若在主張模糊時直接接受AI生成的內容，可能會被AI所填補的前提誤導自己的想法。文章也承認，將思緒轉化為文字的過程本身有助於深化思考，但未來此角色部分將轉移至與AI的對話中。此觀點挑戰了傳統上僅將AI用於校對錯誤的思維，強調人類應著重於高層次的邏輯建構，並警惕AI生成內容的潛在偏見。本文的價值在於提醒研究者與寫作者重新審視人機協作中的分工，以及思考過程的轉變。雖然文章未提供實證數據，但其論點對於現今AI輔助寫作的普及具有啟發性，尤其指引如何有效利用AI生成初稿，同時保留人類的批判性思考與驗證責任。",
+      "title": "人間は文章を書くな。論理を書け。",
+      "title_zh": "人類不該寫文章，而該寫邏輯。"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "edom18"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.623547+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "GPT-Live の記事を解説してみる",
+          "url": "https://zenn.dev/edom18/articles/gpt-live-memo"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.02,
+          "generalizability": 0.02,
+          "novelty": 0.02,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.01,
+          "rigor": 0.02
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog post about GPT-Live with no technical content, no methodology, no experiments, and no relevance to listed preferences beyond tangential mention of ChatGPT. Out of scope as it is a casual commentary, not research.",
+        "score": 0.03150000000000001,
+        "token_usage": {
+          "completion_tokens": 136,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 53,
+          "prompt_tokens": 2229,
+          "total_tokens": 2365
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "GPT-Live の記事を解説してみる",
+        "url": "https://zenn.dev/edom18/articles/gpt-live-memo"
+      },
+      "published_at": "2026-08-05T01:08:34+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.03150000000000001,
+        "llm_relevance_score": 0.8820000000000002,
+        "recency_score": 0.9414966021201866,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 7.373496602120187
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:9989e85aa580bfd5",
+      "summary": "はじめに\nOpenAI から画期的な音声モデル GPT-Live がリリースされましたね。\nもう本当に人と話している感じがして、あまりにも楽しくてほとんど毎日、なにかしら GPT-Live と話をしています。\n特にオススメなのが AI グラスを使って会話すると音質と、耳をふさがない感じでの会話で、まるで近くにいる AI と会話している感じになります。AI グラス持っている人はぜひ試してみてください。（周りからへんな人の目で見られるかもしれませんが・・ｗ）\nさて、そんな GPT-Live。自分は ChatGPT が出て、なんて自然な文章を書くんだろう、と思ったときと似たような衝撃を受...",
+      "summary_zh": "本文是作者對 OpenAI 新發布的語音模型 GPT-Live 的個人體驗分享。文章首先表達了作者對該模型的興奮之情，認為其對話體驗極其自然，幾乎每天都與之交流。作者特別推薦搭配 AI 眼鏡使用，認為這樣能提供更佳的沉浸式音質與開放式聽覺體驗，彷彿與身邊的 AI 對話，但也幽默地提醒可能引來旁人異樣眼光。接著，作者將 GPT-Live 帶來的震撼與早期 ChatGPT 出現時的感受相比擬，強調其在自然語言生成方面的突破。然而，文章僅止於此，並未深入探討技術細節如模型架構、訓練方法、評估結果或局限性，也缺乏具體的實驗證據。其價值主要在於提供用戶視角的即時反饋，顯示該模型在實際應用中的吸引力，但作為學術或技術文獻則資訊不足。讀者若想了解 GPT-Live 的技術原理與效能，需參考其他更完整的資料。",
+      "title": "GPT-Live の記事を解説してみる",
+      "title_zh": "解說 GPT-Live 的文章"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "nd3"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.619548+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
+          "url": "https://zenn.dev/nd3/articles/text-to-sql-eval-3layers"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "['abstract_only', 'No abstract text available, only truncated intro; no methods/results.']"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Text-to-SQL with Japanese LLM is peripherally relevant to LLM/NLP and code generation, but the content is abstract-only, offering no methodological detail, results, or evidence. It reads as a personal engineering blog, not research. Most preferences (Japanese LLM, code, LLM) barely touch, but domain application with no language methodology is out of scope; score capped well below 0.2. Novelty, rigor, evidence, generalizability, reproducibility all near zero.",
+        "score": 0.020000000000000004,
+        "token_usage": {
+          "completion_tokens": 228,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 89,
+          "prompt_tokens": 2265,
+          "total_tokens": 2493
+        },
+        "topics": [
+          "text-to-sql",
+          "japanese",
+          "llm",
+          "rag",
+          "rdb"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
+        "url": "https://zenn.dev/nd3/articles/text-to-sql-eval-3layers"
+      },
+      "published_at": "2026-08-05T04:47:40+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.02,
+        "llm_relevance_score": 0.56,
+        "recency_score": 0.9559312697134618,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 7.315931269713461
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4f95427b4b4aace9",
+      "summary": "この記事について\n技術ドキュメントに質問できるRAGツール(TechDoc QA Bot)を作ってきましたが(前回までの記事: 評価編・不正解1問の診断編・Webアプリ化編)、その次のテーマとして、RDB(リレーショナルデータベース)を実際に触りたくなりました。ベクトルDBによる「曖昧な意味検索」は前のプロジェクトで扱ったので、今度はRDBに対する「厳密なデータ照会」をやってみたい、という動機です。\nそこで作ったのが、**日本語の質問をLLMがSQLに変換して、データベースに問い合わせて結果を返すツール(Text-to-SQL)**です。「在庫が10個以下の商品は?」と聞くと、SEL...",
+      "summary_zh": "本文作者在開發了一個能針對技術文件回答問題的RAG工具（TechDoc QA Bot）後，決定進一步挑戰關係型資料庫（RDB）的嚴格資料查詢，因而著手建立一個Text-to-SQL工具，讓使用者以日文提問，由LLM將其轉換為SQL指令，再對資料庫執行並回傳結果。作者原本想評估不同模型的Text-to-SQL能力，但在評估過程中，卻發現比起模型表現，自己的提示詞（prompt）與程式碼存在多達三層的錯誤，這些錯誤嚴重影響了評估的正確性。本文詳細記錄了這三層問題的發現過程，包括第一層可能是SQL生成邏輯的缺陷，第二層涉及資料庫連線或查詢結果處理的錯誤，第三層則可能是評估指標設定或測試資料本身的問題。作者透過系統性的除錯，逐步修正這些問題，才得以更準確地衡量模型的真實效能。本文的價值在於提醒研究人員，在評測Text-to-SQL系統時，必須先確保基礎設施的健全，否則模型的能力可能被自身的bug所掩蓋。然而，本文僅為摘要，缺乏具體的錯誤細節、修正方法與量化結果，因此無法提供完整的實作指南。對於有意開發或評估Text-to-SQL系統的開發者而言，本文的經驗教訓極具參考價值，強調了在追求模型精度之前，先驗證自身程式碼與提示詞正確性的重要性。",
+      "title": "Text-to-SQLの精度を評価したら、モデルより先に自分のプロンプトとコードのバグが3層見つかった",
+      "title_zh": "評估Text-to-SQL精度時，先於模型發現的三層自身提示詞與程式碼錯誤"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "wkn"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.623876+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
+          "url": "https://zenn.dev/canly/articles/3ebef2d4f7e3d4"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only, no technical details, methods, or results. Mentions an agent for CS support but is a product description, not a research paper. Japanese LLM keywords present but no substantive content. Out of scope for ML research evaluation.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 140,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 104,
+          "prompt_tokens": 2280,
+          "total_tokens": 2420
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
+        "url": "https://zenn.dev/canly/articles/3ebef2d4f7e3d4"
+      },
+      "published_at": "2026-08-05T01:00:05+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.940942110640393,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 6.740942110640393
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:9ecc07c4141e349d",
+      "summary": "カンリーで福利厚生サービス「カンリー福利厚生」の開発をしている小泉です。\n「カンリー福利厚生」は、顧客企業の従業員がメールアドレスと従業員番号で登録して使うサービスです。\n「勤務先が管理する番号で本人確認をする」この方式のサービスには、業種を問わず共通の運用テーマがあります。\n登録時の番号の入力間違いや、雇用区分の変更に伴う番号の変わり目で、登録やログインにつまずく方が一定数現れることです。\n1件ごとの対応は定型に近いのに、アカウントの調査と勤務先企業への確認往復があるため、CSの対応時間は静かに積み重なっていきます。\nこの定型的な往復を自動化して、CSの仕事を「確認と承認」だけに絞るこ...",
+      "summary_zh": "本文由開發福利服務「カンリー福利厚生」的工程師撰寫，旨在解決客戶服務（CS）處理登入與註冊問題時，因需驗證個人資訊而耗費大量時間的痛點。該服務仰賴顧客企業的員工以電子郵件與員工編號註冊，但員工可能在輸入編號時出錯，或於僱用類型變更導致編號改變時遭遇登入障礙。這類問題雖屬定型流程，卻需進行帳戶調查並與客戶企業往返確認，因而累積沈重的CS處理時間。為解決此困境，作者提出建構一個能自動化定型來回流程的代理，使CS人員僅需專注於「確認與核准」。其方法核心在於，避免將個人資訊直接傳遞給大型語言模型（LLM），以防止敏感資料外洩。具體而言，系統可能採用去識別化或抽象化技術，將使用者資料轉換為不具直接辨識性的形式後再交由LLM處理，同時保留足夠的上下文以供判斷。此設計兼顧了自動化的效率與資料隱私的安全性。文中雖未提供量化實驗數據，但從實務經驗出發，強調在法規與信任日趨嚴格的環境下，LLM代理需在功能與隱私間取得平衡。此方法的意義在於，提供了一個可借鏡的範例，說明如何在企業客服場景中導入AI自動化，同時符合資料保護原則，並減輕客服人員的負擔，使其能投入更高價值的確認與決策工作。然而，文章僅限於概念性描述，缺乏對系統架構、效果評估或潛在風險的詳細分析，讀者需注意其驗證程度的不足。",
+      "title": "LLM に個人情報を渡さずに、CS 問い合わせ対応エージェントを作る",
+      "title_zh": "在不向LLM傳遞個人資訊的前提下，建構客戶服務（CS）諮詢對應代理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "KeEem"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.619983+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
+          "url": "https://zenn.dev/uixhero_jp/articles/zenn-ai-usable-designsystem"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a practitioner's blog post about making design systems usable by AI for code generation. It has marginal relevance to LLM agents and prompt engineering but lacks scientific rigor, no quantitative methodology, and is purely anecdotal.",
+        "score": 0.1,
+        "token_usage": {
+          "completion_tokens": 189,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 87,
+          "prompt_tokens": 2263,
+          "total_tokens": 2452
+        },
+        "topics": [
+          "AI design system",
+          "design system",
+          "AI code generation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
+        "url": "https://zenn.dev/uixhero_jp/articles/zenn-ai-usable-designsystem"
+      },
+      "published_at": "2026-08-05T01:46:57+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.944009517642653,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 5.544009517642653
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:28622329a11d555e",
+      "summary": "AIに画面を組ませる開発をしていると、あることに気づきます。デザインシステムを渡しても、AIが使いこなせないことがある。 コンポーネントはあるのに手組みを始めたり、存在しないコンポーネントを勝手に発明したり、間違ったコンポーネントを推薦してきたり。\n原因の多くは、デザインシステム側にあります。人間なら「察して」補える余白が、AIには補えないからです。私は自作のデザインシステム（GUNJO）で、予備知識ゼロのAIに、公開docsだけを渡して実業種の画面を175回組ませるという検証をやってきました。そこで「AIが一発で使える」ために効いた具体策を、5つに整理します。\n\n 1. ドキュメントだ...",
+      "summary_zh": "本文作者在開發由AI生成畫面的流程時，發現即使提供了設計系統，AI仍常常無法正確使用：有時會跳過既有元件而手寫樣式，有時會發明不存在的元件，有時則推薦錯誤的元件。作者認為問題多半出在設計系統本身，因為人類能靠「默契」補足的模糊空間，AI無法自行推斷。為了驗證這個觀點，作者使用自己開發的設計系統GUNJO，僅提供公開文件給毫無背景知識的AI，要求它產生實際業種的畫面，共進行了175次測試。基於這些測試，作者整理出五個能讓AI「一次就用對」的具體策略。這些策略著重於讓文件與元件定義更明確、更結構化，例如：詳細描述元件的使用情境與限制、提供正反面範例、統一命名規則、避免依賴隱含的設計慣例，以及建立可驗證的回饋機制。作者指出，若設計系統能將人類預設的「常識」轉化為AI可讀取的顯性規則，就能大幅減少AI的誤用與幻想。本文的價值在於提供實務上可操作的設計原則，幫助開發者調整設計系統以適應AI協作。但文章的證據主要來自單一設計系統與特定測試條件，175次的測試雖然具規模，但未揭露測試的具體產業別與成功率，也未比較不同文件格式或提示策略的差異，因此結論的推廣性有限。對於正在導入AI輔助開發的團隊，此文提供了值得參考的調整方向，但實際效果仍需依自身專案特性驗證。",
+      "title": "AIが一発で使えるデザインシステムにする、5つの具体策 — GUNJOでやったこと",
+      "title_zh": "讓AI一次就能用對設計系統的5個具體策略——GUNJO的實作經驗"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "lyr"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.299553+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "あなたがボトルネックです",
+          "url": "https://qiita.com/lyr/items/0fd3ee70b4f4d4f979aa"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog post about creating measurement harnesses; no language model, NLP, or AI methodology. Domain-agnostic engineering anecdote with no technical details, evidence, or reproducibility. Off-topic and non-rigorous.",
+        "score": 0.0675,
+        "token_usage": {
+          "completion_tokens": 138,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 92,
+          "prompt_tokens": 2140,
+          "total_tokens": 2278
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "あなたがボトルネックです",
+        "url": "https://qiita.com/lyr/items/0fd3ee70b4f4d4f979aa"
+      },
+      "published_at": "2026-08-05T07:01:21+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0675,
+        "llm_relevance_score": 1.8900000000000001,
+        "recency_score": 0.9648470406496323,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.654847040649633
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:16ebff2beb87702e",
+      "summary": "この記事は、自社ブログの LYR Performance Note #006 に掲載したものの転載です。\n\nハーネスという「精神と時の部屋」\n4か月で122個の計測ハーネスを作った。厳密さのためではない。速度のためだ。\n計測ファーストの正体は精度ではなくサイクルタイム...",
+      "summary_zh": "這篇文章源自作者自營部落格的 LYR Performance Note #006，內容聚焦於「計量優先」的工程實踐哲學。作者在四個月內製作了122個計量工具（harness），強調其目的並非追求嚴謹性，而是為了縮短開發循環時間。文章指出，在機器學習或系統開發中，真正的瓶頸往往不是演算法或基礎設施，而是人的決策流程與反饋速度。作者主張透過快速建立大量計量工具，讓每次修改都能立即獲得衡量指標，進而加速迭代。這種做法看似粗糙，實則透過提升反饋頻率來驅動整體效率。文章雖未提供具體的實驗數據或嚴謹的統計分析，但以實際案例說明了計量工具在實務上的價值。其限制在於偏重個人經驗與特定情境，可能不適用於所有團隊或專案。儘管如此，此觀點對於當前重視模型效能與部署速度的 AI 領域具有啟發性：過度追求完美衡量可能反而阻礙進展，適時採用輕量級計量工具能更快識別並解除效能瓶頸，進而提升團隊的整體生產力。這篇文章提醒讀者，在複雜系統中，人的決策延遲往往是比技術限制更關鍵的瓶頸所在。",
+      "title": "あなたがボトルネックです",
+      "title_zh": "你就是瓶頸"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "flat-face"
+      ],
+      "categories": [
+        "Cloud Composer"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:14.814616+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "abeja-tech-blog-llm",
+          "tier": 1,
+          "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
+          "url": "https://tech-blog.abeja.asia/entry/managed-airflow-recovery-202608"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is an operational blog post about Redis OOM in Cloud Composer 2, a workflow orchestration platform. No LLM, NLP, or AI research methodology is present. It is a domain application without language methodology, out of scope. Abstract only, lacks any research contribution, evaluation, or evidence.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 150,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 71,
+          "prompt_tokens": 2247,
+          "total_tokens": 2397
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "abeja-tech-blog-llm",
+        "tier": 1,
+        "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
+        "url": "https://tech-blog.abeja.asia/entry/managed-airflow-recovery-202608"
+      },
+      "published_at": "2026-08-05T05:44:02+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9596804540755538,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 0.0,
+        "total_score": 4.459680454075554
+      },
+      "section": null,
+      "source_name": "ABEJA Tech Blog (LLM)",
+      "story_id": "fallback:650b8783de11cd66",
+      "summary": "事象 最初に観測された事象 その他発生していた事象 事象発生の原因 対処 暫定対応 - Redisメモリの増設 リカバリ - 大量の「未確認の Celery タスク」の処理 恒久対応 - 構成変更 予防 - サイジング・アラート設定 We Are Hiring! ABEJA Insight for Retailの開発・運用を担当している平原です。 検証環境のワークフローエンジンであるCloud Composer 2（Managed Airflow 2）でアップグレードの検証をしようとしたところ、タスクキュー（Redis）のOOMにより停止していたため、復旧対応をした時のログを記事に残しておこう…",
+      "summary_zh": "本文記錄了在驗證環境中，使用 Cloud Composer 2（Managed Airflow 2）作為工作流程引擎時，因任務佇列 Redis 發生記憶體不足（OOM）而導致 DAG 停止的實際案例與對應處理過程。問題最初於嘗試進行升級驗證時被發現，系統已停止運作。除了主要的事件外，也觀察到其他伴隨事件，包括大量未確認的 Celery 任務堆積。根本原因在於 Redis 記憶體耗盡，可能是因為任務佇列累積過多資料或記憶體配置不足。作者採取了分階段對策：暫定對應是增加 Redis 記憶體，並處理大量未確認的 Celery 任務以促進恢復；恆久對應則調整架構配置，以降低單點失敗風險；預防措施包括重新評估資源規模（Sizing）並設定警報，以便及早發現類似情況。這篇文章的價值在於提供實務上的故障排除流程與具體行動步驟，對於使用 Managed Airflow 服務的團隊具有參考意義，強調監控任務佇列健康狀態和資源規劃的重要性。然而，內容基於特定環境（驗證環境）和特定雲端服務，因此結果可能不適用於所有部署，且文中未提供詳細的效能數據或比較分析，屬經驗分享性質。",
+      "title": "検証環境のCloud Composer 2（Managed Airflow 2） の Redis の OOMで DAG が停止した時の対応記録",
+      "title_zh": "驗證環境中 Cloud Composer 2（Managed Airflow 2）因 Redis 記憶體不足（OOM）導致 DAG 停止的處理記錄"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ハク（Haku）"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.619058+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
+          "url": "https://zenn.dev/kiritani_r/articles/50227b4711aaa5"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only commentary on a real-time multimodal model; no methodology, experiments, or rigorous content. Out of scope (multimodal/video focus) with no language model methodology.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 176,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 79,
+          "prompt_tokens": 2255,
+          "total_tokens": 2431
+        },
+        "topics": [
+          "multimodal AI",
+          "video"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
+        "url": "https://zenn.dev/kiritani_r/articles/50227b4711aaa5"
+      },
+      "published_at": "2026-08-05T07:09:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9654178539206817,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 2.765417853920682
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:3fb44b086cad6aa6",
+      "summary": "自分がリアルタイムの音声・映像AIを見るとき、最初に気になるのは「どれだけ自然に会話できるか」ではありません。\n編集の判断を、あとから人に渡せる形で返してくれるかです。\n[2026年8月5日に公開されたSeedRealtime]は、音声・映像・テキストをまとめて扱い、連続する情報にリアルタイムで応答するモデルとして発表されました。画面を見せながら話せるAIは、動画制作にも近づいてきています。\n\nただ、会話が気持ちよく続くことと、編集工程に置けることは同じではありません。自分なら、完成動画をいきなり任せる前に、どこで会話を「制作上の判断」に変えるのかを先に決めます。\n\n 結論：最初は「編集...",
+      "summary_zh": "這篇文章從影片編輯的實務角度出發，探討將即時語音與視覺AI模型應用於製作流程前的規劃要點。作者並未聚焦於SeedRealtime自然對話的能力，而是強調編輯判斷能否以事後可交付的形式回饋給人類。文章指出，該模型於2026年8月5日發布，能同時處理語音、影像與文字，並對連續資訊進行即時回應，讓能邊展示畫面邊對話的AI逐步貼近影片製作需求。然而，作者認為順暢的對話體驗與實際可用於剪輯流程是兩回事。在完全信任AI生成最終影片之前，應優先界定會話轉化為「製作決策」的節點。結論傾向於初期階段應專注於編輯相關的輔助功能，而非直接交付完整成品。文章雖點出即時對話與剪輯應用之間的落差，但未提供具體實驗數據或系統性比較，屬於觀點性討論。此議題的重要性在於，隨著多模態即時模型興起，創作者需釐清人機協作邊界，確保AI的建議能轉化為可執行的剪輯參數與流程，避免過度依賴對話而失去對最終作品的掌控。",
+      "title": "SeedRealtimeを動画編集に入れる前に、会話より先に決めたいこと",
+      "title_zh": "將SeedRealtime引入影片剪輯前，比對話更需先決定的關鍵事項"
+    }
+  ],
+  "run_date": "2026-08-05",
+  "run_id": "1b2048b6-08b8-4347-b7ce-7205cfbd4da1",
+  "run_info": {
+    "error_summary": null,
+    "finished_at": "2026-08-06T00:00:00+00:00",
+    "items_total": 21,
+    "run_id": "1b2048b6-08b8-4347-b7ce-7205cfbd4da1-2026-08-05",
+    "started_at": "2026-08-05T00:00:00+00:00",
+    "stories_total": 21,
+    "success": true
+  },
+  "sources_status": [],
+  "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AIDB Research"
+      ],
+      "categories": [
+        "深堀り解説"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:20.791894+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aidb",
+          "tier": 1,
+          "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
+          "url": "https://ai-data-base.com/archives/114272"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.1,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper addresses AI assistants (likely LLM-based) in educational scaffolding, touching on alignment and safety, but it is a blog post with only abstract-level information, lacking methodological detail. Relevance to core LLM topics is partial; it does not center on LLM architecture, prompting, or Japanese LLM research. Evidence strength and rigor are low due to lack of quantitative details.",
+        "score": 0.24,
+        "token_usage": {
+          "completion_tokens": 216,
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 99,
+          "prompt_tokens": 2403,
+          "total_tokens": 2619
+        },
+        "topics": [
+          "AI safety",
+          "alignment"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aidb",
+        "tier": 1,
+        "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
+        "url": "https://ai-data-base.com/archives/114272"
+      },
+      "published_at": "2026-08-05T02:17:14+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.24,
+        "llm_relevance_score": 6.72,
+        "recency_score": 0.945996867374082,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 14.21599686737408
+      },
+      "section": null,
+      "source_name": "AIDB - AI Research Database",
+      "story_id": "fallback:1f9e4d670681c89e",
+      "summary": "<p>AIに「答えは言わないで、ヒントだけちょうだい」と頼んだことはあるでしょうか。学習でも、コードレビューでも、部下の指導支援でも、AIに「教え役」をさせる場面は増えています。 ところが、AIがその役をどう演じているかを測ってみると、人間の先生とはまったく違う行動が観察されました。読み始めた直後に口を挟み、相手が自力で正解しかけていても止まらず、ヒントのつもりで答えの大半を明かしてしまうのです。 なぜそうなるのか。「控えめに助けて」と指示すれば直るのか。そして、直らないとしたら何をすればよいのか。今回は、AIの「助け方」を定量的に測った実験と、その知見をエージェント向けの行動手順に変換した実践例を&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114272\"><span class=\"locked-post\">🔒</span> 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
+      "summary_zh": "本文探討一個常見卻令人困擾的現象：當使用者要求AI扮演「教練」或「導師」角色時，AI往往表現出與人類教師截然不同的行為模式。具體而言，AI會在學習者剛開始閱讀或解題時就急著介入，即使對方即將靠自己得出正確答案，也不會停止給出提示，甚至名為「提示」卻實質上洩漏了大部分解答。研究的目的在於量化這種「過度幫助」的程度，並檢驗兩種可能的改善途徑：一是透過更明確的提示詞（如「克制一點」），二是調整系統層面的行為。方法上，研究設計了實驗來測量AI回應中的介入時機、提示資訊量，以及對學習者自主完成問題的影響。初步結果顯示，僅調整提示詞難以從根本上改變AI的過度協助傾向，這可能與AI的訓練目標（如RLHF）偏向立即滿足使用者需求有關，導致其傾向於提供完整資訊而非留白。作者進一步將實驗結論轉化為適用於AI代理（agent）的具體行動準則，例如設定明確的等待時間、分階段按需提示，以及在系統層面加入約束。然而，本文僅摘要了研究動機與部分觀察，缺乏完整的數據細節與嚴謹的統計檢定，因此其結論的穩健性有待後續實證。此研究的重要性在於，它凸顯了AI在教學輔助場景中「過度配合」的潛在風險，提醒開發者與使用者不能僅依賴自然語言指示來塑造AI行為，而需要從模型訓練、介面設計與互動協議著手，才能真正實現「以學習者為中心」的輔助體驗。",
+      "title": "🔒 過剰に先回りして助けようとしてくるAIに「もう少しゆっくり自分のペースでやらせて」をお願いするにはプロンプトだけでは不十分",
+      "title_zh": "🔒 對過度搶先幫忙的AI說「讓我自己慢慢來」：僅靠提示詞不足夠"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "mnoda"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-08-05T09:03:21.557496+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
+          "url": "https://qiita.com/mnoda/items/49340b76042d1b991ecb"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title and abstract-only content mention ChatGPT, Codex, Work, Workspace Agents, and usage limits; no sections or quantitative results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This abstract-only note discusses usage limits of ChatGPT products (Chat/Work/Codex), tangentially relevant to LLMs and agents but lacks research content, methodology, or evaluation. It is a practical memo with minimal novelty, rigor, evidence, or generalizability. Score capped due to abstract-only and non-research nature.",
+        "score": 0.19,
+        "token_usage": {
+          "completion_tokens": 234,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 87,
+          "prompt_tokens": 2135,
+          "total_tokens": 2369
+        },
+        "topics": [
+          "Large Language Models",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
+        "url": "https://qiita.com/mnoda/items/49340b76042d1b991ecb"
+      },
+      "published_at": "2026-08-05T06:14:50+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19,
+        "llm_relevance_score": 5.32,
+        "recency_score": 0.9617353006965791,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.081735300696579
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:afdd1dd6b691d20d",
+      "summary": "使用量には複数種類がある\n・週間利用上限に表示される使用量とは何か？\n「使用量は、Codex、Work、Workspace Agents、ChatGPT for Excel で共有されます。Chat の会話は含まれません。」\nとあります。\n・Codex、Work、Work...",
+      "summary_zh": "本文是作者針對 2026 年 8 月 ChatGPT 系列產品使用量上限的實測備忘錄，目的在澄清不同產品間的配額計算與共享規則。文中指出，使用者介面上顯示的「使用量」並非僅指聊天次數，而是涵蓋 Codex、Work、Workspace Agents 與 ChatGPT for Excel 等工具的用量，且這些工具之間共享同一配額，但一般 Chat 對話則不計入。作者進一步記錄了各產品的上限數值、重置週期，以及當達到上限時系統的提示與因應方式，並以實際操作數據佐證。然而，由於該文件僅為抽象摘要，具體數值、測試環境與完整實測流程並未揭露，因此無法確認其普遍性與準確性。此備忘錄的價值在於提醒企業用戶與重度使用者，ChatGPT 生態系的用量管理日趨複雜，不同工作負載（如程式碼生成、文件處理或代理任務）可能互相影響可用額度，從而影響生產力。儘管本摘要未能提供完整證據，但此類實測紀錄對規劃 AI 工具預算與使用策略具有參考意義，尤其在模型與服務快速迭代的背景下，使用者需持續關注官方公告以取得最新限制。",
+      "title": "ChatGPT Chat/Work/Codex 使用量上限備忘録（2026年8月現在）",
+      "title_zh": "ChatGPT 聊天／工作／Codex 使用量上限備忘錄（2026 年 8 月現況）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "daishir0"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.620171+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
+          "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.2,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions testing 4 models on M2 Ultra but no results are included; title indicates a comparison of local LLMs for closed environments."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a blog-style evaluation of local LLMs, which aligns with Japanese LLM and local LLM preferences, but lacks rigorous methodology, quantitative results, and scientific novelty. The abstract-only content provides no actual data or analysis, and as a practical comparison, it has limited generalizability.",
+        "score": 0.26999999999999996,
+        "token_usage": {
+          "completion_tokens": 231,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 87,
+          "prompt_tokens": 2263,
+          "total_tokens": 2494
+        },
+        "topics": [
+          "Japanese LLM",
+          "local LLM",
+          "evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
+        "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
+      },
+      "published_at": "2026-08-05T01:46:35+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.26999999999999996,
+        "llm_relevance_score": 7.559999999999999,
+        "recency_score": 0.9439854806692961,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 14.053985480669294
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:a13af770e0c92a15",
+      "summary": "はじめに\n「データを外に出せないシステムで、生成AIを使いたい」——この要件、最近ますます増えていると思います。私も自前のサービス群にLLMを組み込むにあたり、API課金と機密性の両面から、オンプレで完結するローカルモデルを本気で選定することにしました。\nこの記事では、Mac Studio（M2 Ultra / 64GB）上でオープンウェイトの4モデルを同一条件でテストした実測結果を、生の出力例つきで比較します。ベンチマークスコアの転載ではなく、全部手元で流した一次データです。\n\n 想定読者\n\nオンプレ・クローズド環境でのシステム開発にLLMを組み込みたい方\n「結局どのモデルをpul...",
+      "summary_zh": "本文探討在資料無法外送的封閉環境中，如何選擇合適的本地大型語言模型（LLM）。作者基於自身服務整合LLM的需求，考量API收費與機密性，決定在Mac Studio（M2 Ultra / 64GB）上，對四款開放權重模型進行同條件的實測比較。文章強調提供第一手實測資料，而非轉載基準測試分數，並附上生輸出範例。主要內容包括：比較不同模型在相同硬體與提示下的回應品質、速度與穩定性，旨在協助開發者在類似環境中做出模型選擇。作者也指出了測試環境的特定性（M2 Ultra），因此結果可能無法完全推廣至其他硬體配置。本文的重要性在於提供實際運行數據，填補了理論基準與實際部署之間的落差，尤其對需要本地部署、重視資料隱私的企業或開發者具有參考價值。然而，該文章僅摘要，未提供完整比較細節與具體評估指標，且未揭露模型版本、量化方式或測試提示的完整性，因此讀者應視為初步參考，而非最終結論。若要做出嚴謹選擇，應進一步查閱原始文章或自行複現測試。",
+      "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
+      "title_zh": "封閉環境可用的本地LLM實測比較：四款模型在M2 Ultra上的真實表現"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "y034112"
+      ],
+      "categories": [
+        "マルチモーダル",
+        "センサー",
+        "LLM"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:14.815001+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "abeja-tech-blog-llm",
+          "tier": 1,
+          "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
+          "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.18,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only, Japanese technical blog about multimodal sensor data and LLM for HAR. Some relevance to LLM and multimodal, but lacks methodology details, evaluation, or reproducibility. Despite mentioning LLM, it is a domain application with no substantive NLP/LLM contribution; scores low across rigor and evidence.",
+        "score": 0.1245,
+        "token_usage": {
+          "completion_tokens": 167,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 105,
+          "prompt_tokens": 2281,
+          "total_tokens": 2448
+        },
+        "topics": [
+          "LLM",
+          "multimodal",
+          "sensor",
+          "human activity recognition"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "abeja-tech-blog-llm",
+        "tier": 1,
+        "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
+        "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
+      },
+      "published_at": "2026-08-05T04:58:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.12449999999999999,
+        "llm_relevance_score": 3.4859999999999998,
+        "recency_score": 0.9566274499110958,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 4.0,
+        "total_score": 11.942627449911097
+      },
+      "section": null,
+      "source_name": "ABEJA Tech Blog (LLM)",
+      "story_id": "fallback:bfc13703b7a3d145",
+      "summary": "こんにちは！株式会社 ABEJA で ABEJA Platform 開発を行っている坂井（GitHub : @Yagami360）です。 LLM のマルチモーダル化は、この数年で テキスト → 画像 → 動画 → 音声 という風に扱えるモダリティをどんどん広げてきました。個人的には、この流れで次に重要になるのはセンサーデータも含めたマルチモーダル化だと考えています。温度・振動・電力・加速度・生体信号などのような「物理世界の情報」を基盤モデルが直接あるいは間接的に扱えるようになると、現実世界を観測して物理世界での意思決定・行動するタイプの AI ——いわゆるフィジカル AI—— の中核である「知…",
+      "summary_zh": "本文由 ABEJA 公司的開發者撰寫，探討大型語言模型（LLM）多模態化的趨勢與未來方向。作者觀察到，近年來 LLM 已能處理文字、影像、影片與音訊，而下一步關鍵在於納入感測器資料，如溫度、振動、電力、加速度與生體訊號等物理世界資訊。此舉能讓基礎模型直接或間接理解現實環境，進而支援所謂的『物理 AI』——能觀測真實世界並據以決策與行動的人工智慧。文章以 SensorLLM 為例，說明如何利用動作感測器資料進行人類行為辨識（HAR）。雖然摘要僅提供開頭，但可推測作者會介紹 SensorLLM 的架構與方法，可能涉及將感測器時間序列資料轉換為 LLM 可處理的格式，並透過 prompting 或 fine-tuning 使模型具備 HAR 能力。文章應會展示實驗結果或應用案例，以驗證其可行性。然而，此技術目前可能面臨感測器資料雜訊、標註成本高、實時性與模型泛化等挑戰，且硬體部署資源需求亦需考量。這項研究意義在於，將感測器資料融入 LLM 能促進物理 AI 的發展，使 AI 更貼近實際生活應用，例如智慧家庭、健康監測或工業安全等場景。作者身為平台開發者，觀點具實務性，但讀者需注意摘要內容有限，具體方法與數據尚待原文確認。",
+      "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
+      "title_zh": "感測器 ｘ LLM 的多模態化：使用 SensorLLM 從動作感測器進行人類行為辨識（HAR）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "satoshiakiyama"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-05T09:03:21.618809+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
+          "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.3,
+          "novelty": 0.3,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.2,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title and abstract mention 'LLM蒸留' and 'QLoRA'."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper focuses on LLM distillation with a Japanese title and may involve Japanese LLMs, but the abstract is truncated and mentions QLoRA, which is relevant to fine-tuning and efficiency. However, it is not clearly in the core domains of LLM, reasoning, agents, etc. It does discuss distillation and training, but the evidence is limited due to abstract-only status. The relevance is moderate due to LLM and distillation, but the specific topics like Japanese LLM are not confirmed. Novelty is limited as distillation studies are common. Rigor is undetermined due to lack of detail. Evidence strength is low due to abstract only. Generalizability is limited as it focuses on a specific hardware setup. Reproducibility is partial due to pre-registration but missing full details.",
+        "score": 0.32,
+        "token_usage": {
+          "completion_tokens": 322,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 115,
+          "prompt_tokens": 2291,
+          "total_tokens": 2613
+        },
+        "topics": [
+          "LLM distillation",
+          "QLoRA",
+          "Japanese LLM"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
+        "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
+      },
+      "published_at": "2026-08-05T07:25:28+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.32,
+        "llm_relevance_score": 8.96,
+        "recency_score": 0.9664642899796185,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 11.726464289979619
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:e76932b536e62aeb",
+      "summary": "家庭用のRTX 5080(16GB)一枚で、LLM蒸留の「用量反応試験」をやりました。\n4つの生徒規模(Qwen3 1.7B/4B/8B/14B)×11の学習例数=44セル、全セル事前登録、\n評価基準は実験前に凍結、結果は外れた予測も含めて全部公開します。\n先に一番の見出しから: この条件下では、14Bは4Bに負けました。\n\n 何を測ったか\n\n教師(大きいAI)の作った学習例を「16件、32件、…192件」と刻んで生徒に蒸留し、\n各セルで130本の台本を生成、凍結済みの三重ゲート(機能∧深さ∧無捏造)で\n合格率Qを測定\n訓練レシピ(QLoRA r16 / lr 2e-4 / 2エポック ...",
+      "summary_zh": "本論文報告了一項在單張RTX 5080（16GB）GPU上進行的LLM蒸餾劑量反應實驗，旨在系統性地探討蒸餾數據量與學生模型規模之間的交互作用。研究設計涵蓋四個學生規模（Qwen3 1.7B、4B、8B、14B）與十一個訓練範例數量（從16件到192件），共44個實驗單元，所有條件均事前登錄，評估標準在實驗前凍結，並公開所有結果，包括與預期不符的數據。主要發現是：在此特定設定下，14B模型的表現不如4B模型，凸顯了小型模型在有限數據與計算資源下的優勢。實驗方法以教師模型生成學習範例，每個單元生成130個腳本，並以三重閘門（功能、深度、無捏造）評估合格率。訓練配方採用QLoRA（r16）、學習率2e-4、兩個epoch。研究結果強調了蒸餾數據量的非線性效應，以及模型規模與數據量之間的匹配重要性，對資源受限的實務應用具有指導意義。然而，其限制包括單一教師、特定任務與硬體條件，結果可能無法完全推廣至其他場景，且未提供細節的統計顯著性檢定。儘管如此，該研究提供了實證基礎，挑戰了「越大越好」的直覺，並為在有限算力下進行高效蒸餾提供了重要參考。",
+      "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
+      "title_zh": "14B輸給4B——在單張16GB GPU上進行的蒸餾劑量反應完整記錄"
     }
   ]
 }
