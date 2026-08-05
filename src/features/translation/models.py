@@ -31,6 +31,8 @@ class TranslationEntry:
     title_zh: str
     summary_zh: str
     prompt_version: str = CURRENT_TRANSLATION_PROMPT_VERSION
+    fulltext_sha256: str = ""
+    model: str = "deepseek-v4-flash"
 
     def to_dict(self) -> dict[str, str]:
         """Serialize to a JSON-compatible dictionary.
@@ -43,6 +45,8 @@ class TranslationEntry:
             "title_zh": self.title_zh,
             "summary_zh": self.summary_zh,
             "prompt_version": self.prompt_version,
+            "fulltext_sha256": self.fulltext_sha256,
+            "model": self.model,
         }
 
     @classmethod
@@ -60,6 +64,8 @@ class TranslationEntry:
             title_zh=data.get("title_zh", ""),
             summary_zh=data.get("summary_zh", ""),
             prompt_version=data.get("prompt_version", ""),
+            fulltext_sha256=data.get("fulltext_sha256", ""),
+            model=data.get("model", ""),
         )
 
 
@@ -141,6 +147,7 @@ class TranslationCache:
         self,
         story_id: str,
         prompt_version: str = CURRENT_TRANSLATION_PROMPT_VERSION,
+        fulltext_sha256: str | None = None,
     ) -> bool:
         """Check whether a story has a cached translation for this prompt version.
 
@@ -152,7 +159,15 @@ class TranslationCache:
             True when the cached translation exists and matches prompt_version.
         """
         entry = self._entries.get(story_id)
-        return entry is not None and entry.prompt_version == prompt_version
+        return bool(
+            entry is not None
+            and entry.prompt_version == prompt_version
+            and entry.model == "deepseek-v4-flash"
+            and (
+                fulltext_sha256 is None
+                or entry.fulltext_sha256 == fulltext_sha256
+            )
+        )
 
     def get(self, story_id: str) -> TranslationEntry | None:
         """Retrieve a cached translation.

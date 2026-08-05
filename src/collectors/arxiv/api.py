@@ -135,7 +135,7 @@ class ArxivApiRateLimiter:
     Enforces a sliding window of max_requests_per_window API calls per
     window_duration seconds, plus per-request spacing. Includes an initial
     warmup delay to clear any pre-existing IP-level rate limiting from the
-    GitHub Actions runner pool.
+    constrained scheduled runner.
     """
 
     def __init__(

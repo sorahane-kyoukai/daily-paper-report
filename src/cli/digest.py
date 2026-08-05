@@ -21,7 +21,7 @@ if TYPE_CHECKING:
     from src.features.config.effective import EffectiveConfig
     from src.features.llm.protocols import LlmClient
     from src.features.store.models import Run
-    from src.linker.models import LinkerResult
+    from src.linker.models import LinkerResult, Story
     from src.ranker.models import RankerResult
     from src.reports import ReportDigest, ReportMetadata
 
@@ -51,6 +51,7 @@ logger = structlog.get_logger()
 # Default daily digest display window (24 hours)
 # Can be overridden via --lookback parameter to show papers from longer periods.
 DEFAULT_DISPLAY_HOURS = 24
+LLM_CACHE_VERSION = 2
 
 
 # Type aliases for phase results
@@ -353,8 +354,8 @@ def _run_llm_phase(
 ) -> dict[str, float]:
     """Execute the optional LLM relevance evaluation phase.
 
-    Skips gracefully if GEMINI_REFRESH_TOKEN is not configured or
-    if any error occurs during evaluation. Saves scores to the
+    Skips gracefully if DEEPSEEK_API_KEY is not configured or
+    if any error occurs during evaluation. Saves versioned scorecards to the
     output directory for offline analysis when output_dir is given.
 
     Args:
@@ -375,11 +376,34 @@ def _run_llm_phase(
     # Load cached scores from previous run first so we can reuse them even
     # when LLM credentials are not available.
     cached_scores: dict[str, float] = {}
+    cached_entries: dict[str, dict[str, object]] = {}
     if output_dir:
         cache_path = output_dir / "api" / "llm_scores.json"
         if cache_path.exists():
             try:
-                cached_scores = _json.loads(cache_path.read_text())
+                raw_cache = _json.loads(cache_path.read_text())
+                if (
+                    isinstance(raw_cache, dict)
+                    and raw_cache.get("version") == LLM_CACHE_VERSION
+                ):
+                    raw_entries = raw_cache.get("entries", {})
+                    if isinstance(raw_entries, dict):
+                        cached_entries = {
+                            str(key): value
+                            for key, value in raw_entries.items()
+                            if isinstance(value, dict)
+                        }
+                        cached_scores = {
+                            key: float(score)
+                            for key, value in cached_entries.items()
+                            if isinstance((score := value.get("score")), int | float)
+                        }
+                elif isinstance(raw_cache, dict):
+                    cached_scores = {
+                        str(key): float(value)
+                        for key, value in raw_cache.items()
+                        if isinstance(value, int | float)
+                    }
                 log.info(
                     "llm_cache_loaded",
                     cached_count=len(cached_scores),
@@ -400,17 +424,36 @@ def _run_llm_phase(
     log.info("phase_started", phase="llm_relevance")
 
     try:
+        from src.features.fulltext import FullTextService
         from src.features.llm.processor import LlmRelevanceProcessor
+        from src.features.llm.prompts import CURRENT_SCORING_PROMPT_VERSION
 
         client = _create_configured_llm_client(settings)
+        cache_dir = Path(
+            settings.fulltext_cache_dir
+            or ((output_dir or Path("public")).parent / ".cache" / "fulltext")
+        )
+        documents = FullTextService(cache_dir).load_for_stories(linker_result.stories)
         processor = LlmRelevanceProcessor(
             client=client,
             topics=list(effective_config.topics.topics),
+            documents=documents,
         )
 
         # Filter to only uncached stories
         all_stories = linker_result.stories
-        uncached_stories = [s for s in all_stories if s.story_id not in cached_scores]
+        uncached_stories = []
+        for story in all_stories:
+            document = documents.get(story.story_id)
+            cached = cached_entries.get(story.story_id, {})
+            is_current = bool(
+                document
+                and cached.get("fulltext_sha256") == document.sha256
+                and cached.get("prompt_version") == CURRENT_SCORING_PROMPT_VERSION
+                and cached.get("model") == settings.deepseek_model
+            )
+            if not is_current:
+                uncached_stories.append(story)
 
         if uncached_stories:
             log.info(
@@ -443,7 +486,33 @@ def _run_llm_phase(
         if output_dir and scores:
             cache_path = output_dir / "api" / "llm_scores.json"
             cache_path.parent.mkdir(parents=True, exist_ok=True)
-            cache_path.write_text(_json.dumps(scores, indent=2))
+            new_entries = dict(cached_entries)
+            for item in phase_result.results:
+                new_entries[item.story_id] = {
+                    "score": item.relevance_score,
+                    "components": item.component_scores,
+                    "confidence": item.confidence,
+                    "rationale": item.rationale,
+                    "topics": item.topics_matched,
+                    "evidence": item.evidence,
+                    "fulltext_status": item.fulltext_status,
+                    "fulltext_sha256": item.fulltext_sha256,
+                    "token_usage": item.token_usage,
+                    "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
+                    "model": settings.deepseek_model,
+                }
+            cache_path.write_text(
+                _json.dumps(
+                    {
+                        "version": LLM_CACHE_VERSION,
+                        "model": settings.deepseek_model,
+                        "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
+                        "entries": new_entries,
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
             log.info("llm_scores_cached", path=str(cache_path), count=len(scores))
 
         return scores
@@ -468,6 +537,11 @@ def _collect_ranker_story_dicts(
     Returns:
         Deduplicated list of story dicts.
     """
+    return [story.to_json_dict() for story in _collect_ranker_stories(ranker_result)]
+
+
+def _collect_ranker_stories(ranker_result: "RankerResult") -> list["Story"]:
+    """Collect deduplicated visible Story models in display order."""
     from itertools import chain
 
     from src.linker.models import Story
@@ -475,20 +549,18 @@ def _collect_ranker_story_dicts(
     model_release_stories: list[Story] = list(
         chain.from_iterable(ranker_result.output.model_releases_by_entity.values())
     )
-
-    candidate_stories = [
+    candidates = [
         *ranker_result.output.top5,
         *ranker_result.output.papers,
         *ranker_result.output.radar,
         *model_release_stories,
     ]
-
     seen: set[str] = set()
-    unique: list[dict[str, object]] = []
-    for story in candidate_stories:
+    unique: list[Story] = []
+    for story in candidates:
         if story.story_id not in seen:
             seen.add(story.story_id)
-            unique.append(story.to_json_dict())
+            unique.append(story)
     return unique
 
 
@@ -538,7 +610,7 @@ def _run_translation_phase(
     """Execute the optional LLM translation phase.
 
     Translates ranked story titles and summaries to Traditional Chinese.
-    Skips gracefully if GEMINI_REFRESH_TOKEN is not configured or if
+    Skips gracefully if DEEPSEEK_API_KEY is not configured or if
     any error occurs during translation.
 
     Args:
@@ -557,7 +629,8 @@ def _run_translation_phase(
         log.info("translation_phase_skipped", reason="no_output_dir")
         return None
 
-    unique_stories = _collect_ranker_story_dicts(ranker_result)
+    visible_story_models = _collect_ranker_stories(ranker_result)
+    unique_stories = [story.to_json_dict() for story in visible_story_models]
     cached_translations = _load_cached_translations(output_dir, unique_stories, log)
 
     settings = get_settings()
@@ -576,7 +649,20 @@ def _run_translation_phase(
     log.info("phase_started", phase="translation")
 
     try:
+        from src.features.fulltext import FullTextService
         from src.features.translation.processor import TranslationProcessor
+
+        cache_dir = Path(
+            settings.fulltext_cache_dir
+            or (output_dir.parent / ".cache" / "fulltext")
+        )
+        documents = FullTextService(cache_dir).load_for_stories(visible_story_models)
+        for story in unique_stories:
+            document = documents.get(str(story.get("story_id", "")))
+            if document is not None:
+                story["fulltext"] = document.text
+                story["fulltext_sha256"] = document.sha256
+                story["fulltext_status"] = document.status.value
 
         client = _create_configured_llm_client(settings)
         processor = TranslationProcessor(client=client, output_dir=output_dir)
@@ -603,42 +689,18 @@ def _run_translation_phase(
 
 
 def _has_llm_credentials(settings: object) -> bool:
-    """Return whether any supported LLM provider has credentials."""
-    return bool(
-        getattr(settings, "gemini_api_key", None)
-        or getattr(settings, "gemini_refresh_token", None)
-        or getattr(settings, "openai_api_key", None)
-        or getattr(settings, "deepseek_api_key", None)
-    )
+    """Return whether the required DeepSeek credential is present."""
+    return bool(getattr(settings, "deepseek_api_key", None))
 
 
 def _create_configured_llm_client(settings: object) -> "LlmClient":
     """Create the configured LLM client from application settings."""
     from src.features.llm.factory import create_llm_client
 
-    provider = getattr(settings, "llm_provider", None)
-    if not provider and getattr(settings, "deepseek_api_key", None):
-        provider = "deepseek"
-    normalized_provider = (provider or "").strip().lower().replace("_", "-")
-    deepseek_api_key = getattr(settings, "deepseek_api_key", None)
-    openai_api_key = (
-        deepseek_api_key
-        if normalized_provider == "deepseek" and deepseek_api_key
-        else getattr(settings, "openai_api_key", None) or deepseek_api_key
-    )
-
     return create_llm_client(
-        provider=provider,
-        api_key=getattr(settings, "gemini_api_key", None),
-        refresh_token=getattr(settings, "gemini_refresh_token", None),
-        client_id=getattr(settings, "gemini_oauth_client_id", None),
-        client_secret=getattr(settings, "gemini_oauth_client_secret", None),
-        openai_api_key=openai_api_key,
-        openai_base_url=getattr(settings, "openai_base_url", None),
-        openai_model=getattr(settings, "openai_model", None),
-        openai_reasoning_effort=getattr(settings, "openai_reasoning_effort", None),
-        openai_thinking_type=getattr(settings, "openai_thinking_type", None),
-        openai_max_tokens=getattr(settings, "openai_max_tokens", None),
+        api_key=getattr(settings, "deepseek_api_key", None),
+        model=getattr(settings, "deepseek_model", "deepseek-v4-flash"),
+        max_tokens=getattr(settings, "deepseek_max_tokens", 8192),
     )
 
 
@@ -1112,7 +1174,7 @@ def run(  # noqa: PLR0913
     Configuration validation happens before any network calls.
 
     Use --dry-run to validate configuration without writing any state files.
-    This is useful for CI/CD pipelines to validate configs before deployment.
+    This is useful before a manual Nano deployment.
     """
     if target_date is not None:
         try:

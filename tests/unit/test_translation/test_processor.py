@@ -90,6 +90,8 @@ class TestTranslationProcessor:
                 "title_zh": "\u5df2\u7de9\u5b58",
                 "summary_zh": "\u6458\u8981",
                 "prompt_version": CURRENT_TRANSLATION_PROMPT_VERSION,
+                "model": "deepseek-v4-flash",
+                "fulltext_sha256": "",
             }
         }
         cache_path.write_text(json.dumps(cache_data, ensure_ascii=False))
@@ -143,6 +145,8 @@ class TestTranslationProcessor:
                 "title_zh": "\u5df2\u7de9\u5b58",
                 "summary_zh": "",
                 "prompt_version": CURRENT_TRANSLATION_PROMPT_VERSION,
+                "model": "deepseek-v4-flash",
+                "fulltext_sha256": "",
             }
         }
         cache_path.write_text(json.dumps(cache_data, ensure_ascii=False))
@@ -174,21 +178,12 @@ class TestTranslationProcessor:
         # Should return empty (no cached, no successful translations)
         assert "s1" not in result
 
-    def test_api_error_splits_failed_batch(self, tmp_path: Path) -> None:
+    def test_api_error_isolated_per_paper(self, tmp_path: Path) -> None:
         responses: list[object] = [
             LlmApiError("Empty content"),
-            _make_llm_response(
-                [
-                    {"id": "s0", "title_zh": "\u7ffb\u8b6f0", "summary_zh": ""},
-                    {"id": "s1", "title_zh": "\u7ffb\u8b6f1", "summary_zh": ""},
-                ]
-            ),
-            _make_llm_response(
-                [
-                    {"id": "s2", "title_zh": "\u7ffb\u8b6f2", "summary_zh": ""},
-                    {"id": "s3", "title_zh": "\u7ffb\u8b6f3", "summary_zh": ""},
-                ]
-            ),
+            _make_llm_response([{"id": "s1", "title_zh": "\u7ffb\u8b6f1", "summary_zh": ""}]),
+            _make_llm_response([{"id": "s2", "title_zh": "\u7ffb\u8b6f2", "summary_zh": ""}]),
+            _make_llm_response([{"id": "s3", "title_zh": "\u7ffb\u8b6f3", "summary_zh": ""}]),
         ]
         processor, client = self._make_processor(tmp_path)
         client.generate_content.side_effect = responses
@@ -196,8 +191,8 @@ class TestTranslationProcessor:
         stories = [_make_story(f"s{i}", f"Title {i}") for i in range(4)]
         result = processor.translate(stories)
 
-        assert len(result) == 4
-        assert client.generate_content.call_count == 3
+        assert len(result) == 3
+        assert client.generate_content.call_count == 4
 
     def test_parse_error_skips_batch(self, tmp_path: Path) -> None:
         processor, client = self._make_processor(tmp_path, ["not json at all"])
@@ -223,13 +218,11 @@ class TestTranslationProcessor:
         assert "unknown" not in result
 
     def test_numeric_ids_map_to_batch_order(self, tmp_path: Path) -> None:
-        response = _make_llm_response(
-            [
-                {"id": "1", "title_zh": "\u7b2c\u4e00", "summary_zh": ""},
-                {"id": "2", "title_zh": "\u7b2c\u4e8c", "summary_zh": ""},
-            ]
-        )
-        processor, _client = self._make_processor(tmp_path, [response])
+        responses = [
+            _make_llm_response([{"id": "1", "title_zh": "\u7b2c\u4e00", "summary_zh": ""}]),
+            _make_llm_response([{"id": "1", "title_zh": "\u7b2c\u4e8c", "summary_zh": ""}]),
+        ]
+        processor, _client = self._make_processor(tmp_path, responses)
 
         stories = [
             _make_story("story-a", "First"),
@@ -288,20 +281,12 @@ class TestTranslationProcessor:
         assert "s1" in data
 
     def test_multiple_batches(self, tmp_path: Path) -> None:
-        # 7 stories = 2 batches (5 + 2)
+        # Full-paper guides use one request per story.
         responses = [
             _make_llm_response(
-                [
-                    {"id": f"s{i}", "title_zh": f"\u7ffb\u8b6f{i}", "summary_zh": ""}
-                    for i in range(5)
-                ]
-            ),
-            _make_llm_response(
-                [
-                    {"id": f"s{i}", "title_zh": f"\u7ffb\u8b6f{i}", "summary_zh": ""}
-                    for i in range(5, 7)
-                ]
-            ),
+                [{"id": f"s{i}", "title_zh": f"\u7ffb\u8b6f{i}", "summary_zh": ""}]
+            )
+            for i in range(7)
         ]
         processor, client = self._make_processor(tmp_path, responses)
 
@@ -309,4 +294,4 @@ class TestTranslationProcessor:
         result = processor.translate(stories)
 
         assert len(result) == 7
-        assert client.generate_content.call_count == 2
+        assert client.generate_content.call_count == 7

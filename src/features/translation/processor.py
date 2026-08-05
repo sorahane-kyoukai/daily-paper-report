@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -27,9 +28,9 @@ from src.features.translation.prompts import (
 
 logger = structlog.get_logger()
 
-DEFAULT_BATCH_SIZE = 5
+DEFAULT_BATCH_SIZE = 1
 BATCH_SIZE = DEFAULT_BATCH_SIZE
-MAX_BATCH_SIZE = 25
+MAX_BATCH_SIZE = 1
 _MAX_BATCH_RETRIES = 1
 _MAX_RAW_RESPONSE_LOG_LEN = 300
 
@@ -53,8 +54,8 @@ def _resolve_batch_size() -> int:
 class TranslationProcessor:
     """Orchestrates batch LLM translation of story titles and summaries.
 
-    Translates stories to Traditional Chinese using the same Gemini
-    CodeAssist client and batch/cache/retry patterns established by
+    Translates stories to Traditional Chinese using the same DeepSeek
+    client and batch/cache/retry patterns established by
     LlmRelevanceProcessor.
     """
 
@@ -89,13 +90,21 @@ class TranslationProcessor:
         self._cache.load()
 
         uncached = [
-            s for s in stories if not self._cache.is_current(str(s.get("story_id", "")))
+            s
+            for s in stories
+            if not self._cache.is_current(
+                str(s.get("story_id", "")),
+                fulltext_sha256=str(s.get("fulltext_sha256", "")),
+            )
         ]
         stale_cached = [
             s
             for s in stories
             if self._cache.has(str(s.get("story_id", "")))
-            and not self._cache.is_current(str(s.get("story_id", "")))
+            and not self._cache.is_current(
+                str(s.get("story_id", "")),
+                fulltext_sha256=str(s.get("fulltext_sha256", "")),
+            )
         ]
 
         self._log.info(
@@ -147,7 +156,10 @@ class TranslationProcessor:
         failed_ids = [
             str(s.get("story_id", ""))
             for s in batch
-            if not self._cache.is_current(str(s.get("story_id", "")))
+            if not self._cache.is_current(
+                str(s.get("story_id", "")),
+                fulltext_sha256=str(s.get("fulltext_sha256", "")),
+            )
         ]
         self._log.info(
             "translation_batch_complete",
@@ -179,12 +191,19 @@ class TranslationProcessor:
         entries = self._attempt_batch(batch, batch_idx, attempt=attempt)
         translated = 0
         for entry in entries:
-            if not self._cache.is_current(entry.story_id):
+            if not self._cache.is_current(
+                entry.story_id, fulltext_sha256=entry.fulltext_sha256
+            ):
                 translated += 1
             self._cache.put(entry)
 
         missing = [
-            s for s in batch if not self._cache.is_current(str(s.get("story_id", "")))
+            s
+            for s in batch
+            if not self._cache.is_current(
+                str(s.get("story_id", "")),
+                fulltext_sha256=str(s.get("fulltext_sha256", "")),
+            )
         ]
         if not missing:
             return translated
@@ -305,7 +324,21 @@ class TranslationProcessor:
         text = strip_markdown_fences(raw_response)
 
         parsed: list[dict[str, object]] | None = None
+        try:
+            response_object = json.loads(text)
+        except json.JSONDecodeError:
+            response_object = None
+        if isinstance(response_object, dict) and isinstance(
+            response_object.get("translations"), list
+        ):
+            parsed = [
+                item
+                for item in response_object["translations"]
+                if isinstance(item, dict)
+            ]
         for candidate in json_candidates(text):
+            if parsed is not None:
+                break
             parsed = try_parse_json_array(candidate)
             if parsed is not None:
                 break
@@ -336,6 +369,16 @@ class TranslationProcessor:
                     story_id=story_id,
                     title_zh=title_zh,
                     summary_zh=summary_zh,
+                    fulltext_sha256=str(
+                        next(
+                            (
+                                story.get("fulltext_sha256", "")
+                                for story in batch
+                                if str(story.get("story_id", "")) == story_id
+                            ),
+                            "",
+                        )
+                    ),
                 )
             )
 

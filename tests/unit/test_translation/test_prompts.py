@@ -18,8 +18,8 @@ class TestSystemInstruction:
     def test_mentions_preserve_technical_terms(self) -> None:
         assert "technical terms" in SYSTEM_INSTRUCTION.lower()
 
-    def test_requires_json_array(self) -> None:
-        assert "JSON array" in SYSTEM_INSTRUCTION
+    def test_requires_json_object(self) -> None:
+        assert "JSON object" in SYSTEM_INSTRUCTION
 
     def test_prompt_version_is_content_hash(self) -> None:
         assert CURRENT_TRANSLATION_PROMPT_VERSION.startswith("sha256:")
@@ -69,8 +69,8 @@ class TestBuildTranslationPrompt:
         prompt = build_translation_prompt(stories)
         assert "title_zh" in prompt
         assert "summary_zh" in prompt
-        assert "220-320" in prompt
-        assert "2-4 complete sentences" in prompt
+        assert "350-600" in prompt
+        assert "limitations" in prompt
         assert "。" in prompt
 
     def test_preserves_technical_terms_example(self) -> None:

@@ -5,10 +5,12 @@ from __future__ import annotations
 import json
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import replace
 
 import structlog
 
 from src.features.config.schemas.topics import TopicConfig
+from src.features.fulltext.models import FullTextDocument
 from src.features.llm.errors import LlmApiError, LlmProcessingError
 from src.features.llm.json_utils import (
     json_candidates,
@@ -23,9 +25,9 @@ from src.linker.models import Story
 
 logger = structlog.get_logger()
 
-DEFAULT_BATCH_SIZE = 5
+DEFAULT_BATCH_SIZE = 1
 BATCH_SIZE = DEFAULT_BATCH_SIZE
-MAX_BATCH_SIZE = 50
+MAX_BATCH_SIZE = 1
 DEFAULT_CONCURRENCY = 1
 MAX_CONCURRENCY = 8
 _NEUTRAL_SCORE = 0.5
@@ -59,7 +61,7 @@ class LlmRelevanceProcessor:
     """Orchestrates batch LLM evaluation of stories.
 
     Filters stories to those with meaningful content (papers with
-    abstracts), batches them, sends to the Gemini API, and parses
+    abstracts or full papers), sends them to DeepSeek, and parses
     the structured JSON responses.
     """
 
@@ -67,6 +69,7 @@ class LlmRelevanceProcessor:
         self,
         client: LlmClient,
         topics: list[TopicConfig],
+        documents: dict[str, FullTextDocument] | None = None,
     ) -> None:
         """Initialize the processor.
 
@@ -76,6 +79,7 @@ class LlmRelevanceProcessor:
         """
         self._client = client
         self._topics = topics
+        self._documents = documents or {}
         self._log = logger.bind(component="llm", subcomponent="processor")
 
     def evaluate_stories(self, stories: list[Story]) -> LlmPhaseResult:
@@ -314,7 +318,7 @@ class LlmRelevanceProcessor:
     ) -> LlmPhaseResult:
         """Attempt exactly one LLM request without batch-level neutral fallback."""
         result = LlmPhaseResult()
-        prompt = build_batch_prompt(batch, self._topics)
+        prompt = build_batch_prompt(batch, self._topics, self._documents)
 
         try:
             raw_response = self._client.generate_content(
@@ -349,6 +353,16 @@ class LlmRelevanceProcessor:
             if not recoverable:
                 result.errors.append(error_msg)
             return result
+
+        usage = getattr(self._client, "last_usage", None)
+        if usage is not None:
+            usage_fields = {
+                name: int(value)
+                for name, value in vars(usage).items()
+                if isinstance(value, int)
+            }
+            if usage_fields:
+                parsed = [replace(item, token_usage=usage_fields) for item in parsed]
 
         for llm_result in parsed:
             result.scores[llm_result.story_id] = llm_result.relevance_score
@@ -409,11 +423,25 @@ class LlmRelevanceProcessor:
             if story_id not in valid_ids:
                 continue
 
-            score = _clamp_score(entry.get("score", 0.5))
+            component_scores = _component_scores(entry.get("components"))
+            score = (
+                _weighted_score(component_scores)
+                if component_scores
+                else _clamp_score(entry.get("score", 0.5))
+            )
+            document = self._documents.get(story_id)
+            confidence = document.confidence_multiplier if document else 1.0
+            score = _clamp_score(score * confidence)
             rationale = str(entry.get("rationale", ""))
             topics_raw = entry.get("topics", [])
             topics = (
                 [str(t) for t in topics_raw] if isinstance(topics_raw, list) else []
+            )
+            evidence_raw = entry.get("evidence", [])
+            evidence = (
+                [str(value) for value in evidence_raw]
+                if isinstance(evidence_raw, list)
+                else []
             )
 
             results.append(
@@ -422,6 +450,11 @@ class LlmRelevanceProcessor:
                     relevance_score=score,
                     rationale=rationale,
                     topics_matched=topics,
+                    component_scores=component_scores,
+                    evidence=evidence,
+                    confidence=confidence,
+                    fulltext_status=(document.status.value if document else "abstract_only"),
+                    fulltext_sha256=(document.sha256 if document else ""),
                 )
             )
 
@@ -443,6 +476,13 @@ class LlmRelevanceProcessor:
         Raises:
             LlmProcessingError: If no valid JSON can be extracted.
         """
+        try:
+            parsed = json.loads(text)
+        except json.JSONDecodeError:
+            parsed = None
+        if isinstance(parsed, dict) and isinstance(parsed.get("papers"), list):
+            return [entry for entry in parsed["papers"] if isinstance(entry, dict)]
+
         for candidate in json_candidates(text):
             result = try_parse_json_array(candidate)
             if result is not None:
@@ -479,3 +519,26 @@ def _clamp_score(value: object) -> float:
     except (TypeError, ValueError):
         return _NEUTRAL_SCORE
     return max(0.0, min(1.0, score))
+
+
+_COMPONENT_WEIGHTS = {
+    "preference_relevance": 0.40,
+    "novelty": 0.15,
+    "rigor": 0.15,
+    "evidence_strength": 0.15,
+    "generalizability": 0.10,
+    "reproducibility": 0.05,
+}
+
+
+def _component_scores(value: object) -> dict[str, float]:
+    if not isinstance(value, dict):
+        return {}
+    return {
+        key: _clamp_score(value.get(key, 0.0))
+        for key in _COMPONENT_WEIGHTS
+    }
+
+
+def _weighted_score(components: dict[str, float]) -> float:
+    return sum(components[key] * weight for key, weight in _COMPONENT_WEIGHTS.items())

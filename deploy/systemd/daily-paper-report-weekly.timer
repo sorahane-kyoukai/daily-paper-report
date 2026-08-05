@@ -1,0 +1,11 @@
+[Unit]
+Description=Generate the previous ISO week report on Monday at 00:30 UTC
+
+[Timer]
+OnCalendar=Mon *-*-* 00:30:00 UTC
+Persistent=true
+RandomizedDelaySec=0
+Unit=daily-paper-report@weekly.service
+
+[Install]
+WantedBy=timers.target

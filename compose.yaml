@@ -1,0 +1,20 @@
+services:
+  digest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: daily-paper-report:local
+    env_file:
+      - ${ENV_FILE:-.env}
+    environment:
+      FULLTEXT_CACHE_DIR: /cache/fulltext
+    volumes:
+      - ${DATA_DIR:-./runtime/data}:/data
+      - ${PUBLIC_DIR:-./runtime/public}:/public
+      - ${CACHE_DIR:-./runtime/cache}:/cache
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    security_opt:
+      - no-new-privileges:true

@@ -18,6 +18,12 @@ class LlmRelevanceResult:
     relevance_score: float
     rationale: str
     topics_matched: list[str]
+    component_scores: dict[str, float] = field(default_factory=dict)
+    evidence: list[str] = field(default_factory=list)
+    confidence: float = 1.0
+    fulltext_status: str = "abstract_only"
+    fulltext_sha256: str = ""
+    token_usage: dict[str, int] = field(default_factory=dict)
 
 
 @dataclass

@@ -6,24 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Python 3.13 project managed with uv. Source code is expected in `src/` directory with tests in `tests/`.
 
-## Site Reset (Important)
+## Production runtime
 
-To completely clear all data from the deployed site:
-
-### GitHub Actions (Recommended)
-```bash
-gh workflow run reset-site.yaml -f confirm_reset=RESET
-```
-
-### Local Script
-```bash
-./scripts/reset-site.sh --confirm
-```
-
-### Resources
-- **Documentation**: [`docs/RESET-GUIDE.md`](docs/RESET-GUIDE.md) - Why reset is complex and step-by-step instructions
-- **Workflow**: [`.github/workflows/reset-site.yaml`](.github/workflows/reset-site.yaml) - CI/CD reset workflow
-- **Script**: [`scripts/reset-site.sh`](scripts/reset-site.sh) - Local reset script
+Scheduled collection and publishing run on the Nano through Docker and systemd. The
+repository contains no custom GitHub workflow. Do not delete or replace canonical state
+without following [`docs/RESET-GUIDE.md`](docs/RESET-GUIDE.md).
 
 ## Commands
 

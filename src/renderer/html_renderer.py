@@ -45,7 +45,7 @@ class HtmlRenderer:
         """Create placeholder HTML file for archive date tracking.
 
         The placeholder file will be replaced by the Vue SPA index.html
-        during the CI/CD build process.
+        during the static-site build process.
 
         Args:
             context: Render context with data for templates.

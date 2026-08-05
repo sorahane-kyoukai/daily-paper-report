@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Daily Paper Report every day at 00:00 UTC
+
+[Timer]
+OnCalendar=*-*-* 00:00:00 UTC
+Persistent=true
+RandomizedDelaySec=0
+Unit=daily-paper-report@daily.service
+
+[Install]
+WantedBy=timers.target

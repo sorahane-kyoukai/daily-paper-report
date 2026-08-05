@@ -1,0 +1,557 @@
+version: "1.0"
+
+entities:
+  - id: openai
+    name: OpenAI
+    region: intl
+    keywords:
+      - OpenAI
+      - GPT-4
+      - GPT-5
+      - ChatGPT
+      - o1
+      - o3
+    prefer_links:
+      - official
+      - github
+      - arxiv
+      - huggingface
+    aliases:
+      - Open AI
+
+  - id: anthropic
+    name: Anthropic
+    region: intl
+    keywords:
+      - Anthropic
+      - Claude
+      - Claude 3
+      - Claude 4
+      - Constitutional AI
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases: []
+
+  - id: deepmind
+    name: DeepMind
+    region: intl
+    keywords:
+      - DeepMind
+      - Google DeepMind
+      - Gemini
+      - AlphaFold
+      - AlphaGo
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases:
+      - Google DeepMind
+
+  - id: qwen
+    name: Qwen
+    region: cn
+    entity_type: organization
+    keywords:
+      - Qwen
+      - Qwen2
+      - Qwen3
+      - Alibaba Cloud
+      - DAMO Academy
+    prefer_links:
+      - official
+      - huggingface
+      - modelscope
+      - arxiv
+      - github
+    aliases:
+      - Tongyi Qianwen
+
+  # Research Institutions
+  - id: google-research
+    name: Google Research
+    region: intl
+    entity_type: institution
+    keywords:
+      - Google Research
+      - Google Brain
+      - Google DeepMind
+      - "@google.com"
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases:
+      - Google AI
+
+  - id: meta-ai
+    name: Meta AI
+    region: intl
+    entity_type: institution
+    keywords:
+      - Meta AI
+      - FAIR
+      - Facebook AI Research
+      - "@meta.com"
+      - "@fb.com"
+    prefer_links:
+      - official
+      - arxiv
+      - github
+      - huggingface
+    aliases:
+      - Facebook AI
+
+  - id: microsoft-research
+    name: Microsoft Research
+    region: intl
+    entity_type: institution
+    keywords:
+      - Microsoft Research
+      - MSR
+      - "@microsoft.com"
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases:
+      - MSR
+
+  # Notable Researchers
+  - id: ilya-sutskever
+    name: Ilya Sutskever
+    region: intl
+    entity_type: researcher
+    keywords:
+      - Ilya Sutskever
+      - Sutskever
+    prefer_links:
+      - arxiv
+      - official
+    aliases: []
+
+  - id: yann-lecun
+    name: Yann LeCun
+    region: intl
+    entity_type: researcher
+    keywords:
+      - Yann LeCun
+      - LeCun
+    prefer_links:
+      - arxiv
+      - official
+    aliases:
+      - Y. LeCun
+
+  - id: geoffrey-hinton
+    name: Geoffrey Hinton
+    region: intl
+    entity_type: researcher
+    keywords:
+      - Geoffrey Hinton
+      - Hinton
+      - G. Hinton
+    prefer_links:
+      - arxiv
+      - official
+    aliases: []
+
+  - id: andrej-karpathy
+    name: Andrej Karpathy
+    region: intl
+    entity_type: researcher
+    keywords:
+      - Andrej Karpathy
+      - Karpathy
+    prefer_links:
+      - arxiv
+      - github
+      - official
+    aliases: []
+
+  - id: yoshua-bengio
+    name: Yoshua Bengio
+    region: intl
+    entity_type: researcher
+    keywords:
+      - Yoshua Bengio
+      - Bengio
+      - Y. Bengio
+    prefer_links:
+      - arxiv
+      - official
+    aliases: []
+
+  # Additional AI Companies
+  - id: mistral-ai
+    name: Mistral AI
+    region: intl
+    keywords:
+      - Mistral AI
+      - Mistral
+      - Mixtral
+      - Mistral-7B
+      - Mistral Large
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+      - github
+    aliases: []
+
+  - id: deepseek
+    name: DeepSeek
+    region: cn
+    keywords:
+      - DeepSeek
+      - DeepSeek-V2
+      - DeepSeek-V3
+      - DeepSeek-Coder
+      - DeepSeek-R1
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+      - github
+    aliases:
+      - DeepSeek AI
+
+  - id: cohere
+    name: Cohere
+    region: intl
+    keywords:
+      - Cohere
+      - Command
+      - Command R
+      - Aya
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+    aliases:
+      - Cohere AI
+      - CohereForAI
+
+  - id: stability-ai
+    name: Stability AI
+    region: intl
+    keywords:
+      - Stability AI
+      - Stable Diffusion
+      - StableLM
+      - SDXL
+    prefer_links:
+      - official
+      - huggingface
+      - github
+    aliases:
+      - StabilityAI
+
+  - id: nvidia
+    name: NVIDIA
+    region: intl
+    keywords:
+      - NVIDIA
+      - CUDA
+      - TensorRT
+      - NeMo
+      - Nemotron
+    prefer_links:
+      - official
+      - github
+      - arxiv
+    aliases: []
+
+  - id: aws
+    name: AWS
+    region: intl
+    keywords:
+      - AWS
+      - Amazon Web Services
+      - SageMaker
+      - Bedrock
+      - Amazon Titan
+    prefer_links:
+      - official
+      - github
+    aliases:
+      - Amazon Web Services
+
+  - id: 01-ai
+    name: 01.AI
+    region: cn
+    keywords:
+      - 01.AI
+      - Yi
+      - Yi-34B
+      - Yi-6B
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+      - github
+    aliases:
+      - Yi AI
+
+  - id: huggingface
+    name: Hugging Face
+    region: intl
+    keywords:
+      - Hugging Face
+      - HuggingFace
+      - Transformers
+      - huggingface.co
+    prefer_links:
+      - official
+      - github
+      - huggingface
+    aliases:
+      - HF
+
+  - id: langchain
+    name: LangChain
+    region: intl
+    keywords:
+      - LangChain
+      - LangGraph
+      - LangSmith
+    prefer_links:
+      - official
+      - github
+    aliases: []
+
+  - id: ollama
+    name: Ollama
+    region: intl
+    keywords:
+      - Ollama
+    prefer_links:
+      - official
+      - github
+    aliases: []
+
+  - id: vllm
+    name: vLLM
+    region: intl
+    keywords:
+      - vLLM
+      - PagedAttention
+    prefer_links:
+      - official
+      - github
+      - arxiv
+    aliases: []
+
+  - id: llama-cpp
+    name: llama.cpp
+    region: intl
+    keywords:
+      - llama.cpp
+      - ggml
+      - GGUF
+    prefer_links:
+      - github
+    aliases:
+      - llamacpp
+
+  # ============================================================
+  # Japanese AI/LLM Entities
+  # ============================================================
+
+  - id: preferred-networks
+    name: Preferred Networks
+    region: intl
+    entity_type: organization
+    keywords:
+      - Preferred Networks
+      - PFN
+      - PLaMo
+      - Preferred Elements
+      - Preferred Computing Elements
+    prefer_links:
+      - official
+      - arxiv
+      - github
+      - huggingface
+    aliases:
+      - PFN
+      - Preferred Networks Inc.
+
+  - id: elyza
+    name: ELYZA
+    region: intl
+    entity_type: organization
+    keywords:
+      - ELYZA
+      - ELYZA Works
+      - ELYZA-LLM
+      - ELYZA LLM
+    prefer_links:
+      - official
+      - huggingface
+      - github
+      - arxiv
+    aliases:
+      - 株式会社ELYZA
+
+  - id: sakana-ai
+    name: Sakana AI
+    region: intl
+    entity_type: organization
+    keywords:
+      - Sakana AI
+      - SakanaAI
+      - TinySwallow
+      - TAID
+      - CycleQD
+      - AI Scientist
+      - evolutionary algorithm
+      - model merging
+    prefer_links:
+      - official
+      - arxiv
+      - github
+      - huggingface
+    aliases:
+      - Sakana
+
+  - id: abeja
+    name: ABEJA
+    region: intl
+    entity_type: organization
+    keywords:
+      - ABEJA
+      - ABEJA Platform
+    prefer_links:
+      - official
+      - github
+      - arxiv
+    aliases:
+      - 株式会社ABEJA
+
+  - id: layerx
+    name: LayerX
+    region: intl
+    entity_type: organization
+    keywords:
+      - LayerX
+      - LayerX AI
+      - LayerX Agent
+    prefer_links:
+      - official
+      - github
+    aliases:
+      - 株式会社LayerX
+
+  - id: ai-shift
+    name: AI Shift
+    region: intl
+    entity_type: organization
+    keywords:
+      - AI Shift
+      - AIShift
+      - CyberAgent AI Shift
+    prefer_links:
+      - official
+      - github
+    aliases:
+      - 株式会社AI Shift
+      - CyberAgent AI Shift
+
+  - id: ivry
+    name: IVRy
+    region: intl
+    entity_type: organization
+    keywords:
+      - IVRy
+      - アイブリー
+      - IVRy AI
+    prefer_links:
+      - official
+      - github
+    aliases:
+      - 株式会社IVRy
+
+  - id: llm-jp
+    name: LLM-jp
+    region: intl
+    entity_type: institution
+    keywords:
+      - LLM-jp
+      - LLM jp
+      - LLM-jp-4
+      - LLM-jp-3
+      - Japanese LLM
+      - 日本語LLM
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+      - github
+    aliases:
+      - 大規模言語モデル勉強会
+
+  - id: rinna
+    name: rinna
+    region: intl
+    entity_type: organization
+    keywords:
+      - rinna
+      - rinna Co.
+      - Japanese Stable LM
+    prefer_links:
+      - official
+      - huggingface
+      - github
+    aliases:
+      - rinna株式会社
+
+  - id: cyberagent
+    name: CyberAgent
+    region: intl
+    entity_type: organization
+    keywords:
+      - CyberAgent
+      - CALM
+      - CyberAgent LLM
+    prefer_links:
+      - official
+      - huggingface
+      - arxiv
+      - github
+    aliases:
+      - 株式会社サイバーエージェント
+
+  - id: weblab
+    name: Weblab
+    region: intl
+    entity_type: organization
+    keywords:
+      - Weblab
+      - LINE
+      - Japanese foundation model
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases:
+      - LINE Corporation
+
+  - id: nii
+    name: NII (LLM-jp)
+    region: intl
+    entity_type: institution
+    keywords:
+      - National Institute of Informatics
+      - NII
+      - 国立情報学研究所
+      - LLM-jp
+    prefer_links:
+      - official
+      - arxiv
+      - github
+    aliases:
+      - 国立情報学研究所
+

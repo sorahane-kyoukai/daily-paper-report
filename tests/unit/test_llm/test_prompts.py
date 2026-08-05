@@ -98,7 +98,7 @@ class TestBuildBatchPrompt:
         prompt = build_batch_prompt([story], topics)
 
         assert "novel attention mechanism" in prompt
-        assert "Abstract:" in prompt
+        assert "Content status: abstract_only" in prompt
 
     def test_omits_abstract_when_missing(self) -> None:
         """Should not include Abstract section when no abstract."""
@@ -131,6 +131,6 @@ class TestBuildBatchPrompt:
 
         prompt = build_batch_prompt([story], topics)
 
-        assert "JSON array" in prompt
+        assert '"papers"' in prompt
         assert '"score"' in prompt
         assert '"rationale"' in prompt

@@ -19,6 +19,7 @@ dependencies = [
     "types-beautifulsoup4>=4.12.0.20250516",
     "defusedxml>=0.7.1",
     "jinja2>=3.1.0",
+    "pypdf>=6.0.0",
 ]
 
 [project.optional-dependencies]
@@ -126,11 +127,20 @@ ignore = [
 "src/features/fetch/client.py" = [
     "PLR0913", # retry helper keeps HTTP execution parameters explicit
 ]
-"src/features/llm/factory.py" = [
-    "PLR0913", # provider factory accepts explicit environment overrides
+"src/cli/digest.py" = [
+    "C901",    # phase orchestration validates and migrates versioned LLM caches
+    "PLR0912", # phase orchestration has explicit cache/provider fallback branches
+    "PLR0915", # phase orchestration keeps its audit logging adjacent to each stage
 ]
-"src/features/llm/openai_compatible_client.py" = [
-    "PLR0913", # client constructor mirrors provider configuration fields
+"src/features/fulltext/service.py" = [
+    "C901",    # bounded PDF extraction isolates per-page failure modes
+    "PLR0913", # document construction keeps provenance fields explicit
+]
+"src/features/translation/processor.py" = [
+    "C901",    # parser accepts current object and legacy array cache responses
+]
+"src/reports/aggregator.py" = [
+    "PLR0913", # report summary inputs remain explicit and typed
 ]
 "tests/e2e_linker_validation.py" = [
     "T201",  # print allowed in E2E CLI validation script

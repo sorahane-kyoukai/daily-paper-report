@@ -51,6 +51,7 @@ class JsonRenderer:
         self._metrics = metrics or RendererMetrics.get_instance()
         self._entity_configs = entity_configs or []
         self._translations = translations or {}
+        self._llm_evaluations = self._load_llm_evaluations()
         self._log = logger.bind(run_id=run_id, component="renderer")
         self._writer = AtomicWriter(output_dir, run_id)
 
@@ -182,6 +183,8 @@ class JsonRenderer:
         result = story.to_json_dict()
         if score_map and story.story_id in score_map:
             result["scores"] = score_map[story.story_id]
+        if story.story_id in self._llm_evaluations:
+            result["llm_evaluation"] = self._llm_evaluations[story.story_id]
 
         translation = self._translations.get(story.story_id)
         if translation is not None:
@@ -189,6 +192,24 @@ class JsonRenderer:
             result["summary_zh"] = getattr(translation, "summary_zh", None)
 
         return result
+
+    def _load_llm_evaluations(self) -> dict[str, dict[str, object]]:
+        """Load public scorecard details while keeping full paper text private."""
+        path = self._output_dir / "api" / "llm_scores.json"
+        if not path.exists():
+            return {}
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return {}
+        entries = payload.get("entries", {}) if isinstance(payload, dict) else {}
+        if not isinstance(entries, dict):
+            return {}
+        return {
+            str(story_id): entry
+            for story_id, entry in entries.items()
+            if isinstance(entry, dict)
+        }
 
     def _source_status_to_dict(self, status: SourceStatus) -> dict[str, object]:
         """Convert a SourceStatus to a JSON-serializable dictionary.

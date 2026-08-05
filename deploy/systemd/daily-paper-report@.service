@@ -1,0 +1,22 @@
+[Unit]
+Description=Daily Paper Report %i job
+Wants=network-online.target
+After=network-online.target docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+User=root
+Environment=APP_DIR=/srv/daily-paper-report/app
+Environment=DATA_DIR=/srv/daily-paper-report/data
+Environment=PUBLIC_DIR=/srv/daily-paper-report/public
+Environment=CACHE_DIR=/srv/daily-paper-report/cache
+Environment=ENV_FILE=/etc/daily-paper-report/daily-paper-report.env
+ExecStart=/srv/daily-paper-report/app/scripts/server-run.sh %i
+TimeoutStartSec=infinity
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=6
+
+[Install]
+WantedBy=multi-user.target

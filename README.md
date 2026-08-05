@@ -1,293 +1,84 @@
-# Auto Paper Report
+# Daily Paper Report
 
-[繁體中文](docs/README.zh-TW.md) | [简体中文](docs/README.zh-CN.md) | [日本語](docs/README.ja.md)
+Daily Paper Report collects AI research and technical news, deduplicates stories,
+extracts complete paper text, scores papers with DeepSeek, writes Traditional Chinese
+research guides, and publishes a static Vue site.
 
-An automated research paper and AI news digest pipeline that collects, deduplicates, ranks, and renders daily reports from multiple sources.
+## Runtime architecture
 
-## Features
+- The data pipeline runs on the Nano server in an ARM64 Docker container.
+- `deepseek-v4-flash` is the only LLM and uses its 1M-token context window.
+- Full paper text is cached only on the Nano; it is never published or pushed to GitHub.
+- The Nano pushes validated static output to `gh-pages`; GitHub Pages serves
+  `paper.sorahane-kyoukai.org` from that branch.
+- SQLite and small JSON caches are backed up to the `state` branch.
+- There are no repository workflow files. GitHub's internal Pages publication run is
+  still expected when `gh-pages` changes.
 
-### Multi-Source Data Collection
+## Local development
 
-- **arXiv** - Academic papers via RSS and API
-- **RSS/Atom Feeds** - Blog posts and news from any RSS source
-- **GitHub Releases** - Track releases from repositories
-- **Hugging Face** - Model releases by organization
-- **OpenReview** - Conference paper submissions
-- **Papers With Code** - Trending papers and implementations
-- **HTML Scraping** - Custom HTML list and profile extraction
-
-### Intelligent Processing
-
-- **Story Linking** - Automatically links related items across sources
-- **Deduplication** - Identifies and merges duplicate content
-- **Entity Matching** - Associates items with tracked entities (companies, labs, researchers)
-- **Topic Matching** - Categorizes content by configurable topic patterns
-
-### Smart Ranking
-
-- **Configurable Scoring** - Weight factors for tier, recency, entity relevance, and topic hits
-- **Quota Management** - Control output distribution across sections
-- **Section Assignment** - Organizes content into Top 5, Model Releases, Papers, and Radar sections
-
-### Static Site Generation
-
-- **Responsive HTML** - Mobile-friendly daily digest pages
-- **Archive Pages** - Historical daily reports
-- **Source Status** - Health monitoring dashboard for all sources
-- **JSON API** - Machine-readable daily output
-
-### Automation & Deployment
-
-- **GitHub Actions** - Automated daily pipeline execution
-- **GitHub Pages** - Zero-config static site deployment
-- **State Persistence** - SQLite database with incremental updates
-- **Structured Logging** - JSON logs with run context for observability
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                        Configuration                             │
-│              (sources.yaml, entities.yaml, topics.yaml)         │
-└─────────────────────────────────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                         Collectors                               │
-│   ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐  │
-│   │  arXiv  │ │   RSS   │ │ GitHub  │ │   HF    │ │  HTML   │  │
-│   └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘  │
-└─────────────────────────────────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      Story Linker                                │
-│            (Deduplication, Entity Matching, Linking)            │
-└─────────────────────────────────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                         Ranker                                   │
-│           (Scoring, Quota Filtering, Section Assignment)        │
-└─────────────────────────────────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                        Renderer                                  │
-│              (HTML Templates, JSON API, Archive)                │
-└─────────────────────────────────────────────────────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                         Output                                   │
-│                  (GitHub Pages / Static Files)                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-## Quick Start
-
-### Prerequisites
-
-- Python 3.13+
-- [uv](https://github.com/astral-sh/uv) package manager
-
-### Installation
+Requirements: Python 3.13, [uv](https://docs.astral.sh/uv/), Node.js 22, and pnpm.
 
 ```bash
-# Clone the repository
-git clone https://github.com/DennySORA/auto_paper_report.git
-cd auto_paper_report
-
-# Install dependencies
-uv sync
-```
-
-### Configuration
-
-Create your configuration files:
-
-**sources.yaml** - Define data sources
-```yaml
-version: "1.0"
-defaults:
-  max_items: 50
-
-sources:
-  - id: openai-blog
-    name: OpenAI Blog
-    url: https://openai.com/blog/rss.xml
-    tier: 0
-    method: rss_atom
-    kind: blog
-    timezone: America/Los_Angeles
-
-  - id: arxiv-cs-ai
-    name: arXiv cs.AI
-    url: https://rss.arxiv.org/rss/cs.AI
-    tier: 1
-    method: rss_atom
-    kind: paper
-    timezone: UTC
-```
-
-**entities.yaml** - Define tracked entities
-```yaml
-version: "1.0"
-entities:
-  - id: openai
-    name: OpenAI
-    aliases: ["OpenAI", "open-ai"]
-    prefer_links: [official, github, arxiv]
-```
-
-**topics.yaml** - Define topic patterns and scoring
-```yaml
-version: "1.0"
-topics:
-  - id: llm
-    name: Large Language Models
-    patterns: ["LLM", "language model", "GPT", "transformer"]
-```
-
-### Running the Pipeline
-
-```bash
-# Validate configuration
-uv run python main.py validate \
-    --config config/sources.yaml \
-    --entities config/entities.yaml \
-    --topics config/topics.yaml
-
-# Run the full pipeline
-uv run python main.py run \
-    --config config/sources.yaml \
-    --entities config/entities.yaml \
-    --topics config/topics.yaml \
-    --state state.sqlite \
-    --out public \
-    --tz Asia/Taipei
-```
-
-### CLI Commands
-
-| Command | Description |
-|---------|-------------|
-| `run` | Execute the full digest pipeline |
-| `validate` | Validate configuration files |
-| `render` | Render static pages from test data |
-| `db-stats` | Display state database statistics |
-
-### Static API Outputs
-
-The generated Pages payload exposes both rendered JSON and the full SQLite state:
-
-- `api/daily.json` - latest rendered digest consumed by the Vue frontend.
-- `api/day/YYYY-MM-DD.json` - per-day rendered digest archives.
-- `api/reports/...` - weekly and monthly report JSON.
-- `api/state.sqlite` - complete SQLite state database, including collected items,
-  run metadata, HTTP cache, and each item's raw source payload.
-
-`api/state.sqlite` is intentionally committed and deployed as a normal binary file,
-not Git LFS. GitHub Pages does not serve Git LFS objects as static site files, so
-using LFS here would expose a pointer file instead of the SQLite database.
-
-## Development
-
-### Running Tests
-
-```bash
-# Run all tests
+cp .env.example .env
+# Set DEEPSEEK_API_KEY in .env
+uv sync --frozen
 uv run pytest
-
-# Run with coverage
-uv run pytest --cov=src --cov-report=html
-
-# Run specific test file
-uv run pytest tests/unit/test_ranker/test_scorer.py
+uv run ruff check .
+uv run mypy src
+cd frontend && pnpm install --frozen-lockfile && pnpm run build-only
 ```
 
-### Code Quality
+Run one UTC digest:
 
 ```bash
-# Linting
-uv run ruff check .
-uv run ruff check . --fix
-
-# Formatting
-uv run ruff format .
-
-# Type checking
-uv run mypy .
-
-# Security scanning
-uv run bandit -r src/
+uv run python main.py run \
+  --config config/sources.yaml \
+  --entities config/entities.yaml \
+  --topics config/topics.yaml \
+  --state runtime/data/state.sqlite \
+  --out runtime/public \
+  --tz UTC \
+  --date "$(date -u +%F)" \
+  --lookback 24
 ```
 
-## GitHub Actions Deployment
+The score cache is versioned. Each entry contains the final score, six scorecard
+components, confidence, evidence, matched topics, model/prompt versions, and full-text
+provenance hash/status. Translation cache entries are invalidated when the paper content
+or prompt changes.
 
-The project includes two manual data workflows:
+## Nano installation and operation
 
-1. Fork this repository
-2. Enable GitHub Pages in repository settings
-3. Configure secrets (if using authenticated APIs):
-   - `GEMINI_*` - Optional, used for translation/relevance enrichment
-4. Run one of the workflows:
-   - `daily-digest.yaml` with `target_date=YYYY-MM-DD` to rerun one day
-   - `reset-site.yaml` with `confirm_reset=RESET` to clear all data
+The target host is `dennysora-nano@192.168.30.100:19845`. From a checked-out copy:
 
-## Project Structure
-
-```
-auto_paper_report/
-├── src/
-│   ├── cli/            # Command-line interface
-│   ├── collectors/     # Data source collectors
-│   │   ├── arxiv/      # arXiv API and RSS
-│   │   ├── platform/   # GitHub, HuggingFace, OpenReview
-│   │   └── html_profile/  # HTML scraping profiles
-│   ├── config/         # Configuration loading and schemas
-│   ├── evidence/       # Audit trail capture
-│   ├── fetch/          # HTTP client with caching
-│   ├── linker/         # Story linking and deduplication
-│   ├── ranker/         # Scoring and ranking
-│   ├── renderer/       # HTML/JSON generation
-│   ├── status/         # Source health monitoring
-│   └── store/          # SQLite state persistence
-├── tests/
-│   ├── unit/           # Unit tests
-│   ├── integration/    # Integration tests
-│   └── fixtures/       # Test data
-├── public/             # Generated static site
-└── .github/workflows/  # CI/CD pipelines
+```bash
+sudo ./scripts/install-nano.sh
+sudoedit /etc/daily-paper-report/daily-paper-report.env
+sudo systemctl start daily-paper-report@daily.service
+journalctl -u daily-paper-report@daily.service -f
 ```
 
-## Configuration Reference
+Timers use UTC and a shared six-hour lock:
 
-### Source Methods
+- Daily: every day at 00:00
+- Weekly: Monday at 00:30, covering the previous ISO week
+- Monthly: day 1 at 01:00, covering the previous month
 
-| Method | Description |
-|--------|-------------|
-| `rss_atom` | RSS/Atom feed parsing |
-| `arxiv_api` | arXiv API queries |
-| `github_releases` | GitHub repository releases |
-| `hf_org` | Hugging Face organization models |
-| `hf_daily_papers` | Hugging Face Daily Papers |
-| `openreview_venue` | OpenReview venue submissions |
-| `papers_with_code` | Papers With Code trending |
-| `html_list` | HTML page link extraction |
+Publishing is performed by `scripts/publish-pages.sh`; state snapshots use
+`scripts/publish-state.sh`. Both refuse invalid inputs before pushing. The Nano requires a
+repository-specific SSH deploy key with write access; personal SSH keys must not be copied.
 
-### Source Tiers
+## Storage
 
-| Tier | Description |
-|------|-------------|
-| 0 | Primary sources (official blogs, releases) |
-| 1 | Secondary sources (aggregators, news) |
-| 2 | Tertiary sources (social media, forums) |
+Default Nano paths:
 
-## License
+```text
+/srv/daily-paper-report/app       checked-out application
+/srv/daily-paper-report/data      canonical SQLite state
+/srv/daily-paper-report/public    generated static site
+/srv/daily-paper-report/cache     private extracted full text
+/srv/daily-paper-report/backups   rotating SQLite backups
+```
 
-MIT License - see [LICENSE](LICENSE) for details.
-
-## Contributing
-
-Contributions are welcome! Please read the [CLAUDE.md](CLAUDE.md) file for coding guidelines and development standards.
+See [the recovery guide](docs/RESET-GUIDE.md) for restore and republish procedures.

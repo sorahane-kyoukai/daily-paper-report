@@ -9,21 +9,12 @@ from src.linker.models import Story, StoryLink
 from src.ranker.models import RankerOutput, RankerResult
 
 
-def test_deepseek_provider_prefers_deepseek_key_over_openai_key() -> None:
-    """DeepSeek provider should not send an OpenAI key to DeepSeek."""
+def test_cli_configures_deepseek_v4_flash() -> None:
+    """The CLI should wire only the dedicated DeepSeek settings."""
     settings = SimpleNamespace(
-        llm_provider="deepseek",
-        gemini_api_key=None,
-        gemini_refresh_token=None,
-        gemini_oauth_client_id=None,
-        gemini_oauth_client_secret=None,
-        openai_api_key="openai-key",
         deepseek_api_key="deepseek-key",
-        openai_base_url=None,
-        openai_model=None,
-        openai_reasoning_effort=None,
-        openai_thinking_type=None,
-        openai_max_tokens=None,
+        deepseek_model="deepseek-v4-flash",
+        deepseek_max_tokens=8192,
     )
 
     with patch("src.features.llm.factory.create_llm_client") as create_client:
@@ -31,8 +22,11 @@ def test_deepseek_provider_prefers_deepseek_key_over_openai_key() -> None:
 
         _create_configured_llm_client(settings)
 
-    assert create_client.call_args.kwargs["provider"] == "deepseek"
-    assert create_client.call_args.kwargs["openai_api_key"] == "deepseek-key"
+    assert create_client.call_args.kwargs == {
+        "api_key": "deepseek-key",
+        "model": "deepseek-v4-flash",
+        "max_tokens": 8192,
+    }
 
 
 def test_translation_candidates_include_all_visible_story_types() -> None:

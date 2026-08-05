@@ -1,0 +1,11 @@
+[Unit]
+Description=Generate the previous month report on day one at 01:00 UTC
+
+[Timer]
+OnCalendar=*-*-01 01:00:00 UTC
+Persistent=true
+RandomizedDelaySec=0
+Unit=daily-paper-report@monthly.service
+
+[Install]
+WantedBy=timers.target

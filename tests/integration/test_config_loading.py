@@ -27,7 +27,7 @@ class TestConfigLoaderIntegration:
         )
 
         assert loader.state == ConfigState.READY
-        assert len(effective.sources.sources) == 63
+        assert len(effective.sources.sources) == 64
         assert len(effective.entities.entities) == 36
         assert len(effective.topics.topics) == 27
 
@@ -193,7 +193,7 @@ class TestEffectiveConfigIntegration:
         )
 
         summary = config.summary()
-        assert summary["sources_count"] == 63
+        assert summary["sources_count"] == 64
         assert summary["entities_count"] == 36
         assert summary["topics_count"] == 27
         assert "config_checksum" in summary
@@ -211,7 +211,7 @@ class TestEffectiveConfigIntegration:
 
         enabled = config.get_enabled_sources()
         # Enabled sources in fixture
-        assert len(enabled) == 56
+        assert len(enabled) == 57
 
     @pytest.mark.integration
     def test_get_entities_by_region_from_file(self) -> None:

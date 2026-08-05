@@ -7,7 +7,6 @@ import pytest
 
 from src.features.config.schemas.base import LinkType
 from src.features.config.schemas.topics import TopicConfig
-from src.features.llm.client import GeminiCodeAssistClient
 from src.features.llm.errors import LlmApiError
 from src.features.llm.processor import BATCH_SIZE, LlmRelevanceProcessor
 from src.features.store.models import DateConfidence, Item
@@ -85,10 +84,10 @@ def _make_story_no_abstract(story_id: str = "no-abstract") -> Story:
 
 
 def _make_processor(
-    client: GeminiCodeAssistClient | None = None,
+    client: object | None = None,
 ) -> LlmRelevanceProcessor:
     """Create a processor with mock client."""
-    mock_client = client or MagicMock(spec=GeminiCodeAssistClient)
+    mock_client = client or MagicMock()
     topics = [TopicConfig(name="LLM", keywords=["language model", "GPT"])]
     return LlmRelevanceProcessor(client=mock_client, topics=topics)
 
@@ -98,7 +97,7 @@ class TestEvaluateStories:
 
     def test_evaluates_stories_with_abstracts(self) -> None:
         """Should evaluate stories that have abstracts."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.return_value = json.dumps(
             [
                 {
@@ -122,7 +121,7 @@ class TestEvaluateStories:
 
     def test_skips_stories_without_abstracts(self) -> None:
         """Should skip stories lacking abstracts and arxiv_id."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         processor = _make_processor(mock_client)
 
         stories = [_make_story_no_abstract()]
@@ -136,7 +135,7 @@ class TestEvaluateStories:
         """Should batch stories into groups of BATCH_SIZE."""
         stories = [_make_story(story_id=f"s{i}") for i in range(BATCH_SIZE + 2)]
 
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
 
         def generate_for_batch(prompt: str, **kwargs: object) -> str:
             # Return scores for all story IDs found in prompt
@@ -154,13 +153,13 @@ class TestEvaluateStories:
         processor = _make_processor(mock_client)
         result = processor.evaluate_stories(stories)
 
-        # Should make 2 API calls: one for BATCH_SIZE, one for remaining 2
-        assert result.api_calls_made == 2
+        # Full-paper precision uses one independent request per paper.
+        assert result.api_calls_made == BATCH_SIZE + 2
         assert result.stories_evaluated == BATCH_SIZE + 2
 
     def test_graceful_degradation_on_api_error(self) -> None:
         """Should assign neutral scores when API call fails."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.side_effect = LlmApiError("Timeout")
 
         processor = _make_processor(mock_client)
@@ -173,7 +172,7 @@ class TestEvaluateStories:
 
     def test_graceful_degradation_on_parse_error(self) -> None:
         """Should assign neutral scores when response is not valid JSON."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.return_value = "not valid json at all"
 
         processor = _make_processor(mock_client)
@@ -183,23 +182,14 @@ class TestEvaluateStories:
         assert result.scores["parse-fail"] == pytest.approx(0.5)
         assert len(result.errors) == 1
 
-    def test_parse_error_splits_failed_batch(self) -> None:
-        """Should split a malformed multi-story response before using neutral."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+    def test_one_failed_paper_does_not_flatten_other_scores(self) -> None:
+        """Independent requests isolate a malformed paper response."""
+        mock_client = MagicMock()
         mock_client.generate_content.side_effect = [
             "not valid json at all",
-            json.dumps(
-                [
-                    {"id": "s0", "score": 0.8, "rationale": "ok", "topics": []},
-                    {"id": "s1", "score": 0.7, "rationale": "ok", "topics": []},
-                ]
-            ),
-            json.dumps(
-                [
-                    {"id": "s2", "score": 0.6, "rationale": "ok", "topics": []},
-                    {"id": "s3", "score": 0.9, "rationale": "ok", "topics": []},
-                ]
-            ),
+            json.dumps([{"id": "s1", "score": 0.7, "rationale": "ok", "topics": []}]),
+            json.dumps([{"id": "s2", "score": 0.6, "rationale": "ok", "topics": []}]),
+            json.dumps([{"id": "s3", "score": 0.9, "rationale": "ok", "topics": []}]),
         ]
 
         processor = _make_processor(mock_client)
@@ -207,14 +197,14 @@ class TestEvaluateStories:
         result = processor.evaluate_stories(stories)
 
         assert result.stories_evaluated == 4
-        assert result.errors == []
-        assert result.api_calls_made == 3
-        assert result.scores["s0"] == pytest.approx(0.8)
+        assert len(result.errors) == 1
+        assert result.api_calls_made == 4
+        assert result.scores["s0"] == pytest.approx(0.5)
         assert result.scores["s3"] == pytest.approx(0.9)
 
     def test_empty_stories_returns_empty_result(self) -> None:
         """Should return empty result for no stories."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         processor = _make_processor(mock_client)
         result = processor.evaluate_stories([])
 
@@ -224,7 +214,7 @@ class TestEvaluateStories:
 
     def test_clamps_scores_to_valid_range(self) -> None:
         """Should clamp scores outside [0.0, 1.0]."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.return_value = json.dumps(
             [
                 {"id": "test-1", "score": 1.5, "rationale": "over", "topics": []},
@@ -239,7 +229,7 @@ class TestEvaluateStories:
 
     def test_handles_markdown_fenced_json(self) -> None:
         """Should parse JSON even with markdown code fences."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.return_value = '```json\n[{"id": "test-1", "score": 0.8, "rationale": "good", "topics": ["LLM"]}]\n```'
 
         processor = _make_processor(mock_client)
@@ -250,7 +240,7 @@ class TestEvaluateStories:
 
     def test_assigns_neutral_for_missing_story_ids(self) -> None:
         """Should assign 0.5 to stories not returned by LLM."""
-        mock_client = MagicMock(spec=GeminiCodeAssistClient)
+        mock_client = MagicMock()
         mock_client.generate_content.return_value = json.dumps(
             [{"id": "s0", "score": 0.9, "rationale": "ok", "topics": []}]
         )

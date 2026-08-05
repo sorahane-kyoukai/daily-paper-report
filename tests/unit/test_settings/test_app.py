@@ -6,11 +6,10 @@ from src.settings.app import AppSettings
 
 
 def test_empty_optional_env_values_are_ignored(monkeypatch: MonkeyPatch) -> None:
-    """GitHub Actions passes missing secrets as empty strings."""
-    monkeypatch.setenv("OPENAI_MAX_TOKENS", "")
-    monkeypatch.setenv("OPENAI_MODEL", "")
+    """An empty optional key should be treated as absent."""
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "")
 
     settings = AppSettings(_env_file=None)
 
-    assert settings.openai_max_tokens is None
-    assert settings.openai_model is None
+    assert settings.deepseek_api_key is None
+    assert settings.deepseek_model == "deepseek-v4-flash"
