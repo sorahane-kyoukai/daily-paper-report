@@ -15,6 +15,7 @@
     "2026-07-25",
     "2026-07-24",
     "2026-07-23",
+    "2026-07-22",
     "2026-07-21",
     "2026-07-20",
     "2026-07-19",
@@ -303,24 +304,17 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-08-06T16:45:27.214474+00:00",
+  "generated_at": "2026-08-06T22:24:30.076853+00:00",
   "model_releases_by_entity": {},
-  "papers": [],
-  "radar": [
+  "papers": [
     {
-      "arxiv_id": null,
-      "authors": [],
-      "categories": [
-        "Reasoning Models",
-        "AI Research",
-        "Coding Agents",
-        "GPT",
-        "Agents",
-        "LLMs",
-        "Open-Source"
+      "arxiv_id": "items/8231544",
+      "authors": [
+        "fuji1009_REBELL"
       ],
+      "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-19T08:22:39.308312+00:00",
+      "first_seen_at": "2026-07-18T08:18:58.135612+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -328,20 +322,184 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "sebastian-raschka-blog",
-          "tier": 0,
-          "title": "Controlling Reasoning Effort in LLMs",
-          "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
+          "url": "https://qiita.com/fuji1009_REBELL/items/823154472767d771fae0"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.0,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.3,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
           "reproducibility": 0.0,
           "rigor": 0.0
+        },
+        "confidence": 0.85,
+        "evidence": [],
+        "fulltext_sha256": "c5e7021c278392b23d02fa10813a72f14ae1231b484b574fb31e14dbe1b6ea97",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Paper is in Japanese and discusses modernizing FileMaker business systems with Claude Code. Abstract only, no data, no rigorous methodology, and topics are not aligned with any core preference categories. Pure domain application with weak or no research content.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 134,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 84,
+          "prompt_tokens": 2132,
+          "total_tokens": 2266
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
+        "url": "https://qiita.com/fuji1009_REBELL/items/823154472767d771fae0"
+      },
+      "published_at": "2026-07-18T06:12:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.13980195029700154,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 5.689801950297001
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "arxiv:items/8231544",
+      "summary": "FileMakerで業務システムを作ってきた人間として、正直に書きます。FileMakerと生成AIの組み合わせについての情報は、ほとんどありません。Qiitaで「FileMaker × AI」を検索しても実装記事はごくわずかです。\n一方で現場には、FileMakerで作ら...",
+      "summary_zh": "本文以一位長期使用FileMaker開發業務系統的實務者視角出發，指出在生成式AI快速發展的當下，關於FileMaker與AI整合的公開資訊極其稀少，搜尋「FileMaker × AI」僅能找到寥寥無幾的實作文章。作者坦承自身經驗有限，但強調現場仍有大量以FileMaker建置的舊有系統，這些系統普遍存在維護困難、整合外部服務不易等問題。為此，作者提出三個實作模式，嘗試利用Claude Code這款AI輔助開發工具，協助將FileMaker的業務邏輯現代化。第一個模式著重於程式碼生成與重構，透過自然語言描述需求，讓Claude Code產出或者改寫計算欄位、腳本等FileMaker元件，減少人工編寫的繁瑣與出錯機會；第二個模式則聚焦於資料遷移與系統對接，利用Claude Code解析既有的FileMaker資料結構，並自動生成轉換腳本，以順利搬移至現代化資料庫或雲端服務；第三個模式是建立文件與知識庫，將散落在檔案中的邏輯與欄位說明轉化成清晰的文件，供後續維護與交接使用。然而，作者並未提供具體的量化數據或嚴謹的比較實驗，也未說明這些模式在不同複雜度專案下的適用性與限制，例如遇到高度客製化UI或特殊資料關聯時，AI生成程式碼的可信度與校正成本仍需關切。整體而言，此文的重要性在於喚起對傳統低程式碼平台上AI輔助現代化的關注，並提出一個初步的實作框架，對於同樣深受FileMaker系統維護困擾的開發者而言，提供了一個值得參考的切入點與後續探索的方向。",
+      "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
+      "title_zh": "以Claude Code將FileMaker業務系統現代化的三個實作模式"
+    }
+  ],
+  "radar": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Takuro"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:47:20.876269+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
+          "url": "https://zenn.dev/ftkrj12/articles/ae53852a71d49c"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title indicates local LLM agent operational tuning",
+          "Content mentions Ollama + Hermes Agent setup with Qwen3-30B-A3B-Instruct"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Practical blog post on tuning a local LLM agent on Mac using Ollama and Qwen3. Relevant to Japanese LLM and agents, but lacks methodological detail, evaluation, or novelty. Limited evidence and reproducibility due to informal style.",
+        "score": 0.27,
+        "token_usage": {
+          "completion_tokens": 194,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 51,
+          "prompt_tokens": 2227,
+          "total_tokens": 2421
+        },
+        "topics": [
+          "Japanese LLM",
+          "local LLM",
+          "agents",
+          "agent tuning",
+          "Ollama",
+          "Qwen3"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
+        "url": "https://zenn.dev/ftkrj12/articles/ae53852a71d49c"
+      },
+      "published_at": "2026-07-18T19:10:10+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.27,
+        "llm_relevance_score": 7.5600000000000005,
+        "recency_score": 0.14756392954833578,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 13.507563929548336
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:dfb3e6680f8c51e9",
+      "summary": "この記事について\nOllama + Hermes Agentセットアップ編 では、MacBook Pro(Apple M4 Pro / 24GB)上に Ollama + Hermes Agent で、Qwen3-30B-A3B-Instruct-2507(コミュニティ量子化)× 64k コンテキスト × LaunchAgent 常駐という構成を組みました。\n本記事はその続編、運用編です。エージェントを自分仕様にチューニングします。\n!\n本記事は 2026 年 7 月時点 の検証記録です。参照している GitHub Issue や仕様は今後修正・変更される可能性があります。環境は セッ...",
+      "summary_zh": "本文是系列文章的第二篇，接續先前的安裝設定，進一步探討如何在MacBook Pro（Apple M4 Pro、24GB記憶體）上，透過Ollama與Hermes Agent將本地大型語言模型（LLM）調校為符合個人需求的自主代理。作者先回顧了先前建立的基礎架構：使用社群量子化的Qwen3-30B-A3B-Instruct-2507模型，搭配64k上下文視窗，並以LaunchAgent讓代理常駐執行。本篇的重點在於營運層面的微調與最佳化，目的是讓代理更貼近使用者的工作流程與偏好。文中詳細記錄了2026年7月當下的驗證過程，包含調整代理的行為模式、提示詞設計、工具使用策略，以及如何因應本地資源限制（如記憶體與運算力）進行取捨。作者也提醒，相關的GitHub Issue與規格日後可能變動，讀者應留意更新。這篇文章的價值在於提供實務上的指南，協助使用者從「能跑」進展到「好用」，並分享在個人裝置上運行LLM代理的真實經驗與潛在瓶頸。然而，由於內容基於特定時間點與硬體環境，其最佳化策略未必適用於其他配置，且部分細節（如精確的效能數據或疑難排解步驟）並未在摘要中完整呈現，建議有興趣的讀者參考原文以獲得完整資訊。此主題對於關注邊緣運算、隱私保護與個人化AI代理的開發者與研究者具有參考意義。",
+      "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
+      "title_zh": "在Mac上將本地LLM打造成自主代理：營運調校篇"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "毎日AIレシピ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:47:20.875537+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
+          "url": "https://zenn.dev/every_ai_recipe/articles/ai-output-format-mismatch-3-tips"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.45,
+          "novelty": 0.35,
+          "preference_relevance": 0.55,
+          "reproducibility": 0.1,
+          "rigor": 0.15
         },
         "confidence": 1.0,
         "evidence": [],
@@ -349,50 +507,378 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract only; title suggests relevance to reasoning and LLMs, but no verifiable content, methods, or results; low scores.",
-        "score": 0.145,
+        "rationale": "Discusses LLM output format adherence and instruction degradation, related to prompting and instruction following. However, it is an abstract-only position piece with no experimental details, baselines, or quantitative evidence, limiting rigor and reproducibility. The concept of format specification via template vs natural language and constraint overload has some novelty but is not deeply explored.",
+        "score": 0.36750000000000005,
         "token_usage": {
-          "completion_tokens": 173,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 278,
-          "prompt_tokens": 2070,
-          "total_tokens": 2243
+          "completion_tokens": 212,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 120,
+          "prompt_tokens": 2296,
+          "total_tokens": 2508
         },
         "topics": [
-          "reasoning",
-          "large language models",
-          "evaluation",
-          "interpretability"
+          "Prompting & In-Context Learning",
+          "Large Language Models"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "sebastian-raschka-blog",
-        "tier": 0,
-        "title": "Controlling Reasoning Effort in LLMs",
-        "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
+        "url": "https://zenn.dev/every_ai_recipe/articles/ai-output-format-mismatch-3-tips"
       },
-      "published_at": "2026-07-18T11:16:09+00:00",
+      "published_at": "2026-07-18T21:08:04+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.145,
-        "llm_relevance_score": 4.06,
-        "recency_score": 0.14620954525369648,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.36750000000000005,
+        "llm_relevance_score": 10.290000000000001,
+        "recency_score": 0.14877706873314359,
         "semantic_score": 0.0,
-        "tier_score": 3.0,
-        "topic_score": 4.0,
-        "total_score": 12.706209545253696
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 12.238777068733144
       },
       "section": null,
-      "source_name": "Sebastian Raschka Blog",
-      "story_id": "fallback:b8fd37c22aaadb03",
-      "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes",
-      "summary_zh": "本文探討大型語言模型（LLM）如何在不同任務中自發地學習與調整推理努力程度，並提出控制其推理深度的方法。研究動機在於，現有模型在面對簡單問題時可能過度推理，而在複雜問題上又可能推理不足，導致效率與準確性的失衡。作者透過分析模型在訓練過程中的行為模式，區分出低、中、高三種推理努力模式，並觀察到這些模式與任務難度、提示形式及模型規模相關。方法上，研究結合了行為實驗與內部表徵分析，利用探針技術追蹤模型在產生最終答案前的中間思考步驟，以量化推理深度。主要結果顯示，透過調整解碼參數（如溫度與top-p）或輸入提示中的引導語，可以顯著影響模型的推理努力程度，且在特定任務上能提升效率而不損失準確度。然而，作者也指出其方法依賴於任務可分解性，且對模型內部表徵的解釋仍有限。此研究的意義在於，為使用者在實際應用中動態控制LLM的計算成本與輸出品質提供初步框架，並啟發未來在更大型模型與多步推理場景下的相關研究。",
-      "title": "Controlling Reasoning Effort in LLMs",
-      "title_zh": "控制LLM中的推理努力程度"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:8c4afe76456f1cce",
+      "summary": "TL;DR\n\n出力の「形式」を自然言語（「箇条書き多めで」「表っぽく」）で伝える指定は、モデルにとって解釈の幅が広く、依頼のたびに異なる出力へマッピングされやすい。これに対し、空欄付きテンプレートを直接見せる指定は、埋めるべきスロットが一意に定まるため再現性が高い\n複数ターンにわたる会話では、序盤で与えた形式指定の効力が徐々に弱まり、後半では指定していない自由形式に回帰する傾向がある。これは会話が長くなるほど直近のやり取りの影響が相対的に強まり、序盤の制約が実質的に希薄化するためだと考えられる\n1回の指示に詰め込む制約の数が増えるほど、個々の制約が守られる確率はむしろ下がる。制約は「...",
+      "summary_zh": "本文探討大型語言模型（LLM）在遵循使用者輸出格式要求時出現偏差的現象，並分析其背後機制與可行的應對策略。問題在於，當使用者以自然語言描述期望格式（例如「多使用條列」「類似表格」）時，由於此類描述存在高度詮釋空間，模型在不同請求間可能產生不一致的輸出映射，導致重現性低落。作者提出對比方法：直接向模型展示帶有空白欄位的模板，使需要填入的槽位（slots）明確且唯一，相較於自然語言描述，此方式能顯著提升格式遵循的一致性和精確度。此外，研究指出在多輪對話情境中，初始階段提供的格式指令效果會隨對話進展逐漸衰減，尤其在後半段，模型傾向回歸至未指定的自由形式輸出。此現象歸因於對話拉長後，近期互動的影響權重相對增強，使得早期設定的約束實質上被稀釋。更進一步，單次指令中若堆疊過多限制條件，個別限制被遵守的機率反而下降，顯示約束數量與遵從率存在取捨關係。本文的證據主要來自信件式的實驗觀察，缺乏大規模量化數據與嚴謹統計檢定，且未深入探討模型架構或RLHF等訓練細節對該現象的調節作用。然而，其洞見對實際應用具有直接價值：工程師與使用者可透過模板化提示設計、精簡指令約束，以及必要時重新陳述初始格式要求，來提升LLM輸出結構的可靠性，從而減少AI回應與使用者期望之間的落差。",
+      "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
+      "title_zh": "AI輸出與期望偏差的原因、自然語言格式指定失效的原理及防範對策"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "okamyuji"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:47:20.875760+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
+          "url": "https://zenn.dev/okamyuji/articles/webgrab-llm-web-fetch"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.2,
+          "novelty": 0.5,
+          "preference_relevance": 0.15,
+          "reproducibility": 0.4,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "{'source': 'abstract_only', 'claim': 'No quantitative results or detailed methods are provided in the abstract.'}"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog-style paper about a Rust CLI tool for web fetching and summarization for LLMs. Contains minimal methodological detail and no quantitative results. Related to LLM tooling and agents but is a domain application without language methodology; low rigor and evidence. Slightly relevant due to tool use and LLM integration.",
+        "score": 0.19,
+        "token_usage": {
+          "completion_tokens": 185,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 84,
+          "prompt_tokens": 2260,
+          "total_tokens": 2445
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
+        "url": "https://zenn.dev/okamyuji/articles/webgrab-llm-web-fetch"
+      },
+      "published_at": "2026-07-18T20:33:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19,
+        "llm_relevance_score": 5.32,
+        "recency_score": 0.14842139389096362,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.268421393890964
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:5d603aeeaaffc689",
+      "summary": "はじめに\nLLMにWebページを読ませようとして、curlの出力をそのまま渡した経験はないでしょうか。返ってきたのはナビゲーションと広告とスクリプトが詰まった生HTMLで、肝心の本文はどこかに埋もれています。この記事は、その埋もれた本文だけを掘り出してLLMに渡すために作ったRust製CLIツール、webgrabの話です。ソースはwebgrabに置いてあります。webgrab自身の設計と実装はClaude Codeと共同で進めたもので、設計書と敵対的レビューの記録もリポジトリのdocs/に残しています。\n宣伝したいわけではなく、なぜ作ったのか、どこがうれしいのか、どこでcurlに負け...",
+      "summary_zh": "這篇文章介紹作者自行開發的Rust命令列工具webgrab，旨在解決直接將curl輸出的原始HTML餵給大型語言模型（LLM）時常見的痛點。作者指出，使用curl抓取網頁會連帶取得導航選單、廣告、腳本等大量無關內容，真正的本文反而被淹沒，導致LLM難以有效理解或摘要。webgrab的目標是先擷取並清理網頁中的核心正文，再將乾淨的文本提供給AI代理使用，藉此提升下游任務的效率與品質。文章說明該工具的設計與實作是與Claude Code協作完成，並在儲存庫的docs/目錄中留下設計文件與敵對式審查記錄，展現了人機協作開發的過程。作者強調並非單純宣傳，而是分享開發動機、工具帶來的具體好處，並坦承在某些情境下webgrab可能不如curl，例如需要原始HTML或處理動態內容時。文中雖未提供量化的效能數據，但從使用情境推斷，其價值在於省去Prompt工程中反覆清理HTML的麻煩，讓LLM專注於內容理解。這項工具對AI代理（agent）特別友善，因為代理在瀏覽網頁時需要結構化且簡潔的文字輸入。然而，其限制包括依賴靜態HTML解析，對需要JavaScript渲染的頁面可能失效，且目前為個人專案，生態系與維護資源有限。整體而言，本篇文章反映了實務上LLM應用與網頁互動的痛點，並提出一個具體的開源解決方案，對於從事AI代理開發或RAG（檢索增強生成）管線的工程師具有參考價值，也示範了如何利用AI輔助工具加速開發流程。",
+      "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
+      "title_zh": "curl成本高昂，WebFetch默默摘要：一款對AI代理友善的Rust網頁擷取命令列工具"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "a2-ito"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-18T08:18:58.422040+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "オープンLLMをLambdaで動かしてみる",
+          "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract only, no methods or results"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a non-technical blog post about running open LLMs on AWS Lambda for cost reduction, lacking methodology, experiments, and rigorous evaluation. Relevance to LLM and agents is present but the content is speculative and lacks depth.",
+        "score": 0.19,
+        "token_usage": {
+          "completion_tokens": 193,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 70,
+          "prompt_tokens": 2246,
+          "total_tokens": 2439
+        },
+        "topics": [
+          "LLM",
+          "agents",
+          "cost optimization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "オープンLLMをLambdaで動かしてみる",
+        "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35"
+      },
+      "published_at": "2026-07-18T03:00:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19,
+        "llm_relevance_score": 5.32,
+        "recency_score": 0.13795796020450762,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 11.257957960204507
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:599bcf41ef9979cc",
+      "summary": "はじめに\nZenn 読者のみなさん、こんにちは。e-dash VPoE の伊藤です。\n最近、AI コーディングエージェントや LLM ベースの自動化を業務に組み込む機会がぐっと増えました。非常に便利なのですが、コストも肥大化しがちです。\n\n有償 LLM の API は、ローカルで利用できるサブスクモデルとは異なり、使えば使うほどお金がかかる。\n弊社でも活用している Devin の Ask Devin や Review 機能が有料化された。\n「コミットメッセージの整形」「diff の要約」「軽い分類」といった簡単なタスクまで高価なモデルで実行するのはもったいない。\n\nそこで考えたのが、...",
+      "summary_zh": "本文是作者在Zenn上分享的實踐經驗，探討如何在AWS Lambda上運行開源LLM（大型語言模型）以降低成本。作者指出，隨著AI編碼代理和基於LLM的自動化在業務中的應用增加，企業對付費LLM API的依賴也導致成本不斷膨脹，例如Devin的Ask Devin和Review功能已開始收費。對於諸如提交訊息格式化、diff摘要、輕量分類等簡單任務，使用高價模型並不划算。為此，作者嘗試利用開源模型在Lambda上運行，以替代部分付費API調用。文中可能介紹了具體的技術方案，如選擇適合的開源模型（如Llama、Mistral等）、Lambda的部署配置、冷啟動問題的處理以及性能與成本的權衡。文章強調了這種方式在特定場景下能顯著降低成本，但同時也指出了Lambda在運行LLM時的局限性，例如記憶體和執行時間限制，以及推理速度可能較慢。作者提醒讀者，此方案更適合低延遲要求、簡單的文本處理任務，而非複雜的生成任務。儘管存在這些限制，作者認為在預算敏感的環境中，將開源模型部署在無伺服器架構上仍是一種值得探索的節約成本的策略，並希望通過分享此經驗為其他開發者提供參考。",
+      "title": "オープンLLMをLambdaで動かしてみる",
+      "title_zh": "在Lambda上運行開源LLM的嘗試"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Toshiaki0315"
+      ],
+      "categories": [],
+      "entities": [
+        "ollama"
+      ],
+      "first_seen_at": "2026-07-18T08:18:58.135105+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
+          "url": "https://qiita.com/Toshiaki0315/items/e8e3da8f1692f5280d78"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.15,
+          "reproducibility": 0.1,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract states it does not evaluate code quality",
+          "Abstract mentions only the addition of a mode and references a previous article"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Paper is a short blog-style article about adding a free-input mode to a macro that calls local LLMs from a text editor. It has some relevance to local LLM and code assistance, but lacks substantive research contributions, evaluation, or technical depth. Purely domain-specific tool integration with no scientific methodology.",
+        "score": 0.105,
+        "token_usage": {
+          "completion_tokens": 185,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 107,
+          "prompt_tokens": 2155,
+          "total_tokens": 2340
+        },
+        "topics": [
+          "Local LLM",
+          "Code Assistance",
+          "Macro"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
+        "url": "https://qiita.com/Toshiaki0315/items/e8e3da8f1692f5280d78"
+      },
+      "published_at": "2026-07-18T07:20:36+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.105,
+        "llm_relevance_score": 2.94,
+        "recency_score": 0.14046888983361916,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 10.880468889833619
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:bb3e086da403624e",
+      "summary": "はじめに\n\n秀丸マクロからローカルLLMを呼び出す方法を試しています。この記事では実際に実行して生成されるコードの質は評価していません。\n\n前回の記事では、秀丸エディタからローカルLLM環境の Ollama を呼び出し、選択したコードに対して次の処理を行う、Codin...",
+      "summary_zh": "本文探討如何在秀丸編輯器（Hidemaru Editor）中，透過巨集（Macro）呼叫本地大型語言模型（LLM），並以Ollama作為後端，實現AI程式碼輔助功能。作者先前已開發出能針對選取程式碼進行特定處理的巨集，而本文進一步新增「自由輸入」模式，讓使用者能直接輸入自然語言指令，靈活地對程式碼進行修改、解釋或重構。文章指出，呼叫Ollama的API方式與一般HTTP請求類似，巨集需負責建構請求、傳送資料、接收回應並解析結果。作者強調，本文重點在於技術實作流程，而非評估生成程式碼的品質，因此未對輸出的正確性或效能進行嚴謹測試。方法上，作者展示了如何在秀丸巨集中嵌入JSON格式的請求，並處理可能的錯誤與逾時。主要證據來自於實際執行的範例，但未提供系統性評估資料。限制包括：依賴使用者本機的Ollama服務，且巨集缺乏圖形化介面，可能對非技術使用者不友善。此外，由於本文僅為技術筆記，未深入探討安全性或提示注入（prompt injection）風險。儘管如此，此方案體現了將大型語言模型整合至輕量級編輯器的可能性，使開發者能在不離開編寫環境的情況下，利用本地模型進行程式碼輔助，有助於提升編程效率並保護程式碼隱私。此類應用在AI輔助開發工具普及的趨勢下，具有實務參考價值。",
+      "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
+      "title_zh": "為秀丸編輯器與本地LLM（Ollama）的AI程式碼輔助巨集新增「自由輸入」模式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "fuji1009_REBELL"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-18T08:18:58.135385+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
+          "url": "https://qiita.com/fuji1009_REBELL/items/6f090449bc636240af61"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title mentions context engineering and prompt; abstract discusses LLM answer quality depending on context design"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only personal blog-style note on context engineering; lacks methodological detail, experiments, or concrete techniques. Topic touches prompting/agents but not sufficiently substantive. No quantitative results, baselines, or reproducibility. Given preference weights, relevance is limited, rigor and evidence are very low. Score capped by domain applicability and lack of content.",
+        "score": 0.17500000000000002,
+        "token_usage": {
+          "completion_tokens": 183,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 111,
+          "prompt_tokens": 2159,
+          "total_tokens": 2342
+        },
+        "topics": [
+          "AI agents",
+          "prompting",
+          "context engineering"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
+        "url": "https://qiita.com/fuji1009_REBELL/items/6f090449bc636240af61"
+      },
+      "published_at": "2026-07-18T06:12:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.17500000000000002,
+        "llm_relevance_score": 4.9,
+        "recency_score": 0.1398053483023663,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 10.589805348302367
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:11608bb43824326a",
+      "summary": "同じLLMに同じ質問をしても、返ってくる答えの質がまるで違う——そんな経験はないでしょうか。\n私はAIエージェント環境を1年ほど個人で運用してきて、精度を左右していたのはプロンプトの言い回しではなく、そのモデルが何を見せられているか、つまり「コンテキストの設計」だと確信する...",
+      "summary_zh": "本文作者基於一年多的個人AI代理人環境操作經驗，觀察到在使用相同大型語言模型（LLM）時，即使提問內容相同，得到的回答品質卻可能差異極大。作者指出，影響輸出品質的關鍵往往不在於提示詞的措辭，而在於模型在當下所看到的「上下文」內容，即輸入資料的整體設計。這篇文章介紹「上下文工程」這一新興概念，主張透過有意識地安排、篩選與組織提供給模型的資訊，來引導模型產生更準確、更符合需求的反應。文中強調，與其過度專注於撰寫完美的提示詞，不如將重心轉向設計一個富含相關資訊且結構清晰的上下文環境。作者分享在實際操作中的體悟，認為這種方法能顯著提升AI應用的效能。然而，本文僅提供個人經驗與觀察，缺乏系統性的實驗數據或量化比較，也未深入探討不同模型架構或特定領域的適用性。儘管如此，此觀點為AI互動提供了一個新的思考方向，提醒使用者應重視輸入端資訊的整體規劃，而非僅限於單一指令的撰寫，對於實際應用與研究均有啟發價值。",
+      "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
+      "title_zh": "「上下文工程」入門 — 繼提示詞之後的AI應用新典範"
     },
     {
       "arxiv_id": null,
@@ -418,33 +904,33 @@
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.3,
+          "generalizability": 0.2,
           "novelty": 0.2,
-          "preference_relevance": 0.35,
+          "preference_relevance": 0.15,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Paper reports using multiple AI peer reviewers in parallel for technical, operational, and cost perspectives; mentions endless review loop due to model not self-converging; no formal experiments or quantitative results found in abstract-only content."
+          "Abstract",
+          "Body"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Personal blog-style writeup on AI review loops; mentions multi-agent peer review and stopping criteria. Relevant to agents/reasoning but lacks formal methodology, data, or evaluation. Strictly a case study with no rigorous evidence. Topics matched: agents, multi-agent, reasoning but no Japanese LLM-specific content beyond title.",
-        "score": 0.235,
+        "rationale": "Relevant to multi-agent and LLM-based review but lacks technical depth; abstract-only, no quantitative results. Basic research quality is low.",
+        "score": 0.145,
         "token_usage": {
-          "completion_tokens": 210,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 461,
+          "completion_tokens": 180,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 77,
           "prompt_tokens": 2253,
-          "total_tokens": 2463
+          "total_tokens": 2433
         },
         "topics": [
-          "agents",
-          "multi-agent",
-          "reasoning"
+          "Agents & Tool Use",
+          "Red Teaming & Evaluation"
         ]
       },
       "primary_link": {
@@ -460,13 +946,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.23500000000000001,
-        "llm_relevance_score": 6.58,
-        "recency_score": 0.15120750559862325,
+        "llm_raw_score": 0.145,
+        "llm_relevance_score": 4.06,
+        "recency_score": 0.14766644008922916,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 12.531207505598623
+        "total_score": 10.007666440089228
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -479,13 +965,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "leomarokun"
+        "maitake"
       ],
       "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-07-18T08:18:58.360717+00:00",
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:47:20.874944+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -493,10 +977,10 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "qiita-genai-tag",
+          "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
-          "url": "https://qiita.com/leomarokun/items/2a000a115e3f29efccca"
+          "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
+          "url": "https://zenn.dev/maitake00/articles/a3b6f8812bac66"
         }
       ],
       "llm_evaluation": {
@@ -505,59 +989,63 @@
           "generalizability": 0.2,
           "novelty": 0.1,
           "preference_relevance": 0.15,
-          "reproducibility": 0.1,
+          "reproducibility": 0.2,
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "abstract mentions RAGFlow issue and LlamaIndex solution",
+          "mentions bge-m3, Chroma, reranker, Ollama, qwen3.5"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper describes an experiment using AppConfig's experimental feature for A/B testing between two LLMs (Nova Lite vs Claude Haiku). It touches on LLMs and deployment, but the abstract lacks concrete methodology, results, or analysis. Relevance is limited as it is a practical engineering note, not a research contribution. Novelty is low; rigor and evidence are minimal due to abstract-only; generalizability is somewhat applicable to LLM evaluation workflows but not demonstrated. Reproducibility is speculative without details. Overall score is low.",
-        "score": 0.1225,
+        "rationale": "The paper is an abstract-only technical blog about building a local RAG system with LlamaIndex and Ollama for Japanese-English document retrieval. It touches on RAG, local LLM, and embedding/reranking, but provides no quantitative results, baselines, ablations, or formal methodology. Relevance to LLM/Japanese NLP/RAG is moderate (weights), but the content is a practice report with no evaluation evidence. Novelty is low as it's a common engineering solution. Evidence strength is minimal due to abstract-only. Generalizability is limited to a specific setup. Reproducibility partially described but no code or detailed steps given. Score is low due to lack of rigor and evidence.",
+        "score": 0.1275,
         "token_usage": {
-          "completion_tokens": 254,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 370,
-          "prompt_tokens": 2162,
-          "total_tokens": 2416
+          "completion_tokens": 283,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 80,
+          "prompt_tokens": 2256,
+          "total_tokens": 2539
         },
         "topics": [
-          "LLM",
-          "A/B testing",
-          "model evaluation",
-          "deployment"
+          "RAG",
+          "Japanese NLP",
+          "Local LLM",
+          "Embedding",
+          "Reranking"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "qiita-genai-tag",
+        "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
-        "url": "https://qiita.com/leomarokun/items/2a000a115e3f29efccca"
+        "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
+        "url": "https://zenn.dev/maitake00/articles/a3b6f8812bac66"
       },
-      "published_at": "2026-07-18T06:56:59+00:00",
+      "published_at": "2026-07-18T22:41:08+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
-        "entity_score": 2.0,
+        "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.12249999999999998,
-        "llm_relevance_score": 3.4299999999999997,
-        "recency_score": 0.14360165031785102,
+        "llm_raw_score": 0.1275,
+        "llm_relevance_score": 3.5700000000000003,
+        "recency_score": 0.149741723323759,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 11.123601650317852
+        "topic_score": 4.0,
+        "total_score": 9.519741723323758
       },
       "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:3920deff860452f5",
-      "summary": "はじめに\n生成 AI アプリを作っていると「今使っているモデル、別のに変えたら回答の質は上がるのか?」が気になります。\nとはいえ全ユーザーをいきなり切り替えるのは怖いので、一部のトラフィックだけ新モデルに回して比べたいとき、A/B テストが手軽にできればと思うことがありま...",
-      "summary_zh": "本文探討在生成式 AI 應用中，如何透過 AWS AppConfig 的實驗功能（Experiments）進行大型語言模型（LLM）的 A/B 測試，以評估替換模型是否提升回答品質。作者指出，全面切換模型風險較高，較穩妥的做法是先將部分流量引導至新模型進行比較。文中以 Amazon Nova Lite 和 Claude Haiku 兩種模型為例，說明利用 AppConfig 進行模型分流、監控指標與統計檢定的實作方法。主要證據來自於實際部署的經驗：透過設定漸進式流量比例，系統能自動收集回應延遲、錯誤率或使用者回饋等指標，並以統計顯著性判斷新模型是否優於現行版本。此方法的限制在於，AppConfig 的功能設計偏向 feature flag 的動態調整，對於需要細緻隨機分派或複雜實驗設計的場景，可能需額外整合其他工具；此外，實驗結果與評估指標的選擇高度相關，若指標無法反映真實品質，結論可能失真。此研究的重要性在於，提供了一種低成本、可快速迭代的模型評估方式，讓開發團隊能在不干擾所有使用者的前提下，數據驅動地決定模型升級，對於 LLM 應用的維運與優化具有實務參考價值。",
-      "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
-      "title_zh": "使用 AppConfig 的實驗功能進行 LLM 模型 A/B 測試（Nova Lite vs Claude Haiku）"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:77df9248905a978a",
+      "summary": "RTX 3060 Ti(VRAM 8GB)の自宅PCで、ローカルLLMの日英対応RAGを構築した。\n最初はRAGFlowで組んだが、日本語が中国語トークンに変換されて検索が壊れる問題にぶつかり、最終的にLlamaIndexで自作して解決した。同じ道を通る人のために、詰まった箇所と回避策を全部書く。\n\n 最終的にできたもの\n文書(日/英) → bge-m3で埋め込み → Chroma\n質問 → ベクトル検索(40件) → bge-reranker-v2-m3でリランク(5件) → qwen3.5:9b が根拠付きで回答\n        Ollama(GPU)            Xinf...",
+      "summary_zh": "作者在自宅PC（配備RTX 3060 Ti，VRAM 8GB）上建構了一套支援日文與英文的本地LLM RAG系統。起初使用RAGFlow，但在過程中發現其會將日文轉換為中文token，導致檢索結果嚴重失真的問題；因此作者改用LlamaIndex自行建置，並成功解決此困擾。最終系統流程為：先以bge-m3模型將日/英文文件轉為嵌入向量並存入Chroma向量資料庫；查詢時先經向量檢索取得前40筆候選結果，再透過bge-reranker-v2-m3進行重新排序，篩選出前5筆，最後交由Ollama上的qwen3.5:9b模型回答，並提供根據。文章詳細記載了開發過程中遇到的各種問題與迴避方法，目的是幫助有相同需求（尤其是日文或雙語RAG）的開發者少走冤枉路。此方案完全在本地運作，不需依賴雲端API，符合資料隱私需求；然而受限於8GB VRAM，模型選擇可能受到限制，且日文與英文的混合檢索可能仍需針對語意差異進行調校。此案例對非英語系語言（特別是日文）的RAG實作具有重要參考價值，因為市售RAG框架常未妥善處理非英語tokenization或嵌入品質，導致檢索失效；作者自行整合LlamaIndex、bge-m3與bge-reranker-v2-m3的做法，提供了一套可行且可複製的替代方案。",
+      "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
+      "title_zh": "RAGFlow會把日文轉成中文，因此我用LlamaIndex自製日英RAG的故事"
     },
     {
       "arxiv_id": null,
@@ -582,34 +1070,33 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.1,
+          "evidence_strength": 0.05,
           "generalizability": 0.2,
           "novelty": 0.1,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.0,
-          "rigor": 0.1
+          "preference_relevance": 0.15,
+          "reproducibility": 0.1,
+          "rigor": 0.05
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract mentions Qwen3.6 27B and GPT-5(medium) performance comparison, artificialanalysis.ai reference."
+          "abstract_only: performance claim"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper discusses local LLM machine setup and references Qwen3.6 27B and GPT-5(medium) with performance comparison. It is relevant to LLMs and local LLM (business workflow/edge environment) but abstract only, no methods, results, or reproducibility. Novelty and rigor are low. Score limited by lack of substantive content and weak evidence.",
-        "score": 0.185,
+        "rationale": "Abstract mentions local LLM (Qwen3.6) and performance comparison to GPT-5, which aligns with LLM and local deployment, but lacks technical detail and methodology. Pure hardware/benchmark discussion with no substantive AI research contribution.",
+        "score": 0.115,
         "token_usage": {
-          "completion_tokens": 245,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 345,
+          "completion_tokens": 193,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 89,
           "prompt_tokens": 2137,
-          "total_tokens": 2382
+          "total_tokens": 2330
         },
         "topics": [
           "LLM",
-          "local LLM",
-          "performance comparison"
+          "performance"
         ]
       },
       "primary_link": {
@@ -625,13 +1112,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.185,
-        "llm_relevance_score": 5.18,
-        "recency_score": 0.14432379514658086,
+        "llm_raw_score": 0.115,
+        "llm_relevance_score": 3.22,
+        "recency_score": 0.14094393638126923,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 10.87432379514658
+        "total_score": 8.910943936381269
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -666,33 +1153,36 @@
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.05,
+          "evidence_strength": 0.0,
+          "generalizability": 0.1,
           "novelty": 0.1,
-          "preference_relevance": 0.15,
+          "preference_relevance": 0.0,
           "reproducibility": 0.0,
-          "rigor": 0.05
+          "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "abstract mentions three findings on cost, speed, quality"
+          "abstract mentions 'GPT-5.6' and 'QCD', but no detailed methods or results",
+          "claims of '致命的ミスがゼロ' and cost estimates without supporting data",
+          "mentions 'ブラインド判定' but no specifics"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract only, focused on cost and performance of GPT-5.6 variants (Sol/Terra/Luna) in code tasks. Lacks formal methodology, baselines, or empirical detail. Core is LLM comparison but no language modeling contribution; falls under domain application with weak evidence and no reproducibility.",
-        "score": 0.095,
+        "rationale": "This abstract appears to be a blog-style comparison of different GPT-5.6 variants (Sol, Terra, Luna) with respect to quality, cost, and delivery (QCD). It mentions 'GPT-5.6', which is an LLM, but the content is more about performance benchmarking and cost analysis than advancing LLM methodology. It lacks detailed methodology, quantitative data beyond anecdotal claims, and is not a scientific paper. The '3つの発見' style suggests a non-rigorous evaluation. Relevance to LLM research is marginal, and no evidence of rigorous experimentation or alignment with the specified preferences is provided.",
+        "score": 0.04,
         "token_usage": {
-          "completion_tokens": 172,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 507,
+          "completion_tokens": 330,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 123,
           "prompt_tokens": 2299,
-          "total_tokens": 2471
+          "total_tokens": 2629
         },
         "topics": [
-          "LLM",
-          "code generation"
+          "LLM evaluation",
+          "cost-performance",
+          "prompt engineering"
         ]
       },
       "primary_link": {
@@ -708,13 +1198,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.095,
-        "llm_relevance_score": 2.66,
-        "recency_score": 0.15267573559773587,
+        "llm_raw_score": 0.04,
+        "llm_relevance_score": 1.12,
+        "recency_score": 0.14910028622234825,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 10.362675735597737
+        "total_score": 8.819100286222348
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -723,252 +1213,6 @@
       "summary_zh": "本研究以品質（Quality）、成本（Cost）、交期（Delivery）三維度，系統性比較新一代 GPT-5.6 系列的三種配置：Sol、Terra 與 Luna，並納入前代 GPT-5.5 作為對照。作者設計三項軟體開發任務，在不同推理等級（low、high、xhigh）下反覆執行，記錄致命錯誤次數、總耗時與估算成本。主要發現有三：其一，成本效益最佳者為 Terra 搭配 high 等級，並非最高階的 Sol 或最便宜的 Luna——在零致命錯誤前提下，三任務總耗時 122 秒，估算成本僅 $0.20，相較 Sol 搭配 xhigh 節省約四成時間與六成以上成本。其二，單純追求低價高速可能導致品質崩壞：最便宜的 Luna 搭配 low 等級在十次執行中十次重複相同錯誤，即使表面評分接近 95 分，卻存在看不見的品質風險。其三，在相同單價（$5/$30）下，新世代 GPT-5.6 Sol 對比 GPT-5.5 並未展現明確的 QCD 優勢，世代進化需從程式碼內容洞察，而非僅憑盲測分數。本研究採用 QCD 框架提供務實的模型選擇依據，但受限於抽象摘要，缺乏任務細節、評分標準與統計顯著性檢定，且實驗規模有限，外部效度待驗證。對實務開發者而言，此結果凸顯基準測試分數與真實部署成本、穩定性之間的落差，強調應依任務需求與預算權衡配置，而非盲目追求旗艦型號。",
       "title": "GPT-5.6 は Sol・Terra・Luna のどれを選ぶべきか——3つの違いを QCD で明らかにした（オトナの自由研究 #28）",
       "title_zh": "GPT-5.6 應選 Sol、Terra 還是 Luna？以 QCD 揭示三者差異（大人的自由研究 #28）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Toshiaki0315"
-      ],
-      "categories": [],
-      "entities": [
-        "ollama"
-      ],
-      "first_seen_at": "2026-07-18T08:18:58.135105+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
-          "url": "https://qiita.com/Toshiaki0315/items/e8e3da8f1692f5280d78"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.05,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "States code quality not evaluated"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Short Japanese blog-style note about adding a 'free input' mode to a local LLM (Ollama) macro for a text editor. Only abstract available; no evaluation or methodological detail. It touches on local LLM and code support, but lacks depth, novelty, rigor, and evidence. Pure domain application with minimal relevance to core LLM research topics. Score capped low due to abstract-only and limited scope.",
-        "score": 0.07250000000000001,
-        "token_usage": {
-          "completion_tokens": 194,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 363,
-          "prompt_tokens": 2155,
-          "total_tokens": 2349
-        },
-        "topics": [
-          "local LLM",
-          "code support"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
-        "url": "https://qiita.com/Toshiaki0315/items/e8e3da8f1692f5280d78"
-      },
-      "published_at": "2026-07-18T07:20:36+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.07250000000000001,
-        "llm_relevance_score": 2.0300000000000002,
-        "recency_score": 0.1438373569046215,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 9.973837356904621
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:bb3e086da403624e",
-      "summary": "はじめに\n\n秀丸マクロからローカルLLMを呼び出す方法を試しています。この記事では実際に実行して生成されるコードの質は評価していません。\n\n前回の記事では、秀丸エディタからローカルLLM環境の Ollama を呼び出し、選択したコードに対して次の処理を行う、Codin...",
-      "summary_zh": "本文探討如何在秀丸編輯器（Hidemaru Editor）中，透過巨集（Macro）呼叫本地大型語言模型（LLM），並以Ollama作為後端，實現AI程式碼輔助功能。作者先前已開發出能針對選取程式碼進行特定處理的巨集，而本文進一步新增「自由輸入」模式，讓使用者能直接輸入自然語言指令，靈活地對程式碼進行修改、解釋或重構。文章指出，呼叫Ollama的API方式與一般HTTP請求類似，巨集需負責建構請求、傳送資料、接收回應並解析結果。作者強調，本文重點在於技術實作流程，而非評估生成程式碼的品質，因此未對輸出的正確性或效能進行嚴謹測試。方法上，作者展示了如何在秀丸巨集中嵌入JSON格式的請求，並處理可能的錯誤與逾時。主要證據來自於實際執行的範例，但未提供系統性評估資料。限制包括：依賴使用者本機的Ollama服務，且巨集缺乏圖形化介面，可能對非技術使用者不友善。此外，由於本文僅為技術筆記，未深入探討安全性或提示注入（prompt injection）風險。儘管如此，此方案體現了將大型語言模型整合至輕量級編輯器的可能性，使開發者能在不離開編寫環境的情況下，利用本地模型進行程式碼輔助，有助於提升編程效率並保護程式碼隱私。此類應用在AI輔助開發工具普及的趨勢下，具有實務參考價值。",
-      "title": "秀丸エディタ×ローカルLLM（Ollama）のAIコード支援マクロに「自由入力」モードを追加する",
-      "title_zh": "為秀丸編輯器與本地LLM（Ollama）的AI程式碼輔助巨集新增「自由輸入」模式"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "okamyuji"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-19T08:47:20.875760+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
-          "url": "https://zenn.dev/okamyuji/articles/webgrab-llm-web-fetch"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.3,
-          "novelty": 0.4,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract only, no methods or evaluation"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper describes a Rust CLI tool for fetching web content for LLMs. While related to LLM usage, it is a practical tool with limited technical depth, no experiments or evaluation. Lacks methodological novelty and rigor. Language is Japanese but no Japanese LLM/NLP focus. Mostly out of scope for the specified research areas.",
-        "score": 0.13,
-        "token_usage": {
-          "completion_tokens": 169,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 468,
-          "prompt_tokens": 2260,
-          "total_tokens": 2429
-        },
-        "topics": [
-          "CLI tool",
-          "web fetching"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
-        "url": "https://zenn.dev/okamyuji/articles/webgrab-llm-web-fetch"
-      },
-      "published_at": "2026-07-18T20:33:36+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.13,
-        "llm_relevance_score": 3.64,
-        "recency_score": 0.15198056331663615,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 9.591980563316636
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:5d603aeeaaffc689",
-      "summary": "はじめに\nLLMにWebページを読ませようとして、curlの出力をそのまま渡した経験はないでしょうか。返ってきたのはナビゲーションと広告とスクリプトが詰まった生HTMLで、肝心の本文はどこかに埋もれています。この記事は、その埋もれた本文だけを掘り出してLLMに渡すために作ったRust製CLIツール、webgrabの話です。ソースはwebgrabに置いてあります。webgrab自身の設計と実装はClaude Codeと共同で進めたもので、設計書と敵対的レビューの記録もリポジトリのdocs/に残しています。\n宣伝したいわけではなく、なぜ作ったのか、どこがうれしいのか、どこでcurlに負け...",
-      "summary_zh": "這篇文章介紹作者自行開發的Rust命令列工具webgrab，旨在解決直接將curl輸出的原始HTML餵給大型語言模型（LLM）時常見的痛點。作者指出，使用curl抓取網頁會連帶取得導航選單、廣告、腳本等大量無關內容，真正的本文反而被淹沒，導致LLM難以有效理解或摘要。webgrab的目標是先擷取並清理網頁中的核心正文，再將乾淨的文本提供給AI代理使用，藉此提升下游任務的效率與品質。文章說明該工具的設計與實作是與Claude Code協作完成，並在儲存庫的docs/目錄中留下設計文件與敵對式審查記錄，展現了人機協作開發的過程。作者強調並非單純宣傳，而是分享開發動機、工具帶來的具體好處，並坦承在某些情境下webgrab可能不如curl，例如需要原始HTML或處理動態內容時。文中雖未提供量化的效能數據，但從使用情境推斷，其價值在於省去Prompt工程中反覆清理HTML的麻煩，讓LLM專注於內容理解。這項工具對AI代理（agent）特別友善，因為代理在瀏覽網頁時需要結構化且簡潔的文字輸入。然而，其限制包括依賴靜態HTML解析，對需要JavaScript渲染的頁面可能失效，且目前為個人專案，生態系與維護資源有限。整體而言，本篇文章反映了實務上LLM應用與網頁互動的痛點，並提出一個具體的開源解決方案，對於從事AI代理開發或RAG（檢索增強生成）管線的工程師具有參考價值，也示範了如何利用AI輔助工具加速開發流程。",
-      "title": "curlは高くつく、WebFetchは黙って要約する - AIエージェントに優しいRust製Web取得CLI",
-      "title_zh": "curl成本高昂，WebFetch默默摘要：一款對AI代理友善的Rust網頁擷取命令列工具"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "maitake"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-19T08:47:20.874944+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
-          "url": "https://zenn.dev/maitake00/articles/a3b6f8812bac66"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.2,
-          "novelty": 0.1,
-          "preference_relevance": 0.15,
-          "reproducibility": 0.1,
-          "rigor": 0.05
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Technical blog with practical RAG implementation using LLMs and Japanese/English language, but abstract-only, lacking rigorous evaluation, baselines, and quantitative results. Overlaps with preference topics (RAG, LLM, Japanese NLP) but mostly anecdotal.",
-        "score": 0.115,
-        "token_usage": {
-          "completion_tokens": 199,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 464,
-          "prompt_tokens": 2256,
-          "total_tokens": 2455
-        },
-        "topics": [
-          "RAG",
-          "Japanese LLM",
-          "LLM",
-          "NLP"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
-        "url": "https://zenn.dev/maitake00/articles/a3b6f8812bac66"
-      },
-      "published_at": "2026-07-18T22:41:08+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.115,
-        "llm_relevance_score": 3.22,
-        "recency_score": 0.15333255446628938,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 9.17333255446629
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:77df9248905a978a",
-      "summary": "RTX 3060 Ti(VRAM 8GB)の自宅PCで、ローカルLLMの日英対応RAGを構築した。\n最初はRAGFlowで組んだが、日本語が中国語トークンに変換されて検索が壊れる問題にぶつかり、最終的にLlamaIndexで自作して解決した。同じ道を通る人のために、詰まった箇所と回避策を全部書く。\n\n 最終的にできたもの\n文書(日/英) → bge-m3で埋め込み → Chroma\n質問 → ベクトル検索(40件) → bge-reranker-v2-m3でリランク(5件) → qwen3.5:9b が根拠付きで回答\n        Ollama(GPU)            Xinf...",
-      "summary_zh": "作者在自宅PC（配備RTX 3060 Ti，VRAM 8GB）上建構了一套支援日文與英文的本地LLM RAG系統。起初使用RAGFlow，但在過程中發現其會將日文轉換為中文token，導致檢索結果嚴重失真的問題；因此作者改用LlamaIndex自行建置，並成功解決此困擾。最終系統流程為：先以bge-m3模型將日/英文文件轉為嵌入向量並存入Chroma向量資料庫；查詢時先經向量檢索取得前40筆候選結果，再透過bge-reranker-v2-m3進行重新排序，篩選出前5筆，最後交由Ollama上的qwen3.5:9b模型回答，並提供根據。文章詳細記載了開發過程中遇到的各種問題與迴避方法，目的是幫助有相同需求（尤其是日文或雙語RAG）的開發者少走冤枉路。此方案完全在本地運作，不需依賴雲端API，符合資料隱私需求；然而受限於8GB VRAM，模型選擇可能受到限制，且日文與英文的混合檢索可能仍需針對語意差異進行調校。此案例對非英語系語言（特別是日文）的RAG實作具有重要參考價值，因為市售RAG框架常未妥善處理非英語tokenization或嵌入品質，導致檢索失效；作者自行整合LlamaIndex、bge-m3與bge-reranker-v2-m3的做法，提供了一套可行且可複製的替代方案。",
-      "title": "RAGFlowが日本語を中国語に変えてしまうので、LlamaIndexで日英RAGを自作した話",
-      "title_zh": "RAGFlow會把日文轉成中文，因此我用LlamaIndex自製日英RAG的故事"
     },
     {
       "arxiv_id": null,
@@ -994,34 +1238,30 @@
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.2,
+          "generalizability": 0.1,
           "novelty": 0.1,
           "preference_relevance": 0.1,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions Bedrock learning environment, IAM, logs, cost alerts, but no technical details or results."
-        ],
+        "evidence": [],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a Japanese introductory tutorial on generative AI and RAG for infrastructure engineers. It touches on Japanese LLM and RAG topics but is non-technical, lacks novel contributions, and has no empirical evaluation. Relevance to core preferences is limited, and the abstract-only content provides no evidence of quality, methodology, or broader applicability.",
-        "score": 0.11000000000000001,
+        "rationale": "Abstract-only introductory blog on generative AI/RAG for infrastructure engineers; no research contributions, methods, or results. Tangential to LLM and RAG topics but lacks scientific content and evidence.",
+        "score": 0.1,
         "token_usage": {
-          "completion_tokens": 196,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 496,
+          "completion_tokens": 135,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 112,
           "prompt_tokens": 2288,
-          "total_tokens": 2484
+          "total_tokens": 2423
         },
         "topics": [
-          "RAG",
-          "Japanese LLM",
-          "Infrastructure engineering",
-          "Generative AI"
+          "LLM",
+          "RAG"
         ]
       },
       "primary_link": {
@@ -1037,13 +1277,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.11000000000000001,
-        "llm_relevance_score": 3.0800000000000005,
-        "recency_score": 0.13972338920837987,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.13645126543104044,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 9.01972338920838
+        "total_score": 8.736451265431041
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -1052,84 +1292,6 @@
       "summary_zh": "本文以基礎設施工程師的視角出發，指出一般人在學習生成式 AI 時常因術語隔閡而難以理解，例如 token、embedding、context window、vector database 等詞彙往往以 AI 語言解釋 AI，反而造成障礙。作者自述在 AWS 上使用 Bedrock 建立學習環境，透過撰寫 IAM 政策、設定日誌與成本警報等熟悉的基礎設施工作來接觸生成式 AI，從而發現 AI 概念其實可以對應到既有的設計判斷。文章將 LLM 比喻為「什麼都不記得的伺服器」，強調模型本身不儲存事實，而是根據輸入的上下文產生輸出，因此需要透過 RAG（檢索增強生成）來補充外部知識。文中預期會解釋 RAG 的運作原理，並以基礎設施工程師熟悉的術語（如 API 呼叫、資料庫查詢、快取等）類比，使讀者能將既有知識遷移到 AI 領域。由於提供的內容僅有摘要，缺乏完整實作細節與實驗數據，本文的價值在於提供一個直觀的框架，幫助基礎設施背景的讀者建立生成式 AI 與 RAG 的心智模型，並鼓勵讀者動手實作以深化理解。此文章的重要性在於填補技術社群中常見的知識落差，使非 ML 專業的工程師也能快速掌握 AI 應用的關鍵概念，進而評估與建置相關系統。",
       "title": "LLM は「何も覚えていないサーバ」だった — インフラエンジニアの既存知識で理解する生成AI・RAG 入門",
       "title_zh": "LLM 是「什麼都不記得的伺服器」——以基礎設施工程師的既有知識理解生成式 AI 與 RAG 入門"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "金 成雨（きむ そんう）"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-07-19T08:47:20.876494+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
-          "url": "https://zenn.dev/suuungwoo/books/personal-ai-system-guide"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Only an abstract for a practical guide on using Claude Code and Codex as personal AI systems; no research content, no methodology, no evaluation. Out of scope for academic AI/ML research and lacks details.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 134,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 313,
-          "prompt_tokens": 2105,
-          "total_tokens": 2239
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
-        "url": "https://zenn.dev/suuungwoo/books/personal-ai-system-guide"
-      },
-      "published_at": "2026-07-18T17:00:52+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.1497518351389816,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 7.699751835138981
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:8ef47824254c3ee2",
-      "summary": "Claude CodeとCodexを、Markdownの正本・事実ラベル・停止条件で安全に運用するPersonal AI Systemの設計と導入を解説します。",
-      "summary_zh": "本指南旨在協助讀者將 Claude Code 與 Codex 等 AI 編程助手，轉化為個人化的「人生祕書」，並強調安全、可靠的運作原則。文章指出，這類工具常被視為單純的程式碼生成器，但若能妥善設計，可擴展至日常任務管理與資訊整合。核心方法在於建立三大支柱：以 Markdown 文件作為「正本」來儲存關鍵知識與決策，確保資料來源單一且可追溯；引入「事實標籤」機制，為 AI 輸出的內容標註可信度與來源，降低幻覺與錯誤資訊的風險；以及設定明確的「停止條件」，當任務超出授權範圍或風險過高時，AI 需主動暫停並請求人類確認。文中以實際案例說明如何透過這些原則，讓 AI 在處理敏感或複雜事務時，既能提供高效輔助，又能維持人類控制權。此方法的主要證據來自於作者的實作經驗與反思，雖未提供大規模量化數據，但展示了流程的可行性。其限制在於，此法較適用於具備基礎技術背景的使用者，且依賴於持續的提示工程與文件維護，對非技術用戶門檻較高。整體而言，此指南的重要性在於，它填補了 AI 工具從「開發輔助」過渡到「個人生活管理」的設計缺口，提供了一個兼顧效率與倫理的操作框架，對期待深化 AI 整合的專業人士具參考價值。",
-      "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
-      "title_zh": "Claude Code 與 Codex 的「人生祕書」化 — 個人 AI 系統建構指南"
     },
     {
       "arxiv_id": null,
@@ -1158,27 +1320,31 @@
         "components": {
           "evidence_strength": 0.0,
           "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
+          "novelty": 0.05,
+          "preference_relevance": 0.05,
           "reproducibility": 0.0,
           "rigor": 0.0
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "Content is an abstract of a news article listing papers, no details."
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is an abstract-only advertisement for a premium newsletter listing AI papers, with no technical content, methodology, results, or experimental evidence. Pure domain or meta content, no adherence to preference topics beyond generic AI. Fails all quality components; maximum score 0.0 due to lack of substance and untrusted status.",
-        "score": 0.0,
+        "rationale": "Abstract only; appears to be a curated list of AI papers with no substantive research content. Mentions coding agents but no novel methodology or evaluation. Out of scope as a research contribution.",
+        "score": 0.027500000000000004,
         "token_usage": {
-          "completion_tokens": 153,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 482,
+          "completion_tokens": 143,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 98,
           "prompt_tokens": 2274,
-          "total_tokens": 2427
+          "total_tokens": 2417
         },
-        "topics": []
+        "topics": [
+          "coding agents"
+        ]
       },
       "primary_link": {
         "link_type": "blog",
@@ -1193,13 +1359,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.1447988057515684,
+        "llm_raw_score": 0.027500000000000004,
+        "llm_relevance_score": 0.7700000000000001,
+        "recency_score": 0.14140782291101153,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 3.75,
-        "total_score": 6.694798805751568
+        "total_score": 7.461407822911012
       },
       "section": null,
       "source_name": "AIDB - AI Research Database",
@@ -1208,82 +1374,6 @@
       "summary_zh": "本文為AIDB研究團隊所整理的每週AI論文推薦清單，聚焦於2026年7月12日至7月18日期間公開的論文（包含大量預印本）。評選標準除了傳統的同儕審查框架（如新穎性、優勢性）之外，還納入了「對實際經濟與產業的影響」這項獨特評估指標。此篇文章屬於付費會員限定內容，並簡介了免費會員與付費會員的權限差異：免費會員可瀏覽部分文章並使用研究簡報的基本功能，而付費會員則可無限閱覽所有歷史文章、訂閱專家每日更新的研究結果、使用支援日語搜尋的最新AI論文資料庫，以及存取完整的研究簡報資料庫。雖然摘要未列出具體論文標題或研究細節，但可推測其內容涵蓋多個AI領域的前沿進展。由於僅提供目錄與訂閱資訊，本文的學術價值在於指引研究者快速掌握一週內的重要AI論文動態，對於追蹤領域趨勢具有實用性。若想深入了解具體論文內容，需進一步查閱原始資料或訂閱服務。",
       "title": "🔒 今週の注目AI論文リスト（論文公開日2026/7/12～7/18）",
       "title_zh": "🔒 本週注目AI論文清單（論文公開日2026/7/12～7/18）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "a2-ito"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-18T08:18:58.422040+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "オープンLLMをLambdaで動かしてみる",
-          "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.1,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog about running open LLMs on AWS Lambda for cost reduction; no technical detail, methodology, or results; focuses on deployment cost, not language model research. Fails relevance threshold and lacks rigor/evidence.",
-        "score": 0.015,
-        "token_usage": {
-          "completion_tokens": 135,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 454,
-          "prompt_tokens": 2246,
-          "total_tokens": 2381
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "オープンLLMをLambdaで動かしてみる",
-        "url": "https://zenn.dev/edash_tech_blog/articles/528ab6bd044c35"
-      },
-      "published_at": "2026-07-18T03:00:52+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.015,
-        "llm_relevance_score": 0.42,
-        "recency_score": 0.14126621477021228,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 6.361266214770212
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:599bcf41ef9979cc",
-      "summary": "はじめに\nZenn 読者のみなさん、こんにちは。e-dash VPoE の伊藤です。\n最近、AI コーディングエージェントや LLM ベースの自動化を業務に組み込む機会がぐっと増えました。非常に便利なのですが、コストも肥大化しがちです。\n\n有償 LLM の API は、ローカルで利用できるサブスクモデルとは異なり、使えば使うほどお金がかかる。\n弊社でも活用している Devin の Ask Devin や Review 機能が有料化された。\n「コミットメッセージの整形」「diff の要約」「軽い分類」といった簡単なタスクまで高価なモデルで実行するのはもったいない。\n\nそこで考えたのが、...",
-      "summary_zh": "本文是作者在Zenn上分享的實踐經驗，探討如何在AWS Lambda上運行開源LLM（大型語言模型）以降低成本。作者指出，隨著AI編碼代理和基於LLM的自動化在業務中的應用增加，企業對付費LLM API的依賴也導致成本不斷膨脹，例如Devin的Ask Devin和Review功能已開始收費。對於諸如提交訊息格式化、diff摘要、輕量分類等簡單任務，使用高價模型並不划算。為此，作者嘗試利用開源模型在Lambda上運行，以替代部分付費API調用。文中可能介紹了具體的技術方案，如選擇適合的開源模型（如Llama、Mistral等）、Lambda的部署配置、冷啟動問題的處理以及性能與成本的權衡。文章強調了這種方式在特定場景下能顯著降低成本，但同時也指出了Lambda在運行LLM時的局限性，例如記憶體和執行時間限制，以及推理速度可能較慢。作者提醒讀者，此方案更適合低延遲要求、簡單的文本處理任務，而非複雜的生成任務。儘管存在這些限制，作者認為在預算敏感的環境中，將開源模型部署在無伺服器架構上仍是一種值得探索的節約成本的策略，並希望通過分享此經驗為其他開發者提供參考。",
-      "title": "オープンLLMをLambdaで動かしてみる",
-      "title_zh": "在Lambda上運行開源LLM的嘗試"
     },
     {
       "arxiv_id": null,
@@ -1311,7 +1401,7 @@
           "evidence_strength": 0.0,
           "generalizability": 0.0,
           "novelty": 0.0,
-          "preference_relevance": 0.05,
+          "preference_relevance": 0.0,
           "reproducibility": 0.0,
           "rigor": 0.0
         },
@@ -1321,14 +1411,14 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "This is a blog-style announcement about Claude availability on Microsoft Foundry, not a research paper. It lacks any technical methodology, evaluation, or novel contribution. The content is purely informational about a product release and refers to a longer blog, with no technical details. As such, it falls far outside the scope of AI/ML research evaluation and has negligible relevance to any research topics. The domain is applied cloud deployment, but even that is not described.",
-        "score": 0.020000000000000004,
+        "rationale": "The paper is a brief introductory blog post about Claude's availability on Microsoft Foundry, with no technical content, methods, or results. It is not a research paper and provides no substantive evidence for any of the preference topics. It has zero relevance, novelty, rigor, evidence, generalizability, or reproducibility.",
+        "score": 0.0,
         "token_usage": {
-          "completion_tokens": 182,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 349,
+          "completion_tokens": 154,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 93,
           "prompt_tokens": 2141,
-          "total_tokens": 2323
+          "total_tokens": 2295
         },
         "topics": []
       },
@@ -1345,13 +1435,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.02,
-        "llm_relevance_score": 0.56,
-        "recency_score": 0.14320297886207362,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.13984936802586923,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 6.253202978862074
+        "total_score": 5.689849368025869
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
@@ -1360,82 +1450,6 @@
       "summary_zh": "這篇文章是針對「Claude是否能在Azure上使用」問題的入口導讀，重點在於說明Claude已於2026年6月在Microsoft Foundry平台上正式推出（GA）。文章指出，使用者過去可能對Claude與Azure的整合有所疑慮，但現在已可透過Foundry進行部署，並透過Messages API呼叫Claude模型。本文僅提供導入要點的概述，並未深入細節。完整的技術內容，包括在Foundry上的實際部署步驟、Messages API的具體呼叫方式，以及與Anthropic官方API或Amazon Bedrock的差異比較，作者表示將另行整理於其部落格文章中。對於想了解Claude在微軟生態系中可用性的開發者或企業用戶而言，這篇文章提供了一個明確的答案，確認了這項整合的可行性。然而，由於本文僅為摘要性介紹，並未提供實作範例或效能數據，讀者如需進一步評估，仍須參考後續的詳細教學或官方文件。整體而言，這則消息對企業採用Claude作為AI解決方案具有重要意義，因為它擴展了模型的部署選項，讓Azure用戶也能更方便地使用Claude。",
       "title": "「ClaudeってAzureで使えないの？」→ 2026年6月にGAしてました（Microsoft Foundry）",
       "title_zh": "Claude在Azure上不能用嗎？——2026年6月已在Microsoft Foundry正式推出（GA）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "fuji1009_REBELL"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-18T08:18:58.135385+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
-          "url": "https://qiita.com/fuji1009_REBELL/items/6f090449bc636240af61"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only, no technical content, no methods or results, merely anecdotal. Out of scope for AI/ML research, not a paper.",
-        "score": 0.0,
-        "token_usage": {
-          "completion_tokens": 119,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 367,
-          "prompt_tokens": 2159,
-          "total_tokens": 2278
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
-        "url": "https://qiita.com/fuji1009_REBELL/items/6f090449bc636240af61"
-      },
-      "published_at": "2026-07-18T06:12:25+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.0,
-        "llm_relevance_score": 0.0,
-        "recency_score": 0.14315790353836436,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 5.693157903538364
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:11608bb43824326a",
-      "summary": "同じLLMに同じ質問をしても、返ってくる答えの質がまるで違う——そんな経験はないでしょうか。\n私はAIエージェント環境を1年ほど個人で運用してきて、精度を左右していたのはプロンプトの言い回しではなく、そのモデルが何を見せられているか、つまり「コンテキストの設計」だと確信する...",
-      "summary_zh": "本文作者基於一年多的個人AI代理人環境操作經驗，觀察到在使用相同大型語言模型（LLM）時，即使提問內容相同，得到的回答品質卻可能差異極大。作者指出，影響輸出品質的關鍵往往不在於提示詞的措辭，而在於模型在當下所看到的「上下文」內容，即輸入資料的整體設計。這篇文章介紹「上下文工程」這一新興概念，主張透過有意識地安排、篩選與組織提供給模型的資訊，來引導模型產生更準確、更符合需求的反應。文中強調，與其過度專注於撰寫完美的提示詞，不如將重心轉向設計一個富含相關資訊且結構清晰的上下文環境。作者分享在實際操作中的體悟，認為這種方法能顯著提升AI應用的效能。然而，本文僅提供個人經驗與觀察，缺乏系統性的實驗數據或量化比較，也未深入探討不同模型架構或特定領域的適用性。儘管如此，此觀點為AI互動提供了一個新的思考方向，提醒使用者應重視輸入端資訊的整體規劃，而非僅限於單一指令的撰寫，對於實際應用與研究均有啟發價值。",
-      "title": "「コンテキストエンジニアリング」入門 — プロンプトの次に来るAI活用の新パラダイム",
-      "title_zh": "「上下文工程」入門 — 繼提示詞之後的AI應用新典範"
     },
     {
       "arxiv_id": null,
@@ -1466,19 +1480,21 @@
           "rigor": 0.0
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "No technical sections or quantitative results in provided abstract"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only note on physical AI/robotics, outside LLM/NLP scope; no technical content or evidence.",
+        "rationale": "Abstract-only note about physical AI trends; no technical content, no relevant topics, no evidence. Out of scope and unsupported.",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 114,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 403,
+          "completion_tokens": 130,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 19,
           "prompt_tokens": 2195,
-          "total_tokens": 2309
+          "total_tokens": 2325
         },
         "topics": []
       },
@@ -1497,11 +1513,11 @@
         "kind_score": 1.5,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.14769641096545605,
+        "recency_score": 0.1442375703169014,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 2.647696410965456
+        "total_score": 2.644237570316901
       },
       "section": null,
       "source_name": "npaka (note) - Japanese LLM Curation",
@@ -1547,14 +1563,14 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract only, no methodology, language or AI relevance; appears to be a technical blog about IBM product versions and NVD CPE dictionary, not a research paper. All scores minimal due to lack of content, no evidence, out of scope for LLM/NLP research.",
+        "rationale": "The paper is a blog post about generating a version list of IBM products using Bob Shell and NVD CPE Dictionary. It is not a research paper, lacks methodology, results, and relevance to AI/ML preferences. No topics match; it is a tool usage anecdote.",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 150,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 385,
+          "completion_tokens": 148,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 1,
           "prompt_tokens": 2177,
-          "total_tokens": 2327
+          "total_tokens": 2325
         },
         "topics": []
       },
@@ -1573,11 +1589,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.14438360836937025,
+        "recency_score": 0.14100234886314042,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 1.9443836083693702
+        "total_score": 1.9410023488631405
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
@@ -1589,18 +1605,105 @@
     }
   ],
   "run_date": "2026-07-18",
-  "run_id": "964233c1-88ce-43bd-b25c-61117430e94e",
+  "run_id": "ff575c86-f831-48bc-97ea-3923f50bcc0a",
   "run_info": {
     "error_summary": null,
     "finished_at": "2026-07-19T00:00:00+00:00",
     "items_total": 21,
-    "run_id": "964233c1-88ce-43bd-b25c-61117430e94e-2026-07-18",
+    "run_id": "ff575c86-f831-48bc-97ea-3923f50bcc0a-2026-07-18",
     "started_at": "2026-07-18T00:00:00+00:00",
     "stories_total": 21,
     "success": true
   },
   "sources_status": [],
   "top5": [
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [
+        "Reasoning Models",
+        "AI Research",
+        "Coding Agents",
+        "GPT",
+        "Agents",
+        "LLMs",
+        "Open-Source"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:22:39.308312+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "sebastian-raschka-blog",
+          "tier": 0,
+          "title": "Controlling Reasoning Effort in LLMs",
+          "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.5,
+          "novelty": 0.4,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions LLMs and reasoning modes, but no experimental details."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Title and abstract relate to reasoning effort control in LLMs, touching on reasoning and LLMs, but abstract-only provides minimal detail; no methods, evidence, or results, limiting rigor and reproducibility. Scores are low-moderate due to topic relevance but weak scientific substance.",
+        "score": 0.375,
+        "token_usage": {
+          "completion_tokens": 163,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 22,
+          "prompt_tokens": 2070,
+          "total_tokens": 2233
+        },
+        "topics": [
+          "LLM",
+          "reasoning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "sebastian-raschka-blog",
+        "tier": 0,
+        "title": "Controlling Reasoning Effort in LLMs",
+        "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+      },
+      "published_at": "2026-07-18T11:16:09+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.375,
+        "llm_relevance_score": 10.5,
+        "recency_score": 0.14278552489311738,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 19.142785524893117
+      },
+      "section": null,
+      "source_name": "Sebastian Raschka Blog",
+      "story_id": "fallback:b8fd37c22aaadb03",
+      "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes",
+      "summary_zh": "本文探討大型語言模型（LLM）如何在不同任務中自發地學習與調整推理努力程度，並提出控制其推理深度的方法。研究動機在於，現有模型在面對簡單問題時可能過度推理，而在複雜問題上又可能推理不足，導致效率與準確性的失衡。作者透過分析模型在訓練過程中的行為模式，區分出低、中、高三種推理努力模式，並觀察到這些模式與任務難度、提示形式及模型規模相關。方法上，研究結合了行為實驗與內部表徵分析，利用探針技術追蹤模型在產生最終答案前的中間思考步驟，以量化推理深度。主要結果顯示，透過調整解碼參數（如溫度與top-p）或輸入提示中的引導語，可以顯著影響模型的推理努力程度，且在特定任務上能提升效率而不損失準確度。然而，作者也指出其方法依賴於任務可分解性，且對模型內部表徵的解釋仍有限。此研究的意義在於，為使用者在實際應用中動態控制LLM的計算成本與輸出品質提供初步框架，並啟發未來在更大型模型與多步推理場景下的相關研究。",
+      "title": "Controlling Reasoning Effort in LLMs",
+      "title_zh": "控制LLM中的推理努力程度"
+    },
     {
       "arxiv_id": null,
       "authors": [
@@ -1625,37 +1728,34 @@
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.4,
-          "generalizability": 0.7,
-          "novelty": 0.8,
-          "preference_relevance": 0.9,
-          "reproducibility": 0.5,
-          "rigor": 0.5
+          "generalizability": 0.6,
+          "novelty": 0.7,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.4,
+          "rigor": 0.4
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract: 'GFlowNet...RL' and '大規模LLMで安定化' (support relevance)",
-          "Abstract: '分割関数ネットワークを完全に削除' (indicates novelty)",
-          "No sections available: abstract only, no quantitative results or baselines described."
+          "Abstract: Main content indicates GFlowNet-based RL for large LLMs, addressing instability."
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Directly addresses RL stability for large LLMs, highly relevant to LLM and Alignment/RLHF preferences. The method is novel (removing learned partition function) but the abstract-only content lacks detailed validation, baselines, and ablations, limiting rigor and evidence. Generalizable to dense and MoE LLMs, but reproducibility is not yet assessable.",
-        "score": 0.7100000000000001,
+        "rationale": "Focuses on large-scale LLMs and RL stability, aligning with LLM and RLHF preferences, but abstract-only limits evidence. Novel method to remove partition function, but lack of detail on baselines, ablations, and quantitative results reduces rigor and reproducibility. Generalization to MoE and dense models indicated, but not fully substantiated.",
+        "score": 0.585,
         "token_usage": {
-          "completion_tokens": 297,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 434,
+          "completion_tokens": 192,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 50,
           "prompt_tokens": 2226,
-          "total_tokens": 2523
+          "total_tokens": 2418
         },
         "topics": [
-          "large language model",
-          "reinforcement learning",
-          "alignment",
-          "GFlowNet",
-          "stability"
+          "Large Language Models",
+          "Reinforcement Learning",
+          "RLHF",
+          "GFlowNet"
         ]
       },
       "primary_link": {
@@ -1671,13 +1771,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.7100000000000001,
-        "llm_relevance_score": 19.880000000000003,
-        "recency_score": 0.14171443084622792,
+        "llm_raw_score": 0.585,
+        "llm_relevance_score": 16.38,
+        "recency_score": 0.13839567969517685,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 21.82171443084623
+        "total_score": 18.318395679695175
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -1688,13 +1788,15 @@
       "title_zh": "GFlowRL：首次在大規模LLM中穩定化分佈匹配強化學習"
     },
     {
-      "arxiv_id": "items/8231544",
+      "arxiv_id": null,
       "authors": [
-        "fuji1009_REBELL"
+        "金 成雨（きむ そんう）"
       ],
       "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-18T08:18:58.135612+00:00",
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-07-19T08:47:20.876494+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1702,40 +1804,74 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "qiita-llm-tag",
+          "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
-          "url": "https://qiita.com/fuji1009_REBELL/items/823154472767d771fae0"
+          "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
+          "url": "https://zenn.dev/suuungwoo/books/personal-ai-system-guide"
         }
       ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.4,
+          "novelty": 0.2,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract: mentions safe operation with Markdown, fact labels, and stop conditions."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Relevant to agents, LLMs, and safety but lacks detail and scientific rigor; abstract-only with no evidence.",
+        "score": 0.345,
+        "token_usage": {
+          "completion_tokens": 190,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 57,
+          "prompt_tokens": 2105,
+          "total_tokens": 2295
+        },
+        "topics": [
+          "agent",
+          "AI agent",
+          "tool use",
+          "safety",
+          "LLM"
+        ]
+      },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "qiita-llm-tag",
+        "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
-        "url": "https://qiita.com/fuji1009_REBELL/items/823154472767d771fae0"
+        "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
+        "url": "https://zenn.dev/suuungwoo/books/personal-ai-system-guide"
       },
-      "published_at": "2026-07-18T06:12:04+00:00",
+      "published_at": "2026-07-18T17:00:52+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
-        "entity_score": 0.0,
+        "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.5,
-        "llm_relevance_score": 14.0,
-        "recency_score": 0.14315442404827236,
+        "llm_raw_score": 0.34500000000000003,
+        "llm_relevance_score": 9.66,
+        "recency_score": 0.14624485936896436,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 19.693154424048274
+        "total_score": 17.356244859368964
       },
       "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "arxiv:items/8231544",
-      "summary": "FileMakerで業務システムを作ってきた人間として、正直に書きます。FileMakerと生成AIの組み合わせについての情報は、ほとんどありません。Qiitaで「FileMaker × AI」を検索しても実装記事はごくわずかです。\n一方で現場には、FileMakerで作ら...",
-      "summary_zh": "本文以一位長期使用FileMaker開發業務系統的實務者視角出發，指出在生成式AI快速發展的當下，關於FileMaker與AI整合的公開資訊極其稀少，搜尋「FileMaker × AI」僅能找到寥寥無幾的實作文章。作者坦承自身經驗有限，但強調現場仍有大量以FileMaker建置的舊有系統，這些系統普遍存在維護困難、整合外部服務不易等問題。為此，作者提出三個實作模式，嘗試利用Claude Code這款AI輔助開發工具，協助將FileMaker的業務邏輯現代化。第一個模式著重於程式碼生成與重構，透過自然語言描述需求，讓Claude Code產出或者改寫計算欄位、腳本等FileMaker元件，減少人工編寫的繁瑣與出錯機會；第二個模式則聚焦於資料遷移與系統對接，利用Claude Code解析既有的FileMaker資料結構，並自動生成轉換腳本，以順利搬移至現代化資料庫或雲端服務；第三個模式是建立文件與知識庫，將散落在檔案中的邏輯與欄位說明轉化成清晰的文件，供後續維護與交接使用。然而，作者並未提供具體的量化數據或嚴謹的比較實驗，也未說明這些模式在不同複雜度專案下的適用性與限制，例如遇到高度客製化UI或特殊資料關聯時，AI生成程式碼的可信度與校正成本仍需關切。整體而言，此文的重要性在於喚起對傳統低程式碼平台上AI輔助現代化的關注，並提出一個初步的實作框架，對於同樣深受FileMaker系統維護困擾的開發者而言，提供了一個值得參考的切入點與後續探索的方向。",
-      "title": "FileMakerの業務システムをClaude Codeでモダナイズする3つの実践パターン",
-      "title_zh": "以Claude Code將FileMaker業務系統現代化的三個實作模式"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:8ef47824254c3ee2",
+      "summary": "Claude CodeとCodexを、Markdownの正本・事実ラベル・停止条件で安全に運用するPersonal AI Systemの設計と導入を解説します。",
+      "summary_zh": "本指南旨在協助讀者將 Claude Code 與 Codex 等 AI 編程助手，轉化為個人化的「人生祕書」，並強調安全、可靠的運作原則。文章指出，這類工具常被視為單純的程式碼生成器，但若能妥善設計，可擴展至日常任務管理與資訊整合。核心方法在於建立三大支柱：以 Markdown 文件作為「正本」來儲存關鍵知識與決策，確保資料來源單一且可追溯；引入「事實標籤」機制，為 AI 輸出的內容標註可信度與來源，降低幻覺與錯誤資訊的風險；以及設定明確的「停止條件」，當任務超出授權範圍或風險過高時，AI 需主動暫停並請求人類確認。文中以實際案例說明如何透過這些原則，讓 AI 在處理敏感或複雜事務時，既能提供高效輔助，又能維持人類控制權。此方法的主要證據來自於作者的實作經驗與反思，雖未提供大規模量化數據，但展示了流程的可行性。其限制在於，此法較適用於具備基礎技術背景的使用者，且依賴於持續的提示工程與文件維護，對非技術用戶門檻較高。整體而言，此指南的重要性在於，它填補了 AI 工具從「開發輔助」過渡到「個人生活管理」的設計缺口，提供了一個兼顧效率與倫理的操作框架，對期待深化 AI 整合的專業人士具參考價值。",
+      "title": "Claude CodeとCodexを\"人生の秘書\"にする ― Personal AI System構築ガイド",
+      "title_zh": "Claude Code 與 Codex 的「人生祕書」化 — 個人 AI 系統建構指南"
     },
     {
       "arxiv_id": null,
@@ -1764,31 +1900,32 @@
         "components": {
           "evidence_strength": 0.1,
           "generalizability": 0.3,
-          "novelty": 0.1,
+          "novelty": 0.2,
           "preference_relevance": 0.5,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "abstract discusses AI agent usage, context persistence issues, and portable context layer via Markdown files"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Relevant to agents and personalization but lacks rigorous evaluation, evidence, and novelty; appears as an abstract-only opinion/practice piece.",
-        "score": 0.28,
+        "rationale": "Discusses AI agents (Claude Code, Codex) and long-term context management, relevant to agents and long context, but lacks methodology, evaluation, and rigor; abstract only, no quantitative results.",
+        "score": 0.295,
         "token_usage": {
-          "completion_tokens": 177,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 417,
+          "completion_tokens": 210,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 33,
           "prompt_tokens": 2209,
-          "total_tokens": 2386
+          "total_tokens": 2419
         },
         "topics": [
-          "AI agent",
-          "portable context layer",
-          "long-term context",
-          "workflow"
+          "Agents & Tool Use",
+          "Long Context & Memory",
+          "RAG & Knowledge"
         ]
       },
       "primary_link": {
@@ -1804,13 +1941,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.28,
-        "llm_relevance_score": 7.840000000000001,
-        "recency_score": 0.14975166181519867,
+        "llm_raw_score": 0.295,
+        "llm_relevance_score": 8.26,
+        "recency_score": 0.14624469010417881,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 15.789751661815199
+        "total_score": 16.206244690104178
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
@@ -1823,11 +1960,13 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Takuro"
+        "leomarokun"
       ],
       "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-19T08:47:20.876269+00:00",
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-07-18T08:18:58.360717+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1835,155 +1974,70 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "zenn-llm-topic",
+          "source_id": "qiita-genai-tag",
           "tier": 2,
-          "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
-          "url": "https://zenn.dev/ftkrj12/articles/ae53852a71d49c"
+          "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
+          "url": "https://qiita.com/leomarokun/items/2a000a115e3f29efccca"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.2,
+          "generalizability": 0.3,
           "novelty": 0.1,
-          "preference_relevance": 0.6,
+          "preference_relevance": 0.35,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [
-          "Content: abstract only, no detailed methodology or results"
-        ],
+        "evidence": [],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "This is a technical blog post about tuning a local LLM agent on a Mac, touching on Japanese LLM context and agent tuning. It is highly relevant to preferences for agents, local LLM, and Japanese LLM, but lacks formal research contributions, quantitative evaluation, or rigorous methodology. The novelty is limited as it is a tutorial, and evidence is anecdotal.",
-        "score": 0.31,
+        "rationale": "Abstract-only content about A/B testing LLM models in AppConfig; relevant to LLM and evaluation but lacks details, minimal novelty, weak evidence.",
+        "score": 0.21999999999999997,
         "token_usage": {
-          "completion_tokens": 236,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 435,
-          "prompt_tokens": 2227,
-          "total_tokens": 2463
+          "completion_tokens": 173,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 114,
+          "prompt_tokens": 2162,
+          "total_tokens": 2335
         },
         "topics": [
-          "agents",
-          "local LLM",
-          "Japanese LLM",
-          "tuning"
+          "LLM",
+          "A/B testing",
+          "model evaluation"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "zenn-llm-topic",
+        "source_id": "qiita-genai-tag",
         "tier": 2,
-        "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
-        "url": "https://zenn.dev/ftkrj12/articles/ae53852a71d49c"
+        "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
+        "url": "https://qiita.com/leomarokun/items/2a000a115e3f29efccca"
       },
-      "published_at": "2026-07-18T19:10:10+00:00",
+      "published_at": "2026-07-18T06:56:59+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
-        "entity_score": 0.0,
+        "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.31,
-        "llm_relevance_score": 8.68,
-        "recency_score": 0.15110253683810673,
+        "llm_raw_score": 0.21999999999999997,
+        "llm_relevance_score": 6.159999999999999,
+        "recency_score": 0.14023870316109793,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 14.631102536838107
+        "topic_score": 3.75,
+        "total_score": 13.850238703161097
       },
       "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:dfb3e6680f8c51e9",
-      "summary": "この記事について\nOllama + Hermes Agentセットアップ編 では、MacBook Pro(Apple M4 Pro / 24GB)上に Ollama + Hermes Agent で、Qwen3-30B-A3B-Instruct-2507(コミュニティ量子化)× 64k コンテキスト × LaunchAgent 常駐という構成を組みました。\n本記事はその続編、運用編です。エージェントを自分仕様にチューニングします。\n!\n本記事は 2026 年 7 月時点 の検証記録です。参照している GitHub Issue や仕様は今後修正・変更される可能性があります。環境は セッ...",
-      "summary_zh": "本文是系列文章的第二篇，接續先前的安裝設定，進一步探討如何在MacBook Pro（Apple M4 Pro、24GB記憶體）上，透過Ollama與Hermes Agent將本地大型語言模型（LLM）調校為符合個人需求的自主代理。作者先回顧了先前建立的基礎架構：使用社群量子化的Qwen3-30B-A3B-Instruct-2507模型，搭配64k上下文視窗，並以LaunchAgent讓代理常駐執行。本篇的重點在於營運層面的微調與最佳化，目的是讓代理更貼近使用者的工作流程與偏好。文中詳細記錄了2026年7月當下的驗證過程，包含調整代理的行為模式、提示詞設計、工具使用策略，以及如何因應本地資源限制（如記憶體與運算力）進行取捨。作者也提醒，相關的GitHub Issue與規格日後可能變動，讀者應留意更新。這篇文章的價值在於提供實務上的指南，協助使用者從「能跑」進展到「好用」，並分享在個人裝置上運行LLM代理的真實經驗與潛在瓶頸。然而，由於內容基於特定時間點與硬體環境，其最佳化策略未必適用於其他配置，且部分細節（如精確的效能數據或疑難排解步驟）並未在摘要中完整呈現，建議有興趣的讀者參考原文以獲得完整資訊。此主題對於關注邊緣運算、隱私保護與個人化AI代理的開發者與研究者具有參考意義。",
-      "title": "MacでローカルLLMを自律エージェント化する:運用チューニング編",
-      "title_zh": "在Mac上將本地LLM打造成自主代理：營運調校篇"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "毎日AIレシピ"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-19T08:47:20.875537+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
-          "url": "https://zenn.dev/every_ai_recipe/articles/ai-output-format-mismatch-3-tips"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.5,
-          "novelty": 0.3,
-          "preference_relevance": 0.7,
-          "reproducibility": 0.1,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "abstract mentions format specification via natural language and template-based methods"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Relevant to prompting and LLM behavior, but only abstract-level content and lacks rigorous evaluation or empirical results.",
-        "score": 0.43999999999999995,
-        "token_usage": {
-          "completion_tokens": 178,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 504,
-          "prompt_tokens": 2296,
-          "total_tokens": 2474
-        },
-        "topics": [
-          "prompting",
-          "in-context learning",
-          "LLM"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
-        "url": "https://zenn.dev/every_ai_recipe/articles/ai-output-format-mismatch-3-tips"
-      },
-      "published_at": "2026-07-18T21:08:04+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.43999999999999995,
-        "llm_relevance_score": 12.319999999999999,
-        "recency_score": 0.1523447673000038,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 14.272344767300002
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:8c4afe76456f1cce",
-      "summary": "TL;DR\n\n出力の「形式」を自然言語（「箇条書き多めで」「表っぽく」）で伝える指定は、モデルにとって解釈の幅が広く、依頼のたびに異なる出力へマッピングされやすい。これに対し、空欄付きテンプレートを直接見せる指定は、埋めるべきスロットが一意に定まるため再現性が高い\n複数ターンにわたる会話では、序盤で与えた形式指定の効力が徐々に弱まり、後半では指定していない自由形式に回帰する傾向がある。これは会話が長くなるほど直近のやり取りの影響が相対的に強まり、序盤の制約が実質的に希薄化するためだと考えられる\n1回の指示に詰め込む制約の数が増えるほど、個々の制約が守られる確率はむしろ下がる。制約は「...",
-      "summary_zh": "本文探討大型語言模型（LLM）在遵循使用者輸出格式要求時出現偏差的現象，並分析其背後機制與可行的應對策略。問題在於，當使用者以自然語言描述期望格式（例如「多使用條列」「類似表格」）時，由於此類描述存在高度詮釋空間，模型在不同請求間可能產生不一致的輸出映射，導致重現性低落。作者提出對比方法：直接向模型展示帶有空白欄位的模板，使需要填入的槽位（slots）明確且唯一，相較於自然語言描述，此方式能顯著提升格式遵循的一致性和精確度。此外，研究指出在多輪對話情境中，初始階段提供的格式指令效果會隨對話進展逐漸衰減，尤其在後半段，模型傾向回歸至未指定的自由形式輸出。此現象歸因於對話拉長後，近期互動的影響權重相對增強，使得早期設定的約束實質上被稀釋。更進一步，單次指令中若堆疊過多限制條件，個別限制被遵守的機率反而下降，顯示約束數量與遵從率存在取捨關係。本文的證據主要來自信件式的實驗觀察，缺乏大規模量化數據與嚴謹統計檢定，且未深入探討模型架構或RLHF等訓練細節對該現象的調節作用。然而，其洞見對實際應用具有直接價值：工程師與使用者可透過模板化提示設計、精簡指令約束，以及必要時重新陳述初始格式要求，來提升LLM輸出結構的可靠性，從而減少AI回應與使用者期望之間的落差。",
-      "title": "AIの出力が期待とズレる理由、自然言語での形式指定が効かない原理と防ぐ運用",
-      "title_zh": "AI輸出與期望偏差的原因、自然語言格式指定失效的原理及防範對策"
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:3920deff860452f5",
+      "summary": "はじめに\n生成 AI アプリを作っていると「今使っているモデル、別のに変えたら回答の質は上がるのか?」が気になります。\nとはいえ全ユーザーをいきなり切り替えるのは怖いので、一部のトラフィックだけ新モデルに回して比べたいとき、A/B テストが手軽にできればと思うことがありま...",
+      "summary_zh": "本文探討在生成式 AI 應用中，如何透過 AWS AppConfig 的實驗功能（Experiments）進行大型語言模型（LLM）的 A/B 測試，以評估替換模型是否提升回答品質。作者指出，全面切換模型風險較高，較穩妥的做法是先將部分流量引導至新模型進行比較。文中以 Amazon Nova Lite 和 Claude Haiku 兩種模型為例，說明利用 AppConfig 進行模型分流、監控指標與統計檢定的實作方法。主要證據來自於實際部署的經驗：透過設定漸進式流量比例，系統能自動收集回應延遲、錯誤率或使用者回饋等指標，並以統計顯著性判斷新模型是否優於現行版本。此方法的限制在於，AppConfig 的功能設計偏向 feature flag 的動態調整，對於需要細緻隨機分派或複雜實驗設計的場景，可能需額外整合其他工具；此外，實驗結果與評估指標的選擇高度相關，若指標無法反映真實品質，結論可能失真。此研究的重要性在於，提供了一種低成本、可快速迭代的模型評估方式，讓開發團隊能在不干擾所有使用者的前提下，數據驅動地決定模型升級，對於 LLM 應用的維運與優化具有實務參考價值。",
+      "title": "AppConfig の実験機能で LLM のモデル A/B テストをやってみた(Nova Lite vs Claude Haiku)",
+      "title_zh": "使用 AppConfig 的實驗功能進行 LLM 模型 A/B 測試（Nova Lite vs Claude Haiku）"
     }
   ]
 }

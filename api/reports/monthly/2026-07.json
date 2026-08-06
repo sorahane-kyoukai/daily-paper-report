@@ -263,95 +263,6 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Currently Learning そんけいご"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.218779+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-          "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.7,
-          "novelty": 0.6,
-          "preference_relevance": 0.9,
-          "reproducibility": 0.2,
-          "rigor": 0.3
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: 'Process Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。'",
-          "Final section: 'lacks experimental details.'"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Highly relevant to LLM reasoning, process reward models, and credit assignment, touching on chain-of-thought and training. The novelty is moderate as it reformulates credit assignment as MIL. However, only an abstract is available, so rigor and evidence are low. Generalizability is decent as it addresses a common training issue. Reproducibility is unclear due to lack of implementation details.",
-        "score": 0.605,
-        "token_usage": {
-          "completion_tokens": 290,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 404,
-          "prompt_tokens": 2196,
-          "total_tokens": 2486
-        },
-        "topics": [
-          "Large Language Models",
-          "Reasoning & Chain-of-Thought",
-          "Training & Optimization",
-          "AI Safety"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-        "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
-      },
-      "published_at": "2026-07-21T01:58:58+00:00",
-      "published_local_date": "2026-07-21",
-      "report_rank": 5,
-      "report_score": 22.929211,
-      "report_source_date": "2026-07-21",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.6049999999999999,
-        "llm_relevance_score": 16.939999999999998,
-        "recency_score": 0.18921060068174367,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 22.929210600681742
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:84cfc211e4589b06",
-      "summary": "TL;DR\nProcess Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。結果のみからPRMを訓練する手法は**信用割当（Credit Assignment）**問題を抱える──誤ったステップにどの程度の責任を帰属させるかが未解決だった。\n北京大学のJiaらが提案するLCA（Learnable Credit Assignment）は、この問題をMultiple Instance Learning（MIL）として定式化し、最弱リンク原理（\"a reasoning chain is as strong as its weakest li...",
-      "summary_zh": "過程獎勵模型（Process Reward Model, PRM）在增強大型語言模型（LLM）的推理能力方面展現潛力，但依賴逐步註釋，成本高昂。為降低成本，研究轉向僅以最終結果訓練PRM，由此引出信用分配問題：當推理鏈出錯時，無法明確判斷哪一步驟應承擔多少責任。北京大學Jia等人提出的LCA（Learnable Credit Assignment）方法，將此問題形式化為多實例學習（Multiple Instance Learning, MIL），並引入最弱環原理——一條推理鏈的強度取決於其最薄弱的環節。具體而言，LCA將每個推理步驟視為一個實例，整個鏈條的結果作為標籤，透過迭代學習為每個步驟分配信用分數，並將最低分數步驟視為主要錯誤來源。這種設計使得模型能在無步驟級標註下，自動識別關鍵錯誤。實驗證據顯示，LCA在數學推理基準上提升了結果監督PRM的效能，並在部分情況下接近甚至超越密集監督的PRM，同時大幅降低了註釋成本。然而，該方法依賴於推理鏈的質量，若鏈條本身缺乏多樣性或錯誤分佈複雜，可能影響信用分配的準確性。此外，最弱環原理假設錯誤主因集中在單一環節，但真實推理中可能有多個相關錯誤。此研究的重要性在於提供了一種成本效益高的PRM訓練策略，使強化學習（RL）過程中更有效利用結果監督，從而推動LLM推理能力的提升，並為後續研究提供了MIL框架下的新視角。",
-      "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-      "title_zh": "LCA：以最弱環原理解決結果監督PRM的信用分配問題"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
         "Ying Hou"
       ],
       "categories": [
@@ -424,7 +335,7 @@
       },
       "published_at": "2026-07-08T16:51:35+00:00",
       "published_local_date": "2026-07-08",
-      "report_rank": 6,
+      "report_rank": 5,
       "report_score": 22.635887,
       "report_source_date": "2026-07-08",
       "report_source_section": "radar",
@@ -517,7 +428,7 @@
       },
       "published_at": "2026-07-28T16:00:00+00:00",
       "published_local_date": "2026-07-28",
-      "report_rank": 7,
+      "report_rank": 6,
       "report_score": 21.959314,
       "report_source_date": "2026-07-28",
       "report_source_section": "radar",
@@ -541,97 +452,6 @@
       "summary_zh": "本文介紹 Gemini API 中受管代理（Managed Agents）的最新進展，重點包括 Gemini 3.6 Flash 模型、鉤子（Hooks）與觸發器（Triggers）等新功能。受管代理旨在簡化開發者建置與部署 AI 代理的流程，讓代理能自主執行多步驟任務，例如處理使用者查詢、呼叫外部工具或協調多個子任務。文中提出的方法核心是將代理的生命週期管理（如狀態維護、錯誤處理、重試機制）交由平台處理，開發者只需定義代理的行為邏輯與工具集。關鍵的技術亮點是鉤子機制，允許開發者在代理執行的特定階段（如任務開始、結束或工具呼叫前後）插入自訂程式碼，以實現更細緻的控制與觀測。觸發器則用於定義代理啟動的條件，例如定時排程或外部事件。根據摘要，Gemini 3.6 Flash 在準確度、延遲與成本上取得平衡，特別適合需要即時回應的場景。文中並未提供完整的基準測試數據，因此無法量化其效能優勢，但強調了與既有 API 的相容性與易用性。此技術的意義在於降低開發複雜性，讓非專業的開發者也能快速建立可靠的 AI 代理，同時保持彈性，適用於客服自動化、資料分析、流程編排等應用。然而，限制是摘要僅提及功能層面，未深入探討安全、隱私或大規模部署的挑戰，讀者應留意受管代理在企業環境中可能需要的額外治理措施。",
       "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
       "title_zh": "Gemini API 受管代理：3.6 Flash、鉤子與觸發器"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Currently Learning そんけいご"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-18T08:18:58.421762+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "GFlowRL：分布マッチングRLを初めて大規模LLMで安定化",
-          "url": "https://zenn.dev/lixian/articles/gflowrl-distribution-matching-rl"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.4,
-          "generalizability": 0.7,
-          "novelty": 0.8,
-          "preference_relevance": 0.9,
-          "reproducibility": 0.5,
-          "rigor": 0.5
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: 'GFlowNet...RL' and '大規模LLMで安定化' (support relevance)",
-          "Abstract: '分割関数ネットワークを完全に削除' (indicates novelty)",
-          "No sections available: abstract only, no quantitative results or baselines described."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Directly addresses RL stability for large LLMs, highly relevant to LLM and Alignment/RLHF preferences. The method is novel (removing learned partition function) but the abstract-only content lacks detailed validation, baselines, and ablations, limiting rigor and evidence. Generalizable to dense and MoE LLMs, but reproducibility is not yet assessable.",
-        "score": 0.7100000000000001,
-        "token_usage": {
-          "completion_tokens": 297,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 434,
-          "prompt_tokens": 2226,
-          "total_tokens": 2523
-        },
-        "topics": [
-          "large language model",
-          "reinforcement learning",
-          "alignment",
-          "GFlowNet",
-          "stability"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "GFlowRL：分布マッチングRLを初めて大規模LLMで安定化",
-        "url": "https://zenn.dev/lixian/articles/gflowrl-distribution-matching-rl"
-      },
-      "published_at": "2026-07-18T03:46:29+00:00",
-      "published_local_date": "2026-07-18",
-      "report_rank": 8,
-      "report_score": 21.821714,
-      "report_source_date": "2026-07-18",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.7100000000000001,
-        "llm_relevance_score": 19.880000000000003,
-        "recency_score": 0.14171443084622792,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 21.82171443084623
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:be266ec9f07beaa2",
-      "summary": "TL;DR\nGFlowNet（Generative Flow Network）に基づくRLは、報酬最大化RLのモード崩壊問題に対する理論上の解として注目されてきた。しかし、既存手法（FlowRLなど）は学習した分割関数 Z_\\phi が勾配不安定性の根本原因となり、大規模モデルやMoEでは発散に終わっていた。\nMicrosoft ResearchのGFlowRLは、この分割関数ネットワークを完全に削除し、rolloutグループ自身から計算されるバッチ内モンテカルロ推定量で代替する。非対称フローギャップクリッピングと重要度サンプリング補正を加えたこのシンプルな設計により、Dense・M...",
-      "summary_zh": "基於GFlowNet的強化學習（RL）長久以來被視為解決傳統獎勵最大化RL中模式崩潰問題的理論方案，然而其實際應用卻因學習分割函數Z_phi導致的梯度不穩定性而受阻，尤其在大型模型或混合專家（MoE）架構下更易發散。微軟研究院提出的GFlowRL方法，旨在將基於分佈匹配的RL首次穩定應用於大規模語言模型（LLM）。其核心創新在於徹底移除分割函數網絡，轉而利用rollout群組本身計算的批內蒙地卡羅估計器來替代。此設計結合非對稱流動間隙裁剪與重要性採樣校正，並在密集與稀疏（MoE）模型上均展現了顯著穩定性。論文報告的實驗證據顯示，GFlowRL成功避免了先前方法的發散問題，並在多個基準上取得了競爭性表現。然而，其局限性包括對批次大小與採樣策略的敏感性，以及在大規模分佈匹配中計算成本的潛在增加。此研究的重要性在於，它打通了理論上有吸引力的分佈匹配RL與實際大規模LLM訓練之間的鴻溝，為進一步探索更穩定、多樣化的強化學習範式提供了新途徑，同時也指出了當前方法在擴展性與魯棒性上的挑戰。",
-      "title": "GFlowRL：分布マッチングRLを初めて大規模LLMで安定化",
-      "title_zh": "GFlowRL：首次在大規模LLM中穩定化分佈匹配強化學習"
     },
     {
       "arxiv_id": null,
@@ -705,7 +525,7 @@
       },
       "published_at": "2026-07-16T08:50:22+00:00",
       "published_local_date": "2026-07-16",
-      "report_rank": 9,
+      "report_rank": 7,
       "report_score": 21.498657,
       "report_source_date": "2026-07-16",
       "report_source_section": "radar",
@@ -800,7 +620,7 @@
       },
       "published_at": "2026-07-14T22:00:08+00:00",
       "published_local_date": "2026-07-14",
-      "report_rank": 10,
+      "report_rank": 8,
       "report_score": 21.193186,
       "report_source_date": "2026-07-14",
       "report_source_section": "radar",
@@ -889,7 +709,7 @@
       },
       "published_at": "2026-07-31T02:48:47+00:00",
       "published_local_date": "2026-07-31",
-      "report_rank": 11,
+      "report_rank": 9,
       "report_score": 21.146296,
       "report_source_date": "2026-07-31",
       "report_source_section": "top5",
@@ -974,7 +794,7 @@
       },
       "published_at": "2026-07-16T02:09:46+00:00",
       "published_local_date": "2026-07-16",
-      "report_rank": 12,
+      "report_rank": 10,
       "report_score": 21.035402,
       "report_source_date": "2026-07-16",
       "report_source_section": "radar",
@@ -1029,7 +849,7 @@
       },
       "published_at": "2026-07-05T06:19:09+00:00",
       "published_local_date": "2026-07-05",
-      "report_rank": 13,
+      "report_rank": 11,
       "report_score": 20.975099,
       "report_source_date": "2026-07-05",
       "report_source_section": "top5",
@@ -1084,7 +904,7 @@
       },
       "published_at": "2026-07-03T09:31:00+00:00",
       "published_local_date": "2026-07-03",
-      "report_rank": 14,
+      "report_rank": 12,
       "report_score": 20.839921,
       "report_source_date": "2026-07-03",
       "report_source_section": "radar",
@@ -1108,154 +928,6 @@
       "summary_zh": "本文為作者在自家部落格 nands.tech 上分享的實戰摘要，介紹如何建構一套具備自我修復能力的 RAG（Retrieval-Augmented Generation）管線。方法是透過偵測錯誤回答、觸發重新檢索，再重新生成內容，自動瓦解不正確的輸出。文章以大量程式碼進行手把手教學，目標是大幅降低人工介入修正的頻率。最小實作範例與整體架構先讓讀者掌握核心概念，後續再逐步擴展到完整應用，對於想提升生成式 AI 可靠性的開發者極具參考價值。作者在現場驗證中取得明顯效果，表示此 self-healing RAG 能有效捕捉並修正常見的錯誤模式，例如事實不符或資訊遺漏。除了核心偵測與重試機制，文章也點出效能與延遲的權衡，實際部署時須根據使用場景調整設定。整體而言，此方法為 RAG 系統的穩定性提供了一種務實的自動化補救路徑。對於正在開發檢索增強生成應用的工程師，這套管線不僅能減少人工審查負擔，也提高了回答的可信度，值得一試。",
       "title": "実践RAG自己修復パイプライン：検出→再検索→再生成で誤答を自動的に潰す",
       "title_zh": "實戰 RAG 自我修復管線：以檢測→重新檢索→重新生成自動消除錯誤回答"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-07-23T08:58:17.836971+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-          "url": "https://ai-data-base.com/archives/113634"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-        "url": "https://ai-data-base.com/archives/113634"
-      },
-      "published_at": "2026-07-22T22:19:47+00:00",
-      "published_local_date": "2026-07-22",
-      "report_rank": 15,
-      "report_score": 20.777211,
-      "report_source_date": "2026-07-22",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.5,
-        "llm_relevance_score": 14.0,
-        "recency_score": 0.22721149066516869,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 3.75,
-        "total_score": 20.777211490665167
-      },
-      "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:1273e890730cec9f",
-      "summary": "<p>AIエージェントに悪意あるツールをつかませる最短ルートは、高度なハッキングではありません。ツールの説明文に「公式」「認定済み」と書き足すだけです。この単純な嘘は、巧妙な攻撃コードよりはるかに高い確率で通ってしまいます。人間が「ベストセラー」や「★4.8」に弱いのと、同じ構図です。例が分かりやすいですよね。 ツールが作られてから、選ばれ、実行され、更新されるまでの流れ全体を対象に、どこがどれだけ破られるのかを数字で確かめた検証が報告されています。見えてきた最大の弱点は、コードの穴ではなく「もっともらしい言葉」でした。なぜ直接の命令より、素朴な嘘のほうが通ってしまうのでしょうか。直感通りですか？ &#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/113634\"><span class=\"locked-post\">🔒</span> AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "這份研究報告探討了AI代理（AI agent）在選擇、執行及更新工具時的安全弱點。過去一般人認為，惡意攻擊者必須透過複雜的程式碼漏洞或高階駭客技術才能誘騙AI代理執行有害操作，但這份研究發現，最簡單且有效的攻擊方式，竟然是在工具說明文件中加入「官方」、「認證」等字眼。這種樸素的謊言，比精心設計的攻擊程式碼更能成功欺騙AI代理，其成功率遠高於預期。研究人員針對工具從建立、被選取、執行到更新的完整生命週期進行系統性測試，以量化數據找出每個環節最容易遭受攻擊的破口。結果顯示，最大的弱點並非程式碼本身的缺陷，而是「看似可信的敘述」——這與人類容易被「暢銷書」、「4.8星評價」等社會證明影響的現象如出一轍。AI代理在缺乏足夠事實驗證機制的情況下，過度信任文件中的權威性標籤，導致攻擊者僅需在描述中造假，就能讓代理誤選惡意工具。這項發現凸顯了當前AI安全研究的盲點：多數防禦機制專注於偵測異常程式碼或指令注入，卻忽略了語言層級的社會工程攻擊。報告也點出限制，例如測試環境與真實世界應用的差異，以及不同AI模型對權威性詞彙的敏感度可能不同。無論如何，這項研究提醒我們，AI安全不僅是技術問題，更是信任與語言的問題；若要建立更可靠的AI代理，必須對工具描述進行事實核查，而非僅依賴程式碼審查。這對開發者、企業以及所有依賴AI自動化決策的使用者而言，都是值得警惕的警訊。",
-      "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-      "title_zh": "AI代理被騙的最大漏洞不是駭客攻擊，而是謊稱「官方」"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "umezu_y"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-07-19T08:47:20.814752+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "git pull だけでチーム全員の Claude Code が賢くなる ― スキルとナレッジを1リポジトリで配る AI ワークフロー基盤",
-          "url": "https://qiita.com/umezu_y/items/2b09fad5f2a96542f891"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.5,
-          "novelty": 0.4,
-          "preference_relevance": 0.65,
-          "reproducibility": 0.4,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Title and abstract mention Claude Code skills and knowledge distribution, aligning with agent tooling.",
-          "Content describes practical usage but no rigorous evaluation or novel methodology."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Highly relevant to agent workflows and tooling (Claude Code skills/knowledge distribution), with emphasis on team collaboration, but lacks technical depth, validation, and evidence. Not a research paper; practical workflow guide.",
-        "score": 0.45,
-        "token_usage": {
-          "completion_tokens": 227,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 381,
-          "prompt_tokens": 2173,
-          "total_tokens": 2400
-        },
-        "topics": [
-          "Agent & Tool Use",
-          "Code & Programming",
-          "AI agent",
-          "workflow automation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "git pull だけでチーム全員の Claude Code が賢くなる ― スキルとナレッジを1リポジトリで配る AI ワークフロー基盤",
-        "url": "https://qiita.com/umezu_y/items/2b09fad5f2a96542f891"
-      },
-      "published_at": "2026-07-19T06:58:26+00:00",
-      "published_local_date": "2026-07-19",
-      "report_rank": 16,
-      "report_score": 20.558678,
-      "report_source_date": "2026-07-19",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.45,
-        "llm_relevance_score": 12.6,
-        "recency_score": 0.1586780634631555,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 20.558678063463155
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:51dadab55180eeab",
-      "summary": "はじめに\nClaude Code をチームで使っていると、配りたいものが2種類出てきます。\n\nスキル（/xxx で呼び出すカスタムワークフロー）\n\nナレッジ（LLM が知らないドメイン知識 ― マイナーな SDK のドキュメント、API リファレンス、実装で得たノウハ...",
-      "summary_zh": "這篇論文針對團隊在使用 Claude Code 時遇到的痛點，提出一套基於 git 的解決方案。作者指出，團隊在使用 Claude Code 時，需要配發兩種資源：一是「技能」，即透過 /xxx 指令呼叫的自訂工作流程；二是「知識」，即大型語言模型（LLM）不熟悉的特定領域知識，例如冷門 SDK 的文件、API 參考資料，以及實作累積的經驗。傳統做法是將這些資源散落在各處，不易同步與管理。為了解決此問題，作者提出將技能與知識集中放在同一個 git 儲存庫，利用既有的版本控制機制，讓團隊成員只需執行 git pull 便能同步更新，進而提升所有 Claude Code 實例的智慧程度。如此一來，不僅能確保團隊使用一致的技能與知識，也能簡化部署與更新的流程。此方法的核心概念是將 AI 工作流程的設定「程式碼化」，如同管理軟體專案一般進行版本管理。然而，此論文僅提供摘要，缺少具體的實作細節與實證數據，例如儲存庫的結構設計、技能與知識的格式規範、更新衝突的處理方式，以及實際導入後的效能評估。此外，此方法依賴 git 與團隊既有的協作習慣，對於不熟悉版本控制的團隊可能需要額外的學習成本。儘管如此，此提案具有實務價值，它提供了一個簡單且可擴展的方式來管理 AI 工具的生態系，讓團隊能更有效率地運用 Claude Code，並確保知識的累積與傳承。對於正在尋找方法來標準化與集中管理 AI 輔助開發工具的團隊而言，這是一個值得參考的方向。",
-      "title": "git pull だけでチーム全員の Claude Code が賢くなる ― スキルとナレッジを1リポジトリで配る AI ワークフロー基盤",
-      "title_zh": "僅用 git pull 就能讓團隊所有 Claude Code 變得更聰明 ― 以單一儲存庫發送技能與知識的 AI 工作流程基礎架構"
     },
     {
       "arxiv_id": null,
@@ -1287,7 +959,7 @@
       },
       "published_at": "2026-07-05T06:19:57+00:00",
       "published_local_date": "2026-07-05",
-      "report_rank": 17,
+      "report_rank": 13,
       "report_score": 20.525153,
       "report_source_date": "2026-07-05",
       "report_source_section": "top5",
@@ -1376,7 +1048,7 @@
       },
       "published_at": "2026-07-08T04:47:38+00:00",
       "published_local_date": "2026-07-08",
-      "report_rank": 18,
+      "report_rank": 14,
       "report_score": 20.413147,
       "report_source_date": "2026-07-08",
       "report_source_section": "radar",
@@ -1472,7 +1144,7 @@
       },
       "published_at": "2026-07-10T15:35:05+00:00",
       "published_local_date": "2026-07-10",
-      "report_rank": 19,
+      "report_rank": 15,
       "report_score": 20.12772,
       "report_source_date": "2026-07-10",
       "report_source_section": "top5",
@@ -1558,7 +1230,7 @@
       },
       "published_at": "2026-07-11T23:59:00+00:00",
       "published_local_date": "2026-07-11",
-      "report_rank": 20,
+      "report_rank": 16,
       "report_score": 19.647486,
       "report_source_date": "2026-07-11",
       "report_source_section": "top5",
@@ -1649,7 +1321,7 @@
       },
       "published_at": "2026-07-16T19:29:26+00:00",
       "published_local_date": "2026-07-16",
-      "report_rank": 21,
+      "report_rank": 17,
       "report_score": 19.584042,
       "report_source_date": "2026-07-16",
       "report_source_section": "radar",
@@ -1735,7 +1407,7 @@
       },
       "published_at": "2026-07-31T09:30:27+00:00",
       "published_local_date": "2026-07-31",
-      "report_rank": 22,
+      "report_rank": 18,
       "report_score": 19.500617,
       "report_source_date": "2026-07-31",
       "report_source_section": "top5",
@@ -1824,7 +1496,7 @@
       },
       "published_at": "2026-07-10T03:21:57+00:00",
       "published_local_date": "2026-07-10",
-      "report_rank": 23,
+      "report_rank": 19,
       "report_score": 19.194359,
       "report_source_date": "2026-07-10",
       "report_source_section": "top5",
@@ -1848,6 +1520,98 @@
       "summary_zh": "本文探討設計常駐型AI代理人的關鍵考量。作者指出，與傳統請求驅動的聊天機器人不同，常駐型AI代理人需在未被呼叫時也能主動運作，例如夜間自動整理郵件、行事曆與會議紀錄，並於早晨生成團隊報告。文中強調此類系統需持續感知環境並自主決策，因此設計上的主要挑戰在於狀態管理、觸發機制與任務優先級。作者分享其實作經驗，說明如何設定代理人主動行為的觸發條件，以及如何避免過度干擾使用者。雖然內容僅有摘要，但可推測作者可能討論了LLM的呼叫策略、記憶體管理與效能最佳化等議題。此文章對開發團隊有參考價值，因為常駐型AI代理人在企業協作工具中日益普及，理解其設計困境有助於開發者權衡自動化與使用者控制之間的平衡。然而，由於原文僅提供部分段落，具體的技術細節與實證數據有限，讀者需注意其論點可能僅基於特定情境的經驗，未必適用於所有場景。整體而言，本文點出常駐型AI代理人與傳統bot的本質差異，並提供實務上的思考框架，值得相關開發者借鏡。",
       "title": "チャットに常駐するAIエージェントを設計するときに考えた5つのこと",
       "title_zh": "設計常駐於聊天室中的AI代理人時所思考的五件事"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [],
+      "categories": [
+        "Reasoning Models",
+        "AI Research",
+        "Coding Agents",
+        "GPT",
+        "Agents",
+        "LLMs",
+        "Open-Source"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-07-19T08:22:39.308312+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "sebastian-raschka-blog",
+          "tier": 0,
+          "title": "Controlling Reasoning Effort in LLMs",
+          "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.5,
+          "novelty": 0.4,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions LLMs and reasoning modes, but no experimental details."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Title and abstract relate to reasoning effort control in LLMs, touching on reasoning and LLMs, but abstract-only provides minimal detail; no methods, evidence, or results, limiting rigor and reproducibility. Scores are low-moderate due to topic relevance but weak scientific substance.",
+        "score": 0.375,
+        "token_usage": {
+          "completion_tokens": 163,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 22,
+          "prompt_tokens": 2070,
+          "total_tokens": 2233
+        },
+        "topics": [
+          "LLM",
+          "reasoning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "sebastian-raschka-blog",
+        "tier": 0,
+        "title": "Controlling Reasoning Effort in LLMs",
+        "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms"
+      },
+      "published_at": "2026-07-18T11:16:09+00:00",
+      "published_local_date": "2026-07-18",
+      "report_rank": 20,
+      "report_score": 19.142786,
+      "report_source_date": "2026-07-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.375,
+        "llm_relevance_score": 10.5,
+        "recency_score": 0.14278552489311738,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 19.142785524893117
+      },
+      "section": null,
+      "source_name": "Sebastian Raschka Blog",
+      "story_id": "fallback:b8fd37c22aaadb03",
+      "summary": "How LLMs Learn Low-, Medium-, and High-Effort Reasoning Modes",
+      "summary_zh": "本文探討大型語言模型（LLM）如何在不同任務中自發地學習與調整推理努力程度，並提出控制其推理深度的方法。研究動機在於，現有模型在面對簡單問題時可能過度推理，而在複雜問題上又可能推理不足，導致效率與準確性的失衡。作者透過分析模型在訓練過程中的行為模式，區分出低、中、高三種推理努力模式，並觀察到這些模式與任務難度、提示形式及模型規模相關。方法上，研究結合了行為實驗與內部表徵分析，利用探針技術追蹤模型在產生最終答案前的中間思考步驟，以量化推理深度。主要結果顯示，透過調整解碼參數（如溫度與top-p）或輸入提示中的引導語，可以顯著影響模型的推理努力程度，且在特定任務上能提升效率而不損失準確度。然而，作者也指出其方法依賴於任務可分解性，且對模型內部表徵的解釋仍有限。此研究的意義在於，為使用者在實際應用中動態控制LLM的計算成本與輸出品質提供初步框架，並啟發未來在更大型模型與多步推理場景下的相關研究。",
+      "title": "Controlling Reasoning Effort in LLMs",
+      "title_zh": "控制LLM中的推理努力程度"
     },
     {
       "arxiv_id": null,
@@ -1912,7 +1676,7 @@
       },
       "published_at": "2026-07-16T13:58:05+00:00",
       "published_local_date": "2026-07-16",
-      "report_rank": 24,
+      "report_rank": 21,
       "report_score": 19.13122,
       "report_source_date": "2026-07-16",
       "report_source_section": "radar",
@@ -1967,7 +1731,7 @@
       },
       "published_at": "2026-07-05T06:52:34+00:00",
       "published_local_date": "2026-07-05",
-      "report_rank": 25,
+      "report_rank": 22,
       "report_score": 19.127364,
       "report_source_date": "2026-07-05",
       "report_source_section": "top5",
@@ -2054,7 +1818,7 @@
       },
       "published_at": "2026-07-11T18:34:18+00:00",
       "published_local_date": "2026-07-11",
-      "report_rank": 26,
+      "report_rank": 23,
       "report_score": 19.105759,
       "report_source_date": "2026-07-11",
       "report_source_section": "top5",
@@ -2142,7 +1906,7 @@
       },
       "published_at": "2026-07-17T08:17:42+00:00",
       "published_local_date": "2026-07-17",
-      "report_rank": 27,
+      "report_rank": 24,
       "report_score": 19.020707,
       "report_source_date": "2026-07-17",
       "report_source_section": "top5",
@@ -2231,7 +1995,7 @@
       },
       "published_at": "2026-07-08T23:30:05+00:00",
       "published_local_date": "2026-07-08",
-      "report_rank": 28,
+      "report_rank": 25,
       "report_score": 18.907455,
       "report_source_date": "2026-07-08",
       "report_source_section": "radar",
@@ -2255,6 +2019,104 @@
       "summary_zh": "這篇文章作者基於自身實作經驗指出，讓AI代理在無人監督、擁有廣泛寫入權限、並自行運作的模式下運行，雖然方便，卻會打開一條危險的攻擊鏈路。攻擊者可透過間接提示注入（indirect prompt injection）作為切入點，誘導代理自我改寫（self-rewriting），最終在無人介入下達成任意程式碼執行。作者強調，單純在提示中寫明「禁止觸碰某些區域」並不可靠，因為指示本身只是建議，缺乏強制力；攻擊者可以插入比原始指示更強的惡意指示，覆蓋原本的約束。因此，安全的防護不應依賴文字指示，而應從「能力（capability）」層面進行物理性限制，例如嚴格設定檔案系統或API權限，或者改採用人在迴圈（human-in-the-loop）的審核機制，讓每個關鍵操作都有人為確認。作者實際採取了後者：廢棄原先自行建置的無人代理，轉為人機協作模式，並在必要時以最小權限原則減低風險。此文的重要性在於提醒開發者，AI代理的安全不能只靠提示工程，而必須將信任邊界建立在可強制執行的權限控制與人工監督之上；並呼籲在部署自主代理時，應充分評估間接注入與自我修改的風險，避免過度信任模型自身的判斷。",
       "title": "AIエージェントに「触るな」は効かない。無人自動化をやめて権限で縛った話",
       "title_zh": "「別碰AI代理」沒用。我們放棄無人自動化、改以權限約束的經驗談"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Claudio Mazzoni"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Elastic File System (EFS)",
+        "Amazon Elastic Kubernetes Service",
+        "Amazon RDS",
+        "Amazon Simple Notification Service (SNS)",
+        "Amazon Simple Queue Service (SQS)",
+        "Customer Solutions"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-07-23T08:33:34.338956+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/ai-teammates-how-monday-com-runs-production-ai-agents-on-amazon-bedrock"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.5,
+          "novelty": 0.2,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'AI Teammates are agentic AI on Amazon Bedrock'",
+          "Abstract: 'Per-engineer PR throughput is up by more than half'",
+          "Abstract: 'confidence-scored merge play closing the gap to full autonomy'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract focuses on production AI agents on Bedrock, relevant to agents and tool use. However, it is a company blog post with limited technical detail, no methodology, baselines, or reproducibility. Pure application without language model methodology, so capped at 0.2 for domain application? But relevance to agents is high, and it mentions AI coding tools and PR throughput, so it is in scope but with low rigor. Score 0.3 reflects moderate relevance and low robustness.",
+        "score": 0.29000000000000004,
+        "token_usage": {
+          "completion_tokens": 289,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 6,
+          "prompt_tokens": 2182,
+          "total_tokens": 2471
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/ai-teammates-how-monday-com-runs-production-ai-agents-on-amazon-bedrock"
+      },
+      "published_at": "2026-07-22T15:54:28+00:00",
+      "published_local_date": "2026-07-22",
+      "report_rank": 26,
+      "report_score": 18.837085,
+      "report_source_date": "2026-07-22",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.29000000000000004,
+        "llm_relevance_score": 8.120000000000001,
+        "recency_score": 0.21708510619292704,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 18.83708510619293
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:57447d00fdceed4c",
+      "summary": "AI Teammates are agentic AI on Amazon Bedrock, and few engineering organizations run them in production at the scale that monday.com does. Nine in ten Builders use AI coding tools every month, up from roughly half a year ago. Per-engineer PR throughput is up by more than half. Every figure in this post comes from monday’s own internal production data. In this post, we share the architecture behind those numbers, the retrofits that made it work in a decade-old code base, and the confidence-scored merge play closing the gap to full autonomy.",
+      "summary_zh": "本文由 monday.com 分享其在 Amazon Bedrock 上大規模運行生產級 AI 代理（Agentic AI）的實務經驗。文章指出，目前已有九成的開發者每月使用 AI 編碼工具，而半年前僅約五成，同時每位工程師的 PR（Pull Request）吞吐量提升超過一半。文中所有數據均來自 monday.com 內部生產環境的實際觀測。作者詳細說明了支撐這些成果的系統架構，包括如何在擁有十年歷史的程式碼庫上進行改造以適應 AI 代理，以及如何透過信心評分機制（confidence-scored merge play）來逐步實現全自主的程式碼合併流程。本文的價值在於提供了一個大型企業在真實生產環境中部署 AI 代理的具體案例，說明了從傳統開發流程過渡到 AI 輔助（甚至自主）流程所需的架構調整與風險控管策略。然而，文章僅提供摘要，並未公開完整的架構圖或詳細的實作程式碼，也缺乏對上述數據的統計顯著性檢定，因此讀者對於其結果的推論需保持謹慎。整體而言，此案例彰顯了 AI 代理在軟體開發中的實際應用潛力，並為其他企業在規劃類似系統時提供了重要的參考方向。",
+      "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+      "title_zh": "AI 同事：monday.com 如何在 Amazon Bedrock 上運行生產級 AI 代理"
     },
     {
       "arxiv_id": null,
@@ -2316,7 +2178,7 @@
       },
       "published_at": "2026-07-10T15:00:08+00:00",
       "published_local_date": "2026-07-10",
-      "report_rank": 29,
+      "report_rank": 27,
       "report_score": 18.607556,
       "report_source_date": "2026-07-10",
       "report_source_section": "top5",
@@ -2402,7 +2264,7 @@
       },
       "published_at": "2026-07-24T03:36:37+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 30,
+      "report_rank": 28,
       "report_score": 18.555651,
       "report_source_date": "2026-07-24",
       "report_source_section": "top5",
@@ -2426,6 +2288,155 @@
       "summary_zh": "本文報告了一個開源專案，旨在萃取Claude Fable 5（Claude Code的最上位模型）的「工作方式」，而非其智慧本身。作者觀察到，當每週使用上限耗盡後，切換至下位模型時會明顯感到「做事方式的差異」。基於此，研究者假設：雖然無法直接移植模型的智慧，但可以觀察並複製其可觀測的工作行為模式。專案的核心方法並非傳統的蒸餾或利用模型輸出進行訓練（因違反使用條款），而是建立所謂的「行動簽名」。具體作法為收集406個實際工作階段（log）的資料，分析Claude Fable 5在處理任務時的典型行為序列，例如工具呼叫順序、檔案編輯策略、除錯步驟、程式碼審查習慣等，並將這些高層次的行為模式抽象化、編碼成可重現的規則或提示模板。這些行動簽名隨後被整合到開源套件（GitHub上提供的fable-mode）中，使其他模型或使用者在面對類似任務時能模仿其工作流程。作者強調，這不是模型蒸餾，而是「行為層級」的轉移。初步結果顯示，採用這些行動簽名後，即使在較低階模型上，也能顯著改善任務處理的結構性與效率，尤以長篇程式碼重構與多步驟偵錯最為明顯。然而，此方法有其限制：行動簽名僅能捕捉可觀測的表面行為，無法涵蓋模型內在的推理深度或語意理解；此外，行為模式的泛化性可能受任務類型與領域影響，且基於日誌萃取可能遺漏隱性決策過程。此專案的意義在於，它提供了一種在無法直接複製模型的條件下，以行為模式轉移來部分彌補模型能力差距的可能性，並開創了「工作方式萃取」的實作途徑，對AI代理的流程最佳化與模型比較研究具有參考價值。",
       "title": "Claude Fable 5の「働き方」だけを抽出する — 実ログ406セッションから行動署名を作ってOSSにした",
       "title_zh": "Claude Fable 5「工作方式」的萃取——從406個實際工作階段建立行動簽名並開源"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ZeroToHero"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-20T09:43:04.830151+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "日本製LLM PLaMoは答える前に何を考えている？ Jacobian Lensで中間層を覗いてみた",
+          "url": "https://zenn.dev/50s_zerotohero/articles/9d18de9b96e9bb"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.5,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.5,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions reproduction of Jacobian Lens on PLaMo intermediate layers"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper applies Jacobian Lens methodology to a Japanese LLM (PLaMo), showing preference relevance to Japanese LLM, interpretability, and transformers. Novelty is moderate as it applies an existing technique to a new model. Rigor is low due to lack of rigorous reproduction and no intervention experiments. Evidence strength is weak, based on abstract only. Generalizability is limited to interpretability applications. Reproducibility is moderate as it is a personal reproduction with some details. Overall score is calculated via weighted rubric.",
+        "score": 0.455,
+        "token_usage": {
+          "completion_tokens": 235,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 69,
+          "prompt_tokens": 2245,
+          "total_tokens": 2480
+        },
+        "topics": [
+          "Japanese LLM",
+          "interpretability",
+          "transformer",
+          "attention",
+          "Jacobian Lens"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "日本製LLM PLaMoは答える前に何を考えている？ Jacobian Lensで中間層を覗いてみた",
+        "url": "https://zenn.dev/50s_zerotohero/articles/9d18de9b96e9bb"
+      },
+      "published_at": "2026-07-19T12:45:27+00:00",
+      "published_local_date": "2026-07-19",
+      "report_rank": 29,
+      "report_score": 18.448767,
+      "report_source_date": "2026-07-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.455,
+        "llm_relevance_score": 12.74,
+        "recency_score": 0.1587669745698737,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 18.448766974569875
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:b9540d7e425c7677",
+      "summary": "!\n本記事は個人による再現実験（research preview）です。ここで示す結果は、中間層から特定の概念や後続候補が読み出せたという観察であり、モデルの意識や、PLaMoがClaudeと同様のグローバルワークスペース（意識の脳内メカニズム）を持つことを示すものではありません。また、Anthropic論文と同等の条件による厳密な再現ではなく、ステアリングによる介入実験も未実施です。\n\n\n はじめに\nAnthropicの Jacobian Lens(J-lens)論文 は、LLMの中間層が「何を言おうとしているか」を読み出す手法を提案しました。本記事では、これを日本語モデル×日本語コー...",
+      "summary_zh": "本文是個人再現實驗（research preview），針對Anthropic提出的Jacobian Lens（J-lens）方法進行驗證，目的是探索日本製LLM PLaMo在中間層是否隱含與後續輸出相關的概念或候選資訊。作者強調，研究僅屬於觀察性發現，並非證明模型具有意識或如同Claude般的全球工作空間（意識的腦內機制），也未進行嚴格的同等條件再現或介入性steering實驗。方法上，作者將J-lens應用於PLaMo，嘗試從中間層讀取模型預備回答的傾向。文中展示了初步結果，聲稱能從特定層級讀出某些概念或後續候選，但這些結果缺乏系統性驗證與對照組。此研究的重要意義在於，若能有效讀取中間層表徵，將有助於理解LLM的內部運作與可解釋性；然而目前證據不足以支持強烈結論，且未經同行評審。作者亦提醒讀者勿過度解讀，需區分觀察與因果干預的差異。整體而言，這篇preview提供了一個初步探索，但嚴謹性有限，未來需更多控制實驗與跨模型驗證。",
+      "title": "日本製LLM PLaMoは答える前に何を考えている？ Jacobian Lensで中間層を覗いてみた",
+      "title_zh": "日本製LLM PLaMo在回答前在想什麼？用Jacobian Lens窺探中間層"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Sapana Chaudhary"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon SageMaker AI"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-07-03T12:30:46.735226+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Best practices for multi-turn reinforcement learning in Amazon SageMaker AI",
+          "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-multi-turn-reinforcement-learning-in-amazon-sagemaker-ai"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Best practices for multi-turn reinforcement learning in Amazon SageMaker AI",
+        "url": "https://aws.amazon.com/blogs/machine-learning/best-practices-for-multi-turn-reinforcement-learning-in-amazon-sagemaker-ai"
+      },
+      "published_at": "2026-07-02T17:50:23+00:00",
+      "published_local_date": "2026-07-02",
+      "report_rank": 30,
+      "report_score": 18.380487,
+      "report_source_date": "2026-07-03",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.25,
+        "llm_relevance_score": 7.0,
+        "recency_score": 0.8804870482802662,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 18.380487048280266
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:97e0aba09745ed9b",
+      "summary": "In this post, we share best practices for reliable multi-turn RL training. We cover how to build a training environment you can trust, set up an external evaluation, design a reward aligned with the end task, manage what changes once the agent runs for multiple turns, and monitor the metrics that tell you when to iterate.",
+      "summary_zh": "多輪強化學習（RL）在實務部署時常因環境不穩定與獎勵設計不當導致訓練發散，本文源自 Amazon SageMaker AI 的工程經驗，提出一套可複製的最佳實踐。內容從如何建構隔離且可重現的訓練環境開始，說明設置外部評估迴路以避免過度擬合單一回合表現，並強調獎勵函數需與終端任務指標（如任務成功率）嚴格對齊。當代理進入多輪互動後，狀態轉移與上下文累積會引入新的變異，因此團隊必須監控累計獎勵分布與探索程度等關鍵指標，並據此判斷何時應調整策略或收集更多軌跡。這些方法已協助多個團隊在對話式 AI 與機器人操控等場景中穩定提升 RL 訓練效率與可解釋性。",
+      "title": "Best practices for multi-turn reinforcement learning in Amazon SageMaker AI",
+      "title_zh": "Amazon SageMaker AI 中多輪強化學習的最佳實踐"
     }
   ],
   "blog_stories_considered": 371,
@@ -2462,7 +2473,7 @@
     "2026-07-30",
     "2026-07-31"
   ],
-  "generated_at": "2026-08-06T22:22:02.426333+00:00",
+  "generated_at": "2026-08-06T22:30:23.562293+00:00",
   "items_considered": 1613,
   "missing_dates": [],
   "period_end": "2026-07-31",
@@ -3846,7 +3857,7 @@
       "published_at": "2026-07-20T11:11:55+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 10,
-      "report_score": 32.998111,
+      "report_score": 32.994305,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -3856,11 +3867,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.915,
         "llm_relevance_score": 25.62,
-        "recency_score": 0.17811127866188012,
+        "recency_score": 0.17430481043431856,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.99811127866188
+        "total_score": 32.99430481043432
       },
       "section": null,
       "source_name": null,
@@ -4568,7 +4579,7 @@
       "published_at": "2026-07-20T16:45:13+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 17,
-      "report_score": 32.652282,
+      "report_score": 32.648386,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -4578,11 +4589,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.9025000000000001,
         "llm_relevance_score": 25.270000000000003,
-        "recency_score": 0.18228189260844443,
+        "recency_score": 0.17838629297047312,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.65228189260845
+        "total_score": 32.64838629297048
       },
       "section": null,
       "source_name": null,
@@ -5551,7 +5562,7 @@
       "published_at": "2026-07-22T13:49:17+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 26,
-      "report_score": 32.449298,
+      "report_score": 32.445206,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -5561,11 +5572,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8225,
         "llm_relevance_score": 23.03,
-        "recency_score": 0.21929763516185077,
+        "recency_score": 0.2152061022471681,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.449297635161855
+        "total_score": 32.44520610224717
       },
       "section": null,
       "source_name": null,
@@ -6378,7 +6389,7 @@
       "published_at": "2026-07-22T17:10:23+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 34,
-      "report_score": 32.272382,
+      "report_score": 32.268233,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -6388,11 +6399,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8875000000000001,
         "llm_relevance_score": 24.85,
-        "recency_score": 0.2223816721465933,
+        "recency_score": 0.21823259899065878,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.272381672146594
+        "total_score": 32.26823259899066
       },
       "section": null,
       "source_name": null,
@@ -6480,7 +6491,7 @@
       "published_at": "2026-07-20T17:06:19+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 35,
-      "report_score": 32.162549,
+      "report_score": 32.158648,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -6490,11 +6501,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.885,
         "llm_relevance_score": 24.78,
-        "recency_score": 0.1825491819937497,
+        "recency_score": 0.1786478700361523,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.162549181993754
+        "total_score": 32.158647870036155
       },
       "section": null,
       "source_name": null,
@@ -7137,7 +7148,7 @@
       "published_at": "2026-07-22T14:37:25+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 41,
-      "report_score": 31.990032,
+      "report_score": 31.985927,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -7147,11 +7158,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8775000000000001,
         "llm_relevance_score": 24.57,
-        "recency_score": 0.22003188427689996,
+        "recency_score": 0.21592665215191992,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.990031884276902
+        "total_score": 31.98592665215192
       },
       "section": null,
       "source_name": null,
@@ -7243,7 +7254,7 @@
       "published_at": "2026-07-22T09:40:22+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 42,
-      "report_score": 31.985539,
+      "report_score": 31.981518,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -7253,11 +7264,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8775000000000001,
         "llm_relevance_score": 24.57,
-        "recency_score": 0.21553945791579102,
+        "recency_score": 0.2115180429752037,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.98553945791579
+        "total_score": 31.981518042975203
       },
       "section": null,
       "source_name": null,
@@ -7758,7 +7769,7 @@
       "published_at": "2026-07-22T13:24:09+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 47,
-      "report_score": 31.918915,
+      "report_score": 31.914831,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -7768,11 +7779,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8750000000000001,
         "llm_relevance_score": 24.500000000000004,
-        "recency_score": 0.21891521339803624,
+        "recency_score": 0.2148308154952418,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.91891521339804
+        "total_score": 31.914830815495247
       },
       "section": null,
       "source_name": null,
@@ -8732,7 +8743,7 @@
       "published_at": "2026-07-22T12:11:51+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 59,
-      "report_score": 31.777819,
+      "report_score": 31.773755,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -8742,11 +8753,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.87,
         "llm_relevance_score": 24.36,
-        "recency_score": 0.21781883127658686,
+        "recency_score": 0.21375488905966275,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.777818831276587
+        "total_score": 31.773754889059663
       },
       "section": null,
       "source_name": null,
@@ -9131,7 +9142,7 @@
       "published_at": "2026-07-22T16:43:27+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 63,
-      "report_score": 31.641966,
+      "report_score": 31.637825,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -9141,11 +9152,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8650000000000001,
         "llm_relevance_score": 24.220000000000002,
-        "recency_score": 0.22196612479096958,
+        "recency_score": 0.217824804685732,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.641966124790972
+        "total_score": 31.637824804685735
       },
       "section": null,
       "source_name": null,
@@ -9544,7 +9555,7 @@
       "published_at": "2026-07-22T12:35:40+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 67,
-      "report_score": 31.568179,
+      "report_score": 31.564109,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -9554,11 +9565,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8625,
         "llm_relevance_score": 24.150000000000002,
-        "recency_score": 0.21817938759182723,
+        "recency_score": 0.2141087183163541,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.56817938759183
+        "total_score": 31.564108718316355
       },
       "section": null,
       "source_name": null,
@@ -10677,7 +10688,7 @@
       "published_at": "2026-07-22T15:22:14+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 78,
-      "report_score": 31.360718,
+      "report_score": 31.3566,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -10687,11 +10698,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8549999999999999,
         "llm_relevance_score": 23.939999999999998,
-        "recency_score": 0.2207177493278887,
+        "recency_score": 0.21659972071548153,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.360717749327886
+        "total_score": 31.35659972071548
       },
       "section": null,
       "source_name": null,
@@ -11478,7 +11489,7 @@
       "published_at": "2026-07-20T09:06:15+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 86,
-      "report_score": 31.286564,
+      "report_score": 31.28279,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -11488,11 +11499,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7825,
         "llm_relevance_score": 21.91,
-        "recency_score": 0.17656369052778922,
+        "recency_score": 0.1727902962588564,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.28656369052779
+        "total_score": 31.282790296258856
       },
       "section": null,
       "source_name": null,
@@ -12981,7 +12992,7 @@
     "api/day/2026-08-01.json"
   ],
   "stories_considered": 1526,
-  "summary": "本期月報精選2026年7月AI領域重要研究與技術文章，涵蓋大規模語言模型、強化學習、多代理系統、模型評測與實務部署等面向。值得關注的包括Kimi K3大型MoE模型、獎勵模型記憶分析、OSReward評測基準、LLM代理社會行為研究，以及RL演算法穩定性與效率改進等，為讀者掌握當前AI發展趨勢提供全面的參考。",
+  "summary": "本月重點涵蓋Kimi K3等超大規模開放模型，深入探討獎勵模型記憶、強化學習穩定性及代理自我演化評估，並收錄LLM在長文脈推理、隨機性與可重現性等關鍵議題，提供研究與工程實務的重要洞察。",
   "timezone": "UTC",
-  "title": "AI研究月報：2026年7月重點選集"
+  "title": "2026年7月AI研究與技術月報：模型規模、強化學習與代理評估"
 }
