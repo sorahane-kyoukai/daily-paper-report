@@ -4,11 +4,21 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Currently Learning そんけいご"
+        "Claudio Mazzoni"
       ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.218779+00:00",
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Elastic File System (EFS)",
+        "Amazon Elastic Kubernetes Service",
+        "Amazon RDS",
+        "Amazon Simple Notification Service (SNS)",
+        "Amazon Simple Queue Service (SQS)",
+        "Customer Solutions"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-07-23T08:33:34.338956+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -16,136 +26,78 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-          "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/ai-teammates-how-monday-com-runs-production-ai-agents-on-amazon-bedrock"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.2,
-          "generalizability": 0.7,
-          "novelty": 0.6,
-          "preference_relevance": 0.9,
-          "reproducibility": 0.2,
-          "rigor": 0.3
+          "generalizability": 0.5,
+          "novelty": 0.2,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.1,
+          "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract: 'Process Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。'",
-          "Final section: 'lacks experimental details.'"
+          "Abstract: 'AI Teammates are agentic AI on Amazon Bedrock'",
+          "Abstract: 'Per-engineer PR throughput is up by more than half'",
+          "Abstract: 'confidence-scored merge play closing the gap to full autonomy'"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Highly relevant to LLM reasoning, process reward models, and credit assignment, touching on chain-of-thought and training. The novelty is moderate as it reformulates credit assignment as MIL. However, only an abstract is available, so rigor and evidence are low. Generalizability is decent as it addresses a common training issue. Reproducibility is unclear due to lack of implementation details.",
-        "score": 0.605,
+        "rationale": "Abstract focuses on production AI agents on Bedrock, relevant to agents and tool use. However, it is a company blog post with limited technical detail, no methodology, baselines, or reproducibility. Pure application without language model methodology, so capped at 0.2 for domain application? But relevance to agents is high, and it mentions AI coding tools and PR throughput, so it is in scope but with low rigor. Score 0.3 reflects moderate relevance and low robustness.",
+        "score": 0.29000000000000004,
         "token_usage": {
-          "completion_tokens": 290,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 404,
-          "prompt_tokens": 2196,
-          "total_tokens": 2486
+          "completion_tokens": 289,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 6,
+          "prompt_tokens": 2182,
+          "total_tokens": 2471
         },
         "topics": [
-          "Large Language Models",
-          "Reasoning & Chain-of-Thought",
-          "Training & Optimization",
-          "AI Safety"
+          "Agents & Tool Use",
+          "Code & Programming"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-        "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/ai-teammates-how-monday-com-runs-production-ai-agents-on-amazon-bedrock"
       },
-      "published_at": "2026-07-21T01:58:58+00:00",
-      "published_local_date": "2026-07-21",
-      "report_rank": 1,
-      "report_score": 22.929211,
-      "report_source_date": "2026-07-21",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.6049999999999999,
-        "llm_relevance_score": 16.939999999999998,
-        "recency_score": 0.18921060068174367,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 22.929210600681742
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:84cfc211e4589b06",
-      "summary": "TL;DR\nProcess Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。結果のみからPRMを訓練する手法は**信用割当（Credit Assignment）**問題を抱える──誤ったステップにどの程度の責任を帰属させるかが未解決だった。\n北京大学のJiaらが提案するLCA（Learnable Credit Assignment）は、この問題をMultiple Instance Learning（MIL）として定式化し、最弱リンク原理（\"a reasoning chain is as strong as its weakest li...",
-      "summary_zh": "過程獎勵模型（Process Reward Model, PRM）在增強大型語言模型（LLM）的推理能力方面展現潛力，但依賴逐步註釋，成本高昂。為降低成本，研究轉向僅以最終結果訓練PRM，由此引出信用分配問題：當推理鏈出錯時，無法明確判斷哪一步驟應承擔多少責任。北京大學Jia等人提出的LCA（Learnable Credit Assignment）方法，將此問題形式化為多實例學習（Multiple Instance Learning, MIL），並引入最弱環原理——一條推理鏈的強度取決於其最薄弱的環節。具體而言，LCA將每個推理步驟視為一個實例，整個鏈條的結果作為標籤，透過迭代學習為每個步驟分配信用分數，並將最低分數步驟視為主要錯誤來源。這種設計使得模型能在無步驟級標註下，自動識別關鍵錯誤。實驗證據顯示，LCA在數學推理基準上提升了結果監督PRM的效能，並在部分情況下接近甚至超越密集監督的PRM，同時大幅降低了註釋成本。然而，該方法依賴於推理鏈的質量，若鏈條本身缺乏多樣性或錯誤分佈複雜，可能影響信用分配的準確性。此外，最弱環原理假設錯誤主因集中在單一環節，但真實推理中可能有多個相關錯誤。此研究的重要性在於提供了一種成本效益高的PRM訓練策略，使強化學習（RL）過程中更有效利用結果監督，從而推動LLM推理能力的提升，並為後續研究提供了MIL框架下的新視角。",
-      "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-      "title_zh": "LCA：以最弱環原理解決結果監督PRM的信用分配問題"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-07-23T08:58:17.836971+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-          "url": "https://ai-data-base.com/archives/113634"
-        }
-      ],
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-        "url": "https://ai-data-base.com/archives/113634"
-      },
-      "published_at": "2026-07-22T22:19:47+00:00",
+      "published_at": "2026-07-22T15:54:28+00:00",
       "published_local_date": "2026-07-22",
-      "report_rank": 2,
-      "report_score": 20.777211,
+      "report_rank": 1,
+      "report_score": 18.837085,
       "report_source_date": "2026-07-22",
       "report_source_section": "radar",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.5,
-        "llm_relevance_score": 14.0,
-        "recency_score": 0.22721149066516869,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.29000000000000004,
+        "llm_relevance_score": 8.120000000000001,
+        "recency_score": 0.21708510619292704,
         "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 3.75,
-        "total_score": 20.777211490665167
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 18.83708510619293
       },
       "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:1273e890730cec9f",
-      "summary": "<p>AIエージェントに悪意あるツールをつかませる最短ルートは、高度なハッキングではありません。ツールの説明文に「公式」「認定済み」と書き足すだけです。この単純な嘘は、巧妙な攻撃コードよりはるかに高い確率で通ってしまいます。人間が「ベストセラー」や「★4.8」に弱いのと、同じ構図です。例が分かりやすいですよね。 ツールが作られてから、選ばれ、実行され、更新されるまでの流れ全体を対象に、どこがどれだけ破られるのかを数字で確かめた検証が報告されています。見えてきた最大の弱点は、コードの穴ではなく「もっともらしい言葉」でした。なぜ直接の命令より、素朴な嘘のほうが通ってしまうのでしょうか。直感通りですか？ &#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/113634\"><span class=\"locked-post\">🔒</span> AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "這份研究報告探討了AI代理（AI agent）在選擇、執行及更新工具時的安全弱點。過去一般人認為，惡意攻擊者必須透過複雜的程式碼漏洞或高階駭客技術才能誘騙AI代理執行有害操作，但這份研究發現，最簡單且有效的攻擊方式，竟然是在工具說明文件中加入「官方」、「認證」等字眼。這種樸素的謊言，比精心設計的攻擊程式碼更能成功欺騙AI代理，其成功率遠高於預期。研究人員針對工具從建立、被選取、執行到更新的完整生命週期進行系統性測試，以量化數據找出每個環節最容易遭受攻擊的破口。結果顯示，最大的弱點並非程式碼本身的缺陷，而是「看似可信的敘述」——這與人類容易被「暢銷書」、「4.8星評價」等社會證明影響的現象如出一轍。AI代理在缺乏足夠事實驗證機制的情況下，過度信任文件中的權威性標籤，導致攻擊者僅需在描述中造假，就能讓代理誤選惡意工具。這項發現凸顯了當前AI安全研究的盲點：多數防禦機制專注於偵測異常程式碼或指令注入，卻忽略了語言層級的社會工程攻擊。報告也點出限制，例如測試環境與真實世界應用的差異，以及不同AI模型對權威性詞彙的敏感度可能不同。無論如何，這項研究提醒我們，AI安全不僅是技術問題，更是信任與語言的問題；若要建立更可靠的AI代理，必須對工具描述進行事實核查，而非僅依賴程式碼審查。這對開發者、企業以及所有依賴AI自動化決策的使用者而言，都是值得警惕的警訊。",
-      "title": "🔒 AIエージェントが騙される一番の抜け道は、ハッキングではなく「公式」と嘘をつくことだった",
-      "title_zh": "AI代理被騙的最大漏洞不是駭客攻擊，而是謊稱「官方」"
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:57447d00fdceed4c",
+      "summary": "AI Teammates are agentic AI on Amazon Bedrock, and few engineering organizations run them in production at the scale that monday.com does. Nine in ten Builders use AI coding tools every month, up from roughly half a year ago. Per-engineer PR throughput is up by more than half. Every figure in this post comes from monday’s own internal production data. In this post, we share the architecture behind those numbers, the retrofits that made it work in a decade-old code base, and the confidence-scored merge play closing the gap to full autonomy.",
+      "summary_zh": "本文由 monday.com 分享其在 Amazon Bedrock 上大規模運行生產級 AI 代理（Agentic AI）的實務經驗。文章指出，目前已有九成的開發者每月使用 AI 編碼工具，而半年前僅約五成，同時每位工程師的 PR（Pull Request）吞吐量提升超過一半。文中所有數據均來自 monday.com 內部生產環境的實際觀測。作者詳細說明了支撐這些成果的系統架構，包括如何在擁有十年歷史的程式碼庫上進行改造以適應 AI 代理，以及如何透過信心評分機制（confidence-scored merge play）來逐步實現全自主的程式碼合併流程。本文的價值在於提供了一個大型企業在真實生產環境中部署 AI 代理的具體案例，說明了從傳統開發流程過渡到 AI 輔助（甚至自主）流程所需的架構調整與風險控管策略。然而，文章僅提供摘要，並未公開完整的架構圖或詳細的實作程式碼，也缺乏對上述數據的統計顯著性檢定，因此讀者對於其結果的推論需保持謹慎。整體而言，此案例彰顯了 AI 代理在軟體開發中的實際應用潛力，並為其他企業在規劃類似系統時提供了重要的參考方向。",
+      "title": "AI Teammates: how monday.com runs production AI agents on Amazon Bedrock",
+      "title_zh": "AI 同事：monday.com 如何在 Amazon Bedrock 上運行生產級 AI 代理"
     },
     {
       "arxiv_id": null,
@@ -208,7 +160,7 @@
       },
       "published_at": "2026-07-24T03:36:37+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 3,
+      "report_rank": 2,
       "report_score": 18.555651,
       "report_source_date": "2026-07-24",
       "report_source_section": "top5",
@@ -301,7 +253,7 @@
       },
       "published_at": "2026-07-24T07:27:31+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 4,
+      "report_rank": 3,
       "report_score": 17.789783,
       "report_source_date": "2026-07-24",
       "report_source_section": "top5",
@@ -389,7 +341,7 @@
       },
       "published_at": "2026-07-24T13:47:50+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 5,
+      "report_rank": 4,
       "report_score": 16.736736,
       "report_source_date": "2026-07-24",
       "report_source_section": "top5",
@@ -478,7 +430,7 @@
       },
       "published_at": "2026-07-26T21:07:46+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 6,
+      "report_rank": 5,
       "report_score": 16.495697,
       "report_source_date": "2026-07-26",
       "report_source_section": "top5",
@@ -566,7 +518,7 @@
       },
       "published_at": "2026-07-25T15:42:21+00:00",
       "published_local_date": "2026-07-25",
-      "report_rank": 7,
+      "report_rank": 6,
       "report_score": 16.357053,
       "report_source_date": "2026-07-25",
       "report_source_section": "top5",
@@ -654,7 +606,7 @@
       },
       "published_at": "2026-07-26T01:41:03+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 8,
+      "report_rank": 7,
       "report_score": 15.979571,
       "report_source_date": "2026-07-26",
       "report_source_section": "top5",
@@ -678,6 +630,93 @@
       "summary_zh": "本文是一份由作者親身經歷撰寫的實錄式指南，聚焦於個人購買 NVIDIA DGX Spark（128GB 版本）後，在最初兩週多時間內從購買決策、系統設定、大型模型部署、服務常駐、代理（agent）應用、實驗執行到遭遇失敗的完整過程。文中強調所有命令皆經實機驗證，所有數字均對照原始日誌，確保可信度。核心內容包含五款模型的速度實測結果，以及作者在過程中累積約 344GB 的『繞路』失敗經驗整理，堪稱失敗百科。此外，書末附有 Ollama 命令與 Modelfile 參考資料（標註實機驗證標記），並提供命令速查表。作者將『前言』與第一章（購買前須知）免費公開，讓潛在買家能先評估是否值得投資。此指南的價值在於填補了個人用戶在高端本地 LLM 硬體上的實戰空白，特別是在資源管理、效能調校與常見陷阱方面提供了具體數據與經驗，有助於讀者避免重蹈覆轍。然而，文中未提供詳細的基準測試方法論，且僅限單一硬體型號，推廣至其他配置時可能需謹慎。整體而言，這份指南對於考慮部署本地大型語言模型的進階使用者具有重要參考意義，能縮短摸索期並降低試錯成本。",
       "title": "DGX Spark実践ガイド — 個人で買った128GBマシンで、ローカルLLMを回し尽くす",
       "title_zh": "DGX Spark 實戰指南 — 在個人購買的 128GB 機器上，盡情運行本地 LLM"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Umamon"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.219477+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+          "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.3,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title and abstract mention subagents, token increase 27.7%, cost decrease 87.7%, Claude Code, pipeline design. No sections or methods available."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topic relevance moderate due to agents, cost, token analysis, and Japanese context; but paper is an informal blog-style narrative with no methodological detail, baselines, or quantitative rigor. Claims cost and token numbers but lacks verification, ablations, or reproducibility. Novelty limited as practical anecdote. Evidence weak from abstract only. Scores reflect low rigor and evidence despite relevance.",
+        "score": 0.355,
+        "token_usage": {
+          "completion_tokens": 217,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 111,
+          "prompt_tokens": 2287,
+          "total_tokens": 2504
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Japanese LLM & NLP",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+        "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
+      },
+      "published_at": "2026-07-21T00:09:19+00:00",
+      "published_local_date": "2026-07-21",
+      "report_rank": 8,
+      "report_score": 15.923963,
+      "report_source_date": "2026-07-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.355,
+        "llm_relevance_score": 9.94,
+        "recency_score": 0.18396283897911242,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 15.923962838979111
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:6bbfef9190e51710",
+      "summary": "「役割ごとにエージェントを分ければ、記事の質も上がるしコストも下がるはずだ」——そう思って作った技術ブログの自動生成パイプラインは、実測したら逆だった。サブエージェントを11個から0個にしたら、トークンの総量はむしろ27.7%増えたのに、記事1本のコストは87.7%下がった。この記事は、コードを1行も書かない人間がClaude Codeのプロンプトだけでこのパイプラインを作り、実測値をもとに設計をひっくり返した実録である。\n\n 問題: エージェントを分けるほど良いと思い込んでいた\nこのパイプラインは、当社が複数のブログを無人生成するために、Claude Codeのプロンプトだけで組んだ社...",
+      "summary_zh": "這篇文章記錄了一位不寫程式碼的作者，使用Claude Code的提示詞（prompt）建構技術部落格自動生成管線的親身實驗。最初作者抱持「角色分工越多，品質與成本效益越好」的直覺，設計了包含11個子代理（sub-agent）的複雜管線。然而，在實際測量後，作者驚訝地發現，將子代理數量從11個削減至0個（即完全移除子代理），每篇文章的生成成本竟大幅下降了87.7%，儘管Token總消耗量反而增加了27.7%。這個看似矛盾的結果，凸顯了代理間溝通與協調的隱性開銷：多代理系統需要頻繁傳遞上下文、解析任務邊界，導致Token浪費與額外延遲，反而抵消了分工帶來的效率。作者透過反覆迭代與實測數據，最終證明簡化的單一流程設計，在成本與品質上皆優於複雜的多代理架構。文中也承認，此結果可能受限於任務類型（技術部落格生成）與所採用的Claude Code工具，未必能一概而論。這項發現對AI代理系統的設計具有重要啟示：過度工程化（over-engineering）可能適得其反，有時「少即是多」，實測數據應優先於直覺判斷。文章以實錄形式呈現，強調代碼零撰寫但依賴提示詞工程與測量數據驅動決策的過程，對實務上優化LLM管線成本與設計具有參考價值。",
+      "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+      "title_zh": "將子代理從11個降到0個，成本反而下降87.7%——儘管Token總量增加了27.7%"
     },
     {
       "arxiv_id": null,
@@ -1126,97 +1165,6 @@
     {
       "arxiv_id": null,
       "authors": [
-        "amanity-haray"
-      ],
-      "categories": [],
-      "entities": [
-        "ollama"
-      ],
-      "first_seen_at": "2026-07-21T08:57:04.932288+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
-          "url": "https://qiita.com/amanity-haray/items/c44f104fe02a400aa03d"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.2,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "Mentions 8-step solution and custom evaluation tests"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper discusses building custom LLM evaluation harnesses, covering LLM-as-judge, Ollama, and test design. It is relevant to LLM evaluation and Japanese context, but it is an abstract-only blog-style piece with no quantitative results, methodology details, or baselines. The content focuses on practical engineering rather than novel research, so rigor and evidence strength are low.",
-        "score": 0.235,
-        "token_usage": {
-          "completion_tokens": 203,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 380,
-          "prompt_tokens": 2172,
-          "total_tokens": 2375
-        },
-        "topics": [
-          "LLM evaluation",
-          "LLM-as-judge",
-          "Ollama",
-          "Japanese LLM"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
-        "url": "https://qiita.com/amanity-haray/items/c44f104fe02a400aa03d"
-      },
-      "published_at": "2026-07-21T06:47:27+00:00",
-      "published_local_date": "2026-07-21",
-      "report_rank": 14,
-      "report_score": 14.573039,
-      "report_source_date": "2026-07-21",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.23500000000000001,
-        "llm_relevance_score": 6.58,
-        "recency_score": 0.19303938758534098,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 14.573039387585341
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:a0f186a23c0926f0",
-      "summary": "LLM選定のために自作の比較評価テストを組んだのに、候補モデルが軒並み満点になって優劣がつかない——という経験をしたエンジニアは多いと思います。この現象と解決の全体像（8ステップ）は 公開ベンチマークだけでLLMを選んでいませんか？——判別力のある評価テストを自作する方法...",
-      "summary_zh": "本文探討了一個常見的實務困境：工程師為了挑選合適的大型語言模型（LLM），自行設計比較評估測試，卻發現候選模型幾乎全數滿分，導致無法區分優劣。作者指出，過度依賴公開基準測試（如MMLU、HellaSWAG）可能在特定應用場景中失去鑑別力，因此需要建立具有判別力的自訂評估流程。文中提出一個八步驟的整體解決方案，涵蓋三個核心面向：第一，對正確答案進行獨立驗算，避免測試資料本身存在偏誤或洩漏；第二，採用LLM-as-judge的機械評分方式，減少人工評分的主觀性與不一致性，同時設定明確的評分標準以提升可重現性；第三，針對Ollama執行環境中的num_ctx參數（即上下文長度）進行實測調整，因為上下文窗口不足可能導致模型表現失真，進而影響評估結果。作者強調，評估測試的設計必須貼近實際使用情境，例如輸入長度、任務類型與輸出格式，並透過多次運行以確保穩定性。此文的價值在於提供務實的評估框架，幫助開發者在眾多開源模型中做出更有依據的選擇，而非盲目追求高分。然而，文中並未提供具體的實驗數據或量化比較，且LLM-as-judge本身可能繼承模型偏見，獨立驗算的設計細節也需更多說明。整體而言，這篇文章對於需要自建LLM評估管線的工程師具有參考意義，可作為提升評估信效度的起點。",
-      "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
-      "title_zh": "自製LLM評測框架的實作解說——正確答案的獨立驗算、LLM-as-judge的機械評分、Ollama num_ctx的實測對策"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
         "HACH"
       ],
       "categories": [],
@@ -1278,7 +1226,7 @@
       },
       "published_at": "2026-07-26T15:08:06+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 15,
+      "report_rank": 14,
       "report_score": 14.541417,
       "report_source_date": "2026-07-26",
       "report_source_section": "top5",
@@ -1302,6 +1250,96 @@
       "summary_zh": "本文探討常駐AI代理（例如整合於聊天介面、於夜間自動收集日誌與會議紀錄並於早晨生成報告的agent）在執行夜間批處理任務時，因失敗而導致的重複執行與部分完成問題。作者主張，夜間批處理應以「失敗為前提」進行設計，因為LLM API逾時、外部服務（如Slack、Teams、日曆）的速率限制、以及Lambda等無伺服器平台的自動重試機制，都可能造成同一任務被觸發多次，或任務在中途失敗卻留下不完整的狀態。文中提出將批處理設計為冪等（idempotent）的關鍵原則，意即無論任務被執行一次或多次，其最終狀態皆一致，不會因重複執行而產生重複的副作用（例如重複發送報告或重複寫入日誌）。具體實作模式可能包含使用唯一任務ID進行去重、利用資料庫的原子操作或樂觀鎖定確保狀態轉換的單一性，以及設計可安全重執的步驟（例如在寫入前先檢查是否存在相同紀錄）。作者強調，此設計能有效應對雲端環境常見的暫時性錯誤（transient errors），並確保系統在無人監督的夜間時段仍能可靠運作。雖然摘要僅提供概略框架，未揭露實作細節或實證數據，但其核心價值在於提供一套務實的工程思維，協助開發者避免因基礎設施重試機制而導致的資料不一致與重複輸出，進而提升常駐AI代理在生產環境中的穩健性與可維護性。此議題對於依賴排程任務與外部API整合的AI應用尤為重要，因為此類系統必然會遭遇網路不穩定與服務限制，而冪等設計正是確保其長期穩定運行的基石。",
       "title": "常駐AIエージェントの夜間バッチをべき等に設計する",
       "title_zh": "常駐AI代理夜間批處理的冪等設計"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "amanity-haray"
+      ],
+      "categories": [],
+      "entities": [
+        "ollama"
+      ],
+      "first_seen_at": "2026-07-21T08:57:04.932288+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
+          "url": "https://qiita.com/amanity-haray/items/c44f104fe02a400aa03d"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "{'location': 'abstract', 'fact': 'Explains custom LLM evaluation harness with independent verification, LLM-as-judge scoring, and Ollama num_ctx measurement.'}"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses building a custom LLM evaluation harness, focusing on independent verification of answers, LLM-as-judge mechanical scoring, and Ollama num_ctx measurement. This is relevant to LLM evaluation and LLM-as-judge (preference_relevance moderate). However, it is a technical blog-style explanation with abstract-only content; no specific methods, quantitative results, or baselines are provided, limiting rigor and evidence strength. The novelty is low as it describes practical implementation rather than new research. Generalizability is moderate as the techniques could apply to other LLM evaluations. Reproducibility is low due to lack of detailed implementation specifics. Overall score reflects moderate relevance but weak evidence and potential domain-application focus (LLM evaluation), though not strictly out-of-scope.",
+        "score": 0.22499999999999998,
+        "token_usage": {
+          "completion_tokens": 299,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 124,
+          "prompt_tokens": 2172,
+          "total_tokens": 2471
+        },
+        "topics": [
+          "LLM",
+          "LLM-as-judge",
+          "Japanese LLM",
+          "evaluation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
+        "url": "https://qiita.com/amanity-haray/items/c44f104fe02a400aa03d"
+      },
+      "published_at": "2026-07-21T06:47:27+00:00",
+      "published_local_date": "2026-07-21",
+      "report_rank": 15,
+      "report_score": 14.28912,
+      "report_source_date": "2026-07-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.22499999999999995,
+        "llm_relevance_score": 6.299999999999999,
+        "recency_score": 0.18912003575735184,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.28912003575735
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:a0f186a23c0926f0",
+      "summary": "LLM選定のために自作の比較評価テストを組んだのに、候補モデルが軒並み満点になって優劣がつかない——という経験をしたエンジニアは多いと思います。この現象と解決の全体像（8ステップ）は 公開ベンチマークだけでLLMを選んでいませんか？——判別力のある評価テストを自作する方法...",
+      "summary_zh": "本文探討了一個常見的實務困境：工程師為了挑選合適的大型語言模型（LLM），自行設計比較評估測試，卻發現候選模型幾乎全數滿分，導致無法區分優劣。作者指出，過度依賴公開基準測試（如MMLU、HellaSWAG）可能在特定應用場景中失去鑑別力，因此需要建立具有判別力的自訂評估流程。文中提出一個八步驟的整體解決方案，涵蓋三個核心面向：第一，對正確答案進行獨立驗算，避免測試資料本身存在偏誤或洩漏；第二，採用LLM-as-judge的機械評分方式，減少人工評分的主觀性與不一致性，同時設定明確的評分標準以提升可重現性；第三，針對Ollama執行環境中的num_ctx參數（即上下文長度）進行實測調整，因為上下文窗口不足可能導致模型表現失真，進而影響評估結果。作者強調，評估測試的設計必須貼近實際使用情境，例如輸入長度、任務類型與輸出格式，並透過多次運行以確保穩定性。此文的價值在於提供務實的評估框架，幫助開發者在眾多開源模型中做出更有依據的選擇，而非盲目追求高分。然而，文中並未提供具體的實驗數據或量化比較，且LLM-as-judge本身可能繼承模型偏見，獨立驗算的設計細節也需更多說明。整體而言，這篇文章對於需要自建LLM評估管線的工程師具有參考意義，可作為提升評估信效度的起點。",
+      "title": "自作LLM評価ハーネスの実装解説——正解の独立検算・LLM-as-judgeの機械採点・Ollama num_ctxの実測対策",
+      "title_zh": "自製LLM評測框架的實作解說——正確答案的獨立驗算、LLM-as-judge的機械評分、Ollama num_ctx的實測對策"
     },
     {
       "arxiv_id": null,
@@ -1659,6 +1697,93 @@
     {
       "arxiv_id": null,
       "authors": [
+        "Currently Learning そんけいご"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.218779+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+          "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.4,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract: mentions PRM training from outcome labels, credit assignment problem, MIL formulation, weak-link principle"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; focuses on PRM training from outcome labels for LLM reasoning, relevant to LLM and reasoning but limited evidence. No method details or experiments in provided text.",
+        "score": 0.26,
+        "token_usage": {
+          "completion_tokens": 200,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 20,
+          "prompt_tokens": 2196,
+          "total_tokens": 2396
+        },
+        "topics": [
+          "LLM",
+          "reasoning",
+          "process reward model"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+        "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+      },
+      "published_at": "2026-07-21T01:58:58+00:00",
+      "published_local_date": "2026-07-21",
+      "report_rank": 20,
+      "report_score": 13.265369,
+      "report_source_date": "2026-07-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.26,
+        "llm_relevance_score": 7.28,
+        "recency_score": 0.18536898616497016,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 13.26536898616497
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:84cfc211e4589b06",
+      "summary": "TL;DR\nProcess Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。結果のみからPRMを訓練する手法は**信用割当（Credit Assignment）**問題を抱える──誤ったステップにどの程度の責任を帰属させるかが未解決だった。\n北京大学のJiaらが提案するLCA（Learnable Credit Assignment）は、この問題をMultiple Instance Learning（MIL）として定式化し、最弱リンク原理（\"a reasoning chain is as strong as its weakest li...",
+      "summary_zh": "過程獎勵模型（Process Reward Model, PRM）在增強大型語言模型（LLM）的推理能力方面展現潛力，但依賴逐步註釋，成本高昂。為降低成本，研究轉向僅以最終結果訓練PRM，由此引出信用分配問題：當推理鏈出錯時，無法明確判斷哪一步驟應承擔多少責任。北京大學Jia等人提出的LCA（Learnable Credit Assignment）方法，將此問題形式化為多實例學習（Multiple Instance Learning, MIL），並引入最弱環原理——一條推理鏈的強度取決於其最薄弱的環節。具體而言，LCA將每個推理步驟視為一個實例，整個鏈條的結果作為標籤，透過迭代學習為每個步驟分配信用分數，並將最低分數步驟視為主要錯誤來源。這種設計使得模型能在無步驟級標註下，自動識別關鍵錯誤。實驗證據顯示，LCA在數學推理基準上提升了結果監督PRM的效能，並在部分情況下接近甚至超越密集監督的PRM，同時大幅降低了註釋成本。然而，該方法依賴於推理鏈的質量，若鏈條本身缺乏多樣性或錯誤分佈複雜，可能影響信用分配的準確性。此外，最弱環原理假設錯誤主因集中在單一環節，但真實推理中可能有多個相關錯誤。此研究的重要性在於提供了一種成本效益高的PRM訓練策略，使強化學習（RL）過程中更有效利用結果監督，從而推動LLM推理能力的提升，並為後續研究提供了MIL框架下的新視角。",
+      "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+      "title_zh": "LCA：以最弱環原理解決結果監督PRM的信用分配問題"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
         "okaz"
       ],
       "categories": [],
@@ -1720,7 +1845,7 @@
       },
       "published_at": "2026-07-24T03:36:36+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 20,
+      "report_rank": 21,
       "report_score": 13.165651,
       "report_source_date": "2026-07-24",
       "report_source_section": "radar",
@@ -1806,7 +1931,7 @@
       },
       "published_at": "2026-07-25T00:20:15+00:00",
       "published_local_date": "2026-07-25",
-      "report_rank": 21,
+      "report_rank": 22,
       "report_score": 12.868628,
       "report_source_date": "2026-07-25",
       "report_source_section": "top5",
@@ -1892,7 +2017,7 @@
       },
       "published_at": "2026-07-25T08:07:43+00:00",
       "published_local_date": "2026-07-25",
-      "report_rank": 22,
+      "report_rank": 23,
       "report_score": 12.847821,
       "report_source_date": "2026-07-25",
       "report_source_section": "radar",
@@ -1977,7 +2102,7 @@
       },
       "published_at": "2026-07-26T22:45:38+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 23,
+      "report_rank": 24,
       "report_score": 12.787987,
       "report_source_date": "2026-07-26",
       "report_source_section": "radar",
@@ -2066,7 +2191,7 @@
       },
       "published_at": "2026-07-24T15:40:08+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 24,
+      "report_rank": 25,
       "report_score": 12.768824,
       "report_source_date": "2026-07-24",
       "report_source_section": "radar",
@@ -2155,7 +2280,7 @@
       },
       "published_at": "2026-07-26T02:27:45+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 25,
+      "report_rank": 26,
       "report_score": 12.440577,
       "report_source_date": "2026-07-26",
       "report_source_section": "radar",
@@ -2244,7 +2369,7 @@
       },
       "published_at": "2026-07-26T23:00:06+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 26,
+      "report_rank": 27,
       "report_score": 12.338326,
       "report_source_date": "2026-07-26",
       "report_source_section": "radar",
@@ -2325,7 +2450,7 @@
       },
       "published_at": "2026-07-24T03:00:16+00:00",
       "published_local_date": "2026-07-24",
-      "report_rank": 27,
+      "report_rank": 28,
       "report_score": 11.935007,
       "report_source_date": "2026-07-24",
       "report_source_section": "radar",
@@ -2349,6 +2474,93 @@
       "summary_zh": "本文探討工廠與物流中心中商品標籤的自動化讀取問題。由於標籤格式不定，常需讀取型號、訂單號等資訊，傳統OCR難以應付。作者提出以視覺語言模型（VLM）結合結構化輸出（structured output）來進行辨識與抽取，並在正式概念驗證（PoC）之前，先以手邊樣本測試可行性。方法上，作者比較了在提示中列舉候選字串與直接使用結構化輸出約束兩種策略，發現當候選字串已知時，結構化輸出的限制更有效，能提升精度。實驗結果顯示使用GPT-5.4-mini模型即可達到足夠的辨識水準，不需動用更大模型。文中也強調PoC前的驗證重點，包括確認辨識對象是否處於關鍵路徑、測試資料的代表性，以及如何評估誤判成本。此外，作者提供給工程師與企劃人員不同視角的建議：工程師可聚焦於模型選擇與提示設計，企劃人員則需關注專案推進的驗證步驟與風險。然而，本文僅以摘要形式呈現，缺乏詳細數據與完整實驗設定，因此無法確認其適用範圍與限制，例如不同字體、污損或多語標籤的表現。整體而言，此研究展示了VLM在非固定格式OCR任務上的潛力，尤其透過結構化輸出來控制輸出格式，有助於後續自動化流程整合。此案例對實務上欲導入AI視覺辨識的團隊具有參考價值，可作為PoC前的技術驗證範例。但讀者應注意，文中未提供完整的錯誤分析或與其他方法（如傳統OCR）的量化比較，在實際應用前仍需更嚴謹的測試。",
       "title": "商品ラベルOCRはVLMでどこまで読める？ GPTの構造化出力で精度を上げた検証とPoCの進め方",
       "title_zh": "商品標籤OCR能讀到什麼程度？用GPT結構化輸出提升精度及PoC推展方式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Argosvix"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.219016+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+          "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.3,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: mentions LLM-as-a-judge and manual scoring comparison (human agreement rate)"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Discusses LLM-as-a-judge and evaluation, but focuses on practical QA rather than methodological innovation; limited abstract evidence.",
+        "score": 0.35000000000000003,
+        "token_usage": {
+          "completion_tokens": 190,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 103,
+          "prompt_tokens": 2279,
+          "total_tokens": 2469
+        },
+        "topics": [
+          "LLM-as-a-judge",
+          "evaluation",
+          "quality scoring"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+        "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
+      },
+      "published_at": "2026-07-21T01:41:25+00:00",
+      "published_local_date": "2026-07-21",
+      "report_rank": 29,
+      "report_score": 11.785143,
+      "report_source_date": "2026-07-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.35000000000000003,
+        "llm_relevance_score": 9.8,
+        "recency_score": 0.1851432053262272,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 11.785143205326229
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c317c73617842fa9",
+      "summary": "LLMの出力品質を、別のLLM(ジャッジ)に採点させる。いわゆるLLM-as-a-judgeで、うちのプロダクトでも本番トラフィックを毎日自動採点しています。\nで、ある日気づきました。ダッシュボードに「品質 93/100」と出ているけど、この93を信じていい根拠がどこにもない。ジャッジが壊れていたら、品質スコアは全部きれいな嘘になります。採点の仕組みを作った本人としては、これはかなり気持ち悪い。\n定番の答えは「人手の採点と突き合わせる」です。実際に作りました。人間が数件採点して、ジャッジとの一致率を出す。動きはしたのですが、運用して数日で問題がはっきりしました。人間(私)が採点を続けられ...",
+      "summary_zh": "本文探討以LLM作為評分者（LLM-as-a-judge）在自動評估產品輸出品質時，其分數的可信度問題。作者指出，在其產品中每日使用LLM對大量輸出進行自動評分，但發現儀表板上顯示的品質分數（如93/100）缺乏有效驗證依據，若評分模型本身產生偏差或故障，所有分數將成為虛假但美觀的數據。傳統解決方案是引入人工評分進行對照，作者實際建立此機制，由人類評分數個樣本並計算與LLM裁判的一致性，但運作數天後即遭遇實際挑戰：人類（作者）難以持續進行評分工作，顯示出此方法在長期運營上的不可持續性。文章的核心價值在於指出LLM裁判系統的驗證困境，並非否定其有效性，而是強調當自動評分器成為黑箱時，需要設計更完善的監控與定期校驗機制。其限制在於作者僅闡述初期經驗，未有量化數據或長期實驗結果，但對於任何依賴LLM進行品質評估的團隊而言，本文提供了寶貴的實踐警示，強調在完全自動化評估流程中，必須考慮人工審查的瓶頸與替代驗證方案的重要性。",
+      "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+      "title_zh": "LLM裁判的分數可信嗎？——打造每週無人為評分者的驗證機制"
     },
     {
       "arxiv_id": null,
@@ -2414,7 +2626,7 @@
       },
       "published_at": "2026-07-26T16:55:08+00:00",
       "published_local_date": "2026-07-26",
-      "report_rank": 28,
+      "report_rank": 30,
       "report_score": 11.629859,
       "report_source_date": "2026-07-26",
       "report_source_section": "radar",
@@ -2438,179 +2650,6 @@
       "summary_zh": "本文探討在Claude Code上建立多代理系統的實務經驗。作者建立了11個角色各異的子代理，運用於個人開發的全部業務，包括設計、實作、驗證、發佈及非程式碼審查。主要論點是，效果並非來自精心設計的提示詞，而是「失敗目錄化」機制：將過往錯誤以「症狀→錯誤直覺→正確對策」的結構化格式記錄下來，並在每次委任時機械式地混入提示詞中。作者稱此機制為team-lessons，能有效降低子代理重蹈覆轍的機率。文中貼出設定檔與程式碼實例，但隱去專案名稱與內部團隊名稱。作者明確表示此AI團隊建置並非產品化專案，收益為零，僅為個人開發的實驗性運營。此做法的限制在於，其有效性可能依賴於特定開發情境與子代理的溝通模式，且缺乏量化數據證明其優於其他提示策略。然而，其核心洞見——將失敗經驗轉化為可重用的結構化知識，而非依賴一次性指令——對於設計可靠的多代理系統具有普遍參考價值，尤其在降低LLM代理的錯誤重複發生方面，提供了可操作的方向。",
       "title": "Claude Codeのサブエージェント運用で効いたのは「賢い指示」より「失敗のカタログ化」だった",
       "title_zh": "Claude Code子代理運營中有效的是「智慧指示」還是「失敗目錄化」"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-07-25T08:33:25.868241+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "npaka-note",
-          "tier": 2,
-          "title": "Claude Desktop で Blender MCP を試す",
-          "url": "https://note.com/npaka/n/n060bf656cf01"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only personal blog post about trying Blender MCP with Claude Desktop. Minimal technical content, no methodology, results, or evidence. Marginal relevance to LLM agents/tool use but lacks details.",
-        "score": 0.1,
-        "token_usage": {
-          "completion_tokens": 186,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 372,
-          "prompt_tokens": 2164,
-          "total_tokens": 2350
-        },
-        "topics": [
-          "Agents & Tool Use",
-          "Large Language Models"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "npaka-note",
-        "tier": 2,
-        "title": "Claude Desktop で Blender MCP を試す",
-        "url": "https://note.com/npaka/n/n060bf656cf01"
-      },
-      "published_at": "2026-07-25T03:07:00+00:00",
-      "published_local_date": "2026-07-25",
-      "report_rank": 29,
-      "report_score": 11.581873,
-      "report_source_date": "2026-07-25",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.1,
-        "llm_relevance_score": 2.8000000000000003,
-        "recency_score": 0.2818731625928941,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 11.581873162592895
-      },
-      "section": null,
-      "source_name": "npaka (note) - Japanese LLM Curation",
-      "story_id": "fallback:139b6b2b9e8c1337",
-      "summary": "<p id=\"bf5287a4-117c-4421-831d-724fc3ad04bb\" name=\"bf5287a4-117c-4421-831d-724fc3ad04bb\">「Claude Desktop」で「Blender MCP」を試してみたのでまとめました。</p><br /><br /><a href=\"https://note.com/npaka/n/n060bf656cf01\">続きをみる</a>",
-      "summary_zh": "本文為一篇技術筆記，記錄作者在 Claude Desktop 中嘗試整合 Blender MCP（Model Context Protocol）的過程與心得。MCP 可視為一種標準化介面，讓 Claude 能與外部工具（如 Blender）進行結構化通訊，從而延伸其操控三維建模軟體的能力。作者以實作方式驗證此整合流程，並分享操作步驟、遇到的問題及解決方法。由於原文僅提供摘要，並未揭露具體的程式碼細節、量化效能數據或完整的失敗案例，因此無法確認其對複雜場景的穩定度。此文的價值在於示範 AI 助理與專業設計工具之間的橋接可能性，尤其對熟悉 Blender 但想利用 Claude 自然語言指令加速工作流程的使用者而言，具有初步參考意義。然而，讀者應注意此類整合目前仍屬試驗性質，實際應用時需自行測試不同版本的相容性，並保有手動調整的彈性。整體而言，這類探索有助於擴大 Claude 在創意與工程領域的應用邊界，但短期內仍以輔助角色為主，不宜過度依賴。",
-      "title": "Claude Desktop で Blender MCP を試す",
-      "title_zh": "Claude Desktop 試用 Blender MCP"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "IIWNL"
-      ],
-      "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-07-24T08:54:46.209640+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "AIが同じミスを二度としない開発環境 — Claude Code Skills×ループエンジニアリング（全体像）",
-          "url": "https://qiita.com/IIWNL/items/d27c037ab9d85f9ef958"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "Title mentions Claude Code Skills and loop engineering"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog post about AI coding agents and loop engineering; mentions AI coding agents but no technical detail, no evaluation, no methodology. Marginal relevance to agents and coding, but lacks research content. Low scores due to absence of evidence and rigor.",
-        "score": 0.125,
-        "token_usage": {
-          "completion_tokens": 157,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 362,
-          "prompt_tokens": 2154,
-          "total_tokens": 2311
-        },
-        "topics": [
-          "AI agent",
-          "coding agent"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "AIが同じミスを二度としない開発環境 — Claude Code Skills×ループエンジニアリング（全体像）",
-        "url": "https://qiita.com/IIWNL/items/d27c037ab9d85f9ef958"
-      },
-      "published_at": "2026-07-24T08:47:31+00:00",
-      "published_local_date": "2026-07-24",
-      "report_rank": 30,
-      "report_score": 11.561231,
-      "report_source_date": "2026-07-24",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.125,
-        "llm_relevance_score": 3.5,
-        "recency_score": 0.2612306967941913,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 11.56123069679419
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:d66971197595cb22",
-      "summary": "本記事は Zenn にも掲載しています。\n\nAI コーディングエージェントに、同じ指摘を何度もしていませんか?\n「日付は dayjs を使ってと言ったのに」「そのボタン、また二重送信できるよ」「その色、トークンにあるのにハードコードしてる」。モデルは賢いのに、あなたの...",
-      "summary_zh": "本文探討如何建立一個讓AI編碼代理不再重複犯錯的開發環境，核心方法是結合Claude Code Skills與循環工程（Loop Engineering）。作者首先點出常見痛點：開發者必須反覆提醒AI使用特定函式庫（如dayjs）、避免雙重提交按鈕、或使用設計系統中的色彩記號（token）而非硬編碼，即使模型能力強大，仍會忽略這些專案特定的規範。為了解決此問題，文中提出將專案知識轉化為可重用的Skills，使AI在生成程式碼時能自動套用團隊的慣例與最佳實踐，並透過循環工程機制——即持續回饋、修正與驗證——讓AI從每次錯誤中學習，建立長期的記憶與修正循環。文章強調這是整體藍圖，重點在於架構性的方法而非特定工具，但並未提供實證數據或量化結果，僅以實際開發情境來說明動機。其限制在於缺乏系統性的評估，也未深入討論實施時的複雜度或潛在失敗模式，但對於想減少AI編碼代理重複錯誤的團隊而言，此方法具有實務價值，因為它將隱性知識顯性化，並將錯誤修正制度化，有望提升AI協作的穩定性與生產力。",
-      "title": "AIが同じミスを二度としない開発環境 — Claude Code Skills×ループエンジニアリング（全体像）",
-      "title_zh": "AI不再重蹈覆轍的開發環境——Claude Code Skills×循環工程（整體藍圖）"
     }
   ],
   "blog_stories_considered": 84,
@@ -2623,7 +2662,7 @@
     "2026-07-25",
     "2026-07-26"
   ],
-  "generated_at": "2026-08-06T22:21:46.384773+00:00",
+  "generated_at": "2026-08-06T22:30:17.461087+00:00",
   "items_considered": 386,
   "missing_dates": [],
   "period_end": "2026-07-26",
@@ -2701,7 +2740,7 @@
       "published_at": "2026-07-20T11:11:55+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 1,
-      "report_score": 32.998111,
+      "report_score": 32.994305,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -2711,11 +2750,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.915,
         "llm_relevance_score": 25.62,
-        "recency_score": 0.17811127866188012,
+        "recency_score": 0.17430481043431856,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.99811127866188
+        "total_score": 32.99430481043432
       },
       "section": null,
       "source_name": null,
@@ -2813,7 +2852,7 @@
       "published_at": "2026-07-20T16:45:13+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 2,
-      "report_score": 32.652282,
+      "report_score": 32.648386,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -2823,11 +2862,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.9025000000000001,
         "llm_relevance_score": 25.270000000000003,
-        "recency_score": 0.18228189260844443,
+        "recency_score": 0.17838629297047312,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.65228189260845
+        "total_score": 32.64838629297048
       },
       "section": null,
       "source_name": null,
@@ -2976,7 +3015,7 @@
       "published_at": "2026-07-22T13:49:17+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 3,
-      "report_score": 32.449298,
+      "report_score": 32.445206,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -2986,11 +3025,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8225,
         "llm_relevance_score": 23.03,
-        "recency_score": 0.21929763516185077,
+        "recency_score": 0.2152061022471681,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.449297635161855
+        "total_score": 32.44520610224717
       },
       "section": null,
       "source_name": null,
@@ -3072,7 +3111,7 @@
       "published_at": "2026-07-22T17:10:23+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 4,
-      "report_score": 32.272382,
+      "report_score": 32.268233,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -3082,11 +3121,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8875000000000001,
         "llm_relevance_score": 24.85,
-        "recency_score": 0.2223816721465933,
+        "recency_score": 0.21823259899065878,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.272381672146594
+        "total_score": 32.26823259899066
       },
       "section": null,
       "source_name": null,
@@ -3174,7 +3213,7 @@
       "published_at": "2026-07-20T17:06:19+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 5,
-      "report_score": 32.162549,
+      "report_score": 32.158648,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -3184,11 +3223,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.885,
         "llm_relevance_score": 24.78,
-        "recency_score": 0.1825491819937497,
+        "recency_score": 0.1786478700361523,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 32.162549181993754
+        "total_score": 32.158647870036155
       },
       "section": null,
       "source_name": null,
@@ -3280,7 +3319,7 @@
       "published_at": "2026-07-22T14:37:25+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 6,
-      "report_score": 31.990032,
+      "report_score": 31.985927,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -3290,11 +3329,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8775000000000001,
         "llm_relevance_score": 24.57,
-        "recency_score": 0.22003188427689996,
+        "recency_score": 0.21592665215191992,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.990031884276902
+        "total_score": 31.98592665215192
       },
       "section": null,
       "source_name": null,
@@ -3386,7 +3425,7 @@
       "published_at": "2026-07-22T09:40:22+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 7,
-      "report_score": 31.985539,
+      "report_score": 31.981518,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -3396,11 +3435,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8775000000000001,
         "llm_relevance_score": 24.57,
-        "recency_score": 0.21553945791579102,
+        "recency_score": 0.2115180429752037,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.98553945791579
+        "total_score": 31.981518042975203
       },
       "section": null,
       "source_name": null,
@@ -3488,7 +3527,7 @@
       "published_at": "2026-07-22T13:24:09+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 8,
-      "report_score": 31.918915,
+      "report_score": 31.914831,
       "report_source_date": "2026-07-22",
       "report_source_section": "top5",
       "scores": {
@@ -3498,11 +3537,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8750000000000001,
         "llm_relevance_score": 24.500000000000004,
-        "recency_score": 0.21891521339803624,
+        "recency_score": 0.2148308154952418,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.91891521339804
+        "total_score": 31.914830815495247
       },
       "section": null,
       "source_name": null,
@@ -3684,7 +3723,7 @@
       "published_at": "2026-07-22T12:11:51+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 10,
-      "report_score": 31.777819,
+      "report_score": 31.773755,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -3694,11 +3733,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.87,
         "llm_relevance_score": 24.36,
-        "recency_score": 0.21781883127658686,
+        "recency_score": 0.21375488905966275,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.777818831276587
+        "total_score": 31.773754889059663
       },
       "section": null,
       "source_name": null,
@@ -3785,7 +3824,7 @@
       "published_at": "2026-07-22T16:43:27+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 11,
-      "report_score": 31.641966,
+      "report_score": 31.637825,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -3795,11 +3834,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8650000000000001,
         "llm_relevance_score": 24.220000000000002,
-        "recency_score": 0.22196612479096958,
+        "recency_score": 0.217824804685732,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.641966124790972
+        "total_score": 31.637824804685735
       },
       "section": null,
       "source_name": null,
@@ -3892,7 +3931,7 @@
       "published_at": "2026-07-22T12:35:40+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 12,
-      "report_score": 31.568179,
+      "report_score": 31.564109,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -3902,11 +3941,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8625,
         "llm_relevance_score": 24.150000000000002,
-        "recency_score": 0.21817938759182723,
+        "recency_score": 0.2141087183163541,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.56817938759183
+        "total_score": 31.564108718316355
       },
       "section": null,
       "source_name": null,
@@ -4089,7 +4128,7 @@
       "published_at": "2026-07-22T15:22:14+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 14,
-      "report_score": 31.360718,
+      "report_score": 31.3566,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -4099,11 +4138,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8549999999999999,
         "llm_relevance_score": 23.939999999999998,
-        "recency_score": 0.2207177493278887,
+        "recency_score": 0.21659972071548153,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.360717749327886
+        "total_score": 31.35659972071548
       },
       "section": null,
       "source_name": null,
@@ -4393,7 +4432,7 @@
       "published_at": "2026-07-20T09:06:15+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 17,
-      "report_score": 31.286564,
+      "report_score": 31.28279,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -4403,11 +4442,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7825,
         "llm_relevance_score": 21.91,
-        "recency_score": 0.17656369052778922,
+        "recency_score": 0.1727902962588564,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 31.28656369052779
+        "total_score": 31.282790296258856
       },
       "section": null,
       "source_name": null,
@@ -4693,7 +4732,7 @@
       "published_at": "2026-07-22T14:25:59+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 20,
-      "report_score": 30.869857,
+      "report_score": 30.865755,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -4703,11 +4742,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8375,
         "llm_relevance_score": 23.45,
-        "recency_score": 0.21985725237187204,
+        "recency_score": 0.21575527843153613,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.869857252371872
+        "total_score": 30.865755278431536
       },
       "section": null,
       "source_name": null,
@@ -4797,7 +4836,7 @@
       "published_at": "2026-07-20T16:10:06+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 21,
-      "report_score": 30.831838,
+      "report_score": 30.827952,
       "report_source_date": "2026-07-20",
       "report_source_section": "top5",
       "scores": {
@@ -4807,11 +4846,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8375,
         "llm_relevance_score": 23.45,
-        "recency_score": 0.18183791110022712,
+        "recency_score": 0.1779517999209169,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.831837911100227
+        "total_score": 30.827951799920918
       },
       "section": null,
       "source_name": null,
@@ -4899,7 +4938,7 @@
       "published_at": "2026-07-20T16:11:19+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 22,
-      "report_score": 30.621853,
+      "report_score": 30.617967,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -4909,11 +4948,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.83,
         "llm_relevance_score": 23.24,
-        "recency_score": 0.18185327536909085,
+        "recency_score": 0.17796683583549722,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.62185327536909
+        "total_score": 30.617966835835496
       },
       "section": null,
       "source_name": null,
@@ -5100,7 +5139,7 @@
       "published_at": "2026-07-20T16:35:47+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 24,
-      "report_score": 30.432163,
+      "report_score": 30.428269,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -5110,11 +5149,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7875,
         "llm_relevance_score": 22.05,
-        "recency_score": 0.1821625201950938,
+        "recency_score": 0.17826947169988033,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.432162520195096
+        "total_score": 30.42826947169988
       },
       "section": null,
       "source_name": null,
@@ -5205,7 +5244,7 @@
       "published_at": "2026-07-22T10:20:40+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 25,
-      "report_score": 30.416144,
+      "report_score": 30.412111,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -5215,11 +5254,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.75,
         "llm_relevance_score": 21.0,
-        "recency_score": 0.21614351390223624,
+        "recency_score": 0.2121108288221009,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.416143513902234
+        "total_score": 30.4121108288221
       },
       "section": null,
       "source_name": null,
@@ -5411,7 +5450,7 @@
       "published_at": "2026-07-20T15:50:02+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 27,
-      "report_score": 30.341585,
+      "report_score": 30.337704,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -5421,11 +5460,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8200000000000001,
         "llm_relevance_score": 22.96,
-        "recency_score": 0.18158469307671965,
+        "recency_score": 0.17770399349384708,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.34158469307672
+        "total_score": 30.337703993493847
       },
       "section": null,
       "source_name": null,
@@ -5513,7 +5552,7 @@
       "published_at": "2026-07-22T17:02:34+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 28,
-      "report_score": 30.172261,
+      "report_score": 30.168114,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -5523,11 +5562,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8125,
         "llm_relevance_score": 22.75,
-        "recency_score": 0.22226099077865846,
+        "recency_score": 0.21811416922834995,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.17226099077866
+        "total_score": 30.16811416922835
       },
       "section": null,
       "source_name": null,
@@ -5718,7 +5757,7 @@
       "published_at": "2026-07-20T12:38:50+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 30,
-      "report_score": 30.12919,
+      "report_score": 30.12536,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -5728,11 +5767,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8125,
         "llm_relevance_score": 22.75,
-        "recency_score": 0.17918958789921194,
+        "recency_score": 0.1753600748095719,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.129189587899212
+        "total_score": 30.12536007480957
       },
       "section": null,
       "source_name": null,
@@ -5932,7 +5971,7 @@
       "published_at": "2026-07-22T17:49:37+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 32,
-      "report_score": 30.102988,
+      "report_score": 30.098828,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -5942,11 +5981,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8099999999999999,
         "llm_relevance_score": 22.68,
-        "recency_score": 0.22298838537974439,
+        "recency_score": 0.21882799250683538,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.102988385379746
+        "total_score": 30.098827992506834
       },
       "section": null,
       "source_name": null,
@@ -6031,7 +6070,7 @@
       "published_at": "2026-07-22T13:19:58+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 33,
-      "report_score": 30.098852,
+      "report_score": 30.094768,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -6041,11 +6080,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8099999999999999,
         "llm_relevance_score": 22.68,
-        "recency_score": 0.21885162573840058,
+        "recency_score": 0.21476841421867937,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.0988516257384
+        "total_score": 30.094768414218677
       },
       "section": null,
       "source_name": null,
@@ -6135,7 +6174,7 @@
       "published_at": "2026-07-22T09:32:45+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 34,
-      "report_score": 30.095425,
+      "report_score": 30.091406,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -6145,11 +6184,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8099999999999999,
         "llm_relevance_score": 22.68,
-        "recency_score": 0.21542548165838726,
+        "recency_score": 0.21140619322321497,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 30.09542548165839
+        "total_score": 30.091406193223214
       },
       "section": null,
       "source_name": null,
@@ -6338,7 +6377,7 @@
       "published_at": "2026-07-22T12:35:36+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 36,
-      "report_score": 29.958178,
+      "report_score": 29.954108,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -6348,11 +6387,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8049999999999999,
         "llm_relevance_score": 22.54,
-        "recency_score": 0.21817837750440808,
+        "recency_score": 0.21410772707458237,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.958178377504407
+        "total_score": 29.954107727074582
       },
       "section": null,
       "source_name": null,
@@ -6459,7 +6498,7 @@
       "published_at": "2026-07-20T09:08:51+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 37,
-      "report_score": 29.916596,
+      "report_score": 29.912821,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -6469,11 +6508,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.805,
         "llm_relevance_score": 22.540000000000003,
-        "recency_score": 0.17659557296121203,
+        "recency_score": 0.17282149732347005,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.916595572961214
+        "total_score": 29.912821497323474
       },
       "section": null,
       "source_name": null,
@@ -6662,7 +6701,7 @@
       "published_at": "2026-07-20T16:01:57+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 39,
-      "report_score": 29.781735,
+      "report_score": 29.777851,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -6672,11 +6711,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.8,
         "llm_relevance_score": 22.400000000000002,
-        "recency_score": 0.18173502501167804,
+        "recency_score": 0.17785111264105666,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.78173502501168
+        "total_score": 29.77785111264106
       },
       "section": null,
       "source_name": null,
@@ -7063,7 +7102,7 @@
       "published_at": "2026-07-20T15:48:31+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 43,
-      "report_score": 29.697566,
+      "report_score": 29.693685,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7073,11 +7112,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.797,
         "llm_relevance_score": 22.316000000000003,
-        "recency_score": 0.181565568844194,
+        "recency_score": 0.17768527797088793,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.697565568844198
+        "total_score": 29.69368527797089
       },
       "section": null,
       "source_name": null,
@@ -7164,7 +7203,7 @@
       "published_at": "2026-07-20T09:02:11+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 44,
-      "report_score": 29.690514,
+      "report_score": 29.686742,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7174,11 +7213,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7254999999999999,
         "llm_relevance_score": 20.313999999999997,
-        "recency_score": 0.17651383467386758,
+        "recency_score": 0.17274150588897,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.690513834673865
+        "total_score": 29.686741505888968
       },
       "section": null,
       "source_name": null,
@@ -7261,7 +7300,7 @@
       "published_at": "2026-07-20T16:53:05+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 45,
-      "report_score": 29.502381,
+      "report_score": 29.498484,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7271,11 +7310,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.79,
         "llm_relevance_score": 22.12,
-        "recency_score": 0.18238149973628356,
+        "recency_score": 0.17848377136525162,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.502381499736284
+        "total_score": 29.49848377136525
       },
       "section": null,
       "source_name": null,
@@ -7374,7 +7413,7 @@
       "published_at": "2026-07-20T15:32:09+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 46,
-      "report_score": 29.501359,
+      "report_score": 29.497483,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7384,11 +7423,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.79,
         "llm_relevance_score": 22.12,
-        "recency_score": 0.18135932335474167,
+        "recency_score": 0.17748344021411017,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.50135932335474
+        "total_score": 29.49748344021411
       },
       "section": null,
       "source_name": null,
@@ -7475,7 +7514,7 @@
       "published_at": "2026-07-20T13:58:13+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 47,
-      "report_score": 29.50018,
+      "report_score": 29.496329,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7485,11 +7524,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.79,
         "llm_relevance_score": 22.12,
-        "recency_score": 0.18018013979630257,
+        "recency_score": 0.17632945733236827,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.500180139796303
+        "total_score": 29.49632945733237
       },
       "section": null,
       "source_name": null,
@@ -7680,7 +7719,7 @@
       "published_at": "2026-07-20T17:12:28+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 49,
-      "report_score": 29.222627,
+      "report_score": 29.218724,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7690,11 +7729,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.78,
         "llm_relevance_score": 21.84,
-        "recency_score": 0.18262716235776452,
+        "recency_score": 0.17872418385900116,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.222627162357764
+        "total_score": 29.218724183859003
       },
       "section": null,
       "source_name": null,
@@ -7780,7 +7819,7 @@
       "published_at": "2026-07-20T10:11:53+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 50,
-      "report_score": 29.21737,
+      "report_score": 29.21358,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7790,11 +7829,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.78,
         "llm_relevance_score": 21.84,
-        "recency_score": 0.17737028171400787,
+        "recency_score": 0.17357964954893482,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.217370281714008
+        "total_score": 29.213579649548933
       },
       "section": null,
       "source_name": null,
@@ -7884,7 +7923,7 @@
       "published_at": "2026-07-20T16:08:49+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 51,
-      "report_score": 29.151822,
+      "report_score": 29.147936,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -7894,11 +7933,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7775,
         "llm_relevance_score": 21.77,
-        "recency_score": 0.18182170636033945,
+        "recency_score": 0.17793594149726463,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.151821706360337
+        "total_score": 29.147935941497266
       },
       "section": null,
       "source_name": null,
@@ -8191,7 +8230,7 @@
       "published_at": "2026-07-20T13:20:29+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 54,
-      "report_score": 29.009709,
+      "report_score": 29.005868,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -8201,11 +8240,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7725000000000001,
         "llm_relevance_score": 21.630000000000003,
-        "recency_score": 0.17970861914582367,
+        "recency_score": 0.17586801368761393,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 29.009708619145826
+        "total_score": 29.005868013687618
       },
       "section": null,
       "source_name": null,
@@ -8387,7 +8426,7 @@
       "published_at": "2026-07-20T17:58:31+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 56,
-      "report_score": 28.973212,
+      "report_score": 28.969297,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -8397,11 +8436,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.78,
         "llm_relevance_score": 21.84,
-        "recency_score": 0.183212123634245,
+        "recency_score": 0.17929664375696144,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 3.75,
-        "total_score": 28.973212123634244
+        "total_score": 28.969296643756962
       },
       "section": null,
       "source_name": null,
@@ -8546,7 +8585,7 @@
       "published_at": "2026-07-22T12:08:41+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 57,
-      "report_score": 28.921771,
+      "report_score": 28.917708,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -8556,11 +8595,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.768,
         "llm_relevance_score": 21.504,
-        "recency_score": 0.21777093656850988,
+        "recency_score": 0.2137078879443251,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.92177093656851
+        "total_score": 28.917707887944328
       },
       "section": null,
       "source_name": null,
@@ -8651,7 +8690,7 @@
       "published_at": "2026-07-22T16:14:26+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 58,
-      "report_score": 28.911519,
+      "report_score": 28.907386,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -8661,11 +8700,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7675,
         "llm_relevance_score": 21.49,
-        "recency_score": 0.22151930310768525,
+        "recency_score": 0.2173863195521,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.911519303107685
+        "total_score": 28.9073863195521
       },
       "section": null,
       "source_name": null,
@@ -8860,7 +8899,7 @@
       "published_at": "2026-07-22T10:59:46+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 60,
-      "report_score": 28.836731,
+      "report_score": 28.832688,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -8870,11 +8909,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.765,
         "llm_relevance_score": 21.42,
-        "recency_score": 0.21673120108825233,
+        "recency_score": 0.21268755126851385,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.836731201088256
+        "total_score": 28.832687551268517
       },
       "section": null,
       "source_name": null,
@@ -8961,7 +9000,7 @@
       "published_at": "2026-07-20T14:34:43+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 61,
-      "report_score": 28.820637,
+      "report_score": 28.816777,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -8971,11 +9010,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7299999999999999,
         "llm_relevance_score": 20.439999999999998,
-        "recency_score": 0.18063742570218969,
+        "recency_score": 0.17677697044742052,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.820637425702188
+        "total_score": 28.816776970447417
       },
       "section": null,
       "source_name": null,
@@ -9057,7 +9096,7 @@
       "published_at": "2026-07-20T12:30:17+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 62,
-      "report_score": 28.729083,
+      "report_score": 28.725256,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -9067,11 +9106,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7625,
         "llm_relevance_score": 21.349999999999998,
-        "recency_score": 0.179083225660811,
+        "recency_score": 0.17525598566967504,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.72908322566081
+        "total_score": 28.725255985669673
       },
       "section": null,
       "source_name": null,
@@ -9151,7 +9190,7 @@
       "published_at": "2026-07-22T16:31:51+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 63,
-      "report_score": 28.721787,
+      "report_score": 28.717649,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -9161,11 +9200,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.725,
         "llm_relevance_score": 20.3,
-        "recency_score": 0.22178739074576592,
+        "recency_score": 0.21764940536061503,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.721787390745767
+        "total_score": 28.717649405360618
       },
       "section": null,
       "source_name": null,
@@ -9247,7 +9286,7 @@
       "published_at": "2026-07-20T11:37:31+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 64,
-      "report_score": 28.698428,
+      "report_score": 28.694615,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -9257,11 +9296,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.6900000000000001,
         "llm_relevance_score": 19.32,
-        "recency_score": 0.17842820256172034,
+        "recency_score": 0.17461496126080625,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.698428202561722
+        "total_score": 28.694614961260807
       },
       "section": null,
       "source_name": null,
@@ -9349,7 +9388,7 @@
       "published_at": "2026-07-22T08:43:43+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 65,
-      "report_score": 28.694693,
+      "report_score": 28.690688,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -9359,11 +9398,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.76,
         "llm_relevance_score": 21.28,
-        "recency_score": 0.21469318542234114,
+        "recency_score": 0.2106875597617395,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.69469318542234
+        "total_score": 28.69068755976174
       },
       "section": null,
       "source_name": null,
@@ -9445,7 +9484,7 @@
       "published_at": "2026-07-20T11:17:19+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 66,
-      "report_score": 28.658178,
+      "report_score": 28.65437,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -9455,11 +9494,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.76,
         "llm_relevance_score": 21.28,
-        "recency_score": 0.17817808291639317,
+        "recency_score": 0.17437018699557053,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.658178082916393
+        "total_score": 28.65437018699557
       },
       "section": null,
       "source_name": null,
@@ -9735,7 +9774,7 @@
       "published_at": "2026-07-22T12:02:49+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 69,
-      "report_score": 28.627682,
+      "report_score": 28.623621,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -9745,11 +9784,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7575000000000001,
         "llm_relevance_score": 21.21,
-        "recency_score": 0.21768223314627638,
+        "recency_score": 0.21362083950104954,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.627682233146277
+        "total_score": 28.62362083950105
       },
       "section": null,
       "source_name": null,
@@ -9836,7 +9875,7 @@
       "published_at": "2026-07-20T15:33:24+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 70,
-      "report_score": 28.521375,
+      "report_score": 28.517499,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -9846,11 +9885,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.755,
         "llm_relevance_score": 21.14,
-        "recency_score": 0.1813750670348702,
+        "recency_score": 0.17749884743144628,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.52137506703487
+        "total_score": 28.517498847431447
       },
       "section": null,
       "source_name": null,
@@ -10051,7 +10090,7 @@
       "published_at": "2026-07-20T16:00:45+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 72,
-      "report_score": 28.31172,
+      "report_score": 28.307836,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -10061,11 +10100,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7474999999999999,
         "llm_relevance_score": 20.93,
-        "recency_score": 0.1817198810572672,
+        "recency_score": 0.17783629233252468,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.311719881057268
+        "total_score": 28.307836292332524
       },
       "section": null,
       "source_name": null,
@@ -10250,7 +10289,7 @@
       "published_at": "2026-07-20T08:48:36+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 74,
-      "report_score": 28.236347,
+      "report_score": 28.232579,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -10260,11 +10299,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.745,
         "llm_relevance_score": 20.86,
-        "recency_score": 0.17634740996723647,
+        "recency_score": 0.17257863789341765,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.236347409967237
+        "total_score": 28.23257863789342
       },
       "section": null,
       "source_name": null,
@@ -10456,7 +10495,7 @@
       "published_at": "2026-07-20T15:30:38+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 76,
-      "report_score": 28.17134,
+      "report_score": 28.167465,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -10466,11 +10505,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7425,
         "llm_relevance_score": 20.790000000000003,
-        "recency_score": 0.1813402228578233,
+        "recency_score": 0.17746474791949773,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.171340222857825
+        "total_score": 28.1674647479195
       },
       "section": null,
       "source_name": null,
@@ -10553,7 +10592,7 @@
       "published_at": "2026-07-22T09:50:01+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 77,
-      "report_score": 28.135684,
+      "report_score": 28.13166,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -10563,11 +10602,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.74,
         "llm_relevance_score": 20.72,
-        "recency_score": 0.21568394769733387,
+        "recency_score": 0.21165983694702398,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.135683947697334
+        "total_score": 28.131659836947023
       },
       "section": null,
       "source_name": null,
@@ -10638,7 +10677,7 @@
       "published_at": "2026-07-20T17:38:38+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 78,
-      "report_score": 28.102959,
+      "report_score": 28.099049,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -10648,11 +10687,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.74,
         "llm_relevance_score": 20.72,
-        "recency_score": 0.18295932128217365,
+        "recency_score": 0.17904924411789197,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.10295932128217
+        "total_score": 28.099049244117893
       },
       "section": null,
       "source_name": null,
@@ -10736,7 +10775,7 @@
       "published_at": "2026-07-20T13:32:42+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 79,
-      "report_score": 28.099861,
+      "report_score": 28.096017,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -10746,11 +10785,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.74,
         "llm_relevance_score": 20.72,
-        "recency_score": 0.17986114496832792,
+        "recency_score": 0.176017279836157,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.099861144968326
+        "total_score": 28.096017279836154
       },
       "section": null,
       "source_name": null,
@@ -10841,7 +10880,7 @@
       "published_at": "2026-07-22T14:03:25+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 80,
-      "report_score": 28.069513,
+      "report_score": 28.065417,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -10851,11 +10890,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7374999999999999,
         "llm_relevance_score": 20.65,
-        "recency_score": 0.21951297738961248,
+        "recency_score": 0.21541742673979938,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.06951297738961
+        "total_score": 28.0654174267398
       },
       "section": null,
       "source_name": null,
@@ -10942,7 +10981,7 @@
       "published_at": "2026-07-22T09:04:55+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 81,
-      "report_score": 28.065009,
+      "report_score": 28.060998,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -10952,11 +10991,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7375,
         "llm_relevance_score": 20.650000000000002,
-        "recency_score": 0.21500949428221422,
+        "recency_score": 0.21099796710739688,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.065009494282215
+        "total_score": 28.060997967107397
       },
       "section": null,
       "source_name": null,
@@ -11051,7 +11090,7 @@
       "published_at": "2026-07-20T09:23:10+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 82,
-      "report_score": 28.026771,
+      "report_score": 28.022993,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -11061,11 +11100,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7375,
         "llm_relevance_score": 20.650000000000002,
-        "recency_score": 0.1767712338767621,
+        "recency_score": 0.17299340413821926,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 28.026771233876765
+        "total_score": 28.02299340413822
       },
       "section": null,
       "source_name": null,
@@ -11151,7 +11190,7 @@
       "published_at": "2026-07-20T17:59:37+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 83,
-      "report_score": 27.993226,
+      "report_score": 27.98931,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -11161,11 +11200,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7825,
         "llm_relevance_score": 21.91,
-        "recency_score": 0.1832261195393594,
+        "recency_score": 0.17931034055149436,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 2.7,
-        "total_score": 27.993226119539358
+        "total_score": 27.989310340551494
       },
       "section": null,
       "source_name": null,
@@ -11247,7 +11286,7 @@
       "published_at": "2026-07-20T11:30:03+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 84,
-      "report_score": 27.958336,
+      "report_score": 27.954524,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -11257,11 +11296,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.735,
         "llm_relevance_score": 20.58,
-        "recency_score": 0.1783357082165539,
+        "recency_score": 0.1745244436393416,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.958335708216552
+        "total_score": 27.95452444363934
       },
       "section": null,
       "source_name": null,
@@ -11358,7 +11397,7 @@
       "published_at": "2026-07-22T16:59:23+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 85,
-      "report_score": 27.932212,
+      "report_score": 27.928066,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -11368,11 +11407,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7325,
         "llm_relevance_score": 20.51,
-        "recency_score": 0.22221186212439997,
+        "recency_score": 0.21806595718911007,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.9322118621244
+        "total_score": 27.928065957189112
       },
       "section": null,
       "source_name": null,
@@ -11460,7 +11499,7 @@
       "published_at": "2026-07-22T12:45:04+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 86,
-      "report_score": 27.928322,
+      "report_score": 27.924249,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -11470,11 +11509,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7325,
         "llm_relevance_score": 20.51,
-        "recency_score": 0.2183218567429052,
+        "recency_score": 0.21424852935750519,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.928321856742908
+        "total_score": 27.924248529357506
       },
       "section": null,
       "source_name": null,
@@ -11759,7 +11798,7 @@
       "published_at": "2026-07-20T17:47:44+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 89,
-      "report_score": 27.823075,
+      "report_score": 27.819162,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -11769,11 +11808,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7299999999999999,
         "llm_relevance_score": 20.439999999999998,
-        "recency_score": 0.18307497794926234,
+        "recency_score": 0.17916242905252286,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.82307497794926
+        "total_score": 27.819162429052522
       },
       "section": null,
       "source_name": null,
@@ -11859,7 +11898,7 @@
       "published_at": "2026-07-20T15:52:48+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 90,
-      "report_score": 27.82162,
+      "report_score": 27.817738,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -11869,11 +11908,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7299999999999999,
         "llm_relevance_score": 20.439999999999998,
-        "recency_score": 0.18161958422825153,
+        "recency_score": 0.17773813897637517,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.82161958422825
+        "total_score": 27.817738138976374
       },
       "section": null,
       "source_name": null,
@@ -12151,7 +12190,7 @@
       "published_at": "2026-07-20T13:34:53+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 93,
-      "report_score": 27.763888,
+      "report_score": 27.760044,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -12161,11 +12200,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.728,
         "llm_relevance_score": 20.384,
-        "recency_score": 0.17988841764923802,
+        "recency_score": 0.17604396966462701,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.763888417649238
+        "total_score": 27.76004396966463
       },
       "section": null,
       "source_name": null,
@@ -12441,7 +12480,7 @@
       "published_at": "2026-07-20T17:07:40+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 96,
-      "report_score": 27.612566,
+      "report_score": 27.608665,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -12451,11 +12490,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7225,
         "llm_relevance_score": 20.23,
-        "recency_score": 0.1825662967818048,
+        "recency_score": 0.17866461905906636,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.612566296781807
+        "total_score": 27.608664619059066
       },
       "section": null,
       "source_name": null,
@@ -12536,7 +12575,7 @@
       "published_at": "2026-07-22T16:37:02+00:00",
       "published_local_date": "2026-07-22",
       "report_rank": 97,
-      "report_score": 27.539867,
+      "report_score": 27.535728,
       "report_source_date": "2026-07-22",
       "report_source_section": "papers",
       "scores": {
@@ -12546,11 +12585,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.7184999999999999,
         "llm_relevance_score": 20.118,
-        "recency_score": 0.22186723830835045,
+        "recency_score": 0.21772776317192963,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.53986723830835
+        "total_score": 27.535727763171927
       },
       "section": null,
       "source_name": null,
@@ -12744,7 +12783,7 @@
       "published_at": "2026-07-20T15:07:58+00:00",
       "published_local_date": "2026-07-20",
       "report_rank": 99,
-      "report_score": 27.401055,
+      "report_score": 27.397186,
       "report_source_date": "2026-07-20",
       "report_source_section": "papers",
       "scores": {
@@ -12754,11 +12793,11 @@
         "kind_score": 1.2,
         "llm_raw_score": 0.715,
         "llm_relevance_score": 20.02,
-        "recency_score": 0.18105500445077666,
+        "recency_score": 0.17718562499844445,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 4.0,
-        "total_score": 27.401055004450775
+        "total_score": 27.397185624998443
       },
       "section": null,
       "source_name": null,
@@ -12898,7 +12937,7 @@
     "api/day/2026-07-27.json"
   ],
   "stories_considered": 290,
-  "summary": "本期週報涵蓋強化學習理論、LLM 代理安全與效率、多模態推理等前沿研究，並收錄多篇實用技術文章，提供學術與實務兼具的視野。",
+  "summary": "本週聚焦大型語言模型的理論基礎與實務應用，涵蓋 max@k 強化學習、智慧電網代理、模型解釋性、程式碼生成品質與推理加速等關鍵主題，並精選業界技術部落格，提供從研究到實作的完整脈絡。",
   "timezone": "UTC",
-  "title": "AI 研究週報：強化學習理論、LLM 代理與多模態推理進展"
+  "title": "AI 研究與技術週報：強化學習理論、LLM 代理與推論效率"
 }

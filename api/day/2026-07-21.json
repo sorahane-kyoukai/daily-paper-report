@@ -15,6 +15,7 @@
     "2026-07-25",
     "2026-07-24",
     "2026-07-23",
+    "2026-07-22",
     "2026-07-21",
     "2026-07-20",
     "2026-07-19",
@@ -303,7 +304,7 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-08-06T17:35:07.355949+00:00",
+  "generated_at": "2026-08-06T22:28:51.015461+00:00",
   "model_releases_by_entity": {},
   "papers": [
     {
@@ -374,11 +375,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.029750000000000002,
         "llm_relevance_score": 0.8330000000000001,
-        "recency_score": 0.19361153207606138,
+        "recency_score": 0.18968056378169396,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 6.576611532076061
+        "total_score": 6.572680563781694
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
@@ -453,11 +454,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.14450000000000002,
         "llm_relevance_score": 4.046,
-        "recency_score": 0.19246046896512553,
+        "recency_score": 0.18855287114123256,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 6.038460468965126
+        "total_score": 6.034552871141233
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -472,11 +473,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Argosvix"
+        "中村 啓｜LLMエンジニア"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.219016+00:00",
+      "first_seen_at": "2026-07-21T08:57:05.218315+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -486,153 +487,70 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
-          "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.4,
-          "reproducibility": 0.0,
-          "rigor": 0.05
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract states the system uses LLM-as-a-judge for production traffic, but no quantitative results are presented.",
-          "Abstract mentions human-judge agreement but provides no numbers or detailed methodology."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Relevant to LLM evaluation and LLM-as-a-judge, but abstract-only and lacks methodological detail. No experiments, baselines, or quantitative results. Mostly a practical engineering blog post, not a rigorous research contribution. Japanese language relevance is limited. Score capped by lack of evidence and rigor.",
-        "score": 0.19250000000000003,
-        "token_usage": {
-          "completion_tokens": 252,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 487,
-          "prompt_tokens": 2279,
-          "total_tokens": 2531
-        },
-        "topics": [
-          "LLM-as-a-judge",
-          "evaluation",
-          "Japanese LLM"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
-        "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
-      },
-      "published_at": "2026-07-21T01:41:25+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.19250000000000003,
-        "llm_relevance_score": 5.390000000000001,
-        "recency_score": 0.18898014072722374,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 7.378980140727224
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:c317c73617842fa9",
-      "summary": "LLMの出力品質を、別のLLM(ジャッジ)に採点させる。いわゆるLLM-as-a-judgeで、うちのプロダクトでも本番トラフィックを毎日自動採点しています。\nで、ある日気づきました。ダッシュボードに「品質 93/100」と出ているけど、この93を信じていい根拠がどこにもない。ジャッジが壊れていたら、品質スコアは全部きれいな嘘になります。採点の仕組みを作った本人としては、これはかなり気持ち悪い。\n定番の答えは「人手の採点と突き合わせる」です。実際に作りました。人間が数件採点して、ジャッジとの一致率を出す。動きはしたのですが、運用して数日で問題がはっきりしました。人間(私)が採点を続けられ...",
-      "summary_zh": "本文探討以LLM作為評分者（LLM-as-a-judge）在自動評估產品輸出品質時，其分數的可信度問題。作者指出，在其產品中每日使用LLM對大量輸出進行自動評分，但發現儀表板上顯示的品質分數（如93/100）缺乏有效驗證依據，若評分模型本身產生偏差或故障，所有分數將成為虛假但美觀的數據。傳統解決方案是引入人工評分進行對照，作者實際建立此機制，由人類評分數個樣本並計算與LLM裁判的一致性，但運作數天後即遭遇實際挑戰：人類（作者）難以持續進行評分工作，顯示出此方法在長期運營上的不可持續性。文章的核心價值在於指出LLM裁判系統的驗證困境，並非否定其有效性，而是強調當自動評分器成為黑箱時，需要設計更完善的監控與定期校驗機制。其限制在於作者僅闡述初期經驗，未有量化數據或長期實驗結果，但對於任何依賴LLM進行品質評估的團隊而言，本文提供了寶貴的實踐警示，強調在完全自動化評估流程中，必須考慮人工審查的瓶頸與替代驗證方案的重要性。",
-      "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
-      "title_zh": "LLM裁判的分數可信嗎？——打造每週無人為評分者的驗證機制"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "mshirakawa"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.218565+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
-          "url": "https://zenn.dev/mshirakawa/articles/brandcheck-osint-self-check"
+          "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
+          "url": "https://zenn.dev/hironakamura_ai/articles/5c9d7eeefab088"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.3,
-          "preference_relevance": 0.2,
+          "generalizability": 0.1,
+          "novelty": 0.2,
+          "preference_relevance": 0.1,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "{'section': 'abstract', 'fact': 'Mentions collecting SNS/blogs and LLM-based risk judgment per post, but no technical details or results.'}"
+          "Abstract mentions 'LLM推論をチップに寄せる前に測る3つの境界' and 'モデル専用チップ' but no technical details"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only personal blog post about a job-hunting OSINT service using LLMs for risk assessment. Lacks technical detail, no evaluation, not a research paper. Pure application with some LLM relevance, but methodology not described; minimal research quality.",
-        "score": 0.19,
+        "rationale": "Abstract-only opinion piece on Gemini hardware specialization; no methodology, results, or reproducibility. Topics touch LLM but are peripheral.",
+        "score": 0.115,
         "token_usage": {
-          "completion_tokens": 184,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 482,
-          "prompt_tokens": 2274,
-          "total_tokens": 2458
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 71,
+          "prompt_tokens": 2247,
+          "total_tokens": 2449
         },
         "topics": [
-          "OSINT",
           "LLM",
-          "job hunting"
+          "Japanese LLM",
+          "AI chip"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
-        "url": "https://zenn.dev/mshirakawa/articles/brandcheck-osint-self-check"
+        "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
+        "url": "https://zenn.dev/hironakamura_ai/articles/5c9d7eeefab088"
       },
-      "published_at": "2026-07-21T02:22:53+00:00",
+      "published_at": "2026-07-21T04:13:04+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.19,
-        "llm_relevance_score": 5.32,
-        "recency_score": 0.18952511782938763,
+        "llm_raw_score": 0.115,
+        "llm_relevance_score": 3.22,
+        "recency_score": 0.1871032977030735,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 7.309525117829388
+        "topic_score": 4.0,
+        "total_score": 9.207103297703073
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:15684d1d6e33d2bb",
-      "summary": "採用の場では、応募者の名前は高い確率で検索されます。問題は、本人が「検索される側の視界」を一度も見ないまま選考に入ることです。消したつもりの投稿、同姓同名の別人、学生時代のハンドルネームに紐づく発言。これらは本人には見えず、検索する側にだけ見えます。\nセキュリティ診断で使うOSINT（公開情報調査）の手法を自分自身に向ける、というのがこのサービスの発想です。申告されたSNS・ブログを収集し、LLMで投稿単位のリスク判定を行い、PDFレポートにして返します。この記事では、一人で設計から公開まで持っていく過程で決めたことと、ハマったことを書きます。\n\n 一番悩んだのは「他人を調べる道具にしな...",
-      "summary_zh": "本文記述作者獨力開發並公開一個AI診斷服務的完整過程，核心概念是將資安領域常用的OSINT（公開來源情報蒐集）技術應用於個人自身，協助使用者在求職或轉職前檢視自己於網路上的公開足跡。作者指出，招聘方幾乎都會搜尋應徵者姓名，但應徵者往往從未以「被搜尋者」的視角檢視自己的網路形象，導致已刪除的貼文、同名同姓者的混淆，或與學生時期暱稱相關的發言，成為對方可見而自己無從察覺的風險。此服務的使用流程為：使用者申報其SNS與部落格帳號，系統收集這些公開內容，並以LLM進行逐篇貼文的風險評估，最後產出PDF報告回傳。文章重點在於一人開發時所做出的技術與產品決策，以及遭遇的困難。作者特別強調，最費心思的是如何避免讓這項工具淪為「探查他人」的利器，因此在設計上必然有所限制。整體而言，本文以實際案例說明LLM在個人數位形象管理上的應用潛力，同時反思此類工具可能衍生的倫理與濫用問題，對AI服務的設計思維與部署考量具參考價值。惟受限於僅有摘要與部分內文，文中未提供具體的模型選擇、評估指標或量化結果，亦未深入討論資料隱私與法規遵循細節。",
-      "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
-      "title_zh": "求職轉職前先自我OSINT ― 從零獨自打造並公開AI診斷服務的歷程"
+      "story_id": "fallback:e385eecfcab2a166",
+      "summary": "title: \"Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界\"\nemoji: \"🧊\"\ntype: tech\ntopics: [\"生成AI\", \"llm\", \"gemini\", \"推論\", \"aiチップ\"]\npublished: false\nGoogleがGeminiのアーキテクチャをハードウェアへ深く固定する「Frozen v2」を開発中だという報道が出ている。報道値の6〜10倍という効率だけを追うと、設計変更を見誤る。モデル専用チップは推論費用を下げる代わりに、モデルを変えるコストを基盤側へ押し戻す。\n自分は推論基盤の設定を見るとき、tokens/s と...",
+      "summary_zh": "本文探討Google正在開發的「Frozen v2」架構，該架構將Gemini模型深度綁定於特定硬體，以提升推理效率。作者提醒，若僅關注報導中聲稱的6至10倍效率提升，可能忽略設計變更的深遠影響。模型專用晶片雖能降低推理成本，卻將模型迭代的彈性成本轉嫁給底層基礎設施。作者從自身經驗出發，提出評估推理基礎設施時應衡量的三個邊界：首先是tokens/s（每秒處理的token數）這類原始吞吐量指標，但必須搭配延遲、功耗、成本等實際營運條件；其次是模型版本更新時，硬體需重新設計或調整的支援成本；最後是生態系統的適應性，包括工具鏈、開發框架與部署流程的相容性。這些邊界共同決定了「效率」是否能轉化為實際的總體擁有成本（TCO）優勢。文章凸顯一個關鍵權衡：極致特化的晶片設計可能使模型升級變得困難，長期而言反而拖慢創新。作者推測Google此舉反映其雲端業務對成本競爭的壓力，但也提醒其他企業在跟進前，需評估自身模型迭代頻率與硬體投資週期的匹配度。整體而言，本文呼籲以系統性觀點評估AI推論基礎設施，而非單純追求峰值效能，並強調彈性與長期可維護性在快速變動的LLM領域中的重要性。這對企業規劃AI硬體投資，或研究人員設計高效能推理系統，均具參考價值。",
+      "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
+      "title_zh": "讀《Frozen v2》：在將LLM推理移向專用晶片前，應衡量的三個邊界"
     },
     {
       "arxiv_id": null,
@@ -658,32 +576,31 @@
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.1,
+          "generalizability": 0.15,
           "novelty": 0.1,
           "preference_relevance": 0.1,
           "reproducibility": 0.0,
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [
-          "Abstract only; no technical details or quantitative results are provided."
-        ],
+        "evidence": [],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper discusses API pricing for AI providers, which is tangentially related to LLM deployment but lacks technical depth, novelty, and empirical rigor. It is not a research contribution and is out of scope for LLM methodology.",
-        "score": 0.095,
+        "rationale": "Out of scope: article on API pricing, not a research paper and unrelated to core AI/ML methodology. Lacks technical content and evaluation. Low scores across rubric.",
+        "score": 0.1,
         "token_usage": {
-          "completion_tokens": 196,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 370,
+          "completion_tokens": 177,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 114,
           "prompt_tokens": 2162,
-          "total_tokens": 2358
+          "total_tokens": 2339
         },
         "topics": [
-          "LLM",
-          "API pricing"
+          "API pricing",
+          "cost comparison",
+          "LLM API"
         ]
       },
       "primary_link": {
@@ -699,13 +616,13 @@
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.095,
-        "llm_relevance_score": 2.66,
-        "recency_score": 0.19444063300977144,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.19049283116500385,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 4.654440633009772
+        "total_score": 4.790492831165004
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -714,6 +631,88 @@
       "summary_zh": "本文針對企業導入 AI 產品時常遭遇的「成本超乎預期」問題，提出根本原因在於僅以「每 token 單價」的表面數字來評估 API 費用，而忽略了實際使用情境下的隱藏成本。作者比較了超過 25 家供應商的定價策略，並歸納出幾項關鍵發現：首先，不同供應商對 input 與 output token 的計價差異極大，某些模型在處理長提示詞（prompt）時，input 成本會佔比過半；其次，快取（caching）機制雖能降低重複請求的成本，但其折扣幅度與生效條件各異，若未妥善設計，反而可能因快取未命中而付出更高代價；再者，批次處理（batch）與非同步 API 通常提供 50% 左右的折扣，但伴隨較長延遲，適合非即時場景；另外，部分供應商會針對超出配額的請求收取自動擴展（auto-scaling）附加費，或對高併發需求隱藏最低消費門檻；最後，模型本身的版本迭代速度也會影響長期成本，因為新版本可能在價格不變下提供更好性能，但遷移成本（如重新評估與測試）需納入計算。本文的證據主要來自對 25 家供應商公開定價頁面及實際測試的彙整，但受限於供應商可能調整價格，且未涵蓋所有地區或企業客製合約，故結論宜視為參考。對開發者與決策者而言，此研究提醒應建立「總擁有成本（TCO）」評估框架，納入提示詞長度、快取命中率、批次使用比例及預留容量等因素，並定期重新比較供應商方案，才能避免因表面單價而誤判實際支出，使得 AI 專案在預算內順利落地。",
       "title": "タイトル: AIのAPIはいくらかかるのか——2026年版、25以上のプロバイダー料金を比較して見えてきたこと",
       "title_zh": "AI API 成本大剖析：2026 年版，比較超過 25 家供應商定價的關鍵發現"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "ryok"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.217892+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
+          "url": "https://zenn.dev/ryok/articles/tokenmaxing-vs-successmaxing"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract only"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; discusses AI cost reduction via token optimization from a personal proxy experiment. Lacks technical detail and rigorous methodology. Marginal relevance to LLM efficiency and agents, but insufficient for higher scores.",
+        "score": 0.1,
+        "token_usage": {
+          "completion_tokens": 186,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 106,
+          "prompt_tokens": 2282,
+          "total_tokens": 2468
+        },
+        "topics": [
+          "LLM",
+          "agent",
+          "efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
+        "url": "https://zenn.dev/ryok/articles/tokenmaxing-vs-successmaxing"
+      },
+      "published_at": "2026-07-21T07:02:13+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.18931407082045706,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.789314070820457
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1d9624a85afc70e3",
+      "summary": "結論\n先日、「オープンモデルは価格を殴る棍棒だ」という記事を書いた。中国のオープンウェイトがクローズド勢のAPI単価を押し下げる、という話だ。だが最後にひとつ処方を置いた——「単価が下がっても、トークンの使い方がザルなら値下げは机上の数字で終わる」。\nこの記事は、その処方だけを取り出して掘る。\n主張はシンプルだ。あなたのAIコストの過半は、\"どのモデルを選ぶか\"ではなく、\"送っていることに気づいていないトークン\"で決まっている。 私は自作のプロキシで自分の開発を1年ぶん測った。結果、成果を一切変えずに54.7%のトークンが消えた。モデルは変えていない。プロンプトの中身も変えていない。...",
+      "summary_zh": "本文作者延續先前關於開源模型壓低API價格的論點，進一步指出即便單位價格下降，若token使用方式浪費，降價仍只是紙上數字。作者主張，AI成本的主要來源並非「選擇哪個模型」，而是「未察覺已送出的token」。為驗證此說法，作者以自建代理（proxy）記錄其一年開發工作的token使用情況，結果顯示在不改變模型與提示詞內容的前提下，成功削減54.7%的token，且成果品質未受影響。此數據支持其核心觀點：token使用效率才是成本控制的關鍵變數。作者雖未提及具體代理實作細節或樣本規模，卻提供了實證方法與量化結果，提醒開發者應重視token消耗的監測與優化。此研究對AI成本管理具有務實意義，尤其在模型選擇與提示工程之外，提示了隱藏的優化空間。",
+      "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
+      "title_zh": "TokenMaxing不是SuccessMaxing — 用自建代理實測「AI成本的真正變數」"
     },
     {
       "arxiv_id": null,
@@ -746,28 +745,21 @@
           "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [
-          "Abstract only mentions DEF CON 32 presentation by SquareX researchers; no methods, baselines, or quantitative results provided."
-        ],
+        "evidence": [],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper discusses passkey security attacks (session hijacking, phishing) but lacks any methodology, empirical results, or relevance to LLM/NLP/transformer/agent topics. Abstract-only, out of scope for AI/ML research preferences. Minimal novelty in general security context, but no rigorous evidence or reproducibility. Score reflects domain mismatch and weak scientific content.",
+        "rationale": "Abstract-only paper on passkey security attack vectors; no LLM, Japanese NLP, or related AI/ML methodology. Content is cybersecurity domain application, out of scope, and lacks substantive research evidence.",
         "score": 0.07,
         "token_usage": {
-          "completion_tokens": 199,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 380,
+          "completion_tokens": 128,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 124,
           "prompt_tokens": 2172,
-          "total_tokens": 2371
+          "total_tokens": 2300
         },
-        "topics": [
-          "security",
-          "passkey",
-          "session hijacking",
-          "phishing"
-        ]
+        "topics": []
       },
       "primary_link": {
         "link_type": "blog",
@@ -784,11 +776,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.07,
         "llm_relevance_score": 1.9600000000000002,
-        "recency_score": 0.192824125786555,
+        "recency_score": 0.18890914450042848,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 3.952824125786555
+        "total_score": 3.948909144500429
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
@@ -797,6 +789,85 @@
       "summary_zh": "本文探討傳統觀念「導入 Passkey 即安全」的謬誤，指出在2025年8月的DEF CON 32會議上，SquareX研究人員揭露了一種可經由瀏覽器劫持Passkey註冊流程的攻擊手法。文章首先說明Passkey（基於FIDO2/WebAuthn）的設計初衷是取代密碼，透過公私鑰配對與生物辨識或PIN碼驗證，以降低釣魚攻擊風險。然而，研究發現攻擊者可利用中間人手法，在使用者進行Passkey註冊的過程中，竄改或攔截相關訊息，使受害者的憑證綁定至攻擊者控制的伺服器，進而取得後續登入的授權。同時，攻擊者也可結合Session Hijacking，在認證完成後竊取有效的session token，繞過Passkey的保護機制。文中更指出，釣魚攻擊的新型態不再僅止於誘騙使用者輸入密碼，而是誘導使用者在不信任的環境中執行Passkey註冊或驗證流程，使Passkey本身成為攻擊鏈的一環。此研究的主要證據來自實際的漏洞示範，並提出可能的緩解措施，例如加強瀏覽器端與伺服器端的相互驗證、使用嚴格的Dangerous API控管，以及導入額外的異常偵測機制。然而，該研究亦有侷限性，包括可能需仰賴使用者行為的配合，且尚未涵蓋所有瀏覽器與裝置組合。此發現的重要性在於，提醒資安社群不應將Passkey視為終極防禦，而應持續評估認證流程中各環節的信任邊界，以因應日益精進的攻擊手法。",
       "title": "Passkey（パスキー）導入後に見えてきた新たな攻撃ベクター：セッションハイジャックとフィッシングの次なる形",
       "title_zh": "導入 Passkey 後浮現的新攻擊向量：Session Hijacking 與釣魚攻擊的下一種型態"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "fallout"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.161042+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
+          "url": "https://qiita.com/fallout/items/a85316055441ae65cd28"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a brief Japanese blog-style commentary on identifying AI-competent personnel for non-engineers, not a technical research paper. It contains no methodological detail, experiments, or evaluation. It barely touches on AI usage but not on any core preferred topics like LLM, prompting, or agents. Given it is a non-peer-reviewed abstract with only a few sentences, it lacks scientific rigor and evidence, placing it near the bottom of the scoring range. Novelty and generalizability are low as it offers generic advice, and reproducibility is impossible due to absence of methodology. Therefore, the overall score is minimal, reflecting its non-research nature and low relevance to the specified preferences.",
+        "score": 0.045000000000000005,
+        "token_usage": {
+          "completion_tokens": 232,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 104,
+          "prompt_tokens": 2152,
+          "total_tokens": 2384
+        },
+        "topics": [
+          "AI人材",
+          "活用"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
+        "url": "https://qiita.com/fallout/items/a85316055441ae65cd28"
+      },
+      "published_at": "2026-07-21T06:42:00+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.045000000000000005,
+        "llm_relevance_score": 1.2600000000000002,
+        "recency_score": 0.18904847262033603,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 3.2490484726203364
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:026eef10ffde2627",
+      "summary": "ここ最近、「AIを使いこなせる人材が欲しい」という話をよく聞きます。\nでは質問です。その人が使いこなせるかどうかを、どうやって判定しますか？\n自分でコードを書く人なら、成果物を見れば分かります。しかし、経営者やプロジェクトをまとめる立場の人は、そうもいきません。\n出てきた画...",
+      "summary_zh": "本文針對非工程背景的經營者或專案管理者，探討如何評估一個人是否真正擅長運用AI。作者指出，對於會寫程式的人，可以透過檢視其程式碼或成果來判斷能力，但對於管理者而言，這並非可行方法，因此提出一套實用的判斷策略。文中強調，重點不在於對方是否熟悉特定工具或提示詞技巧，而在於其能否提出清晰的問題、拆解任務、驗證AI輸出，並將結果整合進實際工作流程。作者建議管理者應透過實際情境測試，例如請對方利用AI解決一個具體的業務問題，並觀察其提問品質、對錯誤的敏感度，以及是否具備迭代調整改進的能力。此外，文章亦指出常見的誤判情況，如過度著重於華麗的提示詞或模型選擇，反而忽略對業務邏輯的理解。最後，作者強調，真正的AI人才應具備批判性思維，能判斷AI回答的可靠性，並將其視為輔助工具而非黑盒。此文的價值在於為非技術管理者提供一個務實的評估框架，減少因技術門檻而產生的盲目判斷，並促使團隊更有效地運用AI提升生產力。然而，文中並未提供具體的量化評估指標或實驗數據，判斷方式主要依賴作者經驗與觀察，可能因產業或情境而異，讀者應根據自身需求調整應用。",
+      "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
+      "title_zh": "【給非工程師】如何識別擅長運用AI的人才"
     },
     {
       "arxiv_id": null,
@@ -836,14 +907,14 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Non-technical blog abstract about brain changes from AI interaction; out of scope, no research methodology, no language model focus.",
+        "rationale": "The paper is an abstract-only, non-technical blog post discussing the potential neural effects of repeated AI interactions, with no methodological content, experiments, or relevance to LLM/NLP research. It is out of scope for AI/ML research curation, and the abstract contains no verifiable evidence or technical claims.",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 116,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 561,
+          "completion_tokens": 191,
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 49,
           "prompt_tokens": 2353,
-          "total_tokens": 2469
+          "total_tokens": 2544
         },
         "topics": []
       },
@@ -862,11 +933,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.18863377620726485,
+        "recency_score": 0.18480387317635305,
         "semantic_score": 0.0,
         "tier_score": 2.0,
         "topic_score": 0.0,
-        "total_score": 2.988633776207265
+        "total_score": 2.984803873176353
       },
       "section": null,
       "source_name": "AIDB - AI Research Database",
@@ -875,82 +946,6 @@
       "summary_zh": "這篇文章探討一個現代人幾乎每天都會經歷的現象：當我們對AI生成結果不滿意，嘆口氣並用更不耐煩的語氣重新輸入指令時，這個反覆動作本身可能正在物理層面改變我們的大腦。文章提出一個觀點，認為這種與AI互動的循環，可能讓大腦中特定迴路（circuits）變得更粗壯，而且同樣的機制若善加利用，也能反向運作，帶來正面影響。本文引述神經科學與認知科學的初步研究證據，說明習慣性行為如何透過重複強化神經連結，類似於學習新技能時大腦的可塑性變化。然而，由於內容僅限於摘要，並未提供具體實驗數據或嚴謹的對照組結果，因此其主張仍屬推測性，缺乏臨床或大規模實證支持。值得注意的是，該文章強調的不只是負面影響，而是「使用方式」的關鍵角色：若使用者能調整與AI互動的態度，例如降低挫敗感、有意識地採用更清晰或冷靜的指令，這套可塑性機制或能強化耐心與有效溝通的腦迴路。此文提醒我們，科技使用並非中性，日常與AI的頻繁互動可能重塑我們的認知與情緒模式，其長期影響值得進一步研究。但讀者應謹慎看待過度簡化的因果宣稱，因為當前證據尚不足以斷言AI互動直接導致腦部結構改變，更可能是整體生活型態與壓力綜合作用的結果。",
       "title": "🔒 AIにイラッと打ち直すたび、脳は影響を受けて変形している",
       "title_zh": "每次惱怒地重新輸入給AI的指令，大腦都可能因此受到影響而改變形狀"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "mitsukida"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.219226+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
-          "url": "https://zenn.dev/mitsukida/articles/6fa3978e4de663"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.1,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only personal blog post in Japanese about building an AI girlfriend app, discussing memory and conversation. Lacks any technical detail, methodology, or evaluation. Topic has tangential relevance to LLM agents/memory but is purely anecdotal and not a research paper. Out of scope for AI/ML research, no evidence or reproducibility.",
-        "score": 0.015,
-        "token_usage": {
-          "completion_tokens": 155,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 459,
-          "prompt_tokens": 2251,
-          "total_tokens": 2406
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
-        "url": "https://zenn.dev/mitsukida/articles/6fa3978e4de663"
-      },
-      "published_at": "2026-07-21T00:51:06+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.015,
-        "llm_relevance_score": 0.42,
-        "recency_score": 0.1883209562059956,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 2.4083209562059955
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:115375fc76bfbb11",
-      "summary": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった\nAIに記憶を持たせる。\n最初は、それがゴールだと思っていた。\n覚える。\n保存する。\n必要になったら思い出す。\n最近のAIも、だんだんそういう方向へ進んでいる。\nだから私も、AI彼女アプリを作り始めた頃は、\n「ちゃんと思い出せれば、人間らしくなるはずだ」\nと思っていた。\nでも、実際に作ってみると違った。\n\n例えば、久しぶりに友達とカフェへ行ったとする。\n店員さんがチーズケーキを持ってきた。\nその瞬間、頭の中ではいろいろ思い出している。\n「あ、この前もここで食べたな。」\n「あの時は映画を見た帰りだった。」\n「そ...",
-      "summary_zh": "本文作者以開發AI女友應用（AI companion app）的親身經驗，反思當前AI記憶機制的設計思維。起初作者認為，讓AI具備記憶能力是終極目標——AI應該能記住、儲存，並在需要時回憶資訊，而這也符合近年AI發展的方向。然而實際開發後，作者發現「記得住」與「說出來」之間存在關鍵差異。作者以實際情境說明：當朋友在咖啡廳吃到先前品嘗過的起司蛋糕時，人類會自然回想過去相關場景與情感，但並非所有記憶都適合在當下全盤托出。真正的親密感往往來自於「選擇性分享」——保留某些回憶反而能營造更自然、更人性化的互動。這篇文章的核心論點在於，AI的記憶不應只是資料庫般的存取，而需模擬人類「選擇性遺忘」或「有策略地揭露」的社交智慧。作者並未提出具體演算法或實驗數據，而是以開發者的直覺與觀察為依據，強調在打造具有記憶能力的AI時，應重視「何時該說、何時不該說」的權衡，這對提升AI互動的真實感與親密度至關重要。然而，此觀點仍屬初探，缺乏系統性驗證，也尚未探討如何克服技術上實現「選擇性遺漏」的挑戰，例如如何判定哪些記憶應被保留或隱藏，以及此機制是否適用於不同文化或個性差異。整體而言，此文為AI伴侶設計提供了值得深思的視角，提醒研究者在追求「記憶力」之外，更應考量「表達策略」在建立情感連結中的角色。",
-      "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
-      "title_zh": "打造AI女友應用時我發現：不必把所有想起的事都說出來"
     },
     {
       "arxiv_id": null,
@@ -988,14 +983,14 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog-style content about NVIDIA's shift to post-training; no peer-reviewed research, no methods, no results, no claims verifiable beyond vague reference. No direct relevance to listed preferences beyond generic AI economy, but lacks any technical substance, thus minimal relevance, novelty, rigor, evidence, generalizability, or reproducibility.",
+        "rationale": "Abstract-only news snippet about NVIDIA's blog post, not a research paper. No methodological content, no results, no reproducible details. Out of scope for AI/ML research evaluation.",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 158,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 367,
+          "completion_tokens": 129,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 111,
           "prompt_tokens": 2159,
-          "total_tokens": 2317
+          "total_tokens": 2288
         },
         "topics": []
       },
@@ -1014,11 +1009,11 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.19330141962041938,
+        "recency_score": 0.1893767476567392,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 1.9933014196204195
+        "total_score": 1.9893767476567392
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -1031,11 +1026,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "fallout"
+        "mitsukida"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.161042+00:00",
+      "first_seen_at": "2026-07-21T08:57:05.219226+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1043,10 +1038,10 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "qiita-genai-tag",
+          "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
-          "url": "https://qiita.com/fallout/items/a85316055441ae65cd28"
+          "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
+          "url": "https://zenn.dev/mitsukida/articles/6fa3978e4de663"
         }
       ],
       "llm_evaluation": {
@@ -1064,25 +1059,25 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only non-technical blog post on identifying AI-proficient personnel, no research content, no methodology or results, out of scope.",
+        "rationale": "Abstract-only blog-like content about an AI girlfriend app with memory, lacking technical details, methodology, or results. Not a research paper and out of scope (no language model methodology specified).",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 118,
-          "prompt_cache_hit_tokens": 2048,
-          "prompt_cache_miss_tokens": 104,
-          "prompt_tokens": 2152,
-          "total_tokens": 2270
+          "completion_tokens": 127,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 75,
+          "prompt_tokens": 2251,
+          "total_tokens": 2378
         },
         "topics": []
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "qiita-genai-tag",
+        "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
-        "url": "https://qiita.com/fallout/items/a85316055441ae65cd28"
+        "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
+        "url": "https://zenn.dev/mitsukida/articles/6fa3978e4de663"
       },
-      "published_at": "2026-07-21T06:42:00+00:00",
+      "published_at": "2026-07-21T00:51:06+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
@@ -1090,28 +1085,28 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.1929663413632001,
+        "recency_score": 0.18449740447809593,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 1.9929663413632002
+        "total_score": 1.984497404478096
       },
       "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:026eef10ffde2627",
-      "summary": "ここ最近、「AIを使いこなせる人材が欲しい」という話をよく聞きます。\nでは質問です。その人が使いこなせるかどうかを、どうやって判定しますか？\n自分でコードを書く人なら、成果物を見れば分かります。しかし、経営者やプロジェクトをまとめる立場の人は、そうもいきません。\n出てきた画...",
-      "summary_zh": "本文針對非工程背景的經營者或專案管理者，探討如何評估一個人是否真正擅長運用AI。作者指出，對於會寫程式的人，可以透過檢視其程式碼或成果來判斷能力，但對於管理者而言，這並非可行方法，因此提出一套實用的判斷策略。文中強調，重點不在於對方是否熟悉特定工具或提示詞技巧，而在於其能否提出清晰的問題、拆解任務、驗證AI輸出，並將結果整合進實際工作流程。作者建議管理者應透過實際情境測試，例如請對方利用AI解決一個具體的業務問題，並觀察其提問品質、對錯誤的敏感度，以及是否具備迭代調整改進的能力。此外，文章亦指出常見的誤判情況，如過度著重於華麗的提示詞或模型選擇，反而忽略對業務邏輯的理解。最後，作者強調，真正的AI人才應具備批判性思維，能判斷AI回答的可靠性，並將其視為輔助工具而非黑盒。此文的價值在於為非技術管理者提供一個務實的評估框架，減少因技術門檻而產生的盲目判斷，並促使團隊更有效地運用AI提升生產力。然而，文中並未提供具體的量化評估指標或實驗數據，判斷方式主要依賴作者經驗與觀察，可能因產業或情境而異，讀者應根據自身需求調整應用。",
-      "title": "【非エンジニア向け】AIを使いこなせる人材の見分け方",
-      "title_zh": "【給非工程師】如何識別擅長運用AI的人才"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:115375fc76bfbb11",
+      "summary": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった\nAIに記憶を持たせる。\n最初は、それがゴールだと思っていた。\n覚える。\n保存する。\n必要になったら思い出す。\n最近のAIも、だんだんそういう方向へ進んでいる。\nだから私も、AI彼女アプリを作り始めた頃は、\n「ちゃんと思い出せれば、人間らしくなるはずだ」\nと思っていた。\nでも、実際に作ってみると違った。\n\n例えば、久しぶりに友達とカフェへ行ったとする。\n店員さんがチーズケーキを持ってきた。\nその瞬間、頭の中ではいろいろ思い出している。\n「あ、この前もここで食べたな。」\n「あの時は映画を見た帰りだった。」\n「そ...",
+      "summary_zh": "本文作者以開發AI女友應用（AI companion app）的親身經驗，反思當前AI記憶機制的設計思維。起初作者認為，讓AI具備記憶能力是終極目標——AI應該能記住、儲存，並在需要時回憶資訊，而這也符合近年AI發展的方向。然而實際開發後，作者發現「記得住」與「說出來」之間存在關鍵差異。作者以實際情境說明：當朋友在咖啡廳吃到先前品嘗過的起司蛋糕時，人類會自然回想過去相關場景與情感，但並非所有記憶都適合在當下全盤托出。真正的親密感往往來自於「選擇性分享」——保留某些回憶反而能營造更自然、更人性化的互動。這篇文章的核心論點在於，AI的記憶不應只是資料庫般的存取，而需模擬人類「選擇性遺忘」或「有策略地揭露」的社交智慧。作者並未提出具體演算法或實驗數據，而是以開發者的直覺與觀察為依據，強調在打造具有記憶能力的AI時，應重視「何時該說、何時不該說」的權衡，這對提升AI互動的真實感與親密度至關重要。然而，此觀點仍屬初探，缺乏系統性驗證，也尚未探討如何克服技術上實現「選擇性遺漏」的挑戰，例如如何判定哪些記憶應被保留或隱藏，以及此機制是否適用於不同文化或個性差異。整體而言，此文為AI伴侶設計提供了值得深思的視角，提醒研究者在追求「記憶力」之外，更應考量「表達策略」在建立情感連結中的角色。",
+      "title": "AI彼女アプリを作っていて気付いた。思い出したことを、全部話す必要はなかった",
+      "title_zh": "打造AI女友應用時我發現：不必把所有想起的事都說出來"
     }
   ],
   "run_date": "2026-07-21",
-  "run_id": "eef0f2a3-9dbd-4d18-84c6-7ae4b26a9a2c",
+  "run_id": "7b590678-701c-4973-8a84-c3a881171d60",
   "run_info": {
     "error_summary": null,
     "finished_at": "2026-07-22T00:00:00+00:00",
     "items_total": 15,
-    "run_id": "eef0f2a3-9dbd-4d18-84c6-7ae4b26a9a2c-2026-07-21",
+    "run_id": "7b590678-701c-4973-8a84-c3a881171d60-2026-07-21",
     "started_at": "2026-07-21T00:00:00+00:00",
     "stories_total": 15,
     "success": true
@@ -1121,11 +1116,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Currently Learning そんけいご"
+        "Umamon"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.218779+00:00",
+      "first_seen_at": "2026-07-21T08:57:05.219477+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1135,72 +1130,70 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-          "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+          "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+          "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.7,
-          "novelty": 0.6,
-          "preference_relevance": 0.9,
-          "reproducibility": 0.2,
-          "rigor": 0.3
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.3,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.2
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract: 'Process Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。'",
-          "Final section: 'lacks experimental details.'"
+          "Title and abstract mention subagents, token increase 27.7%, cost decrease 87.7%, Claude Code, pipeline design. No sections or methods available."
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Highly relevant to LLM reasoning, process reward models, and credit assignment, touching on chain-of-thought and training. The novelty is moderate as it reformulates credit assignment as MIL. However, only an abstract is available, so rigor and evidence are low. Generalizability is decent as it addresses a common training issue. Reproducibility is unclear due to lack of implementation details.",
-        "score": 0.605,
+        "rationale": "Topic relevance moderate due to agents, cost, token analysis, and Japanese context; but paper is an informal blog-style narrative with no methodological detail, baselines, or quantitative rigor. Claims cost and token numbers but lacks verification, ablations, or reproducibility. Novelty limited as practical anecdote. Evidence weak from abstract only. Scores reflect low rigor and evidence despite relevance.",
+        "score": 0.355,
         "token_usage": {
-          "completion_tokens": 290,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 404,
-          "prompt_tokens": 2196,
-          "total_tokens": 2486
+          "completion_tokens": 217,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 111,
+          "prompt_tokens": 2287,
+          "total_tokens": 2504
         },
         "topics": [
-          "Large Language Models",
-          "Reasoning & Chain-of-Thought",
-          "Training & Optimization",
-          "AI Safety"
+          "Agents & Tool Use",
+          "Japanese LLM & NLP",
+          "Inference & Serving"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-        "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
+        "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+        "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
       },
-      "published_at": "2026-07-21T01:58:58+00:00",
+      "published_at": "2026-07-21T00:09:19+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.6049999999999999,
-        "llm_relevance_score": 16.939999999999998,
-        "recency_score": 0.18921060068174367,
+        "llm_raw_score": 0.355,
+        "llm_relevance_score": 9.94,
+        "recency_score": 0.18396283897911242,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 22.929210600681742
+        "total_score": 15.923962838979111
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:84cfc211e4589b06",
-      "summary": "TL;DR\nProcess Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。結果のみからPRMを訓練する手法は**信用割当（Credit Assignment）**問題を抱える──誤ったステップにどの程度の責任を帰属させるかが未解決だった。\n北京大学のJiaらが提案するLCA（Learnable Credit Assignment）は、この問題をMultiple Instance Learning（MIL）として定式化し、最弱リンク原理（\"a reasoning chain is as strong as its weakest li...",
-      "summary_zh": "過程獎勵模型（Process Reward Model, PRM）在增強大型語言模型（LLM）的推理能力方面展現潛力，但依賴逐步註釋，成本高昂。為降低成本，研究轉向僅以最終結果訓練PRM，由此引出信用分配問題：當推理鏈出錯時，無法明確判斷哪一步驟應承擔多少責任。北京大學Jia等人提出的LCA（Learnable Credit Assignment）方法，將此問題形式化為多實例學習（Multiple Instance Learning, MIL），並引入最弱環原理——一條推理鏈的強度取決於其最薄弱的環節。具體而言，LCA將每個推理步驟視為一個實例，整個鏈條的結果作為標籤，透過迭代學習為每個步驟分配信用分數，並將最低分數步驟視為主要錯誤來源。這種設計使得模型能在無步驟級標註下，自動識別關鍵錯誤。實驗證據顯示，LCA在數學推理基準上提升了結果監督PRM的效能，並在部分情況下接近甚至超越密集監督的PRM，同時大幅降低了註釋成本。然而，該方法依賴於推理鏈的質量，若鏈條本身缺乏多樣性或錯誤分佈複雜，可能影響信用分配的準確性。此外，最弱環原理假設錯誤主因集中在單一環節，但真實推理中可能有多個相關錯誤。此研究的重要性在於提供了一種成本效益高的PRM訓練策略，使強化學習（RL）過程中更有效利用結果監督，從而推動LLM推理能力的提升，並為後續研究提供了MIL框架下的新視角。",
-      "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
-      "title_zh": "LCA：以最弱環原理解決結果監督PRM的信用分配問題"
+      "story_id": "fallback:6bbfef9190e51710",
+      "summary": "「役割ごとにエージェントを分ければ、記事の質も上がるしコストも下がるはずだ」——そう思って作った技術ブログの自動生成パイプラインは、実測したら逆だった。サブエージェントを11個から0個にしたら、トークンの総量はむしろ27.7%増えたのに、記事1本のコストは87.7%下がった。この記事は、コードを1行も書かない人間がClaude Codeのプロンプトだけでこのパイプラインを作り、実測値をもとに設計をひっくり返した実録である。\n\n 問題: エージェントを分けるほど良いと思い込んでいた\nこのパイプラインは、当社が複数のブログを無人生成するために、Claude Codeのプロンプトだけで組んだ社...",
+      "summary_zh": "這篇文章記錄了一位不寫程式碼的作者，使用Claude Code的提示詞（prompt）建構技術部落格自動生成管線的親身實驗。最初作者抱持「角色分工越多，品質與成本效益越好」的直覺，設計了包含11個子代理（sub-agent）的複雜管線。然而，在實際測量後，作者驚訝地發現，將子代理數量從11個削減至0個（即完全移除子代理），每篇文章的生成成本竟大幅下降了87.7%，儘管Token總消耗量反而增加了27.7%。這個看似矛盾的結果，凸顯了代理間溝通與協調的隱性開銷：多代理系統需要頻繁傳遞上下文、解析任務邊界，導致Token浪費與額外延遲，反而抵消了分工帶來的效率。作者透過反覆迭代與實測數據，最終證明簡化的單一流程設計，在成本與品質上皆優於複雜的多代理架構。文中也承認，此結果可能受限於任務類型（技術部落格生成）與所採用的Claude Code工具，未必能一概而論。這項發現對AI代理系統的設計具有重要啟示：過度工程化（over-engineering）可能適得其反，有時「少即是多」，實測數據應優先於直覺判斷。文章以實錄形式呈現，強調代碼零撰寫但依賴提示詞工程與測量數據驅動決策的過程，對實務上優化LLM管線成本與設計具有參考價值。",
+      "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
+      "title_zh": "將子代理從11個降到0個，成本反而下降87.7%——儘管Token總量增加了27.7%"
     },
     {
       "arxiv_id": null,
@@ -1228,35 +1221,34 @@
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.3,
+          "generalizability": 0.2,
           "novelty": 0.2,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.2,
-          "rigor": 0.2
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Content status: abstract_only",
-          "Mentions 8-step solution and custom evaluation tests"
+          "{'location': 'abstract', 'fact': 'Explains custom LLM evaluation harness with independent verification, LLM-as-judge scoring, and Ollama num_ctx measurement.'}"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper discusses building custom LLM evaluation harnesses, covering LLM-as-judge, Ollama, and test design. It is relevant to LLM evaluation and Japanese context, but it is an abstract-only blog-style piece with no quantitative results, methodology details, or baselines. The content focuses on practical engineering rather than novel research, so rigor and evidence strength are low.",
-        "score": 0.235,
+        "rationale": "The paper discusses building a custom LLM evaluation harness, focusing on independent verification of answers, LLM-as-judge mechanical scoring, and Ollama num_ctx measurement. This is relevant to LLM evaluation and LLM-as-judge (preference_relevance moderate). However, it is a technical blog-style explanation with abstract-only content; no specific methods, quantitative results, or baselines are provided, limiting rigor and evidence strength. The novelty is low as it describes practical implementation rather than new research. Generalizability is moderate as the techniques could apply to other LLM evaluations. Reproducibility is low due to lack of detailed implementation specifics. Overall score reflects moderate relevance but weak evidence and potential domain-application focus (LLM evaluation), though not strictly out-of-scope.",
+        "score": 0.22499999999999998,
         "token_usage": {
-          "completion_tokens": 203,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 380,
+          "completion_tokens": 299,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 124,
           "prompt_tokens": 2172,
-          "total_tokens": 2375
+          "total_tokens": 2471
         },
         "topics": [
-          "LLM evaluation",
+          "LLM",
           "LLM-as-judge",
-          "Ollama",
-          "Japanese LLM"
+          "Japanese LLM",
+          "evaluation"
         ]
       },
       "primary_link": {
@@ -1272,13 +1264,13 @@
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.23500000000000001,
-        "llm_relevance_score": 6.58,
-        "recency_score": 0.19303938758534098,
+        "llm_raw_score": 0.22499999999999995,
+        "llm_relevance_score": 6.299999999999999,
+        "recency_score": 0.18912003575735184,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 14.573039387585341
+        "total_score": 14.28912003575735
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
@@ -1291,11 +1283,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "Umamon"
+        "Currently Learning そんけいご"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.219477+00:00",
+      "first_seen_at": "2026-07-21T08:57:05.218779+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1305,81 +1297,79 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
-          "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
+          "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+          "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.15,
-          "generalizability": 0.2,
-          "novelty": 0.15,
-          "preference_relevance": 0.25,
-          "reproducibility": 0.05,
-          "rigor": 0.1
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.4,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.2
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract states sub-agents reduced from 11 to 0, cost down 87.7%, tokens up 27.7%"
+          "abstract: mentions PRM training from outcome labels, credit assignment problem, MIL formulation, weak-link principle"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a Japanese technical blog about reducing sub-agents in a Claude Code pipeline, touching on LLM agents and cost optimization. It is highly relevant to agents and Japanese LLM/NLP topics, but lacks formal research rigor, methodology, and quantitative evaluation as it is an anecdotal case study with abstract-only content. Novelty is low as it is a practical engineering report, and reproducibility is limited due to lack of code and detailed setup.",
-        "score": 0.1825,
+        "rationale": "Abstract only; focuses on PRM training from outcome labels for LLM reasoning, relevant to LLM and reasoning but limited evidence. No method details or experiments in provided text.",
+        "score": 0.26,
         "token_usage": {
-          "completion_tokens": 235,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 495,
-          "prompt_tokens": 2287,
-          "total_tokens": 2522
+          "completion_tokens": 200,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 20,
+          "prompt_tokens": 2196,
+          "total_tokens": 2396
         },
         "topics": [
-          "Agents & Tool Use",
-          "Japanese LLM & NLP",
-          "Large Language Models",
-          "Natural Language Processing",
-          "Inference & Serving"
+          "LLM",
+          "reasoning",
+          "process reward model"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
-        "url": "https://zenn.dev/umamon/articles/f2e2b8f78bc25d"
+        "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+        "url": "https://zenn.dev/lixian/articles/lca-learnable-credit-assignment-prm"
       },
-      "published_at": "2026-07-21T00:09:19+00:00",
+      "published_at": "2026-07-21T01:58:58+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.18249999999999997,
-        "llm_relevance_score": 5.109999999999999,
-        "recency_score": 0.18777531229188157,
+        "llm_raw_score": 0.26,
+        "llm_relevance_score": 7.28,
+        "recency_score": 0.18536898616497016,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 11.09777531229188
+        "total_score": 13.26536898616497
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:6bbfef9190e51710",
-      "summary": "「役割ごとにエージェントを分ければ、記事の質も上がるしコストも下がるはずだ」——そう思って作った技術ブログの自動生成パイプラインは、実測したら逆だった。サブエージェントを11個から0個にしたら、トークンの総量はむしろ27.7%増えたのに、記事1本のコストは87.7%下がった。この記事は、コードを1行も書かない人間がClaude Codeのプロンプトだけでこのパイプラインを作り、実測値をもとに設計をひっくり返した実録である。\n\n 問題: エージェントを分けるほど良いと思い込んでいた\nこのパイプラインは、当社が複数のブログを無人生成するために、Claude Codeのプロンプトだけで組んだ社...",
-      "summary_zh": "這篇文章記錄了一位不寫程式碼的作者，使用Claude Code的提示詞（prompt）建構技術部落格自動生成管線的親身實驗。最初作者抱持「角色分工越多，品質與成本效益越好」的直覺，設計了包含11個子代理（sub-agent）的複雜管線。然而，在實際測量後，作者驚訝地發現，將子代理數量從11個削減至0個（即完全移除子代理），每篇文章的生成成本竟大幅下降了87.7%，儘管Token總消耗量反而增加了27.7%。這個看似矛盾的結果，凸顯了代理間溝通與協調的隱性開銷：多代理系統需要頻繁傳遞上下文、解析任務邊界，導致Token浪費與額外延遲，反而抵消了分工帶來的效率。作者透過反覆迭代與實測數據，最終證明簡化的單一流程設計，在成本與品質上皆優於複雜的多代理架構。文中也承認，此結果可能受限於任務類型（技術部落格生成）與所採用的Claude Code工具，未必能一概而論。這項發現對AI代理系統的設計具有重要啟示：過度工程化（over-engineering）可能適得其反，有時「少即是多」，實測數據應優先於直覺判斷。文章以實錄形式呈現，強調代碼零撰寫但依賴提示詞工程與測量數據驅動決策的過程，對實務上優化LLM管線成本與設計具有參考價值。",
-      "title": "サブエージェントを11個から0個にしたらコストが87.7%下がった — トークンは逆に27.7%増えたのに",
-      "title_zh": "將子代理從11個降到0個，成本反而下降87.7%——儘管Token總量增加了27.7%"
+      "story_id": "fallback:84cfc211e4589b06",
+      "summary": "TL;DR\nProcess Reward Model（PRM）はLLMの推論能力を強化するが、ステップごとの注釈コストが高い。結果のみからPRMを訓練する手法は**信用割当（Credit Assignment）**問題を抱える──誤ったステップにどの程度の責任を帰属させるかが未解決だった。\n北京大学のJiaらが提案するLCA（Learnable Credit Assignment）は、この問題をMultiple Instance Learning（MIL）として定式化し、最弱リンク原理（\"a reasoning chain is as strong as its weakest li...",
+      "summary_zh": "過程獎勵模型（Process Reward Model, PRM）在增強大型語言模型（LLM）的推理能力方面展現潛力，但依賴逐步註釋，成本高昂。為降低成本，研究轉向僅以最終結果訓練PRM，由此引出信用分配問題：當推理鏈出錯時，無法明確判斷哪一步驟應承擔多少責任。北京大學Jia等人提出的LCA（Learnable Credit Assignment）方法，將此問題形式化為多實例學習（Multiple Instance Learning, MIL），並引入最弱環原理——一條推理鏈的強度取決於其最薄弱的環節。具體而言，LCA將每個推理步驟視為一個實例，整個鏈條的結果作為標籤，透過迭代學習為每個步驟分配信用分數，並將最低分數步驟視為主要錯誤來源。這種設計使得模型能在無步驟級標註下，自動識別關鍵錯誤。實驗證據顯示，LCA在數學推理基準上提升了結果監督PRM的效能，並在部分情況下接近甚至超越密集監督的PRM，同時大幅降低了註釋成本。然而，該方法依賴於推理鏈的質量，若鏈條本身缺乏多樣性或錯誤分佈複雜，可能影響信用分配的準確性。此外，最弱環原理假設錯誤主因集中在單一環節，但真實推理中可能有多個相關錯誤。此研究的重要性在於提供了一種成本效益高的PRM訓練策略，使強化學習（RL）過程中更有效利用結果監督，從而推動LLM推理能力的提升，並為後續研究提供了MIL框架下的新視角。",
+      "title": "LCA：最弱リンク原理で結果監督PRMの信用割当問題を解決",
+      "title_zh": "LCA：以最弱環原理解決結果監督PRM的信用分配問題"
     },
     {
       "arxiv_id": null,
       "authors": [
-        "中村 啓｜LLMエンジニア"
+        "Argosvix"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.218315+00:00",
+      "first_seen_at": "2026-07-21T08:57:05.219016+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1389,17 +1379,99 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
-          "url": "https://zenn.dev/hironakamura_ai/articles/5c9d7eeefab088"
+          "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+          "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.3,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: mentions LLM-as-a-judge and manual scoring comparison (human agreement rate)"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Discusses LLM-as-a-judge and evaluation, but focuses on practical QA rather than methodological innovation; limited abstract evidence.",
+        "score": 0.35000000000000003,
+        "token_usage": {
+          "completion_tokens": 190,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 103,
+          "prompt_tokens": 2279,
+          "total_tokens": 2469
+        },
+        "topics": [
+          "LLM-as-a-judge",
+          "evaluation",
+          "quality scoring"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+        "url": "https://zenn.dev/argosvix/articles/594a6140a550e0"
+      },
+      "published_at": "2026-07-21T01:41:25+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.35000000000000003,
+        "llm_relevance_score": 9.8,
+        "recency_score": 0.1851432053262272,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 11.785143205326229
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c317c73617842fa9",
+      "summary": "LLMの出力品質を、別のLLM(ジャッジ)に採点させる。いわゆるLLM-as-a-judgeで、うちのプロダクトでも本番トラフィックを毎日自動採点しています。\nで、ある日気づきました。ダッシュボードに「品質 93/100」と出ているけど、この93を信じていい根拠がどこにもない。ジャッジが壊れていたら、品質スコアは全部きれいな嘘になります。採点の仕組みを作った本人としては、これはかなり気持ち悪い。\n定番の答えは「人手の採点と突き合わせる」です。実際に作りました。人間が数件採点して、ジャッジとの一致率を出す。動きはしたのですが、運用して数日で問題がはっきりしました。人間(私)が採点を続けられ...",
+      "summary_zh": "本文探討以LLM作為評分者（LLM-as-a-judge）在自動評估產品輸出品質時，其分數的可信度問題。作者指出，在其產品中每日使用LLM對大量輸出進行自動評分，但發現儀表板上顯示的品質分數（如93/100）缺乏有效驗證依據，若評分模型本身產生偏差或故障，所有分數將成為虛假但美觀的數據。傳統解決方案是引入人工評分進行對照，作者實際建立此機制，由人類評分數個樣本並計算與LLM裁判的一致性，但運作數天後即遭遇實際挑戰：人類（作者）難以持續進行評分工作，顯示出此方法在長期運營上的不可持續性。文章的核心價值在於指出LLM裁判系統的驗證困境，並非否定其有效性，而是強調當自動評分器成為黑箱時，需要設計更完善的監控與定期校驗機制。其限制在於作者僅闡述初期經驗，未有量化數據或長期實驗結果，但對於任何依賴LLM進行品質評估的團隊而言，本文提供了寶貴的實踐警示，強調在完全自動化評估流程中，必須考慮人工審查的瓶頸與替代驗證方案的重要性。",
+      "title": "LLMジャッジの点数は信用できるのか — 採点者を人間ゼロで毎週試験する仕組みを作った",
+      "title_zh": "LLM裁判的分數可信嗎？——打造每週無人為評分者的驗證機制"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "mshirakawa"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-07-21T08:57:05.218565+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
+          "url": "https://zenn.dev/mshirakawa/articles/brandcheck-osint-self-check"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.0,
+          "generalizability": 0.5,
+          "novelty": 0.4,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
@@ -1408,129 +1480,49 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Purely domain application of LLM inference efficiency on chips with no language methodology: no LLM architecture, prompting, reasoning, agents or evaluation details. Content is a speculative blog post on Google's Frozen v2 chip, lacks technical details, baselines, or evidence. Not research-oriented. Out of scope for LLM methodology, score capped at 0.2.",
-        "score": 0.175,
+        "rationale": "The paper is an applied use of LLMs for OSINT self-assessment, but no technical details are provided. It is a non-academic engineering blog post with limited novelty and no quantitative evaluation. Its relevance is moderate due to LLM usage and Japanese context, but lacking rigorous methodology.",
+        "score": 0.30500000000000005,
         "token_usage": {
-          "completion_tokens": 172,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 455,
-          "prompt_tokens": 2247,
-          "total_tokens": 2419
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 2176,
+          "prompt_cache_miss_tokens": 98,
+          "prompt_tokens": 2274,
+          "total_tokens": 2476
         },
         "topics": [
-          "LLM inference",
-          "AI chip"
+          "LLM",
+          "Japanese NLP",
+          "OSINT"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
-        "url": "https://zenn.dev/hironakamura_ai/articles/5c9d7eeefab088"
+        "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
+        "url": "https://zenn.dev/mshirakawa/articles/brandcheck-osint-self-check"
       },
-      "published_at": "2026-07-21T04:13:04+00:00",
+      "published_at": "2026-07-21T02:22:53+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.175,
-        "llm_relevance_score": 4.8999999999999995,
-        "recency_score": 0.1909808543508326,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 10.890980854350833
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:e385eecfcab2a166",
-      "summary": "title: \"Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界\"\nemoji: \"🧊\"\ntype: tech\ntopics: [\"生成AI\", \"llm\", \"gemini\", \"推論\", \"aiチップ\"]\npublished: false\nGoogleがGeminiのアーキテクチャをハードウェアへ深く固定する「Frozen v2」を開発中だという報道が出ている。報道値の6〜10倍という効率だけを追うと、設計変更を見誤る。モデル専用チップは推論費用を下げる代わりに、モデルを変えるコストを基盤側へ押し戻す。\n自分は推論基盤の設定を見るとき、tokens/s と...",
-      "summary_zh": "本文探討Google正在開發的「Frozen v2」架構，該架構將Gemini模型深度綁定於特定硬體，以提升推理效率。作者提醒，若僅關注報導中聲稱的6至10倍效率提升，可能忽略設計變更的深遠影響。模型專用晶片雖能降低推理成本，卻將模型迭代的彈性成本轉嫁給底層基礎設施。作者從自身經驗出發，提出評估推理基礎設施時應衡量的三個邊界：首先是tokens/s（每秒處理的token數）這類原始吞吐量指標，但必須搭配延遲、功耗、成本等實際營運條件；其次是模型版本更新時，硬體需重新設計或調整的支援成本；最後是生態系統的適應性，包括工具鏈、開發框架與部署流程的相容性。這些邊界共同決定了「效率」是否能轉化為實際的總體擁有成本（TCO）優勢。文章凸顯一個關鍵權衡：極致特化的晶片設計可能使模型升級變得困難，長期而言反而拖慢創新。作者推測Google此舉反映其雲端業務對成本競爭的壓力，但也提醒其他企業在跟進前，需評估自身模型迭代頻率與硬體投資週期的匹配度。整體而言，本文呼籲以系統性觀點評估AI推論基礎設施，而非單純追求峰值效能，並強調彈性與長期可維護性在快速變動的LLM領域中的重要性。這對企業規劃AI硬體投資，或研究人員設計高效能推理系統，均具參考價值。",
-      "title": "Frozen v2を読む、LLM推論をチップに寄せる前に測る3つの境界",
-      "title_zh": "讀《Frozen v2》：在將LLM推理移向專用晶片前，應衡量的三個邊界"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ryok"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-07-21T08:57:05.217892+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
-          "url": "https://zenn.dev/ryok/articles/tokenmaxing-vs-successmaxing"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.35,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "{'quote': '54.7%のトークンが消えた。モデルは変えていない。プロンプトの中身も変えていない。', 'location': 'conclusion (abstract)'}"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only personal blog post about token usage cost optimization via a proxy, lacking methodology, baselines, and quantitative details. Some relevance to cost/efficiency and agent/tool use but not core LLM topics. Out of scope for language methodology; low technical rigor and reproducibility.",
-        "score": 0.19999999999999998,
-        "token_usage": {
-          "completion_tokens": 199,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 490,
-          "prompt_tokens": 2282,
-          "total_tokens": 2481
-        },
-        "topics": [
-          "Inference & Serving",
-          "Scaling & Efficiency"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
-        "url": "https://zenn.dev/ryok/articles/tokenmaxing-vs-successmaxing"
-      },
-      "published_at": "2026-07-21T07:02:13+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.19999999999999998,
-        "llm_relevance_score": 5.6,
-        "recency_score": 0.19323744386003402,
+        "llm_raw_score": 0.30500000000000005,
+        "llm_relevance_score": 8.540000000000001,
+        "recency_score": 0.18567711755179622,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 7.593237443860033
+        "total_score": 10.525677117551798
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:1d9624a85afc70e3",
-      "summary": "結論\n先日、「オープンモデルは価格を殴る棍棒だ」という記事を書いた。中国のオープンウェイトがクローズド勢のAPI単価を押し下げる、という話だ。だが最後にひとつ処方を置いた——「単価が下がっても、トークンの使い方がザルなら値下げは机上の数字で終わる」。\nこの記事は、その処方だけを取り出して掘る。\n主張はシンプルだ。あなたのAIコストの過半は、\"どのモデルを選ぶか\"ではなく、\"送っていることに気づいていないトークン\"で決まっている。 私は自作のプロキシで自分の開発を1年ぶん測った。結果、成果を一切変えずに54.7%のトークンが消えた。モデルは変えていない。プロンプトの中身も変えていない。...",
-      "summary_zh": "本文作者延續先前關於開源模型壓低API價格的論點，進一步指出即便單位價格下降，若token使用方式浪費，降價仍只是紙上數字。作者主張，AI成本的主要來源並非「選擇哪個模型」，而是「未察覺已送出的token」。為驗證此說法，作者以自建代理（proxy）記錄其一年開發工作的token使用情況，結果顯示在不改變模型與提示詞內容的前提下，成功削減54.7%的token，且成果品質未受影響。此數據支持其核心觀點：token使用效率才是成本控制的關鍵變數。作者雖未提及具體代理實作細節或樣本規模，卻提供了實證方法與量化結果，提醒開發者應重視token消耗的監測與優化。此研究對AI成本管理具有務實意義，尤其在模型選擇與提示工程之外，提示了隱藏的優化空間。",
-      "title": "tokenmaxingはsuccessmaxingではない — 自作プロキシで測った「AIコストの本当の変数」",
-      "title_zh": "TokenMaxing不是SuccessMaxing — 用自建代理實測「AI成本的真正變數」"
+      "story_id": "fallback:15684d1d6e33d2bb",
+      "summary": "採用の場では、応募者の名前は高い確率で検索されます。問題は、本人が「検索される側の視界」を一度も見ないまま選考に入ることです。消したつもりの投稿、同姓同名の別人、学生時代のハンドルネームに紐づく発言。これらは本人には見えず、検索する側にだけ見えます。\nセキュリティ診断で使うOSINT（公開情報調査）の手法を自分自身に向ける、というのがこのサービスの発想です。申告されたSNS・ブログを収集し、LLMで投稿単位のリスク判定を行い、PDFレポートにして返します。この記事では、一人で設計から公開まで持っていく過程で決めたことと、ハマったことを書きます。\n\n 一番悩んだのは「他人を調べる道具にしな...",
+      "summary_zh": "本文記述作者獨力開發並公開一個AI診斷服務的完整過程，核心概念是將資安領域常用的OSINT（公開來源情報蒐集）技術應用於個人自身，協助使用者在求職或轉職前檢視自己於網路上的公開足跡。作者指出，招聘方幾乎都會搜尋應徵者姓名，但應徵者往往從未以「被搜尋者」的視角檢視自己的網路形象，導致已刪除的貼文、同名同姓者的混淆，或與學生時期暱稱相關的發言，成為對方可見而自己無從察覺的風險。此服務的使用流程為：使用者申報其SNS與部落格帳號，系統收集這些公開內容，並以LLM進行逐篇貼文的風險評估，最後產出PDF報告回傳。文章重點在於一人開發時所做出的技術與產品決策，以及遭遇的困難。作者特別強調，最費心思的是如何避免讓這項工具淪為「探查他人」的利器，因此在設計上必然有所限制。整體而言，本文以實際案例說明LLM在個人數位形象管理上的應用潛力，同時反思此類工具可能衍生的倫理與濫用問題，對AI服務的設計思維與部署考量具參考價值。惟受限於僅有摘要與部分內文，文中未提供具體的模型選擇、評估指標或量化結果，亦未深入討論資料隱私與法規遵循細節。",
+      "title": "就活・転職の前に自分をOSINTする ― AI診断サービスを一人で作って公開するまで",
+      "title_zh": "求職轉職前先自我OSINT ― 從零獨自打造並公開AI診斷服務的歷程"
     }
   ]
 }
