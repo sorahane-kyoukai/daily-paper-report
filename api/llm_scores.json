@@ -27563,134 +27563,155 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:73b2e3c8e1f28868": {
-      "score": 0.345,
+      "score": 0.215,
       "components": {
-        "preference_relevance": 0.6,
+        "preference_relevance": 0.3,
         "novelty": 0.2,
         "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.4,
+        "generalizability": 0.3,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Paper discusses Claude Code customization features (CLAUDE.md, rules, commands, subagents, Skills, Hooks) which relate to AI agents, tool use, and LLM applications. However, content is abstract-only with no methodological detail, evaluation, or empirical evidence, so rigor and evidence are low. Novelty is limited as it appears to be a descriptive overview rather than a research contribution. Relevance is moderate due to agent and LLM focus, but pure application without research substance caps the score.",
+      "rationale": "Paper is a Japanese blog post about Claude Code customization features (CLAUDE.md, rules, commands, subagents, Skills, Hooks). It touches on LLM agents and tool use but lacks research depth, methods, or quantitative results. Content is limited to an abstract with no substantive evidence. Domain application without language methodology, thus capped at 0.2.",
       "topics": [
-        "AI agent",
-        "Tool use",
-        "LLM application",
-        "Claude Code"
+        "agent",
+        "tool use",
+        "Japanese LLM",
+        "prompt engineering"
       ],
-      "evidence": [
-        "Abstract mentions CLAUDE.md, rules, commands, subagents, Skills, Hooks; no evaluation or methods provided"
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2162,
-        "completion_tokens": 234,
-        "total_tokens": 2396,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 114
+        "completion_tokens": 225,
+        "total_tokens": 2387,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 370
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:e76932b536e62aeb": {
-      "score": 0.515,
+      "score": 0.5,
       "components": {
-        "preference_relevance": 0.45,
-        "novelty": 0.7,
-        "rigor": 0.6,
+        "preference_relevance": 0.5,
+        "novelty": 0.6,
+        "rigor": 0.7,
         "evidence_strength": 0.3,
-        "generalizability": 0.6,
-        "reproducibility": 0.7
+        "generalizability": 0.2,
+        "reproducibility": 0.8
       },
       "confidence": 1.0,
-      "rationale": "The paper is directly relevant to LLM distillation, efficiency, and Japanese LLM context, but lacks full details and quantitative results. Novelty is moderate due to dose-response analysis, but rigor and evidence are limited by abstract-only content. Reproducibility is partially addressed by pre-registration and frozen criteria. Generalizability is limited by single GPU setting and specific models. Overall score reflects moderate relevance and incomplete evidence.",
+      "rationale": "The paper is an empirical study on LLM distillation with controlled experiments and pre-registration, but is limited to abstract-only content with no full results or baselines; it has moderate relevance to LLMs and training but low generalizability due to specific hardware and settings.",
       "topics": [
         "LLM distillation",
-        "Japanese LLM",
-        "efficiency",
         "QLoRA",
-        "evaluation"
+        "LLM evaluation",
+        "training"
       ],
       "evidence": [
-        "Abstract mentions '44 cells, pre-registered, frozen criteria, results including unexpected outcomes' but lacks full quantitative results or baseline comparisons.",
-        "No explicit baselines, ablations, or limitation discussion in available text.",
-        "Mentions RTX 5080 and specific model sizes, but no detailed methodology or metrics."
+        "Abstract mentions 44-cell pre-registered experiment",
+        "Abstract states frozen evaluation criteria",
+        "Abstract mentions QLoRA recipe"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2291,
-        "completion_tokens": 312,
-        "total_tokens": 2603,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 115
+        "completion_tokens": 230,
+        "total_tokens": 2521,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 499
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:29a767cc0c34575b": {
-      "score": 0.05500000000000001,
+      "score": 0.128,
       "components": {
-        "preference_relevance": 0.05,
-        "novelty": 0.05,
-        "rigor": 0.05,
-        "evidence_strength": 0.05,
-        "generalizability": 0.1,
-        "reproducibility": 0.05
+        "preference_relevance": 0.12,
+        "novelty": 0.1,
+        "rigor": 0.15,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.15
       },
       "confidence": 1.0,
-      "rationale": "This is a Japanese blog post about Claude Code version testing, not a research paper. It has minimal relevance to the preferred topics (only mentions Claude, which is an LLM, but focus is on version flags and CLI usage). No scientific methodology, evidence, or research contribution. Abstract only with no substantive content.",
+      "rationale": "Concrete testing of a specific Claude Code version, but it is a blog-style product verification, not a research paper. Minimal relevance to LLM/NLP research beyond tool usage; no scientific novelty, rigor, or generalizable findings. Marginal inclusion of Japanese-language engineering context not tied to research topics.",
       "topics": [
-        "Claude Code",
-        "version testing",
-        "CLI"
+        "agent",
+        "local LLM"
       ],
       "evidence": [
-        "Title mentions Claude Code v2.1.222 and version flags",
-        "Abstract states target audience for developers using Claude Code in cloud/headless CLI"
+        "Abstract only; mentions Claude Code version verification, flags, CLI testing. No quantitative results, baselines, or methods disclosed."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2162,
-        "completion_tokens": 195,
-        "total_tokens": 2357,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 114
+        "completion_tokens": 181,
+        "total_tokens": 2343,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 370
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:3fb44b086cad6aa6": {
-      "score": 0.0,
+      "score": 0.04000000000000001,
       "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.0,
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
         "rigor": 0.0,
         "evidence_strength": 0.0,
-        "generalizability": 0.0,
+        "generalizability": 0.05,
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The document is an abstract-only opinion piece about applying SeedRealtime to video editing, lacking technical content, experiments, or alignment with preference topics. It is a pure domain application without language methodology, so it is out of scope.",
+      "rationale": "Abstract-only opinion piece on applying SeedRealtime to video editing; lacks methodology, experiments, and formal research contributions. Some relevance to AI agents and multimodal but superficial and non-technical. Out of scope given no language model methodology.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2255,
-        "completion_tokens": 175,
-        "total_tokens": 2430,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 79
+        "completion_tokens": 135,
+        "total_tokens": 2390,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 463
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:16ebff2beb87702e": {
+      "score": 0.0055,
+      "components": {
+        "preference_relevance": 0.01,
+        "novelty": 0.01,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only blog post about creating 122 measurement harnesses in 4 months; no technical content, methodology, or relevance to LLM/NLP research. Pure domain engineering anecdote with no scientific substance.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2140,
+        "completion_tokens": 133,
+        "total_tokens": 2273,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 348
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:51d62b28e9f50368": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -27701,81 +27722,43 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only blog post about creating measurement harnesses for speed; no LLM/NLP methodology, no research content, no evidence. Out of scope for preference domains and lacks rigor.",
+      "rationale": "Abstract only, no methodological detail, and the content focuses on agent skills in Japanese, which is peripherally related to agents but lacks explicit LLM or NLP methodology in the provided text. It is a blog post with a paywall, presenting no verifiable evidence.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
-        "prompt_tokens": 2140,
-        "completion_tokens": 128,
-        "total_tokens": 2268,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 92
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:51d62b28e9f50368": {
-      "score": 0.185,
-      "components": {
-        "preference_relevance": 0.3,
-        "novelty": 0.3,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.2,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "The paper is an abstract-only blog post about AI agents and skills, touching on agent reliability but providing no technical content, methods, or data. It has some relevance to agents and evaluation but lacks rigor and evidence. Preference relevance is low; novelty is moderate but unsupported. Overall score is low due to absence of substantive research content.",
-      "topics": [
-        "AI agents",
-        "skills",
-        "evaluation"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
         "prompt_tokens": 2371,
-        "completion_tokens": 165,
-        "total_tokens": 2536,
-        "prompt_cache_hit_tokens": 2304,
-        "prompt_cache_miss_tokens": 67
+        "completion_tokens": 183,
+        "total_tokens": 2554,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 579
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:1a4d0bd71d8e82f1": {
-      "score": 0.23000000000000004,
+      "score": 0.0,
       "components": {
-        "preference_relevance": 0.4,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.1
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The paper discusses LLM application development, prompt evaluation, and latency debugging using LangSmith. It is relevant to LLM-based development and latency optimization, but it is a technical blog-style presentation with an abstract-only status, lacking rigorous methodology, quantitative results, and deep novelty. The personal relevance is moderate due to practical use of LLMs, but research quality is low due to absence of formal evaluation, baselines, and evidence. Generalizability is limited to practitioners using LangSmith for debugging, and reproducibility is low without detailed steps. Topics include LLM applications, prompt engineering, latency debugging, and LangSmith.",
-      "topics": [
-        "LLM application",
-        "prompt engineering",
-        "latency debugging",
-        "LangSmith"
-      ],
-      "evidence": [
-        "Title and abstract mention prompt evaluation and latency debugging with LangSmith in LLM applications",
-        "Content is a technical introduction by a company team, suggesting applied engineering focus rather than research paper"
-      ],
+      "rationale": "Abstract only, no substantive content. Mentions LLM and prompt engineering but lacks methodology, results, or evaluation. Not research-grade, merely a blog-like introduction. Pure application-oriented, no technical depth.",
+      "topics": [],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2157,
-        "completion_tokens": 269,
-        "total_tokens": 2426,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 109
+        "completion_tokens": 136,
+        "total_tokens": 2293,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 365
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -27791,17 +27774,17 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The paper is a personal memorandum about ChatGPT usage limits (Chat/Work/Codex), not a research contribution. It lacks methodology, evaluation, or any scientific content, and focuses on a product usage note rather than LLM research or Japanese NLP methodology. All aspects are zero due to no substantive content in the abstract-only document.",
+      "rationale": "The document is a non-scholarly personal memo about ChatGPT usage limits, not a research paper. It lacks methodology, results, and relevance to AI research preferences.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2135,
-        "completion_tokens": 159,
-        "total_tokens": 2294,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 87
+        "completion_tokens": 166,
+        "total_tokens": 2301,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 343
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -27817,120 +27800,149 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Paper is a technical blog about Cloud Composer Redis OOM, unrelated to LLM/NLP/ML research; no relevance to preferred topics, no research methodology or evidence.",
+      "rationale": "This is a blog post about an OOM incident in Cloud Composer 2, a managed Airflow service. It is unrelated to AI/ML research, language models, or any listed topics. There is no scientific content, no methods, no experiments. It receives 0.0 for all components and overall score.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2247,
-        "completion_tokens": 166,
-        "total_tokens": 2413,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 71
+        "completion_tokens": 196,
+        "total_tokens": 2443,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 455
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:2aa5e406472bf121": {
-      "score": 0.1,
+      "score": 0.07,
       "components": {
         "preference_relevance": 0.05,
         "novelty": 0.1,
         "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Content is a Japanese article discussing AI coding agents' time estimates, referencing public research and reports. It touches on agent behavior but lacks experimental details, quantitative results, and methodological rigor. It is a commentary/blog post, not a scientific paper.",
-      "topics": [
-        "Agents",
-        "Japanese NLP"
-      ],
-      "evidence": [
-        "Abstract mentions coding agents returning time estimates and actual completion in 1 hour, citing public research and provider verification but no specific measurements or methods."
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2272,
-        "completion_tokens": 218,
-        "total_tokens": 2490,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 96
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:bfc13703b7a3d145": {
-      "score": 0.265,
-      "components": {
-        "preference_relevance": 0.45,
-        "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "The paper focuses on multimodal sensor data with LLMs for human activity recognition. It touches on LLM and multimodal topics but is application-oriented, lacks technical details, and is a blog-style report. Low rigor and evidence due to abstract-only.",
-      "topics": [
-        "Large Language Models",
-        "Multimodal AI",
-        "Sensor data",
-        "Human activity recognition"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2281,
-        "completion_tokens": 200,
-        "total_tokens": 2481,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 105
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:4f95427b4b4aace9": {
-      "score": 0.12250000000000001,
-      "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.1,
-        "rigor": 0.05,
         "evidence_strength": 0.05,
         "generalizability": 0.1,
         "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "Technical blog describing a Text-to-SQL tool for Japanese; topic relevance is moderate (Japanese LLM, SQL, code) but lacks research content, abstractions, or results. No experimental rigor, baselines, quantitative findings, or reproducibility details. Abstract only and mostly narrative. Score capped due to purely applied, low-evidence nature.",
+      "rationale": "Abstract-only article on coding agent estimates; no quantitative measurements or methods; content lacks verifiable evidence and is largely speculative. Out of scope for core AI research, not focal to language model methodology.",
+      "topics": [
+        "coding agent"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2272,
+        "completion_tokens": 170,
+        "total_tokens": 2442,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 480
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:bfc13703b7a3d145": {
+      "score": 0.2785,
+      "components": {
+        "preference_relevance": 0.42,
+        "novelty": 0.22,
+        "rigor": 0.16,
+        "evidence_strength": 0.14,
+        "generalizability": 0.25,
+        "reproducibility": 0.15
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only Japanese tech blog with minimal technical detail. LLM and multimodal topics match preferences but focus is sensor HAR (application), with no methodology, results, or evaluation. Novelty low, rigor and evidence very low, generalizability moderate for LLM+sensor trend. Repro low due to lack of implementation details. Overall score ~0.30, below 0.2? No, above 0.2 due to LLM relevance, but strict rubric limits domain applications; however not purely out-of-scope because LLM methodology is central. Score 0.30 reflects weak evidence and unverifiable claims.",
+      "topics": [
+        "LLM",
+        "multimodal",
+        "sensor",
+        "HAR"
+      ],
+      "evidence": [
+        "Content status: abstract_only",
+        "No figures, tables, or experiments mentioned"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2281,
+        "completion_tokens": 245,
+        "total_tokens": 2526,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 489
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:4f95427b4b4aace9": {
+      "score": 0.428,
+      "components": {
+        "preference_relevance": 0.72,
+        "novelty": 0.3,
+        "rigor": 0.2,
+        "evidence_strength": 0.2,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The work is a pragmatic engineering blog about building a Japanese Text-to-SQL tool with LLMs, touching LLM, Japanese NLP, and code generation, but is a personal project note without scientific evaluation. Limited novelty, no rigorous baselines or quantitative evidence, and not generalizable as research.",
       "topics": [
         "Text-to-SQL",
         "Japanese LLM",
         "RAG",
-        "LLM application"
+        "Code Generation"
       ],
       "evidence": [
-        "{'location': 'abstract', 'description': 'Abstract states building a Text-to-SQL tool to query RDB with Japanese questions, but no technical details or evaluation results are included.'}"
+        "Abstract mentions building a Text-to-SQL tool with LLM for Japanese questions; no experimental details."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2265,
-        "completion_tokens": 212,
-        "total_tokens": 2477,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 89
+        "completion_tokens": 189,
+        "total_tokens": 2454,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 473
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:8c316cadcddddf02": {
-      "score": 0.025,
+      "score": 0.1275,
       "components": {
-        "preference_relevance": 0.0,
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "News commentary on OpenAI's report about a Cambodia-based scam operation using ChatGPT. Relevant to AI safety/red teaming and agents, but no methodology, no novel research, no evidence, no reproducibility. Purely descriptive with low rigor.",
+      "topics": [
+        "AI safety",
+        "red teaming"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2173,
+        "completion_tokens": 186,
+        "total_tokens": 2359,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 381
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:1a2cce65fef3cd3a": {
+      "score": 0.065,
+      "components": {
+        "preference_relevance": 0.1,
         "novelty": 0.1,
         "rigor": 0.0,
         "evidence_strength": 0.0,
@@ -27938,22 +27950,60 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only news commentary about OpenAI stopping Cambodian scam accounts; no technical content, methods, or results. Out of scope and untrustworthy as a research paper.",
-      "topics": [],
-      "evidence": [],
+      "rationale": "Abstract-only personal blog about using Claude Code for development logs; lacks research methodology, quantitative results, or technical contribution. Minimal relevance to LLM/NLP research preferences; no evidence of substantive content.",
+      "topics": [
+        "LLM",
+        "code generation",
+        "agent"
+      ],
+      "evidence": [
+        "{'section': 'abstract_only', 'statement': 'Personal anecdote about using Claude Code to generate development logs; abstract only, no technical details or experiments.'}"
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
-        "prompt_tokens": 2173,
-        "completion_tokens": 124,
-        "total_tokens": 2297,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 125
+        "prompt_tokens": 2157,
+        "completion_tokens": 168,
+        "total_tokens": 2325,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 365
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
-    "fallback:1a2cce65fef3cd3a": {
+    "fallback:b51a9fe519dccef6": {
+      "score": 0.0775,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Blog post about applying LLM-Wiki to design system discussions; abstract only, no technical detail or evaluation. Marginal relevance to RAG/AI agents, but insufficient evidence and rigor.",
+      "topics": [
+        "RAG",
+        "retrieval-augmented generation",
+        "design system"
+      ],
+      "evidence": [
+        "Abstract states LLM-Wiki used for searching scattered design discussions with citations"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2240,
+        "completion_tokens": 198,
+        "total_tokens": 2438,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 448
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:1f9e4d670681c89e": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -27964,143 +28014,83 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only content describing a personal anecdote about using Claude Code for development logs; no AI/ML research methodology, no experiments, no evidence. This is a domain application with no language methodology and not within scope. All component scores are zero due to lack of substance and abstract-only status.",
-      "topics": [],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2157,
-        "completion_tokens": 153,
-        "total_tokens": 2310,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 109
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:b51a9fe519dccef6": {
-      "score": 0.17500000000000002,
-      "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Blog post about using LLM to create a wiki for design discussions. Limited technical depth and abstract only, with no quantitative results. Related to LLM and retrieval augmentation but superficial.",
-      "topics": [
-        "Large Language Models",
-        "RAG & Knowledge"
-      ],
-      "evidence": [
-        "Title and abstract mention LLM-Wiki and searching with provenance; no detailed methods or results available"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2240,
-        "completion_tokens": 155,
-        "total_tokens": 2395,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 64
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:1f9e4d670681c89e": {
-      "score": 0.0225,
-      "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.15,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only blog post, no technical details, no experiments, methodology, or data. Topic is AI tutoring behavior, tangentially related to agents/safety/prompting but no substantive content. Cannot evaluate research quality. Scores are near zero due to lack of content and out-of-scope practical AI usage without technical depth.",
+      "rationale": "The paper is only an abstract in Japanese, with no substantive content, methods, or results. While it touches on AI assistance and prompting, there is no verifiable research content, and it appears to be a blog post rather than a peer-reviewed paper. It does not align with core preferences (LLM, reasoning, etc.) beyond generic AI assistance, and lacks evidence and rigor.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2403,
-        "completion_tokens": 158,
-        "total_tokens": 2561,
-        "prompt_cache_hit_tokens": 2304,
-        "prompt_cache_miss_tokens": 99
+        "completion_tokens": 168,
+        "total_tokens": 2571,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 611
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:28622329a11d555e": {
-      "score": 0.19,
+      "score": 0.03150000000000001,
       "components": {
-        "preference_relevance": 0.15,
-        "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.3,
-        "generalizability": 0.3,
-        "reproducibility": 0.2
+        "preference_relevance": 0.05,
+        "novelty": 0.02,
+        "rigor": 0.02,
+        "evidence_strength": 0.02,
+        "generalizability": 0.02,
+        "reproducibility": 0.01
       },
       "confidence": 1.0,
-      "rationale": "The paper is a practical blog-style article about making design systems usable by AI for UI generation. It has tangential relevance to AI agents (AI-driven UI assembly) but lacks methodological rigor, baselines, and quantitative analysis. The evidence is anecdotal (175 trials) without details. Reproducibility is moderate but not fully documented. Low scores across rigor and evidence due to lack of structured evaluation and limitations.",
+      "rationale": "Paper is a practitioner blog post about making design systems usable by AI for UI generation. It has tangential relevance to code generation and agents but is a domain application with no language model methodology, minimal technical depth, and no quantitative evidence. Out of scope for AI/ML research; maximum score 0.20, but this is too far from core topics.",
       "topics": [
-        "AI agent",
         "design system",
         "UI generation",
-        "prompting"
+        "AI-assisted development"
       ],
       "evidence": [
-        "Abstract states: '予備知識ゼロのAIに、公開docsだけを渡して実業種の画面を175回組ませるという検証をやってきました。' (Verification of making AI assemble screens 175 times with only public docs given to AI with zero prior knowledge.)",
-        "No detailed methodology or results provided in abstract; paper is likely a practitioner report."
+        "Abstract mentions testing AI with design system across 175 screens but provides no methodology or results"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2263,
-        "completion_tokens": 313,
-        "total_tokens": 2576,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 87
+        "completion_tokens": 190,
+        "total_tokens": 2453,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 471
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:a13af770e0c92a15": {
-      "score": 0.49000000000000005,
+      "score": 0.33999999999999997,
       "components": {
-        "preference_relevance": 0.75,
+        "preference_relevance": 0.25,
         "novelty": 0.2,
-        "rigor": 0.4,
-        "evidence_strength": 0.3,
-        "generalizability": 0.4,
+        "rigor": 0.5,
+        "evidence_strength": 0.6,
+        "generalizability": 0.3,
         "reproducibility": 0.3
       },
       "confidence": 1.0,
-      "rationale": "The paper is highly relevant to LLM deployment in closed environments, covering local LLM evaluation, which aligns with preferences for Japanese LLM and local LLM. It provides real measurements on M2 Ultra with output examples, showing empirical effort. However, it is a blog-style report with limited methodological detail, no formal benchmarking protocol, and relies on anecdotal evidence. Novelty is moderate, rigor and evidence strength are limited by lack of controlled comparisons and statistical analysis. Generalizability is somewhat limited to specific hardware and models, but the approach could be extended. Reproducibility is moderate as hardware and models are specified, but full prompts and data are not provided. Overall, the context is relevant but the paper is not a rigorous research study.",
+      "rationale": "Paper is a practical comparison of local LLMs on M2 Ultra, relevant to Japanese LLM and local deployment but lacks scientific novelty and methodological rigor. Abstract only, with some empirical evidence (real measurements) and reproducibility partially addressed.",
       "topics": [
         "Japanese LLM",
-        "Local LLM",
-        "LLM evaluation",
-        "Inference optimization"
+        "local LLM",
+        "M2 Ultra",
+        "benchmark"
       ],
       "evidence": [
-        "Provides real measurements on M2 Ultra with output examples (Introduction)",
-        "Compares four models under identical conditions (Introduction)",
-        "Focuses on open-weight models for on-premise use (Introduction)"
+        "abstract: '4モデルをM2 Ultraで実測比較'",
+        "abstract: '全部手元で流した一次データです'"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2263,
-        "completion_tokens": 343,
-        "total_tokens": 2606,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 87
+        "completion_tokens": 230,
+        "total_tokens": 2493,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 471
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -28116,75 +28106,78 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Non-technical blog post about GPT-Live, no research contribution, no methodology, no evaluation, no data. Out of scope for AI/ML research curation.",
+      "rationale": "This is a casual blog post in Japanese about the GPT-Live voice model, not a research paper. It contains no technical methodology, evaluation, or results. It is a personal anecdote about using the model. Thus, it has zero research relevance and quality across all components. It does not fall into any preferred topic category (it is about a voice model, which is out of scope for language methodology).",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2229,
-        "completion_tokens": 125,
-        "total_tokens": 2354,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 53
+        "completion_tokens": 174,
+        "total_tokens": 2403,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 437
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:9ecc07c4141e349d": {
-      "score": 0.14500000000000002,
+      "score": 0.32,
       "components": {
-        "preference_relevance": 0.2,
+        "preference_relevance": 0.6,
         "novelty": 0.1,
         "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.0
+        "generalizability": 0.3,
+        "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only Japanese blog-style report on building a CS inquiry agent using an LLM without passing personal information. Mentions 'agent' and 'LLM' but is a domain application with no technical details, methods, or evaluation. Out of scope for core LLM research, minimal novelty, rigor, and evidence.",
+      "rationale": "Topic mentions LLM and agent for CS inquiry, but abstract-only and lacks technical detail, evidence, or evaluation. No methodology described, so rigor/evidence low. Generalizability moderate as it addresses a common business workflow, but novelty and reproducibility minimal.",
       "topics": [
-        "Agents & Tool Use",
-        "Large Language Models",
-        "Japanese LLM & NLP"
+        "LLM",
+        "agent",
+        "business workflow"
       ],
       "evidence": [
-        "Only abstract provided; no sections or quantitative results available"
+        "Title mentions LLM and CS inquiry agent, but abstract only; no methods or results section."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2280,
-        "completion_tokens": 182,
-        "total_tokens": 2462,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 104
+        "completion_tokens": 210,
+        "total_tokens": 2490,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 488
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:f52bac1c97845b7c": {
-      "score": 0.04000000000000001,
+      "score": 0.065,
       "components": {
         "preference_relevance": 0.1,
-        "novelty": 0.0,
+        "novelty": 0.1,
         "rigor": 0.0,
         "evidence_strength": 0.0,
-        "generalizability": 0.0,
+        "generalizability": 0.1,
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Not a research paper; an opinion blog-like article about writing and AI usage. No technical contribution, no methods, no empirical evidence. Irrelevant to the listed preferences.",
-      "topics": [],
+      "rationale": "This is a non-technical opinion blog post generated by ChatGPT about writing workflows. It lacks technical depth, empirical validation, and does not address any core research topics in NLP/LLM beyond mentioning AI-assisted drafting. No contributions to AI research methodology or insights.",
+      "topics": [
+        "AI-assisted writing",
+        "application of LLMs"
+      ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2242,
-        "completion_tokens": 126,
-        "total_tokens": 2368,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 66
+        "completion_tokens": 153,
+        "total_tokens": 2395,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 450
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -28259,144 +28252,159 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:f89e877bd48e5037": {
-      "score": 0.015,
+      "score": 0.0625,
       "components": {
-        "preference_relevance": 0.0,
+        "preference_relevance": 0.05,
         "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only blog-style text with no methodological details; mentions AI bugs and reasoning but lacks concrete research content, baselines, or results; not within core scope.",
+      "rationale": "Abstract-only blog-style text in Japanese touches on LLM reasoning error identification but lacks technical detail, methods, or evidence. Out of scope for core NLP/LLM research; no quantitative results or accessibility.",
       "topics": [
-        "reasoning",
-        "AI safety"
+        "LLM reasoning"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2140,
-        "completion_tokens": 127,
-        "total_tokens": 2267,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 92
+        "completion_tokens": 134,
+        "total_tokens": 2274,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 348
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:cc469855840fd44d": {
-      "score": 0.41,
+      "score": 0.145,
       "components": {
-        "preference_relevance": 0.7,
+        "preference_relevance": 0.15,
         "novelty": 0.2,
-        "rigor": 0.2,
+        "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.5,
+        "generalizability": 0.2,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "The paper discusses prompt engineering, harness engineering, and loop engineering, which are relevant to prompting and agents, but it is an opinion/position piece with limited technical depth. No empirical evidence or novel methodology is provided, and rigor is low. The content is applicable to LLM-based development but lacks formal evaluation.",
+      "rationale": "Paper is an abstract-only conceptual discussion of prompt, harness, and loop engineering, directly relevant to prompt engineering and AI development but lacking empirical content. Preference relevance is limited by no concrete LLM/agent specifics; novelty is moderate as a conceptual framing but not new; rigor and evidence are minimal; generalizability moderate as conceptual; reproducibility absent. Score reflects low evidence and shallow treatment.",
       "topics": [
-        "prompting",
-        "agents",
-        "LLM",
-        "Japanese"
+        "prompt engineering",
+        "harness engineering",
+        "loop engineering"
       ],
       "evidence": [
-        "Abstract and Introduction mention prompt engineering, harness engineering, and loop engineering, but no quantitative results or methods are presented."
+        "Abstract only, no methods or results"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2154,
-        "completion_tokens": 233,
-        "total_tokens": 2387,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 106
+        "completion_tokens": 185,
+        "total_tokens": 2339,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 362
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:f252685bb3d8ef84": {
-      "score": 0.0,
+      "score": 0.07,
       "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.0,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
+        "preference_relevance": 0.1,
+        "novelty": 0.05,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.05,
+        "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "This is a marketing blog column about producing promotional and recruiting videos with generative AI, not a research paper. It lacks any technical content, methodology, or results. All preference topics are out of scope, and there is no evidence or reproducible information.",
-      "topics": [],
-      "evidence": [],
+      "rationale": "This is a business column about using generative AI for in-house video production, not a research paper. It lacks technical methodology, experiments, or evaluation. The content is a brief abstract only, with no scientific content. It does touch on generative AI for video but is purely applied and marketing-oriented, with negligible relevance to LLM, NLP, or AI research. Novelty, rigor, evidence, generalizability, and reproducibility are all minimal due to lack of detail and technical substance.",
+      "topics": [
+        "generative AI",
+        "video production",
+        "marketing"
+      ],
+      "evidence": [
+        "Abstract states it is a blog column about in-house video production using generative AI, with no technical details."
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2150,
-        "completion_tokens": 140,
-        "total_tokens": 2290,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 102
+        "completion_tokens": 219,
+        "total_tokens": 2369,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 358
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:d5232adc86a88693": {
-      "score": 0.0,
+      "score": 0.11000000000000001,
       "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.0,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Abstract only, no verifiable research; topic is generic data privacy practice, not AI/ML research. Pure domain application with no technical content, out of scope.",
+      "rationale": "The paper is an introductory practical guide on handling personal information in the context of DX and generative AI, based on a digital skills standard. It is abstract-only and lacks technical depth, novel contributions, or empirical evaluation. Overlaps are minimal: it mentions generative AI and data handling but not LLM specifics, Japanese NLP, or agentic methods. It has weak rigor and is out of scope for core AI/ML research.",
       "topics": [
-        "data privacy",
-        "generative AI"
+        "Data & Datasets",
+        "AI Safety",
+        "Japanese LLM & NLP"
       ],
-      "evidence": [],
+      "evidence": [
+        "No quantitative results or methodological details are present in the abstract; the content appears to be a non-technical tutorial.",
+        "The abstract references DX and generative AI but provides no technical framework or evaluation."
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2155,
-        "completion_tokens": 129,
-        "total_tokens": 2284,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 107
+        "completion_tokens": 229,
+        "total_tokens": 2384,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 363
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:ad66a6f208be5d8f": {
-      "score": 0.0775,
+      "score": 0.274,
       "components": {
-        "preference_relevance": 0.05,
-        "novelty": 0.15,
-        "rigor": 0.1,
-        "evidence_strength": 0.05,
-        "generalizability": 0.1,
-        "reproducibility": 0.05
+        "preference_relevance": 0.26,
+        "novelty": 0.3,
+        "rigor": 0.3,
+        "evidence_strength": 0.3,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "The paper is a brief informal blog-style report on using AI to inspect meeting minutes for defects. It barely touches on LLM evaluation but lacks methodological detail, quantitative evidence, and is not a formal research contribution. Limited relevance to core preference areas and very low rigor.",
-      "topics": [],
-      "evidence": [],
+      "rationale": "日本語でのLLM評価（議事録の欠陥検出）に言及するが、abstractのみで方法論・定量的結果の詳細が不明。評価ベンチマークやAI安全の側面が弱く関連するが、好みのトピックへの重み付き関連性は中程度。独創性はアイデアにあるが、証拠が不十分。",
+      "topics": [
+        "LLM",
+        "日本語LLM",
+        "評価",
+        "AI安全"
+      ],
+      "evidence": [
+        "abstract: 12個の欠陥に対して6個検出（50%）、確信度「高」の2件は的中率100%"
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2180,
-        "completion_tokens": 184,
-        "total_tokens": 2364,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 4
+        "completion_tokens": 271,
+        "total_tokens": 2451,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 388
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -28412,155 +28420,25 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract only, no scientific content. Mentions tool use and CodeInterpreter, but no methodology, evidence, or results. Out of scope as a domain application.",
+      "rationale": "Abstract-only note about LLM tool usage, no research content, no Japanese LLM development or evaluation. Minimal relevance to preferences, lacking rigor and evidence.",
       "topics": [
-        "tool use"
+        "LLM tool use",
+        "CodeInterpreter"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2142,
-        "completion_tokens": 165,
-        "total_tokens": 2307,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 94
+        "completion_tokens": 130,
+        "total_tokens": 2272,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 350
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:36c6272e85f637a4": {
-      "score": 0.425,
-      "components": {
-        "preference_relevance": 0.7,
-        "novelty": 0.3,
-        "rigor": 0.2,
-        "evidence_strength": 0.1,
-        "generalizability": 0.5,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Discusses AI safety, system prompts, and LLM versions across GPT/Claude/Gemini/Grok, aligning with LLM, Japanese LLM, AI safety, and prompting topics, but is an abstract-only media article with no rigorous methodology or empirical evidence.",
-      "topics": [
-        "LLM",
-        "AI safety",
-        "Japanese NLP",
-        "prompting"
-      ],
-      "evidence": [
-        "abstract only; comparison of four companies' designs; no sections or quantitative results"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2153,
-        "completion_tokens": 219,
-        "total_tokens": 2372,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 105
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:cfd9d5e25917bc92": {
-      "score": 0.42000000000000004,
-      "components": {
-        "preference_relevance": 0.8,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.5,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Touches on multi-agent, tool use, and AWS Nova (LLM) but is a marketing blurb with no technical detail. Agents and LLM topics give moderate relevance; rigor, novelty, evidence, and reproducibility are low due to lack of specifics.",
-      "topics": [
-        "agents",
-        "tool use",
-        "LLM"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2116,
-        "completion_tokens": 196,
-        "total_tokens": 2312,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 68
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:96fd8e63f2c5d1df": {
-      "score": 0.22499999999999998,
-      "components": {
-        "preference_relevance": 0.35,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.4,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only industry blog about deploying an AI support agent on AWS Bedrock AgentCore. Touches on agents, hybrid architecture, and enterprise governance, but lacks technical novelty, rigorous evaluation, quantitative evidence, and reproducibility. Relevance is moderate due to agent and deployment topics but overall out of scope for core LLM research.",
-      "topics": [
-        "AI agent",
-        "Amazon Bedrock AgentCore",
-        "support operations",
-        "hybrid architecture"
-      ],
-      "evidence": [
-        "{'quote': 'deployed an AI support agentic solution on Amazon Bedrock AgentCore', 'location': 'abstract'}"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2139,
-        "completion_tokens": 196,
-        "total_tokens": 2335,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 91
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:c47dc2d656e742ba": {
-      "score": 0.385,
-      "components": {
-        "preference_relevance": 0.6,
-        "novelty": 0.4,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.5,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "The paper describes an MCP bridge for a cloud-hosted AI agent to access local MCP tools, relevant to agents and tool use. However, it is an abstract-only technical blog with no experimental details, baselines, or quantitative results, resulting in low rigor and evidence strength. The approach of tunneling signed messages over WebSocket via a browser extension and native messaging is somewhat novel but not deeply validated. Generalizability is moderate as it is specific to Amazon Bedrock AgentCore and Chrome extension architecture. Reproducibility is low without code or detailed protocols.",
-      "topics": [
-        "agents",
-        "tool use",
-        "MCP",
-        "AI agent",
-        "WebSocket"
-      ],
-      "evidence": [
-        "Title: How we built an MCP bridge to give our AgentCore-hosted AI agent access to local MCP tools",
-        "Abstract: 'Learn how to build a secure MCP bridge that lets a cloud-hosted agent call local MCP servers by tunneling signed messages over the existing WebSocket connection through a browser extension and Chrome native messaging'"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2140,
-        "completion_tokens": 286,
-        "total_tokens": 2426,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 92
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:28ee8d79a1b70ef4": {
       "score": 0.0825,
       "components": {
         "preference_relevance": 0.1,
@@ -28571,170 +28449,301 @@
         "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only product announcement with little technical detail, no evaluation, and limited novelty beyond integration; only tangential relevance to agent/tool use and LLM workflows.",
+      "rationale": "Abstract only; no verifiable methodology, results, or details. Topic is AI safety/prompt engineering but vague and unreviewable. Falls below relevance threshold for applicable topics.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2153,
+        "completion_tokens": 168,
+        "total_tokens": 2321,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 361
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:cfd9d5e25917bc92": {
+      "score": 0.36500000000000005,
+      "components": {
+        "preference_relevance": 0.8,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.3,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only case study with strong preference relevance for multi-agent, tool use, and Amazon Nova/guardrails, but no methodological detail, results, or baselines; treats as domain application with low novelty and no evidence.",
       "topics": [
-        "Agents & Tool Use"
+        "agent"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
+        "prompt_tokens": 2116,
+        "completion_tokens": 136,
+        "total_tokens": 2252,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 324
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:96fd8e63f2c5d1df": {
+      "score": 0.067,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.12,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Blog post with abstract only; no technical details or evaluation. Mentions agents and AWS but not LLM-specific methodology. Lacks evidence and rigor; minimal relevance to core preferences.",
+      "topics": [
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Abstract mentions 'agentic solution' and 'Amazon Bedrock AgentCore'"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2139,
+        "completion_tokens": 152,
+        "total_tokens": 2291,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 347
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c47dc2d656e742ba": {
+      "score": 0.16999999999999998,
+      "components": {
+        "preference_relevance": 0.15,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses AI agents and tool use, which are preferred topics, but it is a technical blog with limited detail and no quantitative evaluation. The score is low due to lack of experimental rigor and evidence.",
+      "topics": [
+        "AI agent",
+        "MCP",
+        "tool use",
+        "cloud-hosted agent",
+        "browser extension"
+      ],
+      "evidence": [
+        "Abstract: mentions AI agents on Amazon Bedrock AgentCore run in the cloud, secure MCP bridge, tunneling signed messages over existing WebSocket connection."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2140,
+        "completion_tokens": 226,
+        "total_tokens": 2366,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 348
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:28ee8d79a1b70ef4": {
+      "score": 0.135,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Blog-style announcement about integrating Amazon Bedrock AgentCore with n8n. Mentions agents and tool use but lacks research content, technical detail, or evaluation. No methodology, experiments, or results. Primarily a product update, not scholarly work. Out of scope due to absence of language model methodology research.",
+      "topics": [
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Abstract mentions agent step, persistent memory, tools, code execution, VPC isolation"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
         "prompt_tokens": 2129,
-        "completion_tokens": 131,
-        "total_tokens": 2260,
-        "prompt_cache_hit_tokens": 2048,
-        "prompt_cache_miss_tokens": 81
+        "completion_tokens": 178,
+        "total_tokens": 2307,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 337
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:595d65204a2dccef": {
-      "score": 0.33999999999999997,
+      "score": 0.26999999999999996,
       "components": {
-        "preference_relevance": 0.6,
-        "novelty": 0.1,
-        "rigor": 0.1,
+        "preference_relevance": 0.35,
+        "novelty": 0.3,
+        "rigor": 0.2,
         "evidence_strength": 0.1,
-        "generalizability": 0.5,
-        "reproducibility": 0.1
+        "generalizability": 0.3,
+        "reproducibility": 0.2
       },
       "confidence": 1.0,
-      "rationale": "Relevant to LLM inference parameters but not research novelty; lacks detailed methods, baselines, or empirical evidence; mostly introductory guide.",
+      "rationale": "This is a Japanese-language introductory blog-style article about LLM sampling parameters (Temperature, Top-K, Top-P). It directly covers LLM inference parameters, which are relevant but not deeply technical. It has no reported experiments, baselines, or quantitative results; it is a tutorial explanation. Scoring: preference_relevance moderate (LLM and Japanese), low rigor/evidence due to lack of evaluation. Overall score reflects the introductory nature and limited research contribution.",
       "topics": [
-        "Large Language Models",
-        "Inference & Serving"
+        "LLM",
+        "Japanese LLM",
+        "sampling parameters",
+        "inference",
+        "Temperature",
+        "Top-K",
+        "Top-P"
       ],
-      "evidence": [],
+      "evidence": [
+        "The content is an abstract only, no methods or results are described."
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2245,
-        "completion_tokens": 169,
-        "total_tokens": 2414,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 69
+        "completion_tokens": 220,
+        "total_tokens": 2465,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 453
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:08e03642e6c82ee8": {
-      "score": 0.085,
+      "score": 0.05,
       "components": {
         "preference_relevance": 0.05,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.1,
-        "reproducibility": 0.2
+        "novelty": 0.05,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.05,
+        "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "This is a commit log for adding an API-based model to a reference list, with no research content, methodology, or results. It mentions a model name but lacks any technical substance. Out of scope for AI/ML research curation.",
+      "rationale": "This is a changelog entry for adding a model to a repository, not a research paper. It lacks any scientific content, methods, or results. It mentions API models and a reference paper but provides no technical details or evaluation. All components are near zero, and the score is minimal due to zero relevance to the research preferences, especially considering it is abstract-only and purely administrative.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2271,
-        "completion_tokens": 140,
-        "total_tokens": 2411,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 95
+        "completion_tokens": 170,
+        "total_tokens": 2441,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 479
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:16ce178f9b3200aa": {
-      "score": 0.1345,
+      "score": 0.38999999999999996,
       "components": {
-        "preference_relevance": 0.08,
+        "preference_relevance": 0.7,
         "novelty": 0.2,
         "rigor": 0.1,
-        "evidence_strength": 0.05,
-        "generalizability": 0.3,
-        "reproducibility": 0.4
+        "evidence_strength": 0.0,
+        "generalizability": 0.4,
+        "reproducibility": 0.5
       },
       "confidence": 1.0,
-      "rationale": "Paper focuses on RAG quality gate CI with Go OSS, relates to RAG and LLM upkeep but lacks research depth. Abstract only, no methodological detail, quantification, or scientific evidence. Novelty limited as applied engineering note. Preference relevance moderately low due to RAG but not core LLM/NLP research. Reproducibility hinted via mock server but unverified. Evidence strength minimal from abstract. Generalizability moderate for CI practices yet scope narrow. Score low overall due to lack of rigor and limited relevance to core AI topics.",
+      "rationale": "Addresses RAG and LLM quality, relevant to Japanese LLM/NLP, but is a short blog-style article with no rigorous evaluation, limited novelty, and minimal evidence.",
       "topics": [
         "RAG",
-        "LLM",
+        "Japanese LLM",
+        "Evaluation",
         "CI"
       ],
       "evidence": [
-        "Abstract only: introduces raggate for RAG quality gate, mentions LLM updates breaking answers but lacks specifics"
+        "Content status: abstract_only",
+        "Title",
+        "Abstract"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2277,
-        "completion_tokens": 231,
-        "total_tokens": 2508,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 101
+        "completion_tokens": 191,
+        "total_tokens": 2468,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 485
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:84a5d489c55bd370": {
-      "score": 0.125,
+      "score": 0.23,
       "components": {
-        "preference_relevance": 0.1,
-        "novelty": 0.1,
+        "preference_relevance": 0.25,
+        "novelty": 0.2,
         "rigor": 0.2,
-        "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.1
+        "evidence_strength": 0.2,
+        "generalizability": 0.3,
+        "reproducibility": 0.2
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only blog post about an LLM summarization issue; lacks methodology, quantitative results, or generalizable research contributions. Topic touches LLM and prompting but is anecdotal. Pure application with minimal substantive evidence; very low relevance to broader research preferences.",
+      "rationale": "Paper is an informal Japanese blog post about LLM summarization hallucination. It lacks methodology, results, and reproducibility. Some relevance to LLM and Japanese NLP, but evidence is anecdotal. Low scores across the board.",
       "topics": [
-        "LLM",
-        "summarization",
-        "prompting"
+        "Large Language Models",
+        "Japanese LLM & NLP"
       ],
       "evidence": [
-        "Abstract states issue with LLM summaries; no sections or quantitative details"
+        "ABSTRACT_ONLY: describes an incident where LLM-generated summaries were fabricated, but no formal evaluation or methodology is presented.",
+        "No quantitative results, baselines, or ablations are provided in the abstract."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2249,
-        "completion_tokens": 167,
-        "total_tokens": 2416,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 73
+        "completion_tokens": 234,
+        "total_tokens": 2483,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 457
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:8851596adccca151": {
-      "score": 0.335,
+      "score": 0.255,
       "components": {
-        "preference_relevance": 0.5,
-        "novelty": 0.4,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.4,
+        "preference_relevance": 0.35,
+        "novelty": 0.2,
+        "rigor": 0.2,
+        "evidence_strength": 0.2,
+        "generalizability": 0.2,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only practitioner report on AI agent workflow; relevant to agents and task planning but lacks rigorous evaluation, baselines, or quantitative results. Novelty limited to anecdotal insight.",
+      "rationale": "Workflow cautionary tale with AI agents, but only abstract; lacks empirical rigor, baselines, and quantitative detail. Japanese LLM/agent relevance is moderate.",
       "topics": [
-        "agents",
-        "agentic",
-        "task planning",
-        "test-time",
-        "AI agent"
+        "AI agent",
+        "workflow automation",
+        "agent productization",
+        "business workflow"
       ],
-      "evidence": [],
+      "evidence": [
+        "Title and abstract mention using AI agents for instructions and execution; content mentions 'マルチセッション AI 運用', '発射前実測', '着手前に再実測する文化'."
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2284,
-        "completion_tokens": 183,
-        "total_tokens": 2467,
-        "prompt_cache_hit_tokens": 2176,
-        "prompt_cache_miss_tokens": 108
+        "completion_tokens": 223,
+        "total_tokens": 2507,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 492
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -165795,31 +165804,30 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:58d392234605f577": {
-      "score": 0.14,
+      "score": 0.095,
       "components": {
-        "preference_relevance": 0.2,
+        "preference_relevance": 0.1,
         "novelty": 0.1,
         "rigor": 0.1,
         "evidence_strength": 0.1,
         "generalizability": 0.1,
-        "reproducibility": 0.1
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only blog-style Japanese text on RAG and vector search; relevant to Japanese LLM, RAG, but limited detail, no methods or results, anecdotal. Not a rigorous research paper.",
+      "rationale": "Abstract-only informal blog-style note on RAG/vector search for SQL-aware readers; no methodology, experiments, or results. Out of scope for LLM research and lacks rigorous content.",
       "topics": [
-        "Japanese LLM",
         "RAG",
-        "ベクトル検索"
+        "vector search"
       ],
       "evidence": [
-        "{'section': 'abstract', 'statement': 'Only abstract available; content is informal study notes, no technical methodology or evaluation.'}"
+        "Title and abstract only; no sections or quantitative details available."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2148,
-        "completion_tokens": 166,
-        "total_tokens": 2314,
+        "completion_tokens": 146,
+        "total_tokens": 2294,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 356
       },
@@ -165827,6 +165835,37 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:67835b6fd05bd9f2": {
+      "score": 0.115,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "A corporate blog snippet about ChatGPT Work, lacking any technical content, methodology, or data. It is not a research paper and offers no evidence. Pure domain application with no language methodology, thus severely out of scope.",
+      "topics": [
+        "large language model",
+        "agent"
+      ],
+      "evidence": [
+        "Abstract only: mentions 'ChatGPT Work' and '成果物まで仕上げるAI' but no technical details or evaluation."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2141,
+        "completion_tokens": 169,
+        "total_tokens": 2310,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 349
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:45936029c4428c51": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -165837,44 +165876,17 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Not a research paper; a blog snippet with no technical content, only marketing text. Out of scope for AI/ML research evaluation.",
-      "topics": [],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2141,
-        "completion_tokens": 120,
-        "total_tokens": 2261,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 349
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:45936029c4428c51": {
-      "score": 0.10500000000000001,
-      "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.1,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Blog-style announcement of a new standard combining MCP and Agent Skills. Only abstract available, no methodology or evidence; related to agents/tool use and prompting but not an LLM research paper. Very low rigor and reproducibility, limited novelty and generalizability.",
+      "rationale": "Abstract-only blog-like note on a standards announcement; no technical content, experiments, or evidence. Mentions MCP and agent skills but lacks methodology or validation. Out of scope for ML research evaluation.",
       "topics": [
-        "Agents & Tool Use",
-        "Prompting & In-Context Learning"
+        "agents"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2130,
-        "completion_tokens": 156,
-        "total_tokens": 2286,
+        "completion_tokens": 132,
+        "total_tokens": 2262,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 338
       },
@@ -165882,31 +165894,29 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:a1dd87846da220e7": {
-      "score": 0.235,
+      "score": 0.23,
       "components": {
-        "preference_relevance": 0.35,
-        "novelty": 0.2,
+        "preference_relevance": 0.2,
+        "novelty": 0.4,
         "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
+        "generalizability": 0.5,
+        "reproducibility": 0.2
       },
       "confidence": 1.0,
-      "rationale": "Paper is an untitled abstract-only draft sharing simulator ideas and hypotheses. It mentions multi-agent LLM meetings but lacks experimental results, so evidence strength is minimal. Relevance to LLM agents is moderate, but no Japanese-specific or novel contribution verified. Rigor and reproducibility are low due to absence of methods/details.",
+      "rationale": "Abstract-only think piece on multi-agent LLM conference simulations with gender/sex-based reproductive cost differences. Relevance to LLM agents is indirect and no results reported. Low rigor and evidence due to lack of experiments.",
       "topics": [
         "LLM",
         "multi-agent",
         "simulation"
       ],
-      "evidence": [
-        "Abstract states simulator concept for multi-agent LLM meetings, no experimental results or detailed methodology."
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2158,
-        "completion_tokens": 221,
-        "total_tokens": 2379,
+        "completion_tokens": 182,
+        "total_tokens": 2340,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 366
       },
@@ -165914,31 +165924,28 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:1f1d0ff6d4d3522d": {
-      "score": 0.39999999999999997,
+      "score": 0.08000000000000002,
       "components": {
-        "preference_relevance": 0.7,
-        "novelty": 0.3,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.4,
-        "reproducibility": 0.1
+        "preference_relevance": 0.2,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Focused on agent tool use and prompt caching in LLM, matching agent and efficiency preferences with 1.5x weight. Content is a short blog-style insight lacking methodology, empirical data, or reproducibility; novelty moderate as a practical tip. Generalizable to similar LLM agent contexts.",
+      "rationale": "Focuses on Claude prompt caching and agent tool modification, but is an abstract-only blog-style snippet with no methodology, experiments, or results. Mentions agents and cost, but lacks technical depth and evidence. Pure domain application without language methodology, so capped at 0.2 for relevance; overall score low due to no rigor/evidence.",
       "topics": [
-        "Agents & Tool Use",
-        "Scaling & Efficiency"
+        "agents",
+        "prompt caching"
       ],
-      "evidence": [
-        "Title indicates tool addition and prompt cache behavior",
-        "Abstract describes cache invalidation and cost impact"
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2178,
-        "completion_tokens": 231,
-        "total_tokens": 2409,
+        "completion_tokens": 169,
+        "total_tokens": 2347,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 386
       },
@@ -165946,25 +165953,25 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:71d3eae073c65ea5": {
-      "score": 0.060000000000000005,
+      "score": 0.0,
       "components": {
-        "preference_relevance": 0.05,
-        "novelty": 0.1,
-        "rigor": 0.05,
-        "evidence_strength": 0.05,
-        "generalizability": 0.1,
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract only; title mentions AI approvals but content is in Japanese and about usage behavior of Claude Code permission prompts, lacking technical depth. No methodology, quantitative details, or relation to core AI/ML research areas. Out of scope for relevant topics; minimal relevance and evidence.",
+      "rationale": "Abstract only, no verifiable research content. Mentions Claude Code (related to LLM agents but no methodology or results presented).",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2160,
-        "completion_tokens": 144,
-        "total_tokens": 2304,
+        "completion_tokens": 118,
+        "total_tokens": 2278,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 368
       },
@@ -165982,15 +165989,15 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "This is a non-technical career advice article with no research methodology, experiments, or results. It discusses AI vs. human differences in a general context, but is a pure opinion piece without technical content.",
+      "rationale": "Abstract-only blog-style essay on AI vs human differences; no technical content, methodology, or research contributions; out of scope for AI/ML research evaluation.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2146,
-        "completion_tokens": 129,
-        "total_tokens": 2275,
+        "completion_tokens": 122,
+        "total_tokens": 2268,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 354
       },
@@ -165998,6 +166005,36 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:fa68af73af7b4cac": {
+      "score": 0.14,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only technical blog on Claude Code's Bash sandbox. Touches on agents/tool use (sandbox, dangerouslyDisableSandbox) but lacks research content, novel methodology, quantitative results, or reproducibility. Low relevance to LLM/NLP research.",
+      "topics": [
+        "agent",
+        "tool use",
+        "sandbox"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2160,
+        "completion_tokens": 192,
+        "total_tokens": 2352,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 368
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:1d2c4e2e401028d0": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -166008,47 +166045,20 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract only, minimal content, no research methodology or results.",
-      "topics": [],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2160,
-        "completion_tokens": 105,
-        "total_tokens": 2265,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 368
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:1d2c4e2e401028d0": {
-      "score": 0.235,
-      "components": {
-        "preference_relevance": 0.35,
-        "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only vendor description of temporal policies in Bedrock AgentCore. Relevant to AI agents, workflow, safety, and business workflow, but no technical details or evaluation. Out of scope for pure agent productization familiarity, but lacks rigor and evidence. Score limited by minimal content and abstract-only status.",
+      "rationale": "Abstract-only promotional text about a proprietary AWS feature, lacking technical details, evaluation, or methodology. Mentions agents but is not a research paper. No evidence or reproducible content. Out of scope due to lack of substantive AI research and complete absence of specified preferences beyond tangential agent mentions.",
       "topics": [
-        "AI agents",
-        "temporal policies",
-        "authorization",
-        "workflow sequencing",
-        "human approval"
+        "agent",
+        "temporal policies"
       ],
-      "evidence": [],
+      "evidence": [
+        "Abstract mentions 'stateful rules' and 'workflow sequencing' but provides no technical or evaluative detail."
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2113,
-        "completion_tokens": 171,
-        "total_tokens": 2284,
+        "completion_tokens": 179,
+        "total_tokens": 2292,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 321
       },
@@ -166066,15 +166076,15 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The paper is an abstract-only technical documentation snippet about configuring rate limits on a gateway, lacking research methodology, empirical evaluation, and relevance to AI/ML research preferences.",
+      "rationale": "The paper is an abstract-only product documentation snippet about configuring rate limits on a gateway. It lacks any research contribution, methodology, or evaluation. It is purely a technical how-to for a proprietary service and does not address any preference-relevant topics such as LLM, Japanese NLP, or AI safety. The content is out of scope for an AI/ML research paper and receives minimal scores.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2113,
-        "completion_tokens": 167,
-        "total_tokens": 2280,
+        "completion_tokens": 212,
+        "total_tokens": 2325,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 321
       },
@@ -166082,6 +166092,189 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:c6c95cd53d83389f": {
+      "score": 0.245,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.4,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only product announcement on Amazon Bedrock AgentCore; touches agents/tool use and local LLM but lacks technical detail, evaluation, or evidence. Pure domain product update, not a research contribution. Minimal compliance with preference weights.",
+      "topics": [
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Abstract only: 'temporal policies powered by Dogwood' and 'rate limiting on the gateway'"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2121,
+        "completion_tokens": 163,
+        "total_tokens": 2284,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 329
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:5711b258fc80acff": {
+      "score": 0.09000000000000001,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only industry blog on routing Codex metrics to CloudWatch via OpenTelemetry. Tangential to agents but lacks methodology, results, or evaluation; not research. Pure engineering deployment with no AI/ML contribution.",
+      "topics": [
+        "agent",
+        "observability",
+        "OpenTelemetry",
+        "Amazon CloudWatch"
+      ],
+      "evidence": [
+        "{'location': 'abstract', 'statement': 'Routes Codex OpenTelemetry metrics to Amazon CloudWatch for visibility by user, team, cost center; no technical detail.'}"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2120,
+        "completion_tokens": 179,
+        "total_tokens": 2299,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 328
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:4a4c1eeb25d2f345": {
+      "score": 0.095,
+      "components": {
+        "preference_relevance": 0.15,
+        "novelty": 0.05,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only application note on AWS Bedrock region pinning for Claude Code; no methodology, results, or technical detail. Domain application of LLM without language methodology, limited relevance to core AI/ML research preferences.",
+      "topics": [
+        "Claude"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2133,
+        "completion_tokens": 141,
+        "total_tokens": 2274,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 341
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:e3f3e9c0e9187feb": {
+      "score": 0.195,
+      "components": {
+        "preference_relevance": 0.25,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract describes using coding agents with Agent Skills for a specialized Amazon Bedrock workflow (Automated Reasoning policies). It mentions coding agent, agent skills, and workflow automation, aligning somewhat with agents and code, but it is a product tutorial with no technical details, novelty, or evidence. Purely a domain application with minimal research contribution.",
+      "topics": [
+        "agents",
+        "coding"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2118,
+        "completion_tokens": 165,
+        "total_tokens": 2283,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 326
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b5cfbf1942090710": {
+      "score": 0.425,
+      "components": {
+        "preference_relevance": 0.7,
+        "novelty": 0.3,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.5,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a case study on building an agentic app deployer with Amazon Bedrock and AWS Lambda, which is highly relevant to agents, tool use, and LLMs, but it is an abstract-only promotional description with minimal technical detail. Novelty is limited as it describes a standard use of LLMs for code generation; rigor, evidence, and reproducibility are lacking due to absence of methodology, baselines, and quantitative results. Generalizability is moderate as the approach could apply to various business workflows.",
+      "topics": [
+        "agents",
+        "tool use",
+        "LLM",
+        "code generation",
+        "business workflow",
+        "cloud"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2129,
+        "completion_tokens": 250,
+        "total_tokens": 2379,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 337
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6c25b8aeb3057cb6": {
+      "score": 0.09000000000000001,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only SDK integration note; minimal overlap with core LLM/NLP research criteria, no methodology or results, though touches on LLM deployment and SageMaker serving.",
+      "topics": [
+        "LLM",
+        "inference",
+        "serving"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2104,
+        "completion_tokens": 136,
+        "total_tokens": 2240,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 312
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:617f114294806216": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -166092,199 +166285,15 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract only, no technical detail or evaluation. Mentions agents but likely a product announcement, not research. No evidence of methodology, results, or novelty.",
+      "rationale": "Abstract-only news-style article discussing productivity claims, no research methodology or results. Out of scope for AI/ML research evaluation.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
-        "prompt_tokens": 2121,
-        "completion_tokens": 160,
-        "total_tokens": 2281,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 329
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:5711b258fc80acff": {
-      "score": 0.19999999999999998,
-      "components": {
-        "preference_relevance": 0.3,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "The paper is a short blog post about monitoring Codex usage via OpenTelemetry and CloudWatch. It mentions Codex, a coding agent, which touches agents and code preferences, but lacks technical depth, evaluation, or novelty. As an application deployment note, it is out of scope for core LLM research, and the abstract provides minimal evidence.",
-      "topics": [
-        "Agents & Tool Use",
-        "Code & Programming",
-        "Inference & Serving"
-      ],
-      "evidence": [
-        "Title: 'Build visibility for Codex on Amazon Bedrock with OpenTelemetry and Amazon CloudWatch'",
-        "Abstract: mentions routing Codex OpenTelemetry metrics to CloudWatch for visibility into adoption, consumption, and reliability"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2120,
-        "completion_tokens": 269,
-        "total_tokens": 2389,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 328
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:4a4c1eeb25d2f345": {
-      "score": 0.17500000000000002,
-      "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.1,
-        "rigor": 0.2,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Applied cloud deployment guide for Claude Code (LLM) with strong preference relevance (model/agent/tool use), but abstract only, no methodological novelty or rigorous evaluation; scoring limited by lack of technical content.",
-      "topics": [
-        "Large Language Models",
-        "Agents & Tool Use",
-        "Inference & Serving"
-      ],
-      "evidence": [
-        "abstract only: no methodology or evaluation details provided"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2133,
-        "completion_tokens": 208,
-        "total_tokens": 2341,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 341
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:e3f3e9c0e9187feb": {
-      "score": 0.13,
-      "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.05,
-        "generalizability": 0.1,
-        "reproducibility": 0.05
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract only, focuses on AWS Bedrock policy lifecycle from coding agents, not on LLM methodology or research contributions. Topics touch agents and code but lack detail and scientific rigor. Unsupported claims, no evidence. Likely out of scope.",
-      "topics": [
-        "Agents & Tool Use",
-        "Code & Programming"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2118,
-        "completion_tokens": 151,
-        "total_tokens": 2269,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 326
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:b5cfbf1942090710": {
-      "score": 0.21999999999999997,
-      "components": {
-        "preference_relevance": 0.35,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Relevance is low but non-zero due to mentions of LLM agentic platform and Amazon Bedrock (LLM-related). The paper is a brief abstract with no methodological detail, results, or reproducibility, so rigor, evidence, and novelty are minimal. It is a domain application and lacks research content.",
-      "topics": [
-        "Agentic platform",
-        "Amazon Bedrock",
-        "AWS Lambda"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2129,
-        "completion_tokens": 202,
-        "total_tokens": 2331,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 337
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:6c25b8aeb3057cb6": {
-      "score": 0.04000000000000001,
-      "components": {
-        "preference_relevance": 0.1,
-        "novelty": 0.0,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only announcement of SageMaker SDK feature; LLM relevance is incidental, no research contribution, lacks methodology, results, or evidence.",
-      "topics": [
-        "SageMaker",
-        "LLM optimization"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2104,
-        "completion_tokens": 170,
-        "total_tokens": 2274,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 312
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:617f114294806216": {
-      "score": 0.096,
-      "components": {
-        "preference_relevance": 0.14,
-        "novelty": 0.1,
-        "rigor": 0.05,
-        "evidence_strength": 0.05,
-        "generalizability": 0.1,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only essay on LLM productivity gains; marginal relevance to LLM coding but no methodology, neither empirical nor technical. Lacks rigor, evidence, or reproducibility.",
-      "topics": [
-        "Large Language Models",
-        "Code & Programming"
-      ],
-      "evidence": [
-        "Abstract mentions LLM coding productivity and 2026 essay title"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
         "prompt_tokens": 2258,
-        "completion_tokens": 143,
-        "total_tokens": 2401,
+        "completion_tokens": 114,
+        "total_tokens": 2372,
         "prompt_cache_hit_tokens": 1792,
         "prompt_cache_miss_tokens": 466
       },
@@ -166292,89 +166301,83 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:6f2b0ce11adde307": {
-      "score": 0.1,
+      "score": 0.065,
       "components": {
         "preference_relevance": 0.1,
         "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
         "generalizability": 0.1,
-        "reproducibility": 0.1
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "This is an abstract-only blog post about a recording feature in Claude Cowork from a company column. No technical details, methodology, or evidence are provided. It mentions AI agents and workflows but lacks substance and falls outside core language model research scope. Extremely limited content precludes any meaningful assessment of research quality.",
+      "rationale": "The paper is a blog column (abstract only) about a product feature (Claude Cowork skill recording) and not a research paper. It has minimal relevance to the preferred topics (only indirectly related to AI agents), lacks methods, results, or evidence, and is not reproducible.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2158,
-        "completion_tokens": 155,
-        "total_tokens": 2313,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 366
+        "completion_tokens": 190,
+        "total_tokens": 2348,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 110
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:721d052a76057feb": {
-      "score": 0.33,
+      "score": 0.2965,
       "components": {
-        "preference_relevance": 0.55,
+        "preference_relevance": 0.41,
         "novelty": 0.3,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
+        "rigor": 0.2,
+        "evidence_strength": 0.15,
         "generalizability": 0.3,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only text with anecdotal claim about tool calling success varying by serving layer. Relevant to agents/tool use and local LLMs, but lacks methodology, baselines, or quantitative results. Substantial weight on preferences for agents and LLMs, but rigor and evidence are very low due to no details.",
+      "rationale": "Abstract-only paper with limited content. The topic of local LLM agents with tool calling reliability is relevant to Agent & Tool Use and LLM categories, but the abstract lacks technical depth, experimental details, or verifiable evidence. Score limited by low evidence and reproducibility.",
       "topics": [
-        "agent",
-        "tool use",
-        "local LLM"
-      ],
-      "evidence": [
-        "Abstract mentions tool calling success rates 7% vs 83% across serving setups, but no experimental details provided."
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2175,
-        "completion_tokens": 185,
-        "total_tokens": 2360,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 383
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:2a2dcb422dd1168e": {
-      "score": 0.095,
-      "components": {
-        "preference_relevance": 0.1,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.1,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only news digest about GPT-5.6 Sol tuning and free Luna release; no actual research methodology, results, or claims. Minimal relevance to core LLM/agent topics, but not a substantive paper. No evidence of rigor or reproducibility.",
-      "topics": [
-        "LLM",
-        "ChatGPT",
-        "GPT-5"
+        "Agent & Tool Use",
+        "Large Language Models",
+        "Local LLM"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
+        "prompt_tokens": 2175,
+        "completion_tokens": 199,
+        "total_tokens": 2374,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 127
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:2a2dcb422dd1168e": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only news digest with no technical content, no methodology, and pure domain application without language methodology; irrelevant to research priorities.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
         "prompt_tokens": 2172,
-        "completion_tokens": 153,
-        "total_tokens": 2325,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 380
+        "completion_tokens": 118,
+        "total_tokens": 2290,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 124
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -166422,79 +166425,71 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The paper is a news commentary article about Apple's Siri AI announcement and iOS 27. It lacks technical depth, no methodology, no experiments, and no relevance to the listed AI/ML research preferences. It is out of scope as pure product news.",
+      "rationale": "Paper is a news commentary on Apple's Siri AI and iOS 27, with no AI/ML research methodology, no technical details, no experiments, and only an abstract snippet. It is out of scope for the requested topics and fails all rigor and evidence criteria.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2159,
-        "completion_tokens": 180,
-        "total_tokens": 2339,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 367
+        "completion_tokens": 145,
+        "total_tokens": 2304,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 111
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:f04b055ad653c170": {
-      "score": 0.17,
+      "score": 0.0,
       "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.2
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only, blog-style report on a Claude Code handoff hook for context management. Touches on LLM agents and context but lacks substantive research, methodology, or evaluation. Limited relevance due to lack of detail and not a core research paper.",
-      "topics": [
-        "Claude Code",
-        "context management",
-        "automated handoff"
-      ],
-      "evidence": [
-        "{'section': 'abstract', 'content': 'Describes practical issue with long sessions: forgotten constraints, re-reading files, context usage increase.'}"
-      ],
+      "rationale": "Abstract-only blog-style post about a Claude Code hook; no methodology, results, or scientific content. Out of scope for AI/ML research evaluation, relevance below threshold.",
+      "topics": [],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2159,
-        "completion_tokens": 175,
-        "total_tokens": 2334,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 367
+        "completion_tokens": 122,
+        "total_tokens": 2281,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 111
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:884cce6f427204cc": {
-      "score": 0.20500000000000002,
+      "score": 0.0475,
       "components": {
-        "preference_relevance": 0.4,
-        "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.3,
+        "preference_relevance": 0.05,
+        "novelty": 0.05,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.05,
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract mentions agentic architecture, tool access, multi-tenant, and Amazon Bedrock, relevant to agents and tool use. No technical details, methods, or results; only a high-level description. Domain application (healthcare) with no language model methodology, so low score.",
+      "rationale": "Abstract-only vendor post about Cohere Health using Amazon Bedrock AgentCore; mentions agentic architecture and multi-tenant but lacks technical details, methods, or experiments. Pure application, no LLM methodology, out-of-scope. Minimal relevance to stated preferences.",
       "topics": [
-        "Agents & Tool Use"
+        "agents"
       ],
-      "evidence": [
-        "Abstract: mentions 'multi-tenant agentic architecture', 'AgentCore Runtime', 'AgentCore Gateway', 'AgentCore Memory', 'Agent Skills open standard'"
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2129,
-        "completion_tokens": 186,
-        "total_tokens": 2315,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 337
+        "completion_tokens": 142,
+        "total_tokens": 2271,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 81
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -166510,108 +166505,109 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only applied use case of agentic AI for root-cause analysis; practical relevance to agents and NLP, but no technical details, evaluation, or novelty; limited rigor and evidence.",
+      "rationale": "Abstract-only case study of agentic AI pipeline for root-cause analysis. Relevant to agents and evaluation but lacks methodological detail. Novelty low as common pattern. Rigor and evidence minimal with no quantitative comparison or limitations. Generalizability moderate to similar production settings. Reproducibility absent.\n",
       "topics": [
         "Agents & Tool Use",
-        "Natural Language Processing"
+        "Red Teaming & Evaluation"
       ],
-      "evidence": [
-        "Abstract: claims automated root-cause analysis reducing time from 15-30 minutes to under 60 seconds; no methodology, results, or reproducibility details."
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2125,
-        "completion_tokens": 214,
-        "total_tokens": 2339,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 333
+        "completion_tokens": 166,
+        "total_tokens": 2291,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 77
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:1a63e2e0e985a991": {
-      "score": 0.115,
+      "score": 0.155,
       "components": {
         "preference_relevance": 0.0,
-        "novelty": 0.2,
-        "rigor": 0.2,
-        "evidence_strength": 0.2,
+        "novelty": 0.3,
+        "rigor": 0.3,
+        "evidence_strength": 0.3,
         "generalizability": 0.2,
-        "reproducibility": 0.1
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Paper is a domain application (sports analytics) using constraint programming, far outside the LLM/NLP focus. Novelty is limited; no methodological detail or quantitative results in abstract; reproducibility low.",
+      "rationale": "Topic is unrelated to LLMs, Japanese NLP, transformers, reasoning, prompting, RAG, agents, code, NLP, AI safety, alignment, interpretability, red teaming, multimodal, CV, video, speech, scaling, training, data, long context, inference, RL, robotics, GNN, medical, or scientific AI. It is a pure constraint programming application for sports scheduling, out of scope. No language methodology, no details on methods or validation beyond a brief claim. Reproducibility zero due to lack of details.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2111,
-        "completion_tokens": 171,
-        "total_tokens": 2282,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 319
+        "completion_tokens": 204,
+        "total_tokens": 2315,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 63
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:9cfa249993ef6399": {
-      "score": 0.15500000000000003,
+      "score": 0.015,
       "components": {
-        "preference_relevance": 0.2,
+        "preference_relevance": 0.0,
         "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.2,
-        "generalizability": 0.1,
-        "reproducibility": 0.1
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Paper is a brief, informal blog post about token usage in Claude Code, a coding agent. It mentions LLM and agent tool use but lacks methodological rigor, quantitative depth, and scientific contribution. Low novelty and reproducibility; limited generalizability. Domain application with no language methodology, so capped at 0.2.",
+      "rationale": "The paper is a brief anecdotal account of token usage in Claude Code, not a research paper. It lacks scientific methodology, evidence, or analysis. Topic relevance to LLMs is limited to a usage statistic with no substantive language model research content. Completely out of scope for AI/ML research evaluation.",
       "topics": [
-        "Large Language Models",
-        "Agents & Tool Use",
-        "Code & Programming"
+        "LLM usage"
       ],
       "evidence": [
-        "Abstract reports 97% cache_read out of 1.36B tokens in a week of Claude Code usage; no formal methodology or analysis."
+        "Abstract only reports token counts; no methods or baselines"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2255,
-        "completion_tokens": 198,
-        "total_tokens": 2453,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 463
+        "completion_tokens": 168,
+        "total_tokens": 2423,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 79
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:5dd54275e81414b8": {
-      "score": 0.11500000000000002,
+      "score": 0.135,
       "components": {
         "preference_relevance": 0.2,
         "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract only, no verifiable methods or results. Title suggests context engineering, relevant to LLM prompting and long-context, but lacks substance. Must cap at 0.2 due to insufficient content.",
+      "rationale": "Abstract-only content with no technical details; title and snippet mention prompt, context, and long-context LLMs, aligning with preferences on Japanese LLM/NLP, prompting, long context, and agents. However, no concrete methodology, results, or evidence, leading to low rigor and reproducibility. Novelty and generalizability are undetermined.",
       "topics": [
-        "context engineering",
-        "LLM",
-        "long-context"
+        "Japanese LLM & NLP",
+        "Prompting & In-Context Learning",
+        "Long Context & Memory",
+        "RAG & Knowledge",
+        "Agents & Tool Use"
       ],
-      "evidence": [],
+      "evidence": [
+        "Title: PromptからContextへ：長文LLM時代の Context Engineering の極意",
+        "Content: 新連載：MCP・高度RAG・自律エージェントの現場設計論"
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2151,
-        "completion_tokens": 185,
-        "total_tokens": 2336,
+        "completion_tokens": 231,
+        "total_tokens": 2382,
         "prompt_cache_hit_tokens": 2048,
         "prompt_cache_miss_tokens": 103
       },
@@ -166619,160 +166615,102 @@
       "model": "deepseek-v4-flash"
     },
     "fallback:ece119af3eb22b5b": {
-      "score": 0.042,
+      "score": 0.075,
       "components": {
-        "preference_relevance": 0.05,
+        "preference_relevance": 0.0,
         "novelty": 0.1,
-        "rigor": 0.02,
-        "evidence_strength": 0.01,
-        "generalizability": 0.02,
-        "reproducibility": 0.01
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Practitioner blog post about multi-agent Claude Code team; not a research paper, lacks methods, baselines, quantitative results, or reproducibility. Minimal relevance to LLM/agents but no academic rigor.",
+      "rationale": "This document is a narrative blog post describing personal experience with a multi-agent system, lacking rigorous research methodology, quantitative evaluation, and scientific contribution. It mentions agents and Japanese LLM context, but provides only anecdotal logs without technical detail or validation. Relevance to core preferences is minimal; it is not a formal research paper.",
       "topics": [
-        "agents",
-        "multi-agent",
-        "Claude Code"
+        "agents"
       ],
-      "evidence": [],
+      "evidence": [
+        "{'section': 'Abstract', 'quote': \"Claude Code 6体のマルチエージェント「Lady's servants」を5ヶ月運用した記録\"}",
+        "{'section': 'Abstract', 'quote': 'フックも監視デーモンも報告プロトコルもまだ何もなかった'}",
+        "{'section': 'Abstract', 'quote': '手元に残っていた当時のダッシュボードログを、時刻付きでそのままお見せします'}"
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2277,
-        "completion_tokens": 138,
-        "total_tokens": 2415,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 485
+        "completion_tokens": 255,
+        "total_tokens": 2532,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 101
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:c0107a7d0bf138c1": {
-      "score": 0.41,
+      "score": 0.48500000000000004,
       "components": {
-        "preference_relevance": 0.6,
-        "novelty": 0.3,
+        "preference_relevance": 0.8,
+        "novelty": 0.4,
         "rigor": 0.2,
-        "evidence_strength": 0.3,
-        "generalizability": 0.4,
+        "evidence_strength": 0.1,
+        "generalizability": 0.5,
         "reproducibility": 0.2
       },
       "confidence": 1.0,
-      "rationale": "Content is a blog-style practitioner account in Japanese about multi-agent failures. It touches on AI agents and LLM usage, partially matching preferences, but as a non-academic abstract-only description with anecdotal evidence and no systematic methodology, rigor and reproducibility are low. Preference relevance is moderate due to agent and Japanese language focus, but paper is an industry report rather than a research study.",
+      "rationale": "The paper is highly relevant to AI agents and multi-agent systems, discussing real-world deployment failures and token consumption, which aligns with preferences on agents. It provides practical insights but lacks rigorous methodology and detailed evidence from the abstract. The content is mainly anecdotal with limited novelty and generalizability. Given the abstract-only status and minimal supporting details, the score is moderate, reflecting strong topical relevance but weak research substance.",
       "topics": [
+        "agents",
         "multi-agent",
-        "LLM",
-        "agents"
+        "tool use"
       ],
       "evidence": [
-        "Abstract: 75体の並列エージェントで5.25Mトークンを消費し、429と利用枠超過で止まった",
-        "Abstract mentions 失敗5類型と対策をまとめます"
+        "Abstract states: '75体の並列エージェントで5.25Mトークンを溶かした' and mentions failure modes and token usage."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2262,
-        "completion_tokens": 269,
-        "total_tokens": 2531,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 470
+        "completion_tokens": 256,
+        "total_tokens": 2518,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 86
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:cde34f24b1ac34e8": {
-      "score": 0.0,
+      "score": 0.08000000000000002,
       "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.0,
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
         "rigor": 0.0,
         "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
+        "generalizability": 0.1,
+        "reproducibility": 0.3
       },
       "confidence": 1.0,
-      "rationale": "Personal blog-style Mac app description; no formal research methodology or results. Out of scope for rigorous AI/ML research curation.",
-      "topics": [],
-      "evidence": [],
+      "rationale": "The paper describes a simple macOS app that uses an LLM to rewrite selected text. It is a personal tool, not a research contribution. Relevance to LLM topics is minimal, no technical depth, no evaluation, no novelty. Rigor and evidence are absent. Reproducibility is partially possible via public repository, but overall low score.",
+      "topics": [
+        "Large Language Models",
+        "Prompting & In-Context Learning"
+      ],
+      "evidence": [
+        "abstract_only",
+        "No evaluation, no baselines, no quantitative results"
+      ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2258,
-        "completion_tokens": 116,
-        "total_tokens": 2374,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 466
+        "completion_tokens": 230,
+        "total_tokens": 2488,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 82
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:10c9ae608f6f3ebf": {
-      "score": 0.05550000000000001,
-      "components": {
-        "preference_relevance": 0.1,
-        "novelty": 0.05,
-        "rigor": 0.02,
-        "evidence_strength": 0.0,
-        "generalizability": 0.05,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only article on CAD agent DSL vs code generation; no empirical methodology or results. Though agents are preferred, out-of-scope domain application without LLM methodology details, limited to toy discussion. Low rigor, evidence, and reproducibility. Score capped by domain and abstract-only status.",
-      "topics": [
-        "agents",
-        "code generation",
-        "CAD"
-      ],
-      "evidence": [
-        "abstract_only",
-        "Content status: abstract_only",
-        "No methods, baselines, or quantitative results"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2255,
-        "completion_tokens": 176,
-        "total_tokens": 2431,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 463
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:43a36d67315ef046": {
-      "score": 0.19499999999999998,
-      "components": {
-        "preference_relevance": 0.35,
-        "novelty": 0.1,
-        "rigor": 0.05,
-        "evidence_strength": 0.05,
-        "generalizability": 0.2,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "The paper discusses AI coding agents and orchestration, which aligns with agents/tool use and code generation preferences, but the content is abstract only and lacks technical depth. It mentions human judgment and multi-agent coordination but provides no evidence. The core contribution seems to be a conceptual framework rather than a formal research paper. Given the abstract-only status, low rigor and evidence strength, the score is appropriately low. The relevance to Japanese LLM is minimal despite the Japanese language. The reproducibility is low due to lack of details.",
-      "topics": [
-        "AI agents",
-        "coding agents",
-        "multi-agent",
-        "workflow"
-      ],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2186,
-        "completion_tokens": 249,
-        "total_tokens": 2435,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 394
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:b347e8e1f6708933": {
       "score": 0.0,
       "components": {
         "preference_relevance": 0.0,
@@ -166783,50 +166721,117 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Paper is a short note about a GitHub repository's star count and summarizes learning materials; it contains no research claims, methods, results, or novel contributions, and references no LLM-specific technical content despite the title. It is an announcement rather than a research paper, so all aspects are minimal and it falls far outside scope for a rigorous evaluation.",
-      "topics": [],
+      "rationale": "The paper is an abstract-only blog-style discussion comparing DSL vs code generation for CAD agents, with no actual methodology, experiments, or results. It lacks any empirical evidence, formal evaluation, or reproducible content. While it touches on LLM agents, it is speculative and non-research, hence all components are zero.",
+      "topics": [
+        "CAD agents",
+        "DSL",
+        "code generation"
+      ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
+        "prompt_tokens": 2255,
+        "completion_tokens": 166,
+        "total_tokens": 2421,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 79
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:43a36d67315ef046": {
+      "score": 0.23249999999999998,
+      "components": {
+        "preference_relevance": 0.35,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.05,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses an AI agent control plane (LoopX) for managing coding agents, touching on agents, tool orchestration, and workflow automation, which aligns with high-weight agent topics. However, it is abstract-only with no methodology, baselines, or quantitative results, severely limiting rigor and evidence. The title and content suggest an engineering framework, not an academic contribution. Generalizability is moderate but unsubstantiated. Reproducibility is partial due to a GitHub link but no details. Overall low score due to lack of scientific validation.",
+      "topics": [
+        "Agents & Tool Use",
+        "Code & Programming",
+        "Workflow Automation",
+        "Agent Framework"
+      ],
+      "evidence": [
+        "Abstract mentions 'AIコーディングエージェント' and '複数のエージェント' indicating agent coordination and tool use; no quantitative results or methods section available due to abstract-only status."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2186,
+        "completion_tokens": 260,
+        "total_tokens": 2446,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 10
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b347e8e1f6708933": {
+      "score": 0.15000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "A repository announcement with no novel methodology, minimal technical content, and weak evidence. Only tangential relevance to LLM education; no research contribution. Scores low across all rubric components.",
+      "topics": [
+        "LLM",
+        "education"
+      ],
+      "evidence": [
+        "Abstract states 'Short note celebrating... repository passing 100,000 stars'"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
         "prompt_tokens": 2083,
-        "completion_tokens": 159,
-        "total_tokens": 2242,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 291
+        "completion_tokens": 146,
+        "total_tokens": 2229,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 35
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:1deed25c695971ae": {
-      "score": 0.173,
+      "score": 0.195,
       "components": {
-        "preference_relevance": 0.12,
-        "novelty": 0.25,
-        "rigor": 0.2,
-        "evidence_strength": 0.15,
-        "generalizability": 0.3,
+        "preference_relevance": 0.3,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "The paper is a blog-style report on implementing a knowledge graph for an AI novel-writing engine using a commercial AI Engine (not a language model research contribution). It touches on RAG/tool use but lacks methodological detail, quantitative results, or structured evaluation. Only abstract available; minimal evidence of scientific rigor or reproducibility.",
+      "rationale": "The paper describes adding a knowledge graph to an AI novel writing engine, touching on RAG/knowledge and agents but lacks technical detail, empirical evaluation, and is a domain-specific applied work. Only abstract provided with no quantitative results or methodology depth. Relevance to LLM/NLP is partial due to mention of knowledge graph and AI engine, but the focus is creative writing application. Novelty is limited as knowledge graphs for writing are known. Rigor and evidence are minimal. Generalizability low. Reproducibility low due to lack of details.",
       "topics": [
-        "RAG",
-        "tool use",
-        "knowledge graph",
-        "NLP"
+        "RAG & Knowledge",
+        "Agents & Tool Use",
+        "Natural Language Processing"
       ],
       "evidence": [
-        "Abstract mentions implementing knowledge graph as a tool for AI novel writing engine"
+        "TL;DR describes implementation of knowledge graph as a tool for AI novel writing engine, but no section-level evidence available due to abstract only."
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2199,
-        "completion_tokens": 177,
-        "total_tokens": 2376,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 407
+        "completion_tokens": 241,
+        "total_tokens": 2440,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 23
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
@@ -166842,116 +166847,25 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Abstract-only blog excerpt on AI cash flow forecasting; no technical or research content, completely out of scope for ML research. All components zero; score 0.0.",
+      "rationale": "Abstract-only content is a corporate blog snippet about using AI for cash flow forecasting, with no research methodology, technical details, or relevance to core NLP/LLM topics. It is a domain application with minimal connection to the preferred topics, thus assigned minimum score.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2146,
-        "completion_tokens": 125,
-        "total_tokens": 2271,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 354
+        "completion_tokens": 143,
+        "total_tokens": 2289,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 98
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:a75e93d8931d7b28": {
-      "score": 0.065,
+      "score": 0.04000000000000001,
       "components": {
         "preference_relevance": 0.1,
-        "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.1,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "Abstract-only promotional blog about Kimi3, lacks technical depth, no methodology or research content. Mentions AI/LLM but superficial and untrusted. Pure commercial comparison, not a research paper.",
-      "topics": [
-        "LLM"
-      ],
-      "evidence": [
-        "Content status: abstract_only",
-        "Title suggests product comparison"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2150,
-        "completion_tokens": 146,
-        "total_tokens": 2296,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 358
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:c044f514bad6e144": {
-      "score": 0.415,
-      "components": {
-        "preference_relevance": 0.7,
-        "novelty": 0.3,
-        "rigor": 0.2,
-        "evidence_strength": 0.1,
-        "generalizability": 0.4,
-        "reproducibility": 0.1
-      },
-      "confidence": 1.0,
-      "rationale": "Focuses on using LLMs (likely local) to assist ISMS compliance assessment, touching on LLM application, business workflow, and local LLM. However, the abstract is minimal and lacks details on methodology, results, and formal evaluation, thus low evidence and rigor. The novelty is incremental (applying LLM to a standard assessment task). Generalizability is moderate due to domain-specific nature.",
-      "topics": [
-        "local LLM",
-        "business workflow",
-        "structured output",
-        "evaluation",
-        "generic LLM"
-      ],
-      "evidence": [
-        "abstract: mentions local LLM and ISMS assessment; no quantitative results"
-      ],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2179,
-        "completion_tokens": 244,
-        "total_tokens": 2423,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 387
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:df2ce9e7d90535a2": {
-      "score": 0.015,
-      "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.1,
-        "rigor": 0.0,
-        "evidence_strength": 0.0,
-        "generalizability": 0.0,
-        "reproducibility": 0.0
-      },
-      "confidence": 1.0,
-      "rationale": "News article about Google Earth AI image generation withdrawal. No LLM, NLP, transformer, or any preference topic. Lacks methodology, evidence, and research quality. Pure domain application news with no technical content.",
-      "topics": [],
-      "evidence": [],
-      "fulltext_status": "abstract_only",
-      "fulltext_sha256": "",
-      "token_usage": {
-        "prompt_tokens": 2148,
-        "completion_tokens": 133,
-        "total_tokens": 2281,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 356
-      },
-      "prompt_version": "sha256:2bf0691ed94bd38d",
-      "model": "deepseek-v4-flash"
-    },
-    "fallback:54cbfc134566934a": {
-      "score": 0.08000000000000002,
-      "components": {
-        "preference_relevance": 0.2,
         "novelty": 0.0,
         "rigor": 0.0,
         "evidence_strength": 0.0,
@@ -166959,239 +166873,324 @@
         "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "The paper appears to be a blog post in Japanese about AI agent safety, discussing how agents may comply with dangerous requests that chatbots decline. It hints at safety and agents, but the abstract-only content lacks concrete technical details, methods, or results. Thus, relevance is minimal and rigor/evidence are nonexistent.",
+      "rationale": "This is a promotional blog snippet about a Chinese AI product 'Kimi3' mentioning Claude. It is not a research paper. The content is abstract-only, lacks methodological details, baselines, results, and evidence. No technical contributions. The abstract has partial topical relevance to LLMs and Japanese text, but the score is minimized due to lack of scholarly content and unsupported claims.",
       "topics": [
-        "agents",
-        "AI safety"
+        "LLM"
       ],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
+        "prompt_tokens": 2150,
+        "completion_tokens": 211,
+        "total_tokens": 2361,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 102
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c044f514bad6e144": {
+      "score": 0.15000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only. Mentions local LLM for ISMS audit support, but no language model methodology details. Pure domain application (ISMS) outside core NLP/LLM methods. Lacks details on architecture, training, evaluation, or results. Limited evidence.",
+      "topics": [
+        "local LLM",
+        "ISMS",
+        "audit"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2179,
+        "completion_tokens": 191,
+        "total_tokens": 2370,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 3
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:df2ce9e7d90535a2": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only news article on Google Earth AI image generation withdrawal; no LLM/NLP methodology, no research content, out of scope for AI/ML research criteria.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2148,
+        "completion_tokens": 127,
+        "total_tokens": 2275,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 100
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:54cbfc134566934a": {
+      "score": 0.33999999999999997,
+      "components": {
+        "preference_relevance": 0.6,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper addresses AI agent safety, showing that agents are more likely to comply with dangerous tasks than chatbots, and that the way functionality is documented impacts safety. This relates to AI safety, agents, and jailbreaking/prompt injection. However, it is only an abstract with limited technical detail, so rigor, evidence, and reproducibility are low. The topic is relevant to AI agents and safety, but the abstract does not provide enough substance for high scores.",
+      "topics": [
+        "AI Safety",
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Abstract: reports that AI agents may comply with dangerous requests despite chatbot refusal",
+        "Abstract: claims safety was reduced by the formatting of capability documentation",
+        "Abstract: mentions a method to triple refusal rate without additional training"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
         "prompt_tokens": 2356,
-        "completion_tokens": 199,
-        "total_tokens": 2555,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 564
+        "completion_tokens": 277,
+        "total_tokens": 2633,
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 52
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:de0fb623603437c4": {
-      "score": 0.17500000000000002,
+      "score": 0.0635,
       "components": {
-        "preference_relevance": 0.2,
-        "novelty": 0.1,
-        "rigor": 0.1,
-        "evidence_strength": 0.2,
-        "generalizability": 0.3,
-        "reproducibility": 0.1
+        "preference_relevance": 0.12,
+        "novelty": 0.05,
+        "rigor": 0.02,
+        "evidence_strength": 0.0,
+        "generalizability": 0.05,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Tutorial-style explanation of LLM quantization; lacks original research, quantitative results, and rigorous methodology. The topic of quantization touches efficiency but is not a research contribution. Abstract-only content limits evidence. Relevance is low due to no Japanese LLM-specific or core preference focus beyond general LLM context. Score limited by rubric constraints for non-research content.",
+      "rationale": "Technical blog-style introduction to LLM quantization, no formal research or experimental content. Relevant to LLM and efficiency preferences but lacks novelty, rigor, and evidence. Not reproducible. Falls within low relevance for core preferred topics; primarily a tutorial/explainer, not a research paper.",
       "topics": [
         "quantization",
+        "efficiency",
         "LLM"
       ],
       "evidence": [
-        "Abstract mentions quantization for LLMs, but no specific section for methods/results."
+        "1. はじめに（量子化の数式が意味不明すぎる問題）",
+        "LLMを軽量化して、スマホや普通のパソコンでも動くようにする技術、「量子化（Quantization）」"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2157,
-        "completion_tokens": 184,
-        "total_tokens": 2341,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 365
+        "completion_tokens": 202,
+        "total_tokens": 2359,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 109
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:c1ae731ef5448f74": {
-      "score": 0.215,
+      "score": 0.11000000000000001,
       "components": {
-        "preference_relevance": 0.3,
-        "novelty": 0.2,
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
         "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.3,
+        "generalizability": 0.2,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Paper discusses practical estimation of memory and inference speed for quantized LLMs. Relevant to LLM and efficiency, but abstract-only, lacks rigorous experiments, novel content, and detailed evidence. Low scores for rigor and evidence strength due to missing methodology and results.",
+      "rationale": "The paper is a practical guide for estimating memory and inference speed of quantized LLMs, touching on LLM and quantization tokens. However, it is abstract-only and lacks technical depth, novelty, and evidence. It is a domain application of LLM serving without methodological contribution.",
       "topics": [
-        "LLM",
-        "quantization",
-        "inference",
-        "memory"
+        "Large Language Models",
+        "Inference & Serving",
+        "Scaling & Efficiency"
       ],
       "evidence": [
-        "Content status: abstract_only; no quantitative results or methodology sections available"
+        "abstract only: no formal evaluation or results"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2152,
-        "completion_tokens": 212,
-        "total_tokens": 2364,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 360
+        "completion_tokens": 211,
+        "total_tokens": 2363,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 104
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:c289e2a21497fe00": {
-      "score": 0.29000000000000004,
+      "score": 0.21000000000000002,
       "components": {
-        "preference_relevance": 0.5,
-        "novelty": 0.2,
+        "preference_relevance": 0.2,
+        "novelty": 0.3,
         "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.2
+        "generalizability": 0.4,
+        "reproducibility": 0.3
       },
       "confidence": 1.0,
-      "rationale": "The paper describes an OSS tool combining local VLM and LLM for workplace inspection reports, touching on multimodal and LLM but lacks methodological detail, baselines, quantitative results, and rigorous evaluation; novel but not substantiated.",
+      "rationale": "Abstract only, purely a system description with no quantitative results or methodology details. Mentions local VLM and LLM but is not a research contribution; lacks evidence and rigor. Some relevance to agent/tool use and Japanese LLM, but limited.",
       "topics": [
-        "LLM",
-        "VLM",
-        "local AI",
-        "workplace inspection",
-        "report generation"
+        "Japanese LLM & NLP",
+        "Agents & Tool Use"
       ],
-      "evidence": [
-        "Abstract: only mentions tool purpose and basic architecture; no technical details or experiments."
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2268,
-        "completion_tokens": 168,
-        "total_tokens": 2436,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 476
+        "completion_tokens": 191,
+        "total_tokens": 2459,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 92
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:b515dc0d686a5c20": {
-      "score": 0.10500000000000001,
+      "score": 0.045000000000000005,
       "components": {
-        "preference_relevance": 0.0,
-        "novelty": 0.3,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.2,
-        "reproducibility": 0.2
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
       },
       "confidence": 1.0,
-      "rationale": "Paper is a casual experiment on using AI to generate scrollable HTML slides. It falls under pure application/web design, with no relevance to core AI/ML topics (LLMs, reasoning, prompting, etc.). Content is a prompt snippet and lacks scientific rigor or evidence. At most 0.20 as allowed for pure applications.",
+      "rationale": "Paper is only an abstract about using AI to generate scrollable HTML slides; no methodology, evaluation, or relevance to core AI topics. It mentions AI prompting but lacks technical content, so score is minimal.",
       "topics": [],
       "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2231,
-        "completion_tokens": 196,
-        "total_tokens": 2427,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 439
+        "completion_tokens": 171,
+        "total_tokens": 2402,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 55
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:ae66873c35e13eef": {
-      "score": 0.28500000000000003,
+      "score": 0.19,
       "components": {
-        "preference_relevance": 0.4,
-        "novelty": 0.2,
-        "rigor": 0.2,
-        "evidence_strength": 0.2,
-        "generalizability": 0.3,
+        "preference_relevance": 0.3,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
         "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "Tutorial on building an AI agent with OpenClaw, mentioning LLM (DeepSeek) and agent framework. Relevant to agents and LLM but lacks technical depth, novelty, and evidence; abstract only.",
+      "rationale": "Paper is a tutorial-style account of building an AI agent with OpenClaw and DeepSeek API, but content is abstract only. Relevant to AI agents and LLM API usage, but limited novelty and no rigorous evaluation.",
       "topics": [
-        "agent",
-        "LLM"
+        "AI agent",
+        "OpenClaw",
+        "DeepSeek API"
       ],
-      "evidence": [
-        "Abstract mentions OpenClaw, DeepSeek API, and building an AI assistant agent."
-      ],
+      "evidence": [],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2244,
-        "completion_tokens": 197,
-        "total_tokens": 2441,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 452
+        "completion_tokens": 188,
+        "total_tokens": 2432,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 68
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:b14f36a6aceaed34": {
-      "score": 0.32,
+      "score": 0.205,
       "components": {
-        "preference_relevance": 0.4,
-        "novelty": 0.5,
-        "rigor": 0.2,
+        "preference_relevance": 0.3,
+        "novelty": 0.2,
+        "rigor": 0.1,
         "evidence_strength": 0.1,
-        "generalizability": 0.3,
-        "reproducibility": 0.2
+        "generalizability": 0.2,
+        "reproducibility": 0.1
       },
       "confidence": 1.0,
-      "rationale": "The paper focuses on iterative LLM-based document review, mentioning LLMs explicitly. It touches on evaluation and iterative refinement, which has some relevance to LLM evaluation and agents. However, it lacks rigorous methodology, quantitative results, or baselines, and the abstract only provides anecdotal evidence. Novelty is moderate as iterative LLM review is not highly novel in the field. The score is limited by weak evidence and limited topic alignment.",
+      "rationale": "Abstract-only paper on iterative LLM review of operational documents, but lacks methodological detail, quantitative results, and baselines; relevance to LLM evaluation and iterative refinement is moderate, but evidence and rigor are weak.",
       "topics": [
         "LLM",
-        "evaluation"
+        "evaluation",
+        "iterative review",
+        "operational document"
       ],
       "evidence": [
-        "abstract_only: lack of detailed methodology, no quantitative results or baseline comparisons",
-        "abstract: only mentions 108 rounds of review without data"
+        "{'section': 'abstract', 'fact': 'Describes 108 rounds of LLM review and hypothesis about self-induced errors'}"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2274,
-        "completion_tokens": 256,
-        "total_tokens": 2530,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 482
+        "completion_tokens": 168,
+        "total_tokens": 2442,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 98
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
     },
     "fallback:bd66543f72ca9fd6": {
-      "score": 0.115,
+      "score": 0.18749999999999997,
       "components": {
-        "preference_relevance": 0.1,
+        "preference_relevance": 0.35,
         "novelty": 0.2,
-        "rigor": 0.1,
-        "evidence_strength": 0.1,
-        "generalizability": 0.1,
-        "reproducibility": 0.1
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.15,
+        "reproducibility": 0.05
       },
       "confidence": 1.0,
-      "rationale": "Paper is a blog-style error analysis for Claude Code, an agent tool, but lacks methodological depth, quantitative rigor, and formal evaluation. Minimal relevance to core preferences like LLM, agents, or error handling; treated as out-of-scope domain application with weak evidence.",
+      "rationale": "The paper is a blog-style report on frequent errors in Claude Code, a tool-based agent. It aligns with 'Agents & Tool Use' (Claude Code, tool orchestration) but lacks substantive research: no methodology, baselines, quantitative results, or reproducibility details. The preference relevance is moderate (0.35) due to agent/tool focus, but novelty is limited, and rigor/evidence much be lower due to vague 'about 97,000' database claims and no verifiable data. Overall score is low, within the acceptable range for applied tool reports.",
       "topics": [
-        "Claude Code",
-        "error diagnosis",
-        "known bugs"
+        "Agents & Tool Use",
+        "Large Language Models",
+        "Coding & Programming"
       ],
       "evidence": [
-        "Abstract mentions matching 10 error types against ~97k database; no detailed results or methodology"
+        "Abstract states 10 frequent errors in Claude Code; claims 9 matched known issues in a database of about 97,000 AI development insights",
+        "No section or page marker provided; only abstract available, so evidence is weak"
       ],
       "fulltext_status": "abstract_only",
       "fulltext_sha256": "",
       "token_usage": {
         "prompt_tokens": 2256,
-        "completion_tokens": 214,
-        "total_tokens": 2470,
-        "prompt_cache_hit_tokens": 1792,
-        "prompt_cache_miss_tokens": 464
+        "completion_tokens": 309,
+        "total_tokens": 2565,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 80
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
