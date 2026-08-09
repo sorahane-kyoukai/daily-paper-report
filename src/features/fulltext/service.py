@@ -55,7 +55,9 @@ class FullTextService:
                 try:
                     (self._cache_dir / f"{cache_key}{suffix}").unlink(missing_ok=True)
                 except OSError:
-                    self._log.warning("fulltext_cache_prune_failed", cache_key=cache_key)
+                    self._log.warning(
+                        "fulltext_cache_prune_failed", cache_key=cache_key
+                    )
         if expired_keys:
             self._log.info("fulltext_cache_pruned", entries=len(expired_keys))
 
@@ -99,7 +101,13 @@ class FullTextService:
                     source_format=source_format,
                 )
                 return document
-            except (httpx.HTTPError, OSError, PdfReadError, FileNotDecryptedError, ValueError) as exc:
+            except (
+                httpx.HTTPError,
+                OSError,
+                PdfReadError,
+                FileNotDecryptedError,
+                ValueError,
+            ) as exc:
                 errors.append(f"{source_format}:{type(exc).__name__}")
                 self._log.warning(
                     "fulltext_candidate_failed",
@@ -187,7 +195,9 @@ class FullTextService:
                 if len(joined) < _MIN_USEFUL_CHARS:
                     raise ValueError("PDF extraction is too short")
                 if failed_pages:
-                    joined += f"\n\n[Extraction note: {failed_pages} page(s) unavailable.]"
+                    joined += (
+                        f"\n\n[Extraction note: {failed_pages} page(s) unavailable.]"
+                    )
                 return joined, len(reader.pages)
 
     def _load_cache(self, cache_key: str, story_id: str) -> FullTextDocument | None:
@@ -259,7 +269,10 @@ def _candidate_urls(story: Story) -> list[tuple[str, str]]:
 def _is_paper(story: Story) -> bool:
     return bool(
         story.arxiv_id
-        or any(link.link_type.value in {"arxiv", "paper", "openreview"} for link in story.links)
+        or any(
+            link.link_type.value in {"arxiv", "paper", "openreview"}
+            for link in story.links
+        )
     )
 
 
@@ -314,7 +327,9 @@ def _compact_document(text: str) -> str:
     tail = "" if split_at < 0 else text[split_at:]
     if len(core) >= budget:
         half = budget // 2
-        return core[:half] + "\n\n[Middle compacted to fit 1M context]\n\n" + core[-half:]
+        return (
+            core[:half] + "\n\n[Middle compacted to fit 1M context]\n\n" + core[-half:]
+        )
     remaining = budget - len(core)
     return core + "\n\n[References/appendix compacted]\n\n" + tail[:remaining]
 

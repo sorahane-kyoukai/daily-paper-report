@@ -183,9 +183,15 @@ class TestTranslationProcessor:
             LlmApiError("Empty content"),
             LlmApiError("Empty content"),
             LlmApiError("Empty content"),
-            _make_llm_response([{"id": "s1", "title_zh": "\u7ffb\u8b6f1", "summary_zh": ""}]),
-            _make_llm_response([{"id": "s2", "title_zh": "\u7ffb\u8b6f2", "summary_zh": ""}]),
-            _make_llm_response([{"id": "s3", "title_zh": "\u7ffb\u8b6f3", "summary_zh": ""}]),
+            _make_llm_response(
+                [{"id": "s1", "title_zh": "\u7ffb\u8b6f1", "summary_zh": ""}]
+            ),
+            _make_llm_response(
+                [{"id": "s2", "title_zh": "\u7ffb\u8b6f2", "summary_zh": ""}]
+            ),
+            _make_llm_response(
+                [{"id": "s3", "title_zh": "\u7ffb\u8b6f3", "summary_zh": ""}]
+            ),
         ]
         processor, client = self._make_processor(tmp_path)
         client.generate_content.side_effect = responses
@@ -197,9 +203,7 @@ class TestTranslationProcessor:
         assert client.generate_content.call_count == 6
 
     def test_parse_error_skips_batch(self, tmp_path: Path) -> None:
-        processor, client = self._make_processor(
-            tmp_path, ["not json at all"] * 3
-        )
+        processor, client = self._make_processor(tmp_path, ["not json at all"] * 3)
 
         stories = [_make_story("s1", "Title")]
         result = processor.translate(stories)
@@ -224,8 +228,12 @@ class TestTranslationProcessor:
 
     def test_numeric_ids_map_to_batch_order(self, tmp_path: Path) -> None:
         responses = [
-            _make_llm_response([{"id": "1", "title_zh": "\u7b2c\u4e00", "summary_zh": ""}]),
-            _make_llm_response([{"id": "1", "title_zh": "\u7b2c\u4e8c", "summary_zh": ""}]),
+            _make_llm_response(
+                [{"id": "1", "title_zh": "\u7b2c\u4e00", "summary_zh": ""}]
+            ),
+            _make_llm_response(
+                [{"id": "1", "title_zh": "\u7b2c\u4e8c", "summary_zh": ""}]
+            ),
         ]
         processor, _client = self._make_processor(tmp_path, responses)
 
@@ -255,9 +263,7 @@ class TestTranslationProcessor:
         )
         processor, client = self._make_processor(tmp_path, [response])
 
-        result = processor.translate(
-            [_make_story("fallback:abc123", "First")]
-        )
+        result = processor.translate([_make_story("fallback:abc123", "First")])
 
         assert result["fallback:abc123"].title_zh == "\u7ffb\u8b6f"
         assert client.generate_content.call_count == 1

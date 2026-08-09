@@ -140,12 +140,8 @@ class DeepSeekClient:
                 prompt_tokens=_as_int(usage.get("prompt_tokens")),
                 completion_tokens=_as_int(usage.get("completion_tokens")),
                 total_tokens=_as_int(usage.get("total_tokens")),
-                prompt_cache_hit_tokens=_as_int(
-                    usage.get("prompt_cache_hit_tokens")
-                ),
-                prompt_cache_miss_tokens=_as_int(
-                    usage.get("prompt_cache_miss_tokens")
-                ),
+                prompt_cache_hit_tokens=_as_int(usage.get("prompt_cache_hit_tokens")),
+                prompt_cache_miss_tokens=_as_int(usage.get("prompt_cache_miss_tokens")),
             )
             self._log.info("deepseek_usage", **self.last_usage.__dict__)
         return content

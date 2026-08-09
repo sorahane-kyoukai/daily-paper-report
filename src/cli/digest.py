@@ -653,8 +653,7 @@ def _run_translation_phase(
         from src.features.translation.processor import TranslationProcessor
 
         cache_dir = Path(
-            settings.fulltext_cache_dir
-            or (output_dir.parent / ".cache" / "fulltext")
+            settings.fulltext_cache_dir or (output_dir.parent / ".cache" / "fulltext")
         )
         documents = FullTextService(cache_dir).load_for_stories(visible_story_models)
         for story in unique_stories:

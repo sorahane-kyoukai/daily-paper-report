@@ -39,9 +39,10 @@ Return this JSON shape:
 "topics":[],"evidence":[]}}]}}
 """
 
-CURRENT_SCORING_PROMPT_VERSION = "sha256:" + hashlib.sha256(
-    f"{SYSTEM_INSTRUCTION}\n{_TEMPLATE}".encode()
-).hexdigest()[:16]
+CURRENT_SCORING_PROMPT_VERSION = (
+    "sha256:"
+    + hashlib.sha256(f"{SYSTEM_INSTRUCTION}\n{_TEMPLATE}".encode()).hexdigest()[:16]
+)
 
 
 def build_topics_section(topics: list[TopicConfig]) -> str:

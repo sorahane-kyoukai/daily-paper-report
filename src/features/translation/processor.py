@@ -415,9 +415,7 @@ def _resolve_story_id(
         return story_id
 
     suffix_matches = [
-        candidate
-        for candidate in valid_ids
-        if candidate.rsplit(":", 1)[-1] == story_id
+        candidate for candidate in valid_ids if candidate.rsplit(":", 1)[-1] == story_id
     ]
     if len(suffix_matches) == 1:
         return suffix_matches[0]

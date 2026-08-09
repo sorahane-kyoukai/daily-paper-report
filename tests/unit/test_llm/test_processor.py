@@ -281,7 +281,11 @@ class TestEvaluateStories:
     def test_recovers_id_when_namespace_prefix_is_omitted(self) -> None:
         mock_client = MagicMock()
         mock_client.generate_content.return_value = json.dumps(
-            {"papers": [{"id": "abc123", "score": 0.8, "rationale": "ok", "topics": []}]}
+            {
+                "papers": [
+                    {"id": "abc123", "score": 0.8, "rationale": "ok", "topics": []}
+                ]
+            }
         )
 
         story = _make_story(story_id="fallback:abc123")

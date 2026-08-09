@@ -163,10 +163,7 @@ class TranslationCache:
             entry is not None
             and entry.prompt_version == prompt_version
             and entry.model == "deepseek-v4-flash"
-            and (
-                fulltext_sha256 is None
-                or entry.fulltext_sha256 == fulltext_sha256
-            )
+            and (fulltext_sha256 is None or entry.fulltext_sha256 == fulltext_sha256)
         )
 
     def get(self, story_id: str) -> TranslationEntry | None:

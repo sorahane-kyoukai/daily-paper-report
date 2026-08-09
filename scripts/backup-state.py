@@ -19,7 +19,10 @@ def main() -> None:
     compressed = plain.with_suffix(".sqlite.gz")
     with sqlite3.connect(source) as source_db, sqlite3.connect(plain) as target_db:
         source_db.backup(target_db)
-    with plain.open("rb") as input_file, gzip.open(compressed, "wb", compresslevel=6) as output:
+    with (
+        plain.open("rb") as input_file,
+        gzip.open(compressed, "wb", compresslevel=6) as output,
+    ):
         shutil.copyfileobj(input_file, output)
     plain.unlink()
     for stale in sorted(backup_dir.glob("state-*.sqlite.gz"), reverse=True)[30:]:

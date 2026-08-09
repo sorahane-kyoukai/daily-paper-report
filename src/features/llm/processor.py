@@ -470,7 +470,9 @@ class LlmRelevanceProcessor:
                     component_scores=component_scores,
                     evidence=evidence,
                     confidence=confidence,
-                    fulltext_status=(document.status.value if document else "abstract_only"),
+                    fulltext_status=(
+                        document.status.value if document else "abstract_only"
+                    ),
                     fulltext_sha256=(document.sha256 if document else ""),
                 )
             )
@@ -544,9 +546,7 @@ def _resolve_story_id(raw_id: str, valid_ids: set[str]) -> str:
     if story_id in valid_ids:
         return story_id
     suffix_matches = [
-        candidate
-        for candidate in valid_ids
-        if candidate.rsplit(":", 1)[-1] == story_id
+        candidate for candidate in valid_ids if candidate.rsplit(":", 1)[-1] == story_id
     ]
     return suffix_matches[0] if len(suffix_matches) == 1 else story_id
 
@@ -564,10 +564,7 @@ _COMPONENT_WEIGHTS = {
 def _component_scores(value: object) -> dict[str, float]:
     if not isinstance(value, dict):
         return {}
-    return {
-        key: _clamp_score(value.get(key, 0.0))
-        for key in _COMPONENT_WEIGHTS
-    }
+    return {key: _clamp_score(value.get(key, 0.0)) for key in _COMPONENT_WEIGHTS}
 
 
 def _weighted_score(components: dict[str, float]) -> float:
