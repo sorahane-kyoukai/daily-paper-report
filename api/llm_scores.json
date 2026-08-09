@@ -166797,6 +166797,404 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:1deed25c695971ae": {
+      "score": 0.173,
+      "components": {
+        "preference_relevance": 0.12,
+        "novelty": 0.25,
+        "rigor": 0.2,
+        "evidence_strength": 0.15,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a blog-style report on implementing a knowledge graph for an AI novel-writing engine using a commercial AI Engine (not a language model research contribution). It touches on RAG/tool use but lacks methodological detail, quantitative results, or structured evaluation. Only abstract available; minimal evidence of scientific rigor or reproducibility.",
+      "topics": [
+        "RAG",
+        "tool use",
+        "knowledge graph",
+        "NLP"
+      ],
+      "evidence": [
+        "Abstract mentions implementing knowledge graph as a tool for AI novel writing engine"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2199,
+        "completion_tokens": 177,
+        "total_tokens": 2376,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 407
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:63ec16f733727f61": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only blog excerpt on AI cash flow forecasting; no technical or research content, completely out of scope for ML research. All components zero; score 0.0.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2146,
+        "completion_tokens": 125,
+        "total_tokens": 2271,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 354
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:a75e93d8931d7b28": {
+      "score": 0.065,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only promotional blog about Kimi3, lacks technical depth, no methodology or research content. Mentions AI/LLM but superficial and untrusted. Pure commercial comparison, not a research paper.",
+      "topics": [
+        "LLM"
+      ],
+      "evidence": [
+        "Content status: abstract_only",
+        "Title suggests product comparison"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2150,
+        "completion_tokens": 146,
+        "total_tokens": 2296,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 358
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c044f514bad6e144": {
+      "score": 0.415,
+      "components": {
+        "preference_relevance": 0.7,
+        "novelty": 0.3,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.4,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Focuses on using LLMs (likely local) to assist ISMS compliance assessment, touching on LLM application, business workflow, and local LLM. However, the abstract is minimal and lacks details on methodology, results, and formal evaluation, thus low evidence and rigor. The novelty is incremental (applying LLM to a standard assessment task). Generalizability is moderate due to domain-specific nature.",
+      "topics": [
+        "local LLM",
+        "business workflow",
+        "structured output",
+        "evaluation",
+        "generic LLM"
+      ],
+      "evidence": [
+        "abstract: mentions local LLM and ISMS assessment; no quantitative results"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2179,
+        "completion_tokens": 244,
+        "total_tokens": 2423,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 387
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:df2ce9e7d90535a2": {
+      "score": 0.015,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "News article about Google Earth AI image generation withdrawal. No LLM, NLP, transformer, or any preference topic. Lacks methodology, evidence, and research quality. Pure domain application news with no technical content.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2148,
+        "completion_tokens": 133,
+        "total_tokens": 2281,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 356
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:54cbfc134566934a": {
+      "score": 0.08000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper appears to be a blog post in Japanese about AI agent safety, discussing how agents may comply with dangerous requests that chatbots decline. It hints at safety and agents, but the abstract-only content lacks concrete technical details, methods, or results. Thus, relevance is minimal and rigor/evidence are nonexistent.",
+      "topics": [
+        "agents",
+        "AI safety"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2356,
+        "completion_tokens": 199,
+        "total_tokens": 2555,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 564
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:de0fb623603437c4": {
+      "score": 0.17500000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.2,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Tutorial-style explanation of LLM quantization; lacks original research, quantitative results, and rigorous methodology. The topic of quantization touches efficiency but is not a research contribution. Abstract-only content limits evidence. Relevance is low due to no Japanese LLM-specific or core preference focus beyond general LLM context. Score limited by rubric constraints for non-research content.",
+      "topics": [
+        "quantization",
+        "LLM"
+      ],
+      "evidence": [
+        "Abstract mentions quantization for LLMs, but no specific section for methods/results."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2157,
+        "completion_tokens": 184,
+        "total_tokens": 2341,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 365
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c1ae731ef5448f74": {
+      "score": 0.215,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Paper discusses practical estimation of memory and inference speed for quantized LLMs. Relevant to LLM and efficiency, but abstract-only, lacks rigorous experiments, novel content, and detailed evidence. Low scores for rigor and evidence strength due to missing methodology and results.",
+      "topics": [
+        "LLM",
+        "quantization",
+        "inference",
+        "memory"
+      ],
+      "evidence": [
+        "Content status: abstract_only; no quantitative results or methodology sections available"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2152,
+        "completion_tokens": 212,
+        "total_tokens": 2364,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 360
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c289e2a21497fe00": {
+      "score": 0.29000000000000004,
+      "components": {
+        "preference_relevance": 0.5,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "The paper describes an OSS tool combining local VLM and LLM for workplace inspection reports, touching on multimodal and LLM but lacks methodological detail, baselines, quantitative results, and rigorous evaluation; novel but not substantiated.",
+      "topics": [
+        "LLM",
+        "VLM",
+        "local AI",
+        "workplace inspection",
+        "report generation"
+      ],
+      "evidence": [
+        "Abstract: only mentions tool purpose and basic architecture; no technical details or experiments."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2268,
+        "completion_tokens": 168,
+        "total_tokens": 2436,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 476
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b515dc0d686a5c20": {
+      "score": 0.10500000000000001,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is a casual experiment on using AI to generate scrollable HTML slides. It falls under pure application/web design, with no relevance to core AI/ML topics (LLMs, reasoning, prompting, etc.). Content is a prompt snippet and lacks scientific rigor or evidence. At most 0.20 as allowed for pure applications.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2231,
+        "completion_tokens": 196,
+        "total_tokens": 2427,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 439
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:ae66873c35e13eef": {
+      "score": 0.28500000000000003,
+      "components": {
+        "preference_relevance": 0.4,
+        "novelty": 0.2,
+        "rigor": 0.2,
+        "evidence_strength": 0.2,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Tutorial on building an AI agent with OpenClaw, mentioning LLM (DeepSeek) and agent framework. Relevant to agents and LLM but lacks technical depth, novelty, and evidence; abstract only.",
+      "topics": [
+        "agent",
+        "LLM"
+      ],
+      "evidence": [
+        "Abstract mentions OpenClaw, DeepSeek API, and building an AI assistant agent."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2244,
+        "completion_tokens": 197,
+        "total_tokens": 2441,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 452
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b14f36a6aceaed34": {
+      "score": 0.32,
+      "components": {
+        "preference_relevance": 0.4,
+        "novelty": 0.5,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "The paper focuses on iterative LLM-based document review, mentioning LLMs explicitly. It touches on evaluation and iterative refinement, which has some relevance to LLM evaluation and agents. However, it lacks rigorous methodology, quantitative results, or baselines, and the abstract only provides anecdotal evidence. Novelty is moderate as iterative LLM review is not highly novel in the field. The score is limited by weak evidence and limited topic alignment.",
+      "topics": [
+        "LLM",
+        "evaluation"
+      ],
+      "evidence": [
+        "abstract_only: lack of detailed methodology, no quantitative results or baseline comparisons",
+        "abstract: only mentions 108 rounds of review without data"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2274,
+        "completion_tokens": 256,
+        "total_tokens": 2530,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 482
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:bd66543f72ca9fd6": {
+      "score": 0.115,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is a blog-style error analysis for Claude Code, an agent tool, but lacks methodological depth, quantitative rigor, and formal evaluation. Minimal relevance to core preferences like LLM, agents, or error handling; treated as out-of-scope domain application with weak evidence.",
+      "topics": [
+        "Claude Code",
+        "error diagnosis",
+        "known bugs"
+      ],
+      "evidence": [
+        "Abstract mentions matching 10 error types against ~97k database; no detailed results or methodology"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2256,
+        "completion_tokens": 214,
+        "total_tokens": 2470,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 464
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
