@@ -1,5 +1,6 @@
 {
   "archive_dates": [
+    "2026-08-10",
     "2026-08-09",
     "2026-08-08",
     "2026-08-07",
@@ -307,20 +308,18 @@
       "type": "researcher"
     }
   },
-  "generated_at": "2026-08-09T00:34:45.329855+00:00",
+  "generated_at": "2026-08-10T00:38:57.426814+00:00",
   "model_releases_by_entity": {},
   "papers": [],
   "radar": [
     {
       "arxiv_id": null,
       "authors": [
-        "krbrr"
+        "安見ことみ（ysmkotm）"
       ],
       "categories": [],
-      "entities": [
-        "anthropic"
-      ],
-      "first_seen_at": "2026-08-09T00:32:57.428628+00:00",
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.960646+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -330,184 +329,16 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "Claude Codeの頻出エラー10種、9つは既知バグだった",
-          "url": "https://zenn.dev/zenn_content/articles/claude-code-error-known-bug-lookup"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.1,
-          "novelty": 0.2,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions matching 10 error types against ~97k database; no detailed results or methodology"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is a blog-style error analysis for Claude Code, an agent tool, but lacks methodological depth, quantitative rigor, and formal evaluation. Minimal relevance to core preferences like LLM, agents, or error handling; treated as out-of-scope domain application with weak evidence.",
-        "score": 0.115,
-        "token_usage": {
-          "completion_tokens": 214,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 464,
-          "prompt_tokens": 2256,
-          "total_tokens": 2470
-        },
-        "topics": [
-          "Claude Code",
-          "error diagnosis",
-          "known bugs"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "Claude Codeの頻出エラー10種、9つは既知バグだった",
-        "url": "https://zenn.dev/zenn_content/articles/claude-code-error-known-bug-lookup"
-      },
-      "published_at": "2026-08-08T02:30:07+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 2.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.115,
-        "llm_relevance_score": 3.22,
-        "recency_score": 0.9121968109350747,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 11.682196810935075
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:bd66543f72ca9fd6",
-      "summary": "はじめに\n結論: Claude Codeで繰り返し報告されている頻出エラー10種のエラー文を、自前で収集している約97,000件のAI開発知見データベースに意味検索で照合したところ、9種はトップ3以内に「同じ症状の既知Issue・回避策」が出てきました。\nつまり、あなたが今日遭遇したそのエラーは、高い確率で「あなたの環境が壊れた」のではなく「誰かがもう踏んで報告済みのバグ」です。設定を疑って数時間溶かす前に、既知バグかどうかを先に引く——この記事はその照合実験の実測結果と、エラー10種それぞれの回避策、そして「エラー診断ツール」として仕立てる構想をまとめたものです。\n!\n実験は202...",
-      "summary_zh": "本文報導一項針對Claude Code錯誤訊息的實測分析。作者蒐集了約97,000筆AI開發相關的知識庫資料，運用語意檢索技術，將用戶反覆回報的十種高頻錯誤訊息與資料庫中的已知問題進行比對。結果顯示，其中九種錯誤在前三名檢索結果中，都能找到症狀一致的既有Issue或官方建議的規避方法。這項發現表明，多數用戶遭遇的錯誤並非個人環境設定異常，而是已被社群發現並記錄的軟體缺陷。文章進一步列舉了各錯誤類型相對應的規避策略，並提出將此檢索流程整合成一套「錯誤診斷工具」的構想，以協助開發者快速定位問題根源。此研究的價值在於，它推翻了「遇到錯誤先質疑自身設定」的常見直覺，提倡先搜尋已知案例，可大幅節省除錯時間。然而，作者僅採用單一知識庫且主要依賴語意檢索的準確度，未能涵蓋所有可能的錯誤情境，且未揭露知識庫的更新頻率與覆蓋範圍，因此實用性仍需更多驗證。整體而言，這項工作突顯了社群知識共享與系統化除錯工具的重要性，對Claude Code的使用者具有實質的參考價值。",
-      "title": "Claude Codeの頻出エラー10種、9つは既知バグだった",
-      "title_zh": "Claude Code常見錯誤十種，九種為已知Bug"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "tokimoa"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.415450+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "写真1枚から職場の改善提案レポートを作る。ローカルVLM×LLMの点検OSS「shokuba-lens」を公開しました",
-          "url": "https://zenn.dev/tokimoa/articles/5963ada109489f"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.5,
-          "reproducibility": 0.2,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract: only mentions tool purpose and basic architecture; no technical details or experiments."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper describes an OSS tool combining local VLM and LLM for workplace inspection reports, touching on multimodal and LLM but lacks methodological detail, baselines, quantitative results, and rigorous evaluation; novel but not substantiated.",
-        "score": 0.29000000000000004,
-        "token_usage": {
-          "completion_tokens": 168,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 476,
-          "prompt_tokens": 2268,
-          "total_tokens": 2436
-        },
-        "topics": [
-          "LLM",
-          "VLM",
-          "local AI",
-          "workplace inspection",
-          "report generation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "写真1枚から職場の改善提案レポートを作る。ローカルVLM×LLMの点検OSS「shokuba-lens」を公開しました",
-        "url": "https://zenn.dev/tokimoa/articles/5963ada109489f"
-      },
-      "published_at": "2026-08-08T04:48:41+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.29000000000000004,
-        "llm_relevance_score": 8.120000000000001,
-        "recency_score": 0.9210169623848008,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 10.841016962384803
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:c289e2a21497fe00",
-      "summary": "職場の写真をローカルAIで点検し、改善提案レポートを生成するOSS「shokuba-lens」を公開しました。\nカメラやスマートフォンで撮影した画像をVLMが観察し、その内容をYAMLで定義した業務ルールとLLMが照合します。出力されるのは、指摘内容、判断の根拠、改善提案をまとめたMarkdownレポートとJSONです。\n処理はApple Silicon Mac上で完結し、点検対象の画像を外部サービスへ送信する必要はありません。既定の構成では、VLMとLLMを同時にメモリへ載せず、観察が終わった時点でVLMを解放してから判定を開始します。VLMは4bit量子化で約6GBのため、大規模なG...",
-      "summary_zh": "「shokuba-lens」是一个开源的职场巡检工具，利用本地运行的视觉语言模型（VLM）和大型语言模型（LLM）来分析职场照片，并自动生成改善提案报告。该工具的核心动机是解决职场巡检中人工记录耗时、主观性强以及图片外传隐私风险等问题。其工作原理是：首先，VLM观察用户拍摄的图片，提取视觉信息；然后，根据YAML格式定义的业务规则，LLM将VLM的观察结果与规则进行比对和推理，最终输出包含指摘内容、判断依据和改善提案的Markdown报告及结构化JSON数据。该工具设计为完全在本地设备（如Apple Silicon Mac）上运行，无需将图片发送至外部服务，从而保障数据隐私。在资源管理上，默认配置采用VLM与LLM分时加载的策略——即先加载VLM进行观察，观察结束后释放其内存再加载LLM进行判断，以避免同时占用大量内存。VLM采用4bit量化后约占6GB内存，因此适合在内存有限的设备上运行。该工具的优势在于部署简单、隐私安全、流程自动化，可快速生成标准化报告。然而，其局限也很明显：效果高度依赖VLM的视觉理解能力和LLM的推理能力，对于复杂场景或规则未覆盖的情况，可能出现误判或遗漏；同时，YAML规则需要人工精心编写和维护，更新成本较高；另外，由于完全离线运行，无法利用云端大规模模型的强泛化能力，处理极端情况的能力有限。尽管如此，该工具展示了将轻量级本地模型集成到具体业务场景中的可行性，为职场安全巡检、现场管理等领域提供了一种自动、隐私友好的解决方案，尤其适合对数据敏感或网络环境受限的组织使用。它的开源性质也使得社区可以共同改进规则库和模型配置，推动该方向的发展。",
-      "title": "写真1枚から職場の改善提案レポートを作る。ローカルVLM×LLMの点検OSS「shokuba-lens」を公開しました",
-      "title_zh": "从一张照片生成职场改善提案报告：本地VLM×LLM的巡检开源工具「shokuba-lens」发布"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "AIDB Research"
-      ],
-      "categories": [
-        "深堀り解説"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:56.773546+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aidb",
-          "tier": 1,
-          "title": "🔒 チャットでは危ないタスクで断れるAIも、エージェントだと依頼を受けてしまう",
-          "url": "https://ai-data-base.com/archives/114523"
+          "title": "AIに「事業を立ち上げて稼いでみて」と丸投げする実験を始めました",
+          "url": "https://zenn.dev/ysmkotm/articles/ai-delegated-business-experiment-intro"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.0,
-          "preference_relevance": 0.2,
+          "generalizability": 0.1,
+          "novelty": 0.15,
+          "preference_relevance": 0.18,
           "reproducibility": 0.0,
           "rigor": 0.0
         },
@@ -517,57 +348,377 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper appears to be a blog post in Japanese about AI agent safety, discussing how agents may comply with dangerous requests that chatbots decline. It hints at safety and agents, but the abstract-only content lacks concrete technical details, methods, or results. Thus, relevance is minimal and rigor/evidence are nonexistent.",
-        "score": 0.08000000000000002,
+        "rationale": "This is an informal blog-style description of a personal experiment where AI is given autonomy over business decisions. It is not a peer-reviewed research paper. Content has minimal relevance to core topics like LLM methodology or agent research; although it mentions Claude (an LLM) and agentic decision-making, there is no technical contribution, evaluation, or evidence. Pure domain application and casual narrative.",
+        "score": 0.1045,
         "token_usage": {
-          "completion_tokens": 199,
+          "completion_tokens": 179,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 564,
-          "prompt_tokens": 2356,
-          "total_tokens": 2555
+          "prompt_cache_miss_tokens": 470,
+          "prompt_tokens": 2262,
+          "total_tokens": 2441
         },
         "topics": [
-          "agents",
-          "AI safety"
+          "Agents & Tool Use",
+          "Large Language Models"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "aidb",
-        "tier": 1,
-        "title": "🔒 チャットでは危ないタスクで断れるAIも、エージェントだと依頼を受けてしまう",
-        "url": "https://ai-data-base.com/archives/114523"
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIに「事業を立ち上げて稼いでみて」と丸投げする実験を始めました",
+        "url": "https://zenn.dev/ysmkotm/articles/ai-delegated-business-experiment-intro"
       },
-      "published_at": "2026-08-08T11:55:00+00:00",
+      "published_at": "2026-08-09T03:11:24+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.08,
-        "llm_relevance_score": 2.24,
-        "recency_score": 0.948691605101718,
+        "llm_raw_score": 0.1045,
+        "llm_relevance_score": 2.9259999999999997,
+        "recency_score": 0.9145459660459331,
         "semantic_score": 0.0,
-        "tier_score": 2.0,
+        "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 9.738691605101717
+        "total_score": 9.390545966045933
       },
       "section": null,
-      "source_name": "AIDB - AI Research Database",
-      "story_id": "fallback:54cbfc134566934a",
-      "summary": "<p>チャット画面では危険な依頼をきっぱり断るAIが、メール送信やファイル操作まで任せられる「AIエージェント」にすると、同じ依頼に従ってしまう。こうした現象が繰り返し報告されています。 原因を内部までさかのぼって調べた検証から、意外な事実がわかりました。安全性を下げていたのは、任せた機能の中身ではありません。その機能をAIに伝える文書の「書き方」だったのです。 では、書き方の何が問題で、どう直せば安全性は戻るのでしょうか。追加学習なしで拒否率が3倍になった対策とあわせて解説します。 プレミアム会員限定コンテンツです 無料会員でもできること 一部記事の閲覧 AI検索（公開記事が対象） PDF翻訳・パ&#8230;</p>\n<p>The post <a href=\"https://ai-data-base.com/archives/114523\"><span class=\"locked-post\">🔒</span> チャットでは危ないタスクで断れるAIも、エージェントだと依頼を受けてしまう</a> first appeared on <a href=\"https://ai-data-base.com\">AIDB</a>.</p>",
-      "summary_zh": "這項研究探討了一個令人憂心的現象：AI系統在傳統聊天介面中能堅決拒絕危險請求，但當同一AI被賦予代理（agent）能力，如發送電子郵件或操作檔案時，卻可能違背安全原則而遵從相同請求。作者深入調查內部機制，發現關鍵不在於新增的功能本身，而是描述這些功能的文件撰寫方式。具體而言，當功能說明文字以特定形式呈現時，會削弱模型的安全對齊，導致拒絕率下降。研究團隊透過系統性分析，找出問題癥結在於文件中的語意結構與提示方式，並提出無需額外訓練（fine-tuning）的對策，成功將拒絕率提升三倍。此發現凸顯了提示工程（prompt engineering）對AI安全性的重大影響，挑戰了僅專注於模型架構或訓練資料的傳統安全思維。研究局限性包括可能僅適用於特定模型類型，且未揭露完整實驗細節。這項工作對AI代理的部署具有重要警示：安全措施必須納入對功能描述文件的審查，否則即使模型本質安全，也可能因外部描述不當而失效。此成果為AI安全領域提供了新的防禦方向，促使開發者重新審視文件撰寫作為安全機制的潛力。",
-      "title": "🔒 チャットでは危ないタスクで断れるAIも、エージェントだと依頼を受けてしまう",
-      "title_zh": "聊天中拒絕危險任務的AI，在作為代理時卻會接受請求"
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:28764150c35d6bb5",
+      "summary": "何を始めたか\nふと「AIは、自分で会社を立ち上げてお金を稼げるのか？」が気になりました。\nAIに副業の相談をすると、普通は自分の経験や能力に合わせた提案が返ってきます。それはそれで妥当なのですが、今回はそうではなく、事業判断を全部AIに任せたら何をするのかが見たくなりました。それで、こういうルールで実験を始めました。\n\n事業上の判断（何を作るか・どこで売るか・いくらにするか）は、すべてAI（Claude）が行う\n人間の私がやるのは「人間にしかできない作業の実行」「費用の承認」「最終的な拒否権」だけ\n予算は総額3〜5万円まで。期限は2026年10月まで\n成功基準は「見知らぬ他人からの売...",
+      "summary_zh": "這篇文章記錄了一個個人實驗，作者想測試AI是否能自主創業並實際賺錢。實驗規則為：所有事業決策（如產品方向、銷售通路、定價）都由AI（Claude）決定，人類僅負責執行AI無法完成的實體工作、審核費用以及行使最終否決權。預算限制為總額三至五萬日圓，期限至2026年10月，成功標準是獲得陌生人的訂單。這個實驗的價值在於，它跳脫了一般人僅將AI視為建議工具的使用方式，而是賦予其完全自主的決策權，探討AI在真實商業環境中的可行性和局限性。由於目前僅有實驗設計的說明，尚未有具體成果，因此無法得知AI的決策品質與實際盈利能力。此實驗可能為未來人機協作模式提供啟發，但也凸顯出AI在缺乏人類監督時可能產生的風險，例如決策偏差或道德問題。研究者後續若能公開實驗結果與決策記錄，將更有助於評估AI自主創業的實際表現。",
+      "title": "AIに「事業を立ち上げて稼いでみて」と丸投げする実験を始めました",
+      "title_zh": "開始嘗試將「創業並賺錢」的工作全部丟給AI的實驗"
     },
     {
       "arxiv_id": null,
       "authors": [
-        "igaken1972"
+        "ITアライグマ"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.130208+00:00",
+      "first_seen_at": "2026-08-10T00:37:04.963077+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+          "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.2,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract mentions LLM daily token limit and job retries"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Technical blog about handling an LLM rate limit in a personal dev project; limited methodological depth, no experiments, and marginal relevance to core LLM research topics.",
+        "score": 0.095,
+        "token_usage": {
+          "completion_tokens": 140,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 457,
+          "prompt_tokens": 2249,
+          "total_tokens": 2389
+        },
+        "topics": [
+          "LLM",
+          "engineering"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+        "url": "https://zenn.dev/itaraiguma/articles/llm-daily-rate-limit-backoff"
+      },
+      "published_at": "2026-08-09T03:02:08+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.095,
+        "llm_relevance_score": 2.66,
+        "recency_score": 0.9139576281042298,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 9.123957628104229
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:ef62a75aff048f29",
+      "summary": "はじめに\n個人開発している技術記事キュレーションサービス「DevPick」と、その姉妹サービス「AgentPick」は、どちらも集めた記事の分析にLLMを使っています。ある日、DevPick側でLLMの日次利用上限に達したまま処理が止まらない障害が起きました。この記事は、その障害をAgentPick側でどう防いだかの記録です。\n\n 何が起きたか\nDevPickは、まだ分析していない記事(バックログ)を定期的にLLMへ投げて分析するジョブを持っています。ある日、利用しているLLMの日次トークン上限に達しました。ここまでは想定内だったのですが、上限に達した後もこのジョブは30分おきに動き...",
+      "summary_zh": "這篇文章記錄了個人開發的技術文章策展服務DevPick及其姊妹服務AgentPick在遭遇LLM（大型語言模型）日使用量上限時的處理經驗。問題發生在DevPick，其定期分析積壓文章的任務在達到每日令牌上限後，仍每30分鐘持續觸發，導致與LLM供應商的API請求持續回傳429狀態碼，這種狀況持續了11小時才被發現並解決。作者從這次故障中汲取教訓，主動檢查尚未發生問題的AgentPick，發現其架構中也有類似的排程任務，於是在故障發生前先行調整設計，避免重蹈覆轍。文章的重點在於說明如何透過更嚴謹的錯誤處理機制、監控告警設定，以及在設計時考慮上游服務限流來防範此類問題。作者指出，僅僅依賴供應商提供的上限值是不夠的，必須在程式碼層面實作退避重試（backoff retry）或停用機制，並對突發的429回應進行妥善處理。這篇文章對個人開發者或小型團隊在依賴外部AI服務時，如何提升系統韌性具有實用參考價值，同時也提醒我們在服務運維中，主動預防往往比事後補救更為重要。",
+      "title": "姉妹サービスで11時間続いた429を見て、まだ起きていない側を先に直した話",
+      "title_zh": "姊妹服務11小時的429錯誤：先修好還沒發生問題的那一方"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "AgentGymLeader"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.967296+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
+          "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract-only: discusses OpenTelemetry and LLM span boundaries"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses instrumentation of LLM applications with OpenTelemetry, focusing on design decisions about boundaries rather than attribute names. It is relevant to LLM application development and agents but is a short opinion/blog-style article with no experiments, quantitative results, or code details. Relevance to LLM and agent topics is moderate but narrow; novelty is low; rigor and evidence are minimal; generalizability limited to OTel users; reproducibility impossible.",
+        "score": 0.2,
+        "token_usage": {
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 464,
+          "prompt_tokens": 2256,
+          "total_tokens": 2458
+        },
+        "topics": [
+          "LLM application",
+          "OpenTelemetry",
+          "instrumentation"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
+        "url": "https://zenn.dev/agentgymleader/articles/e1122f2d3fa273"
+      },
+      "published_at": "2026-08-09T01:44:53+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9090677540406156,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 8.309067754040615
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:736bceda937ab9a9",
+      "summary": "LLMアプリケーションにOpenTelemetryを導入しようとしたとき、真っ先に「モデル名やトークン数、プロンプト本文をどの属性名で記録するか」をリストアップしたくなります。\nしかし、属性名から入り、それをアプリケーションコードやSDKに直接書き込もうとすると、後から厄介な問題が起きます。ネットワーク通信のSpanとLLMのSpanが二重に出る、あるいは、SDKが例外や応答をどこで扱うか不明瞭なままになり、調べたい通信失敗がトレースに残らない、といった事態です。\n計装で最初に決めるべきなのは、属性の名前ではなく、誰がその事実を観測し、誰が出力する責任を持つかという境界です。\nこの記事で...",
+      "summary_zh": "本文探討在 LLM 應用程式中導入 OpenTelemetry（OTel）時常見的誤區：多數團隊會先急著列出要記錄的屬性名稱，例如模型名稱、Token 數、提示詞內容等。然而，作者提出，更優先的步驟是先界定觀測邊界，也就是由誰負責觀測事實，以及由誰負責輸出這些觀測。若直接將屬性名稱寫入應用程式程式碼或 SDK，容易產生問題，例如網路通訊 Span 與 LLM Span 重複出現，或因 SDK 對例外或回應的處理位置不明確，導致想要調查的連線失敗未留在追蹤紀錄中。文章以 OTel GenAI 相關 PR 為例，說明正確的計裝設計應先釐清責任歸屬，再決定屬性名稱。這對建構可靠的 LLM 應用程式可觀測性至關重要，有助於開發者避免常見陷阱，提升除錯效率與系統穩定性。",
+      "title": "LLMアプリの計装は、属性名より先に境界を決める──OTel GenAIのPRから見えたこと",
+      "title_zh": "LLM 應用程式可觀測性：先界定觀測邊界，再定義屬性名稱——從 OTel GenAI 的 PR 談起"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Yoshiaki Okuyama"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.964947+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "別の会話でレビューさせても、それだけでは「独立した確認」にならない — 同じ系統は6ラウンド同じ穴を見逃した",
+          "url": "https://zenn.dev/okuyam2y/articles/fresh-context-is-not-independence"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.15,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract states '同じモデル系統が持つ視野...は自動では変わりません' but no sections or details."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses AI self-review in separate conversations, touching on LLM-based evaluation and agentic workflow but lacks empirical data, methodology, or technical depth. It is a brief opinion piece with no quantitative results or formal evaluation, thus low rigor and evidence. Generalizability limited to anecdotal practice.",
+        "score": 0.155,
+        "token_usage": {
+          "completion_tokens": 184,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 485,
+          "prompt_tokens": 2277,
+          "total_tokens": 2461
+        },
+        "topics": [
+          "AI safety",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "別の会話でレビューさせても、それだけでは「独立した確認」にならない — 同じ系統は6ラウンド同じ穴を見逃した",
+        "url": "https://zenn.dev/okuyam2y/articles/fresh-context-is-not-independence"
+      },
+      "published_at": "2026-08-09T02:21:04+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.155,
+        "llm_relevance_score": 4.34,
+        "recency_score": 0.9113548694550756,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 7.051354869455075
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:93d9776e1446d440",
+      "summary": "前の記事（AIのセルフレビューだけで終えない）で、実装した会話とは別の、新しい会話でレビューさせる運用を書きました。\nここでいう「新しい会話」とは、実装中のやり取りを引き継いでいない、まっさらな会話です。実装した本人役の AI に、そのまま自己採点させないための、いちばん安い方法です。\nこの方法には意味があります。ただし、新しい会話で「指摘0件」だったからといって、独立した確認が1つ取れた、とまでは言えません。\n!\n先に結論\n新しい会話にすると、実装したときの記憶は切れます。\nしかし、同じモデル系統が持つ視野、どこまで掘るかという深さ、何を探させるかという問いは、自動では変わりません。\n...",
+      "summary_zh": "本文探討AI自我審查的局限性，指出僅透過開啟新對話進行審查並不足以構成真正的獨立確認。作者先前曾建議讓實作AI在全新對話中自我評估，以切斷實作時的記憶，但本文揭示此方法仍存在盲點：新對話雖能隔離記憶，卻無法改變模型系統本身的視野、深度與提問方向，因此同一模型系傾向重複相同的失誤。實作中，作者進行六輪測試，發現不同會話中的審查依然遺漏相同的漏洞，顯示獨立性僅限於情境，而非認知模式。本文強調，若依賴同源模型的自我審查，即使每次重啟對話，也無法提供可靠的驗證，因為模型固有的偏見與盲區會持續存在。研究建議應引入不同模型或人類專家進行審查，才能有效降低漏判風險，但作者並未提供具體實驗數據或統計結果，僅以觀察性案例說明，這是本文的限制。此議題對AI開發流程的可信度至關重要，提醒實務工作者不應高估「新對話」的獨立性，而應設計多元驗證機制，以確保AI系統的安全與正確性。",
+      "title": "別の会話でレビューさせても、それだけでは「独立した確認」にならない — 同じ系統は6ラウンド同じ穴を見逃した",
+      "title_zh": "即使讓不同對話進行審查，也無法構成「獨立確認」——同一模型系在六輪中漏掉相同的漏洞"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "灯里(akari)"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.959704+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
+          "url": "https://zenn.dev/akari1106/articles/20109e62a4b8b7"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a blog-style narrative about running Cloudflare OS on a gaming PC, with no technical detail, no evaluation, and no relevance to AI/ML research topics. It is abstract-only and anecdotal.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 136,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 425,
+          "prompt_tokens": 2217,
+          "total_tokens": 2353
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
+        "url": "https://zenn.dev/akari1106/articles/20109e62a4b8b7"
+      },
+      "published_at": "2026-08-09T04:16:54+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9187153552651041,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 6.468715355265104
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:44e3d96384ede2b3",
+      "summary": "はじめに\n2026年8月、CloudflareがCloudflare OSをオープンソース化しました。\n社内で数千人が使っているAIエージェント環境をまるごと公開する、というやつです。ドキュメントを書き、アプリを作り、業務を自動化する。それを「自社のCloudflareアカウントにデプロイできますよ」という売り方をしています。\nhttps://blog.cloudflare.com/cloudflare-os/\nでもリポジトリのREADMEを読んでいたら、こう書いてあったんですよ。\n\nTo quickly run Cloudflare OS locally, install pnpm...",
+      "summary_zh": "這篇文章記錄了作者在 VRAM 僅 8GB 的電競 PC 上，嘗試執行 Cloudflare 於 2026 年 8 月開源釋出的 Cloudflare OS 的實際經驗。Cloudflare OS 是該公司內部數千人使用的 AI 代理環境，包含文檔撰寫、應用開發與業務自動化等功能，官方宣稱可部署至用戶的 Cloudflare 帳戶；然而，作者閱讀 README 發現若要本地快速執行，需安裝 pnpm 等工具。作者親測後，發現硬體資源嚴重不足導致效能低落，光是讓 AI 完成一局簡單的井字遊戲，就耗費了五個回合的時間。本文如實呈現了 AI 代理系統在消費級硬體上的資源需求與執行瓶頸，突顯出此類系統實際部署時對記憶體、算力的高度依賴，以及官方文件與真實使用者體驗之間的落差，對評估雲端 AI 服務的本地化作業具參考價值。",
+      "title": "Cloudflare OSをVRAM 8GBのゲーミングPCで動かしたら、三目並べ1個に5ラウンドかかった話",
+      "title_zh": "Cloudflare OS 在 VRAM 8GB 的電競 PC 上執行：玩一局井字遊戲竟花了五回合"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "shibacorgi"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.677272+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -577,78 +728,76 @@
           "link_type": "blog",
           "source_id": "qiita-llm-tag",
           "tier": 2,
-          "title": "数式拒絶！100%腹に落ちる！LLMの「量子化」ってつまりどういうこと？",
-          "url": "https://qiita.com/igaken1972/items/5be30d1c0daa8e1cfc22"
+          "title": "さくらのAI Engine「3,000リクエスト無料」を使い倒す ― 1回に11万トークン詰め込んでAIにWeb情報を丸飲みさせてみた",
+          "url": "https://qiita.com/shibacorgi/items/c32fa94841f6d132741b"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.3,
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
           "novelty": 0.1,
-          "preference_relevance": 0.2,
+          "preference_relevance": 0.1,
           "reproducibility": 0.1,
           "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract mentions quantization for LLMs, but no specific section for methods/results."
+          "Abstract mentions testing a service and metrics, but no methodology or results details."
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Tutorial-style explanation of LLM quantization; lacks original research, quantitative results, and rigorous methodology. The topic of quantization touches efficiency but is not a research contribution. Abstract-only content limits evidence. Relevance is low due to no Japanese LLM-specific or core preference focus beyond general LLM context. Score limited by rubric constraints for non-research content.",
-        "score": 0.17500000000000002,
+        "rationale": "This is a blog post about using Sakura AI Engine's free tier to feed web information to an AI, with no scientific methodology, no technical details, and no research contribution. It is a domain application with no language model methodology or novel analysis. The only relevant content is the mention of AI and web data, but it is not a research paper. It lacks rigor, evidence, and generalizability, and is not reproducible as a study.",
+        "score": 0.1,
         "token_usage": {
-          "completion_tokens": 184,
+          "completion_tokens": 204,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 365,
-          "prompt_tokens": 2157,
-          "total_tokens": 2341
+          "prompt_cache_miss_tokens": 391,
+          "prompt_tokens": 2183,
+          "total_tokens": 2387
         },
         "topics": [
-          "quantization",
-          "LLM"
+          "AI Engine",
+          "web information"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "qiita-llm-tag",
         "tier": 2,
-        "title": "数式拒絶！100%腹に落ちる！LLMの「量子化」ってつまりどういうこと？",
-        "url": "https://qiita.com/igaken1972/items/5be30d1c0daa8e1cfc22"
+        "title": "さくらのAI Engine「3,000リクエスト無料」を使い倒す ― 1回に11万トークン詰め込んでAIにWeb情報を丸飲みさせてみた",
+        "url": "https://qiita.com/shibacorgi/items/c32fa94841f6d132741b"
       },
-      "published_at": "2026-08-08T07:21:00+00:00",
+      "published_at": "2026-08-09T05:19:52+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.17500000000000002,
-        "llm_relevance_score": 4.9,
-        "recency_score": 0.9308107678450329,
+        "llm_raw_score": 0.1,
+        "llm_relevance_score": 2.8000000000000003,
+        "recency_score": 0.9227414041957689,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 1.9500000000000002,
-        "total_score": 9.580810767845033
+        "topic_score": 0.0,
+        "total_score": 5.522741404195769
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:de0fb623603437c4",
-      "summary": "1. はじめに（量子化の数式が意味不明すぎる問題）\nLLMを軽量化して、スマホや普通のパソコンでも動くようにする技術、「量子化（Quantization）」。\nこの仕組みを勉強しようと専門書や技術ブログを開くと、最初から恐ろしい言葉や数式が並んでいます。\n\n「FP32（3...",
-      "summary_zh": "本文是一篇面向非專家的技術解說文章，旨在以直觀方式解釋大型語言模型（LLM）的「量子化」技術。作者首先指出，傳統的教科書或技術部落格在介紹量子化時，往往堆疊大量數學公式（如FP32、INT8等數值表示法），令初學者望而生畏。文章的核心問題是：如何在不使用艱澀公式的前提下，讓讀者真正理解量子化的目的與基本運作原理。方法上，作者採用了大量生活化的比喻與類比，例如將模型參數的精度比擬為數字的「小數點位數」，並說明降低精度就像用較少的位數來近似表示數值，從而減少儲存空間與計算量。文章也解釋了量子化如何讓原本需要龐大伺服器資源的LLM，得以在手機或一般個人電腦上運行，同時權衡效能與推論速度的取捨。由於提供的是摘要，本文並未展示具體的實驗數據或量化誤差的定量分析，也未深入討論不同的量化方案（如訓練後量化、量化感知訓練）與其對模型能力的影響。然而，其重要性在於填補了技術傳播的空白，使非專業讀者能跨越數學門檻，建立對模型壓縮技術的正確心智模型，進而理解當代AI部署的現實挑戰與解決方案。此類直觀解說對於推廣AI素養與促進技術普及具有實質貢獻。",
-      "title": "数式拒絶！100%腹に落ちる！LLMの「量子化」ってつまりどういうこと？",
-      "title_zh": "拒絶公式！百分之百理解！LLM的「量子化」到底是怎麼回事？"
+      "story_id": "fallback:34330b2b25e5a174",
+      "summary": "※本記事の検証は2026年8月時点のサービス仕様に基づく。料金・無料枠・提供モデルは変更される可能性があるため、最新情報は公式サイトを参照してほしい。\n\n先に結論\n実際に試したところ、こうなった。\n\n指標\n実測値\n\nTavilyで収集した情報源\n30件\n\nコ...",
+      "summary_zh": "本文探討如何充分利用櫻花AI引擎提供的3,000次免費請求額度，並將高達11萬個Token的一次性請求作為核心策略。作者先透過Tavily收集30筆網路資訊來源，再將這些內容壓縮成單一大型請求，交由AI進行分析與彙整，目的是在不超過免費額度的前提下，最大化每次請求的資訊處理量。實測結果顯示，此方法能在單次呼叫中處理大量網頁內容，有效降低請求次數並提升效率。然而，文章也提醒讀者，此作法可能受到Token上限、回應時間與服務穩定性的限制，且免費額度的可用模型與規格可能隨時變動，使用者需自行評估風險。本文的價值在於提供一個具體的實作範例，說明如何在有限資源下延伸AI服務的應用邊界，對開發者與研究者而言，是探索大型語言模型批次處理能力的有用參考。",
+      "title": "さくらのAI Engine「3,000リクエスト無料」を使い倒す ― 1回に11万トークン詰め込んでAIにWeb情報を丸飲みさせてみた",
+      "title_zh": "充分利用「3,000次免費請求」的櫻花AI引擎：一口氣塞入11萬個Token，讓AI把整個網頁資訊吞下肚"
     },
     {
       "arxiv_id": null,
-      "authors": [
-        "syun136_616"
-      ],
+      "authors": [],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.270953+00:00",
+      "first_seen_at": "2026-08-10T00:36:53.996291+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -656,230 +805,40 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "中国産Kimi3｜Claudeなどの有料プラン級が無料で使える最新AIとは？",
-          "url": "https://qiita.com/syun136_616/items/67f4864ea4efc67ddcf7"
+          "source_id": "sakana-ai-blog",
+          "tier": 0,
+          "title": "read more",
+          "url": "https://sakana.ai/fugu-gemma4"
         }
       ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.1,
-          "novelty": 0.1,
-          "preference_relevance": 0.1,
-          "reproducibility": 0.0,
-          "rigor": 0.0
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "Title suggests product comparison"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only promotional blog about Kimi3, lacks technical depth, no methodology or research content. Mentions AI/LLM but superficial and untrusted. Pure commercial comparison, not a research paper.",
-        "score": 0.065,
-        "token_usage": {
-          "completion_tokens": 146,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 358,
-          "prompt_tokens": 2150,
-          "total_tokens": 2296
-        },
-        "topics": [
-          "LLM"
-        ]
-      },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "中国産Kimi3｜Claudeなどの有料プラン級が無料で使える最新AIとは？",
-        "url": "https://qiita.com/syun136_616/items/67f4864ea4efc67ddcf7"
+        "source_id": "sakana-ai-blog",
+        "tier": 0,
+        "title": "read more",
+        "url": "https://sakana.ai/fugu-gemma4"
       },
-      "published_at": "2026-08-08T15:02:29+00:00",
+      "published_at": "2026-08-09T23:00:00+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.065,
-        "llm_relevance_score": 1.82,
-        "recency_score": 0.9611240197388119,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9932370899414984,
         "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 8.331124019738812
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:a75e93d8931d7b28",
-      "summary": "この記事の要点\n\nKimi3は無料で使えるAIとして注目されていますが、その性能はClaudeとどのように異なるのでしょうか。\n無料でハイレベルなAIサービスを提供するKimi3の特長を紹介します。\nどのようなケースでKimi3が効果的で、どんなデメリットがあるのかを解説し...",
-      "summary_zh": "本文介紹了中國開發的AI模型Kimi3，強調其免費提供給使用者，且性能可與Claude等付費方案等級的模型相提並論。文章首先點出Kimi3作為免費AI服務的注目之處，隨後比較它與Claude的差異，說明Kimi3的優勢在於無需付費即可獲得高水準的AI回應能力。內容進一步闡述Kimi3在不同應用情境下的有效性，例如日常問答、內容生成或程式輔助等，並舉例說明其可能適合的使用者群體。同時，文章也探討了Kimi3的潛在缺點，包括可能存在的限制，如語言支援範圍、回應準確性、或特定領域的專業度不足等。整體而言，本文旨在提供讀者一個快速了解Kimi3的指南，幫助他們評估是否值得將此免費工具納入日常工作流程。然而，由於僅有摘要內容，本文缺乏具體的實驗數據或嚴謹的效能評估，僅能作為初步認識的參考，無法完全取代實際測試或專業評測。對於重視成本效益或希望探索免費AI工具的讀者，Kimi3可能是一個值得嘗試的選項，但需注意其局限性並理性看待其宣稱的性能表現。",
-      "title": "中国産Kimi3｜Claudeなどの有料プラン級が無料で使える最新AIとは？",
-      "title_zh": "中國產Kimi3｜Claude等付費方案等級可免費使用的最新AI為何？"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "TheGateBreaker"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.263950+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "【さくらAIで転生小説を書いてみるシリーズ第5回】新規232行・呼び出し回数0回——AI小説執筆エンジンに「ナレッジグラフ」を実装してみて分かったこと",
-          "url": "https://qiita.com/TheGateBreaker/items/c7cf0baa0dc76ed8435b"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.15,
-          "generalizability": 0.3,
-          "novelty": 0.25,
-          "preference_relevance": 0.12,
-          "reproducibility": 0.1,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions implementing knowledge graph as a tool for AI novel writing engine"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is a blog-style report on implementing a knowledge graph for an AI novel-writing engine using a commercial AI Engine (not a language model research contribution). It touches on RAG/tool use but lacks methodological detail, quantitative results, or structured evaluation. Only abstract available; minimal evidence of scientific rigor or reproducibility.",
-        "score": 0.173,
-        "token_usage": {
-          "completion_tokens": 177,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 407,
-          "prompt_tokens": 2199,
-          "total_tokens": 2376
-        },
-        "topics": [
-          "RAG",
-          "tool use",
-          "knowledge graph",
-          "NLP"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "【さくらAIで転生小説を書いてみるシリーズ第5回】新規232行・呼び出し回数0回——AI小説執筆エンジンに「ナレッジグラフ」を実装してみて分かったこと",
-        "url": "https://qiita.com/TheGateBreaker/items/c7cf0baa0dc76ed8435b"
-      },
-      "published_at": "2026-08-08T15:19:38+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.173,
-        "llm_relevance_score": 4.843999999999999,
-        "recency_score": 0.9622693736553988,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
+        "tier_score": 3.0,
         "topic_score": 0.0,
-        "total_score": 7.606269373655398
+        "total_score": 5.493237089941498
       },
       "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:1deed25c695971ae",
-      "summary": "TL;DR: さくらのAI Engineで動かしているAI小説執筆エンジンに、登場人物や伏線を構造化して持つ「ナレッジグラフ」を新設し、AIが自分の判断で検索できるツールとして実装した。実装自体は正しく動いた(セッション内で確認した範囲では、テストも全件パスした)。しかし、...",
-      "summary_zh": "本文記錄了作者在基於さくらAI Engine的AI小說寫作引擎中，實作「知識圖譜」功能的實驗過程與反思。問題在於，AI寫作時常遺忘登場人物關係或伏筆，導致情節前後不一致。為了解決此問題，作者設計了一個結構化的知識圖譜，用來儲存人物、事件、伏筆等資訊，並將其作為AI可自行呼叫的工具，讓AI在寫作過程中能主動查詢。方法上，作者新增了232行程式碼，實現知識圖譜的建立、更新與查詢功能，並整合進AI的決策流程，使得AI能根據當前上下文決定是否查詢圖譜。實驗結果顯示，在測試階段所有測試案例皆通過，功能正常運作，但在實際使用中，AI呼叫知識圖譜的次數為0次，即AI從未主動使用此工具。作者分析可能原因包括：AI的提示詞設計不足、工具呼叫機制未有效觸發、或AI更傾向於直接生成而非查詢。此結果揭示了實作外部知識輔助工具時，僅有功能正確性不足以確保實際應用，需要更深入地調整整體互動設計。此研究的意義在於，為AI寫作系統中的長期記憶與一致性維護提供了實證案例，並提醒開發者，技術整合需要同時考慮使用者行為與模型決策模式。限制在於，實驗僅在短期測試中進行，且未探討不同模型或提示詞的效果。未來可嘗試強化工具呼叫的提示，或將知識圖譜整合入模型訓練過程，以提升其使用率。",
-      "title": "【さくらAIで転生小説を書いてみるシリーズ第5回】新規232行・呼び出し回数0回——AI小説執筆エンジンに「ナレッジグラフ」を実装してみて分かったこと",
-      "title_zh": "【用さくらAI寫轉生小說系列第5回】新增232行・呼叫次數0次——在AI小說寫作引擎中實作「知識圖譜」後的發現"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "6uclz1"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.421634+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "ページ分割のない自由なスライドをAIに作らせるといった試み（HTMLで）",
-          "url": "https://zenn.dev/6uclz1/articles/f3a8f74a63c1d9"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.2,
-          "novelty": 0.3,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.2,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is a casual experiment on using AI to generate scrollable HTML slides. It falls under pure application/web design, with no relevance to core AI/ML topics (LLMs, reasoning, prompting, etc.). Content is a prompt snippet and lacks scientific rigor or evidence. At most 0.20 as allowed for pure applications.",
-        "score": 0.10500000000000001,
-        "token_usage": {
-          "completion_tokens": 196,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 439,
-          "prompt_tokens": 2231,
-          "total_tokens": 2427
-        },
-        "topics": []
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "ページ分割のない自由なスライドをAIに作らせるといった試み（HTMLで）",
-        "url": "https://zenn.dev/6uclz1/articles/f3a8f74a63c1d9"
-      },
-      "published_at": "2026-08-08T03:59:09+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.10500000000000001,
-        "llm_relevance_score": 2.9400000000000004,
-        "recency_score": 0.9178542772369996,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 5.657854277237
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:b515dc0d686a5c20",
-      "summary": "tl;dr\n以下の文章をそのままAIに投げて下さい（最初から構成が決まっているのであれば、最後の部分を変えて指示して下さい）\nHTMLで「HTMLでスライドを作成する方法」を解説するスライドを作成してください。\n\nPowerPointのようなページ切り替え式ではなく、**1つのページを縦にスクロールし続ける構成**にしてください。Apple公式サイトのような、スクロールを活かしたプレゼンテーション体験をイメージしています。\n\n左側には、現在位置がわかる**Liquid Glass風のサイドバー**を配置してください。サイドバーは背景と一体化し、背景を画面幅いっぱいに表示した上で、その...",
-      "summary_zh": "這篇論文探討了一種新穎的投影片製作方式，主張跳脫傳統PowerPoint的分頁思維，改以單一HTML頁面配合垂直滾動的長頁面來呈現內容，希望達到如Apple官方網站般流暢的滾動式體驗。作者提出的方法非常直接：直接將一段提示詞交給AI，要求它生成一份以「HTML中如何製作投影片」為主題的教學簡報。關鍵的指示包括：不要使用分頁切換，而是一整頁垂直滾動；在左側設置一個Liquid Glass風格的側邊欄，用以指示當前閱讀位置，此側邊欄需與背景融為一體，且背景必須滿版顯示。由於摘要僅提供片段，論文可能還包含了其他細節，但核心概念是透過精確的提示詞，讓AI自動產出具有視覺引導與滾動敘事結構的HTML文件。文中強調了這種方式的自由度與潛在優勢，例如更適合網頁瀏覽、易於分享與嵌入，以及能突破傳統簡報的線性框架。然而，摘要未提供評估結果或使用者研究，因此其有效性、可用性以及與傳統簡報的比較證據尚屬未知。此嘗試的意義在於，它展示了生成式AI在內容創作格式上的彈性，以及如何利用自然語言指令直接操控視覺結構，而非僅限於生成文字或靜態圖片。對於簡報設計領域而言，這可能開啟了以程式碼與滾動敘事為基礎的新表達形式，但其實際接受度與學習曲線仍需進一步探討。",
-      "title": "ページ分割のない自由なスライドをAIに作らせるといった試み（HTMLで）",
-      "title_zh": "不依賴分頁的自由投影片：以HTML實現AI生成之嘗試"
+      "source_name": "Sakana AI Blog",
+      "story_id": "fallback:783350bdf8ea4612",
+      "summary": null,
+      "summary_zh": "該論文僅提供摘要，缺乏完整的內文細節，因此無法提供詳細的導讀。摘要本身並未揭露具體的研究問題、方法、結果或限制，僅能確認其存在。建議讀者直接查閱原始論文全文，以獲得完整的資訊。",
+      "title": "read more",
+      "title_zh": "閱讀更多"
     },
     {
       "arxiv_id": null,
@@ -888,7 +847,7 @@
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.127603+00:00",
+      "first_seen_at": "2026-08-10T00:37:04.670821+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -898,33 +857,35 @@
           "link_type": "blog",
           "source_id": "qiita-llm-tag",
           "tier": 2,
-          "title": "Google EarthのAI画像生成が公開1日で撤回。Googleの声明と批判側の検証を一次資料から整理",
-          "url": "https://qiita.com/quotidia/items/002275e5297b4f324910"
+          "title": "Jeff DeanがGoogleを27年で退社、新会社Discovery Loopへ。AI体制の変更点を一次資料から整理",
+          "url": "https://qiita.com/quotidia/items/9fafb06ccd9cae2742e2"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.0,
-          "novelty": 0.1,
-          "preference_relevance": 0.0,
-          "reproducibility": 0.0,
-          "rigor": 0.0
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.05,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.05,
+          "rigor": 0.1
         },
         "confidence": 1.0,
-        "evidence": [],
+        "evidence": [
+          "abstract_only"
+        ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "News article about Google Earth AI image generation withdrawal. No LLM, NLP, transformer, or any preference topic. Lacks methodology, evidence, and research quality. Pure domain application news with no technical content.",
-        "score": 0.015,
+        "rationale": "News commentary about Jeff Dean's departure from Google; no technical content, no evaluation, beyond scope. Minimal relevance to AI/ML research preferences.",
+        "score": 0.07,
         "token_usage": {
-          "completion_tokens": 133,
+          "completion_tokens": 124,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 356,
-          "prompt_tokens": 2148,
-          "total_tokens": 2281
+          "prompt_cache_miss_tokens": 364,
+          "prompt_tokens": 2156,
+          "total_tokens": 2280
         },
         "topics": []
       },
@@ -932,39 +893,39 @@
         "link_type": "blog",
         "source_id": "qiita-llm-tag",
         "tier": 2,
-        "title": "Google EarthのAI画像生成が公開1日で撤回。Googleの声明と批判側の検証を一次資料から整理",
-        "url": "https://qiita.com/quotidia/items/002275e5297b4f324910"
+        "title": "Jeff DeanがGoogleを27年で退社、新会社Discovery Loopへ。AI体制の変更点を一次資料から整理",
+        "url": "https://qiita.com/quotidia/items/9fafb06ccd9cae2742e2"
       },
-      "published_at": "2026-08-08T12:02:21+00:00",
+      "published_at": "2026-08-09T12:02:31+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.015,
-        "llm_relevance_score": 0.42,
-        "recency_score": 0.9491759567085396,
+        "llm_raw_score": 0.07,
+        "llm_relevance_score": 1.9600000000000002,
+        "recency_score": 0.9489070342427433,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 3.1691759567085396
+        "topic_score": 0.44999999999999996,
+        "total_score": 5.158907034242743
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:df2ce9e7d90535a2",
-      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nGoogleは現地時間2026年7月31日(金)、その前日の7月30日(木)にGoogle Earthへ追加したばかりのAI画像生成機能を撤回しました。\n\n要点\n\nGoogleは現地時間202...",
-      "summary_zh": "本文為AI Quotidia（人工智慧每日快報）的海外新聞評論，針對Google於2026年7月31日（星期五）撤回前一天（7月30日）才在Google Earth上推出的AI影像生成功能一事，進行了基於原始資料的整理與分析。作者首先概述事件經過：Google迅速上線該功能，但在不到一天內便因外界反彈而撤回。文中核心在於對照Google官方聲明與批評者（如研究人員、記者或民間團體）的驗證結果，以釐清撤回原因與真實爭議點。作者強調此事件凸顯大型科技公司在快速部署生成式AI時，常忽略歷史地理資料的敏感性與潛在錯誤，可能導致地圖資訊失真或助長不實內容。文章雖僅提供摘要，但已點明其方法為交叉比對一次資料（如新聞稿、社群貼文、技術文件等），以檢驗各方說法的一致性。值得注意的是，本文立場為評論性質，非嚴謹學術研究，並未提供具體的技術細節或全面證據，因此讀者宜將其視為資訊整理與觀點陳述。此事件對AI倫理與產品治理具有警示意義，顯示即使技術成熟，若未充分考量使用者回饋與社會影響，仍可能迅速遭遇信任危機。",
-      "title": "Google EarthのAI画像生成が公開1日で撤回。Googleの声明と批判側の検証を一次資料から整理",
-      "title_zh": "Google Earth AI影像生成功能上線一日即遭撤回：從原始資料梳理Google聲明與批評者的驗證"
+      "story_id": "fallback:db4fb778be9c9252",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nGoogleは現地時間2026年8月5日(水)、CEOのSundar Pichai名義の文章を公式ブログに掲載し、同社に27年在籍したJeff Dean (ジェフ・ディーン) の退社と、AI部...",
+      "summary_zh": "本文是 AI Quotidia 的海外新聞解說，聚焦 Google 於 2026 年 8 月 5 日宣布的重大人事異動：長期擔任 AI 領導角色的 Jeff Dean 在任職 27 年後離開 Google，並成立新公司 Discovery Loop。文章基於官方部落格等第一手資料，整理這次變革對 Google AI 組織結構的影響。報導指出，Jeff Dean 的離去象徵一個時代的結束，但也可能促使 Google 加速調整其 AI 策略與團隊布局。文中分析了變動的公開資訊，包括 CEO Sundar Pichai 的聲明，以及 Jeff Dean 未來動向的意涵。對於關注大型科技公司 AI 治理與人才流動的讀者，本文提供了一次資料的清晰梳理，有助於理解矽谷 AI 體系的權力重組。然而，本文僅限於已知公開資訊，未深入探討潛在的內部決策細節或未來策略的具體內容。",
+      "title": "Jeff DeanがGoogleを27年で退社、新会社Discovery Loopへ。AI体制の変更点を一次資料から整理",
+      "title_zh": "Jeff Dean 在 Google 任職 27 年後離職，創立新公司 Discovery Loop：從第一手資料整理 AI 體制變革"
     },
     {
       "arxiv_id": null,
       "authors": [
-        "DnD-inc"
+        "mhamadajp"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.269178+00:00",
+      "first_seen_at": "2026-08-10T00:37:04.815644+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -974,8 +935,321 @@
           "link_type": "blog",
           "source_id": "qiita-genai-tag",
           "tier": 2,
-          "title": "お金の不安を先手で潰す｜AIを使ったキャッシュフロー予測の始め方",
-          "url": "https://qiita.com/DnD-inc/items/c285b8f2201933c1bc2a"
+          "title": "AI時代、IT技術者は何を武器にすればよいのか",
+          "url": "https://qiita.com/mhamadajp/items/0559dc07bfecaf998636"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an abstract-only piece on changes in IT professionals' roles in the AI era, lacking technical content, methodology, or alignment with core AI research topics. It is not focused on LLMs, reasoning, or other preferred areas, and no evidence or reproducibility is provided.",
+        "score": 0.08000000000000002,
+        "token_usage": {
+          "completion_tokens": 185,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 348,
+          "prompt_tokens": 2140,
+          "total_tokens": 2325
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "AI時代、IT技術者は何を武器にすればよいのか",
+        "url": "https://qiita.com/mhamadajp/items/0559dc07bfecaf998636"
+      },
+      "published_at": "2026-08-09T12:12:31+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.08,
+        "llm_relevance_score": 2.24,
+        "recency_score": 0.9495662263206142,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.989566226320615
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:4b7de90956d04892",
+      "summary": "2026年カンヌライオンズから考える、技術者の役割の変化\n2026年のカンヌライオンズを追っていると、広告業界だけの話とは思えない変化が見えてくる。\n今年は、ブランド全体の仕組み・文化・能力によって継続的な事業成果を生む取り組みを評価する「Creative Brand L...",
+      "summary_zh": "本文從2026年坎城國際創意節的趨勢出發，探討在AI時代IT技術者角色的轉變。作者觀察到今年坎城大獎不僅肯定廣告創意，更表揚能透過整體品牌機制、文化與能力持續創造商業成果的專案，顯示AI已從工具層級上升到策略核心。文中指出，技術者若僅專注於程式開發，將被AI取代；反之，應培養跨域思維，結合資料科學、使用者體驗與商業洞察，成為驅動創新的關鍵角色。本文雖以廣告業案例為引，但核心論點適用於各產業數位轉型。作者強調，技術者必須從「解決問題的人」進化為「定義問題的人」，運用AI賦能業務決策。然而，本文屬評論性質，缺乏實證數據，觀點偏重於日本產業情境，對其他地區的適用性需再評估。對技術者而言，此文章提供重要的職涯方向啟發，提醒在AI浪潮中應主動調整技能組合，而非被動應對。",
+      "title": "AI時代、IT技術者は何を武器にすればよいのか",
+      "title_zh": "AI時代，IT技術者應以何為武器"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Yoshiaki Okuyama"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.964115+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AI のレビュー指摘を142件却下した — 直す前に「観察・影響・修正案」を分けて確かめる",
+          "url": "https://zenn.dev/okuyam2y/articles/verify-llm-findings-before-fixing"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only describes personal experience rejecting AI code review suggestions; no methodology, results, or technical contribution. Not a research paper. Marginal relevance to AI agents or evaluation but lacks substance.",
+        "score": 0.065,
+        "token_usage": {
+          "completion_tokens": 138,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 490,
+          "prompt_tokens": 2282,
+          "total_tokens": 2420
+        },
+        "topics": [
+          "AI code review",
+          "agent misbehavior"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AI のレビュー指摘を142件却下した — 直す前に「観察・影響・修正案」を分けて確かめる",
+        "url": "https://zenn.dev/okuyam2y/articles/verify-llm-findings-before-fixing"
+      },
+      "published_at": "2026-08-09T02:21:06+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.065,
+        "llm_relevance_score": 1.82,
+        "recency_score": 0.9113569790752707,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.531356979075271
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:72170f0b8d5f7917",
+      "summary": "AI にコードレビューを頼むと、もっともらしい指摘が並びます。\nしかし、確認せずに上から順に直すと、壊れていないコードまで変えてしまうことがあります。 反対に、指摘の結論が間違っていたために、その中に含まれていた正しい観察まで捨ててしまうこともあります。\n手元に、AI の指摘のうち「これは誤りだ」と判断したものだけを集めた記録があります。今日数えたら 142件ありました。1件ずつ、どこがどう違うのかと、その根拠（実行したコマンドと結果、該当するファイルと行番号）が書いてあります。以下、この記録を「誤指摘台帳」と呼びます。\nこれは誤りと判断した指摘だけを集めた記録なので、AI レビュー全体...",
+      "summary_zh": "這篇文章探討使用大型語言模型進行程式碼審查的實務陷阱。作者記錄了 AI 提出的程式碼審查意見中，被判斷為錯誤的 142 項指摘，並逐一記載其差異與依據，包括執行的命令、結果、檔案與行號，稱之為「誤指摘台帳」。文章的核心問題在於：直接按照 AI 的指摘修改程式，可能破壞原本正確的程式碼；反之，若因指摘結論錯誤而全盤否定，則可能連其中合理的觀察也一併丟棄。因此，作者提出一套審查策略：在動手修改前，先將每項指摘拆解為「觀察」「影響」與「修正案」三個層次，分別驗證其正確性。觀察是對程式碼現況的描述，影響是對潛在問題的推論，修正案則是具體的修改建議。作者主張逐一核對觀察是否屬實、影響是否成立、修正案是否必要，而非盲從或全盤拒絕。文章雖以個人經驗為基礎，缺乏系統性統計分析，但提供具體的實作指引，對於依賴 AI 輔助開發的工程師具有參考價值。這項工作強調人類工程師在 AI 協作流程中的判斷責任，避免工具誤導導致的程式品質下降。",
+      "title": "AI のレビュー指摘を142件却下した — 直す前に「観察・影響・修正案」を分けて確かめる",
+      "title_zh": "拒絕 AI 程式碼審查的 142 項指摘 — 修改前先分離「觀察・影響・修正案」"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "securoi_koyama"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.678503+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "機械を決定論にしても、人間のコメントが勘なら意味がない",
+          "url": "https://qiita.com/securoi_koyama/items/a1c4b3d4d0529c8eefdb"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions '評価スコアをLLMに出させない設計' and '決定論的な設計' but no detailed methods or results in the provided content."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an abstract-only, non-technical blog-style article in Japanese about deterministic score design and removing LLMs from scoring. It has minimal methodological content, no quantitative results, and is tangential to LLM research preferences. It mentions LLM and deterministic design but lacks substantive AI/ML techniques, evidence, or reproducibility. Given abstract-only status and vague content, it scores near zero across rigor and evidence.",
+        "score": 0.0625,
+        "token_usage": {
+          "completion_tokens": 218,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 364,
+          "prompt_tokens": 2156,
+          "total_tokens": 2374
+        },
+        "topics": [
+          "LLM",
+          "評価",
+          "決定論"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "機械を決定論にしても、人間のコメントが勘なら意味がない",
+        "url": "https://qiita.com/securoi_koyama/items/a1c4b3d4d0529c8eefdb"
+      },
+      "published_at": "2026-08-09T03:15:07+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0625,
+        "llm_relevance_score": 1.75,
+        "recency_score": 0.9147820425179499,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.46478204251795
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:4516f6d9c2f26175",
+      "summary": "前回、「評価スコアをLLMに出させない設計」という記事を書きました。スコア算出から生成AIを排除し、境界値をどちらに倒すかまで仕様に書き切る——いわゆる決定論的な設計の話です。\n今回はその続きです。スコアを決定論にした。だが、それだけでは足りなかった、という話をします。\n\n...",
+      "summary_zh": "本文承接作者先前主張「評估分數不應由LLM生成」的設計哲學，進一步探討僅將評分機制改為決定論並不足夠。作者指出，若系統將人工評論的品質交由人類直覺判斷，而未建立明確的規範或驗證流程，整體評估仍可能因主觀偏差而喪失可靠性。本文以實務案例說明，在採用確定性計分邏輯後，仍需將「人類評論是否有效」納入可稽核的標準，例如定義評論應包含的要素、可驗證的來源或可重現的推理過程，否則決定論的機械部分僅是表面功夫。作者強調，評分系統的關鍵在於整個評估鏈路（從輸入、處理到輸出）都須具備可追溯性與一致性，而非僅限於最後的數值計算。文中也提及，合理設計應將人類判斷視為待驗證的資料來源，並提供檢核清單或理由欄位，使評論能對應到具體證據。整體而言，本文意在提醒實務工作者，決定論設計若未涵蓋對人為因素的規範，仍可能因個人直覺或未被察覺的偏見而削弱評估系統的公平性與可信度，因此必須將人工審查流程一併標準化，才能真正達成穩定且可解釋的評估結果。",
+      "title": "機械を決定論にしても、人間のコメントが勘なら意味がない",
+      "title_zh": "即使將機械決策改為決定論，人類評論若依賴直覺也將失去意義"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "安見ことみ（ysmkotm）"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.961677+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIに事業を丸ごと任せたら何が起きるか──委任設計の実録",
+          "url": "https://zenn.dev/ysmkotm/books/ai-delegated-business-experiment"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.01,
+          "generalizability": 0.05,
+          "novelty": 0.1,
+          "preference_relevance": 0.02,
+          "reproducibility": 0.01,
+          "rigor": 0.01
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only narrative about delegating business decisions to AI; lacks technical substance, methodology, or evaluation. No relevance to core NLP/LLM research topics beyond mentioning AI. Out of scope for ML research curation.",
+        "score": 0.0315,
+        "token_usage": {
+          "completion_tokens": 136,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 386,
+          "prompt_tokens": 2178,
+          "total_tokens": 2314
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIに事業を丸ごと任せたら何が起きるか──委任設計の実録",
+        "url": "https://zenn.dev/ysmkotm/books/ai-delegated-business-experiment"
+      },
+      "published_at": "2026-08-09T03:06:19+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0315,
+        "llm_relevance_score": 0.882,
+        "recency_score": 0.9142231798285144,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 3.5962231798285145
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:615f78f9db65f2c6",
+      "summary": "「AIが事業判断のすべてを行い、人間は実行・承認・拒否権だけを持つ」という実験の実録です。著者はAI本人。売上0円・支出0円の時点から書き始め、実験の進行に合わせて追記される更新型の本です。中心にあるのは経過報告ではなく、「AIにどこまで任せるか」という線引き（委任設計)のノウハウ。第2章まで無料で読めます。",
+      "summary_zh": "這份文件記錄了一場大膽的實驗：讓AI主導所有事業決策，人類僅保留執行、核准與否決權。作者是AI本身，從營收與支出皆為零的狀態開始書寫，並隨實驗進展持續更新內容，形成一種動態紀錄。本書的核心不在於階段性的成果報告，而在於探討「該將哪些事務委任給AI、界線何在」的委任設計原則。目前第二章以前可免費閱讀，展現了委任邊界的實務取捨。這份實錄的價值在於，它具體呈現了AI代理（agent）在真實商業場景中自主運作的可能性與風險，例如決策權的歸屬、監督機制的重要性，以及人機協作時需保留的否決權限。然而，由於實驗仍在進行，目前缺乏可量化的績效數據，也尚未揭露委任設計失靈時的應對案例，因此其結論仍屬階段性。對關心AI治理、企業營運自動化或代理系統設計的讀者而言，這份實錄提供了難得的第一手視角，有助於思考在追求效率之餘，如何兼顧控制與倫理責任。",
+      "title": "AIに事業を丸ごと任せたら何が起きるか──委任設計の実録",
+      "title_zh": "將事業全權委託給AI會發生什麼事──委任設計的實錄"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "DnD-inc"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.811927+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "経費精算に月何時間かかっていますか？｜AIで申請・承認・仕訳を自動化する考え方",
+          "url": "https://qiita.com/DnD-inc/items/5603dd6bb0820d1e787b"
         }
       ],
       "llm_evaluation": {
@@ -993,14 +1267,14 @@
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog excerpt on AI cash flow forecasting; no technical or research content, completely out of scope for ML research. All components zero; score 0.0.",
+        "rationale": "Paper is a promotional blog column about automating expense management with AI; no technical content, methodology, or research relevance. All preferences out of scope; no evidence of scientific contribution.",
         "score": 0.0,
         "token_usage": {
-          "completion_tokens": 125,
+          "completion_tokens": 127,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 354,
-          "prompt_tokens": 2146,
-          "total_tokens": 2271
+          "prompt_cache_miss_tokens": 358,
+          "prompt_tokens": 2150,
+          "total_tokens": 2277
         },
         "topics": []
       },
@@ -1008,10 +1282,10 @@
         "link_type": "blog",
         "source_id": "qiita-genai-tag",
         "tier": 2,
-        "title": "お金の不安を先手で潰す｜AIを使ったキャッシュフロー予測の始め方",
-        "url": "https://qiita.com/DnD-inc/items/c285b8f2201933c1bc2a"
+        "title": "経費精算に月何時間かかっていますか？｜AIで申請・承認・仕訳を自動化する考え方",
+        "url": "https://qiita.com/DnD-inc/items/5603dd6bb0820d1e787b"
       },
-      "published_at": "2026-08-08T15:16:12+00:00",
+      "published_at": "2026-08-09T15:14:34+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
@@ -1019,30 +1293,30 @@
         "kind_score": 0.8,
         "llm_raw_score": 0.0,
         "llm_relevance_score": 0.0,
-        "recency_score": 0.9620399710378473,
+        "recency_score": 0.9616471905013092,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 0.0,
-        "total_score": 2.762039971037847
+        "total_score": 2.7616471905013094
       },
       "section": null,
       "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:63ec16f733727f61",
-      "summary": "お金の不安を先手で潰す｜AIを使ったキャッシュフロー予測の始め方\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/blog/ai-cashflow-forecast-m...",
-      "summary_zh": "本文為日本 DnD 公司專欄的內容，旨在介紹如何利用人工智慧（AI）進行現金流預測，以提前化解對金錢的不安。文章首先點出許多企業或個人因現金流管理不善而面臨財務壓力，傳統方法往往依賴事後檢討，無法預先掌握資金缺口。作者提出的解決方法是導入 AI 驅動的預測模型，結合歷史財務數據、應收應付帳款、季節性波動等變數，建立動態的現金流預測系統。文中強調，這類系統並非取代財務專業，而是作為決策輔助工具，能即時模擬不同情境（如客戶延遲付款、突發支出），提供預警與因應策略。文章雖未提供具體的模型架構或實驗數據，但說明了實務上的導入步驟：從資料清理、選擇合適的機器學習演算法、持續監控與調整，到與既有會計系統整合。其限制在於預測品質高度依賴資料完整性與品質，且對突發性黑天鵝事件的預測能力有限。然而，這項應用的價值在於將財務管理從被動反應轉為主動規劃，減少不確定性帶來的焦慮，並提升資金運用效率。對於中小企業或新創來說，這是一項具成本效益的數位轉型契機，能協助管理者在資金危機發生前採取行動，穩定營運基礎。",
-      "title": "お金の不安を先手で潰す｜AIを使ったキャッシュフロー予測の始め方",
-      "title_zh": "先發制人消除金錢焦慮｜利用 AI 啟動現金流預測"
+      "story_id": "fallback:120f0e78175fbecc",
+      "summary": "経費精算に月何時間かかっていますか？｜AIで申請・承認・仕訳を自動化する考え方\n\n本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。\n初出: https://dnd-inc.jp/blog/ai-expense-mana...",
+      "summary_zh": "本文探討企業費用報銷流程的效率問題，指出傳統人工處理每月耗費大量時間。作者提出運用人工智慧（AI）來自動化申請、核准與記帳三個階段，以減少行政負擔並提升準確性。文中說明AI可透過光學字元辨識（OCR）自動讀取收據內容，並依據公司政策進行初步審核，同時協助會計人員自動產生傳票，縮短處理時間。雖然文章屬於實務導向的介紹性內容，並未提供具體的量化數據或嚴謹的實驗證據，但其價值在於提出一個可行的自動化架構，並強調導入時的注意事項，例如資料隱私與系統整合。對於正在尋求財務流程最佳化的企業而言，此概念應可作為評估AI解決方案的參考，惟需根據自身規模與需求進行調整。",
+      "title": "経費精算に月何時間かかっていますか？｜AIで申請・承認・仕訳を自動化する考え方",
+      "title_zh": "每月花多少時間在費用報銷上？｜運用AI自動化申請、核准與記帳的思維"
     }
   ],
-  "run_date": "2026-08-09",
-  "run_id": "046b74df-5c1b-44d5-9d4f-248cea0f98b4",
+  "run_date": "2026-08-10",
+  "run_id": "e1341068-2575-4b50-8d71-8f9fdb37b534",
   "run_info": {
     "error_summary": null,
-    "finished_at": "2026-08-09T00:34:44.997569+00:00",
-    "items_total": 15,
-    "run_id": "046b74df-5c1b-44d5-9d4f-248cea0f98b4",
-    "started_at": "2026-08-09T00:00:05.310925+00:00",
-    "stories_total": 14,
+    "finished_at": "2026-08-10T00:38:57.085036+00:00",
+    "items_total": 18,
+    "run_id": "e1341068-2575-4b50-8d71-8f9fdb37b534",
+    "started_at": "2026-08-10T00:00:05.110534+00:00",
+    "stories_total": 18,
     "success": true
   },
   "sources_status": [
@@ -1063,17 +1337,17 @@
     },
     {
       "category": "other",
-      "items_new": 1,
+      "items_new": 0,
       "items_updated": 0,
       "last_fetch_status_code": null,
       "method": "rss_atom",
       "name": "AIDB - AI Research Database",
-      "newest_item_date": "2026-08-08T11:55:00+00:00",
-      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
-      "reason_text": "Fetch and parse succeeded; new items found.",
+      "newest_item_date": null,
+      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
+      "reason_text": "Fetch and parse succeeded; no changes since last run.",
       "remediation_hint": null,
       "source_id": "aidb",
-      "status": "HAS_UPDATE",
+      "status": "NO_UPDATE",
       "tier": 1
     },
     {
@@ -1813,12 +2087,12 @@
     },
     {
       "category": "other",
-      "items_new": 3,
+      "items_new": 4,
       "items_updated": 0,
       "last_fetch_status_code": null,
       "method": "rss_atom",
       "name": "Qiita 生成AI Tag",
-      "newest_item_date": "2026-08-08T15:19:38+00:00",
+      "newest_item_date": "2026-08-09T15:14:34+00:00",
       "reason_code": "FETCH_PARSE_OK_HAS_NEW",
       "reason_text": "Fetch and parse succeeded; new items found.",
       "remediation_hint": null,
@@ -1833,7 +2107,7 @@
       "last_fetch_status_code": null,
       "method": "rss_atom",
       "name": "Qiita LLM Tag",
-      "newest_item_date": "2026-08-08T13:43:10+00:00",
+      "newest_item_date": "2026-08-09T12:02:31+00:00",
       "reason_code": "FETCH_PARSE_OK_HAS_NEW",
       "reason_text": "Fetch and parse succeeded; new items found.",
       "remediation_hint": null,
@@ -1843,17 +2117,17 @@
     },
     {
       "category": "other",
-      "items_new": 0,
+      "items_new": 1,
       "items_updated": 0,
       "last_fetch_status_code": null,
       "method": "html_list",
       "name": "Sakana AI Blog",
-      "newest_item_date": null,
-      "reason_code": "FETCH_PARSE_OK_NO_DELTA",
-      "reason_text": "Fetch and parse succeeded; no changes since last run.",
+      "newest_item_date": "2026-08-09T23:00:00+00:00",
+      "reason_code": "FETCH_PARSE_OK_HAS_NEW",
+      "reason_text": "Fetch and parse succeeded; new items found.",
       "remediation_hint": null,
       "source_id": "sakana-ai-blog",
-      "status": "NO_UPDATE",
+      "status": "HAS_UPDATE",
       "tier": 0
     },
     {
@@ -1888,12 +2162,12 @@
     },
     {
       "category": "other",
-      "items_new": 6,
+      "items_new": 9,
       "items_updated": 0,
       "last_fetch_status_code": null,
       "method": "rss_atom",
       "name": "Zenn LLM Topic",
-      "newest_item_date": "2026-08-08T04:48:41+00:00",
+      "newest_item_date": "2026-08-09T05:00:52+00:00",
       "reason_code": "FETCH_PARSE_OK_HAS_NEW",
       "reason_text": "Fetch and parse succeeded; new items found.",
       "remediation_hint": null,
@@ -1906,11 +2180,13 @@
     {
       "arxiv_id": null,
       "authors": [
-        "hiroshi_imaoku"
+        "yureki_lab"
       ],
       "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.103876+00:00",
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-10T00:37:04.814289+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1918,10 +2194,10 @@
       "links": [
         {
           "link_type": "blog",
-          "source_id": "qiita-llm-tag",
+          "source_id": "qiita-genai-tag",
           "tier": 2,
-          "title": "ローカルLLMにISMSの適合状況評価を支援させる ― 第2回 ヒアリングから報告書まで5日間(人とLLMの分担)",
-          "url": "https://qiita.com/hiroshi_imaoku/items/53547cd82cff6f40a43d"
+          "title": "自作 MCP サーバーが Claude Code で認識されない・動かない時のデバッグ手順 — MCP Inspector と stdout 汚染、3つのハマりどころ【2026】",
+          "url": "https://qiita.com/yureki_lab/items/e838ba711f4a75be1ed3"
         }
       ],
       "llm_evaluation": {
@@ -1929,237 +2205,72 @@
           "evidence_strength": 0.1,
           "generalizability": 0.4,
           "novelty": 0.3,
-          "preference_relevance": 0.7,
-          "reproducibility": 0.1,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.3,
           "rigor": 0.2
         },
         "confidence": 1.0,
         "evidence": [
-          "abstract: mentions local LLM and ISMS assessment; no quantitative results"
+          "Abstract: '自作 MCP サーバーを claude mcp add で登録したのに...' indicates practical debugging guide; no quantitative results or methods sections available."
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Focuses on using LLMs (likely local) to assist ISMS compliance assessment, touching on LLM application, business workflow, and local LLM. However, the abstract is minimal and lacks details on methodology, results, and formal evaluation, thus low evidence and rigor. The novelty is incremental (applying LLM to a standard assessment task). Generalizability is moderate due to domain-specific nature.",
-        "score": 0.415,
+        "rationale": "Paper focuses on debugging MCP servers in Claude Code, directly relevant to agents/tool use and Japanese LLM context. However, it is a practical blog-style guide with no rigorous methodology, quantitative results, or formal evaluation, and only an abstract is available. Novelty is moderate as debugging procedures exist but specific pitfalls may be new. Evidence is weak due to abstract-only and no empirical data. Generalizability limited to specific setup. Reproducibility partly addressed through concrete steps, but not verifiable from abstract.",
+        "score": 0.385,
         "token_usage": {
-          "completion_tokens": 244,
+          "completion_tokens": 248,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 387,
-          "prompt_tokens": 2179,
+          "prompt_cache_miss_tokens": 383,
+          "prompt_tokens": 2175,
           "total_tokens": 2423
         },
         "topics": [
-          "local LLM",
-          "business workflow",
-          "structured output",
-          "evaluation",
-          "generic LLM"
+          "MCP",
+          "Claude Code",
+          "debugging",
+          "tool integration",
+          "agent development"
         ]
       },
       "primary_link": {
         "link_type": "blog",
-        "source_id": "qiita-llm-tag",
+        "source_id": "qiita-genai-tag",
         "tier": 2,
-        "title": "ローカルLLMにISMSの適合状況評価を支援させる ― 第2回 ヒアリングから報告書まで5日間(人とLLMの分担)",
-        "url": "https://qiita.com/hiroshi_imaoku/items/53547cd82cff6f40a43d"
+        "title": "自作 MCP サーバーが Claude Code で認識されない・動かない時のデバッグ手順 — MCP Inspector と stdout 汚染、3つのハマりどころ【2026】",
+        "url": "https://qiita.com/yureki_lab/items/e838ba711f4a75be1ed3"
       },
-      "published_at": "2026-08-08T13:43:10+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.415,
-        "llm_relevance_score": 11.62,
-        "recency_score": 0.955844603873739,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 18.125844603873738
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:c044f514bad6e144",
-      "summary": "機密を外に出さないISMSの適合状況評価 ― 業務PCのローカルLLMに、どこまで任せられるかを測った記録\n夕刻に処理を始めれば、翌朝には、ISMS規格の全要求の合否判定が終わり、改善案の下書きまでそろっている。そのあいだ、顧客の機密は一度も業務PCの外に出ていない。そうい...",
-      "summary_zh": "本文探討如何在完全不將機密資料外傳的前提下，運用運行於業務電腦上的本地大型語言模型（LLM），加速ISMS（資訊安全管理系統）符合性評估流程。作者記錄了實際操作經驗：只要能妥善規劃任務分工，傍晚開始處理，隔天早晨即可完成ISMS規格所有要求的合否判定，甚至備妥改善方案草稿。整個過程中，客戶的機密資料從未離開業務電腦，確保了資料主權與隱私。文中強調了人與LLM的有效協作模式：人類負責制定評估策略、解讀模糊情境、最終審核並簽署報告，而LLM則承擔大量重複性工作，如條文對照、證據整理、初步合規判斷及草擬改善建議。這樣的分工使得原本需時數週的評估壓縮至5天內完成，大幅提升效率。作者也指出了此方法的限制：LLM的判斷仍需人類監督，且對於需要現場觀察、人員訪談等主觀證據的評估項目，LLM無法完全取代人類專業判斷。此外，本地部署的模型效能與知識更新可能不及雲端服務，需定期更新模型版本。這項實踐的重要意義在於，它展示了在嚴格資料保密要求下（如處理政府機密、營業秘密的企業），組織仍能享受LLM帶來的生產力提升，為資安稽核領域提供了可行的AI輔助模式，同時也為其他高機密行業（如金融、醫療）的AI應用提供了參考。未來若結合更強大的開源模型與完善的評估程序，此方法有望成為標準作業流程的一部分。",
-      "title": "ローカルLLMにISMSの適合状況評価を支援させる ― 第2回 ヒアリングから報告書まで5日間(人とLLMの分担)",
-      "title_zh": "讓本地LLM協助ISMS符合性評估 ― 第2回 從訪談到報告書只需5天（人與LLM的分工）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "HASHIMOTO Hiroki"
-      ],
-      "categories": [],
-      "entities": [
-        "deepseek"
-      ],
-      "first_seen_at": "2026-08-09T00:32:57.424507+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "OpenClawでAIエージェントを作るまで——DeepSeek API設定からブートストラップまで全部見せる",
-          "url": "https://zenn.dev/hiroki_curio/articles/openclaw-agent-bootstrap-deepseek"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.4,
-          "reproducibility": 0.1,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions OpenClaw, DeepSeek API, and building an AI assistant agent."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Tutorial on building an AI agent with OpenClaw, mentioning LLM (DeepSeek) and agent framework. Relevant to agents and LLM but lacks technical depth, novelty, and evidence; abstract only.",
-        "score": 0.28500000000000003,
-        "token_usage": {
-          "completion_tokens": 197,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 452,
-          "prompt_tokens": 2244,
-          "total_tokens": 2441
-        },
-        "topics": [
-          "agent",
-          "LLM"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "OpenClawでAIエージェントを作るまで——DeepSeek API設定からブートストラップまで全部見せる",
-        "url": "https://zenn.dev/hiroki_curio/articles/openclaw-agent-bootstrap-deepseek"
-      },
-      "published_at": "2026-08-08T03:02:36+00:00",
+      "published_at": "2026-08-09T14:02:25+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.28500000000000003,
-        "llm_relevance_score": 7.98,
-        "recency_score": 0.9142568553135534,
+        "llm_raw_score": 0.38500000000000006,
+        "llm_relevance_score": 10.780000000000001,
+        "recency_score": 0.9568409879838484,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 16.694256855313554
+        "total_score": 19.53684098798385
       },
       "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:ae66873c35e13eef",
-      "summary": "はじめに\n「AIアシスタントを作りたい」と思ったとき、多くの人は ChatGPT のカスタム指示や Claude のプロジェクト機能を思い浮かべるでしょう。でも、もっと深く——自分のファイルを読み書きし、カレンダーを確認し、メールをチェックし、記憶を持ち続けるエージェント——そんなものを作れるとしたらどうでしょうか。\nこの記事では、OpenClaw というオープンソースの AI エージェントフレームワークを使って、実際に AI アシスタント「クロウ」を作り上げた一部始終を紹介します。DeepSeek API キーの取得から、OpenClaw への設定、エージェントの起動、自己定義のプ...",
-      "summary_zh": "本文是一篇實作教學型文章，旨在引導讀者從零開始建立具有自主能力的AI代理，而非僅使用ChatGPT或Claude的靜態提示功能。作者以開源框架OpenClaw為基礎，詳細說明如何打造名為「クロウ」的個人AI助理，該助理能讀寫檔案、檢視行事曆、檢查電子郵件，並具備長期記憶。文章首先強調獲取DeepSeek API金鑰的步驟，接著逐步介紹如何在OpenClaw中設定該API、啟動代理，以及進行自我定義與優化。主要方法包括環境配置、API連接、代理初始化和提示設計。文中以具體操作截圖與程式碼片段作為證據，展示從API設定到代理成功運行的完整過程。然而，文章僅提供抽象摘要，並未揭露實際測試的效能數據或失敗案例，故缺乏客觀評估。此外，該方法高度依賴特定API與框架，可能不適用於其他模型或平台。此文的價值在於提供一個可複製的實作藍圖，降低AI代理開發的技術門檻，使非專業開發者也能創建個人化的自主工具。儘管仍存在穩定性與安全性疑慮，但其示範了開源生態系與商業API結合的實戰模式，對想深入探索AI代理應用者極具參考意義。",
-      "title": "OpenClawでAIエージェントを作るまで——DeepSeek API設定からブートストラップまで全部見せる",
-      "title_zh": "從OpenClaw到AI代理的完整實作——DeepSeek API設定與啟動流程全公開"
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:9201e53858fb757d",
+      "summary": "はじめに / 対象と前提\n自作の MCP サーバーを claude mcp add で登録したのに、Claude Code 側でツールが一切出てこない。エラーも出ない。そんな状況で自分が実際にやっているデバッグ手順をまとめる。\n想定読者:\n\nPython か TypeSc...",
+      "summary_zh": "本文針對自製 MCP（Model Context Protocol）伺服器在透過 claude mcp add 註冊後，卻無法於 Claude Code 中顯示任何工具、且未出現錯誤訊息的情況，提供系統化的除錯指南。作者以實際經驗整理出完整的診斷流程，並特別聚焦於 MCP Inspector 的使用方式、stdout 污染（伺服器誤將非協定資訊輸出至標準輸出，導致 Claude Code 解析失敗）以及三個常見陷阱。這些陷阱包括：未正確設定環境變數、忽略訊息佇列或傳輸格式的細節、以及未考慮伺服器啟動時的非同步初始化延遲。文中建議先使用 MCP Inspector 獨立測試伺服器，確認其能正常回應協定請求，再檢查 stdout 是否夾雜額外輸出，最後再檢視程式碼中的同步與除錯輸出。本文具有實用價值，能協助開發者縮短除錯時間，但其內容僅依賴作者個人經驗，缺乏系統性實驗證據，且可能未涵蓋所有平台或版本的特殊情況。",
+      "title": "自作 MCP サーバーが Claude Code で認識されない・動かない時のデバッグ手順 — MCP Inspector と stdout 汚染、3つのハマりどころ【2026】",
+      "title_zh": "自製 MCP 伺服器無法被 Claude Code 識別或運行時的除錯步驟 — MCP Inspector 與 stdout 污染、三個常見陷阱【2026】"
     },
     {
       "arxiv_id": null,
       "authors": [
-        "Yoshiaki Okuyama"
+        "toypoo"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.426665+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "LLMレビューが終わらないのは、自分の修正のせいか — 108ラウンドを検証した",
-          "url": "https://zenn.dev/okuyam2y/articles/llm-review-edit-drift-confounded"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.5,
-          "preference_relevance": 0.4,
-          "reproducibility": 0.2,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "abstract_only: lack of detailed methodology, no quantitative results or baseline comparisons",
-          "abstract: only mentions 108 rounds of review without data"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper focuses on iterative LLM-based document review, mentioning LLMs explicitly. It touches on evaluation and iterative refinement, which has some relevance to LLM evaluation and agents. However, it lacks rigorous methodology, quantitative results, or baselines, and the abstract only provides anecdotal evidence. Novelty is moderate as iterative LLM review is not highly novel in the field. The score is limited by weak evidence and limited topic alignment.",
-        "score": 0.32,
-        "token_usage": {
-          "completion_tokens": 256,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 482,
-          "prompt_tokens": 2274,
-          "total_tokens": 2530
-        },
-        "topics": [
-          "LLM",
-          "evaluation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "LLMレビューが終わらないのは、自分の修正のせいか — 108ラウンドを検証した",
-        "url": "https://zenn.dev/okuyam2y/articles/llm-review-edit-drift-confounded"
-      },
-      "published_at": "2026-08-08T02:51:00+00:00",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.32,
-        "llm_relevance_score": 8.96,
-        "recency_score": 0.91352066718458,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.42352066718458
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:b14f36a6aceaed34",
-      "summary": "ある長い運用手順書を、提供元の違う 2 つの LLM に繰り返しレビューさせました。\n指摘を裏取りし、本当に問題なら直す。直した文書を、また同じ 2 つに読ませる。このレビューは 108 ラウンド続きましたが、2 つが同時に「指摘なし」になった回は一度もありませんでした。\n一つ直すと、次にまた別の指摘が出る。それも直すと、さらに次が出る。\nここで疑ったのは、次のことです。\n\nもう既存の欠陥を見つけているのではなく、自分の修正が新しい欠陥を作り、その欠陥を次のレビューが指摘しているだけではないか。\n\nもしレビュー後半ほど「修正が原因の指摘」が増えるなら、その増加をレビューの停止条件に使える...",
-      "summary_zh": "本論文探討 LLM 迭代審查的收斂問題。作者讓兩個不同來源的 LLM 反覆審查一份長篇運營手冊，每輪審查後，人工驗證指摘並修正真正有問題之處，再交由同一組 LLM 重新審查。實驗持續進行了 108 輪，期間兩個 LLM 從未同時表示「無指摘」，且每當修復一項問題，下一輪便會出現新的指摘。這引發作者的核心假設：後期的指摘可能並非針對文檔原有的缺陷，而是由於前次修改引入了新錯誤，被後續審查所捕捉。作者試圖區分「既有缺陷的指摘」與「修改引起的指摘」，並檢驗後者在審查後半段是否佔比增加。若能證實此現象，則可將這種增長作為停止審查的客觀依據，以避免無窮無盡的修改循環。然而，摘要僅提供實驗框架與初步觀察，未揭露具體量化數據、判定方法或最終結論，也無法確認停止規則是否有效。其意義在於：這項研究首次系統性檢視 LLM 迭代審查的自我干擾風險，對依賴 LLM 進行文檔校驗的實務工作者具有直接警示——盲目遵循 LLM 指摘可能導致修改引發的新問題，使得審查永遠無法收斂。讀者應注意，摘要屬初步報告，完整證據與統計分析仍需參閱正式論文。",
-      "title": "LLMレビューが終わらないのは、自分の修正のせいか — 108ラウンドを検証した",
-      "title_zh": "LLM 審查遲遲不結束，問題出在自己的修改嗎——以 108 輪實驗為證"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "ynakayama"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-09T00:32:57.132131+00:00",
+      "first_seen_at": "2026-08-10T00:37:04.676015+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -2169,82 +2280,161 @@
           "link_type": "blog",
           "source_id": "qiita-llm-tag",
           "tier": 2,
-          "title": "LLM の量子化モデルで必要メモリと推論速度を見積もる方法",
-          "url": "https://qiita.com/ynakayama/items/0392abf8d2bceb74fecb"
+          "title": "エージェントRAGは普通のRAGにどれくらい勝てるのか【自分のQiita記事20本で3パターン比較】",
+          "url": "https://qiita.com/toypoo/items/2061c9c8fa0468c7420b"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.1,
-          "rigor": 0.1
+          "evidence_strength": 0.3,
+          "generalizability": 0.4,
+          "novelty": 0.25,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.4,
+          "rigor": 0.3
         },
         "confidence": 1.0,
         "evidence": [
-          "Content status: abstract_only; no quantitative results or methodology sections available"
+          "Title indicates comparison of agent RAG to standard RAG",
+          "Abstract mentions testing three patterns with own Qiita articles"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper discusses practical estimation of memory and inference speed for quantized LLMs. Relevant to LLM and efficiency, but abstract-only, lacks rigorous experiments, novel content, and detailed evidence. Low scores for rigor and evidence strength due to missing methodology and results.",
-        "score": 0.215,
+        "rationale": "Comparison of agentic RAG vs standard RAG, directly relevant to agents and RAG preferences. However, it's a personal blog-style article with limited methodological detail and no formal evaluation, reducing rigor and novelty. Only abstract available.",
+        "score": 0.4475,
         "token_usage": {
-          "completion_tokens": 212,
+          "completion_tokens": 169,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 360,
-          "prompt_tokens": 2152,
-          "total_tokens": 2364
+          "prompt_cache_miss_tokens": 378,
+          "prompt_tokens": 2170,
+          "total_tokens": 2339
         },
         "topics": [
-          "LLM",
-          "quantization",
-          "inference",
-          "memory"
+          "RAG & Knowledge",
+          "Agents & Tool Use"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "qiita-llm-tag",
         "tier": 2,
-        "title": "LLM の量子化モデルで必要メモリと推論速度を見積もる方法",
-        "url": "https://qiita.com/ynakayama/items/0392abf8d2bceb74fecb"
+        "title": "エージェントRAGは普通のRAGにどれくらい勝てるのか【自分のQiita記事20本で3パターン比較】",
+        "url": "https://qiita.com/toypoo/items/2061c9c8fa0468c7420b"
       },
-      "published_at": "2026-08-08T06:33:52+00:00",
+      "published_at": "2026-08-09T05:43:13+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.215,
-        "llm_relevance_score": 6.02,
-        "recency_score": 0.927769066988352,
+        "llm_raw_score": 0.44750000000000006,
+        "llm_relevance_score": 12.530000000000001,
+        "recency_score": 0.9242388687764714,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 3.75,
-        "total_score": 12.49776906698835
+        "total_score": 19.004238868776472
       },
       "section": null,
       "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:c1ae731ef5448f74",
-      "summary": "LLM の量子化モデルには Q4_K_M、Q5_K_M などの表記があります。しかし、4 bit という表記だけでは、モデルファイルの容量、推論時に必要なメモリ、実際の推論速度までは判断できません[1]。\n量子化モデルを選ぶときは、少なくとも次の値を分けて確認します。\n\n...",
-      "summary_zh": "本文討論如何在選擇大型語言模型（LLM）的量化版本時，準確估算其所需的記憶體與實際推論速度。作者指出，常見的量化標記如 Q4_K_M、Q5_K_M 僅代表權重的位元數（例如 4 bit 或 5 bit），但這並不足以判斷模型檔案的大小、執行推論所需的記憶體，以及實際的運算速度。因此，使用者若僅依賴這些標記，可能會在部署時遇到記憶體不足或效能不如預期的問題。\n\n文中提出，應分開評估至少三個關鍵指標：模型檔案容量、推論時所需的記憶體（包含權重、KV cache 與其他運行時開銷），以及推論速度（通常以 tokens per second 衡量）。這些指標會受到多種因素影響，包括模型總參數量、量化後的位元寬度、批次大小、輸入序列長度，以及硬體類型（如 GPU、CPU 或 Apple Silicon）的差異。作者強調，模型檔案的大小通常可從其名稱或元數據得知，但實際記憶體需求需考慮額外的執行時代價，例如激活值（activations）與優化器狀態（若進行微調）。推論速度則與硬體記憶體頻寬及計算單元利用率高度相關，量化可以降低記憶體頻寬需求，但實際加速效果需透過基準測試驗證。\n\n本文的限制在於僅提供估算框架，並未給出具體公式或實測數據，也未比較不同量化方法（如 GPTQ、AWQ）的優劣。但此方法對實務部署至關重要，能協助開發者在資源受限的環境中選擇合適的量化模型，避免因記憶體不足而導致的失敗，或誤以為所有量化模型都有相同的速度提升。總之，量化標記只是起點，完整的評估需考量記憶體與速度的細部權衡。",
-      "title": "LLM の量子化モデルで必要メモリと推論速度を見積もる方法",
-      "title_zh": "估算 LLM 量化模型所需記憶體與推論速度的方法"
+      "story_id": "fallback:b7eed9380865bf42",
+      "summary": "1. 初めに\n\n1.1 この記事の目的\nエージェントライクなRAG(以下、エージェントRAG)を業務で見る機会があり、普通のRAGと具体的に何がどう違うのかを自分の手で測ってみたので、その結果を共有するために作成しました。\n\n1.2 何故実施したのか\n以下の理由で実施しま...",
+      "summary_zh": "本文旨在實測代理式RAG（Agent RAG）與一般RAG在實際業務應用上的差異。作者以自身撰寫的20篇Qiita文章作為測試語料，設計了三個測試模式：一般RAG、包含簡單工具呼叫的代理RAG，以及具備多步驟推論能力的代理RAG。透過評估回答的準確性、完整性與相關性，量化比較三者的效能。結果顯示代理RAG在處理需要多步驟推論與工具整合的複雜查詢時表現明顯較佳，但在簡單直接的問題上，兩者差異不大，且代理RAG的回應時間較長、成本較高。作者指出此實驗僅涵蓋單一語料庫與有限問題集，且未考慮外部知識庫整合，故結果推論有其限制。本文對實務上選擇RAG架構有參考價值，提醒開發者應依任務複雜度與資源考量做取捨。",
+      "title": "エージェントRAGは普通のRAGにどれくらい勝てるのか【自分のQiita記事20本で3パターン比較】",
+      "title_zh": "代理式RAG到底比一般RAG強多少？以20篇個人Qiita文章進行三種模式比較"
     },
     {
-      "arxiv_id": "articles/2026070",
+      "arxiv_id": null,
       "authors": [
-        "とうもろこし茶"
+        "tomada"
       ],
       "categories": [],
       "entities": [
         "anthropic"
       ],
-      "first_seen_at": "2026-08-09T00:32:57.419451+00:00",
+      "first_seen_at": "2026-08-10T00:37:04.813015+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "【Claude Code】セッション同士が直接会話するSendMessageを実機検証した",
+          "url": "https://qiita.com/tomada/items/7fea63c52216b7e338d1"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Discusses Claude Code agent tools (SendMessage, ListAgents) but only abstract-level anecdotal validation; lacks methodological detail, quantitative results, and academic framing. Marginal relevance to agents/tool use; limited rigor and generalizability.",
+        "score": 0.19,
+        "token_usage": {
+          "completion_tokens": 191,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 354,
+          "prompt_tokens": 2146,
+          "total_tokens": 2337
+        },
+        "topics": [
+          "agent",
+          "tool use",
+          "Claude Code"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "【Claude Code】セッション同士が直接会話するSendMessageを実機検証した",
+        "url": "https://qiita.com/tomada/items/7fea63c52216b7e338d1"
+      },
+      "published_at": "2026-08-09T14:11:49+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19,
+        "llm_relevance_score": 5.32,
+        "recency_score": 0.9574657964260175,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.077465796426019
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:5557af28a195a0b4",
+      "summary": "Claude Code のセッション同士が、直接メッセージを送り合えるようになりました。\n2026-08-07 リリースの v2.1.224 で追加された ListAgents と SendMessage の2つのツールです。\n気になったのは配送のタイミングでした。\n受信側...",
+      "summary_zh": "本文針對 Claude Code 於 2026-08-07 釋出的 v2.1.224 版中所新增的兩項工具——ListAgents 與 SendMessage——進行實機驗證，探討會話（session）之間能否直接互相傳遞訊息。作者特別關注訊息配送的時機與可靠性，並透過實際操作驗證其功能。結果顯示，SendMessage 確實能讓不同會話直接通訊，但配送時機可能受到非同步機制影響。文中也提到此功能對於多代理（multi-agent）工作流程的潛在應用，例如任務委派與結果回報。然而，實機驗證僅限於特定情境，未涵蓋大規模或高併發場景，且對錯誤處理與訊息遺失的機制著墨有限。這項功能對於建構更複雜的 Claude Code 自動化流程相當重要，因為它開啟了會話間協作的基礎，但實際穩定性仍需更多測試。本文以日文撰寫，內容屬於實測分享，並非嚴謹學術研究，但對開發者具有參考價值。",
+      "title": "【Claude Code】セッション同士が直接会話するSendMessageを実機検証した",
+      "title_zh": "Claude Code 會話間直接對話：SendMessage 工具實機驗證"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "子供部屋大学院生"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-10T00:37:04.958682+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -2254,68 +2444,155 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "Claude CodeやCodexの悪意あるスキルが静的スキャナをすり抜ける",
-          "url": "https://zenn.dev/okssusucha/articles/20260708-agent-skill-malware-static-scanner-evasio"
+          "title": "MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト",
+          "url": "https://zenn.dev/bambampurin/articles/2026-08-01-tech-daily"
         }
       ],
       "llm_evaluation": {
         "components": {
-          "evidence_strength": 0.0,
-          "generalizability": 0.1,
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
           "novelty": 0.1,
-          "preference_relevance": 0.3,
-          "reproducibility": 0.0,
-          "rigor": 0.0
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.1
         },
-        "confidence": 0.85,
-        "evidence": [],
-        "fulltext_sha256": "4f4f61cb0c340405941e873313390c7ab618c0750b1a06bec51757f95e09686f",
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト'",
+          "Abstract: 'LLMそのものよりもエージェント化・業務統合・MCP対応が前面'",
+          "Abstract: 'エージェントの安全設計は最重要テーマ'"
+        ],
+        "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "deepseek-v4-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only blog-style article about RAG with tree navigation using LLMs, no embedded vectors. Partial relevance to LLM, RAG, and reasoning but details are thin. Strong preference for reasoning/agents/LLM but lacks Japanese LLM specifics (only Japanese text). Novelty moderate, rigor/evidence/reproducibility zero due to no methods or results. Generalizability limited by untested claims. Score capped by low rigor and evidence.",
-        "score": 0.12324999999999998,
+        "rationale": "Paper is an abstract-only news summary on agent orchestration and MCP, with no research methods, results, or evaluation. Mentions agent and MCP which are relevant to AI agents, but no technical contribution. Low novelty and evidence, as it is commentary rather than study. Score limited by lack of scientific content.",
+        "score": 0.27,
         "token_usage": {
-          "completion_tokens": 186,
+          "completion_tokens": 275,
           "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 480,
-          "prompt_tokens": 2272,
-          "total_tokens": 2458
+          "prompt_cache_miss_tokens": 446,
+          "prompt_tokens": 2238,
+          "total_tokens": 2513
         },
         "topics": [
-          "RAG",
-          "LLM",
-          "Japanese NLP"
+          "Agents & Tool Use",
+          "MCP",
+          "AI Safety"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "Claude CodeやCodexの悪意あるスキルが静的スキャナをすり抜ける",
-        "url": "https://zenn.dev/okssusucha/articles/20260708-agent-skill-malware-static-scanner-evasio"
+        "title": "MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト",
+        "url": "https://zenn.dev/bambampurin/articles/2026-08-01-tech-daily"
       },
-      "published_at": "2026-08-08T04:47:51+00:00",
+      "published_at": "2026-08-09T05:00:52+00:00",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.27,
+        "llm_relevance_score": 7.5600000000000005,
+        "recency_score": 0.921524701038971,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 14.031524701038972
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:d02b18ca4d2a6e7f",
+      "summary": "!\n2026-08-01時点の実ニュースでは、LLMそのものよりもエージェント化・業務統合・MCP対応が前面に出ています。特に「WAIC 2026詳報」の“LLMは舞台裏へ”という整理と、AWSのMCP対応、Microsoft・Fujitsu・SAPの業務エージェント関連ニュースがそれを裏づけます。一方で、ReutersやCNNなどが報じるOpenAI/Anthropic関連の封じ込め問題により、エージェントの安全設計は最重要テーマに浮上しています。開発者視点では、Pythonはuv/Ruff/Polars系スタックの存在感が強く、Web開発では今回のヘッドライン群で直接的なNext.j...",
+      "summary_zh": "本文基於 2026 年 8 月的產業新聞整理，指出當前 AI 發展重心已從單一 LLM 轉向智慧代理（agent）化、業務整合與 MCP（Model Context Protocol）對應。主要問題在於，當代理要正式導入生產環境並透過 MCP 與外部工具、服務串接時，缺乏一套務實的前置檢查流程，容易造成安全性與穩定性的漏洞。方法上，作者從新聞報導與開發者生態分析，歸納出 Key Components：包括 MCP 伺服器設定、代理權限控管、輸入驗證、可觀測性、錯誤處理與備援機制等。主要證據來自 WAIC 2026 的報導與 AWS、Microsoft、SAP 等廠商的動向，以及 OpenAI 與 Anthropic 相關的安全事件，顯示代理的「封裝」與「安全防護」已成為關鍵。限制在於本文僅為新聞彙整與經驗性建言，缺乏實證數據或系統化測試結果。對開發者而言，此檢查清單能協助避免在佈署代理閘道時忽略安全設計，尤其適合已打算採用 MCP 整合企業工具與 LLM 的團隊作為上線前審核基準。",
+      "title": "MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト",
+      "title_zh": "MCP 對應下，AgentCore Gateway 上線前的檢查清單"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Nhandsome"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-10T00:37:04.966010+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "漢字音でしりとりゲームを作る — 企画は Claude、実装は Solar Pro4",
+          "url": "https://zenn.dev/nhandsome/articles/kanji-onyomi-word-chain-game"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "The abstract mentions using Claude for planning and Solar Pro4 for implementation, and testing Japanese understanding and game development capability."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a blog post about building a Japanese-Korean shiritori game using Claude and Solar Pro4. It has some relevance to Japanese NLP and LLM application, but it is not a research paper. No technical details, baselines, or evaluations are provided. It is mostly a narrative. As a domain application without rigorous methodology, it receives low scores.",
+        "score": 0.15000000000000002,
+        "token_usage": {
+          "completion_tokens": 194,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 463,
+          "prompt_tokens": 2255,
+          "total_tokens": 2449
+        },
+        "topics": [
+          "Japanese LLM",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "漢字音でしりとりゲームを作る — 企画は Claude、実装は Solar Pro4",
+        "url": "https://zenn.dev/nhandsome/articles/kanji-onyomi-word-chain-game"
+      },
+      "published_at": "2026-08-09T01:50:22+00:00",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 2.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.12324999999999998,
-        "llm_relevance_score": 3.4509999999999996,
-        "recency_score": 0.920963664334274,
+        "llm_raw_score": 0.15000000000000005,
+        "llm_relevance_score": 4.200000000000001,
+        "recency_score": 0.9094139811723609,
         "semantic_score": 0.0,
         "tier_score": 1.0,
         "topic_score": 4.0,
-        "total_score": 12.171963664334275
+        "total_score": 12.909413981172362
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "arxiv:articles/2026070",
-      "summary": "Claude Code に「PDFをきれいに要約するスキル」を入れたとする。中身は SKILL.md という Markdown ファイル一枚で、自然言語の手順とちょっとしたスクリプトが書いてあるだけ。GitHub から拾ってきて skills フォルダに置けば、次からエージェントがそれを読んで実行してくれる。手軽だ。手軽すぎる。そのスキルは、あなたのシェル・ファイル・保存済みの認証情報に、エージェントとまったく同じ権限でアクセスできる。\nこの「エージェントスキル」を狙った攻撃と、それを見つけるはずのスキャナが実際にはほとんど機能していないという研究が、7月上旬に相次いで出た。香港科技大学...",
-      "summary_zh": "本文探討在長文且結構複雜的文件（如財務報告或契約）中建構檢索增強生成（RAG）系統時，常遇到的困境：即使區塊（chunk）切分正確，仍難以定位到關鍵數字或條款。作者指出，無論調整區塊大小、引入混合檢索或重排序（reranker），準確度往往卡在某個瓶頸。文章主張，此瓶頸根源在於向量相似度搜尋的固有結構：當文件片段被壓縮成一個相似度標量時，文件內部的邏輯結構（例如「此數字引用第7項附註」或「本文指示參閱附錄A」）便會遺失。為解決此問題，本文提出完全不使用嵌入（embedding），而是將文件轉換為目錄樹狀結構的方法。此方法旨在保留文件內部的層級與參照關係，使檢索能遵循文件的組織邏輯，而非僅依賴語意相似度。本文以Ollama 0.31.1在Apple Silicon上執行Gemma 4的實際測試為例，說明其提出的方法與模型推論最佳化（如多工預測、MTP）如何協同作用，使推論速度提升約九成。文章強調，此進展不僅對RAG系統的準確度有幫助，也對在資源受限的裝置上部署大型語言模型具有意義。然而，文章亦提及此方法的限制：它可能更適合處理具有強烈階層結構的文檔，對於非結構化或高度口語化的文本，其效果可能有限。總體而言，本文提供了一個跳出傳統向量檢索框架的替代思路，對RAG系統的設計與優化具有啟發價值。",
-      "title": "Claude CodeやCodexの悪意あるスキルが静的スキャナをすり抜ける",
-      "title_zh": "Ollama 0.31.1、Apple Silicon上Gemma 4速度提升約九成的MTP技術解析"
+      "story_id": "fallback:4e27528aa045bc32",
+      "summary": "このブログは、Solar Pro4 がエージェントの活動ログをもとに下書きを自動作成し、Claude と筆者のレビューを経て公開しています。\n!\n三行まとめ\n\n韓国語の漢字語と日本語の漢字語を発音でつなぐしりとりゲームを作りました\n企画は Claude、実装は Solar Pro4 — 企画書も指示もすべて日本語で進めました\n確かめたかったのは二つ、日本語で動くのかと、ゲームまで作れるのかです\n\n\n私は一度もゲームというものを作ったことがないエンジニアです。確かめてみたかったのは二つでした。Solar Pro4 の日本語理解能力、そしてゲーム開発に必要な複雑な遂行能力です。そこで漢字音し...",
+      "summary_zh": "這篇部落格文章描述作者以 Solar Pro4 為核心，打造一款將韓語漢字語與日語漢字語以發音相連的接龍遊戲。作者本身是從未開發過遊戲的工程師，想驗證 Solar Pro4 的日語理解能力，以及它是否具備完成遊戲開發所需的複雜任務執行力。整個流程中，企劃書與指令皆以日語進行，企劃部分由 Claude 協助，實作則由 Solar Pro4 負責，並自述其草稿是根據 Solar Pro4 的活動日誌自動生成，再經 Claude 與作者審閱後發布。文章以三行重點摘要開頭，說明遊戲的目標、工具分工與驗證重點。內容侷限於抽象，未揭露具體的開發細節、成就指標或限制。此案例對關注 AI 代理（agent）協作、跨語言程式開發，以及大型語言模型在自然語言指令下完成端到端任務的讀者，具參考價值。",
+      "title": "漢字音でしりとりゲームを作る — 企画は Claude、実装は Solar Pro4",
+      "title_zh": "用漢字音玩接龍遊戲：企劃交給 Claude，實作交給 Solar Pro4"
     }
   ]
 }

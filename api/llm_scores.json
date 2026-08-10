@@ -167194,6 +167194,514 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:120f0e78175fbecc": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is a promotional blog column about automating expense management with AI; no technical content, methodology, or research relevance. All preferences out of scope; no evidence of scientific contribution.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2150,
+        "completion_tokens": 127,
+        "total_tokens": 2277,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 358
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:5557af28a195a0b4": {
+      "score": 0.19,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Discusses Claude Code agent tools (SendMessage, ListAgents) but only abstract-level anecdotal validation; lacks methodological detail, quantitative results, and academic framing. Marginal relevance to agents/tool use; limited rigor and generalizability.",
+      "topics": [
+        "agent",
+        "tool use",
+        "Claude Code"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2146,
+        "completion_tokens": 191,
+        "total_tokens": 2337,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 354
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:9201e53858fb757d": {
+      "score": 0.385,
+      "components": {
+        "preference_relevance": 0.6,
+        "novelty": 0.3,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.4,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Paper focuses on debugging MCP servers in Claude Code, directly relevant to agents/tool use and Japanese LLM context. However, it is a practical blog-style guide with no rigorous methodology, quantitative results, or formal evaluation, and only an abstract is available. Novelty is moderate as debugging procedures exist but specific pitfalls may be new. Evidence is weak due to abstract-only and no empirical data. Generalizability limited to specific setup. Reproducibility partly addressed through concrete steps, but not verifiable from abstract.",
+      "topics": [
+        "MCP",
+        "Claude Code",
+        "debugging",
+        "tool integration",
+        "agent development"
+      ],
+      "evidence": [
+        "Abstract: '自作 MCP サーバーを claude mcp add で登録したのに...' indicates practical debugging guide; no quantitative results or methods sections available."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2175,
+        "completion_tokens": 248,
+        "total_tokens": 2423,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 383
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:4b7de90956d04892": {
+      "score": 0.08000000000000002,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only piece on changes in IT professionals' roles in the AI era, lacking technical content, methodology, or alignment with core AI research topics. It is not focused on LLMs, reasoning, or other preferred areas, and no evidence or reproducibility is provided.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2140,
+        "completion_tokens": 185,
+        "total_tokens": 2325,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 348
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:db4fb778be9c9252": {
+      "score": 0.07,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.05,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "News commentary about Jeff Dean's departure from Google; no technical content, no evaluation, beyond scope. Minimal relevance to AI/ML research preferences.",
+      "topics": [],
+      "evidence": [
+        "abstract_only"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2156,
+        "completion_tokens": 124,
+        "total_tokens": 2280,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 364
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b7eed9380865bf42": {
+      "score": 0.4475,
+      "components": {
+        "preference_relevance": 0.65,
+        "novelty": 0.25,
+        "rigor": 0.3,
+        "evidence_strength": 0.3,
+        "generalizability": 0.4,
+        "reproducibility": 0.4
+      },
+      "confidence": 1.0,
+      "rationale": "Comparison of agentic RAG vs standard RAG, directly relevant to agents and RAG preferences. However, it's a personal blog-style article with limited methodological detail and no formal evaluation, reducing rigor and novelty. Only abstract available.",
+      "topics": [
+        "RAG & Knowledge",
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Title indicates comparison of agent RAG to standard RAG",
+        "Abstract mentions testing three patterns with own Qiita articles"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2170,
+        "completion_tokens": 169,
+        "total_tokens": 2339,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 378
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:34330b2b25e5a174": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "This is a blog post about using Sakura AI Engine's free tier to feed web information to an AI, with no scientific methodology, no technical details, and no research contribution. It is a domain application with no language model methodology or novel analysis. The only relevant content is the mention of AI and web data, but it is not a research paper. It lacks rigor, evidence, and generalizability, and is not reproducible as a study.",
+      "topics": [
+        "AI Engine",
+        "web information"
+      ],
+      "evidence": [
+        "Abstract mentions testing a service and metrics, but no methodology or results details."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2183,
+        "completion_tokens": 204,
+        "total_tokens": 2387,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 391
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:d02b18ca4d2a6e7f": {
+      "score": 0.27,
+      "components": {
+        "preference_relevance": 0.5,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is an abstract-only news summary on agent orchestration and MCP, with no research methods, results, or evaluation. Mentions agent and MCP which are relevant to AI agents, but no technical contribution. Low novelty and evidence, as it is commentary rather than study. Score limited by lack of scientific content.",
+      "topics": [
+        "Agents & Tool Use",
+        "MCP",
+        "AI Safety"
+      ],
+      "evidence": [
+        "Abstract: 'MCP対応でAgentCore Gatewayを本番投入する前のチェックリスト'",
+        "Abstract: 'LLMそのものよりもエージェント化・業務統合・MCP対応が前面'",
+        "Abstract: 'エージェントの安全設計は最重要テーマ'"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2238,
+        "completion_tokens": 275,
+        "total_tokens": 2513,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 446
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:44e3d96384ede2b3": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a blog-style narrative about running Cloudflare OS on a gaming PC, with no technical detail, no evaluation, and no relevance to AI/ML research topics. It is abstract-only and anecdotal.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2217,
+        "completion_tokens": 136,
+        "total_tokens": 2353,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 425
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:4516f6d9c2f26175": {
+      "score": 0.0625,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only, non-technical blog-style article in Japanese about deterministic score design and removing LLMs from scoring. It has minimal methodological content, no quantitative results, and is tangential to LLM research preferences. It mentions LLM and deterministic design but lacks substantive AI/ML techniques, evidence, or reproducibility. Given abstract-only status and vague content, it scores near zero across rigor and evidence.",
+      "topics": [
+        "LLM",
+        "評価",
+        "決定論"
+      ],
+      "evidence": [
+        "Abstract mentions '評価スコアをLLMに出させない設計' and '決定論的な設計' but no detailed methods or results in the provided content."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2156,
+        "completion_tokens": 218,
+        "total_tokens": 2374,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 364
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:28764150c35d6bb5": {
+      "score": 0.1045,
+      "components": {
+        "preference_relevance": 0.18,
+        "novelty": 0.15,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "This is an informal blog-style description of a personal experiment where AI is given autonomy over business decisions. It is not a peer-reviewed research paper. Content has minimal relevance to core topics like LLM methodology or agent research; although it mentions Claude (an LLM) and agentic decision-making, there is no technical contribution, evaluation, or evidence. Pure domain application and casual narrative.",
+      "topics": [
+        "Agents & Tool Use",
+        "Large Language Models"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2262,
+        "completion_tokens": 179,
+        "total_tokens": 2441,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 470
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:615f78f9db65f2c6": {
+      "score": 0.0315,
+      "components": {
+        "preference_relevance": 0.02,
+        "novelty": 0.1,
+        "rigor": 0.01,
+        "evidence_strength": 0.01,
+        "generalizability": 0.05,
+        "reproducibility": 0.01
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only narrative about delegating business decisions to AI; lacks technical substance, methodology, or evaluation. No relevance to core NLP/LLM research topics beyond mentioning AI. Out of scope for ML research curation.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2178,
+        "completion_tokens": 136,
+        "total_tokens": 2314,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 386
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:ef62a75aff048f29": {
+      "score": 0.095,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "Technical blog about handling an LLM rate limit in a personal dev project; limited methodological depth, no experiments, and marginal relevance to core LLM research topics.",
+      "topics": [
+        "LLM",
+        "engineering"
+      ],
+      "evidence": [
+        "abstract mentions LLM daily token limit and job retries"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2249,
+        "completion_tokens": 140,
+        "total_tokens": 2389,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 457
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:72170f0b8d5f7917": {
+      "score": 0.065,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only describes personal experience rejecting AI code review suggestions; no methodology, results, or technical contribution. Not a research paper. Marginal relevance to AI agents or evaluation but lacks substance.",
+      "topics": [
+        "AI code review",
+        "agent misbehavior"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2282,
+        "completion_tokens": 138,
+        "total_tokens": 2420,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 490
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:93d9776e1446d440": {
+      "score": 0.155,
+      "components": {
+        "preference_relevance": 0.15,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses AI self-review in separate conversations, touching on LLM-based evaluation and agentic workflow but lacks empirical data, methodology, or technical depth. It is a brief opinion piece with no quantitative results or formal evaluation, thus low rigor and evidence. Generalizability limited to anecdotal practice.",
+      "topics": [
+        "AI safety",
+        "Agents & Tool Use"
+      ],
+      "evidence": [
+        "Abstract states '同じモデル系統が持つ視野...は自動では変わりません' but no sections or details."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2277,
+        "completion_tokens": 184,
+        "total_tokens": 2461,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 485
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:4e27528aa045bc32": {
+      "score": 0.15000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a blog post about building a Japanese-Korean shiritori game using Claude and Solar Pro4. It has some relevance to Japanese NLP and LLM application, but it is not a research paper. No technical details, baselines, or evaluations are provided. It is mostly a narrative. As a domain application without rigorous methodology, it receives low scores.",
+      "topics": [
+        "Japanese LLM",
+        "Natural Language Processing"
+      ],
+      "evidence": [
+        "The abstract mentions using Claude for planning and Solar Pro4 for implementation, and testing Japanese understanding and game development capability."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2255,
+        "completion_tokens": 194,
+        "total_tokens": 2449,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 463
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:736bceda937ab9a9": {
+      "score": 0.2,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses instrumentation of LLM applications with OpenTelemetry, focusing on design decisions about boundaries rather than attribute names. It is relevant to LLM application development and agents but is a short opinion/blog-style article with no experiments, quantitative results, or code details. Relevance to LLM and agent topics is moderate but narrow; novelty is low; rigor and evidence are minimal; generalizability limited to OTel users; reproducibility impossible.",
+      "topics": [
+        "LLM application",
+        "OpenTelemetry",
+        "instrumentation"
+      ],
+      "evidence": [
+        "Abstract-only: discusses OpenTelemetry and LLM span boundaries"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2256,
+        "completion_tokens": 202,
+        "total_tokens": 2458,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 464
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
