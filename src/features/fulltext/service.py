@@ -68,22 +68,27 @@ class FullTextService:
     def load_for_stories(self, stories: list[Story]) -> dict[str, FullTextDocument]:
         """Fetch documents sequentially to keep Nano memory use bounded.
 
-        A small delay between fetches avoids tripping arXiv's per-IP rate limit
-        with back-to-back HTML/PDF downloads, which previously surfaced as HTTP
-        429 on the next scheduled API collection.
+        A small delay between fresh downloads avoids tripping arXiv's per-IP
+        rate limit; cache hits are served without delay.
         """
         documents: dict[str, FullTextDocument] = {}
-        last_fetch_at: float | None = None
+        last_download_at: float | None = None
         for story in stories:
             if not _is_paper(story):
                 continue
-            if last_fetch_at is not None:
-                elapsed = time.monotonic() - last_fetch_at
-                if elapsed < _FULLTEXT_REQUEST_INTERVAL_SECONDS:
-                    time.sleep(_FULLTEXT_REQUEST_INTERVAL_SECONDS - elapsed)
+            if not self._is_cached(story):
+                if last_download_at is not None:
+                    elapsed = time.monotonic() - last_download_at
+                    if elapsed < _FULLTEXT_REQUEST_INTERVAL_SECONDS:
+                        time.sleep(_FULLTEXT_REQUEST_INTERVAL_SECONDS - elapsed)
+                last_download_at = time.monotonic()
             documents[story.story_id] = self.load_for_story(story)
-            last_fetch_at = time.monotonic()
         return documents
+
+    def _is_cached(self, story: Story) -> bool:
+        """Return whether fulltext for ``story`` is already cached."""
+        cache_key = hashlib.sha256(story.story_id.encode()).hexdigest()
+        return self._load_cache(cache_key, story.story_id) is not None
 
     def load_for_story(self, story: Story) -> FullTextDocument:
         """Return cached or freshly extracted content for one paper."""
