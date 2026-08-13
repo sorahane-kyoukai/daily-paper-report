@@ -29,6 +29,27 @@ def test_cli_configures_deepseek_v4_flash() -> None:
     }
 
 
+def test_cli_configures_scoring_model_for_pro() -> None:
+    """Scoring/report metadata should use the dedicated scoring model."""
+    settings = SimpleNamespace(
+        deepseek_api_key="deepseek-key",
+        deepseek_model="deepseek-v4-flash",
+        deepseek_scoring_model="deepseek-v4-pro",
+        deepseek_max_tokens=8192,
+    )
+
+    with patch("src.features.llm.factory.create_llm_client") as create_client:
+        create_client.return_value = MagicMock()
+
+        _create_configured_llm_client(settings, model=settings.deepseek_scoring_model)
+
+    assert create_client.call_args.kwargs == {
+        "api_key": "deepseek-key",
+        "model": "deepseek-v4-pro",
+        "max_tokens": 8192,
+    }
+
+
 def test_translation_candidates_include_all_visible_story_types() -> None:
     """Daily translation should cover blog/news cards, not only papers."""
 

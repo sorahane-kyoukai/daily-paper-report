@@ -18,6 +18,8 @@ logger = structlog.get_logger()
 
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 DEEPSEEK_MODEL = "deepseek-v4-flash"
+DEEPSEEK_PRO_MODEL = "deepseek-v4-pro"
+SUPPORTED_MODELS = {DEEPSEEK_MODEL, DEEPSEEK_PRO_MODEL}
 CONTEXT_LIMIT_TOKENS = 1_000_000
 INPUT_BUDGET_TOKENS = 900_000
 MAX_INPUT_CHARS = 1_800_000
@@ -38,19 +40,21 @@ class DeepSeekUsage:
 
 
 class DeepSeekClient:
-    """Minimal, observable client dedicated to ``deepseek-v4-flash``."""
+    """Observable client for DeepSeek V4 (flash for translation, pro for scoring)."""
 
     def __init__(
         self,
         api_key: str,
         model: str = DEEPSEEK_MODEL,
         max_tokens: int = 8192,
+        thinking: bool = False,
     ) -> None:
-        if model != DEEPSEEK_MODEL:
-            raise ValueError(f"model must be {DEEPSEEK_MODEL}")
+        if model not in SUPPORTED_MODELS:
+            raise ValueError(f"model must be one of {sorted(SUPPORTED_MODELS)}")
         self._api_key = api_key
         self.model = model
         self._max_tokens = max_tokens
+        self._thinking = thinking
         self.last_usage = DeepSeekUsage()
         self._log = logger.bind(component="llm", subcomponent="deepseek")
 
@@ -59,10 +63,12 @@ class DeepSeekClient:
         prompt: str,
         system_instruction: str | None = None,
     ) -> str:
-        """Generate a JSON response in non-thinking mode.
+        """Generate a JSON-shaped response.
 
-        DeepSeek documents JSON mode for non-thinking requests. All callers use
-        object-shaped JSON prompts so malformed provider prose can be rejected.
+        ``deepseek-v4-flash`` runs in non-thinking mode with JSON mode enabled.
+        ``deepseek-v4-pro`` runs with thinking enabled, which DeepSeek documents
+        as incompatible with JSON mode; callers rely on prompt discipline plus
+        the processors' fence-tolerant JSON parsing.
         """
         if len(prompt) > MAX_INPUT_CHARS:
             raise LlmApiError(
@@ -75,11 +81,14 @@ class DeepSeekClient:
         body: dict[str, object] = {
             "model": self.model,
             "messages": messages,
-            "thinking": {"type": "disabled"},
             "stream": False,
             "max_tokens": self._max_tokens,
-            "response_format": {"type": "json_object"},
         }
+        if self._thinking:
+            body["thinking"] = {"type": "enabled"}
+        else:
+            body["thinking"] = {"type": "disabled"}
+            body["response_format"] = {"type": "json_object"}
         response = self._request_with_retries(body)
         return self._parse_response(response)
 

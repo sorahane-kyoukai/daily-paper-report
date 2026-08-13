@@ -40,6 +40,17 @@ def test_request_is_v4_flash_json_mode(mock_post: MagicMock) -> None:
 
 
 @patch("src.features.llm.deepseek_client.httpx.post")
+def test_request_is_v4_pro_thinking_no_json_mode(mock_post: MagicMock) -> None:
+    mock_post.return_value = _response()
+    client = DeepSeekClient(api_key="secret", model="deepseek-v4-pro", thinking=True)
+    assert client.generate_content("Return json", "System") == '{"ok":true}'
+    body = mock_post.call_args.kwargs["json"]
+    assert body["model"] == "deepseek-v4-pro"
+    assert body["thinking"] == {"type": "enabled"}
+    assert "response_format" not in body
+
+
+@patch("src.features.llm.deepseek_client.httpx.post")
 def test_retry_after_is_honored(mock_post: MagicMock) -> None:
     limited = MagicMock(status_code=429, headers={"Retry-After": "0"})
     mock_post.side_effect = [limited, _response()]
@@ -56,5 +67,5 @@ def test_non_retryable_error_fails(mock_post: MagicMock) -> None:
 
 
 def test_other_model_is_rejected() -> None:
-    with pytest.raises(ValueError, match="deepseek-v4-flash"):
+    with pytest.raises(ValueError, match="model must be one of"):
         DeepSeekClient(api_key="secret", model="other")

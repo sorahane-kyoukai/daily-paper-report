@@ -30,6 +30,9 @@ class AppSettings(BaseSettings):
     deepseek_model: str = Field(
         default="deepseek-v4-flash", validation_alias="DEEPSEEK_MODEL"
     )
+    deepseek_scoring_model: str = Field(
+        default="deepseek-v4-pro", validation_alias="DEEPSEEK_SCORING_MODEL"
+    )
     deepseek_max_tokens: int = Field(
         default=8192, validation_alias="DEEPSEEK_MAX_TOKENS"
     )

@@ -36,6 +36,29 @@ export interface ScoreBreakdown {
   llm_raw_score?: number
 }
 
+export interface LlmComponentScores {
+  preference_relevance: number
+  novelty: number
+  rigor: number
+  evidence_strength: number
+  generalizability: number
+  reproducibility: number
+}
+
+export interface LlmEvaluation {
+  score: number
+  components: LlmComponentScores
+  confidence: number
+  rationale: string
+  topics: string[]
+  evidence: string[]
+  fulltext_status: string
+  fulltext_sha256: string
+  token_usage?: Record<string, number>
+  prompt_version?: string
+  model?: string
+}
+
 export interface Story {
   story_id: string
   title: string
@@ -58,6 +81,8 @@ export interface Story {
   hf_metadata?: HfMetadata | null
   // Score breakdown from ranker
   scores?: ScoreBreakdown
+  // Full LLM relevance evaluation (score, rationale, component breakdown)
+  llm_evaluation?: LlmEvaluation
   // Traditional Chinese translations (optional, populated by translation phase)
   title_zh?: string | null
   summary_zh?: string | null

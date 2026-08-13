@@ -15,11 +15,17 @@ def test_factory_creates_v4_flash_client() -> None:
     assert client.model == "deepseek-v4-flash"
 
 
+def test_factory_creates_v4_pro_client() -> None:
+    client = create_llm_client(api_key="test-key", model="deepseek-v4-pro")
+    assert isinstance(client, DeepSeekClient)
+    assert client.model == "deepseek-v4-pro"
+
+
 def test_factory_requires_key() -> None:
     with pytest.raises(LlmAuthError, match="DEEPSEEK_API_KEY"):
         create_llm_client(api_key=None)
 
 
-def test_factory_rejects_other_models() -> None:
-    with pytest.raises(LlmAuthError, match="deepseek-v4-flash"):
+def test_factory_rejects_unsupported_models() -> None:
+    with pytest.raises(ValueError, match="model must be one of"):
         create_llm_client(api_key="test-key", model="another-model")

@@ -428,7 +428,9 @@ def _run_llm_phase(
         from src.features.llm.processor import LlmRelevanceProcessor
         from src.features.llm.prompts import CURRENT_SCORING_PROMPT_VERSION
 
-        client = _create_configured_llm_client(settings)
+        client = _create_configured_llm_client(
+            settings, model=settings.deepseek_scoring_model
+        )
         cache_dir = Path(
             settings.fulltext_cache_dir
             or ((output_dir or Path("public")).parent / ".cache" / "fulltext")
@@ -450,7 +452,7 @@ def _run_llm_phase(
                 document
                 and cached.get("fulltext_sha256") == document.sha256
                 and cached.get("prompt_version") == CURRENT_SCORING_PROMPT_VERSION
-                and cached.get("model") == settings.deepseek_model
+                and cached.get("model") == settings.deepseek_scoring_model
             )
             if not is_current:
                 uncached_stories.append(story)
@@ -499,13 +501,13 @@ def _run_llm_phase(
                     "fulltext_sha256": item.fulltext_sha256,
                     "token_usage": item.token_usage,
                     "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
-                    "model": settings.deepseek_model,
+                    "model": settings.deepseek_scoring_model,
                 }
             cache_path.write_text(
                 _json.dumps(
                     {
                         "version": LLM_CACHE_VERSION,
-                        "model": settings.deepseek_model,
+                        "model": settings.deepseek_scoring_model,
                         "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
                         "entries": new_entries,
                     },
@@ -692,13 +694,22 @@ def _has_llm_credentials(settings: object) -> bool:
     return bool(getattr(settings, "deepseek_api_key", None))
 
 
-def _create_configured_llm_client(settings: object) -> "LlmClient":
-    """Create the configured LLM client from application settings."""
+def _create_configured_llm_client(
+    settings: object,
+    *,
+    model: str | None = None,
+) -> "LlmClient":
+    """Create the configured LLM client from application settings.
+
+    ``model`` defaults to the translation model (``deepseek-v4-flash``);
+    pass ``deepseek_scoring_model`` for scoring and report metadata.
+    """
     from src.features.llm.factory import create_llm_client
 
+    resolved_model = model or getattr(settings, "deepseek_model", "deepseek-v4-flash")
     return create_llm_client(
         api_key=getattr(settings, "deepseek_api_key", None),
-        model=getattr(settings, "deepseek_model", "deepseek-v4-flash"),
+        model=resolved_model,
         max_tokens=getattr(settings, "deepseek_max_tokens", 8192),
     )
 
@@ -717,7 +728,9 @@ def _create_report_metadata_generator(
         return None
 
     try:
-        client = _create_configured_llm_client(settings)
+        client = _create_configured_llm_client(
+            settings, model=settings.deepseek_scoring_model
+        )
     except Exception:
         log.warning("report_ai_metadata_client_failed", exc_info=True)
         return None

@@ -254,6 +254,46 @@
     if (props.story.scores?.total_score == null) return null
     return props.story.scores.total_score.toFixed(1)
   })
+
+  // Full LLM evaluation: rationale + six weighted component scores
+  const llmEvaluation = computed(() => props.story.llm_evaluation ?? null)
+
+  const llmRationale = computed(() => {
+    const rationale = llmEvaluation.value?.rationale?.trim()
+    return rationale ? rationale : null
+  })
+
+  const componentLabels = computed<Record<string, string>>(() =>
+    isZh.value
+      ? {
+          preference_relevance: '偏好相關性',
+          novelty: '新穎性',
+          rigor: '嚴謹度',
+          evidence_strength: '證據強度',
+          generalizability: '泛化性',
+          reproducibility: '可重現性',
+        }
+      : {
+          preference_relevance: 'Preference relevance',
+          novelty: 'Novelty',
+          rigor: 'Rigor',
+          evidence_strength: 'Evidence strength',
+          generalizability: 'Generalizability',
+          reproducibility: 'Reproducibility',
+        },
+  )
+
+  const componentBreakdown = computed(() => {
+    const components = llmEvaluation.value?.components
+    if (!components) return []
+    return Object.entries(components).map(([key, value]) => ({
+      key,
+      label: componentLabels.value[key] ?? key,
+      value: typeof value === 'number' ? value : 0,
+    }))
+  })
+
+  const formatPercent = (value: number): string => `${Math.round(value * 100)}%`
 </script>
 
 <template>
@@ -511,6 +551,38 @@
           >
             {{ paragraph }}
           </p>
+        </div>
+
+        <!-- LLM evaluation: rationale + component breakdown -->
+        <div
+          v-if="llmEvaluation"
+          class="llm-evaluation"
+        >
+          <p
+            v-if="llmRationale"
+            class="llm-evaluation-rationale"
+          >
+            {{ llmRationale }}
+          </p>
+          <div
+            v-if="componentBreakdown.length > 0"
+            class="llm-evaluation-components"
+          >
+            <div
+              v-for="item in componentBreakdown"
+              :key="item.key"
+              class="llm-component"
+            >
+              <span class="llm-component-label">{{ item.label }}</span>
+              <div class="llm-component-bar">
+                <div
+                  class="llm-component-fill"
+                  :style="{ width: formatPercent(item.value) }"
+                ></div>
+              </div>
+              <span class="llm-component-value">{{ formatPercent(item.value) }}</span>
+            </div>
+          </div>
         </div>
 
         <!-- Meta info -->
@@ -1003,5 +1075,70 @@
   .badge-score-low:hover {
     background: rgb(156 163 175 / 0.15);
     border-color: rgb(156 163 175 / 0.3);
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   LLM EVALUATION BREAKDOWN
+   Rationale + six weighted component bars
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+  .llm-evaluation {
+    padding: 0.75rem 0.875rem;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-secondary);
+  }
+
+  .llm-evaluation-rationale {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+    margin: 0 0 0.625rem;
+  }
+
+  .llm-evaluation-components {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .llm-component {
+    display: grid;
+    grid-template-columns: 8rem 1fr 2.75rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .llm-component-label {
+    font-size: 0.6875rem;
+    color: var(--color-text-tertiary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .llm-component-bar {
+    height: 0.375rem;
+    border-radius: var(--radius-full);
+    background: var(--color-surface-overlay);
+    overflow: hidden;
+  }
+
+  .llm-component-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    background: linear-gradient(
+      90deg,
+      var(--color-accent-primary),
+      var(--color-accent-primary-hover)
+    );
+    transition: width var(--duration-base) var(--ease-out);
+  }
+
+  .llm-component-value {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-secondary);
+    text-align: right;
   }
 </style>
