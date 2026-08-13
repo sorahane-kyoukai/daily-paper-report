@@ -29,6 +29,10 @@ _MAX_PAGE_STREAM_BYTES = 20 * 1024 * 1024
 _MIN_USEFUL_CHARS = 800
 _HTML_TAGS_TO_DROP = ("script", "style", "nav", "form", "noscript")
 _CACHE_RETENTION_SECONDS = 180 * 24 * 60 * 60
+# Spacing between fulltext downloads keeps arXiv's per-IP rate limit from being
+# tripped by back-to-back HTML/PDF fetches (which previously caused HTTP 429 on
+# the next scheduled API collection).
+_FULLTEXT_REQUEST_INTERVAL_SECONDS = 3.0
 
 
 class FullTextService:
@@ -62,12 +66,23 @@ class FullTextService:
             self._log.info("fulltext_cache_pruned", entries=len(expired_keys))
 
     def load_for_stories(self, stories: list[Story]) -> dict[str, FullTextDocument]:
-        """Fetch documents sequentially to keep Nano memory use bounded."""
+        """Fetch documents sequentially to keep Nano memory use bounded.
+
+        A small delay between fetches avoids tripping arXiv's per-IP rate limit
+        with back-to-back HTML/PDF downloads, which previously surfaced as HTTP
+        429 on the next scheduled API collection.
+        """
         documents: dict[str, FullTextDocument] = {}
+        last_fetch_at: float | None = None
         for story in stories:
             if not _is_paper(story):
                 continue
+            if last_fetch_at is not None:
+                elapsed = time.monotonic() - last_fetch_at
+                if elapsed < _FULLTEXT_REQUEST_INTERVAL_SECONDS:
+                    time.sleep(_FULLTEXT_REQUEST_INTERVAL_SECONDS - elapsed)
             documents[story.story_id] = self.load_for_story(story)
+            last_fetch_at = time.monotonic()
         return documents
 
     def load_for_story(self, story: Story) -> FullTextDocument:

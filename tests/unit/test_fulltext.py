@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 from src.features.config.schemas.base import LinkType
-from src.features.fulltext.models import FullTextStatus
+from src.features.fulltext.models import FullTextDocument, FullTextStatus
 from src.features.fulltext.service import FullTextService, _build_document
 from src.features.store.models import DateConfidence, Item
 from src.linker.models import Story, StoryLink
@@ -65,6 +65,24 @@ def test_failed_sources_degrade_to_abstract(
     assert document.status == FullTextStatus.ABSTRACT_ONLY
     assert document.confidence_multiplier == 0.85
     assert "useful abstract" in document.text
+
+
+@patch("src.features.fulltext.service.time.sleep")
+def test_load_for_stories_throttles_between_fetches(
+    mock_sleep: MagicMock, tmp_path: Path
+) -> None:
+    service = FullTextService(tmp_path)
+    document = FullTextDocument(
+        story_id="arxiv:2401.00001",
+        text="abstract",
+        status=FullTextStatus.ABSTRACT_ONLY,
+        source_url=None,
+        source_format="abstract",
+        sha256="hash",
+    )
+    with patch.object(service, "load_for_story", return_value=document):
+        service.load_for_stories([_story(), _story()])
+    assert mock_sleep.call_count == 1
 
 
 def test_oversized_document_is_compacted() -> None:
