@@ -273068,6 +273068,552 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:caab56c36658cfd8": {
+      "score": 0.065,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only; describes using Copilot to build a Japanese programming language lexer, lacking methodology, results, or evaluation. Marginal relevance to Japanese LLM or code generation but not substantive research. No quantitative evidence, no reproducibility details. Scores near zero across rigor, evidence, and reproducibility; low novelty due to common practical use of AI assistants.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2153,
+        "completion_tokens": 160,
+        "total_tokens": 2313,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 361
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "arxiv:items/3718555": {
+      "score": 0.034,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 0.85,
+      "rationale": "Abstract-only technical blog about swapping local LLM models; lacks research methodology, novelty, evidence, or generalizability. Marginal relevance to LLMs but purely applied deployment.",
+      "topics": [
+        "LLM",
+        "local LLM"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "9848ae7caa612dfe1ad383a059d2ff120a9860ba90e04c3829d46af0fdd4c5f5",
+      "token_usage": {
+        "prompt_tokens": 2164,
+        "completion_tokens": 168,
+        "total_tokens": 2332,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 372
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:bf57b429ad3a36d1": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a marketing blog post about AI translation for business emails, providing no research content, methodology, or results. It is out of scope for AI/ML research and unrelated to the core preferences.",
+      "topics": [
+        "AI translation"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2152,
+        "completion_tokens": 177,
+        "total_tokens": 2329,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 104
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:ad95b32caf4e463f": {
+      "score": 0.19999999999999998,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper addresses using a local LLM for ISMS compliance evaluation, which touches on Japanese LLM, agents, and structured output. However, it is an abstract with no methodology, results, or comparisons, and the application is domain-specific compliance auditing. The relevance to core LLM research is limited, and the lack of technical detail severely limits rigor and evidence.",
+      "topics": [
+        "Japanese LLM",
+        "local LLM",
+        "structured output",
+        "agent productization"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2175,
+        "completion_tokens": 224,
+        "total_tokens": 2399,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 383
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "arxiv:items/3216861": {
+      "score": 0.34850000000000003,
+      "components": {
+        "preference_relevance": 0.55,
+        "novelty": 0.6,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.5,
+        "reproducibility": 0.1
+      },
+      "confidence": 0.85,
+      "rationale": "The paper focuses on agent tool-use latency, introducing speculative tool calling during inference. It is relevant to agents and tool use, but the abstract is too brief to establish rigorous methodology or quantitative results. Evidence is limited to a high-level concept, and reproducibility is low due to missing details. Generalizability is moderate as it applies to agentic workflows, but novelty is moderate relative to speculative execution ideas.",
+      "topics": [
+        "Agents & Tool Use",
+        "Inference & Serving"
+      ],
+      "evidence": [
+        "Content abstract only; mentions Thought-Action-Observation and waiting for tool results, but no quantitative or methodological details."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "50721d0cf6bfe58adba3ee9ea714059d9b14055557105c7ff88aed8fca8487c0",
+      "token_usage": {
+        "prompt_tokens": 2159,
+        "completion_tokens": 202,
+        "total_tokens": 2361,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 367
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:2f05702fd4eb6fe1": {
+      "score": 0.14,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Casual blog post about a Chinese AI tool; no scientific methodology, no research contributions. Marginal relevance to LLM/agent topics but only anecdotal. Lacks rigor, evidence, and reproducibility. Pure domain application with no language methodology, thus capped at 0.2.",
+      "topics": [
+        "LLM",
+        "agent",
+        "tool use"
+      ],
+      "evidence": [
+        "abstract only, no methods or results"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2156,
+        "completion_tokens": 165,
+        "total_tokens": 2321,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 364
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:01d8086e736bfd65": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only blog post about running a Spring OAuth MCP server with updated MCP Inspector. Contains MCP and tool use keywords but no technical detail, no research contribution, no evaluation, and is not an academic paper. Lacks evidence and rigor; mainly a how-to note.",
+      "topics": [
+        "MCP",
+        "tool use",
+        "OAuth"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2144,
+        "completion_tokens": 197,
+        "total_tokens": 2341,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 352
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:3d165b0528643938": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only blog-like article for novice engineers about avoiding AI dependency. It contains no technical research content, no LLM methodology, no empirical evaluation, and no AI/ML substance. Out of scope for AI/ML research.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2140,
+        "completion_tokens": 177,
+        "total_tokens": 2317,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 348
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:59c6741d8007496f": {
+      "score": 0.05500000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only description of a community of 60 AI personas. It lacks technical detail, quantitative results, and rigorous methodology. It only marginally touches on AI agents (personas with memory and interaction) but is too vague and preliminary. The relevance to core ML/NLP topics is minimal, and the research quality is unsubstantiated.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2247,
+        "completion_tokens": 162,
+        "total_tokens": 2409,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 455
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6cec2f5e84ec5abe": {
+      "score": 0.0575,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.05,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only personal narrative about building local AI with memory features; no technical detail, no methodology, out of scope for LLM research, and untrusted content. Scores minimal across all components.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2264,
+        "completion_tokens": 132,
+        "total_tokens": 2396,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 88
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:f22bb80aac5b795a": {
+      "score": 0.16000000000000003,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.0,
+        "generalizability": 0.5,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a summary list of recent AI papers, with no substantive research content. It mentions agents, evaluation, and human-AI interaction but lacks details. The preference relevance is low due to broad generic topics and absence of specific keywords. It has marginal novelty and no evidence or reproducibility, but generalizability is moderate as it covers multiple areas.",
+      "topics": [
+        "agents",
+        "evaluation",
+        "human-AI interaction"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2358,
+        "completion_tokens": 211,
+        "total_tokens": 2569,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 566
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:9eb2e1e5176b57c8": {
+      "score": 0.0875,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.05,
+        "generalizability": 0.15,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "This is a status report on generative AI regulation and governance trends, not a technical AI/ML research paper. It discusses policy and international regulatory approaches, which is out of scope for this evaluation focused on AI/ML methods. It touches on topics like AI safety and transparency but is not an empirical or methodological contribution. Minimal relevance to preferred topics like LLM, alignment, or evaluation; no technical content, methods, or evidence.",
+      "topics": [
+        "AI safety",
+        "transparency"
+      ],
+      "evidence": [
+        "Context: abstract only; no methods or results provided"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2266,
+        "completion_tokens": 198,
+        "total_tokens": 2464,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 474
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:f1e868dce3490f5b": {
+      "score": 0.24000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.4,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.4,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only. Topic is AI text detection, weakly related to LLM/NLP but no specific language model methodology. Novelty plausible but unverified. Lacks details for rigor, evidence, reproducibility.",
+      "topics": [
+        "AI text detection",
+        "NLP"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2075,
+        "completion_tokens": 179,
+        "total_tokens": 2254,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 283
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:31530c8e31da506c": {
+      "score": 0.14,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only personal essay on ontology in AI personality systems, lacking technical depth, empirical evaluation, and alignment with core preferences. It mentions no LLM, NLP, or AI methods, only personal implementation logs. Relevance is minimal, and rigor and evidence are very low.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 189,
+        "total_tokens": 2462,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 481
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:1b8793213980b656": {
+      "score": 0.21999999999999997,
+      "components": {
+        "preference_relevance": 0.35,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an introductory article on MCP for AI agents, relevant to agents/tool use and Japanese LLM topics, but lacks research substance: no methodology, experiments, or quantitative results. As a tutorial/overview, novelty and rigor are minimal. It partially addresses tool use and agent-centric issues but does not contribute new knowledge. Evidence is only abstract with no verifiable claims. Score capped due to limited technical depth and no empirical validation.",
+      "topics": [
+        "Agents & Tool Use",
+        "Japanese LLM & NLP",
+        "AI agent",
+        "MCP",
+        "tool use"
+      ],
+      "evidence": [
+        "Title indicates introduction to MCP for AI agents; abstract mentions giving AI agents 'hands' to access files, databases, and APIs, relevant to tool use. No research methods or results."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2237,
+        "completion_tokens": 241,
+        "total_tokens": 2478,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 445
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:262747ebf4aafee4": {
+      "score": 0.2,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.2,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only document discussing a literature survey methodology and citation verification process. Tangential to LLM/NLP topics; no original research, experiments, or quantitative results. Preference relevance low despite mention of LLM-related workflows. Rigor, evidence, and reproducibility are inherently limited by abstract-only status.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2269,
+        "completion_tokens": 190,
+        "total_tokens": 2459,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 477
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:02b08904fe0bf7e7": {
+      "score": 0.12000000000000001,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.3,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a short blog-style description of a tool that generates diagrams with user-controlled layouts, contrasting with mermaid's automatic layout. It lacks technical details, evaluation, and connections to preferred topics such as LLMs, prompting, or agents. The content is not presented as a rigorous research contribution. Preference relevance is minimal, as it only tangentially involves LLM-generated diagrams (mermaid). Novelty is low to moderate; generalizability is limited to a specific use case. No evidence of quantitative results or reproducibility. Overall score is low due to lack of research rigor and relevance.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2266,
+        "completion_tokens": 250,
+        "total_tokens": 2516,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 474
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:06450fb54f4c8c0d": {
+      "score": 0.125,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses LLM overconfidence and temperature, touching on LLM and reasoning topics, but the abstract focuses on a demonstration with a small model rather than substantial research. It lacks rigorous methodology, baselines, or quantitative results. Reproducibility is partially addressed through code availability, but overall scientific contribution is minimal. Pure domain application is borderline, but language model focus yields a low score.",
+      "topics": [
+        "LLM",
+        "reasoning",
+        "temperature"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2249,
+        "completion_tokens": 181,
+        "total_tokens": 2430,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 457
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:851d61febfae2b5d": {
+      "score": 0.06000000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.05,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only, watermarks are peripheral to LLM safety but lack concrete methodology or evaluation; no evidence.",
+      "topics": [
+        "AI safety",
+        "text watermarking"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2078,
+        "completion_tokens": 122,
+        "total_tokens": 2200,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 286
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
