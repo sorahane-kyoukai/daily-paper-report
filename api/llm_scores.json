@@ -274920,6 +274920,716 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:139ffba1d7ea610c": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only blog-style content about AI model censorship and API routing; not a research paper, no methodology or results, minimal relevance to core LLM topics.",
+      "topics": [
+        "AI Safety",
+        "Red Teaming & Evaluation"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2135,
+        "completion_tokens": 173,
+        "total_tokens": 2308,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 343
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:66ba5906dac3975b": {
+      "score": 0.175,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses an open-weight LLM (MiniMax H3) and its censorship/uncensored nature, touching on AI safety and evaluation. However, it is a casual Reddit-based commentary with no technical details, methods, or experiments. It is not a formal research paper, and the abstract-only content lacks rigor and evidence. Relevance is limited to LLM and safety discussions, but novelty, rigor, and evidence are minimal.",
+      "topics": [
+        "LLM",
+        "AI safety",
+        "content moderation"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2145,
+        "completion_tokens": 231,
+        "total_tokens": 2376,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 353
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6ae4dfdd6cef940a": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is only an abstract of a commercial blog about automating order entry from fax/email, no technical content, no academic research, out of scope for AI/ML research.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2156,
+        "completion_tokens": 128,
+        "total_tokens": 2284,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 364
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:7c17c8a4688f4cc5": {
+      "score": 0.0825,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only mention of a tool for LLM judges to inspect images in traces. No technical details, no results, and primarily a product announcement. Marginal relevance to LLM evaluation but lacks substance.",
+      "topics": [
+        "LLM judge",
+        "MLflow"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2156,
+        "completion_tokens": 141,
+        "total_tokens": 2297,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 364
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "arxiv:commit/5792571": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 0.85,
+      "rationale": "Abstract-only commit note with no technical content; merely adds a model reference. Out of scope for AI/ML research evaluation.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "43d313b4eb3d53be4cd77f81415dd281d6dc42b25efb7088ff2f8ab296b40a43",
+      "token_usage": {
+        "prompt_tokens": 2110,
+        "completion_tokens": 112,
+        "total_tokens": 2222,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 318
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:9d2a98d086f1b674": {
+      "score": 0.10500000000000001,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Paper discusses LLM generating chart descriptions, touching on language models and prompting, but is an abstract-only blog-style piece about a domain-specific chart language (Flint). No technical details, experiments, or claims beyond commentary. Limited relevance to core LLM, reasoning, or agent topics; novelty and rigor weak due to lack of substance.",
+      "topics": [
+        "LLM",
+        "chart generation",
+        "Vega-Lite",
+        "prompting",
+        "language model"
+      ],
+      "evidence": [
+        "Abstract only; no methods, baselines, ablations, or quantitative results presented."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2162,
+        "completion_tokens": 197,
+        "total_tokens": 2359,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 370
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:0cda87190fe8f4c1": {
+      "score": 0.15500000000000003,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only; focused on MLflow GUI and prompt improvement, tangential to core LLM/NLP research. Minimal details, no quantitative results or methods. Relevance is low though mentions prompt improvement and MLflow which slightly aligns with prompting/evaluation, but not substantive.",
+      "topics": [
+        "prompting",
+        "evaluation"
+      ],
+      "evidence": [
+        "Content status abstract_only"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2146,
+        "completion_tokens": 158,
+        "total_tokens": 2304,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 354
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:0a06f07b875391a2": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Blog post with abstract only; discusses Claude text watermarking, an AI safety topic but lacks methodological detail, experiments, or verifiable evidence. No technical content to assess.",
+      "topics": [
+        "AI safety"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2163,
+        "completion_tokens": 130,
+        "total_tokens": 2293,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 371
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:501f30a9bde0d6d5": {
+      "score": 0.07,
+      "components": {
+        "preference_relevance": 0.15,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only product announcement with no technical detail, methods, or evaluation. Largely out of scope for AI/ML research; minor relevance via 'agents' and 'LLM' but insufficient substance. Score limited by domain application nature and lack of evidence.",
+      "topics": [
+        "agents",
+        "tool use"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2115,
+        "completion_tokens": 152,
+        "total_tokens": 2267,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 323
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:575469b334438390": {
+      "score": 0.0625,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.05,
+        "rigor": 0.1,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only, no methodology, no quantitative results, and primarily a product documentation snippet. Minimal relevance to research preferences; low overall score.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2103,
+        "completion_tokens": 156,
+        "total_tokens": 2259,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 311
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6baa82701dda6b92": {
+      "score": 0.15000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only paper on multi-agent document classification using Amazon Bedrock, Strands Agents SDK, Claude Haiku, and Amazon Titan. Mentions agents (relevant) but lacks details on methodology, novelty, evidence, or reproducibility. Mostly a product application with no substantiated research quality.",
+      "topics": [
+        "agent",
+        "document classification",
+        "multimodal embeddings"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2118,
+        "completion_tokens": 200,
+        "total_tokens": 2318,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 70
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:87123a7dba72ea0f": {
+      "score": 0.11750000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.15,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Technical blog-style abstract on AWS feature store; no LLM/NLP methodology, no research contribution, lacks quantitative details, baselines, or reproducibility. Pure infrastructure application with minimal ML relevance.",
+      "topics": [
+        "feature store",
+        "fraud detection",
+        "AWS"
+      ],
+      "evidence": [
+        "sub-100ms feature serving",
+        "saves approximately $120,000 annually"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2120,
+        "completion_tokens": 156,
+        "total_tokens": 2276,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 328
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:e07fc787fc565a8d": {
+      "score": 0.14,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.05,
+        "generalizability": 0.2,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only description of a contract search application using Amazon Bedrock Knowledge Bases. Mentions retrieval and filtering but lacks language-model methodology details. Pure domain application with no LLM, Japanese, or core AI methodology specifics. Low rigor, no quantitative results.",
+      "topics": [
+        "RAG",
+        "knowledge base",
+        "filtering"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2134,
+        "completion_tokens": 149,
+        "total_tokens": 2283,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 342
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:3cc386b7533ef128": {
+      "score": 0.345,
+      "components": {
+        "preference_relevance": 0.6,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.4,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only describes deploying secure multi-tenant AI agents on Bedrock AgentCore; touches agents/tool use and business workflows but provides no technical detail, methods, or results; limited originality and rigor; relevance moderate due to agent deployment but not LLM research.",
+      "topics": [
+        "Agents & Tool Use",
+        "Inference & Serving"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2110,
+        "completion_tokens": 154,
+        "total_tokens": 2264,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 318
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:2133167bf2d040b1": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a promotional article about RunPod pricing, not a research paper. It contains no scientific methodology, experiments, or novel contributions. It does not address any of the specified topics in AI/ML research.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2285,
+        "completion_tokens": 172,
+        "total_tokens": 2457,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 493
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:5668d62166b9e868": {
+      "score": 0.14,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Despite references to local LLM and CPU affinity, the paper is a brief blog post with no methodology, quantitative results, or validation. It is anecdotal and lacks research quality. Relevance to preferred topics is low but non-zero due to LLM and local LLM keywords.",
+      "topics": [
+        "local LLM",
+        "CPU affinity",
+        "llama.cpp"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2207,
+        "completion_tokens": 200,
+        "total_tokens": 2407,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 415
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:8a8d13009f8fd3e6": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper discusses a configuration of Codex agents using hypothetical models (gpt-5.6-sol, gpt-5.6-luna), which is relevant to agents and tool use but lacks substantive research content, evidence, or technical detail. It appears to be a brief blog-style note, not a rigorous paper.",
+      "topics": [
+        "agents",
+        "tool use"
+      ],
+      "evidence": [
+        "abstract_only",
+        "No evidence strings available"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2262,
+        "completion_tokens": 174,
+        "total_tokens": 2436,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 470
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:bfb17ad983d73d07": {
+      "score": 0.32,
+      "components": {
+        "preference_relevance": 0.4,
+        "novelty": 0.2,
+        "rigor": 0.3,
+        "evidence_strength": 0.3,
+        "generalizability": 0.3,
+        "reproducibility": 0.2
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a hands-on comparison of local LLMs, relevant to Japanese LLM deployment and agents, but lacks rigorous methodology, quantitative details, and reproducibility; primarily a blog-style evaluation.",
+      "topics": [
+        "local LLM",
+        "Japanese LLM",
+        "benchmark",
+        "evaluation",
+        "LLM comparison",
+        "RTX 5090"
+      ],
+      "evidence": [
+        "Paper title and description mention 'Qwen3.8-27B', 'RTX 5090', '5モデル徹底比較' (5-model comparison), and testing six tasks including translation, coding, structured extraction, image reading, logical reasoning, and adult localization."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2294,
+        "completion_tokens": 256,
+        "total_tokens": 2550,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 502
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:8dfefef5c40871ee": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a technical description of NVIDIA's CMP170HX cryptocurrency mining GPU. It lacks relevance to any preferred topics (LLM, NLP, or related AI areas) and is a hardware specification note without research methodology, quantitative evaluation, or generalizable findings. The content is entirely out of scope for AI/ML research curation.",
+      "topics": [
+        "GPU hardware",
+        "cryptocurrency mining"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2227,
+        "completion_tokens": 169,
+        "total_tokens": 2396,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 435
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:44cce995fdca60a4": {
+      "score": 0.10500000000000001,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only Japanese blog post about personal bot development, discussing intuitive failures in AI prompting. Lacks methodological detail, data, or any named techniques (no LLM, agent, RAG specifics beyond general mentions). No rigor or reproducibility; purely anecdotal. Marginal relevance via AI usage and local self-dialogue, but too vague and out of scope.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2257,
+        "completion_tokens": 163,
+        "total_tokens": 2420,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 465
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:7df6a18b4588f613": {
+      "score": 0.165,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.3,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only announcement of AI architecture research (GD-Attention, MG-OS) with formalization in Lean 4 referenced but no details. Mentions 'AI' but lacks specific keywords for LLM, agents, safety, etc. Minimal evidence and no methodological detail.",
+      "topics": [
+        "AI",
+        "formally verified AI",
+        "attention",
+        "operating system",
+        "formalization"
+      ],
+      "evidence": [
+        "Limited formalization of the mathematical core in Lean 4 in a public repository."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2212,
+        "completion_tokens": 224,
+        "total_tokens": 2436,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 420
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:d40244a3b1f0277f": {
+      "score": 0.0625,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a brief speculative piece about AI's capability in 3D modeling, mentioning Claude Opus 5 and Autodesk Fusion. It lacks technical methodology, quantitative results, and links to preferred topics like LLMs, reasoning, or agents beyond a superficial mention. No evidence of rigorous evaluation or reproducibility.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2264,
+        "completion_tokens": 194,
+        "total_tokens": 2458,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 472
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:e44a019e299e0cdc": {
+      "score": 0.12500000000000003,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.05,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is an anecdotal blog-style note about MCP server memory usage with Claude Code and Codex, lacking research methodology, quantitative evaluation, or language model methodology. Low relevance to core preferences (agents/tool use minimally, but no research contribution).",
+      "topics": [
+        "agents",
+        "MCP"
+      ],
+      "evidence": [
+        "Abstract mentions MCP servers and memory pressure, but no methods or results section available."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2245,
+        "completion_tokens": 163,
+        "total_tokens": 2408,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 453
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:ca5d019b09c3631a": {
+      "score": 0.115,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.2,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "This is a short blog-like note about using Colab as an MCP server for agents. It mentions agents and MCP but lacks substantive research content. It provides no experimental methodology, results, or rigorous analysis. The evidence is anecdotal and the work is not generalizable as a research contribution. Overall, it is far below the threshold for a research paper and is more of a technical tip.",
+      "topics": [
+        "Agents & Tool Use",
+        "MCP"
+      ],
+      "evidence": [
+        "Abstract mentions MCP, Colab, agents, and Google Drive integration."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2195,
+        "completion_tokens": 239,
+        "total_tokens": 2434,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 403
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
