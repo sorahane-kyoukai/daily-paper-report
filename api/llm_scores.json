@@ -277588,6 +277588,327 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:c05577d672d2afaf": {
+      "score": 0.245,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.4,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The abstract mentions LLM agents and social temperature, aligning with agents and LLM topics but it is fundamentally a physics-inspired multi-agent study, not core language or NLP methodology. Abstract-only, no quantitative evidence, no detailed methods or evaluation. Relevance is low but non-zero due to LLM agents. Rigor and evidence are minimal. Score should be low, below 0.2 due to abstract-only and non-methodology focus.",
+      "topics": [
+        "LLM agents",
+        "multi-agent",
+        "statistical mechanics",
+        "social dynamics"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2180,
+        "completion_tokens": 190,
+        "total_tokens": 2370,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 388
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:da9c68265eae6c17": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is only an abstract of a corporate blog column about using AI for customer follow-up to increase repeat business. No technical content, no methodology, no evaluation, no research contributions. It is a business application note without any academic or rigorous treatment. It does not address LLMs, Japanese NLP, or any core AI topics beyond generic 'AI'. Lacks all evidence of research quality and relevance to preferences. Reproducibility impossible. Score at minimum.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2163,
+        "completion_tokens": 182,
+        "total_tokens": 2345,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 371
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:5323d720c0bc9c2f": {
+      "score": 0.15000000000000002,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a case study on using local LLMs for ISMS compliance assessment, which touches on AI agents and local LLMs, but it is a domain application (security compliance) with no methodological innovation or evaluation. The abstract is too brief, lacking details on methods, results, or baselines. Preference relevance is low because it is not core LLM research; it is an application. Novelty, rigor, evidence, and reproducibility are minimal due to lack of technical depth. Generalizability is moderate as ISMS concepts could apply broadly, but the specific implementation is narrow.",
+      "topics": [
+        "local LLM",
+        "ISMS",
+        "compliance assessment",
+        "AI agent"
+      ],
+      "evidence": [
+        "Abstract: '業務PCのローカルLLMに、どこまで任せられるかを測った記録' indicates a practical evaluation.",
+        "Abstract mentions '判定の根拠が見えなければ' suggesting explainability concern but no details."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2164,
+        "completion_tokens": 318,
+        "total_tokens": 2482,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 372
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:f6f0d3d1391f8870": {
+      "score": 0.16000000000000003,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "Technical article on MCP server implementation with Streamable HTTP. Relevant to agents/tool use but lacks research depth, empirical evaluation, and scientific rigor. Abstract only, no evidence.",
+      "topics": [
+        "agents",
+        "tool use",
+        "MCP"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2188,
+        "completion_tokens": 180,
+        "total_tokens": 2368,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 396
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:29c25391fd9e817f": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "No research content; only a changelog summary with no methodology or contributions.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2136,
+        "completion_tokens": 108,
+        "total_tokens": 2244,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 344
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:3b6a4117e4be4c11": {
+      "score": 0.015,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "News commentary; no AI/ML methodology or language modeling; out of scope. Abstract only, lacks evidence and technical content.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2170,
+        "completion_tokens": 120,
+        "total_tokens": 2290,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 378
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:e6059f7931a4ff58": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only; no technical content, methods, or evidence. Title mentions Python, AST, local LLM self-repair but lacks any details on LLM use, architecture, or evaluation. Falls below 0.2 threshold due to missing methodology and pure application focus.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2157,
+        "completion_tokens": 144,
+        "total_tokens": 2301,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 365
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6a699a89ef47a8b3": {
+      "score": 0.04000000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only blog summary about Claude's text watermarking, not a research paper with methods, results, or evidence. It is minimally relevant to AI safety and LLMs but lacks novel contribution and rigor. The abstract mentions 'sampling mechanism' but no technical detail. Thus, it scores very low.",
+      "topics": [
+        "AI safety",
+        "Large language model",
+        "text watermarking"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2205,
+        "completion_tokens": 211,
+        "total_tokens": 2416,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 413
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:938d132ba8f0dc0f": {
+      "score": 0.015,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only content describes a video walkthrough of token sampling and watermark detection/removal. No language model methodology, no rigorous evidence, and no quantitative results. Pure application without language modeling core; disqualified for scientific AI relevance.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2073,
+        "completion_tokens": 139,
+        "total_tokens": 2212,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 281
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:1f623d90d3a73cab": {
+      "score": 0.335,
+      "components": {
+        "preference_relevance": 0.4,
+        "novelty": 0.2,
+        "rigor": 0.3,
+        "evidence_strength": 0.3,
+        "generalizability": 0.4,
+        "reproducibility": 0.3
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a technical blog post on Query-aware Compression in RAG for Japanese FAQ, with concrete token/cost measurement. It relates to RAG and Japanese LLM applications, but lacks rigorous methodology, detailed evidence, and broad novelty. It is a practical verification rather than a research contribution.",
+      "topics": [
+        "RAG",
+        "Japanese LLM",
+        "Query-aware Compression",
+        "Token efficiency"
+      ],
+      "evidence": [
+        "Abstract states real measurement on Japanese FAQ, but full results not available.",
+        "Only abstract visible; no detailed methodology, baselines, or quantitative results in text."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2250,
+        "completion_tokens": 246,
+        "total_tokens": 2496,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 458
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:5bf9904ad2756e4e": {
+      "score": 0.04000000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Only an abstract of a GitHub PR about adding a quantized GGUF model of LLM-jp-4-33B to a model list. Mentions LLM-jp (Japanese LLM) and quantization, but lacks any research content, methods, or evaluation. Pure logistics update with no novelty, rigor, evidence, or reproducibility. Score capped due to minimal relevance to LLM topics but no actual technical contribution.",
+      "topics": [
+        "LLM-jp",
+        "quantization",
+        "model list"
+      ],
+      "evidence": [
+        "Title mentions LLM-jp-4 33B GGUF, but no details"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2142,
+        "completion_tokens": 206,
+        "total_tokens": 2348,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 350
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
