@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T00:41:28.518562+00:00",
+  "generated_at": "2026-08-24T00:46:35.713478+00:00",
   "latest": {
     "monthly": "2026-08",
-    "weekly": "2026-W33"
+    "weekly": "2026-W34"
   },
   "monthly": [
     {
@@ -98,6 +98,19 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 30,
+      "generated_at": "2026-08-24T00:46:33.052271+00:00",
+      "missing_dates": [],
+      "path": "api/reports/weekly/2026-W34.json",
+      "period_end": "2026-08-23",
+      "period_id": "2026-W34",
+      "period_start": "2026-08-17",
+      "recommendation_count": 3,
+      "report_type": "weekly",
+      "summary": "本週焦點包括多代理系統的實作探討、開放模型部署與 AWS 上的生成式 AI 應用。首推詳盡解析 LangGraph 原始碼，對照自製系統，點出 LLM 溝通限制與路由設計；亦收錄 NVIDIA Nemotron 3.5 Lightning 效能數據與 WebNN 在 NPU 上執行 LLM 的實測，值得工程與應用開發者參考。",
+      "title": "AI 研究週報：多代理系統與模型部署趨勢"
+    },
     {
       "blog_recommendation_count": 30,
       "generated_at": "2026-08-17T00:41:25.669965+00:00",

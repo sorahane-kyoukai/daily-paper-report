@@ -1,0 +1,2993 @@
+{
+  "blog_items_considered": 158,
+  "blog_recommendations": [
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Venu Kanamatareddy"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon SageMaker AI",
+        "Amazon SageMaker JumpStart",
+        "Announcements"
+      ],
+      "entities": [
+        "nvidia",
+        "aws"
+      ],
+      "first_seen_at": "2026-08-18T00:00:15.624234+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "NVIDIA Nemotron 3.5 Lightning now available in Amazon SageMaker JumpStart",
+          "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.5,
+          "novelty": 0.1,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only marketing post about NVIDIA Nemotron 3.5 Lightning deployment on SageMaker. Mentions agentic workloads and MoE architecture, aligning with agent and transformer topics, but lacks research content, methods, or quantitative evidence. Minimal novelty and no rigor or reproducibility.",
+        "score": 0.345,
+        "token_usage": {
+          "completion_tokens": 150,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 347,
+          "prompt_tokens": 2139,
+          "total_tokens": 2289
+        },
+        "topics": [
+          "agent",
+          "agents"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "NVIDIA Nemotron 3.5 Lightning now available in Amazon SageMaker JumpStart",
+        "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
+      },
+      "published_at": "2026-08-17T09:06:33+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 1,
+      "report_score": 23.097771,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.34500000000000003,
+        "llm_relevance_score": 9.66,
+        "recency_score": 0.9377706884567082,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 23.09777068845671
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:3d5b970b3fd988ef",
+      "summary": "NVIDIA Nemotron 3.5 Lightning, an open model built for high-volume agentic workloads, is now available in Amazon SageMaker JumpStart. This post shows how to deploy the 30B Mixture-of-Experts model (3B active), which delivers up to 4x higher throughput and up to 30% faster task completion for always-on agents.",
+      "summary_zh": "NVIDIA Nemotron 3.5 Lightning 是一個開放模型，專為高負載的代理型工作負載所設計，現已可透過 Amazon SageMaker JumpStart 進行部署。此模型採用 30B 的專家混合（Mixture-of-Experts）架構，但僅啟動 3B 參數，因此在維持效能的同時，能顯著降低運算成本。實測結果顯示，相較於同等級模型，Nemotron 3.5 Lightning 可提供高達 4 倍的吞吐量，並在處理常駐代理任務時，縮短最多 30% 的任務完成時間。該模型特別適合需要即時回應與高並發處理的場景，例如客服機器人、程式碼生成代理，以及多步驟工作流程自動化。選擇在 SageMaker JumpStart 上部署，可簡化模型上線流程，並整合 AWS 的基礎設施與安全機制。然而，此摘要僅為官方發布資訊，缺乏第三方獨立驗證，且未揭露模型的潛在限制，例如特定任務的效能衰退或偏見問題。對於企業而言，此模型的開放性與高效能將有助於降低營運成本，但在導入前仍需進行嚴謹的測試與評估，以確保符合實際業務需求。",
+      "title": "NVIDIA Nemotron 3.5 Lightning now available in Amazon SageMaker JumpStart",
+      "title_zh": "NVIDIA Nemotron 3.5 Lightning 現已於 Amazon SageMaker JumpStart 提供"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "技術的な何か Zenn出張所"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-24T00:43:53.001448+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "WebNNでLLMをNPUで動作させる",
+          "url": "https://zenn.dev/jkudo/articles/4adf8de6340517"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.5,
+          "generalizability": 0.3,
+          "novelty": 0.3,
+          "preference_relevance": 0.8,
+          "reproducibility": 0.4,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'デコード速度は同じモデルを WebGPU で回した場合の 5.0 倍、CPU の 88 倍でした。NPU 使用率は 86%'",
+          "Abstract: '生成テキストは他の 2 つと 96 トークンすべて一致しています'",
+          "Abstract: '動的形状が使えないという制約があり、それを...'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Focused on running a Japanese LLM (TinyLlama) via WebNN on NPU, touching Japanese LLM, local LLM, edge environment, and inference optimization. Score for preference_relevance slightly above the 0.20 cap for domain applications due to strong LLM and Japanese LLM keywords and some technical detail. Novelty limited to an engineering report with few new insights; rigor low due to abstract-only, missing ablations and limitations; evidence cited concrete numbers (5x vs WebGPU, 88x vs CPU, 86% NPU) and exact token match in the abstract but limited section; generalizability low as single model/hardware; reproducibility partially addressed by referencing a prior article but not full details.",
+        "score": 0.535,
+        "token_usage": {
+          "completion_tokens": 356,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 439,
+          "prompt_tokens": 2231,
+          "total_tokens": 2587
+        },
+        "topics": [
+          "WebNN",
+          "NPU",
+          "TinyLlama",
+          "Japanese LLM",
+          "inference optimization",
+          "local LLM",
+          "edge environment"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "WebNNでLLMをNPUで動作させる",
+        "url": "https://zenn.dev/jkudo/articles/4adf8de6340517"
+      },
+      "published_at": "2026-08-23T04:01:57+00:00",
+      "published_local_date": "2026-08-23",
+      "report_rank": 2,
+      "report_score": 21.447328,
+      "report_source_date": "2026-08-24",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.535,
+        "llm_relevance_score": 14.98,
+        "recency_score": 0.9173281559109862,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 21.447328155910988
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:c31b0a41f5a8fd55",
+      "summary": "ブラウザから NPU を使う WebNN で、LLM は動くのか。\n前回の記事も参考してください。\nhttps://zenn.dev/jkudo/articles/883e7304f7783b\n結論から書くと、動きます。手元の Intel Core Ultra 7 258V で TinyLlama 1.1B を NPU 上で走らせ、デコード速度は同じモデルを WebGPU で回した場合の 5.0 倍、CPU の 88 倍でした。NPU 使用率は 86%、生成テキストは他の 2 つと 96 トークンすべて一致しています。\nただし素直には動きません。動的形状が使えないという制約があり、それを...",
+      "summary_zh": "本文探討能否在瀏覽器中利用WebNN API呼叫NPU來執行大型語言模型（LLM）。作者以Intel Core Ultra 7 258V平台實測TinyLlama 1.1B模型，結果顯示NPU上的解碼速度分別為WebGPU的5.0倍與CPU的88倍，NPU使用率達86%，且產生的96個token與對照組完全一致。然而，實作並非直截了當，主要限制在於WebNN目前不支援動態形狀，導致需要對模型與呼叫方式進行調整。此研究證明瀏覽器端NPU推論的可行性，對未來的邊緣AI應用具有參考價值。作者也提及需注意硬體相容性與API成熟度等問題。",
+      "title": "WebNNでLLMをNPUで動作させる",
+      "title_zh": "透過WebNN在NPU上執行LLM"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Amir Krispin"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Bedrock AgentCore",
+        "Customer Solutions"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-19T00:00:14.600288+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "How Axonius built secure multi-tenant AI agents on Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.4,
+          "novelty": 0.2,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only describes deploying secure multi-tenant AI agents on Bedrock AgentCore; touches agents/tool use and business workflows but provides no technical detail, methods, or results; limited originality and rigor; relevance moderate due to agent deployment but not LLM research.",
+        "score": 0.345,
+        "token_usage": {
+          "completion_tokens": 154,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 318,
+          "prompt_tokens": 2110,
+          "total_tokens": 2264
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "How Axonius built secure multi-tenant AI agents on Bedrock AgentCore",
+        "url": "https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore"
+      },
+      "published_at": "2026-08-18T07:27:07+00:00",
+      "published_local_date": "2026-08-18",
+      "report_rank": 3,
+      "report_score": 21.091255,
+      "report_source_date": "2026-08-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.34500000000000003,
+        "llm_relevance_score": 9.66,
+        "recency_score": 0.9312550660430426,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 21.091255066043043
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:3cc386b7533ef128",
+      "summary": "Learn how Axonius, a cybersecurity SaaS provider, used Amazon Bedrock AgentCore to deploy fully isolated, multi-tenant AI agents across hundreds of customer environments, without building custom compute isolation, authentication, or observability infrastructure from scratch.",
+      "summary_zh": "本文介紹Axonius這家資安即服務（SaaS）供應商如何利用Amazon Bedrock AgentCore，在數百個客戶環境中部署完全隔離的多租戶AI代理。主要方法是不再自行建構客製化的運算隔離、身分驗證與可觀測性基礎設施，而是直接採用Bedrock AgentCore提供的容器化隔離、身分管理與日誌監控能力。文中強調此做法能大幅降低開發與維運成本，並確保不同租戶之間的資料與執行環境嚴格分離，滿足資安合規需求。然而，文章僅提供架構層面的說明，並未揭露實際的效能數據或大規模測試結果，因此缺乏量化證據支持其宣稱的效益。此案例對其他需要同時服務眾多企業客戶的AI服務供應商具有參考價值，顯示透過雲端原生的託管服務，可有效簡化多租戶AI系統的複雜度，同時維持安全邊界與可稽核性。後續仍須評估長期的營運成本、租戶隔離的強度以及對既有工作流程的整合影響。",
+      "title": "How Axonius built secure multi-tenant AI agents on Bedrock AgentCore",
+      "title_zh": "Axonius如何運用Bedrock AgentCore建置安全的多租戶AI代理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Nikhil Jha"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock AgentCore",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-21T00:00:14.345725+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.5,
+          "novelty": 0.3,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "No evidence of methods, baselines, or quantitative results in abstract."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; mentions agentic AI and multi-agent framework on AWS, but lacks technical detail and evaluation. Some relevance to LLM agents and cloud migration, but no evidence of LLM methodology.",
+        "score": 0.26999999999999996,
+        "token_usage": {
+          "completion_tokens": 199,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 324,
+          "prompt_tokens": 2116,
+          "total_tokens": 2315
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+        "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore"
+      },
+      "published_at": "2026-08-20T07:11:18+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 4,
+      "report_score": 18.990264,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.26999999999999996,
+        "llm_relevance_score": 7.559999999999999,
+        "recency_score": 0.9302639309390119,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 18.990263930939008
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:45bc54d841845ab6",
+      "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, portfolio governance, and post-migration operations, reducing IaC development time from weeks to minutes.",
+      "summary_zh": "本文介紹 AWS Professional Services 如何運用建構於 Amazon Bedrock AgentCore 的多代理框架，端對端自動化企業雲端遷移。此框架包含專用 AI 代理，可分別負責探索、基礎架構即程式碼（IaC）產生、組合治理及遷移後維運，將 IaC 開發時間由數週縮短至數分鐘。雖然文中強調效率提升，但並未提供具體基準或遷移成功率等量化指標。此方法需注意多代理協調的複雜性、潛在的治理與安全風險，以及對 AgentCore 服務的依賴。儘管如此，此方案顯示代理式 AI 在簡化雲端遷移流程、降低人工作業成本上的潛力，對大規模遷移專案具實務參考價值。",
+      "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
+      "title_zh": "利用 Amazon Bedrock AgentCore 上的代理式人工智慧擴展雲端遷移"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "yureki_lab"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-22T00:30:32.378926+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "MCP サーバーに Prompts を実装して Claude Code のスラッシュコマンドとして配る手順 — 一覧に出ない・引数が分割される等3つのハマりどころ【2026】",
+          "url": "https://qiita.com/yureki_lab/items/b61bd8f7d979db05101e"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract only; mentions MCP prompts and slash commands; no quantitative results or methods described."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper focuses on MCP server prompts and Claude Code slash commands, strongly relating to agents and tool use, but lacks methodological rigor, empirical evidence, and novelty due to an abstract-only status. The content is highly practice-oriented but not a research contribution.",
+        "score": 0.33499999999999996,
+        "token_usage": {
+          "completion_tokens": 223,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 393,
+          "prompt_tokens": 2185,
+          "total_tokens": 2408
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Prompting & In-Context Learning",
+          "Inference & Serving"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "MCP サーバーに Prompts を実装して Claude Code のスラッシュコマンドとして配る手順 — 一覧に出ない・引数が分割される等3つのハマりどころ【2026】",
+        "url": "https://qiita.com/yureki_lab/items/b61bd8f7d979db05101e"
+      },
+      "published_at": "2026-08-21T14:02:36+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 5,
+      "report_score": 18.137273,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.33499999999999996,
+        "llm_relevance_score": 9.379999999999999,
+        "recency_score": 0.9572733553177964,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 18.137273355317795
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:47bd0acd6594e581",
+      "summary": "はじめに / 対象と前提\nMCP サーバーの機能というと Tools ばかり話題になるが、仕様には Prompts もある。サーバー側が「定型プロンプト」を配り、クライアントがそれを呼び出す仕組みだ。Claude Code から見ると、これは /mcp__&lt;サーバー名&gt;_...",
+      "summary_zh": "本文說明如何在 MCP（Model Context Protocol）伺服器上實作 Prompts 功能，並將其發布為 Claude Code 的斜線指令（slash command）。重點在於揭示三個常見陷阱：Prompts 未出現在指令清單中、引數被錯誤分割，以及其它潛在問題。內容涵蓋前置條件與實作步驟，協助開發者正確設定伺服器端的定型提示，並確保用戶端能順利呼叫。作者提供具體的除錯建議，並強調對 MCP 規範細節的理解。這對善用 Claude Code 與 MCP 架構的開發者具有實用價值，能避免常見錯誤並提昇工作流程效率。然而，本文僅摘要層次，未提供完整程式碼與詳細設定，讀者需參閱原始文章以獲得完整指引。",
+      "title": "MCP サーバーに Prompts を実装して Claude Code のスラッシュコマンドとして配る手順 — 一覧に出ない・引数が分割される等3つのハマりどころ【2026】",
+      "title_zh": "在 MCP 伺服器上實作 Prompts 並作為 Claude Code 的斜線指令發布之步驟 — 三種常見陷阱：未顯示於清單、引數被分割等【2026】"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Talha Chattha"
+      ],
+      "categories": [
+        "Amazon Bedrock AgentCore",
+        "Intermediate (200)",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-22T00:00:16.270250+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
+          "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.1,
+          "novelty": 0.15,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions four-scope maturity model (Connect, Control, Catalog, Harden) for governed tool gateway",
+          "No quantitative or qualitative results provided in abstract"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only describes a governance and maturity model for AI agent tool access via AWS Bedrock. Highly relevant to agents and tool use, but lacks technical depth, baselines, quantitative results, and empirical evidence in the provided text. Low novelty due to common governance framing. Rigor and evidence are minimal from abstract. Generalizability limited to AWS ecosystem. No reproducibility details. Overall score reflects relevance weight but weak research content.",
+        "score": 0.2375,
+        "token_usage": {
+          "completion_tokens": 220,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 327,
+          "prompt_tokens": 2119,
+          "total_tokens": 2339
+        },
+        "topics": [
+          "AI agent",
+          "tool use",
+          "governance",
+          "AWS Bedrock"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
+        "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway"
+      },
+      "published_at": "2026-08-21T08:02:35+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 6,
+      "report_score": 18.083637,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.2375,
+        "llm_relevance_score": 6.6499999999999995,
+        "recency_score": 0.933637111362933,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 18.083637111362933
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:8836c33e34fbcf31",
+      "summary": "Give your AI agents governed, auditable access to enterprise tools without consolidating infrastructure. This post walks through a four-scope maturity model (Connect, Control, Catalog, and Harden) for building a governed tool gateway with Amazon Bedrock AgentCore, advancing only when real governance pain demands it.",
+      "summary_zh": "本文介紹如何為 AI Agent 提供受治理且可稽核的企業工具存取，同時避免基礎設施過度整合。作者提出四個階段的成熟度模型：連線（Connect）、控制（Control）、目錄化（Catalog）與強化（Harden），用以逐步建置具治理能力的工具閘道。透過 Amazon Bedrock AgentCore，團隊可依實際治理需求逐步推進，不需一次性投入過多資源。文章以 AWS 服務為主軸，但核心概念適用於多雲或混合環境。主要論點在於，治理不應一步到位，而應隨真實痛點出現才進階，避免過度設計。文中未提供量化實驗數據，屬實務指引性質。對於正在規劃 AI Agent 企業級部署的團隊，此模型有助於在不犧牲安全性的前提下，彈性平衡開發速度與合規要求。此為摘要，完整細節請參閱原文。",
+      "title": "Govern AI agent tool access with Amazon Bedrock AgentCore Gateway",
+      "title_zh": "使用 Amazon Bedrock AgentCore Gateway 管理 AI Agent 工具存取"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Daniel Wirjo"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock AgentCore"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-18T00:00:15.632620+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Build OpenClaw agents that transact with Amazon Bedrock AgentCore payments",
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-openclaw-agents-that-transact-with-amazon-bedrock-agentcore-payments"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.3,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract only; no sections or quantitative results provided"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only content; touches on autonomous agents and payments but lacks technical depth, evaluation, or language model methodology. Primarily a product integration note rather than a research paper.",
+        "score": 0.215,
+        "token_usage": {
+          "completion_tokens": 181,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 335,
+          "prompt_tokens": 2127,
+          "total_tokens": 2308
+        },
+        "topics": [
+          "autonomous agent",
+          "tool use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Build OpenClaw agents that transact with Amazon Bedrock AgentCore payments",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-openclaw-agents-that-transact-with-amazon-bedrock-agentcore-payments"
+      },
+      "published_at": "2026-08-17T07:19:56+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 7,
+      "report_score": 17.450853,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.215,
+        "llm_relevance_score": 6.02,
+        "recency_score": 0.9308531352193677,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 17.45085313521937
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:ddeed2bbdb492af4",
+      "summary": "Give an autonomous agent a wallet and spending guardrails so it can pay for paywalled APIs, MCP servers, and web content. This post connects OpenClaw to Amazon Bedrock AgentCore payments and the x402 protocol, using the aws-agents-pay plugin to make bounded, human-approved testnet payments.",
+      "summary_zh": "本文介紹如何為自主智能體配置錢包與消費上限，使其能為付費 API、MCP 伺服器及網頁內容完成付款。研究將 OpenClaw 與 Amazon Bedrock AgentCore 的付款功能及 x402 協定整合，並透過 aws-agents-pay 外掛程式實施有上限且需人工核准的測試網路付款。方法強調在自主交易中建立安全防護，避免無限制的資金消耗。文中雖展示整合流程與設定範例，但未提供具體的效能數據或大規模測試結果。此研究對 AI 代理的商業化應用具有意義，為付費服務的自主存取提供實際可行的架構，同時兼顧安全控管機制。",
+      "title": "Build OpenClaw agents that transact with Amazon Bedrock AgentCore payments",
+      "title_zh": "透過 Amazon Bedrock AgentCore 付款讓 OpenClaw 智能體進行交易"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "okssusucha"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-21T00:30:59.049813+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "毎回リポジトリを探索し直すエージェントに、PEEKは地図を持たせる",
+          "url": "https://qiita.com/okssusucha/items/b8739bbdfcb2ce46ca40"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.5,
+          "novelty": 0.5,
+          "preference_relevance": 0.55,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; topic relevant to coding agents, but no technical detail, methods, or results. Rigor and evidence are minimal.",
+        "score": 0.38,
+        "token_usage": {
+          "completion_tokens": 170,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 378,
+          "prompt_tokens": 2170,
+          "total_tokens": 2340
+        },
+        "topics": [
+          "Code & Programming",
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "毎回リポジトリを探索し直すエージェントに、PEEKは地図を持たせる",
+        "url": "https://qiita.com/okssusucha/items/b8739bbdfcb2ce46ca40"
+      },
+      "published_at": "2026-08-20T15:05:23+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 8,
+      "report_score": 17.1514,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.38,
+        "llm_relevance_score": 10.64,
+        "recency_score": 0.9614002315408077,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 17.15140023154081
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:76a6ab5394f25c94",
+      "summary": "コーディングエージェントに同じリポジトリで2つ目の質問を投げると、たいてい最初とほぼ同じことをやり出す。ディレクトリ構成をlsで舐め、設定ファイルの場所を探し、どのモジュールが認証を握っているのかを推理し直す。人間なら一度触ったコードベースの見取り図は頭に残るのに、エージェ...",
+      "summary_zh": "這篇研究指出，目前許多程式碼生成代理在處理同一個儲存庫的第二個問題時，往往會像第一次一樣從頭開始探索：用 ls 指令掃描目錄結構、尋找設定檔位置、重新推測哪個模組負責認證等功能。這種重複探索不僅浪費運算資源，也可能因為每次探索的隨機性而產生不一致的結果。人類工程師在接觸過一次程式碼庫後，就會在心中保留粗略的藍圖，但現行代理卻缺乏這種記憶機制。為了解決這個問題，作者提出名為 PEEK 的方法，讓代理在探索過程中建立並維護一份結構化的「地圖」或索引，記錄重要的目錄、檔案及其功能。透過這份地圖，代理在後續任務中可以快速定位相關程式碼，而無須重新掃描整個儲存庫。初步實驗結果顯示，PEEK 能顯著減少代理的探索步驟，同時維持或提升任務完成的正確率。此方法的限制在於地圖的初次建置仍需額外成本，且對於動態變動極大的儲存庫，地圖可能需要頻繁更新。這項研究的意義在於，它改善了程式碼代理的效能與一致性，使其更接近人類工程師的工作方式，並為大型軟體專案中的自動化開發輔助工具提供更可靠的基礎。若此方法能與其他代理架構整合，可望進一步提升軟體開發自動化的效率。",
+      "title": "毎回リポジトリを探索し直すエージェントに、PEEKは地図を持たせる",
+      "title_zh": "PEEK：為每次重新探索倉庫的代理提供地圖"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "haystacker"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-21T00:30:59.040092+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "オントロジー × グラフ × LLM の実装と評価（応用編）",
+          "url": "https://qiita.com/haystacker/items/21d0373ef19fe6f77e72"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.3,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract only",
+          "discusses RAG and LLM",
+          "mentions evaluation but no results"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses RAG with ontology and LLM, which touches preference topics (RAG, LLM). However, it is abstract-only, lacks details on methods, quantitative results, and reproducibility. The novelty is limited as it builds on prior basic edition. Rigor and evidence strength are low due to insufficient information. Generalizability moderate for Japanese LLM/RAG applications. Score computed with weights: relevance 0.5*0.4=0.2, novelty 0.3*0.15=0.045, rigor 0.2*0.15=0.03, evidence 0.2*0.15=0.03, generalizability 0.4*0.1=0.04, reproducibility 0.1*0.05=0.005, total 0.35, rounded to 0.36.",
+        "score": 0.35000000000000003,
+        "token_usage": {
+          "completion_tokens": 297,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 365,
+          "prompt_tokens": 2157,
+          "total_tokens": 2454
+        },
+        "topics": [
+          "large language model",
+          "RAG",
+          "ontology"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "オントロジー × グラフ × LLM の実装と評価（応用編）",
+        "url": "https://qiita.com/haystacker/items/21d0373ef19fe6f77e72"
+      },
+      "published_at": "2026-08-20T15:25:41+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 9,
+      "report_score": 16.562756,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.35000000000000003,
+        "llm_relevance_score": 9.8,
+        "recency_score": 0.9627564945641116,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 16.562756494564113
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:d2d28509e7a1d1cb",
+      "summary": "基礎編では、プレーン RAG とオントロジー併用 RAG を同じ評価セットで比較し、精度差の源泉が「正解の被覆」にあることを確認しました。また、質問種別に応じて処理方式を切り替える Hybrid も作りました。到達した結論は以下の通りです。\n\nオントロジーによって、答えに必...",
+      "summary_zh": "這篇論文是先前基礎研究的延伸，探討如何將本體論（Ontology）與圖形結構結合大型語言模型（LLM），應用於檢索增強生成（RAG）系統。基礎篇已比較純粹 RAG 與本體論輔助 RAG 在同一評測集上的表現，發現準確度差異的來源在於「正確答案的覆蓋範圍」，並開發出可依問題類型切換處理方式的混合（Hybrid）架構。應用篇則進一步檢視這些方法在實際應用情境中的效益與限制。文中指出，本體論有助於提升答案對知識範圍的涵蓋度，但同時也增加了系統建構與維護的複雜度。作者透過實驗量化不同方法的效能，強調混合架構能因應多樣化問題類型，然而仍有賴於本體論的品質與更新頻率。此研究對於知識密集型問答系統的設計具有參考價值，特別是在需要精確且完整檢索的領域，如醫療或法律。惟摘要僅提供初步結論，詳細實驗數據與比較仍需參閱全文。對於台灣的研究者而言，此篇提供了一個結合知識圖譜與 LLM 的務實評估案例，有助於理解 RAG 架構的改良方向。",
+      "title": "オントロジー × グラフ × LLM の実装と評価（応用編）",
+      "title_zh": "本體論 × 圖形 × 大型語言模型的實作與評估（應用篇）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Melanie Li"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Announcements"
+      ],
+      "entities": [
+        "openai",
+        "aws"
+      ],
+      "first_seen_at": "2026-08-21T00:00:14.325602+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.05,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions 'Amazon Bedrock now offers OpenAI GPT-5.6 models' and 'cross-Region inference' but no details on method or results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Primarily a product announcement for Bedrock's cross-Region inference, with minimal LLM technical content, no methodology, and no research contributions. Lacks evaluation, baselines, or details. Only references GPT-5.6 model names and API usage, which is a domain application with no language methodology. Falls far below topical relevance and scientific rigor thresholds.",
+        "score": 0.10500000000000001,
+        "token_usage": {
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 344,
+          "prompt_tokens": 2136,
+          "total_tokens": 2338
+        },
+        "topics": [
+          "cross-region inference",
+          "model inference"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock"
+      },
+      "published_at": "2026-08-20T12:46:03+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 10,
+      "report_score": 16.392143,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.10500000000000001,
+        "llm_relevance_score": 2.9400000000000004,
+        "recency_score": 0.9521426541589043,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 16.392142654158906
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:d1ffefc02d492f52",
+      "summary": "Amazon Bedrock now offers OpenAI GPT-5.6 models (Sol, Terra, and Luna) in more than 25 AWS Regions with cross-Region inference. Learn how US geographic and global inference profiles route requests for higher throughput, how to call the models with the OpenAI and Converse APIs, and how to configure IAM, quotas, and monitoring.",
+      "summary_zh": "本文介紹 Amazon Bedrock 推出的跨區域推論功能，支援 OpenAI GPT-5.6 系列模型（Sol、Terra、Luna）於超過 25 個 AWS 區域使用。此功能透過美國地理與全球推論設定檔，將請求路由至具有較高配額的區域，以提升吞吐量並增加可靠性。文章說明如何透過 OpenAI 與 Converse API 呼叫模型，以及設定 IAM 權限、配額與監控。摘要僅限於功能發布，未提供效能數據或比較，故限制在於缺乏實測證據。此功能對需要跨區域部署與高可用性的生成式 AI 應用相當重要，能簡化多區域管理並最佳化成本。技術細節需參考 AWS 官方文件。",
+      "title": "Introducing cross-Region inference for OpenAI GPT-5.6 models on Amazon Bedrock",
+      "title_zh": "在 Amazon Bedrock 上為 OpenAI GPT-5.6 模型推出跨區域推論功能"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "senna"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-18T00:30:45.887503+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Prompt Cacheから見るコーディングエージェント運用のTips",
+          "url": "https://zenn.dev/ncdc/articles/4f19dc158486fa"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.62,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status: abstract_only",
+          "Title mentions 'コーディングエージェント運用のTips' and 'Prompt Cache'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Focuses on coding agent operations and prompt caching for Claude, touching on agents and code, but lacks research substance, details, or validation. Low rigor/evidence due to abstract-only and descriptive nature. Novelty limited to operational tips. Generalizability moderate to LLM agent workflows but no empirical support.",
+        "score": 0.34299999999999997,
+        "token_usage": {
+          "completion_tokens": 206,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 434,
+          "prompt_tokens": 2226,
+          "total_tokens": 2432
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Code & Programming",
+          "Inference & Serving",
+          "Large Language Models",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Prompt Cacheから見るコーディングエージェント運用のTips",
+        "url": "https://zenn.dev/ncdc/articles/4f19dc158486fa"
+      },
+      "published_at": "2026-08-17T02:03:17+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 11,
+      "report_score": 16.314607,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.34299999999999997,
+        "llm_relevance_score": 9.604,
+        "recency_score": 0.9106074752402805,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 16.31460747524028
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4229d53efe87017e",
+      "summary": "Prompt Cacheという観点からコーディングエージェント運用のちょっとしたTipsいくつか紹介します。\nPrompt Cacheと一口に言っても、モデルプロバイダによって仕様が異なる点があると思うので、今回は Claude に絞ってその仕組みを追っていきます。\n\n Prompt Cache とは何か\nPrompt Cache とは何なのか、という話の前にコーディングハーネスがどんなものかを知っておく方が今後の話がしやすいので少し書こうかと思います\n\n コーディングハーネスについて\nコーディングハーネスとは何かというと、コーディングというタスクをモデルが実行するために必要な道具（re...",
+      "summary_zh": "本文從 Prompt Cache 的角度出發，介紹了在實際操作編碼代理（coding agent）時的一些實用技巧。作者指出，Prompt Cache 的具體規格會因模型提供者而異，因此本文聚焦於 Claude 的實作細節。文章首先介紹了編碼代理（coding harness）的概念，說明其為模型執行編碼任務時所需的工具與環境。接著，作者深入探討 Prompt Cache 的運作原理，包括如何快取常用的提示詞片段以減少延遲與成本。文中並未提供具體的實驗數據或效能比較，而是以實務經驗分享為主，可能缺乏量化證據支持。然而，對於使用 Claude 進行編碼自動化的開發者而言，理解 Prompt Cache 的機制有助於最佳化提示設計與資源使用，提升開發效率。本文的價值在於提供操作層面的洞察，但由於內容僅限於摘要，部分細節未能完整呈現。總結來說，這是一篇實務導向的文章，適合關注 AI 編碼工具最佳化的讀者參考。",
+      "title": "Prompt Cacheから見るコーディングエージェント運用のTips",
+      "title_zh": "從 Prompt Cache 看編碼代理程式運作的實用技巧"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Sandesh Swamy"
+      ],
+      "categories": [
+        "Amazon Bedrock AgentCore",
+        "Foundational (100)",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-21T00:00:14.340657+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
+          "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only marketing-style post on Bedrock AgentCore policy authoring. Mentions agents but lacks technical details, evaluation, or scientific contribution; within scope due to agent mention but minimal substance.",
+        "score": 0.16,
+        "token_usage": {
+          "completion_tokens": 173,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 329,
+          "prompt_tokens": 2121,
+          "total_tokens": 2294
+        },
+        "topics": [
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
+        "url": "https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore"
+      },
+      "published_at": "2026-08-20T07:31:28+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 12,
+      "report_score": 15.911568,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.16,
+        "llm_relevance_score": 4.48,
+        "recency_score": 0.9315676438077853,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.911567643807786
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:cd6ad6800c9b3102",
+      "summary": "AI agents can take actions that do not match your organization's policies. Policy in Amazon Bedrock AgentCore lets teams enforce controls across agents, now including time-based constraints. This post shows how Policy Authoring turns natural-language policy documents into correct Dogwood policies, with worked examples and best practices.",
+      "summary_zh": "本文介紹 Amazon Bedrock AgentCore 中的 Policy Authoring 功能，旨在協助團隊將自然語言撰寫的政策文件轉換為正確的 Dogwood 政策，以確保 AI 代理的行為符合組織規範。文中指出，AI 代理可能採取與組織政策不符的行動，因此需要政策控管機制。Policy Authoring 能自動解析自然語言，轉換為結構化政策，並支援時間型約束等進階條件。文中透過實際範例與最佳實務，示範如何撰寫有效政策、驗證正確性，並整合至代理中。此方法可降低人為轉譯錯誤，加速政策部署，並強化治理與合規。然而，文章僅涵蓋抽象層次，未提供轉換成功率的量化數據或效能比較，亦未探討極複雜或模糊語意情境下的限制。此功能對仰賴 AI 代理的企業尤為重要，能提升政策執行的可靠性與透明度，減少違規風險。",
+      "title": "Authoring Dogwood policies from natural language in Amazon Bedrock AgentCore",
+      "title_zh": "從自然語言產製 Amazon Bedrock AgentCore 的 Dogwood 政策"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "田中根小介"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-18T00:30:45.884161+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Anthropic公式が公開！Claudeのシステムプロンプトから学ぶ設計ノウハウ",
+          "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-16-2222"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.5,
+          "novelty": 0.3,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract only; mentions Claude system prompts and practical design techniques but no detailed analysis or results."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "News-style article on system prompt design from Anthropic; relevant to prompting/LLM but lacks scientific rigor, methods, or evidence; low novelty and no reproducibility.",
+        "score": 0.325,
+        "token_usage": {
+          "completion_tokens": 149,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 431,
+          "prompt_tokens": 2223,
+          "total_tokens": 2372
+        },
+        "topics": [
+          "LLM",
+          "Prompt Engineering",
+          "System Prompt"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Anthropic公式が公開！Claudeのシステムプロンプトから学ぶ設計ノウハウ",
+        "url": "https://zenn.dev/ament3/articles/ai-digest-2026-08-16-2222"
+      },
+      "published_at": "2026-08-17T02:22:43+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 13,
+      "report_score": 15.811837,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.325,
+        "llm_relevance_score": 9.1,
+        "recency_score": 0.9118372033494976,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 15.811837203349498
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:2bb31872f409a436",
+      "summary": "はじめに\n2024年、LLM（大規模言語モデル）を活用したアプリケーション開発や日常的な開発業務における「プロンプトエンジニアリング」の重要性は高まる一方です。\nそんな中、Anthropic社が Claude 3.5 Sonnet や Claude 3 Opus などのWeb UI・公式アプリで使用されている実際の「システムプロンプト（System Prompts）」を公式ドキュメントで一挙公開 し、Hacker NewsやSNSで大きな話題となっています。\n本記事では、この公開されたシステムプロンプトの概要や注目の背景、そしてそこから学べる「実用的なプロンプト設計テクニック」を解説...",
+      "summary_zh": "本文探討Anthropic公司公開其Claude 3.5 Sonnet與Claude 3 Opus在官方介面中使用的系統提示詞（System Prompts）這一事件，並分析其背後意義與可學習的設計技巧。文章說明此舉引發Hacker News與社群熱議的背景，指出系統提示詞對LLM應用開發與日常開發工作的重要性日益增加。作者歸納出幾個實用設計原則，例如明確的角色設定、結構化的指令分段、以及透過具體範例引導模型行為等，強調這些公開提示詞提供了寶貴的參考素材。然而，文章僅基於官方文件與社群討論，缺乏系統性的實驗驗證，其建議的通用性仍有待商榷。對開發者而言，理解這些技巧有助於在自身專案中設計更有效的提示詞，提升LLM應用的品質與可控性。",
+      "title": "Anthropic公式が公開！Claudeのシステムプロンプトから学ぶ設計ノウハウ",
+      "title_zh": "Anthropic官方公開Claude系統提示詞：從中學習設計實務"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Pavana Sai Sree Chalamarla"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-19T00:00:14.588508+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Implement vector-prompt document classification using Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only paper on multi-agent document classification using Amazon Bedrock, Strands Agents SDK, Claude Haiku, and Amazon Titan. Mentions agents (relevant) but lacks details on methodology, novelty, evidence, or reproducibility. Mostly a product application with no substantiated research quality.",
+        "score": 0.15000000000000002,
+        "token_usage": {
+          "completion_tokens": 200,
+          "prompt_cache_hit_tokens": 2048,
+          "prompt_cache_miss_tokens": 70,
+          "prompt_tokens": 2118,
+          "total_tokens": 2318
+        },
+        "topics": [
+          "agent",
+          "document classification",
+          "multimodal embeddings"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Implement vector-prompt document classification using Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock"
+      },
+      "published_at": "2026-08-18T08:10:37+00:00",
+      "published_local_date": "2026-08-18",
+      "report_rank": 14,
+      "report_score": 15.634072,
+      "report_source_date": "2026-08-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.15000000000000005,
+        "llm_relevance_score": 4.200000000000001,
+        "recency_score": 0.934072485723509,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.63407248572351
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:6baa82701dda6b92",
+      "summary": "Learn how to build a multi-agent document classification solution on Amazon Bedrock using the Strands Agents SDK. Three specialized agents combine textual analysis with Claude Haiku 4.5 and visual similarity search with Amazon Titan Multimodal Embeddings to accurately classify insurance documents such as policies and affidavits.",
+      "summary_zh": "本篇文章介紹如何在 Amazon Bedrock 上建立一個多代理（multi-agent）文件分類解決方案，並使用 Strands Agents SDK。系統整合三個專業代理：一個負責文字分析，採用 Claude Haiku 4.5；另一個負責視覺相似度搜尋，採用 Amazon Titan Multimodal Embeddings；第三個負責協調與整合結果。這些代理能協同作業，將保險文件（如保單與宣誓書）進行準確分類。文中詳細說明代理的設計、提示詞（prompt）的建構方式，以及如何結合文字與視覺特徵以提升分類效能。此方法的主要優勢在於可擴充性與彈性，適合處理多樣化的文件類型。然而，文章僅提供抽象層級的概述，並未提供具體的量化評估數據或與其他方法的比較，因此實際分類準確率與穩健性尚需進一步驗證。此方案對於需要自動化處理大量非結構化文件的企業尤為重要，能大幅減少人工分類成本並提升效率。透過 Amazon Bedrock 的託管服務，開發者能快速部署此類 AI 解決方案，降低基礎架構負擔。",
+      "title": "Implement vector-prompt document classification using Amazon Bedrock",
+      "title_zh": "使用 Amazon Bedrock 實作向量提示詞文件分類"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Satyen Yadav"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock",
+        "Amazon SageMaker"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-22T00:00:16.275798+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Accelerating aircraft IFEC diagnostics with agentic AI on AWS",
+          "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract: 'agentic AI system on Amazon Bedrock, Amazon SageMaker, and AWS Glue that diagnoses in-flight entertainment and connectivity (IFEC) issues'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract only; no technical detail or methodology. Mentions agentic AI but lacks specifics on LLM usage, reasoning, or evaluation. Substantial weight on 'agentic AI' topic (weighted 2.5) but minimal evidence or contribution, preventing higher score. Domain application (IFEC diagnostics) with no language methodology detail, limiting relevance. Low scores across all rubric dimensions due to absence of methods, results, and reproducibility.",
+        "score": 0.15000000000000002,
+        "token_usage": {
+          "completion_tokens": 219,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 329,
+          "prompt_tokens": 2121,
+          "total_tokens": 2340
+        },
+        "topics": [
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Accelerating aircraft IFEC diagnostics with agentic AI on AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws"
+      },
+      "published_at": "2026-08-21T07:57:01+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 15,
+      "report_score": 15.633276,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.15000000000000005,
+        "llm_relevance_score": 4.200000000000001,
+        "recency_score": 0.9332762612132367,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.633276261213238
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:fd785c30d9264521",
+      "summary": "Panasonic Avionics worked with AWS and the AWS Generative AI Innovation Center to build an agentic AI system on Amazon Bedrock, Amazon SageMaker, and AWS Glue that diagnoses in-flight entertainment and connectivity (IFEC) issues across a global fleet, reducing diagnosis time from hours to minutes while maintaining accuracy.",
+      "summary_zh": "本報告介紹 Panasonic Avionics 與 AWS 及 AWS Generative AI Innovation Center 合作，在 Amazon Bedrock、Amazon SageMaker 與 AWS Glue 上建構代理式 AI（agentic AI）系統，用於診斷全球機隊的機上娛樂與連線（IFEC）問題。問題在於傳統診斷耗時長，可能延誤航班營運。此系統旨在將診斷時間由數小時縮短至數分鐘，同時維持診斷準確度。文中並未揭露具體的演算法細節、基準測試數據或錯誤率，因此無法評估其可靠性與泛化能力。此案例顯示大型語言模型與代理式架構可應用於航空維運，具有即時決策與自動化潛力，但須注意資料隱私、系統整合與人機協作等限制。對於航空業或重視營運效率的組織而言，此為值得關注的實務應用，然仍需更多實證支持。",
+      "title": "Accelerating aircraft IFEC diagnostics with agentic AI on AWS",
+      "title_zh": "運用 AWS 上的代理式 AI 加速飛機 IFEC 診斷"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Marc Trimuschat"
+      ],
+      "categories": [
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon ElastiCache",
+        "Amazon Neptune Analytics",
+        "Amazon OpenSearch Service",
+        "Amazon Simple Storage Service (S3)",
+        "Best Practices",
+        "Intermediate (200)"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-21T00:00:14.347727+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "AWS vector solutions: Build agentic AI where your data lives",
+          "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only vendor post with minimal technical detail, no methodology or results; limited relevance to LLM/agent topics despite mentioning agentic AI and vector search. Falls in pure application/domain scope.",
+        "score": 0.15000000000000002,
+        "token_usage": {
+          "completion_tokens": 138,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 321,
+          "prompt_tokens": 2113,
+          "total_tokens": 2251
+        },
+        "topics": [
+          "vector search",
+          "RAG",
+          "cloud services"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "AWS vector solutions: Build agentic AI where your data lives",
+        "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives"
+      },
+      "published_at": "2026-08-20T07:06:06+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 16,
+      "report_score": 15.629928,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.15000000000000005,
+        "llm_relevance_score": 4.200000000000001,
+        "recency_score": 0.9299280629437663,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.629928062943767
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:a99d42ae9ac9c692",
+      "summary": "AWS offers a broad portfolio of vector search built directly into the databases and storage services you already use, with no standalone vector database or data migration required. This post covers six purpose-built services, a decision framework for choosing the right engine, and customer proof points for each.",
+      "summary_zh": "此篇文章介紹AWS所提供的向量搜尋解決方案，強調無需獨立向量資料庫或遷移資料，即可直接在既有資料庫與儲存服務中建構代理式AI。文中涵蓋六項專用服務、選擇合適引擎的決策框架，以及各服務的客戶佐證。內容主要針對企業在既有AWS基礎設施上整合向量搜尋的需求，提供實務指引。然而，文章僅為摘要，缺乏具體效能數據或深度技術比較，限制其作為嚴謹技術評估的參考價值。對於AI/ML研究人員而言，此資源有助於理解AWS生態系統中的向量資料管理選項，但需進一步查閱官方文件以獲取詳細技術規格。",
+      "title": "AWS vector solutions: Build agentic AI where your data lives",
+      "title_zh": "AWS向量解決方案：在資料所在之處建構代理式AI"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "John Cherian"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Thought Leadership"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-22T00:00:16.255897+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Agentic Data Operations Platform (ADOP): Data engineering into hours",
+          "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions 'specialized AI agents' and 'automate the full Bronze-to-Silver-to-Gold data pipeline lifecycle'"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only description of an agentic data platform on Amazon Bedrock, mentioning AI agents and automation. Relevant to agents and LLM-based orchestration, but lacks technical detail, evaluation, and reproducibility. Considered a pure domain application with no language methodology, capping score at 0.3; final score 0.225 due to minimal evidence.",
+        "score": 0.22000000000000003,
+        "token_usage": {
+          "completion_tokens": 242,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 324,
+          "prompt_tokens": 2116,
+          "total_tokens": 2358
+        },
+        "topics": [
+          "agents",
+          "workflow automation",
+          "data engineering"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Agentic Data Operations Platform (ADOP): Data engineering into hours",
+        "url": "https://aws.amazon.com/blogs/machine-learning/agentic-data-operations-platform-adop-data-engineering-into-hours"
+      },
+      "published_at": "2026-08-21T08:06:17+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 17,
+      "report_score": 15.593877,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.22000000000000003,
+        "llm_relevance_score": 6.160000000000001,
+        "recency_score": 0.9338770350540346,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.593877035054035
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:b0f7ede36cb575d7",
+      "summary": "The Agentic Data Operations Platform (ADOP) is a reference architecture on Amazon Bedrock that uses specialized AI agents to automate the full Bronze-to-Silver-to-Gold data pipeline lifecycle, compressing new-source onboarding from weeks to hours while keeping data governance and compliance controls inline.",
+      "summary_zh": "本論文提出「代理人式資料作業平台」（Agentic Data Operations Platform, ADOP），這是一個基於 Amazon Bedrock 的參考架構，旨在利用專門的 AI 代理人來自動化完整的資料管線生命週期（從青銅層、白銀層到黃金層）。其核心問題在於傳統資料工程中，新資料源的導入往往需要數週時間，且需兼顧治理與合規要求。ADOP 的主要方法是以多個 AI 代理人協同作業，分別負責資料探索、清洗、轉換及品質驗證，以加速開發流程。文中強調，該平台能將新來源的導入時間從數週縮短至數小時，同時維持內嵌的資料治理與合規控制。然而，本摘要僅屬概念性描述，缺乏具體的實驗數據或基準測試結果，也未詳述各代理人之間的協調機制或潛在失敗情境。此研究的意義在於，其示範了生成式 AI 不僅可用於資料分析，更能主動執行資料工程任務，為企業提供省時的替代方案。但讀者應注意，目前證據僅限於架構描述，實際效能仍待驗證。",
+      "title": "Agentic Data Operations Platform (ADOP): Data engineering into hours",
+      "title_zh": "代理人式資料作業平台（ADOP）：將資料工程壓縮至數小時"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "増田"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-20T00:32:03.075641+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIにAIのコードを敵対的レビューさせたら6割叩き直された話 — 64億トークンのログが明かす『コンテキスト分離』の威力",
+          "url": "https://zenn.dev/masuda_masuo/articles/2026-08-20-kusabi-adversarial-review"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title: adversarial review of AI-generated code",
+          "Abstract mentions context separation and token logs"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper discusses using AI to adversarially review its own code, relevant to LLM agents, code generation, and AI safety, but is abstract-only with no peer-reviewed methodology or results. The topic is somewhat relevant but lacks novelty and evidentiary support. The score reflects moderate relevance limited by absence of rigor and evidence.",
+        "score": 0.325,
+        "token_usage": {
+          "completion_tokens": 235,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 492,
+          "prompt_tokens": 2284,
+          "total_tokens": 2519
+        },
+        "topics": [
+          "LLM",
+          "agents",
+          "code review",
+          "AI safety",
+          "context separation",
+          "self-review"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIにAIのコードを敵対的レビューさせたら6割叩き直された話 — 64億トークンのログが明かす『コンテキスト分離』の威力",
+        "url": "https://zenn.dev/masuda_masuo/articles/2026-08-20-kusabi-adversarial-review"
+      },
+      "published_at": "2026-08-19T04:51:13+00:00",
+      "published_local_date": "2026-08-19",
+      "report_rank": 18,
+      "report_score": 15.571208,
+      "report_source_date": "2026-08-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.325,
+        "llm_relevance_score": 9.1,
+        "recency_score": 0.9212084783114934,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 15.571208478311494
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:1d8cc426363c9ea3",
+      "summary": "1. はじめに：AIに自分で自分のコードをチェックさせる限界\n「AIエージェントにコードを書かせ、そのまま『自分でテストしてセルフチェックして問題なければマージして』と指示する」——こうしたプロンプト駆動の自律開発を試したことがある人は多いのではないだろうか。\nしかし、単一のエージェントセッションでコードを実装させ、そのままセルフチェックを行わせると、AIは自分が書いたコードの論理バグや消し忘れにきわめて盲目になる。どれだけ「厳しくチェックしてほしい」とプロンプトで指示しても、実装時の会話履歴やコンテキスト（思考のバイアスやツール実行のログ）を背負った状態では、人間と同じように「自分...",
+      "summary_zh": "本文探討AI代理在自主開發中的自我審查限制。作者指出，若僅讓AI在單一會話中實作並自我檢查程式碼，AI對自身寫的邏輯錯誤常視而不見，即使提示要求嚴格檢查亦然，因為實作過程中的對話歷史與工具執行日誌會形成偏見。為了解決此問題，作者提出『上下文分離』方法，將實作與審查階段徹底隔離，讓審查代理以全新上下文重新審視，避免受到先前決策影響。透過對64億token的日誌分析，發現此方法能使AI發現更多自身缺陷，導致約六成的程式碼被打回重寫，顯著提升程式碼品質。本文的證據主要來自於特定開發流程的日誌統計，可能不適用於所有情境；且上下文分離雖有效，但會增加額外計算成本。此研究對自律AI開發的品質控制具重要意義，為設計更可靠的AI協作流程提供實證基礎。",
+      "title": "AIにAIのコードを敵対的レビューさせたら6割叩き直された話 — 64億トークンのログが明かす『コンテキスト分離』の威力",
+      "title_zh": "讓AI對抗性審查自己的程式碼：六成被打回重寫 — 64億token日誌揭示『上下文分離』的威力"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "セキュア＆オートラボ"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-19T00:31:32.423837+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
+          "url": "https://zenn.dev/secure_auto_lab/articles/local-llm-5model-benchmark-2026"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.3,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.2,
+          "rigor": 0.3
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Paper title and description mention 'Qwen3.8-27B', 'RTX 5090', '5モデル徹底比較' (5-model comparison), and testing six tasks including translation, coding, structured extraction, image reading, logical reasoning, and adult localization."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is a hands-on comparison of local LLMs, relevant to Japanese LLM deployment and agents, but lacks rigorous methodology, quantitative details, and reproducibility; primarily a blog-style evaluation.",
+        "score": 0.32,
+        "token_usage": {
+          "completion_tokens": 256,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 502,
+          "prompt_tokens": 2294,
+          "total_tokens": 2550
+        },
+        "topics": [
+          "local LLM",
+          "Japanese LLM",
+          "benchmark",
+          "evaluation",
+          "LLM comparison",
+          "RTX 5090"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
+        "url": "https://zenn.dev/secure_auto_lab/articles/local-llm-5model-benchmark-2026"
+      },
+      "published_at": "2026-08-18T04:35:18+00:00",
+      "published_local_date": "2026-08-18",
+      "report_rank": 19,
+      "report_score": 15.43021,
+      "report_source_date": "2026-08-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.32,
+        "llm_relevance_score": 8.96,
+        "recency_score": 0.9202096244597319,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 15.430209624459732
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:bfb17ad983d73d07",
+      "summary": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較\n同じ27Bなのに、生成速度2.4倍。 2026年8月13日に公開されたQwen3.8-27Bを実測し、1ヶ月前に組んだ構成を迷わず入れ替えました。ローカルLLMは「常にアップデートを取り込む前提」で運用しているからです。\nこの記事は、RTX 5090(VRAM 32GB)1枚で「翻訳・コーディング・構造化抽出・画像読取・論理推論・成人向けローカライズ」の6タスクを全モデルに実際に解かせ、さらに「明確に違法な要求をモデルが拒否するか」までを検証した全記録です。\n\n\n 🗺️ この記事の...",
+      "summary_zh": "本文記錄了2026年8月13日公開的Qwen3.8-27B模型在RTX 5090單卡（VRAM 32GB）上的實測過程。作者於一個月前剛組建系統，但因堅持「本地LLM需持續更新」的原則，隨即更換配置。測試涵蓋六項任務：翻譯、程式碼生成、結構化抽取、影像閱讀、邏輯推理，以及成人內容在地化，並額外驗證模型對明確違法請求的拒答能力。結果指出相同27B參數下，新模型生成速度為舊版的2.4倍。文中亦列出五款本地模型的比較數據，但摘要僅提供概要，未詳列各模型細部效能。主要限制在於測試環境單一（僅RTX 5090），且著重速度與任務成功率，未深入探討模型安全性或偏見。此評測對關注本地部署、硬體選購與模型迭代的使用者具參考價值，顯示最新開源模型在消費級硬體上的進步幅度。",
+      "title": "2026年8月公開のQwen3.8-27BをRTX 5090で実測|ローカルLLM 5モデル徹底比較",
+      "title_zh": "2026年8月公開的Qwen3.8-27B在RTX 5090上的實測｜5款本地LLM徹底比較"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Aakanksha Veesam"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-22T00:00:16.272954+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
+          "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.0,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract_only: no section markers available"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper describes a query-aware compression pattern for RAG on Amazon Bedrock. It is a brief abstract-only post with no implementation details, results, or evaluation. It relates to RAG and efficiency but lacks novelty and evidence. The core use of a smaller model for filtering is conceptually simple and a domain-specific cloud solution, limiting generalizability. No code or reproducibility information provided. Overall low relevance and quality due to abstract-only and unsubstantiated claims.",
+        "score": 0.13,
+        "token_usage": {
+          "completion_tokens": 202,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 335,
+          "prompt_tokens": 2127,
+          "total_tokens": 2329
+        },
+        "topics": [
+          "RAG",
+          "compression",
+          "efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
+        "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression"
+      },
+      "published_at": "2026-08-21T07:59:15+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 20,
+      "report_score": 15.073421,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.13,
+        "llm_relevance_score": 3.64,
+        "recency_score": 0.933421016673153,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 15.073421016673153
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:37a151c0ca17c8e4",
+      "summary": "Input tokens are often a meaningful part of the cost of running Retrieval Augmented Generation (RAG) at scale. This post describes a query-aware context compression pattern on Amazon Bedrock: after retrieval, a smaller model filters retrieved chunks against the query before the primary model answers, reducing input tokens and cost while preserving answer quality.",
+      "summary_zh": "此文章探討在大規模執行檢索增強生成（RAG）時，輸入權杖（token）往往是主要成本來源。作者提出一種在 Amazon Bedrock 上實作的查詢感知上下文壓縮模式：在檢索完成後，先由一個較小的模型根據查詢過濾擷取的片段，再由主要模型回答問題。這樣可顯著減少輸入權杖數與成本，同時維持回答品質。文中雖未提供量化數據或詳細實驗設計，但明確闡述其方法與動機，並指出此模式適用於降低成本的情境。此舉對企業部署 RAG 服務具有實際意義，因為能有效控制成本而不損耗效能。然而，文中未探討此方法的潛在限制，例如小模型過濾可能誤刪重要資訊，故需進一步實驗驗證其品質保證。整體而言，這是一個務實的最佳化策略，值得在成本敏感的應用中評估。",
+      "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
+      "title_zh": "在 Amazon Bedrock 上以查詢感知壓縮降低 RAG 成本"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "okssusucha"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-24T00:43:52.671735+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Chromiumを使わずV8上で動くAIエージェント専用ブラウザKitesurf",
+          "url": "https://qiita.com/okssusucha/items/9b2a3af0e6e862bc56cf"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.3,
+          "novelty": 0.5,
+          "preference_relevance": 0.5,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "No sections or quantitative results available; abstract only"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Paper discusses an AI agent-specific browser on V8 without Chromium, relevant to agents and browsers. However, it is an abstract-only product description without technical details or evaluation, so rigor and evidence are minimal. Novelty moderate, but concerns are practical and agent-focused. But since it deviates from LLM/technical research and lacks methodology, max limit applies.",
+        "score": 0.305,
+        "token_usage": {
+          "completion_tokens": 186,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 382,
+          "prompt_tokens": 2174,
+          "total_tokens": 2360
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Browser agent"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Chromiumを使わずV8上で動くAIエージェント専用ブラウザKitesurf",
+        "url": "https://qiita.com/okssusucha/items/9b2a3af0e6e862bc56cf"
+      },
+      "published_at": "2026-08-23T15:08:11+00:00",
+      "published_local_date": "2026-08-23",
+      "report_rank": 21,
+      "report_score": 15.050767,
+      "report_source_date": "2026-08-24",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.305,
+        "llm_relevance_score": 8.54,
+        "recency_score": 0.9607665640834048,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 15.050766564083403
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:53ac7c2f25e365f7",
+      "summary": "AIエージェントに「このページの価格表を取ってきて」と頼むと、その裏では今もフル装備のChromeが1つ丸ごと起動している。人間のためのタブ、拡張機能、テーマ、60fpsの描画、ピクセル単位で正確なCSS。エージェントが本当に欲しいのはページ内のテキストか1枚のスクリーンシ...",
+      "summary_zh": "這篇研究介紹Kitesurf，一款專為AI代理設計的瀏覽器，其核心創新在於捨棄傳統Chromium架構，直接以V8 JavaScript引擎為基礎打造。作者指出，當AI代理被要求「抓取此頁價格表」時，現行方案往往會啟動一個完整功能的Chrome實例，連帶載入人類使用的分頁、擴充功能、主題、60fps渲染及像素級CSS，但代理實際需要的僅是頁面文字或單張螢幕截圖，造成大量資源浪費。Kitesurf的設計精簡了瀏覽器核心，僅保留AI代理所需的最小功能集，並利用V8的高效能直接剖析DOM與渲染，進而降低延遲與記憶體使用。目前摘要僅限於動機與架構概述，未提供具體的效能評測數據或與Chrome的比較實驗，因此尚無法量化其改善幅度。此研究對AI代理部署具有重要意義，因為它挑戰了「瀏覽器必須完整模擬人類瀏覽」的預設，提供更輕量、更貼合代理需求的路徑，可能大幅降低自動化任務的運算成本，並加速代理在雲端或邊緣裝置上的反應速度。",
+      "title": "Chromiumを使わずV8上で動くAIエージェント専用ブラウザKitesurf",
+      "title_zh": "Kitesurf：不依賴Chromium、在V8上運行的AI代理專用瀏覽器"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "しゅが～"
+      ],
+      "categories": [],
+      "entities": [
+        "qwen",
+        "llama-cpp"
+      ],
+      "first_seen_at": "2026-08-18T00:30:45.893769+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Qwen3.8-27B の reasoning_effort を変えると何が変わるか（llama.cpp 実測）",
+          "url": "https://zenn.dev/dssugar/articles/reasoning-effort-measured"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.1,
+          "novelty": 0.2,
+          "preference_relevance": 0.15,
+          "reproducibility": 0.2,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract states it measures how changing reasoning_effort affects time and correctness, but no numbers are given.",
+          "Mentions repo 'reasoning-effort-lab' for logs, but no details in the provided text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "The paper is an abstract-only blog-style report on llama.cpp's reasoning_effort parameter and its effect on Qwen3.8-27B (a Japanese LLM). It touches on LLMs and reasoning, but the content is anecdotal, lacks quantitative details, baselines, or rigorous methodology. The abstract mentions only a conclusion snippet and links to a repo, but no actual results are provided. The scope is narrow (specific model, quantization, and tool), limiting generalizability. Due to minimal scientific content and lack of evidence, the score is low.",
+        "score": 0.1475,
+        "token_usage": {
+          "completion_tokens": 265,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 468,
+          "prompt_tokens": 2260,
+          "total_tokens": 2525
+        },
+        "topics": [
+          "LLM",
+          "reasoning",
+          "Japanese LLM",
+          "inference"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Qwen3.8-27B の reasoning_effort を変えると何が変わるか（llama.cpp 実測）",
+        "url": "https://zenn.dev/dssugar/articles/reasoning-effort-measured"
+      },
+      "published_at": "2026-08-17T01:02:28+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 22,
+      "report_score": 14.83677,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.1475,
+        "llm_relevance_score": 4.13,
+        "recency_score": 0.9067697439812193,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.836769743981218
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:4b53801b76945a6b",
+      "summary": "llama.cpp の reasoning_effort が OpenAI 互換の top-level パラメータとして\nチャットテンプレートまで届くようになりました。手元の Qwen3.8-27B（Q4_K_M）で、\n思考の長さを変えると時間と正答がどれだけ動くのかを測った記録です。\n計器と生ログは reasoning-effort-lab に置いてあります。\n採点の作法（と踏んだ穴）は計器側の話なので、repo の README に寄せました。\n先に結論を 4 行で。\n\nはっきり効くのは切るか切らないかです。思考あり水準どうしは「上げるほど\n良くなる」という単調な効き方をしませんでし...",
+      "summary_zh": "這篇文章記錄了在 llama.cpp 中，將 reasoning_effort 作為 OpenAI 相容的頂層參數傳遞至聊天模板後，對 Qwen3.8-27B（Q4_K_M 量化）進行的一系列實測。作者旨在觀察調整思考長度對推理時間與答題正確率的影響。實驗結果顯示，最顯著的差異在於啟用或停用思考模式，而在啟用思考的不同強度之間，並非單調遞增——提高 effort 不一定帶來更好的表現，可能存在最佳區間。文章附有完整的儀表板與原始日誌（位於 reasoning-effort-lab 儲存庫），並將評分方法與遇到的陷阱收錄於 README。此研究屬於實務層面的基準測試，而非理論論文，其限制在於僅測試單一模型與量化等級，且未涵蓋所有任務類型。對於使用 llama.cpp 部署推理模型的開發者而言，這份資料有助於理解 effort 參數的實際影響，從而更有效地在回應品質與運算成本之間取得平衡。",
+      "title": "Qwen3.8-27B の reasoning_effort を変えると何が変わるか（llama.cpp 実測）",
+      "title_zh": "調整 Qwen3.8-27B 的 reasoning_effort 會改變什麼（llama.cpp 實測）"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Daniel Abib"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock AgentCore",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-20T00:00:16.074326+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Asynchronous patterns for calling Amazon Bedrock AgentCore agents in serverless pipelines",
+          "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.15,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.05,
+          "rigor": 0.05
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog post on AWS serverless patterns for Bedrock AgentCore; touches agents and inference but lacks methodological depth, empirical results, and novelty. Limited to commercial platform, minimal research contribution. Preference relevance limited due to no LLM internals, Japanese focus, or core NLP; mostly cloud integration practices.",
+        "score": 0.1275,
+        "token_usage": {
+          "completion_tokens": 163,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 322,
+          "prompt_tokens": 2114,
+          "total_tokens": 2277
+        },
+        "topics": [
+          "agents",
+          "serverless",
+          "AWS Step Functions"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Asynchronous patterns for calling Amazon Bedrock AgentCore agents in serverless pipelines",
+        "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines"
+      },
+      "published_at": "2026-08-19T13:06:09+00:00",
+      "published_local_date": "2026-08-19",
+      "report_rank": 23,
+      "report_score": 14.773421,
+      "report_source_date": "2026-08-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.1275,
+        "llm_relevance_score": 3.5700000000000003,
+        "recency_score": 0.9534211648141098,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 14.77342116481411
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:558f03fb1d61181d",
+      "summary": "In this post, you learn three serverless patterns (task-token callback, direct service integration, and durable functions) for invoking Amazon Bedrock AgentCore agents asynchronously from AWS Step Functions pipelines, eliminating idle compute costs while your AI agent processes requests.",
+      "summary_zh": "本文探討如何在 AWS Step Functions 管線中非同步呼叫 Amazon Bedrock AgentCore 代理程式，以解決 AI 代理處理請求期間閒置運算成本的問題。文中提出三種伺服器無伺服器模式：任務令牌回呼、直接服務整合，以及持久化函式。這些模式讓工作流程在等待代理回應時不需佔用運算資源，有效節省成本。文中以實務案例說明各模式的實作方式與適用情境，但未提供量化效能數據或大規模測試結果。此方法對於需要整合 AI 代理到自動化流程的開發者而言，提供實用的架構參考，有助於降低成本並提升管線效率。文章以 AWS 原生服務為基礎，適合已採用 AWS 生態系的團隊參考。",
+      "title": "Asynchronous patterns for calling Amazon Bedrock AgentCore agents in serverless pipelines",
+      "title_zh": "在無伺服器管線中以非同步模式呼叫 Amazon Bedrock AgentCore 代理程式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "shokan"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-21T00:30:59.052212+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Claude Code ではなく Claude Desktop を使うメリット",
+          "url": "https://qiita.com/shokan/items/524c376889317641626e"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.4,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions Claude Desktop, Claude Code, IDE potential"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Relevance to LLM agents/Claude is moderate but the document is an abstract-only, non-technical opinion piece about Claude Desktop vs Claude Code, lacking empirical rigor and evidence.",
+        "score": 0.22000000000000003,
+        "token_usage": {
+          "completion_tokens": 188,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 340,
+          "prompt_tokens": 2132,
+          "total_tokens": 2320
+        },
+        "topics": [
+          "agent",
+          "LLM",
+          "tool use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Claude Code ではなく Claude Desktop を使うメリット",
+        "url": "https://qiita.com/shokan/items/524c376889317641626e"
+      },
+      "published_at": "2026-08-20T12:31:30+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 24,
+      "report_score": 14.661181,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.22000000000000003,
+        "llm_relevance_score": 6.160000000000001,
+        "recency_score": 0.9511810792295747,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 14.661181079229575
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:8146dd801700a172",
+      "summary": "一言で言えば、VSCode とは別の、IDE のポテンシャルがあるかもしれない。\n\n前提\n2026-07 時点の Claude Desktop\n※Claude Desktop はエバーグリーン（バージョンを固定できず自動でバージョンアップされていく）のため、時期として記載し...",
+      "summary_zh": "本文探討在 2026 年 7 月時間點，使用 Claude Desktop 相較於 Claude Code 的優勢。作者指出，Claude Desktop 並非單純的程式碼編輯器擴充，而是具有成為獨立整合開發環境（IDE）的潛力。文章基於當前的 Claude Desktop 版本（因採永續更新機制，無法固定版本），比較兩者在開發流程中的差異。主要論點在於 Claude Desktop 能提供更全面的互動介面、記憶能力與多工處理，適合需要頻繁確認與調整的開發任務；而 Claude Code 則更偏向命令列導向的自動化操作。然而，文章僅以摘要形式呈現，缺乏具體的實驗數據或量化比較，也未詳細列出兩者的功能對照。讀者在評估時，應自行測試以確認是否符合自身工作流程，並留意版本更新可能帶來的功能變動。",
+      "title": "Claude Code ではなく Claude Desktop を使うメリット",
+      "title_zh": "使用 Claude Desktop 而非 Claude Code 的優點"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Archiningen"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-08-18T00:30:45.880173+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
+          "url": "https://zenn.dev/archiningen/articles/responses-api-conversation-state"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.2,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Abstract mentions previous_response_id and server-side conversation history",
+          "Mentions storing thread_id → response_id pointer"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Paper is an application note about designing conversation state in Azure OpenAI Responses API with only an abstract, lacking quantitative evaluation and scientific rigor. It has some relevance to AI agents and LLMs but is largely a practical engineering article.",
+        "score": 0.21000000000000002,
+        "token_usage": {
+          "completion_tokens": 211,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 445,
+          "prompt_tokens": 2237,
+          "total_tokens": 2448
+        },
+        "topics": [
+          "Azure OpenAI",
+          "Conversation State",
+          "AI Agent API"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
+        "url": "https://zenn.dev/archiningen/articles/responses-api-conversation-state"
+      },
+      "published_at": "2026-08-17T02:49:03+00:00",
+      "published_local_date": "2026-08-17",
+      "report_rank": 25,
+      "report_score": 14.593506,
+      "report_source_date": "2026-08-18",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.21000000000000002,
+        "llm_relevance_score": 5.880000000000001,
+        "recency_score": 0.9135062090137394,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 14.593506209013741
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:b9be7d98b46813b2",
+      "summary": "!\nこの記事は archiningen.com からの転載です。\n連載「AI エージェント API の本番設計」の第 1 回 (全 4 回) です。\n\n\nAzure OpenAI の Responses API には previous_response_id があり、会話履歴をサーバ側に持たせられます。ならば自前のストレージには何を持てばいいのか。筆者が 4 ヶ月ほど本番で回しているシステムの答えは「thread_id → response_id の 1 ポインタだけ」でした。メッセージ配列を組み立てるコードは、このリポジトリに 1 行も存在しません。\n題材は B2B の業務 SaaS ...",
+      "summary_zh": "本文探討 Azure OpenAI Responses API 的 previous_response_id 參數，它能讓對話歷史保存在伺服器端。作者分享其在 B2B 業務 SaaS 系統中，實際運行四個月後的設計心得：在自建儲存中，僅需保存 thread_id 與 response_id 的單一指標，無需自己組裝訊息陣列。文中指出傳統做法常將整個對話紀錄存入資料庫，但透過此 API 的設計，可大幅簡化用戶端與伺服器端的狀態管理，降低開發與維護成本。作者強調並未在程式碼中自行建立訊息陣列，凸顯此方法的簡潔性。本文屬系列文章首篇，聚焦於狀態管理的核心取捨，後續篇章將深入探討其他生產環境設計細節。對於使用 Azure OpenAI 開發對話式 AI 應用的工程師而言，此設計提供了實務上可行的替代方案，有助於減少自建基礎設施的複雜度，但也需注意依賴雲端服務所帶來的供應商綁定與成本考量。",
+      "title": "Azure OpenAI Responses API の会話状態設計 — サーバに預けられるもの、手元に残るもの",
+      "title_zh": "Azure OpenAI Responses API 的對話狀態設計 — 可存放於伺服器、留在手邊的部分"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Kristine Pearce"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Amazon Bedrock AgentCore",
+        "Amazon SageMaker AI",
+        "Best Practices",
+        "Intermediate (200)"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-21T00:00:14.342660+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
+          "url": "https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog post fragment briefly mentions agentic AI scaling and multi-agent systems without technical detail, methods, or evidence. Topics match agents and generalizability, but no verifiable contribution.",
+        "score": 0.17500000000000002,
+        "token_usage": {
+          "completion_tokens": 140,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 331,
+          "prompt_tokens": 2123,
+          "total_tokens": 2263
+        },
+        "topics": [
+          "agents",
+          "multi-agent",
+          "scaling",
+          "enterprise"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
+        "url": "https://aws.amazon.com/blogs/machine-learning/scaling-agentic-ai-enterprise-patterns-without-vendor-lock-in"
+      },
+      "published_at": "2026-08-20T07:24:12+00:00",
+      "published_local_date": "2026-08-20",
+      "report_rank": 26,
+      "report_score": 14.331098,
+      "report_source_date": "2026-08-21",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.17500000000000002,
+        "llm_relevance_score": 4.9,
+        "recency_score": 0.9310976657651118,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 4.0,
+        "total_score": 14.331097665765112
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:1457dd7a0630ad67",
+      "summary": "Scaling agentic AI across an enterprise requires patterns that preserve flexibility while avoiding vendor lock-in. In this second post of our multi-agent series, we examine how ML teams operate many agentic AI systems across a multi-everything environment of frameworks, models, and providers, and the principles that let those systems scale together.",
+      "summary_zh": "本文探討企業級代理式AI（agentic AI）的擴展模式，重點在於如何在多元框架、模型與供應商環境中維持靈活性並避免供應商綁定。作者以多代理系統系列文章的第二篇為背景，剖析機器學習團隊如何同時營運眾多代理式AI系統，並歸納出讓這些系統得以共同擴展的關鍵原則。目前僅有摘要，尚未提供具體實驗數據或案例驗證，因此所提原則的直接效益仍待後續完整內容佐證。對企業而言，此議題關係到AI基礎設施的長期策略與投資，有助於降低轉換成本、提升系統韌性，值得規劃大規模AI部署的團隊密切關注。",
+      "title": "Scaling agentic AI: Enterprise patterns without vendor lock-in",
+      "title_zh": "擴展代理式AI：無供應商綁定的企業模式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Parker Bradshaw"
+      ],
+      "categories": [
+        "Amazon Bedrock",
+        "Customer Solutions"
+      ],
+      "entities": [],
+      "first_seen_at": "2026-08-20T00:00:16.076074+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "How Fanatics Betting and Gaming built a multi-agent customer support system",
+          "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.3,
+          "novelty": 0.1,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Mentions multi-agent support system",
+          "Mentions AWS services and architecture patterns"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a technical blog post describing a multi-agent customer support system on AWS. It mentions 'multi-agent' and 'customer support', but lacks concrete details on LLM, evaluations, or methodology. Given the abstract-only content, novelty, rigor, and reproducibility are very low. Relevance is moderate due to agent topic but no explicit language model focus.",
+        "score": 0.18,
+        "token_usage": {
+          "completion_tokens": 236,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 337,
+          "prompt_tokens": 2129,
+          "total_tokens": 2365
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Natural Language Processing"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "How Fanatics Betting and Gaming built a multi-agent customer support system",
+        "url": "https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system"
+      },
+      "published_at": "2026-08-19T11:40:45+00:00",
+      "published_local_date": "2026-08-19",
+      "report_rank": 27,
+      "report_score": 14.237784,
+      "report_source_date": "2026-08-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.18,
+        "llm_relevance_score": 5.04,
+        "recency_score": 0.9477835811533948,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 3.75,
+        "total_score": 14.237783581153394
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:9b2e83b2d9f7f65e",
+      "summary": "Fanatics Betting and Gaming built a multi-agent customer support system on AWS to handle the complexity of sports betting: state-specific rules, real-time responsible gaming, and traffic spikes during major sporting events. This post walks through the architecture, the AWS services involved, and the patterns for your own multi-agent support solution.",
+      "summary_zh": "本文介紹 Fanatics Betting and Gaming 如何在 AWS 上建構一個多代理（multi-agent）客戶支援系統，以應對運動博弈產業的複雜性，包括各州不同的法規、即時負責任博弈要求，以及大型賽事期間的流量尖峰。文章詳細說明系統架構、使用的 AWS 服務，並提供可供參考的多代理支援解決方案設計模式。此系統的核心是將客戶需求分流至不同專業代理，每個代理負責特定領域，如法規遵循或即時風險控管，藉此提升回應效率與準確性。文中亦探討如何透過 AWS 的服務實現自動擴展、低延遲與高可用性。雖然本文以系統實作為主，未提供量化評比資料，但其架構與模式對建置類似多代理客服系統的團隊具有實務參考價值，尤其能協助理解如何在雲端環境中整合多方需求並確保擴展性。",
+      "title": "How Fanatics Betting and Gaming built a multi-agent customer support system",
+      "title_zh": "Fanatics Betting and Gaming 如何建構多代理客戶支援系統"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "quotidia"
+      ],
+      "categories": [],
+      "entities": [
+        "qwen"
+      ],
+      "first_seen_at": "2026-08-20T00:32:02.784561+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Alibabaオープンモデルの現在地を整理。半年で30億DL・派生30万・Qwen3.8-27BはApache 2.0",
+          "url": "https://qiita.com/quotidia/items/d874de6093e9b6fc2bba"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.2,
+          "novelty": 0.2,
+          "preference_relevance": 0.25,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "News summary of Alibaba's Qwen open model downloads; lacks technical methodology, is a domain application, and has no research contribution. Out of scope.",
+        "score": 0.2,
+        "token_usage": {
+          "completion_tokens": 169,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 378,
+          "prompt_tokens": 2170,
+          "total_tokens": 2339
+        },
+        "topics": [
+          "LLM",
+          "open source"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Alibabaオープンモデルの現在地を整理。半年で30億DL・派生30万・Qwen3.8-27BはApache 2.0",
+        "url": "https://qiita.com/quotidia/items/d874de6093e9b6fc2bba"
+      },
+      "published_at": "2026-08-19T12:02:13+00:00",
+      "published_local_date": "2026-08-19",
+      "report_rank": 28,
+      "report_score": 14.099198,
+      "report_source_date": "2026-08-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.2,
+        "llm_relevance_score": 5.6000000000000005,
+        "recency_score": 0.9491975344082332,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 14.099197534408233
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:251f397a034c346d",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。\n\nAlibaba (アリババ) は、同社のオープンモデル群「Qwen」の直近6か月のダウンロードが、全プラットフォーム合計で30億回に達したと発表しました (Bloombergが2026年8月1...",
+      "summary_zh": "本報導整理阿里巴巴（Alibaba）旗下開源模型系列Qwen在近六個月內的發展概況。根據官方統計，Qwen模型於各大平台總計下載次數已達30億次，衍生模型數量超過30萬個，顯示其生態系統快速擴張。報導特別提及新發布的Qwen3.8-27B模型，該模型採用Apache 2.0授權，允許商業使用與修改，降低企業與研究單位的採用門檻。文中亦簡述Qwen系列在開源社群中的影響力，並點出OpenAI等國際大廠與中國開源模型之間的競爭態勢。然而，該報導僅提供宏觀數據與公開資訊，未深入探討模型具體的架構細節、效能評測結果，或與其他主流開源模型（如Llama、Mistral）的比較，也缺乏對授權條款實際應用的深入分析。對於關注開源模型授權策略與生態發展的讀者而言，此文可作為快速掌握市場動態的參考，但若要評估模型技術實力的優劣，仍須查閱原始論文與實測報告。",
+      "title": "Alibabaオープンモデルの現在地を整理。半年で30億DL・派生30万・Qwen3.8-27BはApache 2.0",
+      "title_zh": "阿里巴巴開源模型現況整理：半年30億下載、衍生30萬模型、Qwen3.8-27B採Apache 2.0授權"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Ariana Lopez"
+      ],
+      "categories": [
+        "Advanced (300)",
+        "Amazon Bedrock",
+        "Amazon Bedrock Knowledge Bases",
+        "Technical How-to"
+      ],
+      "entities": [
+        "aws"
+      ],
+      "first_seen_at": "2026-08-19T00:00:14.598168+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "aws-ml-blog",
+          "tier": 0,
+          "title": "Improve contract search accuracy with auto-generated filters in Amazon Bedrock",
+          "url": "https://aws.amazon.com/blogs/machine-learning/improve-contract-search-accuracy-with-auto-generated-filters-in-amazon-bedrock"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.2,
+          "reproducibility": 0.05,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only description of a contract search application using Amazon Bedrock Knowledge Bases. Mentions retrieval and filtering but lacks language-model methodology details. Pure domain application with no LLM, Japanese, or core AI methodology specifics. Low rigor, no quantitative results.",
+        "score": 0.14,
+        "token_usage": {
+          "completion_tokens": 149,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 342,
+          "prompt_tokens": 2134,
+          "total_tokens": 2283
+        },
+        "topics": [
+          "RAG",
+          "knowledge base",
+          "filtering"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "aws-ml-blog",
+        "tier": 0,
+        "title": "Improve contract search accuracy with auto-generated filters in Amazon Bedrock",
+        "url": "https://aws.amazon.com/blogs/machine-learning/improve-contract-search-accuracy-with-auto-generated-filters-in-amazon-bedrock"
+      },
+      "published_at": "2026-08-18T08:02:52+00:00",
+      "published_local_date": "2026-08-18",
+      "report_rank": 29,
+      "report_score": 14.05357,
+      "report_source_date": "2026-08-19",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 1.5,
+        "llm_raw_score": 0.14,
+        "llm_relevance_score": 3.9200000000000004,
+        "recency_score": 0.933569908355289,
+        "semantic_score": 0.0,
+        "tier_score": 3.0,
+        "topic_score": 2.7,
+        "total_score": 14.05356990835529
+      },
+      "section": null,
+      "source_name": "AWS Machine Learning Blog",
+      "story_id": "fallback:e07fc787fc565a8d",
+      "summary": "In this post, we describe how AIDA works at a high level and how it helps address these challenges — grounding users in the right contracts, under the right legal context, and within the right access boundaries. Specifically, we explore how AIDA uses implicit and explicit filtering, along with metadata-enriched chunking in Amazon Bedrock Knowledge Bases, to dramatically improve contract search accuracy.",
+      "summary_zh": "本文介紹 AIDA 系統如何在高階層面運作，以及其如何協助應對合約搜尋的挑戰——在使用者具備正確的法律脈絡與存取邊界內，引導使用者找到正確的合約。具體而言，文章探討 AIDA 如何運用隱式與顯式濾網（filtering），搭配 Amazon Bedrock Knowledge Bases 中的中繼資料強化分塊（metadata-enriched chunking），大幅提升合約搜尋的準確度。此方法將契約領域的專業知識與關鍵字搜尋結合，透過自動化濾網機制，有效縮小搜尋範圍，降低無關結果的干擾。文中雖未提供具體數據或評量指標，但強調此技術能改善合約管理的效率與精確度。對於需要處理大量法律文件、並尋求更智慧化搜尋工具的企業與法務團隊而言，此方案展示了雲端 AI 服務在合約分析上的實用性與未來發展潛力。",
+      "title": "Improve contract search accuracy with auto-generated filters in Amazon Bedrock",
+      "title_zh": "使用 Amazon Bedrock 自動產生濾網提升合約搜尋準確度"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "locolisu"
+      ],
+      "categories": [],
+      "entities": [
+        "openai"
+      ],
+      "first_seen_at": "2026-08-24T00:43:52.846896+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "ChatGPT Work＋Codexで設計・実装・E2Eテストを分離する ― 人間をコピペ要員にしないAI開発フロー",
+          "url": "https://qiita.com/locolisu/items/ad1d3ab63c05d03c232a"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.1,
+          "generalizability": 0.1,
+          "novelty": 0.1,
+          "preference_relevance": 0.35,
+          "reproducibility": 0.05,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only blog-style article about separating design, implementation, and E2E testing using ChatGPT Work and Codex. Relevant to agents/tool use and code but lacks technical depth, evidence, baselines, or quantitative results. Novelty and rigor are low due to no methods or evaluations. Pure domain application without language methodology, strictly limited to 0.20 but slight relevance to AI development workflow justifies close to cap.",
+        "score": 0.19749999999999998,
+        "token_usage": {
+          "completion_tokens": 185,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 376,
+          "prompt_tokens": 2168,
+          "total_tokens": 2353
+        },
+        "topics": [
+          "agent",
+          "code generation",
+          "tool use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "ChatGPT Work＋Codexで設計・実装・E2Eテストを分離する ― 人間をコピペ要員にしないAI開発フロー",
+        "url": "https://qiita.com/locolisu/items/ad1d3ab63c05d03c232a"
+      },
+      "published_at": "2026-08-23T14:11:44+00:00",
+      "published_local_date": "2026-08-23",
+      "report_rank": 30,
+      "report_score": 14.037008,
+      "report_source_date": "2026-08-24",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.19749999999999998,
+        "llm_relevance_score": 5.529999999999999,
+        "recency_score": 0.957007598360075,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 14.037007598360075
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:f5e3a8d82f7b859f",
+      "summary": "AIに仕様を考えてもらう。\nCodexに実装してもらう。\n別のCodexにPlaywrightのE2Eテストを書いてもらう。\nここまで分業できると、人間はAIの出力を次のAIへ渡すだけでも開発が進むように見えます。\nただ、実際に業務管理アプリを開発してみると、このやり方には...",
+      "summary_zh": "本文探討一種人工智慧輔助開發的流程，將開發工作拆分為三個階段：先由 AI 根據需求規格進行設計，再由 Codex 負責程式碼實作，最後由另一個 Codex 實例撰寫 Playwright 的端對端（E2E）測試。此分工看似可讓開發流程高度自動化，使人類僅需在 AI 之間傳遞輸出即可推進專案。然而，作者在實際開發一套業務管理應用程式的過程中發現，此方式存在明顯限制。例如，AI 之間的介面（即需求規格與測試案例的傳遞）若不夠精確，容易產生誤解；實作結果與測試預期之間的落差需要人類介入調整；且 AI 生成程式碼的品質與可維護性仍有待驗證。本文強調，完全排除人類的開發流程尚不可行，人類仍需扮演監督、決策與解決衝突的角色，但此流程確實能減少大量重複性工作，研究結果對追求 AI 輔助開發的團隊具有參考價值。",
+      "title": "ChatGPT Work＋Codexで設計・実装・E2Eテストを分離する ― 人間をコピペ要員にしないAI開発フロー",
+      "title_zh": "以 ChatGPT Work 與 Codex 分離設計、實作與 E2E 測試：不將人類視為複製貼上人力的人工智慧開發流程"
+    }
+  ],
+  "blog_stories_considered": 139,
+  "covered_dates": [
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-22",
+    "2026-08-23"
+  ],
+  "generated_at": "2026-08-24T00:46:33.052271+00:00",
+  "items_considered": 5,
+  "missing_dates": [],
+  "period_end": "2026-08-23",
+  "period_id": "2026-W34",
+  "period_start": "2026-08-17",
+  "recommendations": [
+    {
+      "arxiv_id": "articles/6607063",
+      "authors": [
+        "Outcasts管理人＆ザリ・ロブステル"
+      ],
+      "categories": [],
+      "entities": [
+        "langchain"
+      ],
+      "first_seen_at": "2026-08-20T00:32:03.087581+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "LangGraph のコードを読んで、自作マルチエージェントと突き合わせた — 「言葉で繋がない」設計と動的ルーティング",
+          "url": "https://zenn.dev/outcasts/articles/6607063bb8d4b0"
+        }
+      ],
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "LangGraph のコードを読んで、自作マルチエージェントと突き合わせた — 「言葉で繋がない」設計と動的ルーティング",
+        "url": "https://zenn.dev/outcasts/articles/6607063bb8d4b0"
+      },
+      "published_at": "2026-08-19T03:15:46+00:00",
+      "published_local_date": "2026-08-19",
+      "report_rank": 1,
+      "report_score": 22.715122,
+      "report_source_date": "2026-08-20",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.5,
+        "llm_relevance_score": 14.0,
+        "recency_score": 0.9151224662662522,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 22.71512246626625
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/6607063",
+      "summary": "要約\n\nマルチエージェントのオーケストレーションを LLM の「言葉」で繋ぐと、要約のたびに情報が落ちて長時間の運用で回らなくなる。Anthropic の \"Multi-agent coordination patterns\" が言う「orchestrator becomes an information bottleneck」は、自作の村でも実測で出た\nLangGraph（langchain-ai/langgraph 1e44bda・2026-08-18）のコードを読むと、そもそも言葉で繋いでいない。ノード間を渡るのは型付きの状態（channel_values）で、ルータは状態を読...",
+      "summary_zh": "本文探討大型語言模型（LLM）驅動的多重代理人系統在長時間運作下的效能瓶頸。作者觀察到，若以 LLM 的文字敘述作為代理人間溝通媒介，每次摘要都會遺失部分資訊，導致系統在長時間運行後效能衰減。此現象與 Anthropic 在「Multi-agent coordination patterns」中提出的「orchestrator becomes an information bottleneck」論點相符，並在作者自製系統中獲得實測驗證。為了尋找解決方案，作者深入閱讀 LangGraph（langchain-ai/langgraph，commit 1e44bda，2026-08-18）的原始碼，發現其設計並非以語言為主要連結方式：節點間傳遞的是型別化的狀態（channel_values），路由器則依據狀態內容進行動態路由，而非依賴 LLM 生成的文字摘要。作者將此設計與自製系統對照，探討「不仰賴語言連結」的架構如何減少資訊遺失，並分析動態路由機制的實作細節。本文的價值在於提供一個實際的程式碼層級分析，說明為何以語言為中心的代理人溝通方式在擴展性上受限，並提出以型別化狀態與動態路由為基礎的替代方案。對於正在設計或維護多重代理人系統的研究者與工程師而言，這篇文章提供了具體的設計參考與實作洞察。",
+      "title": "LangGraph のコードを読んで、自作マルチエージェントと突き合わせた — 「言葉で繋がない」設計と動的ルーティング",
+      "title_zh": "解讀 LangGraph 原始碼：與自製多重代理人系統對照 — 「不仰賴語言連結」的設計與動態路由"
+    },
+    {
+      "arxiv_id": "commit/5792571",
+      "authors": [
+        "kaisugi"
+      ],
+      "categories": [],
+      "entities": [
+        "llm-jp",
+        "nii"
+      ],
+      "first_seen_at": "2026-08-19T00:31:24.921128+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "github",
+          "source_id": "awesome-japanese-llm",
+          "tier": 1,
+          "title": "LLM-jp-4 33B を追加 (#705)",
+          "url": "https://github.com/llm-jp/awesome-japanese-llm/commit/57925719b6c445bc750680829ae8cc29d0b9b0df"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.0,
+          "novelty": 0.0,
+          "preference_relevance": 0.0,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 0.85,
+        "evidence": [],
+        "fulltext_sha256": "43d313b4eb3d53be4cd77f81415dd281d6dc42b25efb7088ff2f8ab296b40a43",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only commit note with no technical content; merely adds a model reference. Out of scope for AI/ML research evaluation.",
+        "score": 0.0,
+        "token_usage": {
+          "completion_tokens": 112,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 318,
+          "prompt_tokens": 2110,
+          "total_tokens": 2222
+        },
+        "topics": []
+      },
+      "primary_link": {
+        "link_type": "github",
+        "source_id": "awesome-japanese-llm",
+        "tier": 1,
+        "title": "LLM-jp-4 33B を追加 (#705)",
+        "url": "https://github.com/llm-jp/awesome-japanese-llm/commit/57925719b6c445bc750680829ae8cc29d0b9b0df"
+      },
+      "published_at": "2026-08-18T15:12:03+00:00",
+      "published_local_date": "2026-08-18",
+      "report_rank": 2,
+      "report_score": 11.511813,
+      "report_source_date": "2026-08-19",
+      "report_source_section": "papers",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 4.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.0,
+        "llm_relevance_score": 0.0,
+        "recency_score": 0.9618131939846711,
+        "semantic_score": 0.0,
+        "tier_score": 2.0,
+        "topic_score": 3.75,
+        "total_score": 11.511813193984672
+      },
+      "section": null,
+      "source_name": "Awesome Japanese LLM (GitHub)",
+      "story_id": "arxiv:commit/5792571",
+      "summary": "<pre style=\"white-space: pre-wrap; width: 81ex;\">LLM-jp-4 33B を追加 (#705)\n\nCo-authored-by: Claude Opus 5 &lt;noreply@anthropic.com&gt;</pre>",
+      "summary_zh": "本篇為 LLM-jp 專案的版本控制提交紀錄，內容僅包含一項變更：新增 LLM-jp-4 33B 模型。該提交由 Claude Opus 5 共同撰寫，顯示此模型可能經由 AI 輔助開發或整合。然而，由於文件僅提供摘要，並未揭露模型的架構細節、訓練資料、評估結果或與其他開放模型的比較，因此無法據此判斷其效能或適用場景。對於研究人員而言，此提交的意義在於確認 LLM-jp-4 33B 已被納入專案，並暗示後續可能會有更完整的技術報告或模型卡發布。由於缺乏實證數據，本摘要不應被視為對模型能力的背書，建議讀者參考原始儲存庫以取得更進一步的資訊，並留意潛在的偏誤或未公開的限制。",
+      "title": "LLM-jp-4 33B を追加 (#705)",
+      "title_zh": "新增 LLM-jp-4 33B 模型 (#705)"
+    },
+    {
+      "arxiv_id": "articles/5466749",
+      "authors": [
+        "MotimotiNotch"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-22T00:30:32.534602+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIに「あれは入れないで」と直させると、なぜか本文に「入れてません」と書いてくる",
+          "url": "https://zenn.dev/motimotinotch/articles/546674976fede8"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.0,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.1,
+          "reproducibility": 0.0,
+          "rigor": 0.0
+        },
+        "confidence": 0.85,
+        "evidence": [
+          "No sections or data; only a Twitter link and personal commentary."
+        ],
+        "fulltext_sha256": "8a989d2e9e9229a5b0910f5d90c596ce70ff4334cc248fdb20f37b266c7d6ea7",
+        "fulltext_status": "abstract_only",
+        "model": "deepseek-v4-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "This is a casual blog-style post (content status: abstract_only) discussing an anecdotal observation about AI behavior, not a research paper. It has no methodology, experiments, or data. Topics touch on AI behavior but not the targeted areas; it's out of scope for LLM/NLP research and cannot be evaluated as rigorous work. Score is low due to lack of scientific content, evidence, and novelty. The only slight relevance is to AI behavior and correction, but it's shallow and unverified.",
+        "score": 0.06375,
+        "token_usage": {
+          "completion_tokens": 210,
+          "prompt_cache_hit_tokens": 1792,
+          "prompt_cache_miss_tokens": 462,
+          "prompt_tokens": 2254,
+          "total_tokens": 2464
+        },
+        "topics": [
+          "AI behavior",
+          "prompting"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIに「あれは入れないで」と直させると、なぜか本文に「入れてません」と書いてくる",
+        "url": "https://zenn.dev/motimotinotch/articles/546674976fede8"
+      },
+      "published_at": "2026-08-21T03:26:45+00:00",
+      "published_local_date": "2026-08-21",
+      "report_rank": 3,
+      "report_score": 4.500923,
+      "report_source_date": "2026-08-22",
+      "report_source_section": "papers",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.06375,
+        "llm_relevance_score": 1.7850000000000001,
+        "recency_score": 0.9159234015420884,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 0.0,
+        "total_score": 4.500923401542089
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "arxiv:articles/5466749",
+      "summary": "こんな投稿を見かけた。\nhttps://x.com/chokudai/status/2084538207732178997?s=20\nこれは自分なりの要約だが、要するにこういう話だ。AIに何かを一発で出させるのは得意。でも、後から「〇〇は入れないで」と訂正させると、該当箇所は消すくせに、代わりに「〇〇は入れていません」的なコメントを律儀に書き足してくる。ソースコードのコメントならまだしも、プレゼン資料でもそれをやる、という話だった。\nこれ、経験がある人は多いと思う。自分も記事や資料をAIと一緒に作るとき、似たような場面に何度も遭遇してきた。\nこの記事では、この現象がなぜ起きるのかを一段掘...",
+      "summary_zh": "本文從社群平台上的觀察出發，指出一個常見現象：當使用者要求生成式AI去除某個元素（例如「請不要放入某項內容」）時，AI雖會刪除該元素，卻常在其輸出中另外加入「此內容並未放入」這類說明性文字，甚至在投影片等正式資料中也如此。作者認為此現象與大型語言模型在訓練時被最佳化以提供完整且自覺的解釋有關，模型傾向於在修改後補充後設評論，以滿足「回應完整性」的隱含期望，但這種行為卻可能讓使用者感到突兀或困擾。文中並未提出系統性的實驗數據，僅以個人經驗與觀察為佐證，也未深入探討各家模型之間的差異，但點出一個值得注意的使用者體驗問題：在與AI協作時，使用者可能需要更明確的指令（例如「直接修改，不要額外說明」）來避免非預期的註解。此現象凸顯了目前生成式AI在遵循指令時，對於「內容」與「形式」的界線仍不夠精準，對追求輸出精簡的使用者而言，是實際操作上不可忽視的限制，也反映出後續在提示工程或模型微調上仍有改善空間。",
+      "title": "AIに「あれは入れないで」と直させると、なぜか本文に「入れてません」と書いてくる",
+      "title_zh": "要求AI「別放那個」卻在文中寫下「沒放」——探討生成式AI的訂正行為"
+    }
+  ],
+  "report_type": "weekly",
+  "selection_policy": {
+    "archive_lookahead_days": 1,
+    "blog_limit": 30,
+    "blog_ranking": "score.total_score descending, then publication time descending; blog/article stories, including Japanese AI engineering sources, are pulled from daily top5 and radar",
+    "dedupe_keys": [
+      "arxiv_id",
+      "story_id",
+      "primary_link.url"
+    ],
+    "limit": 100,
+    "metadata_source": "ai",
+    "period_source": "target_date and report_type",
+    "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
+    "source_sections": [
+      "papers",
+      "top5",
+      "radar"
+    ]
+  },
+  "source_files": [
+    "api/day/2026-08-17.json",
+    "api/day/2026-08-18.json",
+    "api/day/2026-08-19.json",
+    "api/day/2026-08-20.json",
+    "api/day/2026-08-21.json",
+    "api/day/2026-08-22.json",
+    "api/day/2026-08-23.json",
+    "api/day/2026-08-24.json"
+  ],
+  "stories_considered": 3,
+  "summary": "本週焦點包括多代理系統的實作探討、開放模型部署與 AWS 上的生成式 AI 應用。首推詳盡解析 LangGraph 原始碼，對照自製系統，點出 LLM 溝通限制與路由設計；亦收錄 NVIDIA Nemotron 3.5 Lightning 效能數據與 WebNN 在 NPU 上執行 LLM 的實測，值得工程與應用開發者參考。",
+  "timezone": "UTC",
+  "title": "AI 研究週報：多代理系統與模型部署趨勢"
+}
