@@ -1,4 +1,4 @@
-"""Full-paper scorecard prompt for DeepSeek V4 Flash."""
+"""Full-paper scorecard prompt for the configured LLM."""
 
 from __future__ import annotations
 

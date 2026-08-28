@@ -55,8 +55,8 @@ def _resolve_batch_size() -> int:
 class TranslationProcessor:
     """Orchestrates batch LLM translation of story titles and summaries.
 
-    Translates stories to Traditional Chinese using the same DeepSeek
-    client and batch/cache/retry patterns established by
+    Translates stories to Traditional Chinese using the same
+    client and batch/cache/retry patterns established by the
     LlmRelevanceProcessor.
     """
 
@@ -72,6 +72,7 @@ class TranslationProcessor:
             output_dir: Output directory for cache file storage.
         """
         self._client = client
+        self._model = client.model
         self._cache = TranslationCache(output_dir / "api" / "translations_zh.json")
         self._log = logger.bind(component="translation", subcomponent="processor")
 
@@ -96,6 +97,7 @@ class TranslationProcessor:
             if not self._cache.is_current(
                 str(s.get("story_id", "")),
                 fulltext_sha256=str(s.get("fulltext_sha256", "")),
+                model=self._model,
             )
         ]
         stale_cached = [
@@ -105,6 +107,7 @@ class TranslationProcessor:
             and not self._cache.is_current(
                 str(s.get("story_id", "")),
                 fulltext_sha256=str(s.get("fulltext_sha256", "")),
+                model=self._model,
             )
         ]
 
@@ -160,6 +163,7 @@ class TranslationProcessor:
             if not self._cache.is_current(
                 str(s.get("story_id", "")),
                 fulltext_sha256=str(s.get("fulltext_sha256", "")),
+                model=self._model,
             )
         ]
         self._log.info(
@@ -193,7 +197,9 @@ class TranslationProcessor:
         translated = 0
         for entry in entries:
             if not self._cache.is_current(
-                entry.story_id, fulltext_sha256=entry.fulltext_sha256
+                entry.story_id,
+                fulltext_sha256=entry.fulltext_sha256,
+                model=self._model,
             ):
                 translated += 1
             self._cache.put(entry)
@@ -204,6 +210,7 @@ class TranslationProcessor:
             if not self._cache.is_current(
                 str(s.get("story_id", "")),
                 fulltext_sha256=str(s.get("fulltext_sha256", "")),
+                model=self._model,
             )
         ]
         if not missing:
@@ -382,6 +389,7 @@ class TranslationProcessor:
                     story_id=story_id,
                     title_zh=title_zh,
                     summary_zh=summary_zh,
+                    model=self._model,
                     fulltext_sha256=str(
                         next(
                             (
@@ -405,7 +413,7 @@ def _resolve_story_id(
 ) -> str:
     """Resolve provider-returned id to a story_id.
 
-    DeepSeek may follow the prompt's numbered list or omit a namespace prefix.
+    LLM providers may follow the prompt's numbered list or omit a namespace prefix.
     Accept only unambiguous recovery within the current batch.
     """
     story_id = raw_id.strip()

@@ -354,7 +354,7 @@ def _run_llm_phase(
 ) -> dict[str, float]:
     """Execute the optional LLM relevance evaluation phase.
 
-    Skips gracefully if DEEPSEEK_API_KEY is not configured or
+    Skips gracefully if LLM credentials are not configured or
     if any error occurs during evaluation. Saves versioned scorecards to the
     output directory for offline analysis when output_dir is given.
 
@@ -429,7 +429,7 @@ def _run_llm_phase(
         from src.features.llm.prompts import CURRENT_SCORING_PROMPT_VERSION
 
         client = _create_configured_llm_client(
-            settings, model=settings.deepseek_scoring_model
+            settings, model=settings.llm_scoring_model
         )
         cache_dir = Path(
             settings.fulltext_cache_dir
@@ -452,7 +452,7 @@ def _run_llm_phase(
                 document
                 and cached.get("fulltext_sha256") == document.sha256
                 and cached.get("prompt_version") == CURRENT_SCORING_PROMPT_VERSION
-                and cached.get("model") == settings.deepseek_scoring_model
+                and cached.get("model") == settings.llm_scoring_model
             )
             if not is_current:
                 uncached_stories.append(story)
@@ -501,13 +501,13 @@ def _run_llm_phase(
                     "fulltext_sha256": item.fulltext_sha256,
                     "token_usage": item.token_usage,
                     "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
-                    "model": settings.deepseek_scoring_model,
+                    "model": settings.llm_scoring_model,
                 }
             cache_path.write_text(
                 _json.dumps(
                     {
                         "version": LLM_CACHE_VERSION,
-                        "model": settings.deepseek_scoring_model,
+                        "model": settings.llm_scoring_model,
                         "prompt_version": CURRENT_SCORING_PROMPT_VERSION,
                         "entries": new_entries,
                     },
@@ -612,7 +612,7 @@ def _run_translation_phase(
     """Execute the optional LLM translation phase.
 
     Translates ranked story titles and summaries to Traditional Chinese.
-    Skips gracefully if DEEPSEEK_API_KEY is not configured or if
+    Skips gracefully if LLM credentials are not configured or if
     any error occurs during translation.
 
     Args:
@@ -690,8 +690,8 @@ def _run_translation_phase(
 
 
 def _has_llm_credentials(settings: object) -> bool:
-    """Return whether the required DeepSeek credential is present."""
-    return bool(getattr(settings, "deepseek_api_key", None))
+    """Return whether the required LLM credential is present."""
+    return bool(getattr(settings, "llm_api_key", None))
 
 
 def _create_configured_llm_client(
@@ -701,16 +701,17 @@ def _create_configured_llm_client(
 ) -> "LlmClient":
     """Create the configured LLM client from application settings.
 
-    ``model`` defaults to the translation model (``deepseek-v4-flash``);
-    pass ``deepseek_scoring_model`` for scoring and report metadata.
+    ``model`` defaults to the translation model; pass ``llm_scoring_model``
+    for scoring and report metadata.
     """
     from src.features.llm.factory import create_llm_client
 
-    resolved_model = model or getattr(settings, "deepseek_model", "deepseek-v4-flash")
+    resolved_model = model or getattr(settings, "llm_model", "")
     return create_llm_client(
-        api_key=getattr(settings, "deepseek_api_key", None),
+        api_key=getattr(settings, "llm_api_key", None),
         model=resolved_model,
-        max_tokens=getattr(settings, "deepseek_max_tokens", 8192),
+        max_tokens=getattr(settings, "llm_max_tokens", 8192),
+        base_url=getattr(settings, "llm_base_url", "https://openrouter.ai/api/v1"),
     )
 
 
@@ -729,7 +730,7 @@ def _create_report_metadata_generator(
 
     try:
         client = _create_configured_llm_client(
-            settings, model=settings.deepseek_scoring_model
+            settings, model=settings.llm_scoring_model
         )
     except Exception:
         log.warning("report_ai_metadata_client_failed", exc_info=True)

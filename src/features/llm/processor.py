@@ -62,7 +62,7 @@ class LlmRelevanceProcessor:
     """Orchestrates batch LLM evaluation of stories.
 
     Filters stories to those with meaningful content (papers with
-    abstracts or full papers), sends them to DeepSeek, and parses
+    abstracts or full papers), sends them to the LLM, and parses
     the structured JSON responses.
     """
 

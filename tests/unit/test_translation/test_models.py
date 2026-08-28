@@ -40,7 +40,7 @@ class TestTranslationEntry:
             "summary_zh": "\u6e2c\u8a66\u6458\u8981",
             "prompt_version": CURRENT_TRANSLATION_PROMPT_VERSION,
             "fulltext_sha256": "",
-            "model": "deepseek-v4-flash",
+            "model": "",
         }
 
     def test_from_dict(self) -> None:

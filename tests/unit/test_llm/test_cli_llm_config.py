@@ -9,12 +9,14 @@ from src.linker.models import Story, StoryLink
 from src.ranker.models import RankerOutput, RankerResult
 
 
-def test_cli_configures_deepseek_v4_flash() -> None:
-    """The CLI should wire only the dedicated DeepSeek settings."""
+def test_cli_configures_translation_model() -> None:
+    """The CLI should wire the configured LLM settings for translation."""
     settings = SimpleNamespace(
-        deepseek_api_key="deepseek-key",
-        deepseek_model="deepseek-v4-flash",
-        deepseek_max_tokens=8192,
+        llm_api_key="llm-key",
+        llm_model="z-ai/glm-5.3-flash",
+        llm_scoring_model="z-ai/glm-5.3-flash",
+        llm_max_tokens=8192,
+        llm_base_url="https://openrouter.ai/api/v1",
     )
 
     with patch("src.features.llm.factory.create_llm_client") as create_client:
@@ -23,30 +25,33 @@ def test_cli_configures_deepseek_v4_flash() -> None:
         _create_configured_llm_client(settings)
 
     assert create_client.call_args.kwargs == {
-        "api_key": "deepseek-key",
-        "model": "deepseek-v4-flash",
+        "api_key": "llm-key",
+        "model": "z-ai/glm-5.3-flash",
         "max_tokens": 8192,
+        "base_url": "https://openrouter.ai/api/v1",
     }
 
 
-def test_cli_configures_scoring_model_for_pro() -> None:
+def test_cli_configures_scoring_model() -> None:
     """Scoring/report metadata should use the dedicated scoring model."""
     settings = SimpleNamespace(
-        deepseek_api_key="deepseek-key",
-        deepseek_model="deepseek-v4-flash",
-        deepseek_scoring_model="deepseek-v4-pro",
-        deepseek_max_tokens=8192,
+        llm_api_key="llm-key",
+        llm_model="z-ai/glm-5.3-flash",
+        llm_scoring_model="z-ai/glm-5.3-flash",
+        llm_max_tokens=8192,
+        llm_base_url="https://openrouter.ai/api/v1",
     )
 
     with patch("src.features.llm.factory.create_llm_client") as create_client:
         create_client.return_value = MagicMock()
 
-        _create_configured_llm_client(settings, model=settings.deepseek_scoring_model)
+        _create_configured_llm_client(settings, model=settings.llm_scoring_model)
 
     assert create_client.call_args.kwargs == {
-        "api_key": "deepseek-key",
-        "model": "deepseek-v4-pro",
+        "api_key": "llm-key",
+        "model": "z-ai/glm-5.3-flash",
         "max_tokens": 8192,
+        "base_url": "https://openrouter.ai/api/v1",
     }
 
 

@@ -1,6 +1,6 @@
 """Application settings powered by Pydantic BaseSettings."""
 
-from pydantic import Field
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -24,17 +24,21 @@ class AppSettings(BaseSettings):
     semantic_scholar_api_key: str | None = Field(
         default=None, validation_alias="SEMANTIC_SCHOLAR_API_KEY"
     )
-    deepseek_api_key: str | None = Field(
-        default=None, validation_alias="DEEPSEEK_API_KEY"
+    llm_api_key: str | None = Field(
+        default=None,
+        validation_alias=AliasChoices("LLM_API_KEY", "DEEPSEEK_API_KEY"),
     )
-    deepseek_model: str = Field(
-        default="deepseek-v4-flash", validation_alias="DEEPSEEK_MODEL"
+    llm_base_url: str = Field(
+        default="https://openrouter.ai/api/v1",
+        validation_alias=AliasChoices("LLM_BASE_URL", "DEEPSEEK_BASE_URL"),
     )
-    deepseek_scoring_model: str = Field(
-        default="deepseek-v4-flash", validation_alias="DEEPSEEK_SCORING_MODEL"
+    llm_model: str = Field(default="z-ai/glm-5.3-flash", validation_alias="LLM_MODEL")
+    llm_scoring_model: str = Field(
+        default="z-ai/glm-5.3-flash", validation_alias="LLM_SCORING_MODEL"
     )
-    deepseek_max_tokens: int = Field(
-        default=8192, validation_alias="DEEPSEEK_MAX_TOKENS"
+    llm_max_tokens: int = Field(
+        default=8192,
+        validation_alias=AliasChoices("LLM_MAX_TOKENS", "DEEPSEEK_MAX_TOKENS"),
     )
     fulltext_cache_dir: str | None = Field(
         default=None, validation_alias="FULLTEXT_CACHE_DIR"

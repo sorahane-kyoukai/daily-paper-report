@@ -32,7 +32,7 @@ class TranslationEntry:
     summary_zh: str
     prompt_version: str = CURRENT_TRANSLATION_PROMPT_VERSION
     fulltext_sha256: str = ""
-    model: str = "deepseek-v4-flash"
+    model: str = ""
 
     def to_dict(self) -> dict[str, str]:
         """Serialize to a JSON-compatible dictionary.
@@ -148,21 +148,27 @@ class TranslationCache:
         story_id: str,
         prompt_version: str = CURRENT_TRANSLATION_PROMPT_VERSION,
         fulltext_sha256: str | None = None,
+        model: str | None = None,
     ) -> bool:
         """Check whether a story has a cached translation for this prompt version.
 
         Args:
             story_id: Story identifier to look up.
             prompt_version: Required prompt/cache version.
+            fulltext_sha256: Required source-content hash when given.
+            model: Required producing model when given; entries produced by
+                any other model are treated as stale.
 
         Returns:
-            True when the cached translation exists and matches prompt_version.
+            True when the cached translation exists and matches all criteria.
         """
         entry = self._entries.get(story_id)
+        if entry is None:
+            return False
+        if model is not None and entry.model != model:
+            return False
         return bool(
-            entry is not None
-            and entry.prompt_version == prompt_version
-            and entry.model == "deepseek-v4-flash"
+            entry.prompt_version == prompt_version
             and (fulltext_sha256 is None or entry.fulltext_sha256 == fulltext_sha256)
         )
 

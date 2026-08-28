@@ -54,6 +54,7 @@ class TestTranslationProcessor:
         self, tmp_path: Path, responses: list[str] | None = None
     ) -> tuple[TranslationProcessor, MagicMock]:
         client = MagicMock()
+        client.model = "test-model"
         if responses:
             client.generate_content.side_effect = responses
         processor = TranslationProcessor(client=client, output_dir=tmp_path)
@@ -90,7 +91,7 @@ class TestTranslationProcessor:
                 "title_zh": "\u5df2\u7de9\u5b58",
                 "summary_zh": "\u6458\u8981",
                 "prompt_version": CURRENT_TRANSLATION_PROMPT_VERSION,
-                "model": "deepseek-v4-flash",
+                "model": "test-model",
                 "fulltext_sha256": "",
             }
         }
@@ -145,7 +146,7 @@ class TestTranslationProcessor:
                 "title_zh": "\u5df2\u7de9\u5b58",
                 "summary_zh": "",
                 "prompt_version": CURRENT_TRANSLATION_PROMPT_VERSION,
-                "model": "deepseek-v4-flash",
+                "model": "test-model",
                 "fulltext_sha256": "",
             }
         }

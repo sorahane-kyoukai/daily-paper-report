@@ -17,7 +17,7 @@ from pypdf import PdfReader
 from pypdf.errors import FileNotDecryptedError, PdfReadError
 
 from src.features.fulltext.models import FullTextDocument, FullTextStatus
-from src.features.llm.deepseek_client import MAX_INPUT_CHARS
+from src.features.llm.openai_client import MAX_INPUT_CHARS
 from src.linker.models import Story
 
 

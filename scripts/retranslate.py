@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Re-translate all paper summaries using DeepSeek API with sufficient token budget.
+"""Re-translate all paper summaries using the LLM API with sufficient token budget.
 
 This script reads all day archive JSON files, collects unique stories, and
-re-translates every title and summary to Traditional Chinese using DeepSeek.
+re-translates every title and summary to Traditional Chinese using the LLM.
 It overwrites the existing translations_zh.json cache.
 
 Usage:
     # Set the API key via environment variable (or pass via --api-key)
-    export DEEPSEEK_API_KEY="sk-..."
+    export LLM_API_KEY="sk-or-..."
 
     # Re-translate everything
     python scripts/retranslate.py --out public
@@ -28,9 +28,9 @@ from pathlib import Path
 import httpx
 
 
-# ── DeepSeek API settings ──────────────────────────────────────────────
-DEEPSEEK_BASE_URL = "https://api.deepseek.com"
-DEEPSEEK_MODEL = "deepseek-v4-pro"
+# ── LLM API settings ──────────────────────────────────────────────
+LLM_BASE_URL = "https://openrouter.ai/api/v1"
+LLM_MODEL = "z-ai/glm-5.3-flash"
 MAX_TOKENS = 8192  # Enough for batch stories x 400 chars Chinese + JSON
 BATCH_SIZE = 5  # Keep small to avoid JSON truncation from token limits
 MIN_REQUEST_INTERVAL = 0.5  # seconds
@@ -82,11 +82,11 @@ def chat_completion(
     api_key: str,
     prompt: str,
     *,
-    model: str = DEEPSEEK_MODEL,
+    model: str = LLM_MODEL,
     max_tokens: int = MAX_TOKENS,
 ) -> str:
-    """Send a chat completion request to DeepSeek with retries."""
-    url = f"{DEEPSEEK_BASE_URL}/chat/completions"
+    """Send a chat completion request to the LLM with retries."""
+    url = f"{LLM_BASE_URL}/chat/completions"
     body: dict[str, object] = {
         "model": model,
         "messages": [
@@ -118,7 +118,7 @@ def chat_completion(
                 )
                 time.sleep(delay)
                 continue
-            raise RuntimeError(f"DeepSeek API request failed: {exc}") from exc
+            raise RuntimeError(f"LLM API request failed: {exc}") from exc
 
         if response.status_code == 200:
             data = response.json()
@@ -134,11 +134,11 @@ def chat_completion(
                 f"  HTTP {response.status_code} (attempt {attempt + 1}), retrying in {delay:.0f}s"
             )
             time.sleep(delay)
-            last_exc = RuntimeError(f"DeepSeek API returned {response.status_code}")
+            last_exc = RuntimeError(f"LLM API returned {response.status_code}")
             continue
 
         raise RuntimeError(
-            f"DeepSeek API returned {response.status_code}: {response.text[:300]}"
+            f"LLM API returned {response.status_code}: {response.text[:300]}"
         )
 
     raise last_exc or RuntimeError("All retries exhausted")
@@ -264,15 +264,15 @@ def check_truncated(summary: str) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Re-translate all paper summaries with DeepSeek"
+        description="Re-translate all paper summaries with the configured LLM"
     )
     parser.add_argument(
         "--out", required=True, type=Path, help="Output directory (e.g., public)"
     )
     parser.add_argument(
         "--api-key",
-        default=os.environ.get("DEEPSEEK_API_KEY", ""),
-        help="DeepSeek API key (or set DEEPSEEK_API_KEY env var)",
+        default=os.environ.get("LLM_API_KEY", ""),
+        help="LLM API key (or set LLM_API_KEY env var)",
     )
     parser.add_argument(
         "--date-from",
@@ -289,8 +289,8 @@ def main() -> None:
     parser.add_argument(
         "--model",
         type=str,
-        default=DEEPSEEK_MODEL,
-        help=f"DeepSeek model (default: {DEEPSEEK_MODEL})",
+        default=LLM_MODEL,
+        help=f"LLM model (default: {LLM_MODEL})",
     )
     parser.add_argument(
         "--dry-run",
@@ -300,7 +300,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if not args.api_key:
-        print("Error: DEEPSEEK_API_KEY not set. Use --api-key or set env var.")
+        print("Error: LLM_API_KEY not set. Use --api-key or set env var.")
         sys.exit(1)
 
     api_day_dir = args.out / "api" / "day"
@@ -395,7 +395,7 @@ def main() -> None:
                     "story_id": sid,
                     "title_zh": entry["title_zh"],
                     "summary_zh": entry["summary_zh"],
-                    "prompt_version": "deepseek-retranslate-v1",
+                    "prompt_version": "retranslate-v2",
                 }
                 if check_truncated(entry["summary_zh"]):
                     print(f"{indent}  WARNING: {sid} summary may still be truncated!")

@@ -1,4 +1,4 @@
-"""DeepSeek prompt for Traditional Chinese full-paper guides."""
+"""LLM prompt for Traditional Chinese full-paper guides."""
 
 from __future__ import annotations
 
