@@ -280615,6 +280615,572 @@
       },
       "prompt_version": "sha256:2bf0691ed94bd38d",
       "model": "deepseek-v4-flash"
+    },
+    "fallback:654210f64b350c75": {
+      "score": 0.07250000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.05,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is an abstract-only article about an AI avatar live streaming system that generates speech to fill silence. It mentions AI and live streaming but lacks language-model methodology, detailed technical content, experiments, or evaluation. Topics like LLM, Japanese NLP, or agents are not substantiated. It is a domain application (streaming) with no research quality evidence, thus low relevance and rigor.",
+      "topics": [
+        "AI avatar",
+        "live streaming",
+        "speech generation"
+      ],
+      "evidence": [
+        "Abstract mentions AI avatar live streaming, silence filling, and response speed but no technical details or results."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2168,
+        "completion_tokens": 200,
+        "total_tokens": 2368,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 376
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:cc81f7605f62c547": {
+      "score": 0.025,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The document appears to be a non-technical business commentary discussing IT industry and salary bubbles, with no relevance to AI/ML research topics. It lacks methodological rigor, evidence, and reproducibility. The abstract shows no technical content or alignment with any listed preference categories.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2191,
+        "completion_tokens": 184,
+        "total_tokens": 2375,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 399
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b868c75daee80828": {
+      "score": 0.05500000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "The abstract only mentions proprietary model names and cryptographic inference in an unverifiable, non-technical way; no methodology, evaluation, or alignment with stated preferences. Minimal relevance to language modeling or safety beyond passing mention, and no evidence for quality.",
+      "topics": [
+        "AI Safety"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2137,
+        "completion_tokens": 140,
+        "total_tokens": 2277,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 345
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:0d8f8901e605d221": {
+      "score": 0.04000000000000001,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Content is a non-technical book recommendation list, not a research paper. Mentions LLM and RAG but lacks methodological contribution, evidence, or quantitative results. Out of scope for AI research evaluation.",
+      "topics": [
+        "LLM",
+        "RAG"
+      ],
+      "evidence": [
+        "Abstract mentions 'LLMを使ったプロダクト開発', 'RAGパイプライン' but no technical details or experiments"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2144,
+        "completion_tokens": 163,
+        "total_tokens": 2307,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 352
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:aaedc14c5da6ae8b": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only; content is a narrative about debugging with LLM, minimal technical substance. Low relevance to core AI/ML research, no quantitative results or methods.",
+      "topics": [
+        "LLM debugging",
+        "LLM"
+      ],
+      "evidence": [
+        "Title mentions LLM and debugging; abstract-only status"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2158,
+        "completion_tokens": 144,
+        "total_tokens": 2302,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 366
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:6f8cf145835b0ed3": {
+      "score": 0.10500000000000001,
+      "components": {
+        "preference_relevance": 0.2,
+        "novelty": 0.1,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only narrative about using Mermaid to communicate process flows to LLMs; lacks technical detail, methods, or results, and is out of scope as a short story. Low relevance and no verifiable evidence.",
+      "topics": [
+        "LLM",
+        "workflow",
+        "Mermaid"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2151,
+        "completion_tokens": 144,
+        "total_tokens": 2295,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 359
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:ab0ff21e50a998b9": {
+      "score": 0.21999999999999997,
+      "components": {
+        "preference_relevance": 0.35,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only vendor blog on using Amazon Quick and fal via MCP for creative workflows. Moderate relevance due to agentic workflows and tool use, but lacks scientific content, novelty, and evidence.",
+      "topics": [
+        "agent",
+        "tool use",
+        "workflow automation",
+        "MCP"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2122,
+        "completion_tokens": 186,
+        "total_tokens": 2308,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 330
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:b80e50cdf33ee8c1": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract only, no methodology or technical content; pure deployment announcement, not research.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2118,
+        "completion_tokens": 107,
+        "total_tokens": 2225,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 326
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:d58675e23bba8658": {
+      "score": 0.08000000000000002,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Out of scope: speech AI product announcement with no language model or NLP methodology. Low relevance to core interests, minimal technical detail, no evidence of novel contribution or rigorous evaluation.",
+      "topics": [
+        "speech",
+        "observability",
+        "cloud"
+      ],
+      "evidence": [
+        "Abstract mentions self-hosted speech AI and observability metrics but lacks technical details, experiments, or validation."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2119,
+        "completion_tokens": 195,
+        "total_tokens": 2314,
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 71
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:cbd0f99d0cebefa3": {
+      "score": 0.115,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.2,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper focuses on ASR inference cost reduction using NVIDIA MPS, which is an application of GPU optimization to speech AI. It lacks language model methodology and is primarily an infrastructure/performance engineering work. The abstract provides limited details, so novelty and rigor are low. Generalizability is moderate as the technique could apply to other GPU workloads, but the paper is out of scope for LLM/NLP research.",
+      "topics": [
+        "ASR",
+        "Inference",
+        "GPU"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2138,
+        "completion_tokens": 222,
+        "total_tokens": 2360,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 346
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:62fe011250087ad1": {
+      "score": 0.0775,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.05
+      },
+      "confidence": 1.0,
+      "rationale": "Paper is a marketing graphic about travel features in AI Mode, not a research paper. No technical content, methods, or evaluation. Out of scope for AI/ML research. Minimal relevance to preferences.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2068,
+        "completion_tokens": 170,
+        "total_tokens": 2238,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 276
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:c0fbcb39685eb8f3": {
+      "score": 0.1,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.1,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Practical blog-style writeup on speculative decoding in an enterprise deployment, touching on inference/serving and efficiency. No formal methodology, no experimental results, and only an abstract available. Marginal relevance due to inference optimization and LLM deployment context.",
+      "topics": [
+        "Speculative Decoding",
+        "Inference Optimization",
+        "LLM Deployment"
+      ],
+      "evidence": [
+        "Abstract mentions 25 tok/s bottleneck and DGX Spark hosting; no quantitative evaluation details in available content."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2243,
+        "completion_tokens": 218,
+        "total_tokens": 2461,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 451
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:be9936c046c8d3fa": {
+      "score": 0.135,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.3,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only vendor blog post discussing a minimal AI coding agent 'Pi'. Touches on agents and code but lacks technical depth, evaluation, or methodology. Out-of-scope as pure product commentary with no scientific claims or experimental validation. Minimal relevance to research priorities.",
+      "topics": [
+        "AI agent",
+        "coding agent",
+        "LLM tool use"
+      ],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2254,
+        "completion_tokens": 156,
+        "total_tokens": 2410,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 462
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:a87651d686d417f4": {
+      "score": 0.0,
+      "components": {
+        "preference_relevance": 0.0,
+        "novelty": 0.0,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.0,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only content, no methodology or results; cannot assess relevance or quality. Title mentions AI evaluations but not specifically LLM, NLP, or related topics; no substantive claims to rate. Out of scope due to lack of detail.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2068,
+        "completion_tokens": 137,
+        "total_tokens": 2205,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 276
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:76ae27d8e9bbc7ce": {
+      "score": 0.16,
+      "components": {
+        "preference_relevance": 0.3,
+        "novelty": 0.2,
+        "rigor": 0.0,
+        "evidence_strength": 0.0,
+        "generalizability": 0.1,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Abstract-only blog-style post about using a custom LLM judge for article writing, lacking research methodology, quantitative evaluation, or generalizable insights. Topics include LLM judge and evaluation, but relevance is limited to practical anecdote without rigorous experimentation.",
+      "topics": [
+        "LLM judge",
+        "evaluation",
+        "prompt engineering"
+      ],
+      "evidence": [
+        "No formal sections; abstract mentions KPI improvement and judge tuning but no detailed results or baselines."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2243,
+        "completion_tokens": 170,
+        "total_tokens": 2413,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 451
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:d7a19ac667311c62": {
+      "score": 0.115,
+      "components": {
+        "preference_relevance": 0.1,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.1,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "Title and abstract are in Japanese but focus on fluid dynamics and vortex tubes, with only a passing reference to LLMs in the abstract. No specific methods, results, or evidence are provided. Unclear connection to target topics; lacks rigor and reproducibility.",
+      "topics": [],
+      "evidence": [],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2284,
+        "completion_tokens": 179,
+        "total_tokens": 2463,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 492
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:a7a1316738f2ec99": {
+      "score": 0.10500000000000001,
+      "components": {
+        "preference_relevance": 0.05,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper is a brief anecdotal blog post about using CLAUDE.md with progressive disclosure, lacking any formal methodology, quantitative results, or rigorous evaluation. It touches on LLM usage (Claude) and prompting context management, but no scientific evidence or reproducibility. Relevance to core preferences is marginal; mostly out of scope.",
+      "topics": [
+        "LLM",
+        "prompting",
+        "context management"
+      ],
+      "evidence": [
+        "Abstract only; no measurable outcomes or statistical validation."
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2248,
+        "completion_tokens": 217,
+        "total_tokens": 2465,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 456
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:9edadcaffd020839": {
+      "score": 0.24000000000000005,
+      "components": {
+        "preference_relevance": 0.4,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.0
+      },
+      "confidence": 1.0,
+      "rationale": "Blog post about AI coding tools increasing PR discussion volume. Mentions code generation but no LLM methodology, no technical details, no experiments. Out of scope for pure coding without language methodology, weak evidence.",
+      "topics": [
+        "code generation",
+        "software engineering",
+        "discussion"
+      ],
+      "evidence": [
+        "abstract_only: mentions 30k+ PRs from two OSS projects, monthly PR count ~20x"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2348,
+        "completion_tokens": 162,
+        "total_tokens": 2510,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 556
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
+    },
+    "fallback:e0f38cef1888b0c3": {
+      "score": 0.22499999999999998,
+      "components": {
+        "preference_relevance": 0.35,
+        "novelty": 0.2,
+        "rigor": 0.1,
+        "evidence_strength": 0.1,
+        "generalizability": 0.2,
+        "reproducibility": 0.1
+      },
+      "confidence": 1.0,
+      "rationale": "The paper compares two LLMs (GLM-5.3-Flash and DeepSeek V4 Flash) for HTML/SVG animation generation, touching on LLM behavior and code generation. However, it is an abstract-only subjective blog-style report lacking systematic methodology, quantitative results, and reproducibility. Limited relevance to core LLM research; mostly anecdotal.",
+      "topics": [
+        "LLM",
+        "code generation",
+        "benchmark comparison"
+      ],
+      "evidence": [
+        "Title and abstract mention GLM-5.3-Flash and DeepSeek V4 Flash",
+        "Abstract section describes informal comparison of HTML/SVG animation tasks"
+      ],
+      "fulltext_status": "abstract_only",
+      "fulltext_sha256": "",
+      "token_usage": {
+        "prompt_tokens": 2265,
+        "completion_tokens": 249,
+        "total_tokens": 2514,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 473
+      },
+      "prompt_version": "sha256:2bf0691ed94bd38d",
+      "model": "deepseek-v4-flash"
     }
   }
 }
