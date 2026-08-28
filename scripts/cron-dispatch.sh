@@ -8,7 +8,10 @@ UTC_TIME="$(date -u +%H%M)"
 UTC_WEEKDAY="$(date -u +%u)"
 UTC_DAY="$(date -u +%d)"
 
-if test "${UTC_TIME}" = "0000"; then
+# 02:00 UTC keeps the daily run clear of arXiv's 00:00 UTC announcement
+# window, where batch submittedDate queries reliably return 429 or empty
+# feeds regardless of per-IP rate limiting.
+if test "${UTC_TIME}" = "0200"; then
   exec "${RUNNER}" daily
 fi
 if test "${UTC_TIME}" = "0030" && test "${UTC_WEEKDAY}" = "1"; then
