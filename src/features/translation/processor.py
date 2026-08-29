@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import structlog
@@ -31,6 +32,22 @@ logger = structlog.get_logger()
 DEFAULT_BATCH_SIZE = 1
 BATCH_SIZE = DEFAULT_BATCH_SIZE
 MAX_BATCH_SIZE = 16
+DEFAULT_CONCURRENCY = 1
+MAX_CONCURRENCY = 64
+
+
+def _resolve_concurrency() -> int:
+    """Resolve translation batch concurrency from environment."""
+    raw = os.getenv("LLM_TRANSLATION_CONCURRENCY")
+    if not raw:
+        return DEFAULT_CONCURRENCY
+    try:
+        value = int(raw)
+    except ValueError:
+        return DEFAULT_CONCURRENCY
+    return max(1, min(value, MAX_CONCURRENCY))
+
+
 _MAX_BATCH_RETRIES = 1
 _MAX_SINGLE_RETRIES = 2
 _MAX_RAW_RESPONSE_LOG_LEN = 300
@@ -122,15 +139,37 @@ class TranslationProcessor:
 
         if uncached:
             batch_size = _resolve_batch_size()
+            concurrency = _resolve_concurrency()
             self._log.info(
                 "translation_batching",
                 batch_size=batch_size,
                 batches=(len(uncached) + batch_size - 1) // batch_size,
+                concurrency=concurrency,
             )
             batches = _create_batches(uncached, batch_size)
-            for batch_idx, batch in enumerate(batches):
-                self._process_batch(batch, batch_idx)
-                self._cache.save()
+            if concurrency <= 1 or len(batches) <= 1:
+                for batch_idx, batch in enumerate(batches):
+                    self._process_batch(batch, batch_idx)
+                    self._cache.save()
+            else:
+                with ThreadPoolExecutor(max_workers=concurrency) as executor:
+                    futures = {
+                        executor.submit(
+                            self._process_batch, batch, batch_idx
+                        ): batch_idx
+                        for batch_idx, batch in enumerate(batches)
+                    }
+                    for future in as_completed(futures):
+                        batch_idx = futures[future]
+                        try:
+                            future.result()
+                        except Exception as exc:  # noqa: BLE001
+                            self._log.warning(
+                                "translation_batch_unexpected_error",
+                                batch=batch_idx,
+                                error=str(exc),
+                            )
+                        self._cache.save()
 
             self._cache.save()
 
