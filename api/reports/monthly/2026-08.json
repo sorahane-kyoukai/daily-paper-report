@@ -1,5 +1,5 @@
 {
-  "blog_items_considered": 202,
+  "blog_items_considered": 244,
   "blog_recommendations": [
     {
       "arxiv_id": null,
@@ -193,6 +193,98 @@
     {
       "arxiv_id": null,
       "authors": [
+        "Currently Learning そんけいご"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-29T09:36:38.249333+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "ERPO: 安定性と探索のジレンマを入力側正則化で打破",
+          "url": "https://zenn.dev/lixian/articles/erpo-environment-regularized-policy-optimization"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.3,
+          "generalizability": 0.55,
+          "novelty": 0.65,
+          "preference_relevance": 0.88,
+          "reproducibility": 0.2,
+          "rigor": 0.35
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "TL;DR: 'LLMのポリシー最適化（GRPO/PPO等）は、Policy-KL正則化という「応答側」の制約で安定性と探索のトレードオフを制御してきた' — method targets KL regularization placement in LLM policy optimization.",
+          "TL;DR: 'Query-KL（QKL）項でポリシーが誘導するクエリ分布のドリフトを拘束しつつ、応答分布への直接的な勾配圧力はゼロ' — core mechanism is input-side regularization.",
+          "TL;DR: 'Qwen2.5-Math-7Bで6ベンチマーク平均+6.2%' — sole quantitative result visible; single model, single aggregate metric.",
+          "Content status: abstract_only — no methodology, baselines, ablations, limitations, or code-availability sections are available for verification."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "High preference match: this is a core LLM post-training/RLHF-methods paper (GRPO/PPO KL-regularization redesign), directly relevant to Alignment & RLHF, Training & Optimization, and math-reasoning evaluation. The core idea—shifting KL regularization from the response side to the query side (Query-KL) to decouple stability from exploration—is a plausible and reasonably novel twist on policy-KL orthodoxy, though the abstract-only content prevents confirming distinctiveness from prior prompt/query-regularization work. Rigor and evidence are weakly verifiable: only one model (Qwen2.5-Math-7B), one aggregate number (+6.2% mean over 6 benchmarks), no visible baselines, ablations, limitations, or code/hyperparameter claims; the TL;DR's 'EMNLP 2026 acceptance' is an unverifiable prestige claim and is not credited. Generalizability is moderate in principle (any policy-optimization stack could adopt input-side KL) but demonstrated on a single 7B math model. Overall a promising but under-evidenced contribution.",
+        "score": 0.6120000000000001,
+        "token_usage": {
+          "completion_tokens": 1675,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 426,
+          "prompt_tokens": 2346,
+          "total_tokens": 4021
+        },
+        "topics": [
+          "Alignment & RLHF",
+          "Training & Optimization",
+          "Reinforcement Learning",
+          "Large Language Models",
+          "Reasoning & Chain-of-Thought"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "ERPO: 安定性と探索のジレンマを入力側正則化で打破",
+        "url": "https://zenn.dev/lixian/articles/erpo-environment-regularized-policy-optimization"
+      },
+      "published_at": "2026-08-28T17:05:22+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 3,
+      "report_score": 22.118544,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.6120000000000001,
+        "llm_relevance_score": 17.136000000000003,
+        "recency_score": 0.9325436867002456,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 2.25,
+        "total_score": 22.11854368670025
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:25910654deec3247",
+      "summary": "TL;DR\nLLMのポリシー最適化（GRPO/PPO等）は、Policy-KL正則化という「応答側」の制約で安定性と探索のトレードオフを制御してきた。残念ながら、残すと探索が阻害され、外すとドリフト制御がなくなるというジレンマに陥る。AlibabaのZhouらがEMNLP 2026に採択された論文「ERPO」は、正則化を入力（クエリ）側に移すことでこのジレンマを打破する。Query-KL（QKL）項でポリシーが誘導するクエリ分布のドリフトを拘束しつつ、応答分布への直接的な勾配圧力はゼロ――探索を犠牲にせずに安定性を獲得する。Qwen2.5-Math-7Bで6ベンチマーク平均+6.2%...",
+      "summary_zh": "大型語言模型的策略最佳化方法（如 GRPO、PPO）長期依賴作用於「回應端」的 Policy-KL 正規化來控制穩定性與探索之間的取捨，但這帶來兩難：保留該項會抑制模型對回應的探索，移除則失去對策略漂移的控制。Zhou 等人（阿里巴巴）提出的 ERPO 主張將正規化移至輸入（查詢）端：以 Query-KL（QKL）項約束策略所誘導之查詢分布的漂移，同時對回應分布不施加直接的梯度壓力，從而在不犧牲探索的前提下取得穩定性。其宣稱的主要證據是在 Qwen2.5-Math-7B 上，六項基準平均提升 6.2%。需要留意的是，本篇目前僅提供 TL;DR 摘要，尚無法確認其完整實驗設定、消融分析與基線比較等細節，宣稱獲 EMNLP 2026 錄取一事亦應以官方議程為準，結論宜待全文與可重現結果公布後再行判斷。此研究的意義在於點出 KL 正規化的施加位置本身就是一項關鍵的設計自由度，若經全文驗證屬實，將對 RLHF 與強化學習後訓練（post-training）的方法設計帶來實質啟發。",
+      "title": "ERPO: 安定性と探索のジレンマを入力側正則化で打破",
+      "title_zh": "ERPO：以輸入端正規化打破穩定性與探索的兩難"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
         "Eric Hanson"
       ],
       "categories": [
@@ -254,7 +346,7 @@
       },
       "published_at": "2026-08-05T09:50:02+00:00",
       "published_local_date": "2026-08-05",
-      "report_rank": 3,
+      "report_rank": 4,
       "report_score": 21.378689,
       "report_source_date": "2026-08-05",
       "report_source_section": "top5",
@@ -278,6 +370,193 @@
       "summary_zh": "本文探討 LendingTree 於 Amazon Bedrock 平台上開發並實際部署多代理（multi-agent）房貸助理的案例。其核心問題在於如何在符合金融服務嚴格合規要求下，提供全年無休的個人化房貸諮詢。作者採用三個協調的代理（agent），分別運用 LangGraph、Model Context Protocol（MCP）與 Amazon Nova 模型，並內建 guardrails（防護機制）以確保輸出穩健。主要成果是展示此架構能有效整合不同代理職責，達成 24/7 服務且符合監管標準。文獻僅有摘要，未提供量化效能數據或使用者研究，亦未深入探討延遲、成本或失敗情境，然其對多代理系統在受監管產業的落地具參考價值，凸顯選用具 guardrails 之模型與標準通訊協定的重要性。此案例對金融科技與 AI 整合應用深具啟發。",
       "title": "How LendingTree built a multi-agent mortgage assistant on Amazon Bedrock",
       "title_zh": "LendingTree 如何在 Amazon Bedrock 上建置多代理房貸助理"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "毎日AIレシピ"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-29T09:36:38.256751+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude「Record a Skill」を programming by demonstration として読む",
+          "url": "https://zenn.dev/every_ai_recipe/articles/ai-record-skill-screen-recording"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.35,
+          "preference_relevance": 0.72,
+          "reproducibility": 0.1,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "TL;DR: 'Anthropicは2026年7月21日、Claude Cowork（デスクトップアプリ）に「Record a skill」を追加した…プロンプトやスキル定義ファイルを書かずにデモンストレーションだけで手順を教えられる' — confirms agent skill acquisition via demonstration on an LLM product, driving high preference relevance.",
+          "Content status: abstract_only — no methods, experiments, baselines, ablations, or quantitative results are present anywhere in the document to verify research quality.",
+          "TL;DR: 'programming by demonstration（PBD）の枠組みに、音声ナレーションという明示的な意図チャネルを足した実装として読める' — purely conceptual/analytical claim connecting a product feature to HCI literature; no empirical validation is offered.",
+          "TL;DR: 'クリック・キー入力だけでは「なぜその操作をしたか」が失われるため…' — motivation for the narration channel is asserted but no study, metric, or comparison supports it; text truncates mid-argument."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topically well-aligned with the Agents & Tool Use and LLM preferences: the TL;DR describes Claude (an LLM agent product) gaining a 'Record a skill' feature that turns screen-plus-voice demonstrations into reusable agent skills, touching computer use, workflow automation, and implicit prompt/skill-definition generation. However, the document is an abstract-only commentary (a conceptual reading via HCI's programming-by-demonstration), not a research paper: there is no method, baseline, ablation, user study, or quantitative result to assess. The claimed insight (voice narration recovers the intent lost by click/keystroke-only demonstration) is plausible but unsupported by any reported evaluation, so novelty is limited to framing and evidence strength is minimal. Nothing is reproducible from the text. In scope (LLM-agent methodology focus), but research quality is very low.",
+        "score": 0.438,
+        "token_usage": {
+          "completion_tokens": 2662,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 380,
+          "prompt_tokens": 2300,
+          "total_tokens": 4962
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "Large Language Models",
+          "Prompting & In-Context Learning",
+          "Computer Use / Programming by Demonstration"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude「Record a Skill」を programming by demonstration として読む",
+        "url": "https://zenn.dev/every_ai_recipe/articles/ai-record-skill-screen-recording"
+      },
+      "published_at": "2026-08-28T12:08:57+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 5,
+      "report_score": 20.977544,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.438,
+        "llm_relevance_score": 12.264,
+        "recency_score": 0.9135439704350341,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 20.977543970435033
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:0aa3757e218e1fbf",
+      "summary": "TL;DR\n\nAnthropicは2026年7月21日、Claude Cowork（デスクトップアプリ）に「Record a skill」を追加した。画面録画＋音声ナレーションから、繰り返し呼び出せる「スキル」を生成する機能で、プロンプトやスキル定義ファイルを書かずにデモンストレーションだけで手順を教えられる\nこれはHCI分野で古くから研究されてきた programming by demonstration（PBD）の枠組みに、音声ナレーションという明示的な意図チャネルを足した実装として読める。クリック・キー入力だけでは「なぜその操作をしたか」が失われるため、ナレーションがその欠落を...",
+      "summary_zh": "Anthropic 於 2026 年 7 月 21 日在桌面應用程式 Claude Cowork 推出「Record a skill」功能：使用者以螢幕錄影搭配語音旁白示範一次操作流程，系統即自動產生可重複呼叫的 skill，不必手寫 prompt 或 skill 定義檔。作者將此功能置於 HCI 領域長期研究的 programming by demonstration（PBD）傳統中解讀：PBD 的核心難題在於只記錄點擊與按鍵等低層動作時，「為何如此操作」的意圖會流失，歸納出的程式因而難以泛化；語音旁白正好提供一條明確表達意圖的通道，補上動作記錄的缺口。就摘要所揭露的內容而言，本文屬分析評論性質，證據以功能描述與概念分析為主，並未提供生成 skill 品質、穩健性、錯誤處理或隱私面的系統性評估，這些皆屬限制與待驗證之處。其意義在於指出：LLM agent 時代的「示範即程式」介面可視為數十年 PBD 研究的延續，而語音意圖通道的設計也呼應了 PBD 文獻對意圖溝通的重視，對互動設計與 agent 工具鏈的研究者皆具參考價值。",
+      "title": "Claude「Record a Skill」を programming by demonstration として読む",
+      "title_zh": "從 programming by demonstration 觀點解讀 Claude「Record a Skill」"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "megu"
+      ],
+      "categories": [],
+      "entities": [
+        "anthropic"
+      ],
+      "first_seen_at": "2026-08-29T09:36:38.254285+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "Claude Codeのトークン消費、92〜97%は「文脈の再読」だった——読み取り専用DeepSeekワーカーを作って実測99%削減した",
+          "url": "https://zenn.dev/megu0xxx0x/articles/5d7c11d406fa2c"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.3,
+          "novelty": 0.45,
+          "preference_relevance": 0.62,
+          "reproducibility": 0.25,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "TL;DR: transcript (~/.claude/projects/**/*.l) usage analysis reports 92-97% of cost from cache read/write (= per-turn context re-reading), thinking tokens 0.4%",
+          "TL;DR: multi-agent configuration attributes 88-93% of cost to 'read and gather' subagents on frontier models",
+          "TL;DR: read-only autonomous DeepSeek worker implemented as MCP server (glob/grep/read_file/web_search/web_fetch loop, returns only compressed reports) with claimed measured 99% reduction",
+          "Content status: abstract_only — no methodology section, baselines, ablations, limitations, or availability claims present to verify"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "An engineering report on LLM agent cost: decomposes Claude Code transcript token usage (92-97% of cost from cache read/write, 0.4% thinking tokens) and proposes a read-only DeepSeek worker served via MCP that loops over glob/grep/read_file/web_search/web_fetch and returns compressed reports, claiming a 99% cost reduction. It is topically aligned with Agents & Tool Use (MCP, multi-agent delegation, agent productization) and inference/efficiency, but is abstract-only and anecdotal: single-user transcript statistics, no baseline comparison beyond the Claude Code default, no ablations, no error/quality analysis of the compressed reports, and no code or data availability stated. The headline 99% figure is unverified.",
+        "score": 0.418,
+        "token_usage": {
+          "completion_tokens": 2293,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 391,
+          "prompt_tokens": 2311,
+          "total_tokens": 4604
+        },
+        "topics": [
+          "agents & MCP tool orchestration",
+          "multi-agent cost optimization",
+          "LLM inference cost & caching",
+          "cheap-model delegation",
+          "agent productization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "Claude Codeのトークン消費、92〜97%は「文脈の再読」だった——読み取り専用DeepSeekワーカーを作って実測99%削減した",
+        "url": "https://zenn.dev/megu0xxx0x/articles/5d7c11d406fa2c"
+      },
+      "published_at": "2026-08-28T16:25:37+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 6,
+      "report_score": 20.433973,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.418,
+        "llm_relevance_score": 11.703999999999999,
+        "recency_score": 0.9299730272430355,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 20.433973027243034
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:01236e732f7ed7e1",
+      "summary": "TL;DR\n\nClaude Code の transcript（~/.claude/projects/**/*.jsonl）の usage を全集計したら、費用の 92〜97%がキャッシュ読み書き（＝毎ターンの文脈再読）、思考トークンは0.4%だった\nマルチエージェント構成では費用の88〜93%が「読んで集める」サブエージェント。フロンティアモデルに読ませるのが最大の無駄\n対策として、読み取り専用の自律 DeepSeek ワーカーを MCP サーバとして実装（glob/grep/read_file/web_search/web_fetch を自前ループで回し、圧縮レポートだけ返す）\n...",
+      "summary_zh": "本研究針對 Claude Code 的 token 消耗結構進行實測分析。作者彙整 ~/.claude/projects/**/*.l 轉錄紀錄中的 usage 資料,發現約 92〜97% 的費用來自快取讀寫,亦即模型在每一輪都重複重讀整個上下文;而思考(thinking)token 僅佔 0.4%。在多代理(multi-agent)架構下,問題更為明顯:88〜93% 的成本落在負責「閱讀與蒐集」的子代理(subagent),讓前沿模型親自掃讀大量檔案被視為最大的浪費來源。對此,作者提出的對策是以 MCP 伺服器形式實作一個唯讀的自主 DeepSeek worker:該 worker 在自身迴圈中執行 glob、grep、read_file、web_search、web_fetch 等工具完成檢索,最後僅回傳壓縮後的摘要報告,使昂貴的前沿模型只需接收精煉結論,而不必反覆載入原始上下文。據標題所述,此做法實測可將 token 消耗削減達 99%。需注意本篇僅有摘要,完整的實驗設計、對照基準、報告品質評估,以及在不同程式碼庫規模與任務型態下的通用性均未揭露;其數字亦主要來自作者自身的使用紀錄,外推時應保守。此研究的價值在於點出 AI 編碼代理的成本大頭往往不是推理或思考本身,而是上下文重讀與委派閱讀,為代理系統的成本最佳化指出明確方向:以廉價模型處理機械式檢索,將昂貴模型留給決策與綜合判斷。",
+      "title": "Claude Codeのトークン消費、92〜97%は「文脈の再読」だった——読み取り専用DeepSeekワーカーを作って実測99%削減した",
+      "title_zh": "Claude Code 的 token 消耗有 92〜97% 是「重讀上下文」——打造唯讀 DeepSeek Worker,實測削減 99%"
     },
     {
       "arxiv_id": null,
@@ -339,7 +618,7 @@
       },
       "published_at": "2026-08-01T01:00:00+00:00",
       "published_local_date": "2026-08-01",
-      "report_rank": 4,
+      "report_rank": 7,
       "report_score": 20.355183,
       "report_source_date": "2026-08-01",
       "report_source_section": "top5",
@@ -426,7 +705,7 @@
       },
       "published_at": "2026-08-07T02:15:23+00:00",
       "published_local_date": "2026-08-07",
-      "report_rank": 5,
+      "report_rank": 8,
       "report_score": 20.159775,
       "report_source_date": "2026-08-07",
       "report_source_section": "top5",
@@ -450,6 +729,100 @@
       "summary_zh": "本文作者基於數個月使用Claude Code平行執行子代理的實務經驗，分享多代理系統的常見失敗模式。最大規模的失敗案例為同時啟用75個代理平行運作，消耗了5.25M Token，最終因觸發429速率限制與額度超用而中止。文章針對此類問題歸納出五種失敗類型，例如未估算平行擴展的原始成本、過度設計代理互動、缺乏資源控管機制等，並提供實際量測數據與因應策略。作者強調此整理對即將擴大代理規模的團隊特別有幫助，因為多代理系統的複雜度與成本往往在初期被低估。文中雖未提供嚴謹的實驗設計，但以第一手經驗補充了英語社群既有討論的不足，點出在擴展平行代理前應先建立成本監控、速率限制預警與任務分派最佳化機制的必要性。對於採用大型語言模型驅動代理與自動化流程的開發者而言，此文提供了寶貴的實務指引，可避免重蹈資源耗盡與系統失效的覆轍。",
       "title": "75体の並列エージェントで5.25Mトークンを溶かした——マルチエージェント運用の失敗5類型",
       "title_zh": "75個平行代理消耗5.25M Token——多代理系統的五種失敗模式"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "スーパータロウの研究室"
+      ],
+      "categories": [],
+      "entities": [
+        "deepseek"
+      ],
+      "first_seen_at": "2026-08-29T09:36:38.258782+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "DGX Spark 2台環境に DeepSeek-V4-Flash-0731 構築",
+          "url": "https://zenn.dev/supertaro/articles/98e4d893607861"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.12,
+          "generalizability": 0.3,
+          "novelty": 0.2,
+          "preference_relevance": 0.72,
+          "reproducibility": 0.4,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract/構成の概要: vLLM launched with TP=2 / nnodes=2 across two machines, DSpark speculative decoding (k=5), nvfp4_ds_mla KV cache, context limit 1,048,576",
+          "abstract/node table: Master (head, NODE_RANK=0) at 192.168.100.101 and Worker (NODE_RANK=1, HEADLESS) at 192.168.100.102",
+          "abstract: references GitHub repository MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark; no benchmark numbers, baselines, ablations, or evaluation sections appear in the available text (content status: abstract_only)"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A deployment/configuration note (abstract-only) for serving DeepSeek-V4-Flash on a 2-node DGX Spark cluster via vLLM (TP=2, nnodes=2) with speculative decoding, fp4-format KV cache, and 1M-token context. Topic overlap with high-weight preferences is genuine: LLM (DeepSeek), Inference & Serving (vLLM, speculative decoding, KV cache), Long Context (1,048,576 limit), Scaling & Efficiency (nvfp4 quantization), and local/edge LLM deployment. However, research quality is minimal: no problem statement, no baselines, no ablations, no measured throughput/latency/accuracy results, and no limitations discussion are present in the available text; it is essentially a setup recipe applying existing tooling to new hardware. The GitHub repository reference, node roles/IPs, and explicit parallelism/decoding parameters give partial reproducibility, but claims (including the model build '0731') cannot be verified from the abstract-only content.",
+        "score": 0.40099999999999997,
+        "token_usage": {
+          "completion_tokens": 2869,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 356,
+          "prompt_tokens": 2276,
+          "total_tokens": 5145
+        },
+        "topics": [
+          "LLM inference serving",
+          "multi-node vLLM tensor parallelism",
+          "speculative decoding",
+          "long context (1M tokens)",
+          "quantized KV cache",
+          "local LLM deployment on DGX Spark"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "DGX Spark 2台環境に DeepSeek-V4-Flash-0731 構築",
+        "url": "https://zenn.dev/supertaro/articles/98e4d893607861"
+      },
+      "published_at": "2026-08-28T10:13:05+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 9,
+      "report_score": 19.934223,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.40099999999999997,
+        "llm_relevance_score": 11.228,
+        "recency_score": 0.9062228185472101,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.934222818547212
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:cfd05caf427dd9e4",
+      "summary": "Githubリポジトリ\nMiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark\n\n\n\nノード\n役割\nIP\n\n\n\n\nMaster (head, NODE_RANK=0)\nAPI配信・全操作の起点\n192.168.100.101\n\n\nWorker (NODE_RANK=1, HEADLESS)\nTPランク1\n192.168.100.102\n\n\n\n構成の概要: vLLM を TP=2 / nnodes=2 で2台にまたがって起動し、DSpark 投機デコード (k=5)、nvfp4_ds_mla KVキャッシュ、コンテキスト上限 1,048,576 ...",
+      "summary_zh": "這份文件（僅含摘要）說明如何在兩台 DGX Spark 組成的雙機環境中，建置 DeepSeek-V4-Flash-0731 推論服務，完整步驟公開於 GitHub 儲存庫 MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark。跨機部署通常用於突破單機記憶體限制。整體架構採主從式設計：Master 節點（NODE_RANK=0，IP 192.168.100.101）負責 API 對外服務，並作為所有操作的起點；Worker 節點（NODE_RANK=1，HEADLESS 模式，IP 192.168.100.102）承擔 TP rank 1 的運算。核心方法是以 vLLM 跨兩台機器啟動推論，設定 TP=2 搭配 nnodes=2，將運算切分至兩機；同時啟用 DSpark 投機解碼（k=5）提升解碼效率，KV 快取採用 nvfp4_ds_mla 格式，從名稱看結合 FP4 量化與 MLA 注意力以壓低記憶體佔用；上下文長度上限設為 1,048,576 個 token。由於目前僅提供摘要，並未附上吞吐量、延遲或與單機部署比較的實測資料，實際效能與資源節省幅度仍須查閱原儲存庫確認。其價值在於示範以兩台緊湊型裝置，透過張量平行、投機解碼與 FP4 級 KV 快取，執行擁有百萬級上下文的大型模型，對想在有限硬體上自建推論服務的開發者具實務參考意義。",
+      "title": "DGX Spark 2台環境に DeepSeek-V4-Flash-0731 構築",
+      "title_zh": "於雙機 DGX Spark 環境建置 DeepSeek-V4-Flash-0731"
     },
     {
       "arxiv_id": null,
@@ -517,7 +890,7 @@
       },
       "published_at": "2026-08-09T14:02:25+00:00",
       "published_local_date": "2026-08-09",
-      "report_rank": 6,
+      "report_rank": 10,
       "report_score": 19.536841,
       "report_source_date": "2026-08-10",
       "report_source_section": "top5",
@@ -607,7 +980,7 @@
       },
       "published_at": "2026-08-28T03:04:21+00:00",
       "published_local_date": "2026-08-28",
-      "report_rank": 7,
+      "report_rank": 11,
       "report_score": 19.282874,
       "report_source_date": "2026-08-28",
       "report_source_section": "top5",
@@ -700,7 +1073,7 @@
       },
       "published_at": "2026-08-07T07:26:58+00:00",
       "published_local_date": "2026-08-07",
-      "report_rank": 8,
+      "report_rank": 12,
       "report_score": 19.170989,
       "report_source_date": "2026-08-08",
       "report_source_section": "top5",
@@ -724,6 +1097,98 @@
       "summary_zh": "本文介紹醫療科技公司 Cohere Health 如何利用 Amazon Bedrock 的 AgentCore 服務，將複雜的臨床政策（例如保險給付規則）數位化為可執行的自動化流程。其核心問題在於臨床政策通常以非結構化文件形式存在，需要大量人工解讀且更新頻繁，導致效率低落且容易出錯。為此，Cohere Health 建構了一套多租戶（multi-tenant）的代理型架構（agentic architecture）。該架構以 AgentCore Runtime 的安全 MicroVM 隔離技術為基礎，確保不同客戶的資料與運算環境相互獨立，兼顧隱私與安全性。同時，透過 AgentCore Gateway 提供統一的工具存取介面，讓代理（agent）能一致地呼叫外部系統與資料庫；AgentCore Memory 則負責長期儲存對話與決策紀錄，使代理能學習過去的決策脈絡。此外，該系統遵循 Agent Skills 開放標準，將政策解析能力模組化，方便擴充與維護。文中強調，此架構能在提升自動化程度的同時，保留完整的透明性、版本控制與人工審核機制，確保醫療決策的合規性。主要成果是大幅加快了政策數位化的速度，並降低了營運成本，但原文未提供具體量化數據。限制在於，該方案高度依賴 AWS 生態系，且 MicroVM 隔離可能影響跨租戶的效能，而 Agent Skills 標準的成熟度也會影響生態系的相容性。此案例對醫療保險、法規遵循及大型語言模型應用領域的從業者具有參考價值，展示了如何在受監管環境中用生成式 AI 實現可稽核且可控的自動化。",
       "title": "How Cohere Health digitizes clinical policies using Amazon Bedrock AgentCore",
       "title_zh": "如何使用 Amazon Bedrock AgentCore 將臨床政策數位化：Cohere Health 的實踐"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "のむらや"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-30T02:36:41.549405+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIエージェントのプロンプトインジェクション対策：検知突破を前提に権限と出力経路を絞る",
+          "url": "https://zenn.dev/nomurasan/articles/ai-agent-sns-prompt-injection-defense"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.15,
+          "generalizability": 0.4,
+          "novelty": 0.3,
+          "preference_relevance": 0.75,
+          "reproducibility": 0.2,
+          "rigor": 0.15
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status: abstract_only — no methods, experiments, results, or limitations sections are available to verify.",
+          "Abstract ('先に結論'): '件数は規模感を示す概数です' — incident counts are explicitly approximate, weakening quantitative evidence.",
+          "Abstract ('先に結論'): claims the most direct damage-reducing measure was not '検知精度を上げること' but restricting '権限と出力経路' assuming '攻撃が検査を突破する' — a design assertion with no controlled comparison or baseline reported.",
+          "Abstract: '本記事の実測・防御変更・結論の判断は著者本人が行っています' — a single-author self-report of a Moltbook agent incident, unverifiable and with self-classified '攻撃'/'安全' labels ('当時の判定器上の分類').",
+          "Abstract: '現行防御を再現できる実装条件は一般化しています' — reproducibility is asserted at a generalized level, but no code, artifacts, or concrete parameters are provided."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Practitioner incident report on prompt-injection defense for AI agents, squarely on-topic for Agents & Tool Use and AI Safety (agent misbehavior, prompt injection, permission/output-path restriction) and partially for Red Teaming. However, it is an abstract-only, single-author anecdote: the core claim (assume detection is bypassed; minimize agent permissions and output paths) restates defense-in-depth/least-privilege principles rather than introducing new methodology. No baselines, ablations, quantitative results, or systematic evaluation are verifiable; counts are self-declared approximate. Written in Japanese but not about Japanese LLMs/NLP, so that preference is not credited. Topic relevance is high; research quality is weak.",
+        "score": 0.44000000000000006,
+        "token_usage": {
+          "completion_tokens": 2611,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 417,
+          "prompt_tokens": 2337,
+          "total_tokens": 4948
+        },
+        "topics": [
+          "Agents & Tool Use",
+          "AI Safety",
+          "Red Teaming & Evaluation",
+          "Prompting & In-Context Learning"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIエージェントのプロンプトインジェクション対策：検知突破を前提に権限と出力経路を絞る",
+        "url": "https://zenn.dev/nomurasan/articles/ai-agent-sns-prompt-injection-defense"
+      },
+      "published_at": "2026-08-29T12:38:43+00:00",
+      "published_local_date": "2026-08-29",
+      "report_rank": 13,
+      "report_score": 19.062674,
+      "report_source_date": "2026-08-30",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.44000000000000006,
+        "llm_relevance_score": 12.320000000000002,
+        "recency_score": 0.9426741562011848,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 19.062674156201187
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:829ffbb3e94f1996",
+      "summary": "!\n本記事の実測・防御変更・結論の判断は著者本人が行っています。Moltbook上の自作AIエージェントで実際に起きた内部実装情報の露出と、その後の防御設計の変更をまとめた実録です。件数は規模感を示す概数です。本文中の「攻撃」「安全」は当時の判定器上の分類であり、投稿者の悪意を断定するものではありません。現行防御を再現できる実装条件は一般化しています。AIは文章整理・リライトに利用しました。\n\n\n 先に結論\n不特定多数の入力を読むAIエージェントで、設計上、被害上限を最も直接下げられたプロンプトインジェクション対策は、検知精度を上げることではなかった。\n攻撃が検査を突破する前提で、LLM...",
+      "summary_zh": "本文以實錄形式探討 AI Agent 的提示注入（prompt injection）防護。作者指出，對於會讀取不特定多數人輸入的 AI Agent，設計上最能直接降低受害上限的對策，並非提升偵測精度，而是假設攻擊終究會突破檢查機制，進而限縮 LLM 的權限與輸出路徑。文中記錄作者部署於 Moltbook 的自建 AI Agent 實際發生內部實作資訊外洩的事件，以及其後的防護設計變更。實測、防禦調整與結論皆由作者本人判斷；文中件數僅為呈現規模感的概略數字，「攻擊」「安全」等標記亦僅是當時判定器所產生的分類結果，不代表對投稿者惡意的斷定。作者另將現行防護可重現的實作條件予以一般化，方便讀者套用，並聲明曾以 AI 協助整理與改寫文字。本文限制在於屬單一自建案例的經驗分享，數字為概數、缺乏系統性評估，判定器分類本身可能有誤差，且現有內容僅為摘要，完整方法細節與量化結果無從確認。其價值在於提出由「偵測為中心」轉向「假設突破、最小化損害」的防護思維，對部署於公開環境、須處理不可信輸入的 Agent 系統設計深具參考意義。",
+      "title": "AIエージェントのプロンプトインジェクション対策：検知突破を前提に権限と出力経路を絞る",
+      "title_zh": "AI Agent 的提示注入（prompt injection）對策：以突破偵測為前提，限縮權限與輸出路徑"
     },
     {
       "arxiv_id": null,
@@ -787,7 +1252,7 @@
       },
       "published_at": "2026-08-09T05:43:13+00:00",
       "published_local_date": "2026-08-09",
-      "report_rank": 9,
+      "report_rank": 14,
       "report_score": 19.004239,
       "report_source_date": "2026-08-10",
       "report_source_section": "top5",
@@ -811,6 +1276,98 @@
       "summary_zh": "本文旨在實測代理式RAG（Agent RAG）與一般RAG在實際業務應用上的差異。作者以自身撰寫的20篇Qiita文章作為測試語料，設計了三個測試模式：一般RAG、包含簡單工具呼叫的代理RAG，以及具備多步驟推論能力的代理RAG。透過評估回答的準確性、完整性與相關性，量化比較三者的效能。結果顯示代理RAG在處理需要多步驟推論與工具整合的複雜查詢時表現明顯較佳，但在簡單直接的問題上，兩者差異不大，且代理RAG的回應時間較長、成本較高。作者指出此實驗僅涵蓋單一語料庫與有限問題集，且未考慮外部知識庫整合，故結果推論有其限制。本文對實務上選擇RAG架構有參考價值，提醒開發者應依任務複雜度與資源考量做取捨。",
       "title": "エージェントRAGは普通のRAGにどれくらい勝てるのか【自分のQiita記事20本で3パターン比較】",
       "title_zh": "代理式RAG到底比一般RAG強多少？以20篇個人Qiita文章進行三種模式比較"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "temotoya"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-30T02:36:41.539467+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "zenn-llm-topic",
+          "tier": 2,
+          "title": "AIを何人雇っても賢くならない。増えるのはトークンだけ",
+          "url": "https://zenn.dev/temotoya/articles/0e1fb26a2de50b"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.2,
+          "generalizability": 0.4,
+          "novelty": 0.35,
+          "preference_relevance": 0.7,
+          "reproducibility": 0.1,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status marker 'abstract_only': no methodology, experiments, baselines, ablations, or citations are available to verify the thesis.",
+          "UNTRUSTED_PAPER opening: 'マルチエージェントは「賢くなる」仕組みではなく、「トークンをたくさん使えるようになる」仕組みだった' — core claim stated without quantitative support in the fragment.",
+          "UNTRUSTED_PAPER section header '賛成側の証拠：たしかに 90% 良くなっている' — a 90% figure is introduced with no source, task definition, or baseline in the available text.",
+          "UNTRUSTED_PAPER opening: evidence base is limited to X posts about 'AI社員4人チーム' templates ('役割を決めた AI を何体か並べて、会社のように分業させる'), i.e., anecdotal commercial material rather than controlled evaluation."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "A Japanese-language commentary arguing that multi-agent LLM setups add token consumption rather than capability, and help reading tasks but harm writing tasks. Topically well-aligned with the Agents & Tool Use preference (multi-agent orchestration, business workflow automation, agent productization), but the abstract-only fragment shows this is an opinion/synthesis piece over social-media posts and undisclosed 'public evidence', with no described methodology, experiments, baselines, citations, or reproducible artifacts. The central thesis echoes existing critiques of multi-agent LLM systems, so novelty is modest, and the unverified '90% improvement' claim cannot be checked from the supplied text.",
+        "score": 0.4375,
+        "token_usage": {
+          "completion_tokens": 2188,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 407,
+          "prompt_tokens": 2327,
+          "total_tokens": 4515
+        },
+        "topics": [
+          "multi-agent LLM systems",
+          "agent orchestration",
+          "token cost",
+          "business workflow automation",
+          "agent productization"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "zenn-llm-topic",
+        "tier": 2,
+        "title": "AIを何人雇っても賢くならない。増えるのはトークンだけ",
+        "url": "https://zenn.dev/temotoya/articles/0e1fb26a2de50b"
+      },
+      "published_at": "2026-08-29T15:19:44+00:00",
+      "published_local_date": "2026-08-29",
+      "report_rank": 15,
+      "report_score": 18.753274,
+      "report_source_date": "2026-08-30",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.4375,
+        "llm_relevance_score": 12.25,
+        "recency_score": 0.9532740199079988,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 18.753274019907998
+      },
+      "section": null,
+      "source_name": "Zenn LLM Topic",
+      "story_id": "fallback:66a4998d61f1ffdb",
+      "summary": "X を見ていると、こういう投稿が流れてくる。\n\nAI社員4人チームの設計図を公開します。CTO・品質管理・市場調査・実装。1日3時間で月200万を回している仕組みです\n\n役割を決めた AI を何体か並べて、会社のように分業させる。設計図やテンプレートが商材として売られている。\nこの構成に意味があるのかを、公開されている証拠から確かめた。結論を先に書く。\nマルチエージェントは「賢くなる」仕組みではなく、「トークンをたくさん使えるようになる」仕組みだった。 そして読む仕事には効くが、書く仕事には有害である。役割名を付けても能力は増えない。\n\n 賛成側の証拠：たしかに 90% 良くなっている\n...",
+      "summary_zh": "這篇文章針對社群平台 X(推特)上流行的「多代理(multi-agent)AI 團隊」風潮提出檢驗。作者觀察到諸如「公開 AI 員工四人團隊藍圖:CTO、品質管理、市場調查、實作,每天工作三小時即可月收兩百萬日圓」的宣傳,這類替 AI 指定角色、像公司一樣分工的藍圖與範本,甚至被當成商品販售。核心問題是:這種架構真的有其意義嗎?方法上,作者不採信行銷話術,而是核對公開可查的證據,並在開頭先給出結論:多代理並不是讓 AI「變聰明」的機制,而是讓系統「能消耗大量 token」的機制;它對「閱讀」類的工作有效,對「撰寫」類的工作反而有害;僅僅賦予角色名稱,並不會增加模型能力。作者也並未全盤否定,文中列出「贊成方的證據:確實有 90% 的改善」一節,顯示某些情境下多代理確實帶來效益;但本篇僅為節錄摘要,該節的具體資料、實驗設定與引用來源均未完整呈現,無從驗證細節。限制方面,本文屬評論與經驗談性質,並非經過同儕審查的論文,節錄內容缺乏完整資料與可重現的實驗描述,讀者應回頭查證原始出處。其價值在於對想導入多代理工作流程的開發者與企業提出務實提醒:應先區分任務性質(閱讀還是撰寫)、衡量 token 成本與真實收益,避免被包裝成「AI 員工團隊」的商業話術誤導。",
+      "title": "AIを何人雇っても賢くならない。増えるのはトークンだけ",
+      "title_zh": "雇再多個 AI 也不會變聰明,增加的只有 token 而已"
     },
     {
       "arxiv_id": null,
@@ -875,7 +1432,7 @@
       },
       "published_at": "2026-08-01T06:25:03+00:00",
       "published_local_date": "2026-08-01",
-      "report_rank": 10,
+      "report_rank": 16,
       "report_score": 18.547857,
       "report_source_date": "2026-08-01",
       "report_source_section": "top5",
@@ -963,7 +1520,7 @@
       },
       "published_at": "2026-08-05T04:47:40+00:00",
       "published_local_date": "2026-08-05",
-      "report_rank": 11,
+      "report_rank": 17,
       "report_score": 18.429003,
       "report_source_date": "2026-08-05",
       "report_source_section": "top5",
@@ -1053,7 +1610,7 @@
       },
       "published_at": "2026-08-02T16:03:43+00:00",
       "published_local_date": "2026-08-02",
-      "report_rank": 12,
+      "report_rank": 18,
       "report_score": 18.243252,
       "report_source_date": "2026-08-02",
       "report_source_section": "top5",
@@ -1142,7 +1699,7 @@
       },
       "published_at": "2026-08-08T13:43:10+00:00",
       "published_local_date": "2026-08-08",
-      "report_rank": 13,
+      "report_rank": 19,
       "report_score": 18.125845,
       "report_source_date": "2026-08-09",
       "report_source_section": "top5",
@@ -1232,7 +1789,7 @@
       },
       "published_at": "2026-08-06T07:43:19+00:00",
       "published_local_date": "2026-08-06",
-      "report_rank": 14,
+      "report_rank": 20,
       "report_score": 18.081731,
       "report_source_date": "2026-08-06",
       "report_source_section": "top5",
@@ -1319,7 +1876,7 @@
       },
       "published_at": "2026-08-02T07:08:36+00:00",
       "published_local_date": "2026-08-02",
-      "report_rank": 15,
+      "report_rank": 21,
       "report_score": 17.379422,
       "report_source_date": "2026-08-02",
       "report_source_section": "top5",
@@ -1409,7 +1966,7 @@
       },
       "published_at": "2026-08-05T03:05:04+00:00",
       "published_local_date": "2026-08-05",
-      "report_rank": 16,
+      "report_rank": 22,
       "report_score": 17.360423,
       "report_source_date": "2026-08-05",
       "report_source_section": "top5",
@@ -1499,7 +2056,7 @@
       },
       "published_at": "2026-08-02T01:00:05+00:00",
       "published_local_date": "2026-08-02",
-      "report_rank": 17,
+      "report_rank": 23,
       "report_score": 17.263519,
       "report_source_date": "2026-08-02",
       "report_source_section": "top5",
@@ -1523,6 +2080,185 @@
       "summary_zh": "本篇文章屬於「實作任務外包給哪個模型最合適？以迷你遊戲實作進行基準測試」系列的一部分，旨在探討大型語言模型在執行具體程式設計任務時，其內部推理努力程度（effort）對最終效能的影響。研究設計將父代理（任務委派方）固定為claude-opus-5@max，而子代理（負責實際實作的模型）則使用gpt-5.6-luna的不同effort設定，包括low、medium、high、xhigh、max和ultra共六個等級。每個條件重複三次實驗，並以串行方式執行，總計進行十八次測試。實驗透過godot遊戲引擎開發環境進行，要求AI模型實作出可運作的迷你遊戲，並以完成度、正確性、程式碼品質等指標評估其效能。初步結果顯示，effort等級對模型產出有顯著影響：較高effort（如max、ultra）通常能產出更完整、功能更齊全的遊戲實作，但也伴隨更長的推理時間與更高的運算成本；而較低effort（如low、medium）雖然回應速度較快，但在複雜任務上容易出現功能缺漏或邏輯錯誤。然而，研究也指出效能的提升並非線性，在某些任務中，medium與high之間的差異不大，顯示存在邊際效益遞減的現象。這項研究的限制在於樣本數偏小（每條件僅三次反覆），且僅針對單一遊戲實作類型，因此結果的通用性有待驗證；此外，依賴特定模型版本（gpt-5.6-luna），其行為可能隨更新而改變，限制了長期參考價值。儘管如此，此研究對實務應用有重要意義：開發者在選擇模型設定時，需在效能與成本之間取得平衡，避免過度配置資源。此結果也可為自動化程式碼生成領域提供指引，幫助團隊根據任務複雜度選擇合適的推理強度，提升開發效率並節省運算預算。",
       "title": "【godot-llm-gamebench】GPT‑5.6 LunaはEffortによってどのように性能が変わるのか",
       "title_zh": "【godot-llm-gamebench】GPT-5.6 Luna在不同Effort設定下的效能差異"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "hiroshi_imaoku"
+      ],
+      "categories": [],
+      "entities": [
+        "llama-cpp"
+      ],
+      "first_seen_at": "2026-08-30T02:36:41.231521+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "Llama 3.1-8Bのファインチューニング(QLoRA、GGUF、量子化)",
+          "url": "https://qiita.com/hiroshi_imaoku/items/c8d25be8bc8e4d1423c8"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.05,
+          "generalizability": 0.2,
+          "novelty": 0.1,
+          "preference_relevance": 0.6,
+          "reproducibility": 0.1,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Title field: 'Llama 3.1-8Bのファインチューニング(QLoRA、GGUF、量子化)' indicates LLM fine-tuning topic",
+          "Abstract field: '本稿は、LLM(大規模言語モデル)に対するファインチューニングとは何か、ファインチューニングがモデルの中で何をする作業なのかを説明する記事です' — identifies the paper as an explanatory tutorial, not a research study",
+          "Content status field: 'abstract_only' with truncated abstract ('「ローカルLLMにISMSの...') — no methods, experiments, or results sections available to verify claims"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Topic matches high-weight preferences (LLM fine-tuning of Llama 3.1-8B with QLoRA/GGUF/quantization, Japanese-language local LLM context), so preference_relevance is moderate. However, the document is an introductory explanatory article ('ファインチューニングとは何か...説明する記事') with only a truncated abstract available; there is no methodological contribution, no baselines, no ablations, no quantitative results, and no reproducibility artifacts verifiable from the supplied text. Novelty, rigor, evidence strength, and reproducibility are therefore minimal; generalizability is limited to generic tutorial content.",
+        "score": 0.3025,
+        "token_usage": {
+          "completion_tokens": 1089,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 290,
+          "prompt_tokens": 2210,
+          "total_tokens": 3299
+        },
+        "topics": [
+          "Large Language Models",
+          "Japanese LLM & NLP",
+          "Training & Optimization",
+          "Scaling & Efficiency"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "Llama 3.1-8Bのファインチューニング(QLoRA、GGUF、量子化)",
+        "url": "https://qiita.com/hiroshi_imaoku/items/c8d25be8bc8e4d1423c8"
+      },
+      "published_at": "2026-08-29T13:38:07+00:00",
+      "published_local_date": "2026-08-29",
+      "report_rank": 24,
+      "report_score": 17.216571,
+      "report_source_date": "2026-08-30",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 2.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.30249999999999994,
+        "llm_relevance_score": 8.469999999999999,
+        "recency_score": 0.9465707182294965,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 17.216570718229494
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:101fde60a25f9965",
+      "summary": "本稿は、LLM(大規模言語モデル)に対するファインチューニングとは何か、ファインチューニングがモデルの中で何をする作業なのかを説明する記事です。読者が読み終えたときに、ファインチューニングに関する設定を読み取れるようになることを目指しています。\n「ローカルLLMにISMSの...",
+      "summary_zh": "本文是一篇以 Llama 3.1-8B 為例、介紹 LLM(大型語言模型)fine-tuning(微調)的教學性文章。作者旨在說明 fine-tuning 究竟對模型做了什麼樣的調整,並希望讀者讀完後能夠看懂各種 fine-tuning 相關設定,進而具備評估微調方案的基礎素養。從標題可知,文章涵蓋 QLoRA、GGUF 與量化(quantization)等主題:QLoRA 是在量化後的基底模型上訓練低秩適配層的參數高效微調技術,能大幅降低微調所需的記憶體;GGUF 則是本地端推論常用的模型檔案格式,常與量化搭配使用。摘要中亦提及「本地端 LLM 與 ISMS(資訊安全管理系統)」的脈絡,暗示目標讀者為希望在組織內部安全環境中導入本地 LLM 的實務工作者。需留意的是,本文屬教學導論而非原始研究,目前僅能取得部分摘要,未提供實驗設計、評估指標或具體結果,故無法驗證文中細節設定與實際成效;此外,QLoRA 與量化技術本身可能帶來精度損失,涉及記憶體占用與模型品質之間的取捨,實際效果須視硬體資源與任務特性而定。整體而言,本文的價值在於協助初學者理解微調在模型內部的作用機制,並認識在自有硬體上微調與部署 Llama 3.1-8B 時常見的工具鏈,作為後續深入閱讀技術文件與實作的入門基礎。",
+      "title": "Llama 3.1-8Bのファインチューニング(QLoRA、GGUF、量子化)",
+      "title_zh": "Llama 3.1-8B 的 fine-tuning(QLoRA、GGUF 與量化)"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "Tsutomu_eng"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-29T09:36:38.101588+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-genai-tag",
+          "tier": 2,
+          "title": "スキルを129種類インストールして、実際に呼ばれたのは4種類だった",
+          "url": "https://qiita.com/Tsutomu_eng/items/371d5806f0ad53e0a8d4"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.3,
+          "generalizability": 0.25,
+          "novelty": 0.3,
+          "preference_relevance": 0.55,
+          "reproducibility": 0.2,
+          "rigor": 0.2
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "abstract: title claims 'スキルを129種類インストールして、実際に呼ばれたのは4種類だった' (129 skills installed, 4 actually called)",
+          "abstract: '手元の ~/.claude/ を数えたら、skills/ 直下のディレクトリが214個あった' (214 skill directories counted)",
+          "abstract: 'そのうち何個が実際に呼ばれたのかを、全ログ5,958ファイルから数えた' (invocation counted from 5,958 log files, no methodology detail given)"
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only observational note on agent skill/tool invocation: the author counts 214 skill directories under ~/.claude/ and reports that only 4 of ~129 installed skills were actually invoked across 5,958 log files. Topically it touches the Agents & Tool Use preference (skill invocation, tool orchestration, agent productization hygiene), but it is a personal anecdotal audit rather than an LLM/language-methodology study. Novelty is limited to a single-user empirical observation of skill bloat; no research question, baselines, ablations, or statistical treatment appear in the available text. Evidence is a handful of raw counts (214 directories, 129 installed, 4 called, 5,958 logs) with no described sampling, time window, or validation. Generalizability is constrained to one personal environment, and no code, data, or methodology details supporting reproduction are claimed. Not a domain-application or out-of-scope imaging/audio/vision paper, so it is scored above the 0.20 ceiling, but weak rigor and evidence cap the overall score.",
+        "score": 0.375,
+        "token_usage": {
+          "completion_tokens": 1678,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 297,
+          "prompt_tokens": 2217,
+          "total_tokens": 3895
+        },
+        "topics": [
+          "Agents & Tool Use"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-genai-tag",
+        "tier": 2,
+        "title": "スキルを129種類インストールして、実際に呼ばれたのは4種類だった",
+        "url": "https://qiita.com/Tsutomu_eng/items/371d5806f0ad53e0a8d4"
+      },
+      "published_at": "2026-08-28T22:15:40+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 25,
+      "report_score": 17.002857,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "top5",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.375,
+        "llm_relevance_score": 10.5,
+        "recency_score": 0.9528567814248249,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 3.75,
+        "total_score": 17.002856781424825
+      },
+      "section": null,
+      "source_name": "Qiita 生成AI Tag",
+      "story_id": "fallback:6dd3e25f3b45f0f4",
+      "summary": "プラグインを入れるとスキルが付いてくる。マーケットプレイスを足すたびに増える。減らす作業は誰もやらない。\n手元の ~/.claude/ を数えたら、skills/ 直下のディレクトリが214個あった。そのうち何個が実際に呼ばれたのかを、全ログ5,958ファイルから数えた。\n...",
+      "summary_zh": "這篇短文以作者自己的 Claude Code 環境為對象，探討外掛（plugin）生態造成的「技能（skill）膨脹」現象。作者觀察到：每安裝一個外掛就會附帶技能，加入市集（marketplace）後數量持續增加，但幾乎沒有人會回頭做刪減整理。方法上，作者盤點本機的 ~/.claude/ 目錄，發現 skills/ 底下共有214個資料夾；接著掃描全部5,958份紀錄檔案，統計各技能實際被呼叫的情形。結果正如標題所示：安裝的129種技能中，真正被呼叫過的只有4種，其餘絕大多數處於閒置狀態，顯示技能清單的增長遠快於實際使用率。由於現有內容僅屬摘要層級，完整的統計方法、判定「被呼叫」的標準、觀察期間長短，以及標題所稱129種技能與摘錄所載214個資料夾之間的對應關係，均無法進一步確認；加上樣本僅來自單一使用者的環境，結論未必適用於其他工作流程或團隊。儘管如此，這項觀察對 AI 代理（agent）工具鏈的日常維運仍具參考價值：技能會隨外掛與市集安裝自然累積，長期未用的項目可能佔用設定空間、增加維護負擔，因此在享受生態系擴充便利的同時，定期盤點並刪減不再使用的技能，是值得建立的習慣。",
+      "title": "スキルを129種類インストールして、実際に呼ばれたのは4種類だった",
+      "title_zh": "安裝了129種技能，實際被呼叫的只有4種"
     },
     {
       "arxiv_id": null,
@@ -1594,7 +2330,7 @@
       },
       "published_at": "2026-08-11T06:59:22+00:00",
       "published_local_date": "2026-08-11",
-      "report_rank": 18,
+      "report_rank": 26,
       "report_score": 16.929519,
       "report_source_date": "2026-08-12",
       "report_source_section": "top5",
@@ -1618,6 +2354,100 @@
       "summary_zh": "這篇文章介紹了 Claude 應用程式閘道（Claude apps gateway），這是一個自架（self-hosted）的治理層，位於 Claude Code 和 Claude Desktop 與 Amazon Bedrock 或 AWS 上的 Claude 平台之間。文章提供了適用於企業環境的生產級參考部署，涵蓋完整的端對端架構、企業部署模式、成本考量，以及實作資源。首先，文章指出企業在採用 AI 代理（AI agents）時，需要管控資料流向、身分驗證、稽核軌跡（audit trail），以及與既有身分提供者（identity provider）整合。其次，文中詳細說明閘道如何集中管理使用者存取，並將請求路由至後端的模型服務，同時套用企業政策。第三，文章針對高可用性、擴充性、安全性等不同部署模式進行比較，並提供成本估算範例。最後，文章強調此閘道能簡化治理流程，讓 IT 團隊能以可重現的方式部署 AI 工具，同時滿足合規要求。然而，文章僅為摘要，未提供實際的效能量測數據或真實案例的深入分析，因此讀者若要評估其在特定環境中的適用性，仍需參考官方文件與進一步測試。此指南對於在 AWS 上規劃企業 AI 治理架構的技術決策者具有實用參考價值。",
       "title": "Deploying Anthropic Claude apps gateway for AWS for enterprise workloads",
       "title_zh": "在 AWS 上為企業工作負載部署 Anthropic Claude 應用程式閘道"
+    },
+    {
+      "arxiv_id": null,
+      "authors": [
+        "tanishi-z"
+      ],
+      "categories": [],
+      "entities": [],
+      "first_seen_at": "2026-08-29T09:36:37.946776+00:00",
+      "github_release_url": null,
+      "hf_metadata": null,
+      "hf_model_id": null,
+      "item_count": 1,
+      "links": [
+        {
+          "link_type": "blog",
+          "source_id": "qiita-llm-tag",
+          "tier": 2,
+          "title": "小さいモデルの出力崩れを防ぐプロンプト実装（techniques.ts解説）",
+          "url": "https://qiita.com/tanishi-z/items/7b5e146690984f5c2698"
+        }
+      ],
+      "llm_evaluation": {
+        "components": {
+          "evidence_strength": 0.08,
+          "generalizability": 0.35,
+          "novelty": 0.15,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.3,
+          "rigor": 0.1
+        },
+        "confidence": 1.0,
+        "evidence": [
+          "Content status marker: abstract_only — full methodology, baselines, ablations, and quantitative results are not available for verification.",
+          "UNTRUSTED_PAPER section 対象読者と動作環境: target audience is users running small open-source models on Ollama who struggle with instruction-ignoring outputs and format breakdown ('Ollama で小型のオープンソースモデルを動かしていて、指示を無視した出力やフォーマット崩れに悩んでいる方').",
+          "UNTRUSTED_PAPER section 対象読者と動作環境: assumes familiarity with Chain-of-Thought, Few-Shot, ReAct, Self-Consistency terminology and offers implementation-level assembly via a techniques.ts code file; no evaluation or empirical claims appear in the available text."
+        ],
+        "fulltext_sha256": "",
+        "fulltext_status": "abstract_only",
+        "model": "z-ai/glm-5.3-flash",
+        "prompt_version": "sha256:2bf0691ed94bd38d",
+        "rationale": "Abstract-only engineering guide (techniques.ts walkthrough) on prompt implementation to curb output/format degradation in small open-source models run via Ollama. Topic alignment with stated preferences is genuine: it targets local small LLMs (Ollama) and covers Chain-of-Thought, Few-Shot, ReAct, and Self-Consistency at implementation level, matching the prompting, reasoning, and agents/tool-use preferences. However, it is a practical tutorial repackaging well-known prompt patterns rather than research: no research question, no method contribution, no baselines, ablations, benchmarks, or quantitative results are present or verifiable in the available text. Content status is abstract_only, so claims about effectiveness cannot be checked. Reproducibility is partially supported by the referenced concrete code file (techniques.ts) but no explicit artifact availability or environment detail beyond Ollama is verifiable. In-scope (language-methodology focused), so the 0.20 out-of-scope cap does not apply, but low research quality limits the overall score.",
+        "score": 0.3595,
+        "token_usage": {
+          "completion_tokens": 2909,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 283,
+          "prompt_tokens": 2203,
+          "total_tokens": 5112
+        },
+        "topics": [
+          "prompt engineering",
+          "chain-of-thought",
+          "few-shot prompting",
+          "ReAct",
+          "self-consistency",
+          "small local LLMs",
+          "Ollama",
+          "structured output / format adherence"
+        ]
+      },
+      "primary_link": {
+        "link_type": "blog",
+        "source_id": "qiita-llm-tag",
+        "tier": 2,
+        "title": "小さいモデルの出力崩れを防ぐプロンプト実装（techniques.ts解説）",
+        "url": "https://qiita.com/tanishi-z/items/7b5e146690984f5c2698"
+      },
+      "published_at": "2026-08-28T21:43:36+00:00",
+      "published_local_date": "2026-08-28",
+      "report_rank": 27,
+      "report_score": 16.816737,
+      "report_source_date": "2026-08-29",
+      "report_source_section": "radar",
+      "scores": {
+        "citation_score": 0.0,
+        "cross_source_score": 0.0,
+        "entity_score": 0.0,
+        "kind_score": 0.8,
+        "llm_raw_score": 0.3595,
+        "llm_relevance_score": 10.065999999999999,
+        "recency_score": 0.9507372713299137,
+        "semantic_score": 0.0,
+        "tier_score": 1.0,
+        "topic_score": 4.0,
+        "total_score": 16.816737271329913
+      },
+      "section": null,
+      "source_name": "Qiita LLM Tag",
+      "story_id": "fallback:1fbaaaca5d247d55",
+      "summary": "対象読者と動作環境\n\nOllama で小型のオープンソースモデルを動かしていて、指示を無視した出力やフォーマット崩れに悩んでいる方\nChain-of-Thought・Few-Shot・ReAct・Self-Consistencyという用語は知っているが、実装レベルでどう組...",
+      "summary_zh": "本文是一篇實作導向的技術解說，針對在 Ollama 上執行小型開放原始碼模型時常見的痛點：模型忽略指示、輸出格式崩壞。作者指出，Chain-of-Thought、Few-Shot、ReAct、Self-Consistency 等提示工程技巧雖廣為人知，但多數教學停留在概念層面，缺少可直接套用的程式碼；本文以 techniques.ts 檔案為核心，說明如何在實作層級組織這些技巧，把理論上能改善推理與格式穩定性的做法，轉成明確的提示結構與函式實作。就性質而言，文章屬於工程經驗整理，重點在提示詞設計與程式實作的對應，而非提出新演算法或進行系統性基準測試。由於目前僅能取得摘要，具體的量化證據、所用模型版本與評估方式無法確認，其結論主要來自作者自身的實作觀察，可能受限於特定模型與任務，未必能直接外推到其他情境。對在本地硬體上部署小型模型、為輸出不穩所苦的開發者而言，本文的價值在於把常見提示技巧落到可執行的程式碼層次，提供一個可參考、可修改的起點；實際效果仍建議依自身情境驗證。",
+      "title": "小さいモデルの出力崩れを防ぐプロンプト実装（techniques.ts解説）",
+      "title_zh": "防止小型模型輸出崩壞的提示詞實作（techniques.ts 解說）"
     },
     {
       "arxiv_id": null,
@@ -1682,7 +2512,7 @@
       },
       "published_at": "2026-08-08T03:02:36+00:00",
       "published_local_date": "2026-08-08",
-      "report_rank": 19,
+      "report_rank": 28,
       "report_score": 16.694257,
       "report_source_date": "2026-08-09",
       "report_source_section": "top5",
@@ -1772,7 +2602,7 @@
       },
       "published_at": "2026-08-06T07:12:24+00:00",
       "published_local_date": "2026-08-06",
-      "report_rank": 20,
+      "report_rank": 29,
       "report_score": 16.680183,
       "report_source_date": "2026-08-06",
       "report_source_section": "top5",
@@ -1800,97 +2630,11 @@
     {
       "arxiv_id": null,
       "authors": [
-        "toyama0919"
+        "pdfractal"
       ],
       "categories": [],
       "entities": [],
-      "first_seen_at": "2026-08-01T08:48:40.542242+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "LLMエージェントの評価をレイヤー化する: Google ADKの12指標を全部CIに乗せてはいけない理由",
-          "url": "https://qiita.com/toyama0919/items/dee2aed8938f509025e0"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.4,
-          "novelty": 0.3,
-          "preference_relevance": 0.55,
-          "reproducibility": 0.2,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "abstract only mentions Google ADK criteria and tool call accuracy"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Topic connects to LLM agents evaluation and CI, relevant to agents/evaluation preferences, but abstract only lacks details, rigor and evidence weak; novelty limited.",
-        "score": 0.37500000000000006,
-        "token_usage": {
-          "completion_tokens": 150,
-          "prompt_cache_hit_tokens": 2048,
-          "prompt_cache_miss_tokens": 89,
-          "prompt_tokens": 2137,
-          "total_tokens": 2287
-        },
-        "topics": [
-          "Agents & Tool Use",
-          "Red Teaming & Evaluation"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "LLMエージェントの評価をレイヤー化する: Google ADKの12指標を全部CIに乗せてはいけない理由",
-        "url": "https://qiita.com/toyama0919/items/dee2aed8938f509025e0"
-      },
-      "published_at": "2026-08-01T04:16:31+00:00",
-      "published_local_date": "2026-08-01",
-      "report_rank": 21,
-      "report_score": 16.612811,
-      "report_source_date": "2026-08-01",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.37500000000000006,
-        "llm_relevance_score": 10.500000000000002,
-        "recency_score": 0.562811032300029,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 16.61281103230003
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:8c45c8cc8943d6c5",
-      "summary": "background\nGoogle の Agent Development Kit（ADK）は、AIエージェントを評価するための指標（Criteria）を12種類用意している（https://adk.dev/evaluate/criteria/）。ツール呼び出しの正確さ、...",
-      "summary_zh": "本文討論 Google 的 Agent Development Kit（ADK）所提供的 12 種評估指標（Criteria），並建議不應將所有指標直接整合進持續整合（CI）流程。文章指出，ADK 的指標涵蓋工具呼叫準確度、任務完成度、成本效率等面向，但不同指標適用於不同開發階段與評估目的。若全部塞入 CI，可能導致評估過於冗長、成本過高，且某些指標（如需要人工判斷的品質指標）不適合自動化執行。作者提出分層評估策略：在開發早期使用輕量、快速的指標進行反覆測試，而在發佈前或定期評估中採用量大且全面的指標。這種分層方式能平衡開發速度與評估可靠性，避免 CI 管線過度負載，同時確保 Agent 品質。文章強調，評估指標的選擇應與 Agent 的應用場景與風險等級相匹配，而非盲目追求指標數量。然而，原文僅提供背景摘要，未包含具體實驗數據或案例，因此實際效益需進一步驗證。此議題對 AI Agent 開發團隊具有實務價值，因為正確的評估策略能提升開發效率並確保產品品質。",
-      "title": "LLMエージェントの評価をレイヤー化する: Google ADKの12指標を全部CIに乗せてはいけない理由",
-      "title_zh": "將 AI Agent 評估分層：為何不應將 Google ADK 的 12 項指標全部放上 CI"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "satoshiakiyama"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.618809+00:00",
+      "first_seen_at": "2026-08-30T02:36:41.556698+00:00",
       "github_release_url": null,
       "hf_metadata": null,
       "hf_model_id": null,
@@ -1900,792 +2644,81 @@
           "link_type": "blog",
           "source_id": "zenn-llm-topic",
           "tier": 2,
-          "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-          "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.3,
-          "generalizability": 0.2,
-          "novelty": 0.6,
-          "preference_relevance": 0.5,
-          "reproducibility": 0.8,
-          "rigor": 0.7
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Abstract mentions 44-cell pre-registered experiment",
-          "Abstract states frozen evaluation criteria",
-          "Abstract mentions QLoRA recipe"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper is an empirical study on LLM distillation with controlled experiments and pre-registration, but is limited to abstract-only content with no full results or baselines; it has moderate relevance to LLMs and training but low generalizability due to specific hardware and settings.",
-        "score": 0.5,
-        "token_usage": {
-          "completion_tokens": 230,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 499,
-          "prompt_tokens": 2291,
-          "total_tokens": 2521
-        },
-        "topics": [
-          "LLM distillation",
-          "QLoRA",
-          "LLM evaluation",
-          "training"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-        "url": "https://zenn.dev/satoshiakiyama/articles/b2662577410883"
-      },
-      "published_at": "2026-08-05T07:25:28+00:00",
-      "published_local_date": "2026-08-05",
-      "report_rank": 22,
-      "report_score": 16.45211,
-      "report_source_date": "2026-08-05",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.5,
-        "llm_relevance_score": 14.0,
-        "recency_score": 0.652109635031853,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 0.0,
-        "total_score": 16.452109635031853
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:e76932b536e62aeb",
-      "summary": "家庭用のRTX 5080(16GB)一枚で、LLM蒸留の「用量反応試験」をやりました。\n4つの生徒規模(Qwen3 1.7B/4B/8B/14B)×11の学習例数=44セル、全セル事前登録、\n評価基準は実験前に凍結、結果は外れた予測も含めて全部公開します。\n先に一番の見出しから: この条件下では、14Bは4Bに負けました。\n\n 何を測ったか\n\n教師(大きいAI)の作った学習例を「16件、32件、…192件」と刻んで生徒に蒸留し、\n各セルで130本の台本を生成、凍結済みの三重ゲート(機能∧深さ∧無捏造)で\n合格率Qを測定\n訓練レシピ(QLoRA r16 / lr 2e-4 / 2エポック ...",
-      "summary_zh": "本研究在單張RTX 5080（16GB VRAM）上，針對大型語言模型的知識蒸餾進行系統性的劑量反應實驗。作者設定四種學生模型規模（Qwen3 1.7B、4B、8B、14B）與十一種訓練樣本數量（16至192件），共計44個實驗單元，並在實驗前預先登錄所有條件，且凍結評估標準。每個單元生成130份腳本，透過三個預先定義的門檻（功能正確性、深度、無捏造）計算通過率Q。主要發現為在此資源限制下，14B模型的蒸餾效果反而遜於4B模型，顯示較大模型未必在少量蒸餾資料下佔優勢。此研究完整公開所有結果，包含不符預期的部分，提供了在小規模硬體上進行蒸餾的實證參考。其限制在於單一GPU環境與特定模型家族，推論至其他架構或資料分布時需謹慎。此研究對於資源有限的研究者與開發者具有重要參考價值，挑戰了「越大越好」的直覺，並強調蒸餾設定與模型規模之間的複雜交互作用。",
-      "title": "14Bが4Bに負けた——16GBのGPU一枚で測った、蒸留の用量反応の全記録",
-      "title_zh": "14B輸給4B——單張16GB GPU實測蒸餾劑量反應的完整紀錄"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "susie000720"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-02T08:51:31.687994+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-          "url": "https://qiita.com/susie000720/items/9ba9c65df3cb97717aef"
+          "title": "なぜ、LLM AIのアイディア出しが苦手という特徴は、今後数十年維持されそうなのか？",
+          "url": "https://zenn.dev/pdfractal/articles/968dfc17492c6d"
         }
       ],
       "llm_evaluation": {
         "components": {
           "evidence_strength": 0.1,
-          "generalizability": 0.5,
-          "novelty": 0.4,
-          "preference_relevance": 0.6,
-          "reproducibility": 0.1,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "Paper discusses using AI for inquiry replies and model updates"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "The paper addresses AI tool usage in customer inquiry responses, touching LLM application and agent safety in a practical setting. However, it is an abstract-only personal development note with no methodological rigor, quantitative results, or formal evaluation. Relevance to core preference areas like Japanese LLM, safety, and agents is moderate but diluted by lack of technical depth. Novelty is limited as a practical guide rather than novel research. Rigor and evidence are minimal due to anecdotal nature. Reproducibility is low without code/data. Generalizability is moderate as principles may apply broadly, but specifics are context-dependent. Score aligns with low-to-moderate relevance and weak evidence, but not a pure domain application, so not capped at 0.20.",
-        "score": 0.385,
-        "token_usage": {
-          "completion_tokens": 270,
-          "prompt_cache_hit_tokens": 2048,
-          "prompt_cache_miss_tokens": 98,
-          "prompt_tokens": 2146,
-          "total_tokens": 2416
-        },
-        "topics": [
-          "LLM",
-          "AI safety",
-          "Agents",
-          "Japanese NLP"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-        "url": "https://qiita.com/susie000720/items/9ba9c65df3cb97717aef"
-      },
-      "published_at": "2026-08-02T04:11:35+00:00",
-      "published_local_date": "2026-08-02",
-      "report_rank": 23,
-      "report_score": 16.201732,
-      "report_source_date": "2026-08-02",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.38500000000000006,
-        "llm_relevance_score": 10.780000000000001,
-        "recency_score": 0.6217322273446155,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.0,
-        "total_score": 16.201732227344618
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:5b4a593aa007c734",
-      "summary": "GitHub CopilotのようなAIツールでは、利用できるモデルが追加されたり、組織の設定によって新しいモデルが使えるようになったりします。\n利用者としては便利ですが、個人開発の問い合わせ返信にAIを使っていると、別の緊張が生まれます。\n\nモデル更新の恩恵は受けたい。し...",
-      "summary_zh": "本文探討當開發者使用AI工具（如GitHub Copilot）處理個人專案的客戶回信時，一個容易被忽略的風險：底層模型可能因更新或組織設定而改變，導致AI回覆的語氣、格式或內容突然失控。作者提出一套名為「回覆契約」的實務設計方法，核心概念是將AI的輸出限制在一個明確的結構與規範內，使回覆品質不依賴特定模型的內部偏好。具體做法包括：定義回覆的固定段落結構（如問候、問題摘要、解決方案、結尾）、設定禁止使用的語氣或詞彙清單、加入動態校驗機制（例如要求AI輸出JSON格式，之後再以程式檢查必填欄位），以及建立多個範例對齊（few-shot）來約束模型行為。文中強調，即使後端換成更強大或不同的模型，只要契約規範夠嚴格，最終輸出的穩定性仍能維持。作者並未提供嚴謹的實驗數據，而是以實作經驗說明此方法能降低回覆品質的變異，尤其適合重視一致性與信任感的客服場景。這項方法的限制在於需要較多的前期設計投入，且過度嚴格的契約可能限制AI的靈活性，導致回覆缺乏自然感。但對於個人開發者或小型團隊而言，它提供了一種不依賴特定模型、可持續維護的防呆機制，讓AI輔助客服在模型迭代的浪潮中仍能可靠運作。此指南對所有使用LLM處理結構化輸出任務的開發者，皆具有參考價值。",
-      "title": "AIモデルが変わっても問い合わせ返信を暴走させない「返信契約」の作り方",
-      "title_zh": "AI模型更換時仍能防止回信暴走的「回覆契約」設計方法"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "yuninaka"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-28T21:52:27.215773+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "なぜAgentic Loopに「静的ガードレール」が必要なのか——実測で見えた、トークン肥大化の正体と「止まれる」設計の価値",
-          "url": "https://zenn.dev/yuninaka/articles/agentic-loop-static-guardrails"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.25,
-          "preference_relevance": 0.6,
-          "reproducibility": 0.05,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status marker 'abstract_only': only section '1. はじめに' is provided; no methods or results sections present",
-          "Section '1. はじめに': describes prior experiments where AI agents were instructed to autonomously repeat 'changes -> verify -> fix' loops until all CI gates PASS on legacy Java libraries",
-          "Section '1. はじめに': identifies トークン爆発 (token explosion) as a structural risk because many Agentic Loop implementations resend the entire conversation history each turn",
-          "Title: claims 実測 (measured) findings on token inflation and the value of 'stoppable' design, but no measurement data appears in the supplied text"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "z-ai/glm-5.3-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Japanese blog-style fragment (abstract_only) on guardrails for agentic loops and token bloat. Topic aligns well with the Agents & Tool Use preference (agentic loop, autonomous change-verify-fix cycles, agent misbehavior mitigation) and secondarily with inference efficiency via token-cost concerns. However, only the introduction is provided: the title promises measured token-inflation data and a 'stoppable' loop design, but no methods, baselines, ablations, quantitative results, code, or dataset availability are verifiable. The core observation (full-history resending inflates tokens linearly with loop length) is well-known engineering folklore, limiting novelty. Not out-of-scope domain material, but as a non-archival anecdotal fragment with unverifiable measurement claims it scores in the lower third.",
-        "score": 0.33999999999999997,
-        "token_usage": {
-          "completion_tokens": 1522,
-          "prompt_cache_hit_tokens": 64,
-          "prompt_cache_miss_tokens": 2290,
-          "prompt_tokens": 2354,
-          "total_tokens": 3876
-        },
-        "topics": [
-          "Agents & Tool Use",
-          "Inference & Serving",
-          "Scaling & Efficiency"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "なぜAgentic Loopに「静的ガードレール」が必要なのか——実測で見えた、トークン肥大化の正体と「止まれる」設計の価値",
-        "url": "https://zenn.dev/yuninaka/articles/agentic-loop-static-guardrails"
-      },
-      "published_at": "2026-08-28T03:12:49+00:00",
-      "published_local_date": "2026-08-28",
-      "report_rank": 24,
-      "report_score": 15.953394,
-      "report_source_date": "2026-08-28",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.33999999999999997,
-        "llm_relevance_score": 9.52,
-        "recency_score": 0.883393681646452,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.953393681646451
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:aec8aaf72f216edf",
-      "summary": "1. はじめに\n前回・前々回の記事では、レガシーJavaライブラリを題材に、AIエージェントへ「CIの全ゲートがPASSするまで自律的に繰り返せ」という指示を何度も投げてきました。この形式——エージェントが「変更する→検証する→失敗したら直す」というループを、人間の介入なしに何十周も自律的に回す構成——は Agentic Loop（あるいはループエンジニアリング）と呼ばれ、複雑なタスクを高い柔軟性で解決できる一方、構造的なリスクも抱えています。\nその一つがトークン爆発です。多くのAgentic Loop実装は、各ターンでそれまでの会話履歴全体を再送信します。ループが長引くほど1ターン...",
-      "summary_zh": "本文延續前兩篇以舊版 Java 函式庫為題材的實驗：反覆對 AI 代理下達「在 CI 所有關卡（gate）全部 PASS 之前，自主地重複迭代」的指令。這種由代理自行執行「修改→驗證→失敗就修正」、在人類不介入下循環數十周的架構，即 Agentic Loop（或稱迴圈工程），彈性高但帶有結構性風險。作者聚焦的問題是 Token 爆炸：多數 Agentic Loop 實作在每個回合都會重送整段對話歷史，迴圈拖得越長，單回合輸入 Token 就越膨脹，推升成本與延遲，甚至超出上下文限制，讓代理「停不下來」或行為劣化。透過實測，文章揭示了 Token 肥大化的實際樣貌，並主張在迴圈之外加上「靜態護欄」——由人預先定義、不隨對話增長的停止條件與檢查點，賦予系統「能停下來」的能力，在保留代理自主性的同時控制風險。受限於摘要僅截取開頭，具體的實驗設定、量測結果與設計建議須見原文；對正在設計代理迴圈的工程師，本文的核心提醒是：自治迴圈必須配備可預測、可審計的終止機制。",
-      "title": "なぜAgentic Loopに「静的ガードレール」が必要なのか——実測で見えた、トークン肥大化の正体と「止まれる」設計の価値",
-      "title_zh": "為什麼 Agentic Loop 需要「靜態護欄」——實測看見的 Token 膨脹真相與「能停下來」的設計價值"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "y034112"
-      ],
-      "categories": [
-        "マルチモーダル",
-        "センサー",
-        "LLM"
-      ],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:14.815001+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "abeja-tech-blog-llm",
-          "tier": 1,
-          "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-          "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.14,
           "generalizability": 0.25,
-          "novelty": 0.22,
-          "preference_relevance": 0.42,
-          "reproducibility": 0.15,
-          "rigor": 0.16
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only",
-          "No figures, tables, or experiments mentioned"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only Japanese tech blog with minimal technical detail. LLM and multimodal topics match preferences but focus is sensor HAR (application), with no methodology, results, or evaluation. Novelty low, rigor and evidence very low, generalizability moderate for LLM+sensor trend. Repro low due to lack of implementation details. Overall score ~0.30, below 0.2? No, above 0.2 due to LLM relevance, but strict rubric limits domain applications; however not purely out-of-scope because LLM methodology is central. Score 0.30 reflects weak evidence and unverifiable claims.",
-        "score": 0.2785,
-        "token_usage": {
-          "completion_tokens": 245,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 489,
-          "prompt_tokens": 2281,
-          "total_tokens": 2526
-        },
-        "topics": [
-          "LLM",
-          "multimodal",
-          "sensor",
-          "HAR"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "abeja-tech-blog-llm",
-        "tier": 1,
-        "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-        "url": "https://tech-blog.abeja.asia/entry/sensorllm-human-activity-recognition-202608"
-      },
-      "published_at": "2026-08-05T04:58:09+00:00",
-      "published_local_date": "2026-08-05",
-      "report_rank": 25,
-      "report_score": 15.943472,
-      "report_source_date": "2026-08-05",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.2785,
-        "llm_relevance_score": 7.798000000000001,
-        "recency_score": 0.6454723508057733,
-        "semantic_score": 0.0,
-        "tier_score": 2.0,
-        "topic_score": 4.0,
-        "total_score": 15.943472350805774
-      },
-      "section": null,
-      "source_name": "ABEJA Tech Blog (LLM)",
-      "story_id": "fallback:bfc13703b7a3d145",
-      "summary": "こんにちは！株式会社 ABEJA で ABEJA Platform 開発を行っている坂井（GitHub : @Yagami360）です。 LLM のマルチモーダル化は、この数年で テキスト → 画像 → 動画 → 音声 という風に扱えるモダリティをどんどん広げてきました。個人的には、この流れで次に重要になるのはセンサーデータも含めたマルチモーダル化だと考えています。温度・振動・電力・加速度・生体信号などのような「物理世界の情報」を基盤モデルが直接あるいは間接的に扱えるようになると、現実世界を観測して物理世界での意思決定・行動するタイプの AI ——いわゆるフィジカル AI—— の中核である「知…",
-      "summary_zh": "本文來自 ABEJA 平台開發團隊，探討如何將大型語言模型（LLM）的多模態能力擴展至感測器資料，並以 SensorLLM 為例，說明如何從動作感測器資料進行人類行為辨識（HAR）。作者指出，LLM 近年已能處理文字、影像、影片與音訊，但下一步的關鍵在於納入溫度、振動、電力、加速度與生體訊號等物理世界資訊。若能讓基礎模型直接或間接理解這些感測器資料，將有助於發展所謂的「物理 AI」——即能觀察現實世界並做出決策與行動的 AI 系統。文章以 SensorLLM 為具體案例，展示其架構與應用流程，並討論在實作上可能遇到的挑戰，例如感測器資料的時序特性、雜訊處理，以及如何將連續訊號轉換為 LLM 可理解的表示。雖然本文僅提供初步探討，未包含完整實驗數據，但指出了感測器與 LLM 整合的潛力與未來研究方向，對於關注多模態學習與邊緣 AI 的讀者具有參考價值。",
-      "title": "センサー x LLM でのマルチモーダル化 〜 SensorLLM を使用してモーションセンサーから人間行動認識（HAR）を行ってみた",
-      "title_zh": "透過感測器與 LLM 實現多模態：使用 SensorLLM 從動作感測器進行人類行為辨識（HAR）"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Zaid Barkat"
-      ],
-      "categories": [
-        "Advanced (300)",
-        "Amazon Bedrock",
-        "Technical How-to"
-      ],
-      "entities": [
-        "anthropic",
-        "aws"
-      ],
-      "first_seen_at": "2026-08-07T00:00:12.279111+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "aws-ml-blog",
-          "tier": 0,
-          "title": "Enforcing data residency with single-Region Claude Code on Amazon Bedrock",
-          "url": "https://aws.amazon.com/blogs/machine-learning/enforcing-data-residency-with-single-region-claude-code-on-amazon-bedrock"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.05,
-          "generalizability": 0.1,
-          "novelty": 0.05,
-          "preference_relevance": 0.15,
-          "reproducibility": 0.05,
-          "rigor": 0.05
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only application note on AWS Bedrock region pinning for Claude Code; no methodology, results, or technical detail. Domain application of LLM without language methodology, limited relevance to core AI/ML research preferences.",
-        "score": 0.095,
-        "token_usage": {
-          "completion_tokens": 141,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 341,
-          "prompt_tokens": 2133,
-          "total_tokens": 2274
-        },
-        "topics": [
-          "Claude"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "aws-ml-blog",
-        "tier": 0,
-        "title": "Enforcing data residency with single-Region Claude Code on Amazon Bedrock",
-        "url": "https://aws.amazon.com/blogs/machine-learning/enforcing-data-residency-with-single-region-claude-code-on-amazon-bedrock"
-      },
-      "published_at": "2026-08-06T07:21:54+00:00",
-      "published_local_date": "2026-08-06",
-      "report_rank": 26,
-      "report_score": 15.880658,
-      "report_source_date": "2026-08-06",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 4.0,
-        "kind_score": 1.5,
-        "llm_raw_score": 0.095,
-        "llm_relevance_score": 2.66,
-        "recency_score": 0.7206579377902854,
-        "semantic_score": 0.0,
-        "tier_score": 3.0,
-        "topic_score": 4.0,
-        "total_score": 15.880657937790286
-      },
-      "section": null,
-      "source_name": "AWS Machine Learning Blog",
-      "story_id": "fallback:4a4c1eeb25d2f345",
-      "summary": "A regulated customer needed all Claude Code inference processed in a single AWS Region (London), not just in-geography. This post shows two ways to pin Claude Code on Amazon Bedrock to one Region: an application inference profile or the Mantle endpoint, paired with an IAM Region condition, plus how to verify compliance in AWS CloudTrail.",
-      "summary_zh": "本文探討如何在 Amazon Bedrock 上將 Claude Code 的所有推論限定於單一 AWS 區域（倫敦），以滿足受監管客戶的資料在地化需求。方法包括使用應用程式推論設定檔或 Mantle 端點，搭配 IAM 區域條件，並透過 AWS CloudTrail 驗證合規性。主要結果顯示這兩種方式能有效確保推論僅在指定區域處理。但文中未提供具體效能或成本數據，亦未討論其他區域的備援考量。此研究對需要嚴謹資料主權的企業尤為重要，提供可操作的實作指引，有助於在雲端環境中平衡合規要求與營運彈性。",
-      "title": "Enforcing data residency with single-Region Claude Code on Amazon Bedrock",
-      "title_zh": "在 Amazon Bedrock 上以單一區域 Claude Code 強制資料在地化"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "okssusucha"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-08T00:35:59.344582+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-llm-tag",
-          "tier": 2,
-          "title": "ローカル8Bを84%に引き上げるForge、ツール呼び出しの信頼性は配信層で決まる",
-          "url": "https://qiita.com/okssusucha/items/47a30368a08ca808d29f"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
           "novelty": 0.3,
-          "preference_relevance": 0.55,
-          "reproducibility": 0.1,
+          "preference_relevance": 0.65,
+          "reproducibility": 0.05,
           "rigor": 0.1
         },
         "confidence": 1.0,
         "evidence": [
-          "Abstract mentions tool calling success rates 7% vs 83% across serving setups, but no experimental details provided."
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Abstract-only text with anecdotal claim about tool calling success varying by serving layer. Relevant to agents/tool use and local LLMs, but lacks methodology, baselines, or quantitative results. Substantial weight on preferences for agents and LLMs, but rigor and evidence are very low due to no details.",
-        "score": 0.33,
-        "token_usage": {
-          "completion_tokens": 185,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 383,
-          "prompt_tokens": 2175,
-          "total_tokens": 2360
-        },
-        "topics": [
-          "agent",
-          "tool use",
-          "local LLM"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-llm-tag",
-        "tier": 2,
-        "title": "ローカル8Bを84%に引き上げるForge、ツール呼び出しの信頼性は配信層で決まる",
-        "url": "https://qiita.com/okssusucha/items/47a30368a08ca808d29f"
-      },
-      "published_at": "2026-08-07T15:04:57+00:00",
-      "published_local_date": "2026-08-07",
-      "report_rank": 27,
-      "report_score": 15.751074,
-      "report_source_date": "2026-08-08",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.33,
-        "llm_relevance_score": 9.24,
-        "recency_score": 0.9610740390697139,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.751074039069714
-      },
-      "section": null,
-      "source_name": "Qiita LLM Tag",
-      "story_id": "fallback:721d052a76057feb",
-      "summary": "同じ8Bの重みを、同じマシンで動かす。なのにエージェントのツール呼び出し成功率が、一方では7%、もう一方では83%になる。この差はモデルの賢さではなく、モデルを「配信する側」の作りで生まれている。ローカルLLMでエージェントを組んだことがある人なら、途中でツール呼び出しのJ...",
-      "summary_zh": "本文探討一個反直覺現象：當使用相同的8B權重並在同一台機器上執行時，代理系統的工具呼叫成功率可能出現巨大差異——一方僅7%，另一方卻達83%。作者主張，這種差異並非源於模型本身的智慧，而是取決於模型「服務層」的設計。對於使用本地LLM構建代理的開發者，中途遭遇工具呼叫失敗是常見困擾，而本文提出的Forge方法透過改善配發層（serving layer）來提升可靠性。文中強調，即使模型能力不變，透過優化請求處理、提示格式、並行機制或錯誤處理等服務層面因素，也能顯著提高工具呼叫的準確性。實驗結果顯示，在特定設定下，Forge可將本地8B模型的工具呼叫成功率提升至84%。此研究的重要性在於，它提醒社群：模型效能不僅取決於權重或微調，更與推理時的基礎設施設計密切相關。對於資源受限的本地部署，此發現提供了一條低成本的效能改善路徑。然而，本文僅提供摘要層級的資訊，缺乏具體的實驗細節、比較基準與統計顯著性，因此讀者應謹慎看待數字，並參考原始論文以獲取完整方法論與侷限性。總之，此研究為代理系統工程提供新視角，強調服務層在實現可靠工具呼叫中的關鍵角色，對有意最佳化本地LLM應用的研究者與工程師具有參考價值。",
-      "title": "ローカル8Bを84%に引き上げるForge、ツール呼び出しの信頼性は配信層で決まる",
-      "title_zh": "將本地8B模型成功率提升至84%的Forge：工具呼叫的可靠性取決於服務層"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "daishir0"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-05T09:03:21.620171+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-          "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.6,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.25,
-          "reproducibility": 0.3,
-          "rigor": 0.5
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "abstract: '4モデルをM2 Ultraで実測比較'",
-          "abstract: '全部手元で流した一次データです'"
-        ],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "Paper is a practical comparison of local LLMs on M2 Ultra, relevant to Japanese LLM and local deployment but lacks scientific novelty and methodological rigor. Abstract only, with some empirical evidence (real measurements) and reproducibility partially addressed.",
-        "score": 0.33999999999999997,
-        "token_usage": {
-          "completion_tokens": 230,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 471,
-          "prompt_tokens": 2263,
-          "total_tokens": 2493
-        },
-        "topics": [
-          "Japanese LLM",
-          "local LLM",
-          "M2 Ultra",
-          "benchmark"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "zenn-llm-topic",
-        "tier": 2,
-        "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-        "url": "https://zenn.dev/daishiro/articles/local-llm-onprem-benchmark"
-      },
-      "published_at": "2026-08-05T01:46:35+00:00",
-      "published_local_date": "2026-08-05",
-      "report_rank": 28,
-      "report_score": 15.706942,
-      "report_source_date": "2026-08-05",
-      "report_source_section": "radar",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.33999999999999997,
-        "llm_relevance_score": 9.52,
-        "recency_score": 0.6369423409193989,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.706942340919397
-      },
-      "section": null,
-      "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:a13af770e0c92a15",
-      "summary": "はじめに\n「データを外に出せないシステムで、生成AIを使いたい」——この要件、最近ますます増えていると思います。私も自前のサービス群にLLMを組み込むにあたり、API課金と機密性の両面から、オンプレで完結するローカルモデルを本気で選定することにしました。\nこの記事では、Mac Studio（M2 Ultra / 64GB）上でオープンウェイトの4モデルを同一条件でテストした実測結果を、生の出力例つきで比較します。ベンチマークスコアの転載ではなく、全部手元で流した一次データです。\n\n 想定読者\n\nオンプレ・クローズド環境でのシステム開発にLLMを組み込みたい方\n「結局どのモデルをpul...",
-      "summary_zh": "本文探討在資料無法外傳的封閉環境中，如何選用本地部署的開源語言模型（LLM）。作者以Mac Studio（M2 Ultra／64GB）為測試平台，在相同條件下實際運行四款開放權重模型，並提供原始輸出範例，而非轉載既有基準分數，屬於第一手實測資料。文中詳述測試環境設定、提示詞設計與評估方式，並比較各模型在推論品質、回應速度與資源消耗上的差異。主要結果顯示，不同模型在不同任務類型上各有優勢，但整體而言，較大的參數規模未必帶來最佳表現，需視需求權衡。作者也指出限制，包括單一硬體環境、樣本數有限、未涵蓋所有熱門模型，以及輸出品質的主觀判斷。此研究對在隱私嚴格或無法使用雲端API的場域（如企業內部、政府單位）導入生成式AI具實務參考價值，協助開發者依據自身預算、硬體條件與任務需求，選擇最合適的本地模型，兼顧效能與資料安全。",
-      "title": "クローズド環境で使えるローカルLLMはどれか——4モデルをM2 Ultraで実測比較",
-      "title_zh": "封閉環境可用的本地LLM比較：以M2 Ultra實測四款模型"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "yurukusa"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-28T21:52:27.003876+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "qiita-genai-tag",
-          "tier": 2,
-          "title": "自分のメールアドレスがモデルへ渡っているか、30秒で確かめる",
-          "url": "https://qiita.com/yurukusa/items/4a63385fb6a3a25132c0"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.2,
-          "generalizability": 0.2,
-          "novelty": 0.2,
-          "preference_relevance": 0.55,
-          "reproducibility": 0.3,
-          "rigor": 0.1
-        },
-        "confidence": 1.0,
-        "evidence": [
-          "Content status: abstract_only — truncated text states verification was performed on 2026-07-30 with Claude Code v2.1.220 and fully re-run with v2.1.246 (2026-08-26 release), noting the passing behavior was unchanged",
-          "Title: '自分のメールアドレスがモデルへ渡っているか、30秒で確かめる' — indicates a quick manual check for email-address passthrough to the model, implying reproducibility but no method details provided in the snippet"
+          "はじめに: states LLMs are '非常に高い水準' at verifying a given hypothesis, explaining it, and extending it to other domains",
+          "はじめに: claims that when asked for '世間でまだあまり言われていない意外な論点', LLMs return 'どこかで見たような案ばかり', contrasting '仮説を理解して展開する能力' with idea origination",
+          "Content status: abstract_only — the document provides no methods, baselines, ablations, quantitative results, limitations section, or code/data availability statements, so all claims are unverifiable from the supplied text"
         ],
         "fulltext_sha256": "",
         "fulltext_status": "abstract_only",
         "model": "z-ai/glm-5.3-flash",
         "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "A short Japanese practitioner note (abstract-only snippet) about verifying whether a user's email address is passed to the model via Claude Code. Topic touches LLM agents and AI-safety/privacy, which aligns moderately with LLM, Agents & Tool Use, and AI Safety preferences, but it is a blog-style verification exercise, not research: no method, baselines, ablations, or quantitative results are visible. Novelty is minimal (a manual PII-passthrough check); rigor and evidence are near-floor given abstract_only status, with only version/date specifics (v2.1.220, v2.1.246) as traceability. Generalizability is limited to one tool and one PII type; the '30 seconds' framing suggests a repeatable quick check but the procedure itself is not shown.",
-        "score": 0.33,
+        "rationale": "A Japanese essay/opinion piece arguing that LLMs can verify and extrapolate given hypotheses but cannot originate genuinely novel ones, and that this asymmetry will persist for decades. Topically it squarely matches LLM and reasoning preferences, but it is a speculative commentary, not research: abstract-only content with no methods, baselines, experiments, quantitative results, datasets, or availability claims. The core observation (generation of novel hypotheses lags verification/explanation) is a known discussion point, and the 'decades-long persistence' claim is unsupported speculation. Scores are calibrated low for rigor, evidence, and reproducibility, with modest topic-match credit for direct LLM/reasoning relevance.",
+        "score": 0.3625,
         "token_usage": {
-          "completion_tokens": 1458,
-          "prompt_cache_hit_tokens": 64,
-          "prompt_cache_miss_tokens": 2145,
-          "prompt_tokens": 2209,
-          "total_tokens": 3667
+          "completion_tokens": 1413,
+          "prompt_cache_hit_tokens": 1920,
+          "prompt_cache_miss_tokens": 410,
+          "prompt_tokens": 2330,
+          "total_tokens": 3743
         },
         "topics": [
           "LLM",
-          "Agents & Tool Use",
-          "AI Safety"
-        ]
-      },
-      "primary_link": {
-        "link_type": "blog",
-        "source_id": "qiita-genai-tag",
-        "tier": 2,
-        "title": "自分のメールアドレスがモデルへ渡っているか、30秒で確かめる",
-        "url": "https://qiita.com/yurukusa/items/4a63385fb6a3a25132c0"
-      },
-      "published_at": "2026-08-28T12:07:24+00:00",
-      "published_local_date": "2026-08-28",
-      "report_rank": 29,
-      "report_score": 15.706805,
-      "report_source_date": "2026-08-28",
-      "report_source_section": "top5",
-      "scores": {
-        "citation_score": 0.0,
-        "cross_source_score": 0.0,
-        "entity_score": 0.0,
-        "kind_score": 0.8,
-        "llm_raw_score": 0.33,
-        "llm_relevance_score": 9.24,
-        "recency_score": 0.9168049905737593,
-        "semantic_score": 0.0,
-        "tier_score": 1.0,
-        "topic_score": 3.75,
-        "total_score": 15.706804990573758
-      },
-      "section": null,
-      "source_name": "Qiita 生成AI Tag",
-      "story_id": "fallback:fbdbac6ebffeb2aa",
-      "summary": "この記事の検証は2026年7月30日、Claude Code v2.1.220 で行った。公開までに1か月あいてしまったので、出す前に v2.1.246（8月26日に入った版）で全部引き直している。渡っていること自体は変わっていなかった。ただし、変わったつもりで書き足した...",
-      "summary_zh": "本文記錄一項 30 秒即可完成的自我檢查：Claude Code 是否把使用者的電子郵件地址等身分資訊傳送給模型。作者於 2026 年 7 月 30 日以 Claude Code v2.1.220 進行首次驗證；由於文章拖了一個月才發布，上線前又用 8 月 26 日釋出的 v2.1.246 把整個流程重新跑了一遍。結果顯示「電子郵件確實被傳給模型」這個事實在兩個版本之間並未改變。不過作者也提到，原以為重測後可以照舊發文，卻在過程中發現自己先前「以為改了、其實沒改」而臨時補寫內容（摘要於此截斷），暗示這類驗證不能只做一次：版本更新、提示組裝邏輯與說明文件之間可能存在須反覆核對的落差。本文的方法論價值在於：對於供應商在請求中夾帶哪些使用者資訊，開發者不應假設或輕信官方說法，而能以極低成本的日誌或攔截檢查直接驗證，讓隱私與合規判斷建立在可重現的實證之上。摘要未含完整操作步驟與腳本，讀者應回到原文取得檢查方法與兩個版本間的差異記錄。",
-      "title": "自分のメールアドレスがモデルへ渡っているか、30秒で確かめる",
-      "title_zh": "30 秒確認自己的電子郵件地址是否被傳給了模型"
-    },
-    {
-      "arxiv_id": null,
-      "authors": [
-        "Murasan Lab"
-      ],
-      "categories": [],
-      "entities": [],
-      "first_seen_at": "2026-08-12T00:30:37.989704+00:00",
-      "github_release_url": null,
-      "hf_metadata": null,
-      "hf_model_id": null,
-      "item_count": 1,
-      "links": [
-        {
-          "link_type": "blog",
-          "source_id": "zenn-llm-topic",
-          "tier": 2,
-          "title": "自宅サーバーではじめる ローカルLLM入門 第1巻 基礎・構築編",
-          "url": "https://zenn.dev/murasanlab/books/dcf7ed4826a797"
-        }
-      ],
-      "llm_evaluation": {
-        "components": {
-          "evidence_strength": 0.1,
-          "generalizability": 0.3,
-          "novelty": 0.2,
-          "preference_relevance": 0.5,
-          "reproducibility": 0.2,
-          "rigor": 0.2
-        },
-        "confidence": 1.0,
-        "evidence": [],
-        "fulltext_sha256": "",
-        "fulltext_status": "abstract_only",
-        "model": "deepseek-v4-flash",
-        "prompt_version": "sha256:2bf0691ed94bd38d",
-        "rationale": "This is an introductory book on running local LLMs, not a research paper. It provides no empirical evaluation, methods, or results. Some relevance to LLM and local deployment, but no research contribution.",
-        "score": 0.315,
-        "token_usage": {
-          "completion_tokens": 185,
-          "prompt_cache_hit_tokens": 1792,
-          "prompt_cache_miss_tokens": 581,
-          "prompt_tokens": 2373,
-          "total_tokens": 2558
-        },
-        "topics": [
-          "local LLM",
-          "LLM deployment",
-          "Ollama"
+          "Reasoning & idea generation",
+          "Hypothesis generation",
+          "Japanese NLP commentary"
         ]
       },
       "primary_link": {
         "link_type": "blog",
         "source_id": "zenn-llm-topic",
         "tier": 2,
-        "title": "自宅サーバーではじめる ローカルLLM入門 第1巻 基礎・構築編",
-        "url": "https://zenn.dev/murasanlab/books/dcf7ed4826a797"
+        "title": "なぜ、LLM AIのアイディア出しが苦手という特徴は、今後数十年維持されそうなのか？",
+        "url": "https://zenn.dev/pdfractal/articles/968dfc17492c6d"
       },
-      "published_at": "2026-08-11T03:25:59+00:00",
-      "published_local_date": "2026-08-11",
+      "published_at": "2026-08-29T07:23:03+00:00",
+      "published_local_date": "2026-08-29",
       "report_rank": 30,
-      "report_score": 15.535846,
-      "report_source_date": "2026-08-12",
+      "report_score": 16.622234,
+      "report_source_date": "2026-08-30",
       "report_source_section": "top5",
       "scores": {
         "citation_score": 0.0,
         "cross_source_score": 0.0,
         "entity_score": 0.0,
         "kind_score": 0.8,
-        "llm_raw_score": 0.315,
-        "llm_relevance_score": 8.82,
-        "recency_score": 0.9158462104070887,
+        "llm_raw_score": 0.3625,
+        "llm_relevance_score": 10.15,
+        "recency_score": 0.9222343685432245,
         "semantic_score": 0.0,
         "tier_score": 1.0,
-        "topic_score": 4.0,
-        "total_score": 15.535846210407088
+        "topic_score": 3.75,
+        "total_score": 16.622234368543225
       },
       "section": null,
       "source_name": "Zenn LLM Topic",
-      "story_id": "fallback:b6c33b8ea9774116",
-      "summary": "生成AIを使って文章を書いたり、調べものをしたり、考えを整理したり……\nそのAIを「自宅のPCで動かす」という選択肢があることをご存じですか？\n\n本書は、ローカルLLMをまったく知らない方が、自宅のミニPCやデスクトップPCを「自分専用のAIが動くサーバー」へとステップアップさせるための入門書です。UbuntuとNVIDIA GPUを基本構成として、OllamaとGemma 4を導入し、家庭内の別のPCから利用できる環境を、一緒に構築していきます。GPUを持っていない方に向けて、CPUとシステムメモリで試す方法も用意しています。\n\nコマンドを丸暗記するのではなく、「LLMはどのように文章を生成するのか」「量子化とは何か」「なぜその設定が必要なのか」を一つずつ丁寧に解説します。モデルの性能やメモリの考え方から、Ubuntuの準備、GPUドライバー、モデルの導入、安全なLAN内利用、基本的な運用とトラブル対応まで、この1冊でローカルLLMの土台を築くことができます。\n\nクラウドのAIを使うだけでなく、自分の環境でAIを動かす世界へ。\nローカルLLMへの第一歩を、ここから始めてみませんか。",
-      "summary_zh": "本書是針對完全不了解本地大型語言模型（LLM）的讀者所設計的入門指南，目標是協助讀者將家中的迷你PC或桌上型電腦升級為「專屬AI伺服器」。內容以Ubuntu與NVIDIA GPU為基本架構，逐步引導讀者安裝Ollama與Gemma 4，並設定讓家中其他電腦可透過區域網路存取。對於沒有GPU的讀者，也提供以CPU與系統記憶體運作的替代方案。書中強調理解而非死記指令，詳細解說LLM如何生成文字、量子化的概念、以及各項設定的必要性。涵蓋範圍從模型效能與記憶體配置的評估、Ubuntu環境準備、GPU驅動程式安裝、模型導入、安全的區域網路使用，到基本的系統維運與故障排除。這本書能幫助讀者建立本地LLM的基礎知識與實作能力，無需依賴雲端服務，即可在自己的硬體上運行AI，特別適合重視隱私或想深入理解模型運作原理的使用者。",
-      "title": "自宅サーバーではじめる ローカルLLM入門 第1巻 基礎・構築編",
-      "title_zh": "在家用伺服器開始的本地LLM入門 第1卷 基礎・建置篇"
+      "story_id": "fallback:111385778161cab3",
+      "summary": "はじめに\nLLM AIは、与えられた仮説を検証し、その意味を説明し、別領域まで展開する能力についてはすでに非常に高い水準にあります。ところが、「世間でまだあまり言われていない意外な論点を考えてほしい」と頼むと、急にどこかで見たような案ばかりを出すことがあります。この落差は、単に現在のLLMの知能が不足しているから起きているとは考えにくいものです。実際、LLMは人間から一つの非自明な仮説を与えられると、それが遠く離れた複数の問題とどうつながっているのかをかなり正確に説明できます。それなのに、その最初の仮説を自分ではなかなか思いつきません。\nここには、「仮説を理解して展開する能力」と「無...",
+      "summary_zh": "這篇日文論文探討一個耐人尋味的現象：大型語言模型（LLM）在驗證假說、解釋其意涵，乃至將假說延伸到其他領域的能力上，已達到相當高的水準；然而，若請它提出「世上尚未被充分討論的意外觀點」，產出的卻往往是似曾相識、缺乏新意的想法。作者認為，這種落差難以單純歸因於目前模型的智慧不足，並主張此一特徵可能在未來數十年內持續存在。論文提出的關鍵觀察是：當人類給予一個非自明的假說時，LLM 能相當準確地說明該假說與多個遙遠問題之間的關聯，卻難以自行想出這最初的假說；換言之，「理解並展開假說的能力」與「無中生有產生假說的能力」應屬兩種不同性質的能力，前者已趨成熟，後者似乎有其結構性限制。就證據而言，目前僅能從摘要與緒論看到現象描述與論證框架，尚未見到量化實驗或系統性評測佐證，結論多屬作者的概念性推論。即便如此，本文的價值在於對「LLM 作為研究或創意輔助工具」提出定位警語：若此論證成立，非自明的初始假說仍需由人類提出，模型則適合承擔驗證、解釋與跨領域延伸，人機互補才能發揮最大效益。",
+      "title": "なぜ、LLM AIのアイディア出しが苦手という特徴は、今後数十年維持されそうなのか？",
+      "title_zh": "為什麼 LLM AI 不擅長發想點子這項特徵，未來數十年似乎仍將維持？"
     }
   ],
-  "blog_stories_considered": 186,
+  "blog_stories_considered": 225,
   "covered_dates": [
     "2026-08-01",
     "2026-08-02",
@@ -2713,14 +2746,14 @@
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-29",
+    "2026-08-30"
   ],
-  "generated_at": "2026-08-29T09:04:51.500703+00:00",
-  "items_considered": 1623,
+  "generated_at": "2026-09-01T01:00:05.200482+00:00",
+  "items_considered": 1624,
   "missing_dates": [
     "2026-08-11",
-    "2026-08-29",
-    "2026-08-30",
     "2026-08-31"
   ],
   "period_end": "2026-08-31",
@@ -13141,7 +13174,7 @@
     ],
     "limit": 100,
     "metadata_source": "ai",
-    "period_source": "explicit period_id",
+    "period_source": "target_date and report_type",
     "ranking": "score.total_score descending, then publication time descending; paper-like stories are pulled from daily papers, top5, and radar",
     "source_sections": [
       "papers",
@@ -13176,10 +13209,12 @@
     "api/day/2026-08-25.json",
     "api/day/2026-08-26.json",
     "api/day/2026-08-27.json",
-    "api/day/2026-08-28.json"
+    "api/day/2026-08-28.json",
+    "api/day/2026-08-29.json",
+    "api/day/2026-08-30.json"
   ],
-  "stories_considered": 1621,
-  "summary": "本月聚焦 LLM 代理的支架（harness）工程與自進化能力，涵蓋即時支架合成、失敗軌跡學習、代理記憶與工具聯合最佳化等研究方向，並延伸至測試時間擴展、多代理安全與整庫遷移評測。技術文章側重 Bedrock 代理部署、MCP 除錯、RAG 品質閘門與可觀測性設計，兼顧前沿理論與落地實務經驗。",
+  "stories_considered": 1622,
+  "summary": "本月精選百篇論文與三十篇技術文章，主軸為 LLM 代理的支架工程與系統實務，涵蓋即時支架合成、從失敗軌跡學習框架編輯、代理記憶與工具建立，兼及測試時間擴展與多語翻譯。技術文章聚焦 token 成本、多代理失敗模式、MCP 除錯與提示注入防護等第一手經驗，串起從研究到部署的完整脈絡。",
   "timezone": "UTC",
-  "title": "AI 研究月報：代理支架工程與自進化系統焦點"
+  "title": "AI 月報：代理支架工程、記憶與多代理系統實務"
 }
