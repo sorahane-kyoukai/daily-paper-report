@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-01T01:01:00.227737+00:00",
+  "generated_at": "2026-09-07T00:30:42.941179+00:00",
   "latest": {
     "monthly": "2026-08",
-    "weekly": "2026-W35"
+    "weekly": "2026-W36"
   },
   "monthly": [
     {
@@ -75,6 +75,26 @@
     }
   ],
   "weekly": [
+    {
+      "blog_recommendation_count": 0,
+      "generated_at": "2026-09-07T00:30:04.626726+00:00",
+      "missing_dates": [
+        "2026-08-31",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06"
+      ],
+      "path": "api/reports/weekly/2026-W36.json",
+      "period_end": "2026-09-06",
+      "period_id": "2026-W36",
+      "period_start": "2026-08-31",
+      "recommendation_count": 95,
+      "report_type": "weekly",
+      "summary": "本期收錄 95 篇論文，以 LLM 代理安全為主軸，涵蓋間接提示注入、角色扮演越獄與紅隊測試等攻防研究，並選入 MoE 架構設計、KV cache 與記憶組合的長上下文效率、科學推理合成與可否證推理評測等方向，兼顧攻擊面分析與系統優化，適合追蹤模型風險與效率最新進展的讀者。",
+      "title": "AI 研究週報：代理安全、記憶效率與推理進展"
+    },
     {
       "blog_recommendation_count": 30,
       "generated_at": "2026-08-31T00:30:05.520256+00:00",
